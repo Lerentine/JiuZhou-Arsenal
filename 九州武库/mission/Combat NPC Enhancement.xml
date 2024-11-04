@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+  <Items>
+    <Item name="丙级作战增强针剂" identifier="tsm_enhancement_bing" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
+        <GiveTalentInfo giverandom="false" talentidentifiers="grounded,foolhardy,medicalexpertise,revengesquad,crustyseaman,specops,rifleman,lonewolf,swole,easyturtle,tsm_ai_combat_ship" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="乙级作战增强针剂" identifier="tsm_enhancement_yi" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
+        <GiveTalentInfo giverandom="false" talentidentifiers="grounded,foolhardy,medicalexpertise,revengesquad,swole,tsm_ai_bleeding,specops,rifleman,lonewolf,inordinateexsanguination,stonewall,quickdraw,pyromaniac,lightningwizard,warlord,drsubmarine,plaguedoctor,easyturtle,tsm_ai_combat_ship" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="甲级作战增强针剂" identifier="tsm_enhancement_jia" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
+        <GiveTalentInfo giverandom="false" talentidentifiers="grounded,foolhardy,medicalexpertise,revengesquad,tsm_ai_bleeding,specops,rifleman,lonewolf,inordinateexsanguination,stonewall,swole,quickdraw,tsm_lightningwizard,drsubmarine,warlord,implacable,plaguedoctor,easyturtle,tsm_ai_stun,tsm_ai_combat_ship" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="EX作战增强针剂" identifier="tsm_enhancement_ex" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
+        <GiveTalentInfo giverandom="false" talentidentifiers="grounded,foolhardy,crustyseaman,easyturtle,extrapowder,plaguedoctor,exampleofhealth,warlord,tsm_ai_combat_ship" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="闪电巫师触发剂" identifier="tsm_enhancement_lightningwizard" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
+        <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="船内作战增强触发剂" identifier="tsm_enhancement_combatship" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
+        <GiveTalentInfo giverandom="false" talentidentifiers="tsm_ai_combat_ship" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="快速反应增强针剂" identifier="tsm_enhancement_stun" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
+        <GiveTalentInfo giverandom="false" talentidentifiers="tsm_ai_stun" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="奇迹之海站点突袭增强针剂" identifier="tsm_eyi_attack" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
+        <GiveTalentInfo giverandom="false" talentidentifiers="tsm_eyi_attack" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="ai保护措施" identifier="tsm_enhancement_ai" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
+        <GiveTalentInfo giverandom="false" talentidentifiers="tsm_ai_asphyxiating_pressure" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="站点士兵增强针剂" identifier="tsm_enhancement_outpost" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
+        <GiveTalentInfo giverandom="false" talentidentifiers="grounded,foolhardy,medicalexpertise,revengesquad,tsm_ai_bleeding,specops,rifleman,lonewolf,implacable,laresistance,buff,swole,tsm_lightningwizard" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  </Items>

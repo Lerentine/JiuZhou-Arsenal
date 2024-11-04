@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+  <!--复生：回血-->
+  <Affliction identifier="tsm_reborn" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" maxstrength="4" showiconthreshold="0" showinhealthscannerthreshold="0" duration="1" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect minstrength="0" maxstrength="1">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="damage" strength="1" />
+        <ReduceAffliction type="burn" strength="1" />
+        <ReduceAffliction type="bleeding" strength="1" />
+        <ReduceAffliction type="bloodloss" strength="1" />
+        <ReduceAffliction type="stun" strength="1" />
+        <ReduceAffliction type="oxygenlow" strength="1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="1" maxstrength="2">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="damage" strength="2.0" />
+        <ReduceAffliction type="burn" strength="2.0" />
+        <ReduceAffliction type="bleeding" strength="2.0" />
+        <ReduceAffliction type="bloodloss" strength="2.0" />
+        <ReduceAffliction type="stun" strength="2.0" />
+        <ReduceAffliction type="oxygenlow" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="2" maxstrength="3">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="damage" strength="3.0" />
+        <ReduceAffliction type="burn" strength="3.0" />
+        <ReduceAffliction type="bleeding" strength="3.0" />
+        <ReduceAffliction type="bloodloss" strength="3.0" />
+        <ReduceAffliction type="stun" strength="3.0" />
+        <ReduceAffliction type="oxygenlow" strength="3.0" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="3" maxstrength="4">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="damage" strength="4.0" />
+        <ReduceAffliction type="burn" strength="4.0" />
+        <ReduceAffliction type="bleeding" strength="4.0" />
+        <ReduceAffliction type="bloodloss" strength="4.0" />
+        <ReduceAffliction type="stun" strength="4.0" />
+        <ReduceAffliction type="oxygenlow" strength="4.0" />
+      </StatusEffect>
+    </Effect>
+    <Icon texture="%ModDir%/Skadi_CHJob/Skadi_TalentIcon.png" sheetindex="1,3" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+</Afflictions>

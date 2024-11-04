@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+<Items>
+  <Item name="戎装原型机" identifier="rz_prototype" subcategory="TSM" category="Diving,Equipment" tags="diving,deepdiving,deepdivinglarge,divinggear_wearableindoors,provocative" scale="0.605" fireproof="true" description="" isshootable="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="0.01">
+    <Deconstruct time="30">
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="exosuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="60" >
+      <RequiredSkill identifier="mechanical" level="70" />
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="5" />
+      <RequiredItem identifier="exosuit" amount="1" />
+      <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
+      <RequiredItem identifier="tsm_ic" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/suit/rz_prototype.png" sourcerect="384,384,128,128" origin="0.5,0.5" />
+    <Sprite name="rz_prototypesuit Item" texture="%ModDir%/suit/rz_prototype_yl.png" sourcerect="14,0,175,383" depth="0.55" origin="0.5,0.65" />
+    <Body width="150" height="230" density="15" />
+    <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
+      <sprite name="rz_prototypesuit Helmet Wearable" texture="%ModDir%/suit/rz_prototype.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hideotherwearables="true" hidewearablesoftype="" sourcerect="0,0,1,1" origin="0.5,0.5" />
+      <sprite name="rz_prototypesuit Torso" texture="%ModDir%/suit/rz_prototype.png" limb="Torso" scale="1.2" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.8" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="22,6,173,206">
+        <LightComponent LightColor="150,150,150,255" range="1200" powerconsumption="10" IsOn="true" pulsefrequency="0.1" pulseamount="0.5">
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.495" size="2.5,4.0" />
+        </LightComponent>
+      </sprite>
+      <sprite name="rz_prototypesuit Right Hand" texture="%ModDir%/suit/rz_prototype.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.35" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="338,231,56,61" />
+      <sprite name="rz_prototypesuit Left Hand" texture="%ModDir%/suit/rz_prototype.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.35" inheritsourcerect="false" SourceRect="448,231,56,61" />
+      <sprite name="rz_prototypesuit Right Upper Arm" texture="%ModDir%/suit/rz_prototype.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.7" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="326,1,80,108" />
+      <sprite name="rz_prototypesuit Left Upper Arm" texture="%ModDir%/suit/rz_prototype.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.7" inheritsourcerect="false" SourceRect="436,1,76,104" />
+      <sprite name="rz_prototypesuit Right Forearm" texture="%ModDir%/suit/rz_prototype.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.65" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="333,119,71,87" />
+      <sprite name="rz_prototypesuit Left Forearm" texture="%ModDir%/suit/rz_prototype.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.65" inheritsourcerect="false" SourceRect="443,119,69,87"  />
+      <sprite name="rz_prototypesuit Waist" texture="%ModDir%/suit/rz_prototype.png" limb="Waist" hidelimb="true" scale="1.2" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.52,1.0" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="168,271,142,65" />
+      <sprite name="rz_prototypesuit Right Thigh" texture="%ModDir%/suit/rz_prototype.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="4,234,111,130" />
+      <sprite name="rz_prototypesuit Left Thigh" texture="%ModDir%/suit/rz_prototype.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" inheritsourcerect="false" sourcerect="4,234,111,130" />
+      <sprite name="rz_prototypesuit Right Leg" texture="%ModDir%/suit/rz_prototype.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.4,0.7" inheritlimbdepth="true" scale="0.6" inheritsourcerect="false" sourcerect="1,372,87,132" />
+      <sprite name="rz_prototypesuit Left Leg" texture="%ModDir%/suit/rz_prototype.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.4,0.7" inheritsourcerect="false" scale="0.6" sourcerect="91,372,87,132" />
+      <sprite name="rz_prototypesuit Left Shoe" texture="%ModDir%/suit/rz_prototype.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="false" inheritorigin="false" origin="0.5,0.63" inheritsourcerect="false" scale="0.65" sourcerect="373,332,108,43" />
+      <sprite name="rz_prototypesuit Right Shoe" texture="%ModDir%/suit/rz_prototype.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="false" inheritorigin="false" origin="0.5,0.63" inheritsourcerect="false" scale="0.65" sourcerect="373,332,108,43" />
+      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
+      <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="10000.0" SpeedMultiplier="0.5" PropulsionSpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
+        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true"/>
+        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true"/>
+        <TriggerAnimation Type="Walk" FileName="HumanWalkExosuit" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" FileName="HumanRunExosuit" priority="1" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <!-- no HMG stun -->
+      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
+        <Affliction identifier="recoilstabilized" amount="1" />
+      </StatusEffect>
+      <!-- slow movement -->
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.4" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="gt 0.5" />
+      </StatusEffect>      
+      <StatusEffect type="OnWearing" target="Contained,Character" Condition="-0.1" interval="1" disabledeltatime="true" targetslot="1" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="reactorfuel" targetslot="1" type="Contained" />
+      </StatusEffect>
+      <!-- 0 movement speed when out of fuel-->
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="-10.0" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="lte 0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" Oxygen="-10.0" Condition="-0.5" interval="1" disabledeltatime="true" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="weldingfueltank" targetslot="0" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" targetlimbs="Torso" Oxygen="-10.0" Condition="-0.5" interval="1" disabledeltatime="true" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="incendiumfueltank" targetslot="0" type="Contained" />
+        <Affliction identifier="burn" amount="0.05" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.3" comparison="Or" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygentank" targetslot="0" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.05" comparison="Or" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygenitetank" targetslot="0" type="Contained" />
+      </StatusEffect>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,bitewounds,lacerations" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn,bleeding" damagemultiplier="0.3" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.15" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.1" damagesound="LimbArmor"/>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.3" damagesound="LimbArmor"/>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn" damagemultiplier="0.15" damagesound=""/>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.0" damagesound="LimbArmor"/>
+      <sound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" type="OnWearing" range="500.0" volumeproperty="Speed" volume="0.2" loop="true" frequencymultiplier="0.5" />
+      <StatValue stattype="FlowResistance" value="0.0" />
+    </Wearable>
+    <ItemContainer capacity="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="192,448,64,64" origin="0.5,0.5" />
+      <StatusEffect type="OnWearing" target="Contained" targetslot="0">
+        <RequiredItem items="oxygensource" type="Contained" targetslot="0" />
+        <Conditional condition="lt 5.0" />
+        <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained" targetslot="0" playsoundonrequireditemfailure="true">
+        <RequiredItem items="oxygensource" type="Contained" targetslot="0" matchonempty="true" />
+        <Conditional condition="lte 0.0" />
+        <Sound file="Content/Items/WarningBeep.ogg" range="500" loop="true"/>
+      </StatusEffect>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="oxygensource,weldingtoolfuel" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="reactorfuel">
+          <StatusEffect type="OnContaining" target="This,Character" Voltage="1.0" setvalue="true">
+            <Conditional IsDead="false" />
+          </StatusEffect>
+        </Containable>
+      </SubContainer>
+      <SubContainer capacity="10" maxstacksize="32">
+        <Containable items="smallitem" />
+      </SubContainer>
+    </ItemContainer>
+    <aitarget maxsightrange="1500" />
+  </Item>
+  <Item name="" identifier="rz_bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <Attack structuredamage="3" targetforce="8" itemdamage="20" penetration="0.25" severlimbsprobability="1.5">
+        <Affliction identifier="gunshotwound" strength="30" />
+        <Affliction identifier="explosiondamage" strength="10" />
+        <Affliction identifier="gunshotwound" strength="30" probability="0.4" />
+        <Affliction identifier="explosiondamage" strength="5" probability="0.3"/>
+        <Affliction identifier="bleeding" strength="30" />
+        <Affliction identifier="bleeding" strength="15" probability="0.15" />
+        <Affliction identifier="stun" strength="0.2" />
+        <Affliction identifier="stun" strength="0.1" probability="0.15" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="underwaterexplosionfast" AngleMax="360" ScaleMultiplier="1,1" ParticlesPerSecond="1" ColorMultiplier="255,255,255,255" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="戎装弹匣" identifier="rz_mag" subcategory="TSM" scale="0.29" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="tsm_mag,smallitem,rz_mag" impactsoundtag="impact_metal_light" health="20" description="">
+    <InventoryIcon texture="%ModDir%/suit/bullet.png" sourcerect="33,102,161,95" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/suit/bullet.png" depth="0.56" sourcerect="33,102,161,95" origin="0.5,0.5" />
+    <Body width="30" height="58" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="rz_bullet" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="rz_bullet" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="rz_bullet" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="5" requiresrecipe="false" amount="1">
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem identifier="tsm_tungsten" amount="1" />
+      <RequiredItem identifier="titanium" amount="2" />
+      <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" amount="3" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="10">
+      <RequiredItem tag="rz_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_tungsten" amount="1" />
+      <RequiredItem identifier="titanium" amount="2" />
+      <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" amount="2" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" outcondition="1" />
+      <Item identifier="tsm_tungsten" mincondition="0.95" />
+      <Item identifier="titanium" mincondition="0.95" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="戎装原型机2号B型" identifier="tsm_rz_2b" subcategory="TSM" category="Diving,Equipment" tags="tsmgear,deepdiving,deepdivinglarge" scale="0.5" fireproof="true" description="" isshootable="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
+    <Deconstruct time="30">
+      <Item identifier="physicorium" />
+      <Item identifier="fulgurium" />
+      <Item identifier="rubber" />
+      <Item identifier="rubber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="45" requiresrecipe="false">
+      <RequiredSkill identifier="mechanical" level="60" />        
+      <RequiredItem identifier="abyssdivingsuit" />
+      <RequiredItem identifier="tsm_ic" amount="2" />
+      <RequiredItem identifier="rubber" amount="4" />
+      <RequiredItem identifier="fulgurium" amount="2" />
+      <RequiredItem identifier="physicorium" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/suit/rz_2b.png" sourcerect="382,895,128,128" origin="0.5,0.5" />
+    <Sprite name="rz Exosuit Item" texture="%ModDir%/suit/rz_beta2.png" sourcerect="277,25,213,405" depth="0.55" origin="0.5,0.48" />
+    <Body width="189" height="400" density="15" />
+    <Wearable slots="OuterClothes+RightHand" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
+      <sprite name="rz Exosuit Helmet Wearable" texture="%ModDir%/suit/rz_2b.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hideotherwearables="true" hidewearablesoftype="" sourcerect="0,0,1,1" origin="0.5,0.5"/>
+      <sprite name="rz Exosuit Torso" texture="%ModDir%/suit/rz_2b.png" limb="Torso" hidelimb="true" scale="0.6" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.7" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="22,13,169,200">
+        <LightComponent LightColor="150,150,150,255" range="1000" powerconsumption="10" IsOn="true" pulsefrequency="0.1" pulseamount="0.5">
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="2.0,4.0" />
+        </LightComponent>
+      </sprite>
+      <sprite name="rz Exosuit Right Hand" texture="%ModDir%/suit/rz_2b.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.35" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="338,231,56,61" />
+      <sprite name="rz Exosuit Left Hand" texture="%ModDir%/suit/rz_2b.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.35" inheritsourcerect="false" SourceRect="448,231,56,61" />
+      <sprite name="rz Exosuit Right Upper Arm" texture="%ModDir%/suit/rz_2b.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.7" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="326,1,80,108" />
+      <sprite name="rz Exosuit Left Upper Arm" texture="%ModDir%/suit/rz_2b.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.7" inheritsourcerect="false" SourceRect="436,1,76,104" />
+      <sprite name="rz Exosuit Right Forearm" texture="%ModDir%/suit/rz_2b.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.44,0.4" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="333,119,71,127" />
+      <sprite name="rz Exosuit Left Forearm" texture="%ModDir%/suit/rz_2b.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.65" inheritsourcerect="false" SourceRect="443,119,69,87"  />
+      <sprite name="rz Exosuit Waist" texture="%ModDir%/suit/rz_2b.png" limb="Waist" hidelimb="true" scale="1.2" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.52,0.9" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="168,271,142,65" />
+      <sprite name="rz Exosuit Right Thigh" texture="%ModDir%/suit/rz_2b.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="4,234,111,130" />
+      <sprite name="rz Exosuit Left Thigh" texture="%ModDir%/suit/rz_2b.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" inheritsourcerect="false" sourcerect="4,234,111,130" />
+      <sprite name="rz Exosuit Right Leg" texture="%ModDir%/suit/rz_2b.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.45,0.7" inheritlimbdepth="true" scale="0.6" inheritsourcerect="false" sourcerect="1,372,87,132" />
+      <sprite name="rz Exosuit Left Leg" texture="%ModDir%/suit/rz_2b.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.45,0.7" inheritsourcerect="false" scale="0.6" sourcerect="91,372,87,132" />
+      <sprite name="rz Exosuit Left Shoe" texture="%ModDir%/suit/rz_2b.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="false" inheritorigin="false" origin="0.5,0.63" inheritsourcerect="false" scale="0.7" sourcerect="373,332,108,43" />
+      <sprite name="rz Exosuit Right Shoe" texture="%ModDir%/suit/rz_2b.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="false" inheritorigin="false" origin="0.5,0.63" inheritsourcerect="false" scale="0.7" sourcerect="373,332,108,43" />
+      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
+      <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="10000.0" SpeedMultiplier="0.6" PropulsionSpeedMultiplier="0.7" setvalue="true" disabledeltatime="true">
+        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" loop="true"/>
+        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" loop="true"/>
+        <TriggerAnimation Type="Walk" FileName="HumanWalkExosuit" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" FileName="HumanRunExosuit" priority="1" ExpectedSpecies="Human" />
+      </StatusEffect> 
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.1" targetslot="1" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" Oxygen="-10.0" Condition="-0.5" targetslot="1" interval="1" disabledeltatime="true">
+        <Conditional IsDead="false" />
+        <RequiredItem items="weldingfueltank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" targetlimbs="Torso" Oxygen="-10.0" Condition="-0.5" targetslot="1" interval="1" disabledeltatime="true">
+        <Conditional IsDead="false" />
+        <RequiredItem items="incendiumfueltank" type="Contained" />
+        <Affliction identifier="burn" amount="3.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.05" targetslot="1" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_7L" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.5" damagesound="LimbArmor"/>
+      <StatValue stattype="FlowResistance" value="0.1" />
+    </Wearable>
+    <Holdable slots="OuterClothes+RightHand" controlpose="true" aimpos="70,5" handle1="-25,-7" />
+    <RangedWeapon barrelpos="29,11" spread="5" penetration="0.2" unskilledspread="10" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.28">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="%ModDir%/ogg/mvdxe.ogg" type="OnUse" selectionmode="All"/>
+      <Sound file="%ModDir%/ogg/mvdxe.ogg" type="OnUse" selectionmode="All"/>
+      <ParticleEmitter particle="explosionsmoke" particleamount="5" velocitymin="0" velocitymax="0" />
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="500.0" force="0.75" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="15.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="rz_mag" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="55" />
+    </RangedWeapon>
+    <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
+      <Containable items="none" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+      <StatusEffect type="OnWearing" target="Contained" targetslot="1">
+        <RequiredItem items="oxygensource" type="Contained" targetslot="1"/>
+        <Conditional condition="lt 5.0" />
+        <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained" playsoundonrequireditemfailure="true" targetslot="1">
+        <RequiredItem items="oxygensource" type="Contained" matchonempty="true" targetslot="1"/>
+        <Conditional condition="lte 0.0" />
+        <Sound file="Content/Items/WarningBeep.ogg" range="500" loop="true"/>
+      </StatusEffect>
+      <SubContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet" >
+        <Containable items="rz_mag">
+        </Containable>
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="oxygensource,weldingtoolfuel" />
+      </SubContainer>
+    </ItemContainer>
+    <aitarget maxsightrange="1500" />
+  </Item>
+  <Item name="戎装盗窃者型" identifier="tsm_rz_pirent" subcategory="TSM" category="Diving,Equipment" tags="diving,deepdiving,divinggear_wearableindoors,provocative" scale="0.5" fireproof="true" description="" isshootable="true" allowdroppingonswapwith="diving" hideinmenus="true" impactsoundtag="impact_metal_heavy" nonplayerteaminteractable="True">
+    <Deconstruct time="30">
+      <Item identifier="physicorium" />
+      <Item identifier="fulgurium" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="tsm_yx_crystallography" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/suit/rz_pirent.png" sourcerect="382,895,128,128" origin="0.5,0.5" />
+    <Sprite name="rz Exosuit Item" texture="%ModDir%/suit/rz_beta2.png" sourcerect="7,12,237,414" depth="0.55" origin="0.5,0.48" />
+    <Body width="189" height="400" density="15" />
+    <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
+      <sprite name="rz Exosuit Helmet Wearable" texture="%ModDir%/suit/rz_pirent.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hideotherwearables="true" hidewearablesoftype="" sourcerect="0,0,1,1" origin="0.5,0.5"/>
+      <sprite name="rz Exosuit Torso" texture="%ModDir%/suit/rz_pirent.png" limb="Torso" hidelimb="true" scale="0.6" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.7" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="22,13,169,200">
+        <LightComponent LightColor="150,150,150,255" range="1000" powerconsumption="10" IsOn="true" pulsefrequency="0.1" pulseamount="0.5">
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="2.0,4.0" />
+        </LightComponent>
+      </sprite>
+      <sprite name="rz Exosuit Right Hand" texture="%ModDir%/suit/rz_pirent.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.35" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="338,231,56,61" />
+      <sprite name="rz Exosuit Left Hand" texture="%ModDir%/suit/rz_pirent.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.35" inheritsourcerect="false" SourceRect="448,231,56,61" />
+      <sprite name="rz Exosuit Right Upper Arm" texture="%ModDir%/suit/rz_pirent.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.7" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="326,1,80,108" />
+      <sprite name="rz Exosuit Left Upper Arm" texture="%ModDir%/suit/rz_pirent.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.7" inheritsourcerect="false" SourceRect="436,1,76,104" />
+      <sprite name="rz Exosuit Right Forearm" texture="%ModDir%/suit/rz_pirent.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.44,0.4" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="333,119,71,127" />
+      <sprite name="rz Exosuit Left Forearm" texture="%ModDir%/suit/rz_pirent.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.65" inheritsourcerect="false" SourceRect="443,119,69,87"  />
+      <sprite name="rz Exosuit Waist" texture="%ModDir%/suit/rz_pirent.png" limb="Waist" hidelimb="true" scale="1.2" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.52,0.9" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="168,271,142,65" />
+      <sprite name="rz Exosuit Right Thigh" texture="%ModDir%/suit/rz_pirent.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="4,234,111,130" />
+      <sprite name="rz Exosuit Left Thigh" texture="%ModDir%/suit/rz_pirent.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" inheritsourcerect="false" sourcerect="4,234,111,130" />
+      <sprite name="rz Exosuit Right Leg" texture="%ModDir%/suit/rz_pirent.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.45,0.7" inheritlimbdepth="true" scale="0.6" inheritsourcerect="false" sourcerect="1,372,87,132" />
+      <sprite name="rz Exosuit Left Leg" texture="%ModDir%/suit/rz_pirent.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.45,0.7" inheritsourcerect="false" scale="0.6" sourcerect="91,372,87,132" />
+      <sprite name="rz Exosuit Left Shoe" texture="%ModDir%/suit/rz_pirent.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="false" inheritorigin="false" origin="0.5,0.63" inheritsourcerect="false" scale="0.7" sourcerect="373,332,108,43" />
+      <sprite name="rz Exosuit Right Shoe" texture="%ModDir%/suit/rz_pirent.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="false" inheritorigin="false" origin="0.5,0.63" inheritsourcerect="false" scale="0.7" sourcerect="373,332,108,43" />
+      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
+      <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="10000.0" SpeedMultiplier="0.7" PropulsionSpeedMultiplier="0.6" setvalue="true" disabledeltatime="true">
+        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" loop="true"/>
+        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" loop="true"/>
+        <TriggerAnimation Type="Walk" FileName="HumanWalkExosuit" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" FileName="HumanRunExosuit" priority="1" ExpectedSpecies="Human" />
+      </StatusEffect> 
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.2" targetslot="1" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" Oxygen="-10.0" Condition="-0.5" targetslot="1" interval="1" disabledeltatime="true">
+        <Conditional IsDead="false" />
+        <RequiredItem items="weldingfueltank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" targetlimbs="Torso" Oxygen="-10.0" Condition="-0.5" targetslot="1" interval="1" disabledeltatime="true">
+        <Conditional IsDead="false" />
+        <RequiredItem items="incendiumfueltank" type="Contained" />
+        <Affliction identifier="burn" amount="3.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.08" targetslot="1" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <sound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" type="OnWearing" range="500.0" volumeproperty="Speed" volume="0.2" loop="true" frequencymultiplier="0.5" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.3" damagesound="LimbArmor"/>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.5" damagesound="LimbArmor"/>
+      <StatValue stattype="FlowResistance" value="0.1" />
+    </Wearable>
+    <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
+      <Containable items="none" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="oxygensource,weldingtoolfuel" />
+      </SubContainer>
+    </ItemContainer>
+    <aitarget maxsightrange="1500" />
+  </Item>
+  <Item name="戎装盗窃者型" identifier="tsm_rz_pirent_k" subcategory="TSM" category="Diving,Equipment" tags="diving,deepdiving,divinggear_wearableindoors,provocative,deepdivinglarge" scale="0.5" fireproof="true" description="" isshootable="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
+    <Deconstruct time="30">
+      <Item identifier="physicorium" />
+      <Item identifier="fulgurium" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="tsm_yx_crystallography" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="false">      
+      <RequiredItem identifier="tsm_rz_2b" />
+      <RequiredItem identifier="tsm_rz_jz" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/suit/rz_pirent.png" sourcerect="382,895,128,128" origin="0.5,0.5" />
+    <Sprite name="rz Exosuit Item" texture="%ModDir%/suit/rz_beta2.png" sourcerect="7,12,237,414" depth="0.55" origin="0.5,0.48" />
+    <Body width="189" height="400" density="15" />
+    <Wearable slots="OuterClothes+RightHand" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
+      <sprite name="rz Exosuit Helmet Wearable" texture="%ModDir%/suit/rz_pirent.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hideotherwearables="true" hidewearablesoftype="" sourcerect="0,0,1,1" origin="0.5,0.5"/>
+      <sprite name="rz Exosuit Torso" texture="%ModDir%/suit/rz_pirent.png" limb="Torso" hidelimb="true" scale="0.6" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.7" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="22,13,169,200">
+        <LightComponent LightColor="150,150,150,255" range="1000" powerconsumption="10" IsOn="true" pulsefrequency="0.1" pulseamount="0.5">
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="2.0,4.0" />
+        </LightComponent>
+      </sprite>
+      <sprite name="rz Exosuit Right Hand" texture="%ModDir%/suit/rz_pirent.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.35" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="338,231,56,61" />
+      <sprite name="rz Exosuit Left Hand" texture="%ModDir%/suit/rz_pirent.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.35" inheritsourcerect="false" SourceRect="448,231,56,61" />
+      <sprite name="rz Exosuit Right Upper Arm" texture="%ModDir%/suit/rz_pirent.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.7" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="326,1,80,108" />
+      <sprite name="rz Exosuit Left Upper Arm" texture="%ModDir%/suit/rz_pirent.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.7" inheritsourcerect="false" SourceRect="436,1,76,104" />
+      <sprite name="rz Exosuit Right Forearm" texture="%ModDir%/suit/rz_pirent.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.44,0.4" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="333,119,71,127" />
+      <sprite name="rz Exosuit Left Forearm" texture="%ModDir%/suit/rz_pirent.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.65" inheritsourcerect="false" SourceRect="443,119,69,87"  />
+      <sprite name="rz Exosuit Waist" texture="%ModDir%/suit/rz_pirent.png" limb="Waist" hidelimb="true" scale="1.2" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.52,0.9" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="168,271,142,65" />
+      <sprite name="rz Exosuit Right Thigh" texture="%ModDir%/suit/rz_pirent.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="4,234,111,130" />
+      <sprite name="rz Exosuit Left Thigh" texture="%ModDir%/suit/rz_pirent.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" inheritsourcerect="false" sourcerect="4,234,111,130" />
+      <sprite name="rz Exosuit Right Leg" texture="%ModDir%/suit/rz_pirent.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.45,0.7" inheritlimbdepth="true" scale="0.6" inheritsourcerect="false" sourcerect="1,372,87,132" />
+      <sprite name="rz Exosuit Left Leg" texture="%ModDir%/suit/rz_pirent.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.45,0.7" inheritsourcerect="false" scale="0.6" sourcerect="91,372,87,132" />
+      <sprite name="rz Exosuit Left Shoe" texture="%ModDir%/suit/rz_pirent.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="false" inheritorigin="false" origin="0.5,0.63" inheritsourcerect="false" scale="0.7" sourcerect="373,332,108,43" />
+      <sprite name="rz Exosuit Right Shoe" texture="%ModDir%/suit/rz_pirent.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="false" inheritorigin="false" origin="0.5,0.63" inheritsourcerect="false" scale="0.7" sourcerect="373,332,108,43" />
+      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
+      <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="10000.0" SpeedMultiplier="0.5" PropulsionSpeedMultiplier="0.6" setvalue="true" disabledeltatime="true">
+        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" loop="true"/>
+        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" loop="true"/>
+        <TriggerAnimation Type="Walk" FileName="HumanWalkExosuit" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" FileName="HumanRunExosuit" priority="1" ExpectedSpecies="Human" />
+      </StatusEffect> 
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.2" targetslot="1" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" Oxygen="-10.0" Condition="-0.5" targetslot="1" interval="1" disabledeltatime="true">
+        <Conditional IsDead="false" />
+        <RequiredItem items="weldingfueltank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" targetlimbs="Torso" Oxygen="-10.0" Condition="-0.5" targetslot="1" interval="1" disabledeltatime="true">
+        <Conditional IsDead="false" />
+        <RequiredItem items="incendiumfueltank" type="Contained" />
+        <Affliction identifier="burn" amount="3.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.08" targetslot="1" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <sound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" type="OnWearing" range="500.0" volumeproperty="Speed" volume="0.2" loop="true" frequencymultiplier="0.5" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.3" damagesound="LimbArmor"/>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.5" damagesound="LimbArmor"/>
+      <StatValue stattype="FlowResistance" value="0.1" />
+    </Wearable>
+    <Holdable slots="OuterClothes+RightHand" controlpose="true" aimpos="70,5" handle1="-25,-7" />
+    <RangedWeapon barrelpos="29,11" spread="7" unskilledspread="15" combatPriority="80" penetration="0.2" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="%ModDir%/ogg/mvdxe.ogg" type="OnUse" selectionmode="All"/>
+      <Sound file="%ModDir%/ogg/mvdxe.ogg" type="OnUse" selectionmode="All"/>
+      <ParticleEmitter particle="explosionsmoke" particleamount="5" velocitymin="0" velocitymax="0" />
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="500.0" force="1" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="15.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="rz_mag" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="55" />
+    </RangedWeapon>
+    <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
+      <Containable items="none" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+      <StatusEffect type="OnWearing" target="Contained">
+        <RequiredItem items="oxygensource" type="Contained" targetslot="1"/>
+        <Conditional condition="lt 5.0" />
+        <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained" playsoundonrequireditemfailure="true">
+        <RequiredItem items="oxygensource" type="Contained" matchonempty="true" targetslot="1"/>
+        <Conditional condition="lte 0.0" />
+        <Sound file="Content/Items/WarningBeep.ogg" range="500" loop="true"/>
+      </StatusEffect>
+      <SubContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet" >
+        <Containable items="rz_mag">
+        </Containable>
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="oxygensource,weldingtoolfuel" />
+      </SubContainer>
+    </ItemContainer>
+    <aitarget maxsightrange="1500" />
+  </Item>
+  <!--Item name="戎装 MK1" identifier="rz_prototype_mk1" subcategory="TSM" category="Diving,Equipment" tags="diving,deepdiving,deepdivinglarge,divinggear_wearableindoors,provocative" scale="0.605" fireproof="true" description="" isshootable="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="0.01">
+    <Deconstruct time="30">
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="exosuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="60" >
+      <RequiredSkill identifier="mechanical" level="70" />
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="5" />
+      <RequiredItem identifier="exosuit" amount="1" />
+      <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
+      <RequiredItem identifier="tsm_ic" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/suit/rz_mk1.png" sourcerect="357,384,147,128" origin="0.5,0.5" />
+    <Sprite name="rz_prototypesuit Item" texture="%ModDir%/suit/mk1.png" sourcerect="108,65,194,369" depth="0.55" origin="0.5,0.72" />
+    <Body width="150" height="230" density="15" />
+    <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
+      <sprite name="rz_prototypesuit Helmet Wearable" texture="%ModDir%/suit/rz_mk1.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" depthlimb="LeftArm" scale="0.43" hideotherwearables="true" hidewearablesoftype="" sourcerect="269,7,96,90" origin="0.35,1.57" />
+      <sprite name="rz_prototypesuit Torso" texture="%ModDir%/suit/rz_mk1.png" limb="Torso" scale="0.95" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.53,0.82" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="1,7,213,214">
+        <LightComponent LightColor="150,150,150,255" range="1200" powerconsumption="10" IsOn="true" pulsefrequency="0.1" pulseamount="0.5">
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.495" size="2.5,4.0" />
+        </LightComponent>
+      </sprite>
+      <sprite name="rz_prototypesuit Right Hand" texture="%ModDir%/suit/rz_mk1.png" limb="RightHand" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.45" scale="0.4" inheritsourcerect="false" SourceRect="449,125,55,69" />
+      <sprite name="rz_prototypesuit Left Hand" texture="%ModDir%/suit/rz_mk1.png" limb="LeftHand" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.45" scale="0.4" inheritsourcerect="false" SourceRect="449,125,55,69" />
+      <sprite name="rz_prototypesuit Right Upper Arm" texture="%ModDir%/suit/rz_mk1.png" limb="RightArm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.9" scale="0.5" inheritsourcerect="false" SourceRect="300,117,106,138" />
+      <sprite name="rz_prototypesuit Left Upper Arm" texture="%ModDir%/suit/rz_mk1.png" limb="LeftArm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.9" scale="0.5" inheritsourcerect="false" SourceRect="300,117,106,138" />
+      <sprite name="rz_prototypesuit Right Forearm" texture="%ModDir%/suit/rz_mk1.png" limb="RightForearm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" scale="0.4" inheritsourcerect="false" SourceRect="441,13,71,91" />
+      <sprite name="rz_prototypesuit Left Forearm" texture="%ModDir%/suit/rz_mk1.png" limb="LeftForearm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" scale="0.4" inheritsourcerect="false" SourceRect="441,13,71,91"  />
+      <sprite name="rz_prototypesuit Waist" texture="%ModDir%/suit/rz_mk1.png" limb="Waist" hidelimb="true" scale="0.6" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.9" inheritsourcerect="false" sourcerect="182,264,109,91" />
+      <sprite name="rz_prototypesuit Right Thigh" texture="%ModDir%/suit/rz_mk1.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" inheritsourcerect="false"  sourcerect="0,288,111,153" />
+      <sprite name="rz_prototypesuit Left Thigh" texture="%ModDir%/suit/rz_mk1.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" inheritsourcerect="false" sourcerect="0,288,111,153" />
+      <sprite name="rz_prototypesuit Right Leg" texture="%ModDir%/suit/rz_mk1.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.45,0.7" scale="0.55" inheritsourcerect="false" sourcerect="134,372,85,139" />
+      <sprite name="rz_prototypesuit Left Leg" texture="%ModDir%/suit/rz_mk1.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.45,0.7" inheritsourcerect="false" scale="0.55" sourcerect="134,372,85,139" />
+      <sprite name="rz_prototypesuit Left Shoe" texture="%ModDir%/suit/rz_mk1.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.6" inheritsourcerect="false" scale="0.6" sourcerect="381,315,121,49" />
+      <sprite name="rz_prototypesuit Right Shoe" texture="%ModDir%/suit/rz_mk1.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.6" inheritsourcerect="false" scale="0.6" sourcerect="381,315,121,49" />
+      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
+      <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="10000.0" SpeedMultiplier="0.5" PropulsionSpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
+        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true"/>
+        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true"/>
+        <TriggerAnimation Type="Walk" FileName="HumanWalkExosuit" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" FileName="HumanRunExosuit" priority="1" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
+        <Affliction identifier="recoilstabilized" amount="1" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.4" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="gt 0.5" />
+      </StatusEffect>      
+      <StatusEffect type="OnWearing" target="Contained,Character" Condition="-0.1" interval="1" disabledeltatime="true" targetslot="1" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="reactorfuel" targetslot="1" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="-10.0" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="lte 0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" Oxygen="-10.0" Condition="-0.5" interval="1" disabledeltatime="true" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="weldingfueltank" targetslot="0" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" targetlimbs="Torso" Oxygen="-10.0" Condition="-0.5" interval="1" disabledeltatime="true" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="incendiumfueltank" targetslot="0" type="Contained" />
+        <Affliction identifier="burn" amount="0.05" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.3" comparison="Or" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygentank" targetslot="0" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.05" comparison="Or" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygenitetank" targetslot="0" type="Contained" />
+      </StatusEffect>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,bitewounds,lacerations" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn,bleeding" damagemultiplier="0.3" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.15" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.1" damagesound="LimbArmor"/>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.3" damagesound="LimbArmor"/>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn" damagemultiplier="0.15" damagesound=""/>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.0" damagesound="LimbArmor"/>
+      <sound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" type="OnWearing" range="500.0" volumeproperty="Speed" volume="0.2" loop="true" frequencymultiplier="0.5" />
+      <StatValue stattype="FlowResistance" value="0.0" />
+    </Wearable>
+    <ItemContainer capacity="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="192,448,64,64" origin="0.5,0.5" />
+      <StatusEffect type="OnWearing" target="Contained" targetslot="0">
+        <RequiredItem items="oxygensource" type="Contained" targetslot="0" />
+        <Conditional condition="lt 5.0" />
+        <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained" targetslot="0" playsoundonrequireditemfailure="true">
+        <RequiredItem items="oxygensource" type="Contained" targetslot="0" matchonempty="true" />
+        <Conditional condition="lte 0.0" />
+        <Sound file="Content/Items/WarningBeep.ogg" range="500" loop="true"/>
+      </StatusEffect>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="oxygensource,weldingtoolfuel" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="reactorfuel">
+          <StatusEffect type="OnContaining" target="This,Character" Voltage="1.0" setvalue="true">
+            <Conditional IsDead="false" />
+          </StatusEffect>
+        </Containable>
+      </SubContainer>
+      <SubContainer capacity="10" maxstacksize="32">
+        <Containable items="smallitem" />
+      </SubContainer>
+    </ItemContainer>
+    <aitarget maxsightrange="1500" />
+  </Item-->
+</Items>
+</Override>

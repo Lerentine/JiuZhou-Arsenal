@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="九州武库" modversion="1.0.100" corepackage="False" steamworkshopid="2953749635" gameversion="1.6.19.1">
+  <Item file="%ModDir%/weapons/bullet.xml" />
+  <Item file="%ModDir%/Jobgear/uniform.xml" />
+  <Item file="%ModDir%/Jobgear/armor.xml" />
+  <Item file="%ModDir%/suit/suit.xml" />
+  <Item file="%ModDir%/suit/戎装计划.xml" />
+  <Item file="%ModDir%/minerals+items+tools/minerals.xml" />
+  <Item file="%ModDir%/minerals+items+tools/items.xml" />
+  <Item file="%ModDir%/medical/medical.xml" />
+  <Item file="%ModDir%/bags/bags.xml" />
+  <Item file="%ModDir%/weapons/奇迹之海/special weapons.xml" />
+  <Item file="%ModDir%/weapons/木卫二联盟/coalition_weapons.xml" />
+  <Item file="%ModDir%/weapons/反抗军/separatists_weapons.xml" />
+  <Item file="%ModDir%/weapons/奇迹之海/tsm_weapons.xml" />
+  <Item file="%ModDir%/weapons/其他/heavy_weapons.xml" />
+  <Item file="%ModDir%/weapons/其他/pistols.xml" />
+  <Item file="%ModDir%/weapons/其他/melee.xml" />
+  <Item file="%ModDir%/weapons/其他/legacy_weapons.xml" />
+  <Item file="%ModDir%/mission/Combat NPC Enhancement.xml" />
+  <Item file="%ModDir%/other/OSA.xml" />
+  <Item file="%ModDir%/other/monster_ai_items.xml" />
+  <Item file="%ModDir%/other/item_over.xml" />
+  <Afflictions file="%ModDir%/other/Afflictions.xml" />
+  <Afflictions file="%ModDir%/other/Afflictions_ai.xml" />
+  <Text file="%ModDir%/text/chinese.xml" />
+  <Particles file="%ModDir%/ParticlePrefabs/ParticlePrefabs.xml" />
+  <Sounds file="%ModDir%/other/sounds.xml" />
+  <UIStyle file="%ModDir%/other/Types.xml" />
+  <RandomEvents file="%ModDir%/mission/OutpostEvents.xml" />
+  <RandomEvents file="%ModDir%/other/OutpostEvents_over.xml" />
+  <NPCSets file="%ModDir%/mission/Combat NPC.xml" />
+  <NPCSets file="%ModDir%/mission/Combat Npc Customisation.xml" />
+  <NPCSets file="%ModDir%/other/tsm_npcs.xml" />
+  <Missions file="%ModDir%/mission/Missions.xml" />
+  <NPCSets file="%ModDir%/mission/OutpostGenerationNpcs.xml" />
+  <Item file="%ModDir%/Fabricators/fabricators.xml" />
+  <Talents file="%ModDir%/job/Talents.xml" />
+  <TalentTrees file="%ModDir%/job/TalentTrees.xml" />
+  <Jobs file="%ModDir%/job/Jobs.xml" />
+  <Character file="%ModDir%/character/sight5/sight5.xml" />
+  <Other file="%ModDir%/Lua/Autorun/init.lua" />
+  <Other file="%ModDir%/Lua/Scripts/Client/weapon_zoom.lua" />
+  <EnemySubmarine file="%ModDir%/ship/ARS-运输.sub" />
+  <EnemySubmarine file="%ModDir%/ship/pirates_tsm_1.sub" />
+</contentpackage>

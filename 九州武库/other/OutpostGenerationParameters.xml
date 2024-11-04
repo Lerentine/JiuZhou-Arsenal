@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OutpostGenerationParameters>
+  <OutpostConfig
+    identifier="tsm_abandoned"
+    totalmodulecount="15"
+    appendtoreachtotalmodulecount="false"
+    minhallwaylength="250"
+    allowedlocationtypes="tsm_abandoned"
+    alwaysdestructible="true"
+    alwaysrewireable="true"
+    allowstealing="true">
+    <modulecount flag="tsm_abandoned_airlock" count="1"/>
+    <modulecount flag="tsm_abandoned_engineeringModule" count="1"/>
+    <modulecount flag="tsm_abandoned_medicalModule" count="1"/>
+    <modulecount flag="tsm_abandoned_researchModule" count="1"/>
+    <modulecount flag="tsm_abandoned_securityModule" count="1"/>
+    <modulecount flag="tsm_abandoned_armoryModule" count="1"/>
+    <modulecount flag="tsm_abandoned_other" count="1"/>
+    <modulecount flag="tsm_abandoned_atrium" count="1"/>
+    <modulecount flag="tsm_abandoned_iceandcave" count="1"/>
+  </OutpostConfig>
+</OutpostGenerationParameters>

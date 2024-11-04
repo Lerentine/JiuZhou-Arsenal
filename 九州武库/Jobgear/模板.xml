@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="模板" identifier="tsm_vest_moban" subcategory="TSM" category="Equipment" tags="smallitem,clothing,vest" scale="0.5" cargocontaineridentifier="tsm_metalcrate" description="" impactsoundtag="impact_soft">
+    <Price baseprice="1242" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" />
+      <Price storeidentifier="merchantresearch" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" multiplier="1.2" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="rubber" />
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="45">
+      <RequiredSkill identifier="weapons" level="42" />
+      <RequiredItem identifier="rubber" amount="2" />
+      <RequiredItem identifier="ballisticfiber" amount="3" />
+      <RequiredItem identifier="organicfiber" amount="3" />
+      <RequiredItem identifier="titanium" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir:2953749635%/Jobgear/模板.png" sourcerect="448,429,52,71" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2953749635%/Jobgear/模板.png" sourcerect="0,433,101,67" depth="0.51" origin="0.5,0.5" />
+    <Body width="120" height="35" density="25" />
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.25" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" />
+      <damagemodifier afflictionidentifiers="burn" armorsector="0.0,360.0" damagemultiplier="0.7" />
+      <damagemodifier afflictionidentifiers="triton_7L" armorsector="0.0,360.0" damagemultiplier="0.45" />
+      <damagemodifier afflictionidentifiers="tsm_bl" armorsector="0.0,360.0" damagemultiplier="0.55" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.3" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.35" />
+      <damagemodifier afflictionidentifiers="huskinfection" armorsector="0.0,360.0" damagemultiplier="0.65" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.65" />
+      <damagemodifier afflictionidentifiers="stun" armorsector="0.0,360.0" damagemultiplier="0.55" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" probabilitymultiplier="0.70" damagesound="LimbArmor" />
+      <sprite name="模板 Torso" texture="%ModDir:2953749635%/Jobgear/模板.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="2,0,133,225" origin="0.5,0.5" />
+      <sprite name="模板 Right Hand" texture="%ModDir:2953749635%/Jobgear/模板.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="384,0,116,112" origin="0.5,0.5" />
+      <sprite name="模板 Left Hand" texture="%ModDir:2953749635%/Jobgear/模板.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="384,112,116,112" origin="0.5,0.5" />
+      <sprite name="模板 Right Lower Arm" texture="%ModDir:2953749635%/Jobgear/模板.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="183,121,100,126" origin="0.5,0.5" />
+      <sprite name="模板 Left Lower Arm" texture="%ModDir:2953749635%/Jobgear/模板.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="282,121,100,126" origin="0.5,0.5" />
+      <sprite name="模板 Right Upper Arm" texture="%ModDir:2953749635%/Jobgear/模板.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="183,0,100,121" origin="0.5,0.5" />
+      <sprite name="模板 Left Upper Arm" texture="%ModDir:2953749635%/Jobgear/模板.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="283,0,99,122" origin="0.5,0.5" />
+      <sprite name="模板 Waist" texture="%ModDir:2953749635%/Jobgear/模板.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="205,247,92,105" origin="0.5,0.5" />
+      <sprite name="模板 Right Thigh" texture="%ModDir:2953749635%/Jobgear/模板.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="-2,228,104,153" origin="0.5,0.5" />
+      <sprite name="模板 Left Thigh" texture="%ModDir:2953749635%/Jobgear/模板.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="101,246,104,154" origin="0.5,0.5" />
+      <sprite name="模板 Right Leg" texture="%ModDir:2953749635%/Jobgear/模板.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="399,227,102,154" origin="0.5,0.5" />
+      <sprite name="模板 Left Leg" texture="%ModDir:2953749635%/Jobgear/模板.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="297,246,104,154" origin="0.5,0.5" />
+      <!--sprite name="模板 Left Shoe" texture="%ModDir:2953749635%/Jobgear/模板.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" origin="0.5,0.5" />
+      <sprite name="模板 Right Shoe" texture="%ModDir:2953749635%/Jobgear/模板.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" origin="0.5,0.5" /-->
+      <sprite name="模板 Boobs" texture="%ModDir:2953749635%/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" />
+      <StatusEffect type="OnWearing" target="Character" PressureProtection="4000.0" SpeedMultiplier="0.9" setvalue="true">
+        <StatValue stattype="FlowResistance" value="0.5" />
+      </StatusEffect>
+    </Wearable>
+  </Item>
+</Items>

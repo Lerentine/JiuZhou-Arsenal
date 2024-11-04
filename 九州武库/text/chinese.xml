@@ -1,0 +1,1393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Simplified Chinese" nowhitespace="true" translatedname="中文(简体)">
+<!--原版-->
+ <locationname.none></locationname.none>
+ <locationnameformat.none>[name]</locationnameformat.none>
+ <locationdescription.tsm_abandoned>已经被遗弃的站点，设施较为完整，但是已经没有人居住了</locationdescription.tsm_abandoned>
+ <locationname.tsm_abandoned>旧世界</locationname.tsm_abandoned>
+ <biomename.thegreatsea>浩瀚汪洋</biomename.thegreatsea>  
+ <randomnews8>联盟正式向反抗军宣战</randomnews8>
+ <randomnews9>奇迹之海为你保驾护航</randomnews9>
+<!--mod内容-->
+<!--天赋-->
+ <talentname.tsm_ai_asphyxiating_pressure>金狮子</talentname.tsm_ai_asphyxiating_pressure>
+ <talentname.tsm_lightningwizard>反刺甲</talentname.tsm_lightningwizard>
+ <talentname.tsm_ai_stun>强力反应</talentname.tsm_ai_stun>
+<!--伤害类型-->
+
+ <afflictionname.triton_7L>变革</afflictionname.triton_7L>
+ <afflictiondescription.triton_7L>被变革7L型击中的伤口，呈现诱发性腐败，不及时处理会诱发氚中毒造成的灼烧等</afflictiondescription.triton_7L>
+ <afflictioncauseofdeath.triton_7L>严重的氚核破坏了你身体的组织</afflictioncauseofdeath.triton_7L>
+ <afflictioncauseofdeathself.triton_7L>氚核充满你的身体，你开始腐烂溃败。</afflictioncauseofdeathself.triton_7L>
+ <afflictiondescription.triton_7L.low>目前造成的伤口看起来并不严重，但是有恶化风险</afflictiondescription.triton_7L.low>
+ <afflictiondescription.triton_7L>子弹贯穿了你的身体，创伤处有强烈的灼烧感，一部分身体组织被带出。</afflictiondescription.triton_7L>
+
+ <afflictionname.triton_9C>氚中毒</afflictionname.triton_9C>
+ <afflictiondescription.triton_9C>被击中的部分开始腐烂，你感觉胃里在翻腾，想呕吐。</afflictiondescription.triton_9C>
+ <afflictiondescription.triton_9C.low.self>伤口处开始出现灼烧感，感觉像是着火了一样</afflictiondescription.triton_9C.low.self>
+ <afflictiondescription.triton_9C.high.self>你开始头晕呕吐，伤口腐烂溃败</afflictiondescription.triton_9C.high.self>
+ <afflictiondescription.triton_9C.high>你无法停止呕吐，他们出现了溃疡和各种软组织腐败的症状。</afflictiondescription.triton_9C.high>
+
+ <afflictionname.triton_burn>氚灼烧</afflictionname.triton_burn>
+ <afflictiondescription.triton_burn>伤口处开始出现灼烧感</afflictiondescription.triton_burn>
+
+ <afflictionname.tsm_armorbreak_jz>碎甲</afflictionname.tsm_armorbreak_jz>
+ <afflictiondescription.tsm_armorbreak_jz>更容易被子弹击穿</afflictiondescription.tsm_armorbreak_jz>
+
+ <entityname.triton_9C_antidote>特殊伤害清除剂</entityname.triton_9C_antidote>
+ <entitydescription.triton_9C_antidote>用于治疗特殊伤害的药品</entitydescription.triton_9C_antidote>
+
+ <afflictionname.zlyz>重力压制</afflictionname.zlyz>
+ <afflictiondescription.zlyz>你感觉到一股无形的压力使你动弹不得</afflictiondescription.zlyz>
+ <afflictioncauseofdeath.zlyz>沉重</afflictioncauseofdeath.zlyz>
+ <afflictioncauseofdeathself.zlyz>无视规矩的后果</afflictioncauseofdeathself.zlyz>
+
+ <afflictionname.zlqy>重力牵引</afflictionname.zlqy>
+ <afflictiondescription.zlqy>让我们一起沉沦在善与恶编织下的黑幕中吧</afflictiondescription.zlqy>
+ <afflictioncauseofdeath.zlqy>湮灭</afflictioncauseofdeath.zlqy>
+ <afflictioncauseofdeathself.zlqy>丧钟已经敲响</afflictioncauseofdeathself.zlqy>
+
+ <afflictionname.tsm_bl>爆裂</afflictionname.tsm_bl>
+ <afflictiondescription.tsm_bl>子弹击中人体后，爆炸形成的破片、气压对人体产生直接杀伤，看起来不把这些伤口治疗好，那治疗其他伤口的效果都会减半</afflictiondescription.tsm_bl>
+ <afflictioncauseofdeath.tsm_bl>身体已经破裂</afflictioncauseofdeath.tsm_bl>
+ <afflictioncauseofdeathself.tsm_bl>死于高爆弹</afflictioncauseofdeathself.tsm_bl>
+ <afflictiondescription.tsm_bl.low>一些小破片在子弹爆炸后进入了你的身体，看起来不把这些伤口治疗好，那治疗其他伤口的效果都会减半</afflictiondescription.tsm_bl.low>
+ <afflictiondescription.tsm_bl>高爆弹摧毁了你的一些身体组织，破片、气压在你身体内肆虐。</afflictiondescription.tsm_bl>
+
+ <afflictionname.tsm_aftermath_success>优质战地治疗</afflictionname.tsm_aftermath_success>
+ <afflictiondescription.tsm_aftermath_success>良好的治疗，受伤的部位被治疗和包扎的很好，但还是会影响你的维修和武器使用，也不方便行动\n-50%维修速度\n-30武器操作等级\n-20%移动速度</afflictiondescription.tsm_aftermath_success>
+
+ <afflictionname.tsm_aftermath_failure>较差的战地治疗</afflictionname.tsm_aftermath_failure>
+ <afflictiondescription.tsm_aftermath_failure>医生只是保证你不死在前线，伤口各处处理的较差，你能够暂时的移动，但是一动起来浑身都开始疼\n-70%维修速度\n-50武器操作\n-15医疗等级\n现在你只能行走</afflictiondescription.tsm_aftermath_failure>
+
+ <afflictionname.tsm_armor_allbuff>全防护插板</afflictionname.tsm_armor_allbuff>
+ <afflictiondescription.tsm_armor_allbuff>多种类型伤害防护</afflictiondescription.tsm_armor_allbuff>
+
+ <afflictionname.tsm_armor_bleeding>流血防护</afflictionname.tsm_armor_bleeding>
+ <afflictiondescription.tsm_armor_bleeding>防护类型：流血</afflictiondescription.tsm_armor_bleeding>
+
+ <afflictionname.tsm_armor_lacerations>撕裂伤防护</afflictionname.tsm_armor_lacerations>
+ <afflictiondescription.tsm_armor_lacerations>防护类型：撕裂伤</afflictiondescription.tsm_armor_lacerations>
+
+ <afflictionname.tsm_armor_stun>眩晕防护</afflictionname.tsm_armor_stun>
+ <afflictiondescription.tsm_armor_stun>防护类型：眩晕</afflictiondescription.tsm_armor_stun>
+
+ <afflictionname.tsm_armor_blunttrauma>钝器伤防护</afflictionname.tsm_armor_blunttrauma>
+ <afflictiondescription.tsm_armor_blunttrauma>防护类型：钝器伤</afflictiondescription.tsm_armor_blunttrauma>
+
+ <afflictionname.tsm_armor_huskinfection>画皮防护</afflictionname.tsm_armor_huskinfection>
+ <afflictiondescription.tsm_armor_huskinfection>防护类型：画皮病毒</afflictiondescription.tsm_armor_huskinfection>
+
+ <afflictionname.tsm_armor_paralysis>麻痹防护</afflictionname.tsm_armor_paralysis>
+ <afflictiondescription.tsm_armor_paralysis>防护类型：麻痹</afflictiondescription.tsm_armor_paralysis>
+
+ <afflictionname.tsm_armor_triton>特殊伤害防护</afflictionname.tsm_armor_triton>
+ <afflictiondescription.tsm_armor_triton>防护类型：氚中毒、爆裂</afflictiondescription.tsm_armor_triton>
+
+ <afflictionname.tsm_armor_bitewounds>咬伤防护</afflictionname.tsm_armor_bitewounds>
+ <afflictiondescription.tsm_armor_bitewounds>防护类型：咬伤</afflictiondescription.tsm_armor_bitewounds>
+
+ <afflictionname.tsm_armor_explosiondamage>爆炸防护</afflictionname.tsm_armor_explosiondamage>
+ <afflictiondescription.tsm_armor_explosiondamage>防护类型：深层组织损伤</afflictiondescription.tsm_armor_explosiondamage>
+
+ <afflictionname.tsm_armor_gunshotwound>枪伤防护</afflictionname.tsm_armor_gunshotwound>
+ <afflictiondescription.tsm_armor_gunshotwound>防护类型：枪伤</afflictiondescription.tsm_armor_gunshotwound>
+
+ <afflictionname.tsm_kep_buff>三神丘辅助系统</afflictionname.tsm_kep_buff>
+ <afflictiondescription.tsm_kep_buff>小幅度增加操作者的伤害以及眩晕抗性，这套系统还能使操作者拥有更快的射击速度。\n\n三神丘小队吗？很可惜我一个都没留住，但是他们的牺牲为接下来的操作者们铺平了道路</afflictiondescription.tsm_kep_buff>
+
+ <afflictionname.tsm_anger>嗔</afflictionname.tsm_anger>
+ <afflictiondescription.tsm_anger>实验性针剂\n\n研发地：九州研究所\n\n强化类型：\n陆地/水里移动速度20%\n最大生命值20%\n近战攻速20%\n近战伤害15%\n\n使用权限：Ⅱ</afflictiondescription.tsm_anger>
+
+<!--标识-->
+ <semi_auto>半自动</semi_auto>
+ <fullauto>全自动</fullauto>
+ <burst>三连发</burst>
+ <nightvision>启用夜视仪</nightvision>
+ <thermalgoggles>启用热成像</thermalgoggles>
+ <burst>三连发</burst>
+ <laser>激光指示器</laser>
+ <pucsscooter>推进系统</pucsscooter>
+ <lightswitch>天光系统</lightswitch>
+ <mode.laser>切割模式</mode.laser>
+ <mode.charge>聚能模式</mode.charge>
+ <subcategory.TSM>奇迹之海为你保驾护航\n不以成败论英雄</subcategory.TSM>
+ <mapentitycategory.tsm_ammo>奇迹之海弹药</mapentitycategory.tsm_ammo>
+ <subcategory.the_adventists>降临派</subcategory.the_adventists>
+ <subcategory.tsm_separatists>反抗军</subcategory.tsm_separatists>
+ <subcategory.tsm_coalition>联盟</subcategory.tsm_coalition>
+ <displayname.防护服改造>[itemname] (防护服改造)</displayname.防护服改造>
+<!--药品-->
+ <entityname.triton_9C_antidote>特殊伤害清除剂</entityname.triton_9C_antidote>
+ <entitydescription.triton_9C_antidote>用于治疗氚中毒、变革伤以及爆裂伤的药品</entitydescription.triton_9C_antidote>
+
+ <entityname.tsm_medicalkits>医疗包</entityname.tsm_medicalkits>
+ <entitydescription.tsm_medicalkits>奇迹之海生产的标准医疗包，其内部装有的医疗器械足矣让你在战场上应对大多数常见情况，用于治疗物理伤害、烧伤、流血。这种医疗包造价并不高昂，一旦售出不退不换。</entitydescription.tsm_medicalkits>
+
+ <entityname.tsm_medicalkits_s>增强型医疗包</entityname.tsm_medicalkits_s>
+ <entitydescription.tsm_medicalkits_s>奇迹之海生产的增强医疗包，其内部装有的医疗物资足矣让你进行一场战地手术，用于治疗物理伤害、烧伤、流血。这种医疗包造价高昂，但物有所值。</entitydescription.tsm_medicalkits_s>
+
+ <entityname.tsm_anger>增强针剂</entityname.tsm_anger>
+ <entitydescription.tsm_anger>搭配操作者辅助系统使用，可以增强人的作战能力。</entitydescription.tsm_anger>
+
+<!--矿物/金属/物品-->
+ <entityname.tsm_tungstenore>钨矿</entityname.tsm_tungstenore>
+ <entitydescription.tsm_tungstenore></entitydescription.tsm_tungstenore>
+
+ <entityname.tsm_tungsten>钨</entityname.tsm_tungsten>
+ <entitydescription.tsm_tungsten></entitydescription.tsm_tungsten>
+
+ <entityname.tsm_sulphurore>硫磺矿</entityname.tsm_sulphurore>
+ <entitydescription.tsm_sulphurore></entitydescription.tsm_sulphurore>
+
+ <entityname.tsm_sulphur>硫磺</entityname.tsm_sulphur>
+ <entitydescription.tsm_sulphur></entitydescription.tsm_sulphur>
+
+ <entityname.tsm_kore>异星矿蔟</entityname.tsm_kore>
+ <entitydescription.tsm_kore></entitydescription.tsm_kore>
+
+ <entityname.tsm_oilshaleore>油页岩矿蔟</entityname.tsm_oilshaleore>
+ <entitydescription.tsm_oilshaleore></entitydescription.tsm_oilshaleore>
+
+ <entityname.tsm_oilshale>油页岩</entityname.tsm_oilshale>
+ <entitydescription.tsm_oilshale></entitydescription.tsm_oilshale>
+
+ <entityname.tsm_yx_crystallography>亚希晶体</entityname.tsm_yx_crystallography>
+ <entitydescription.tsm_yx_crystallography></entitydescription.tsm_yx_crystallography>
+
+ <entityname.tsm_hengberley_star>恒伯利之星</entityname.tsm_hengberley_star>
+ <entitydescription.tsm_hengberley_star></entitydescription.tsm_hengberley_star>
+
+ <entityname.tsm_pq>喷漆</entityname.tsm_pq>
+ <entitydescription.tsm_pq>站点的大型工业设备才能制造，可以拿来给枪械喷上自己喜欢的涂装</entitydescription.tsm_pq>
+
+ <entityname.tsm_lm_weaponbox>联盟武器零件箱</entityname.tsm_lm_weaponbox>
+ <entitydescription.tsm_lm_weaponbox>里面是一些通用零件与一次性工具，可以用来制造与改装联盟制式武器</entitydescription.tsm_lm_weaponbox>
+
+ <entityname.tsm_yh_weaponbox>反抗军武器零件箱</entityname.tsm_yh_weaponbox>
+ <entitydescription.tsm_yh_weaponbox>里面是一些通用零件与一次性工具，可以用来改装与制造反抗军制式武器。</entitydescription.tsm_yh_weaponbox>
+
+ <entityname.tsm_handgun_box>手枪套件</entityname.tsm_handgun_box>
+ <entitydescription.tsm_handgun_box>一套通用手枪粗模，可以根据需求自行改造为想要的手枪</entitydescription.tsm_handgun_box>
+
+ <entityname.tsm_plastic>工程塑料</entityname.tsm_plastic>
+ <entitydescription.tsm_plastic></entitydescription.tsm_plastic>
+
+ <entityname.tsm_pyrotechnic>瓶装高级弹药推进剂</entityname.tsm_pyrotechnic>
+ <entitydescription.tsm_pyrotechnic></entitydescription.tsm_pyrotechnic>
+
+ <entityname.tsm_item_box>零件盒</entityname.tsm_item_box>
+ <entitydescription.tsm_item_box></entitydescription.tsm_item_box>
+
+ <entityname.tsm_hpc>高精枪械组件</entityname.tsm_hpc>
+ <entitydescription.tsm_hpc></entitydescription.tsm_hpc>
+
+ <entityname.tsm_ic>集成电路</entityname.tsm_ic>
+ <entitydescription.tsm_ic></entitydescription.tsm_ic>
+
+ <entityname.tsm_hydrocarbons>桶装油气</entityname.tsm_hydrocarbons>
+ <entitydescription.tsm_hydrocarbons></entitydescription.tsm_hydrocarbons>
+
+ <entityname.tsm_blueprint>联盟枪械蓝图</entityname.tsm_blueprint>
+ <entitydescription.tsm_blueprint>上面记录了联盟制式武器的设计图，可以对照着制造联盟制式武器</entitydescription.tsm_blueprint>
+
+ <entityname.tsm_blueprint1>奇迹之海枪械蓝图</entityname.tsm_blueprint1>
+ <entitydescription.tsm_blueprint1>上面记录了奇迹之海枪械的设计图，可以拿来对照着制造枪械</entitydescription.tsm_blueprint1>
+
+ <entityname.tsm_bg_licences>奇迹之海变革弹许可证</entityname.tsm_bg_licences>
+ <entitydescription.tsm_bg_licences>在npc处用以兑换氚核心包的凭证</entitydescription.tsm_bg_licences>
+
+ <entityname.tsm_triton_bag>奇迹之海氚核心包</entityname.tsm_triton_bag>
+ <entitydescription.tsm_triton_bag>一小包氚核心，用以在加工台制作与变革弹相关的物品。这种包装并不能完全避免内部氚核心的泄露，还需要装进奇迹之海异常事物收容箱内，才能避免被灼烧。</entitydescription.tsm_triton_bag>
+
+ <entityname.tsm_danger_box>奇迹之海异常事物收容箱</entityname.tsm_danger_box>
+ <entitydescription.tsm_danger_box>专业收容异常事物，内置两个格子。</entitydescription.tsm_danger_box>
+
+ <entityname.tsm_fabricator>武器弹药加工台</entityname.tsm_fabricator>
+ <entitydescription.tsm_fabricator>用于制作九州武库内所有的弹药和枪械\n安装方式：拿在手上，右键对准然后按使用键（默认E键）即可安装。</entitydescription.tsm_fabricator>
+
+
+<!--装备-->
+  <entityname.tsm_bulletproof>胸挂</entityname.tsm_bulletproof>
+  <entitydescription.tsm_bulletproof>也许是那些喜欢携带大量弹药的士兵实在是受不了了，这件胸挂就出现在了木卫二上。用减少了防护效果为代价，得到了更多的携行包用来装更多的东西</entitydescription.tsm_bulletproof>
+
+  <entityname.tsm_medical_vest>前线医疗官防弹衣</entityname.tsm_medical_vest>
+  <entitydescription.tsm_medical_vest>白色的防弹衣上有许多可以存放药物的携行包，这些无不向周围的人告诉穿戴者是一个用药好手，如果受伤了，找他准没错</entitydescription.tsm_medical_vest>
+
+  <entityname.tsm_general_vest>通用防弹衣</entityname.tsm_general_vest>
+  <entitydescription.tsm_general_vest>普普通通的一件防弹衣，有一定的防弹性能与两个携行包</entitydescription.tsm_general_vest>
+ <!--奇迹之海-->
+  <entityname.tsm_old_uniform>老式作战服</entityname.tsm_old_uniform>
+  <entitydescription.tsm_old_uniform>奇迹之海制式作战服，虽然性能不及各部门的新款作战服，但便宜耐操的属性，仍受到大多数战术的喜爱。</entitydescription.tsm_old_uniform>
+
+  <entityname.tsm_old_vest>老式防弹衣</entityname.tsm_old_vest>
+  <entitydescription.tsm_old_vest>比普通防弹衣更多的防护部位，但是防护性能并不是特别好</entitydescription.tsm_old_vest>
+
+  <entityname.tsm_advanced_uniform>先进作战服</entityname.tsm_advanced_uniform>
+  <entitydescription.tsm_advanced_uniform>先进作战部的制服</entitydescription.tsm_advanced_uniform>
+
+  <entityname.tsm_sundawn_uniform>日暮山安保服</entityname.tsm_sundawn_uniform>
+  <entitydescription.tsm_sundawn_uniform>日暮山作战部在内部安保期间穿的安保服。</entitydescription.tsm_sundawn_uniform>
+  
+  <entityname.tsm_pgvest>奇迹之海插板防弹衣</entityname.tsm_pgvest>
+  <entitydescription.tsm_pgvest>由九州武库改装的防弹衣，增加插板槽，可以放入对应插板来防护对应的伤害。</entitydescription.tsm_pgvest>
+
+  <entityname.tsm_heavy_vest>奇迹之海新式防弹衣</entityname.tsm_heavy_vest>
+  <entitydescription.tsm_heavy_vest>奇迹之海为了应对更复杂的环境而发放的防弹衣，拥有更多的防护的同时，并不会对战士们的行动产生不便，也具有更多的战术挂载部位</entitydescription.tsm_heavy_vest>
+
+  <entityname.tsm_pgc_uniform>亲卫队作战服</entityname.tsm_pgc_uniform>
+  <entitydescription.tsm_pgc_uniform>专供莱伦汀亲卫队使用的作战服，上面有大量方便加工的装饰与花纹，坚固耐磨且舒适度极佳，隐藏在装饰性设计下的小兜可以装下几个弹匣或者手榴弹。</entitydescription.tsm_pgc_uniform>
+
+  <entityname.tsm_pgc_helmet>亲卫队头盔</entityname.tsm_pgc_helmet>
+  <entitydescription.tsm_pgc_helmet>亲卫队制式头盔，预留芯片位置，安装不同芯片获得不同的效果。</entitydescription.tsm_pgc_helmet>
+
+  <entityname.tsm_jz_uniform>九州作战服</entityname.tsm_jz_uniform>
+  <entitydescription.tsm_jz_uniform>九州作战部的制服。强化了一些对抗钝器击打与咬伤的效果，衣服上的携行包也可以装入一点装备，体感也较为舒适。</entitydescription.tsm_jz_uniform>
+
+  <entityname.tsm_jz_helmet>九州作战头盔</entityname.tsm_jz_helmet>
+  <entitydescription.tsm_jz_helmet>九州作战部制式头盔，以先进作战头盔作为基底改造而成，内置夜视仪，需要插电启动。</entitydescription.tsm_jz_helmet>
+
+  <entityname.tsm_jz_vest>九州作战甲胄</entityname.tsm_jz_vest>
+  <entitydescription.tsm_jz_vest>九州作战部制式甲胄，以先进作战作战甲胄作为基底而成，定期维护以保证足够防护效能。</entitydescription.tsm_jz_vest>
+
+  <entityname.tsm_riotcontrol_helmet>奇迹之海防暴头盔</entityname.tsm_riotcontrol_helmet>
+  <entitydescription.tsm_riotcontrol_helmet>不管是民用武器还是棍棒刀刃，都能有效阻止它们伤害到佩戴者的头部</entitydescription.tsm_riotcontrol_helmet>
+
+  <entityname.tsm_heavycombat_helmet>奇迹之海重型战斗头盔</entityname.tsm_heavycombat_helmet>
+  <entitydescription.tsm_heavycombat_helmet>加厚了内衬，拥有更强的抗击打能力</entitydescription.tsm_heavycombat_helmet>
+
+  <entityname.tsm_helmet_respirator>奇迹之海重型防毒头盔</entityname.tsm_helmet_respirator>
+  <entitydescription.tsm_helmet_respirator></entitydescription.tsm_helmet_respirator>
+
+  <entityname.tsm_helmet_outpost_combat>奇迹之海'怒江'作战头盔</entityname.tsm_helmet_outpost_combat>
+  <entitydescription.tsm_helmet_outpost_combat>奇迹之海专为站点突袭打造的一款特种作战头盔，目前只装备了一小部分站点突袭部队。</entitydescription.tsm_helmet_outpost_combat>
+
+  <entityname.tsm_nujiang_uniform>奇迹之海'怒江'作战服</entityname.tsm_nujiang_uniform>
+  <entitydescription.tsm_nujiang_uniform>一款饱受设计诟病的作战服，并不是说他防护效果不好，而是整体外形更像是水电工。所以每次站点突袭中队出任务时，总有人会调侃道又要去给某个站点通厕所了。</entitydescription.tsm_nujiang_uniform>
+
+ <!--联盟-->
+  <entityname.lm_rapidreaction_helmet>联盟快速反应作战头盔</entityname.lm_rapidreaction_helmet>
+  <entitydescription.lm_rapidreaction_helmet>专供快速反应部队使用的头盔，拥有抵御子弹直击能力的同时，还有夜视功能，记得及时更换电池来保证装备与信息优势</entitydescription.lm_rapidreaction_helmet>
+
+  <entityname.lm_rapidreaction_vest>联盟快速反应防弹衣</entityname.lm_rapidreaction_vest>
+  <entitydescription.lm_rapidreaction_vest>专供联盟特遣队使用的防弹衣，比普通防弹衣更加坚固，防弹效果非常好，在分裂战争中大放异彩，保护了多名特遣队队员的生命</entitydescription.lm_rapidreaction_vest>
+
+  <entityname.lm_rapidreaction_uniform>联盟快速反应作战服</entityname.lm_rapidreaction_uniform>
+  <entitydescription.lm_rapidreaction_uniform>专供联盟特遣队使用的作战服，虽然不能防弹，但是坚固耐用且保暖，衣服上的袋子可以让穿着者携带更多物品。</entitydescription.lm_rapidreaction_uniform>
+  
+  <entityname.lm_fast_helmet>联盟突击头盔</entityname.lm_fast_helmet>
+  <entitydescription.lm_fast_helmet>制式头盔，被大量分发给基层士兵，大量的挂点使其拥有丰富的改造选项</entitydescription.lm_fast_helmet>
+
+  <entityname.lm_fast_helmet_headset>联盟突击通讯头盔</entityname.lm_fast_helmet_headset>
+  <entitydescription.lm_fast_helmet_headset>安装有一副无线电耳机，让军官与同僚的声音可以更快地传递到士兵耳中</entitydescription.lm_fast_helmet_headset>
+
+  <entityname.lm_fast_helmet_faceshield>联盟突击头盔（防弹面罩）</entityname.lm_fast_helmet_faceshield>
+  <entitydescription.lm_fast_helmet_faceshield>一大块透明的防弹面罩被安装在上面，使原本最为危险的面部也有了一定的防护</entitydescription.lm_fast_helmet_faceshield>
+
+  <entityname.lm_fast_helmet_thermalgoggles>联盟突击头盔（热成像）</entityname.lm_fast_helmet_thermalgoggles>
+  <entitydescription.lm_fast_helmet_thermalgoggles>安装有一副头戴式单兵热成像仪的制式头盔，出色的悬挂系统让重心始终未变，记得勤换电池保证热成像仪处于可用状态</entitydescription.lm_fast_helmet_thermalgoggles>
+
+  <entityname.lm_fast_helmet_protectivejaw>联盟突击头盔（护颚）</entityname.lm_fast_helmet_protectivejaw>
+  <entitydescription.lm_fast_helmet_protectivejaw>带有护颚的通讯耳机，对佩戴者的保护更上一层楼</entitydescription.lm_fast_helmet_protectivejaw>
+
+  <entityname.lm_beowulf_helmet>联盟贝奥武夫头盔</entityname.lm_beowulf_helmet>
+  <entitydescription.lm_beowulf_helmet>贝奥武夫中队所配备的制式头盔，优越的性能让优秀的士兵可以更加从容地执行战术与命令</entitydescription.lm_beowulf_helmet>
+
+  <entityname.lm_beowulf_uniform>联盟贝奥武夫作战服服</entityname.lm_beowulf_uniform>
+  <entitydescription.lm_beowulf_uniform>贝奥武夫中队所配备的制式作战服</entitydescription.lm_beowulf_uniform>
+
+  <entityname.lm_occupation_helmet>联盟占领军作战头盔</entityname.lm_occupation_helmet>
+  <entitydescription.lm_occupation_helmet>加装了护颚与大块透明防护面罩的头盔，能有效防弹防割，对碰撞产生的脑震荡也能有效避免</entitydescription.lm_occupation_helmet>
+
+  <entityname.lm_crosstalk_helmet>联盟串扰中队头盔</entityname.lm_crosstalk_helmet>
+  <entitydescription.lm_crosstalk_helmet></entitydescription.lm_crosstalk_helmet>
+
+  <entityname.lm_vest_pt>联盟防弹衣</entityname.lm_vest_pt>
+  <entitydescription.lm_vest_pt>制式防弹衣，性能中规中矩，特点是较少的携行包与不影响士兵活动的设计</entitydescription.lm_vest_pt>
+
+  <entityname.lm_vest_elite>联盟精锐防弹衣</entityname.lm_vest_elite>
+  <entitydescription.lm_vest_elite>使用了新材料制造的防弹衣，在原有设计上拥有了更强的防护性能，但是携行包依旧只有那几个</entitydescription.lm_vest_elite>
+
+  <entityname.lm_vest_beowulf>联盟贝奥武夫防弹衣</entityname.lm_vest_beowulf>
+  <entitydescription.lm_vest_beowulf>性能优秀还不失轻便，同时这款防弹衣还特别加装了更多的携行包，让穿戴者可以携带更多弹药用来完成任务</entitydescription.lm_vest_beowulf>
+
+  <entityname.lm_vest_occupation>联盟占领军防弹衣</entityname.lm_vest_occupation>
+  <entitydescription.lm_vest_occupation>这件厚实的防弹衣能有效保护穿戴者，几个容量可观的携行包能让士兵携带更多弹药。就是太厚了会影响士兵使用武器与工具</entitydescription.lm_vest_occupation>
+
+  <entityname.lm_stormyseas_uniform>联盟骇浪作战服</entityname.lm_stormyseas_uniform>
+  <entitydescription.lm_stormyseas_uniform>联盟常见的作战服，虽然没有可以存放弹匣的地方，但是优秀的品控让它没收到过差评</entitydescription.lm_stormyseas_uniform>
+
+ <!--反抗军-->
+  <entityname.fkj_anonymous_uniform>反抗军尖锐突袭者作战服</entityname.fkj_anonymous_uniform>
+  <entitydescription.fkj_anonymous_uniform>使用了新材料制作的作战服，用轻微牺牲防弹性能的代价换取了抗腐蚀性与抗大出血的功能，四个大兜让穿戴者可以带更多的弹药。不过手套问题依旧没有解决，还是不建议穿戴者使用医疗用品。</entitydescription.fkj_anonymous_uniform>
+
+  <entityname.fkj_abyssrambler_uniform>反抗军作战服</entityname.fkj_abyssrambler_uniform>
+  <entitydescription.fkj_abyssrambler_uniform>反抗军制式作战服，用料扎实，质量不错，缝在上面的几个小兜可以让士兵携带点私人物品或弹药。因为手套用料过于扎实(太厚了)，不建议士兵使用医疗用品。</entitydescription.fkj_abyssrambler_uniform>
+
+  <entityname.fkj_yehuo_uniform>野火反抗军作战服</entityname.fkj_yehuo_uniform>
+  <entitydescription.fkj_yehuo_uniform>一件优秀的作战服，穿戴体验相当不错。不知道为什么，穿戴者使用工具时会显得笨手笨脚的</entitydescription.fkj_yehuo_uniform>
+  
+  <entityname.fkj_fast_helmet>反抗军突击头盔</entityname.fkj_fast_helmet>
+  <entitydescription.fkj_fast_helmet>制式头盔，虽然性能勉勉强强，但是设计师为其预设了一堆插槽用来进行自定义改装与升级</entitydescription.fkj_fast_helmet>
+
+  <entityname.fkj_fast_helmet_reinforce>反抗军增强型突击头盔</entityname.fkj_fast_helmet_reinforce>
+  <entitydescription.fkj_fast_helmet_reinforce>增加了护耳，更换了更好的内衬与减震设计，可以有效降低佩戴者被剧烈碰撞撞出脑震荡的概率。</entitydescription.fkj_fast_helmet_reinforce>
+
+  <entityname.fkj_fast_helmet_thermalgoggles>反抗军热成像头盔</entityname.fkj_fast_helmet_thermalgoggles>
+  <entitydescription.fkj_fast_helmet_thermalgoggles>安装了一副头戴式单兵热成像仪的，因为重心偏移，受击后头盔并不稳定，防护效果稍微降低。如果你想一直使用热成像带来的便利，记得勤换电池</entitydescription.fkj_fast_helmet_thermalgoggles>
+
+  <entityname.fkj_Anonymous_helmet>反抗军尖锐突袭者头盔</entityname.fkj_Anonymous_helmet>
+  <entitydescription.fkj_Anonymous_helmet>加装了护耳与护目镜，使用了全新的缓冲结构，使士兵可以有效抵抗联盟的新式弹药。</entitydescription.fkj_Anonymous_helmet>
+
+  <entityname.fkj_yehuo_helmet>野火反抗军作战头盔</entityname.fkj_yehuo_helmet>
+  <entitydescription.fkj_yehuo_helmet>新型全防护头盔，给您的头部最好的保护，就连下巴都在它的防护之内！</entitydescription.fkj_yehuo_helmet>
+
+  <entityname.fkj_heavy_helmet>反抗军精英头盔</entityname.fkj_heavy_helmet>
+  <entitydescription.fkj_heavy_helmet></entitydescription.fkj_heavy_helmet>
+
+  <entityname.fkj_vest_pt>反抗军防弹衣</entityname.fkj_vest_pt>
+  <entitydescription.fkj_vest_pt>没什么好说的，就一件反抗军制式防弹衣，有几个携行包可以塞弹匣和手雷</entitydescription.fkj_vest_pt>
+
+  <entityname.fkj_vest_elite>反抗军精英防弹衣</entityname.fkj_vest_elite>
+  <entitydescription.fkj_vest_elite>在普通防弹衣的基础上改进了内部设计与材料革新，给士兵提供了一些抵抗联盟新型子弹的能力，但是携行包依旧不多</entitydescription.fkj_vest_elite>
+
+  <entityname.fkj_heavy_vest>反抗军重型防弹衣</entityname.fkj_heavy_vest>
+  <entitydescription.fkj_heavy_vest>厚重的防弹衣，给穿戴者满满的安全感，穿上它，你就是潜艇巷战里最厚的肉盾！(反抗军建议您不要真的去当肉盾，记得带个盾牌)</entitydescription.fkj_heavy_vest>
+
+  <entityname.fkj_vest_yehuo>野火反抗军防弹衣</entityname.fkj_vest_yehuo>
+  <entitydescription.fkj_vest_yehuo>反抗军精英中的精英才能拥有的防弹衣，新型材料的大量使用与优秀的束带结构让这件防弹衣拥有相当高的防弹性能与出血抗性，就连联盟的新型子弹都能抵挡一二</entitydescription.fkj_vest_yehuo>
+
+ <!--降临派-->
+ <entityname.adventists_uniform>降临派首领教袍</entityname.adventists_uniform>
+ <entitydescription.adventists_uniform>降临派头目、首领经常穿的教袍、他们身份的象征、在寒冷的冰面下，穿着还挺暖和</entitydescription.adventists_uniform>
+
+ <entityname.adventists_Wind_proof>降临派防风外套</entityname.adventists_Wind_proof>
+ <entitydescription.adventists_Wind_proof></entitydescription.adventists_Wind_proof>
+
+<!--插板-->
+ <entityname.tsm_armor_allbuff>TSM科技-全防护插板</entityname.tsm_armor_allbuff>
+ <entitydescription.tsm_armor_allbuff>由墨尔幽丝研发全防护装甲板，集成了各类装甲板的防护类型，可以达到更多的防护效果；但代价比起单种类型的防护，它更容易损坏，且防护等级达不到最高要求。</entitydescription.tsm_armor_allbuff>
+
+ <entityname.tsm_armor_bleeding>TSM科技-流血防护插板</entityname.tsm_armor_bleeding>
+ <entitydescription.tsm_armor_bleeding>流血防护装甲板\n\n研发地：九州武库\n\n防护类型：流血\n\n防护等级：Ⅲ</entitydescription.tsm_armor_bleeding>
+
+ <entityname.tsm_armor_lacerations>TSM科技-撕裂防护插板</entityname.tsm_armor_lacerations>
+ <entitydescription.tsm_armor_lacerations>撕裂伤防护装甲板\n\n研发地：九州武库\n\n防护类型：撕裂伤\n\n防护等级：Ⅲ</entitydescription.tsm_armor_lacerations>
+
+ <entityname.tsm_armor_stun>TSM科技-眩晕防护插板</entityname.tsm_armor_stun>
+ <entitydescription.tsm_armor_stun>眩晕防护装甲板\n\n研发地：九州武库\n\n防护类型：眩晕\n\n防护等级：Ⅲ</entitydescription.tsm_armor_stun>
+
+ <entityname.tsm_armor_blunttrauma>TSM科技-钝器防护插板</entityname.tsm_armor_blunttrauma>
+ <entitydescription.tsm_armor_blunttrauma>钝器伤防护装甲板\n\n研发地：九州武库\n\n防护类型：钝器伤\n\n防护等级：Ⅱ</entitydescription.tsm_armor_blunttrauma>
+
+ <entityname.tsm_armor_huskinfection>TSM科技-画皮防护插板</entityname.tsm_armor_huskinfection>
+ <entitydescription.tsm_armor_huskinfection>画皮病毒防护装甲板\n\n研发地：九州武库\n\n防护类型：画皮病毒\n\n防护等级：Ⅳ</entitydescription.tsm_armor_huskinfection>
+
+ <entityname.tsm_armor_paralysis>TSM科技-麻痹防护插板</entityname.tsm_armor_paralysis>
+ <entitydescription.tsm_armor_paralysis>麻痹防护装甲板\n\n研发地：九州武库\n\n防护类型：麻痹\n\n防护等级：Ⅳ</entitydescription.tsm_armor_paralysis>
+
+ <entityname.tsm_armor_triton>TSM科技-特殊伤害防护插板</entityname.tsm_armor_triton>
+ <entitydescription.tsm_armor_triton>特殊防护装甲板\n\n研发地：九州武库\n\n防护类型：变革/爆裂\n\n防护等级：Ⅱ</entitydescription.tsm_armor_triton>
+
+ <entityname.tsm_armor_bitewounds>TSM科技-咬伤防护插板</entityname.tsm_armor_bitewounds>
+ <entitydescription.tsm_armor_bitewounds>咬伤防护装甲板\n\n研发地：九州武库\n\n防护类型：咬伤\n\n防护等级：Ⅱ</entitydescription.tsm_armor_bitewounds>
+
+ <entityname.tsm_armor_explosiondamage>TSM科技-爆炸防护插板</entityname.tsm_armor_explosiondamage>
+ <entitydescription.tsm_armor_explosiondamage>深层组织损伤防护装甲板\n\n研发地：九州武库\n\n防护类型：深层组织损伤\n\n防护等级：Ⅱ</entitydescription.tsm_armor_explosiondamage>
+
+ <entityname.tsm_armor_gunshotwound>TSM科技-枪伤防护插板</entityname.tsm_armor_gunshotwound>
+ <entitydescription.tsm_armor_gunshotwound>枪击防护装甲板\n\n研发地：九州武库\n\n防护类型：枪伤\n\n防护等级：Ⅱ</entitydescription.tsm_armor_gunshotwound>
+
+ <entityname.tsm_xjzz_suit>军用先进防护服</entityname.tsm_xjzz_suit>
+ <entitydescription.tsm_xjzz_suit>这种军用级防护服在奇迹之海主要由先进作战部装备，能够适应很多较为恶劣的环境。搭配磁力鞋，可以在较小的洪流冲击下保持身形，最大可潜入6000米的深度。</entitydescription.tsm_xjzz_suit>
+
+ <entityname.tsm_orangeconstant_suit>橙无常防护服</entityname.tsm_orangeconstant_suit>
+ <entitydescription.tsm_orangeconstant_suit>危险环境防护服，最大可潜入6000米深度。</entitydescription.tsm_orangeconstant_suit>
+
+ <entityname.tsm_typeiexposure_suit>第一类接触防护服</entityname.tsm_typeiexposure_suit>
+ <entitydescription.tsm_typeiexposure_suit>由军用防护服改造而来，制作者将先进的生命与生物维持科技运用其中，特殊的纤维可以将恶劣的环境与人分隔开来，头盔内置夜视仪，极大的提高了效能，特化的鞋子可以牢牢的抓住地面，减少冲击带来的影响，最大可潜入10000米深渊。</entitydescription.tsm_typeiexposure_suit>
+
+ <entityname.tsm_bltj_suit>暴乱挺进者防护服</entityname.tsm_bltj_suit>
+ <entitydescription.tsm_bltj_suit>由军用防护服改造而来，利用异星金属制作护甲板来加固防御，加装镇爆套件，让你可以更快速的挥舞近战武器，极具侵略性的外表，可以震慑更多的暴乱者，同时也可以抵御6000米的深度。</entitydescription.tsm_bltj_suit>
+
+ <entityname.tsm_rcsuit>镇暴型防护服</entityname.tsm_rcsuit>
+ <entitydescription.tsm_rcsuit></entitydescription.tsm_rcsuit>
+ 
+ <entityname.rz_prototype>“戎装”原型机</entityname.rz_prototype>
+ <entitydescription.rz_prototype>因为种种原因与越来越严峻的局势，奇迹之海本部急需一种可以进入潜艇内部的重型火力支援平台。名为“戎装”的重型火力平台原型机就此诞生。</entitydescription.rz_prototype>
+ <entityname.tsm_rz_2b>“戎装”原型机2号B型</entityname.tsm_rz_2b>
+ <entitydescription.tsm_rz_2b>这是一台搭载了重型火力的战斗平台。操作者能更迅速的进入与脱离机体，搭载在手臂上的重火力可以轻松应对潜艇内的各种局势，但是仍然是用来进行技术验证的平台。使用‖color:150,0,0,255‖戎装弹匣‖color:end‖进行供弹</entitydescription.tsm_rz_2b>
+ <entityname.tsm_rz_pirent>戎装盗窃者型</entityname.tsm_rz_pirent>
+ <entitydescription.tsm_rz_pirent>原2号B型机体，经过盗窃者的改造，增强的防护能力，以及输出能力。</entitydescription.tsm_rz_pirent>
+ <entityname.tsm_rz_pirent_k>戎装盗窃者型</entityname.tsm_rz_pirent_k>
+ <entitydescription.tsm_rz_pirent_k>原2号B型机体，经过盗窃者的改造，增强的防护能力，以及输出能力。</entitydescription.tsm_rz_pirent_k>
+
+
+ <entityname.tsm_kepsuit>三神丘作战服</entityname.tsm_kepsuit>
+ <entitydescription.tsm_kepsuit>三神丘作为操作者的一个实验性小队，本部为他们设计了一套专用作战系统，但是需要同时搭配三神丘作战头盔以及斗篷才能激活。</entitydescription.tsm_kepsuit>
+
+ <entityname.tsm_kepcape>三神丘斗篷</entityname.tsm_kepcape>
+ <entitydescription.tsm_kepcape>三神丘实验小队专用斗篷，特殊设计可以抵挡一定的伤害，同时对于变革弹造成的伤害也有一定的抵抗作用，和三神丘作战服、三神丘作战头盔可以激活辅助系统</entitydescription.tsm_kepcape>
+
+ <entityname.tsm_kepcap>三神丘作战头盔</entityname.tsm_kepcap>
+ <entitydescription.tsm_kepcap>三神丘小队专用作战头盔，拥有一定的防御力，同时可以搭配芯片使用，与作战服、斗篷可以激活辅助系统</entitydescription.tsm_kepcap>
+
+ <entityname.tsm_advisers_vest>'猫科动物'顾问防弹衣</entityname.tsm_advisers_vest>
+ <entitydescription.tsm_advisers_vest>运用异星矿物制作的防弹插板，在不妨碍作战人员活动的情况下拥有更高的防护力</entitydescription.tsm_advisers_vest>
+
+ <entityname.tsm_advisers_mask>'猫科动物'顾问伪装面罩</entityname.tsm_advisers_mask>
+ <entitydescription.tsm_advisers_mask>顾问团外出任务时发放的面罩，可以有效的隐藏自己的身份。</entitydescription.tsm_advisers_mask>
+
+ <entityname.tsm_advisers_uniform>'猫科动物'顾问服</entityname.tsm_advisers_uniform>
+ <entitydescription.tsm_advisers_uniform>最专业的团队，价格公道，童叟无欺。猫科动物顾问始终在最前线，提供最优质的服务</entitydescription.tsm_advisers_uniform>
+
+ <entityname.tsm_65_uniform>65式军服</entityname.tsm_65_uniform>
+ <entitydescription.tsm_65_uniform>百战新师惊贼胆，三年苦斗献吾身</entitydescription.tsm_65_uniform>
+
+ <entityname.tsm_65_hat>65式军帽</entityname.tsm_65_hat>
+ <entitydescription.tsm_65_hat>潇潇夜雨洗兵马，殷殷热血固金瓯</entitydescription.tsm_65_hat>
+
+ <entityname.tsm_63_gear>63式携行具</entityname.tsm_63_gear>
+ <entitydescription.tsm_63_gear>此去泉合招旧部，旌旗十万斩阎罗</entitydescription.tsm_63_gear>
+<!--工具-->
+  <entityname.CODE002>CODE:002</entityname.CODE002>
+  <entitydescription.CODE002>这好像是一个音乐磁带，我记得没错的话，隔壁MOD：问君此去几时还，里面有这种磁带的播放器，不如去看看。</entitydescription.CODE002>
+  <entityname.tsm_daylight>白昼照明弹</entityname.tsm_daylight>
+  <entitydescription.tsm_daylight>把周围照的跟地球上的白天一样</entitydescription.tsm_daylight>
+  <entityname.tsm_flashlight>强光手电筒</entityname.tsm_flashlight>
+  <entitydescription.tsm_flashlight>更远的照明距离</entitydescription.tsm_flashlight>
+
+  <entityname.tsm_flashlight_t>战术手电筒</entityname.tsm_flashlight_t>
+  <entitydescription.tsm_flashlight_t>更大的照明范围</entitydescription.tsm_flashlight_t>
+
+  <entityname.tsm_jgzsq>激光指示器</entityname.tsm_jgzsq>
+  <entitydescription.tsm_jgzsq>放入枪内，可以提供友军识别，不会对友军造成伤害，但是在水下会失效\n-5%射速\n-10%伤害</entitydescription.tsm_jgzsq>
+
+  <entityname.tsm_thermalgoggles>奇迹之海热成像芯片</entityname.tsm_thermalgoggles>
+  <entitydescription.tsm_thermalgoggles>安装在奇迹之海头盔上的芯片，让其解锁热成像的权限</entitydescription.tsm_thermalgoggles>
+  <entityname.tsm_healthscanner>奇迹之海健康扫描芯片</entityname.tsm_healthscanner>
+  <entitydescription.tsm_healthscanner>安装在奇迹之海头盔上的芯片，让其解锁健康扫描仪的权限</entitydescription.tsm_healthscanner>
+  <entityname.tsm_operatorassistancesystems>操作者辅助系统(OAS)</entityname.tsm_operatorassistancesystems>
+  <entitydescription.tsm_operatorassistancesystems>操作者 暴乱者 始作俑者\n\n操作者辅助系统，可以在危机时刻提供必要的治疗，同时也提供通讯功能</entitydescription.tsm_operatorassistancesystems>
+
+  <entityname.tsm_grip>握把</entityname.tsm_grip>
+  <entitydescription.tsm_grip>小幅度提供稳定性\n+10%稳定性\n+40%水流抗性\n-5%移动速度</entitydescription.tsm_grip>
+  <entityname.tsm_sighting>红点瞄具</entityname.tsm_sighting>
+  <entitydescription.tsm_sighting>小幅度增加武器操作熟练度以及减少武器扩散效果\n+20%武器操作获取\n-30%扩散\n-10%移动速度</entitydescription.tsm_sighting>
+  <entityname.tsm_sighting1>全息瞄具</entityname.tsm_sighting1>
+  <entitydescription.tsm_sighting1>小幅度增加武器操作熟练度以及减少武器扩散效果\n+10%武器操作获取\n-40%扩散\n-10%移动速度</entitydescription.tsm_sighting1>
+  <entityname.tsm_sighting2>2倍镜</entityname.tsm_sighting2>
+  <entitydescription.tsm_sighting2>大幅度增加武器操作熟练度以及减少武器扩散效果\n+30%武器操作获取\n-50%扩散\n-25%移动速度</entitydescription.tsm_sighting2>
+  <entityname.tsm_barrel>枪口消焰器</entityname.tsm_barrel>
+  <entitydescription.tsm_barrel>略微增加武器伤害\n+22%伤害\n-5%射速</entitydescription.tsm_barrel>
+  <entityname.tsm_barrel1>枪口制退器</entityname.tsm_barrel1>
+  <entitydescription.tsm_barrel1>略微增加武器伤害和精准度\n+10%伤害\n-10%扩散</entitydescription.tsm_barrel1>
+  <entityname.tsm_advanced_sight>95式长弓套件瞄具</entityname.tsm_advanced_sight>
+  <entitydescription.tsm_advanced_sight>95式长弓套件瞄具\n+25%武器操作获取\n-35%扩散\n-15%移速</entitydescription.tsm_advanced_sight>
+  <entityname.tsm_gun_grenade>下挂榴弹发射器</entityname.tsm_gun_grenade>
+  <entitydescription.tsm_gun_grenade>安装后可发射榴弹</entitydescription.tsm_gun_grenade>
+  <entityname.tsm_advanced_barrel>精准射手步枪特制枪管</entityname.tsm_advanced_barrel>
+  <entitydescription.tsm_advanced_barrel>QBU-191先进精准步枪专用枪管，与武器搭配成为精准射手步枪\n+60%伤害\n-50%射速</entitydescription.tsm_advanced_barrel>
+  <entityname.tsm_advanced_grip>脚架</entityname.tsm_advanced_grip>
+  <entitydescription.tsm_advanced_grip>安装后，提供一定的稳定性\n减少40%散布，减少20%移速，增加40%流水抗性</entitydescription.tsm_advanced_grip>
+  <entityname.tsm_03_sight>03步枪瞄具</entityname.tsm_03_sight>
+  <entitydescription.tsm_03_sight>03式步枪专用瞄具\n+20%武器操作获取\n-30%扩散\n-10%移动速度</entitydescription.tsm_03_sight>
+  <entityname.tsm_gun_grenade_lm>M203榴弹下挂</entityname.tsm_gun_grenade_lm>
+  <entitydescription.tsm_gun_grenade_lm>M4系列以及M16系列下挂套件，安装后可发射榴弹</entitydescription.tsm_gun_grenade_lm>
+
+
+  
+  
+ <!--近战-->
+  <entityname.tsm_round_riotshields>圆形防暴盾</entityname.tsm_round_riotshields>
+  <entitydescription.tsm_round_riotshields></entitydescription.tsm_round_riotshields>
+  <entityname.tsm_square_riotshields>奇迹之海“方阵”先进战斗防护盾</entityname.tsm_square_riotshields>
+  <entitydescription.tsm_square_riotshields>采用高密度防弹纤维和高强度钛铝合金打造的重型盾牌，可以将使用者的身体完全遮蔽，足以在枪林弹雨之中稳步推进</entitydescription.tsm_square_riotshields>
+  <entityname.tsm_stunbaton_melee>特种电棍</entityname.tsm_stunbaton_melee>
+  <entitydescription.tsm_stunbaton_melee>安装雷素电池以提供更强大的控制</entitydescription.tsm_stunbaton_melee>
+  <entityname.tsm_moonlight_sword>月华</entityname.tsm_moonlight_sword>
+  <entitydescription.tsm_moonlight_sword>‖color:255,144,48,255‖荣誉近战武器，通过异星材料复刻的环首刀‖color:end‖</entitydescription.tsm_moonlight_sword>
+  <entityname.tsm_lerentine_zhong>‖color:221,106,29,255‖冢‖color:end‖</entityname.tsm_lerentine_zhong>
+  <entitydescription.tsm_lerentine_zhong>‖color:221,106,29,255‖生而影不与吾形相依，死而魂不与吾梦相接‖color:end‖</entitydescription.tsm_lerentine_zhong>
+  <entityname.tsm_zhong_handgun>‖color:221,106,29,255‖灰瞳‖color:end‖</entityname.tsm_zhong_handgun>
+  <entitydescription.tsm_zhong_handgun>‖color:221,106,29,255‖莱伦汀的配枪,使用手炮子弹\n据说是当初她还在先进作战部中的一个小队队长的配枪，当时他们在受到伏击后，队长为了救她自己中弹身亡。之后她捡起了这把枪，戴上队长的头盔，发号施令。\n"噩兆天子"，大家这么叫他，她是奇迹之海的孩子，是你被死亡笼罩时的最后救星。‖color:end‖</entitydescription.tsm_zhong_handgun>
+  <entityname.tsm_pmf_melee>破门斧</entityname.tsm_pmf_melee>
+  <entitydescription.tsm_pmf_melee>破门利器，奇迹之海常备的破门工具</entitydescription.tsm_pmf_melee>
+  <entityname.tsm_pqc_melee>破墙锤</entityname.tsm_pqc_melee>
+  <entitydescription.tsm_pqc_melee>破墙利器，奇迹之海常备的破墙工具</entitydescription.tsm_pqc_melee>
+  <entityname.tsm_thermal_knife>"闻风"战术刀</entityname.tsm_thermal_knife>
+  <entitydescription.tsm_thermal_knife>这种刀的制作工艺不对外公开，重量较轻，刀刃能在极短的时间内达到高温状态,切割效率高</entitydescription.tsm_thermal_knife>
+  <entityname.tsm_steel_knife>"丝缇尔"指挥刀</entityname.tsm_steel_knife>
+  <entitydescription.tsm_steel_knife>身份的象征，由昂贵的异星金属打造，在地球未失联之前，奖励给那些勇于开拓的船长们</entitydescription.tsm_steel_knife>
+<!--弹药-->
+  <entityname.tsm_12_ld>鹿弹</entityname.tsm_12_ld>
+  <entitydescription.tsm_12_ld>更少的弹丸数量，但是拥有更大的威力。</entitydescription.tsm_12_ld>
+  <entityname.tsm_sabot>双弹托独头弹</entityname.tsm_sabot>
+  <entitydescription.tsm_sabot>创新的双弹托设计，在外边弹托击中目标后会自动脱落，再目标内部快速翻转造成伤害</entitydescription.tsm_sabot>
+  <entityname.tsm_12_bg>贫化变革弹</entityname.tsm_12_bg>
+  <entitydescription.tsm_12_bg>氚聚变核心，氘破片杀伤部</entitydescription.tsm_12_bg>
+  <entityname.tsm_12_slience>橡胶平息弹</entityname.tsm_12_slience>
+  <entitydescription.tsm_12_slience>提供强有力的控制</entitydescription.tsm_12_slience>
+
+  <entityname.tsm_handcannonround>手炮尖晶弹</entityname.tsm_handcannonround>
+  <entitydescription.tsm_handcannonround>奇迹之海研发的大口径穿甲子弹</entitydescription.tsm_handcannonround>
+
+  <entityname.tsm_handcannonround_easy>铜制手炮子弹</entityname.tsm_handcannonround_easy>
+  <entitydescription.tsm_handcannonround_easy>一种便宜的手炮子弹，你不要看他伤害不高，但是人家便宜。</entitydescription.tsm_handcannonround_easy>
+
+  <entityname.tsm_fragmentation_grenade>破片手雷</entityname.tsm_fragmentation_grenade>
+  <entitydescription.tsm_fragmentation_grenade>常见的一种手雷，采用延迟引信，爆炸范围为6-10距离的破片杀伤。手持时，右键后按下'E'键依次拉开保险销和释放撞针卡勺。</entitydescription.tsm_fragmentation_grenade>
+<!--武器-->
+ <!--奇迹之海-->
+  <entityname.tsm_zc>战车突击步枪</entityname.tsm_zc>
+  <entitydescription.tsm_zc>再好的设计也无力应对磕了药的子弹，想打准，就去练。但是它的消音器确实不错。使用‖color:150,0,0,255‖奇迹之海弹药‖color:end‖。</entitydescription.tsm_zc>
+
+  <entityname.tsm_fy>飞鸦突击步枪</entityname.tsm_fy>
+  <entitydescription.tsm_fy>使用‖color:150,0,0,255‖奇迹之海弹药‖color:end‖</entitydescription.tsm_fy>
+
+  <entityname.tsm_rsmagazine>奇迹之海燃烧弹匣</entityname.tsm_rsmagazine>
+  <entitydescription.tsm_rsmagazine>专供战车以及飞鸦两把步枪的特殊弹匣</entitydescription.tsm_rsmagazine>
+  
+  <entityname.tsm_magazine>奇迹之海普通弹匣</entityname.tsm_magazine>
+  <entitydescription.tsm_magazine>可以填入30发5.8mm子弹的标准弹匣。但是有报告指出使用该弹匣可以连续开火33次。——别开玩笑了！这个弹匣只能装30发！</entitydescription.tsm_magazine>
+
+  <entityname.tsm_identifier>奇迹之海友军识别码</entityname.tsm_identifier>
+  <entitydescription.tsm_identifier>奇迹之海的识别码，可以与声纳信标和照明弹合成登陆舱指示器或者弹药补给</entitydescription.tsm_identifier>
+
+  <entityname.tsm_ammunition_resupply>弹药补给指示器</entityname.tsm_ammunition_resupply>
+  <entitydescription.tsm_ammunition_resupply>使用后可召唤一个空投舱</entitydescription.tsm_ammunition_resupply>
+
+  <entityname.tsm_snoar_shell>奇迹之海炮射型诱饵炮弹</entityname.tsm_snoar_shell>
+  <entitydescription.tsm_snoar_shell>轨道炮弹药&#xD;&#xA;诱饵型炮射导弹，发射后会在150m左右的位置停止，并持续发出声波信号吸引生物靠近，请注意爆炸范围内的强emp效果</entitydescription.tsm_snoar_shell>
+
+  <entityname.tsm_embi_shell>命运之拳</entityname.tsm_embi_shell>
+  <entitydescription.tsm_embi_shell>轨道炮弹药&#xD;&#xA;由EMBI研发制造的特殊弹道修正型炮射核弹，这种弹药可以在一定范围内修正弹道</entitydescription.tsm_embi_shell>
+
+  <entityname.tsm_fire_gun>醒狮</entityname.tsm_fire_gun>
+  <entitydescription.tsm_fire_gun>次抛发射器&#xD;&#xA;一次性轰击发射器，能够打乱敌方阵型</entitydescription.tsm_fire_gun>
+
+  <entityname.tsm_thbq>同昏</entityname.tsm_thbq>
+  <entitydescription.tsm_thbq>奇迹之海为与外部对抗而自研的制式突击步枪，高射速带来绝佳的压制效果，让普通士兵拥有班级的火力密度，而特制的穿甲弹药更是锦上添花。在装配特制部件后，更加强悍，更加致命，也更加昂贵……使用‖color:150,0,0,255‖奇迹之海弹药‖color:end‖\n"伯伦希尔，他们告诉过你,木卫二这片海太深太黑，'干净'的人很难走得远..."</entitydescription.tsm_thbq>
+
+  <entityname.tsm_gybq>共影</entityname.tsm_gybq>
+  <entitydescription.tsm_gybq>奇迹之海在研发同昏时的另一项成果:一种只可进行半自动射击的射手步枪，特殊的结构不仅让它射出的子弹威力十足，也让其后坐力更加可怕，以及增加了耗弹量，纵使降低射速与装配特殊枪托也没有多少改善，使用不当甚至会伤害到射手，只有老练的士兵才能灵活且高效的用它射杀敌人。使用‖color:150,0,0,255‖奇迹之海弹药‖color:end‖</entitydescription.tsm_gybq>
+
+  <entityname.tsm_xylz>新月轮转</entityname.tsm_xylz>
+  <entitydescription.tsm_xylz>奇迹之海不计代价开发的一款大口径反器材武器。它使用的弹药杀伤力巨大，射手不经过长时间的专门训练都无力驾驭这把武器。这致使得该武器数量极少，造价也居高不下。</entitydescription.tsm_xylz>
+
+  <entityname.tsm_gravitythrower>重力投掷器</entityname.tsm_gravitythrower>
+  <entitydescription.tsm_gravitythrower>我们为这个世界带来变革，于诸神之地实行制裁\n奇迹之海最新研制的制裁者重力武器\n每次使用，需要穿戴特定的防护服，否则会有很严重的后果\n弹药‖color:150,0,0,255‖失重牵引激光束‖color:end‖只能在站点购买</entitydescription.tsm_gravitythrower>
+
+  <entityname.tsm_201>201式通用机枪</entityname.tsm_201>
+  <entitydescription.tsm_201>采用了现代化的设计理念，注重人机工效和实战性能。其枪身长度适中，便于携带和操作，同时空枪重量也得到了有效控制，减轻了士兵的负担。同时采用帆布弹链供弹方式，能够快速补充弹药，保证火力持续性,提高作战效率。既可以使用使用‖color:150,0,0,255‖帆布弹袋‖color:end‖，也可以使用‖color:150,0,0,255‖5.8mm步枪弹匣‖color:end‖，进一步拓宽了战场应对能力。</entitydescription.tsm_201>
+
+  <entityname.tsm_advanced_95>95式突击步枪</entityname.tsm_advanced_95>
+  <entitydescription.tsm_advanced_95>总体性能达到同类武器先进水平的目标，使步兵班具有点、面杀伤和打击轻型装甲的能力，可安装扩展照明装置或者长弓套件下挂榴弹，使用‖color:150,0,0,255‖5.8mm子弹‖color:end‖</entitydescription.tsm_advanced_95>
+
+  <entityname.tsm_advanced_03>03式自动步枪</entityname.tsm_advanced_03>
+  <entitydescription.tsm_advanced_03>该枪自动步枪机匣内装有较长的自动机导轨，增加了自动机后坐缓冲器，采用了恒温模锻的上下铝制机匣，上机匣可直接安装03式专用瞄具。下机匣及后罩等零件采用了钛铝合金材料。左、右护板，握把及枪托采用了强度高、耐高温的工程塑料，中空部分装附件筒，使用‖color:150,0,0,255‖5.8mm子弹‖color:end‖。</entitydescription.tsm_advanced_03>
+
+  <entityname.tsm_qbz_191>QBZ-191制式步枪</entityname.tsm_qbz_191>
+  <entitydescription.tsm_qbz_191>在历尽大大小小不同场景的战斗后，性能优异，模块化全面，使用‖color:150,0,0,255‖5.8mm‖color:end‖弹匣的191步枪就此诞生，极高的泛用性和均衡的造价完全符合列装标准，全新材料工艺与战斗经验铸就了它的辉煌</entitydescription.tsm_qbz_191>
+
+  <entityname.tsm_advanced_191>QBU-191精准射手步枪</entityname.tsm_advanced_191>
+  <entitydescription.tsm_advanced_191>基于QBZ191衍生的射手步枪，使用‖color:150,0,0,255‖5.8mm‖color:end‖子弹。更长的枪管带来枪膛更高的后座空间，不仅可控性更好，精度更是达到了狙击枪水准，可以很好的搭载特制枪管与瞄准镜</entitydescription.tsm_advanced_191>
+
+  <entityname.tsm_ots11>QTS11式战略突击步枪</entityname.tsm_ots11>
+  <entitydescription.tsm_ots11>诞生于“理想单兵作战武器”计划的武器，重量轻巧的同时，采用了全一体式设计，包含了榴弹发射器(注意，不能同时使用弹匣和榴弹，否则会引起炸膛)，先进光电热成像瞄准镜，采用现有的‖color:150,0,0,255‖5.8mm‖color:end‖突击步枪弹匣。但最终因为造价过于昂贵没有列装，只有部分原型枪流传。</entitydescription.tsm_ots11>
+  
+  <entityname.tsm_gm6>GM6“山猫”无托反器材狙击步枪</entityname.tsm_gm6>
+  <entitydescription.tsm_gm6>一把结构高精且紧凑的大口径狙击枪，浮动式枪管与无托结构即使是是在室内作战也非常趁手。其制造图纸更是高度机密，就是落入敌手反向拆解也无法将其仿制，能列装的部队都是精英中的精英，使用‖color:150,0,0,255‖12.7*99‖color:end‖口径狙击枪子弹。</entitydescription.tsm_gm6>
+
+  <entityname.tsm_krmagazine>奇迹之海扩容弹匣</entityname.tsm_krmagazine>
+  <entitydescription.tsm_krmagazine>可装填60发标准弹药的弹鼓，特殊的设计保证了可靠性，但是价格却得不到保证。</entitydescription.tsm_krmagazine>
+
+  <entityname.tsm_58_mag_kr>突击步枪弹鼓（5.8mm）</entityname.tsm_58_mag_kr>
+  <entitydescription.tsm_58_mag_kr>装填60发5.8mm子弹的弹鼓</entitydescription.tsm_58_mag_kr>
+
+  <entityname.tsm_magazinebg>奇迹之海变革弹匣</entityname.tsm_magazinebg>
+  <entitydescription.tsm_magazinebg>奇迹之海研制的变革弹匣，更强大的弹药种类，注意不要误伤。这种弹药只有一部分小队拥有使用权限。</entitydescription.tsm_magazinebg>
+
+  <entityname.tsm_magazinecj>奇迹之海穿甲弹匣</entityname.tsm_magazinecj>
+  <entitydescription.tsm_magazinecj>里面装填了30发标准穿甲弹，能够有效应对冲进船舱的泥偶迅猛龙。弹匣上有穿甲弹标记，用以进行区分。</entitydescription.tsm_magazinecj>
+
+  <entityname.tsm_ammobox>奇迹之海弹药箱</entityname.tsm_ammobox>
+  <entitydescription.tsm_ammobox>奇迹之海弹药箱&#xD;&#xA;[放入弹匣,右键+左键压弹.]</entitydescription.tsm_ammobox>
+
+  <entityname.tsm_weightless_traction_laser_beam>失重牵引激光束</entityname.tsm_weightless_traction_laser_beam>
+  <entitydescription.tsm_weightless_traction_laser_beam>造价昂贵的特制外壳，里面流动着剧烈反应的重力液，每次使用都会产生重力域。</entitydescription.tsm_weightless_traction_laser_beam>
+
+  <entityname.tsm_xymagazine>新月弹匣</entityname.tsm_xymagazine>
+  <entitydescription.tsm_xymagazine>弹容5发。就算单个弹匣的载弹量都少得可怜，也依旧不能缩小哪怕一点体积。</entitydescription.tsm_xymagazine>
+
+  <entityname.tsm_xymagazine_bg>新月变革弹弹匣</entityname.tsm_xymagazine_bg>
+  <entitydescription.tsm_xymagazine_bg>装填5发特殊弹药，威力巨大，极其致命。</entitydescription.tsm_xymagazine_bg>
+
+  <entityname.tsm_58_mag>突击步枪弹匣（5.8mm）</entityname.tsm_58_mag>
+  <entitydescription.tsm_58_mag>装填30发5.8mm子弹，可使用奇迹之海弹药箱进行装弹。</entitydescription.tsm_58_mag>
+
+  <entityname.tsm_58_mag_cj>突击步枪穿甲弹匣（5.8mm）</entityname.tsm_58_mag_cj>
+  <entitydescription.tsm_58_mag_cj>装填30发5.8mm穿甲弹，可使用奇迹之海弹药箱进行装弹。</entitydescription.tsm_58_mag_cj>
+
+  <entityname.tsm_58_201mag>201帆布弹袋</entityname.tsm_58_201mag>
+  <entitydescription.tsm_58_201mag>装填100发5.8mm口径子弹，内部采用可散式弹链，但用帆布储存后，可以做到体积小、携带方面、重量轻等特点，可使用奇迹之海弹药箱进行装弹。</entitydescription.tsm_58_201mag>
+
+  <entityname.tsm_58_201cjmag>201帆布弹袋（穿甲弹）</entityname.tsm_58_201cjmag>
+  <entitydescription.tsm_58_201cjmag>装填100发5.8mm口径穿甲子弹，可使用奇迹之海弹药箱进行装弹。</entitydescription.tsm_58_201cjmag>
+ <!--联盟-->
+  <!--无托线-->
+  <entityname.tsm_lm_l85a2>联盟L85A2无托步枪</entityname.tsm_lm_l85a2>
+  <entitydescription.tsm_lm_l85a2>曾作为世界上最烂的突击步枪不论是插不进去的弹匣井，频繁的卡壳，“世界上最棒的长矛，偶尔可以打出子弹”但经过改进后的版本还是可以接受，作为无托步枪的奠基产品。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_l85a2>
+
+  <entityname.tsm_lm_famas>联盟FAMAS无托自动步枪</entityname.tsm_lm_famas>
+  <entitydescription.tsm_lm_famas>闭锁杠杆延迟枪机的高效运动使得法马斯拥有步枪中最暴力的射击速度，但缺点也非常明显，过高的射速导致续航能力极其差劲，所以拥有了三连发快慢机。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_famas>
+
+  <entityname.tsm_lm_aug>联盟AUG突击步枪</entityname.tsm_lm_aug>
+  <entitydescription.tsm_lm_aug>联盟制式突击步枪，经过现代化改装，可以适配多种战术配件。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_aug>
+
+  <entityname.tsm_lm_tavor21>联盟Tavor-21无托突击步枪</entityname.tsm_lm_tavor21>
+  <entitydescription.tsm_lm_tavor21>稳定可靠的无托步枪，且模块化更加全面，但其造价偏高优点不突出的尴尬境地，并没有被联盟列装，而是作为了先进无托步枪的过渡产品。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_tavor21>
+
+  <entityname.tsm_lm_mdr>联盟MDR无托战斗步枪</entityname.tsm_lm_mdr>
+  <entitydescription.tsm_lm_mdr>联盟在日益恶化的作战中，发现自己的小口径弹药越来越乏力。于是为了打破这一窘境，研发的新型大口径无托步枪，全枪采用异星材质加工制造，顶部直接加工出导轨，保证瞄准镜的安装精度和可靠性。使用‖color:150,0,0,255‖7.62*51mm‖color:end‖的子弹。</entitydescription.tsm_lm_mdr>
+
+  <entityname.tsm_lm_mdr_c>联盟MDR无托战斗步枪-渗透型</entityname.tsm_lm_mdr_c>
+  <entitydescription.tsm_lm_mdr_c>该枪是联盟为了斩首行动而特殊改装后的产品，加装的特制消音器是为了更好的进行渗透行动，使用‖color:150,0,0,255‖7.62*51mm‖color:end‖的子弹。</entitydescription.tsm_lm_mdr_c>
+
+  <entityname.tsm_lm_vsh2>联盟VSH—2“恶棍”先进无托战斗步枪</entityname.tsm_lm_vsh2>
+  <entitydescription.tsm_lm_vsh2>最为理想的无托步枪，集成一系列前辈的优点，高射速与高精度使得“恶棍”名声大噪，全面现代化的模块与大量工程塑料的运用使得不仅重量轻，泛用性高，还非常美观，赢得各个前线部队的高度赞誉。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_vsh2>
+
+  <entityname.tsm_lm_rm277>联盟RM277原型无托步枪</entityname.tsm_lm_rm277>
+  <entitydescription.tsm_lm_rm277>无疑是一款颠覆性产品。它集结了通用动力学、未来武器系统的尖端技术，在火力与精度上具有双重优势。这款步枪使用独特的‖color:150,0,0,255‖6.8*51‖color:end‖口径的弹匣，在战场上展现了真实而惊人的精度与护甲穿透能力。特制抑制器不仅延长了枪管的使用寿命，还将闪光和声级降到了极低水平</entitydescription.tsm_lm_rm277>
+
+  <!--ar线-->
+  <entityname.tsm_lm_m16>联盟M16A1自动步枪</entityname.tsm_lm_m16>
+  <entitydescription.tsm_lm_m16>一把好用的突击步枪，就算你没学过如何使用武器也能用它打倒冲向你的敌人。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_m16>
+
+  <entityname.tsm_lm_m16a4>联盟M16A4自动步枪</entityname.tsm_lm_m16a4>
+  <entitydescription.tsm_lm_m16a4>基于m16A1的全面改进型，成为一个完全模块化平台，更长的枪管让其穿透力在步枪中数一数二，但还是保留了A1版本的三连发开火模式，压制力的欠缺很快被M4卡宾枪取代。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_m16a4>
+
+  <entityname.tsm_lm_m110>联盟M110精准射手步枪</entityname.tsm_lm_m110>
+  <entitydescription.tsm_lm_m110>采用气吹式半自动发射，比使用手动枪机系统的拴动狙击步枪的射速更高，枪口安装有长150毫米的消音枪管附件以减少噪声和枪口焰。成为联盟反恐行动首选，可安装脚架提供更好的稳定性。使用联盟发行‖color:150,0,0,255‖7.62*51‖color:end‖口径弹匣</entitydescription.tsm_lm_m110>
+
+  <entityname.tsm_lm_ar15>联盟AR15-Taran步枪</entityname.tsm_lm_ar15>
+  <entitydescription.tsm_lm_ar15>曾最为地球上销售量最大的步枪，稳定精准加之亲民的造价和高度可改装模块深受大众喜欢，用它来捍卫自己的权利。其列装联盟的军用版本已经具有全自动开火能力。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_ar15>
+
+  <entityname.tsm_lm_M4>联盟M4突击步枪</entityname.tsm_lm_M4>
+  <entitydescription.tsm_lm_M4>古老的卡宾枪，使用的也不是被联盟禁止的6.8mm弹药，但是优秀的设计让它在如今也依旧是联盟里保有量最高的武器，使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_M4>
+
+  <entityname.tsm_lm_mk18>联盟MK18突击步枪</entityname.tsm_lm_mk18>
+  <entitydescription.tsm_lm_mk18>比联盟卡宾枪更短的枪身带给它更高的机动性，强大的爆发力让它一度成为联盟的制式突击步枪，使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_mk18>
+
+  <entityname.tsm_lm_mcx>联盟MCX·spear原型步枪</entityname.tsm_lm_mcx>
+  <entitydescription.tsm_lm_mcx>联盟计划列装特种部队的实验性先进武器，被誉为AR系步枪的巅峰之作，使用实验性的‖color:150,0,0,255‖6.8*51‖color:end‖弹匣具有可观的杀伤力，搭载完全现代化的模块平台。</entitydescription.tsm_lm_mcx>
+
+  <!--特殊-->
+  <entityname.tsm_lm_mk18_l>MK18 CQB</entityname.tsm_lm_mk18_l>
+  <entitydescription.tsm_lm_mk18_l>一把经过改装的MK18，更适合快反部队在室内作战。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣。</entitydescription.tsm_lm_mk18_l>
+
+  <entityname.tsm_lm_scarh>联盟MK17重型战斗步枪</entityname.tsm_lm_scarh>
+  <entitydescription.tsm_lm_scarh>联盟常规的5.56*45口径子弹在面对防护级别不断提高的防弹衣，穿透力明显不足，同时为了完成复杂多变的作战任务，联盟的特种部队对于远距离穿透力指标提出更高要求，所以这款重型战斗步枪应运而生。使用行‖color:150,0,0,255‖7.62*51mm‖color:end‖子弹。</entitydescription.tsm_lm_scarh>
+
+  <entityname.tsm_lm_mk18_c>联盟MK18突击步枪（战术型）</entityname.tsm_lm_mk18_c>
+  <entitydescription.tsm_lm_mk18_c>一把使用了迷彩的MK18，瞄准镜与握把给予了这把枪更好的操控性，让射手不必再去捏着手感奇差的护木开火。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_mk18_c>
+
+  <entityname.tsm_lm_97>联盟97式快速镇暴步枪</entityname.tsm_lm_97>
+  <entitydescription.tsm_lm_97>应联盟一些部队的要求改造的一款新式无托步枪，改造后适应‖color:150,0,0,255‖6.5mm‖color:end‖子弹，并采用短连发机制，来获得快的压制力以及精准度。</entitydescription.tsm_lm_97>
+
+  <entityname.tsm_lm_drh>联盟DRH突击步枪</entityname.tsm_lm_drh>
+  <entitydescription.tsm_lm_drh>使用‖color:150,0,0,255‖6.5mm‖color:end‖军用弹药的突击步枪，射速高威力可观，但是6.5mm弹药带来的巨大后坐力需要长期训练才能驾驭，可以安置瞄具。</entitydescription.tsm_lm_drh>
+
+  <entityname.tsm_lm_m4_c>联盟M4突击步枪（万能钥匙）</entityname.tsm_lm_m4_c>
+  <entitydescription.tsm_lm_m4_c>把经过特殊改造的突击步枪，装备了瞄准镜与下挂霰弹枪的迷彩M4。虽然使用简单，但是不能同时发射5.56子弹与霰弹，过大的后坐力会伤害射手。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_m4_c>
+
+  <entityname.tsm_lm_mk46>联盟通用轻机枪（MK46）</entityname.tsm_lm_mk46>
+  <entitydescription.tsm_lm_mk46>地球上的一种班用轻机枪，更短的枪管让它更适合在渊洋下狭窄的站点空间内，或是潜艇通道中辗转腾挪，使用‖color:150,0,0,255‖联盟轻机枪弹匣（5.56*45）‖color:end‖。</entitydescription.tsm_lm_mk46>
+
+  <entityname.tsm_lm_mk48>联盟班用机枪（MK48）</entityname.tsm_lm_mk48>
+  <entitydescription.tsm_lm_mk48>使用‖color:150,0,0,255‖联盟班用机枪弹匣（7.62*51）‖color:end‖。</entitydescription.tsm_lm_mk48>
+
+  <entityname.tsm_lm_m249>联盟轻机枪（M249）</entityname.tsm_lm_m249>
+  <entitydescription.tsm_lm_m249>杀伤力虽然差强人意但使用装有200发弹链供弹具有可靠性和强大的火力，亦是步兵班中最具持久连射火力的武器。可安装脚架来提供一定的稳定性，使用‖color:150,0,0,255‖联盟轻机枪弹匣（5.56*45）‖color:end‖。</entitydescription.tsm_lm_m249>
+
+  <entityname.tsm_m1014>伯奈利M1014霰弹枪</entityname.tsm_m1014>
+  <entitydescription.tsm_m1014>几个世纪前的战斗霰弹枪，经过设计优化后，在欧罗巴的渊洋里仍是安保与自卫的不二之选</entitydescription.tsm_m1014>
+
+  <entityname.tsm_lm_minigun>Minigun</entityname.tsm_lm_minigun>
+  <entitydescription.tsm_lm_minigun>手提式加特林，就算使用和突击步枪相同的弹药也能把经验不足的射手向后掀翻。使用时注意不要按死扳机，这样你控制不住枪时起码不会扫射到队友。</entitydescription.tsm_lm_minigun>
+
+  <entityname.tsm_ksg>KSG无托泵动霰弹枪</entityname.tsm_ksg>
+  <entitydescription.tsm_ksg>短小却拥有装填9发子弹的能力，这在木卫二狭小的船舱里是一个巨大的优势，这代表你能在怪物冲到面前时可以继续开火——以及不会这么轻易被敌人夺走武器。而双发扳机的优势，能够让你在极短时间内打出强力的爆发。</entitydescription.tsm_ksg>
+
+  <entityname.tsm_lm_m700>联盟M700狙击步枪</entityname.tsm_lm_m700>
+  <entitydescription.tsm_lm_m700>联盟针对老旧的栓动步枪进行了改造，使其可以发射更高威力的弹药。不过相应的，如果想要肩膀还在身上，就练熟了再来使用。使用联盟发行‖color:150,0,0,255‖.338口径‖color:end‖弹药</entitydescription.tsm_lm_m700>
+
+  <entityname.tsm_lm_m700_r>M700（Redfield 3X-9XACCU-Range）</entityname.tsm_lm_m700_r>
+  <entitydescription.tsm_lm_m700_r>拥有更长的枪管和更高的精度，因为过长所以只能放在武器架上。联盟的狙击手都以自己能驾驭这么一把M700而自豪。使用‖color:150,0,0,255‖.338口径‖color:end‖弹药</entitydescription.tsm_lm_m700_r>
+
+  <entityname.lm_ammobox>联盟弹药箱</entityname.lm_ammobox>
+  <entitydescription.lm_ammobox>联盟发售弹药箱，可以给联盟常见的弹匣压弹&#xD;&#xA;[放入弹匣,右键+左键压弹.]</entitydescription.lm_ammobox>
+
+  <entityname.tsm_556_45_mgmag>联盟轻机枪弹匣（5.56*45）</entityname.tsm_556_45_mgmag>
+  <entitydescription.tsm_556_45_mgmag>装有200发5.56*45mm子弹。</entitydescription.tsm_556_45_mgmag>
+
+  <entityname.tsm_556_45_mgmag_cj>联盟轻机枪穿甲弹匣（5.56*45）</entityname.tsm_556_45_mgmag_cj>
+  <entitydescription.tsm_556_45_mgmag_cj>装有200发5.56*45mm穿甲子弹。</entitydescription.tsm_556_45_mgmag_cj>
+
+  <entityname.lm_762_51_mgmag>联盟班用机枪弹匣（7.62*51）</entityname.lm_762_51_mgmag>
+  <entitydescription.lm_762_51_mgmag>装有200发7.62*51mm子弹。</entitydescription.lm_762_51_mgmag>
+
+  <entityname.lm_762_51_mgmag_cj>联盟班用机枪穿甲弹匣（7.62*51）</entityname.lm_762_51_mgmag_cj>
+  <entitydescription.lm_762_51_mgmag_cj>装有200发7.62*51mm穿甲子弹。</entitydescription.lm_762_51_mgmag_cj>
+
+  <entityname.lm_556_mag>联盟普通弹匣（5.56*45）</entityname.lm_556_mag>
+  <entitydescription.lm_556_mag>其内装填了33发标准子弹的弹匣，数量众多。</entitydescription.lm_556_mag>
+  
+  <entityname.lm_556cj_mag>联盟穿甲弹匣（5.56*45）</entityname.lm_556cj_mag>
+  <entitydescription.lm_556cj_mag>内部填装了31发穿甲弹，可以有效应对有甲生物与防弹衣，但是不知道为什么弹匣的标记上写着里面有33发子弹？数量较少，不建议携带太多。</entitydescription.lm_556cj_mag>
+
+  <entityname.lm_556gb_mag>联盟高爆弹匣（5.56*45）</entityname.lm_556gb_mag>
+  <entitydescription.lm_556gb_mag>装填了30发珍贵的高爆弹药的弹匣，为联盟内部的军用弹药，能高效地杀伤目标。数量稀少，一次不能携带太多。</entitydescription.lm_556gb_mag>
+
+  <entityname.lm_65_magazine>联盟普通弹匣（6.5mm）</entityname.lm_65_magazine>
+  <entitydescription.lm_65_magazine>装填了30发6.5×55mm标准弹，具有一定的穿甲能力，可以应对着甲目标。</entitydescription.lm_65_magazine>
+
+  <entityname.lm_65kj_magazine>联盟开尖弹匣（6.5mm）</entityname.lm_65kj_magazine>
+  <entitydescription.lm_65kj_magazine>装填了30发专门应对无甲目标的开尖弹，命中后可以对目标造成大量出血。</entitydescription.lm_65kj_magazine>
+
+  <entityname.lm_68_51_magazine>联盟普通弹匣（6.8*51mm）</entityname.lm_68_51_magazine>
+  <entitydescription.lm_68_51_magazine>装填了30发标准6.8*51口径子弹</entitydescription.lm_68_51_magazine>
+
+  <entityname.lm_68_51cj_magazine>联盟穿甲弹匣（6.8*51mm）</entityname.lm_68_51cj_magazine>
+  <entitydescription.lm_68_51cj_magazine>装填了30发标准6.8*51口径穿甲子弹</entitydescription.lm_68_51cj_magazine>
+
+  <entityname.lm_762_51_mag>联盟普通弹匣（7.62*51）</entityname.lm_762_51_mag>
+  <entitydescription.lm_762_51_mag>装填了20发7.62*51口径普通子弹</entitydescription.lm_762_51_mag>
+
+  <entityname.lm_762_51_ap_mag>联盟穿甲弹匣（7.62*51）</entityname.lm_762_51_ap_mag>
+  <entitydescription.lm_762_51_ap_mag>装填了20发7.62*51口径穿甲子弹</entitydescription.lm_762_51_ap_mag>
+
+  <entityname.lm_m700_mag>狙击步枪弹匣（.338）</entityname.lm_m700_mag>
+  <entitydescription.lm_m700_mag>内有5发大威力子弹</entitydescription.lm_m700_mag>
+
+  <entityname.tsm_miniammo>Minigun弹匣</entityname.tsm_miniammo>
+  <entitydescription.tsm_miniammo>200发556口径子弹，尽情挥霍。</entitydescription.tsm_miniammo>
+ <!--反抗军-->
+  <entityname.tsm_fkj_an94>反抗军AN94突击步枪</entityname.tsm_fkj_an94>
+  <entitydescription.tsm_fkj_an94>曾经出现过的国家的遗产，反抗军继承了它并让它发扬光大。反抗军不仅将口径扩大到‖color:150,0,0,255‖7.62*39‖color:end‖，还保留了它的精度。但是需要长时间训练才能规范使用它。（开火后武器耐久卡在50%是正常现象，这是为了让枪管前后复进的必要牺牲）</entitydescription.tsm_fkj_an94>
+
+  <entityname.tsm_fkj_ak74>反抗军AK74自动步枪</entityname.tsm_fkj_ak74>
+  <entitydescription.tsm_fkj_ak74>仅仅只需要半个钟的学习就能正确使用，最适合七岁儿童的武器。发射‖color:150,0,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak74>
+
+  <entityname.tsm_fkj_groza>反抗军OTS Groza-1“闪电”无托突击步枪</entityname.tsm_fkj_groza>
+  <entitydescription.tsm_fkj_groza>一把根据ak74u改造的短小无托步枪，使用‖color:150,0,0,255‖7.62*39‖color:end‖口径的弹匣，虽然大口径威力强悍，射速惊人，但差劲的人机功效和难以控制的后座力使得“狗杂”很快就被在潜艇战无托武器淘汰，但造价低廉易于携带，受到了不少海盗和反抗军喜爱。</entitydescription.tsm_fkj_groza>
+
+  <entityname.tsm_fkj_ak103>反抗军AK103突击步枪</entityname.tsm_fkj_ak103>
+  <entitydescription.tsm_fkj_ak103>一把优秀的武器，非常适合用来反抗联盟的暴政。很多时候你要做的就只有接过枪，然后向联盟倾泻子弹。发射‖color:150,0,0,255‖7.62*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak103>
+
+  <entityname.tsm_fkj_ak103_l>AK103突击步枪（轻量化枪托）</entityname.tsm_fkj_ak103_l>
+  <entitydescription.tsm_fkj_ak103_l>在原有基础上进行了轻量化改造与加快射速，使其更适合用于在潜艇内战斗。发射‖color:150,0,0,255‖7.62*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak103_l>
+
+  <entityname.tsm_fkj_ak105>反抗军AK105突击步枪</entityname.tsm_fkj_ak105>
+  <entitydescription.tsm_fkj_ak105>短枪管更适合在狭小空间内使用，非常适合潜艇艇员进行舱内反击与突袭船坞。发射‖color:150,0,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak105>
+
+  <entityname.tsm_fkj_ak105_l>AK105突击步枪(轻量化枪托)</entityname.tsm_fkj_ak105_l>
+  <entitydescription.tsm_fkj_ak105_l>更轻的AK-105，并无其他改进。因为更换了枪托，记得携带枪械清洁工具。发射‖color:150,0,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak105_l>
+
+  <entityname.tsm_fkj_sks>反抗军SKS西蒙诺夫步枪</entityname.tsm_fkj_sks>
+  <entitydescription.tsm_fkj_sks>曾经的社会主义阵营武器，但是被小布尔乔亚进行了改装。虽然更好用，但是总感觉哪里怪怪的？使用‖color:150,0,0,255‖7.62*39‖color:end‖弹匣</entitydescription.tsm_fkj_sks>
+
+  <entityname.tsm_fkj_ak12>反抗军AK12突击步枪</entityname.tsm_fkj_ak12>
+  <entitydescription.tsm_fkj_ak12>百年历史的“新锐”武器，被反抗军改装了自适应枪管与枪膛，使其可以正常发射‖color:150,0,0,255‖5.45*39‖color:end‖与‖color:150,0,0,255‖7.62*39‖color:end‖两种口径的弹药。</entitydescription.tsm_fkj_ak12>
+
+  <entityname.tsm_fkj_aa12>反抗军AA12自动霰弹枪</entityname.tsm_fkj_aa12>
+  <entitydescription.tsm_fkj_aa12>船舱中的推进利器、巷战的绞肉机。只需要按住扳机，挡在前面的任何人与生物都不能幸免于难。使用‖color:150,0,0,255‖反抗军霰弹弹鼓‖color:end‖供弹</entitydescription.tsm_fkj_aa12>
+
+  <entityname.tsm_fkj_svd>反抗军SVD狙击步枪</entityname.tsm_fkj_svd>
+  <entitydescription.tsm_fkj_svd>半自动精确步枪，可以让训练有素的狙击手在高处快速狙杀固守街垒的敌人。</entitydescription.tsm_fkj_svd>
+
+  <entityname.tsm_fkj_jts>反抗军通用轻机枪（RPL-20）</entityname.tsm_fkj_jts>
+  <entitydescription.tsm_fkj_jts>火力强悍的武器，可以让反抗军的战士将联盟的走狗压制地抬不起头，然后将他们绝望地与掩体一起被撕成碎片。连续开火的后坐力甚至可以将射手向后推，因此建议经过训练再使用该武器。使用‖color:150,0,0,255‖反抗军通用机枪弹匣（5.45*39）‖color:end‖</entitydescription.tsm_fkj_jts>
+
+  <entityname.tsm_fkj_pkp>反抗军通用机枪（PKP）</entityname.tsm_fkj_pkp>
+  <entitydescription.tsm_fkj_pkp>由号称世界上最好的通用机枪现代化改进而来，即使是到了木卫二世界也毫不逊色。此枪之名「Pecheneg」是来自佩切涅格人，一个起源于地球的草原的一个好战的西突厥分支部落。有效射程内对轻型结构物和简易覆盖物有良好的杀伤力。现在经过反抗军的改造使用‖color:150,0,0,255‖反抗军机枪弹匣（7.62*51）‖color:end‖。</entitydescription.tsm_fkj_pkp>
+
+  <entityname.tsm_fkj_jq430>反抗军JQ430突击步枪</entityname.tsm_fkj_jq430>
+  <entitydescription.tsm_fkj_jq430>使用了类实木的枪托与护木，让使用者能感受到地球的气息，榴弹发射器也能给敌人来一点木卫二的震撼(注意，不能同时使用弹匣和榴弹，否则会引起炸膛)。不过枪口的刺刀因为使用难度过大，几乎无人能用。发射‖color:150,0,0,255‖7.62*39‖color:end‖弹药。</entitydescription.tsm_fkj_jq430>
+
+  <entityname.tsm_fkj_ak12_c>AK12突击步枪（战术型）</entityname.tsm_fkj_ak12_c>
+  <entitydescription.tsm_fkj_ak12_c>加装了三角前握，拥有更好的操控性。同样可以发射‖color:150,0,0,255‖5.45*39‖color:end‖与‖color:150,0,0,255‖7.62*39‖color:end‖两种弹药。</entitydescription.tsm_fkj_ak12_c>
+
+  <entityname.tsm_fkj_ak105_c>AK105突击步枪（战术型）</entityname.tsm_fkj_ak105_c>
+  <entitydescription.tsm_fkj_ak105_c>下挂了一具单兵榴弹发射器，可以发射各种榴弹而无需额外携带发射器(注意，不能同时使用弹匣和榴弹，否则会引起炸膛)，比普通的AK-105射速更快。发射‖color:150,0,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak105_c>
+
+  <entityname.tsm_fkj_m2>M2勃朗宁重机枪（手提型）</entityname.tsm_fkj_m2>
+  <entitydescription.tsm_fkj_m2>Hey!it's a machinegun!\n使用‖color:150,0,0,255‖反抗军重型机枪弹匣‖color:end‖</entitydescription.tsm_fkj_m2>
+
+  <entityname.tsm_fkj_m2_eagle>M2勃朗宁重机枪(白鹰涂装)</entityname.tsm_fkj_m2_eagle>
+  <entitydescription.tsm_fkj_m2_eagle>致同舟共寄的兄弟们</entitydescription.tsm_fkj_m2_eagle>
+
+  <entityname.tsm_honeybadger>反抗军蜜獾.308 短突击步枪</entityname.tsm_honeybadger>
+  <entitydescription.tsm_honeybadger>事实证明冲锋枪在防弹衣普及的潜艇近距离作战中虽然拥有良好机动性，但杀伤力明显力不从心，在考虑弹匣通用性后，改造出了使用‖color:150,0,0,255‖7.62*39‖color:end‖口径的蜜獾短突击步枪到由此诞生出了，一体式消音器，短小枪身，大口径，集冲锋枪和步枪的长处为一体</entitydescription.tsm_honeybadger>
+
+  <entityname.tsm_fkj_rpk16>反抗军RPK—16轻机枪</entityname.tsm_fkj_rpk16>
+  <entitydescription.tsm_fkj_rpk16>不但延续了AK家族的优良传统，而且还对其进行了全方位的现代化改进，轻量化和高火力使其在潜艇战中发挥了巨大的作用，使用‖color:150,0,0,255‖5.45*39‖color:end‖反抗军弹匣或‖color:150,0,0,255‖RPK弹鼓‖color:end‖</entitydescription.tsm_fkj_rpk16>
+
+  <entityname.tsm_fkj_ace52>反抗军加利尔ACE52战斗步枪</entityname.tsm_fkj_ace52>
+  <entitydescription.tsm_fkj_ace52>随着反抗军中间威力弹步枪逐渐被ak系列普及，但使用‖color:150,0,0,255‖7.62*51‖color:end‖全威力的加利尔仍然有一席之地，但ak打不穿敌人的装甲时，ACE52或许是更好的选择</entitydescription.tsm_fkj_ace52>
+
+  <entityname.tsm_fkj_g3a4>反抗军G3A4战斗步枪</entityname.tsm_fkj_g3a4>
+  <entitydescription.tsm_fkj_g3a4>使用‖color:150,0,0,255‖7.62*51‖color:end‖口径弹匣，伸缩枪托减轻了枪身重量，虽然射速较慢，但有那个战斗份子能拒绝超帅的拍拉机柄上膛呢？</entitydescription.tsm_fkj_g3a4>
+
+  <entityname.tsm_fkj_fal>反抗军FAL“法老”战斗步枪</entityname.tsm_fkj_fal>
+  <entitydescription.tsm_fkj_fal>使用‖color:150,0,0,255‖7.62*51‖color:end‖口径弹匣，号称“自由世界的右手”，被誉为最好的全威力弹发射平台，造价低，爆发高，深受江湖各路豪杰喜爱</entitydescription.tsm_fkj_fal>
+
+  <entityname.tsm_fkj_sg553>反抗军SG553-R“突击者”步枪</entityname.tsm_fkj_sg553>
+  <entitydescription.tsm_fkj_sg553>使用‖color:150,0,0,255‖7.62x39‖color:end‖口径弹匣，由已经淘汰的小口径sg550改装而来，更适合攻城掠地</entitydescription.tsm_fkj_sg553>
+
+  <entityname.fkj_ammobox>反抗军弹药箱</entityname.fkj_ammobox>
+  <entitydescription.fkj_ammobox>带有半自动装填机构的弹药箱，里面是反抗军制式武器所使用的弹药&#xD;&#xA;「放入空弹匣，鼠标左键+右键装填弹匣」</entitydescription.fkj_ammobox>
+
+  <entityname.fkj_545_mag>反抗军普通弹匣（5.45*39）</entityname.fkj_545_mag>
+  <entitydescription.fkj_545_mag>装有35发5.45弹药的加长弹匣，被大量制造，使用者也习惯带超多弹匣。</entitydescription.fkj_545_mag>
+
+  <entityname.fkj_545_krmag>反抗军扩容弹匣（5.45*39）</entityname.fkj_545_krmag>
+  <entitydescription.fkj_545_krmag>装有70发5.45弹药的弹鼓，续航性一流。</entitydescription.fkj_545_krmag>
+
+  <entityname.fkj_545cj_mag>反抗军穿甲弹匣（5.45*39）</entityname.fkj_545cj_mag>
+  <entitydescription.fkj_545cj_mag>装有33发5.45穿甲弹，可以有效应对防弹衣与生物甲壳。</entitydescription.fkj_545cj_mag>
+
+  <entityname.fkj_545hz_mag>反抗军混炸弹匣（5.45*39）</entityname.fkj_545hz_mag>
+  <entitydescription.fkj_545hz_mag>内装30发新式高爆子弹，较为稀少。</entitydescription.fkj_545hz_mag>
+
+  <entityname.fkj_762_mag>反抗军普通弹匣（7.62*39）</entityname.fkj_762_mag>
+  <entitydescription.fkj_762_mag>弹药容量30发的7.62标准弹匣。</entitydescription.fkj_762_mag>
+
+  <entityname.fkj_762_krmag>反抗军扩容弹匣（7.62*39）</entityname.fkj_762_krmag>
+  <entitydescription.fkj_762_krmag>装有60发7.62弹药的弹鼓，随时可以让突击步枪打出机枪的火力。</entitydescription.fkj_762_krmag>
+
+  <entityname.fkj_762cj_mag>反抗军穿甲弹匣（7.62*39）</entityname.fkj_762cj_mag>
+  <entitydescription.fkj_762cj_mag>将标准弹匣内的普通弹药换成了30发7.62穿甲弹，卡卡再也不用担心我打不穿防弹衣辣！</entitydescription.fkj_762cj_mag>
+
+  <entityname.fkj_762hz_mag>反抗军混炸弹匣（7.62*39）</entityname.fkj_762hz_mag>
+  <entitydescription.fkj_762hz_mag>装载30发7.62*39口径混炸子弹</entitydescription.fkj_762hz_mag>
+
+  <entityname.fkj_762_51_mag>反抗军普通弹匣（7.62*51）</entityname.fkj_762_51_mag>
+  <entitydescription.fkj_762_51_mag>装载20发7.62*51口径子弹</entitydescription.fkj_762_51_mag>
+
+  <entityname.fkj_762_51_ap_mag>反抗军穿甲弹匣（7.62*51）</entityname.fkj_762_51_ap_mag>
+  <entitydescription.fkj_762_51_ap_mag>装载20发7.62*51口径穿甲弹</entitydescription.fkj_762_51_ap_mag>
+
+  <entityname.fkj_jts_mag>反抗军通用机枪弹匣（5.45*39）</entityname.fkj_jts_mag>
+  <entitydescription.fkj_jts_mag>储存了一条200发5.45*39mm弹链的弹盒，可供射手肆意挥霍。</entitydescription.fkj_jts_mag>
+
+  <entityname.fkj_jts_cjmag>反抗军通用机枪穿甲弹匣（5.45*39）</entityname.fkj_jts_cjmag>
+  <entitydescription.fkj_jts_cjmag>储存了一条200发5.45*39mm弹链的穿甲弹弹盒</entitydescription.fkj_jts_cjmag>
+
+  <entityname.fkj_pkp_mag>反抗军通用机枪弹匣（7.62*51）</entityname.fkj_pkp_mag>
+  <entitydescription.fkj_pkp_mag>储存了一条100发弹链的弹盒</entitydescription.fkj_pkp_mag>
+
+  <entityname.fkj_pkp_mag_cj>反抗军通用机枪穿甲弹匣（7.62*51）</entityname.fkj_pkp_mag_cj>
+  <entitydescription.fkj_pkp_mag_cj>储存了一条100发弹链的穿甲弹弹盒</entitydescription.fkj_pkp_mag_cj>
+
+  <entityname.fkj_m2_mag>反抗军重型机枪弹匣</entityname.fkj_m2_mag>
+  <entitydescription.fkj_m2_mag>安装于重机枪上的弹盒，内有一条150发的弹链，可提供重机枪长时间射击。体积过大不便携带，建议由副射手专门携带。</entitydescription.fkj_m2_mag>
+
+  <entityname.fkj_svd_mag>SVD弹匣</entityname.fkj_svd_mag>
+  <entitydescription.fkj_svd_mag>填了20发步枪弹的弹匣。因为体积原因射手不会选择一次性携带过多。</entitydescription.fkj_svd_mag>
+
+  <entityname.fkj_aa12_mag>反抗军霰弹弹鼓</entityname.fkj_aa12_mag>
+  <entitydescription.fkj_aa12_mag>装有15发霰弹的弹鼓，可以为AA-12提供一段时间的续航。</entitydescription.fkj_aa12_mag>
+
+  <entityname.fkj_rpk_mag>RPK弹鼓</entityname.fkj_rpk_mag>
+  <entitydescription.fkj_rpk_mag>装有95发5.45*39口径子弹的弹鼓，给RPK提供更为长久的续航。</entitydescription.fkj_rpk_mag>
+
+ <!--通用-->
+  <entityname.tsm_m32_launcher>转轮式榴弹发射器</entityname.tsm_m32_launcher>
+  <entitydescription.tsm_m32_launcher>转轮式榴弹发射器，能发射多种弹药，不管是镇压暴动与叛乱，还是抵抗泥偶迅猛龙群时，都是一把好手，高效，凶悍</entitydescription.tsm_m32_launcher>
+
+  <entityname.tsm_rpg>RPG-7</entityname.tsm_rpg>
+  <entitydescription.tsm_rpg>这具超口径火箭弹发射器安装了一系列有助于射手持握与瞄准的新配件，更加危险与致命对谁来说都是这样。——注意使用规范！</entitydescription.tsm_rpg>
+
+  <entityname.tsm_bazooka>巴祖卡</entityname.tsm_bazooka>
+  <entitydescription.tsm_bazooka>老古董，最早的蓝图来自古董收藏家的收藏库。装在发射筒内的炮弹与射手隔绝，所以更加安全。当然，不按照规范使用同样会对射手造成伤害。</entitydescription.tsm_bazooka>
+
+  <entityname.tsm_r_thermobaric>RPG温压弹</entityname.tsm_r_thermobaric>
+  <entitydescription.tsm_r_thermobaric>过大的战斗部导致便携性暴跌。内部填装了空气燃料，一发就足够吞噬一大块空间内的氧气，同时还能造成严重烧伤，应对负隅顽抗的敌军的不二之选。</entitydescription.tsm_r_thermobaric>
+
+  <entityname.tsm_r_aix>RPG反人员高爆破片弹</entityname.tsm_r_aix>
+  <entitydescription.tsm_r_aix>因其外形而获得了“铅笔”的外号，但是这只铅笔可比John Wick 手中的铅笔更加致命——不管是对目标还是射手来说。</entitydescription.tsm_r_aix>
+
+  <entityname.tsm_r_heat>RPG破甲榴弹</entityname.tsm_r_heat>
+  <entitydescription.tsm_r_heat>经典款式，无需多言。</entitydescription.tsm_r_heat>
+
+  <entityname.tsm_b_rocket>巴祖卡火箭弹</entityname.tsm_b_rocket>
+  <entitydescription.tsm_b_rocket>老东西×2。现代工艺也不能把这东西做得有多好，但是它的体积决定了它拥有更好的便携性。</entitydescription.tsm_b_rocket>
+
+  <entityname.tsm_grenade_heat>高爆破甲榴弹</entityname.tsm_grenade_heat>
+  <entitydescription.tsm_grenade_heat>一颗能够高速飞行的手榴弹？粗俗但清晰的比喻，确实如此。</entitydescription.tsm_grenade_heat>
+
+  <entityname.tsm_grenade_fire>燃烧榴弹</entityname.tsm_grenade_fire>
+  <entitydescription.tsm_grenade_fire>爆炸后可以提供一片稳定的高温火焰，持续消耗氧气与生物的性命，同时点燃附近的易燃物。</entitydescription.tsm_grenade_fire>
+
+  <entityname.tsm_171>QCQ-171冲锋枪</entityname.tsm_171>
+  <entitydescription.tsm_171>使用‖color:150,0,0,255‖9mm冲锋枪弹匣‖color:end‖</entitydescription.tsm_171>
+  
+  <entityname.tsm_05>05式微声冲锋枪</entityname.tsm_05>
+  <entitydescription.tsm_05>使用‖color:150,0,0,255‖5.8mm冲锋枪弹匣‖color:end‖</entitydescription.tsm_05>
+
+  <entityname.tsm_p90>P90冲锋枪 </entityname.tsm_p90>
+  <entitydescription.tsm_p90>该枪作为冲锋枪却有着优秀的穿透能力，有效射程内对高级防弹衣依然有不俗的穿透能力，被誉为“防弹衣打孔机”并且采用简单可靠的运作方式，同时拥有良好射击精准度，在潜艇狭窄环境下，短小的无托结构和穿透力立刻赢得了木卫二各势力的欢迎,使用‖color:150,0,0,255‖5.7*28mm子弹‖color:end‖</entitydescription.tsm_p90>
+
+  <entityname.tsm_92_pistols>92式轻型制式自动手枪</entityname.tsm_92_pistols>
+  <entitydescription.tsm_92_pistols>性能优秀的单兵防卫武器，维护成本低廉，适合应对无甲或轻甲步兵目标，使用‖color:150,0,0,255‖9mm手枪弹匣‖color:end‖</entitydescription.tsm_92_pistols>
+
+  <entityname.tsm_fn509_pistols>FN 509 战术手枪</entityname.tsm_fn509_pistols>
+  <entitydescription.tsm_fn509_pistols>FN 509 Tactical采用了现代化的外观和设计，有着清晰的线条和光滑的表面。它的握把上覆盖有特殊的纹理，使枪手在使用时更加稳固。使用‖color:150,0,0,255‖9mm手枪弹匣‖color:end‖</entitydescription.tsm_fn509_pistols>
+
+  <entityname.tsm_1911_pistols>勃朗宁半自动手枪</entityname.tsm_1911_pistols>
+  <entitydescription.tsm_1911_pistols>经典的武器也需要针对性的改装，这把适应了欧罗巴环境的武器很快受到了执法者与民间私刑审判者钟爱。使用‖color:150,0,0,255‖.45口径‖color:end‖子弹</entitydescription.tsm_1911_pistols>
+
+  <entityname.tsm_glock18_pistols>Glock 18自动手枪</entityname.tsm_glock18_pistols>
+  <entitydescription.tsm_glock18_pistols>格洛克18手枪为9毫米口径，该枪可靠性强，射速很快。由于威力较大，限制制造，只提供给特种部队使用。使用‖color:150,0,0,255‖9mm手枪弹匣‖color:end‖</entitydescription.tsm_glock18_pistols>
+
+  <entityname.tsm_de_handgun>沙漠之鹰手枪</entityname.tsm_de_handgun>
+  <entitydescription.tsm_de_handgun>曾经地球上的大口径狩猎用手枪，外形帅气威力巨大，就算来到了木卫二也是一把强力武器。只不过射手需要专门的训练才能正常使用它——你也不想开枪时没拿稳，枪飞到你脸上吧？使用‖color:150,0,0,255‖.50口径‖color:end‖子弹</entitydescription.tsm_de_handgun>
+
+  <entityname.tsm_88>88式狙击步枪</entityname.tsm_88>
+  <entitydescription.tsm_88>该枪采用4倍或6倍光学瞄准镜，以增强目标的识别打击能力。但配备的是‖color:150,0,0,255‖5.8mm‖color:end‖子弹，该子弹重量比较大，这就会对狙击步枪的精度有着较大的影响，而且枪管和两脚架的连接方式也和一般的狙击步枪不同，同样也影响着步枪射击的精度。使用‖color:150,0,0,255‖5.8mm狙击枪弹匣‖color:end‖</entitydescription.tsm_88>
+
+  <entityname.tsm_cslr4>CS LR4狙击步枪</entityname.tsm_cslr4>
+  <entitydescription.tsm_cslr4>CS/LR4型‖color:150,0,0,255‖7.62mm‖color:end‖高精度狙击步枪采用有托结构，枪管浮置式设计，旋转后拉式枪机，弹匣供弹。全枪由枪身、枪托/护手、枪机、供弹具及两脚架构成。还包括8～32倍白光瞄准镜、微光像增强仪、激光测距/弹道解算计算机，还有维护工具、备用弹匣等配套附件。26万是不包括弹在内的一整套系统。使用‖color:150,0,0,255‖7.62mm狙击枪弹匣‖color:end‖</entitydescription.tsm_cslr4>
+
+  <entityname.tsm_qbu202>QBU-202高精度狙击步枪</entityname.tsm_qbu202>
+  <entitydescription.tsm_qbu202>QBU202型8.6毫米高精度狙击步枪的枪管是通过冷锤锻造方式进行制造而成，枪管精度寿命非常高。供弹方式采用弹匣供弹，使用‖color:150,0,0,255‖8.6*70mm‖color:end‖狙击步枪弹匣</entitydescription.tsm_qbu202>
+
+  <entityname.tsm_amr2>AMR-2重型狙击步枪</entityname.tsm_amr2>
+  <entitydescription.tsm_amr2>AMR-2式‖color:150,0,0,255‖12.7*99‖color:end‖非自动狙击步枪是步兵狙击手使用的反器材武器，用以对付远距离的单个有生和重要器材等高价值目标，可实现精确打击和高效毁伤。该型枪使用重型枪管，非自动结构则保证步枪在击发的瞬间可能发生震动的部件数量降为最低，从而保证了射击精度。使用‖color:150,0,0,255‖12.7mm狙击枪弹匣‖color:end‖</entitydescription.tsm_amr2>
+
+  <entityname.tsm_m99>M99反器材狙击步枪</entityname.tsm_m99>
+  <entitydescription.tsm_m99>随着战争的愈演愈烈，士兵的防护水平越来越高，现有的狙击步枪在射程和威力方面已显弱势。积极发展新型‖color:150,0,0,255‖12.7*99‖color:end‖大口径狙击步枪成为各军事势力的新战场。为此，各地的轻武器研究者积极展开了半自动大口径狙击步枪的研制工作，M99应运而生，并承载着设计工作者的心血和荣耀迈向木卫二。</entitydescription.tsm_m99>
+
+  <entityname.tsm_mg42>MG42通用机枪</entityname.tsm_mg42>
+  <entitydescription.tsm_mg42>已被欧罗巴公约禁止生产的重机枪，其恐怖的射速发出的声音早在地球时期就被誉为独裁者电锯，使用‖color:150,0,0,255‖7.92 MG42弹鼓‖color:end‖，疯狂的初速与穿透力使得敌人的任何掩体都变得可笑，唯一不足在于续航能力差</entitydescription.tsm_mg42>
+
+  <entityname.tsm_56>56式冲锋枪</entityname.tsm_56>
+  <entitydescription.tsm_56>重量较轻、射击精度好、机构动作可靠。它采用导气式自动方式，可以实施单发射击，使用‖color:150,0,0,255‖7.62mm‖color:end‖子弹\n埋骨何须柔梓地，人生无处不青山</entitydescription.tsm_56>
+
+  <entityname.tsm_81>81-1式自动步枪</entityname.tsm_81>
+  <entitydescription.tsm_81>一款性能优良的武器，精度好、动作可靠、操作维护简便，在实战中表现良好的遗古枪械，使用‖color:150,0,0,255‖7.62mm‖color:end‖子弹</entitydescription.tsm_81>
+
+  <entityname.tsm_vk>维克托</entityname.tsm_vk>
+  <entitydescription.tsm_vk>一把外形优美的白色改装冲锋枪，可以安装手枪瞄具以及手枪消音器。使用‖color:150,0,0,255‖9mm手枪弹匣‖color:end‖，有着令人瞠目结舌的射速和几乎没有的后坐力，但由于并不适宜潜艇战的环境而没有被军方采用，只在奇迹之海内部作为收藏品少量发售。</entitydescription.tsm_vk>
+
+  <entityname.tsm_js9>JS-9冲锋枪</entityname.tsm_js9>
+  <entitydescription.tsm_js9>一款‖color:150,0,0,255‖9mm‖color:end‖口径微声冲锋枪，该枪采用无枪托设计，弹匣位于手枪握把后面以缩短武器的长度，通常还安装消声器；它采用枪机后坐式自动方式。</entitydescription.tsm_js9>
+
+  <entityname.tsm_9_smgmag>冲锋枪弹匣（9mm）</entityname.tsm_9_smgmag>
+  <entitydescription.tsm_9_smgmag>装填30发9mm弹药</entitydescription.tsm_9_smgmag>
+
+  <entityname.tsm_9_smgmag_cj>冲锋枪碎甲弹匣（9mm）</entityname.tsm_9_smgmag_cj>
+  <entitydescription.tsm_9_smgmag_cj>装填30发9mm碎甲弹</entitydescription.tsm_9_smgmag_cj>
+
+  <entityname.tsm_58_smgmag>冲锋枪弹匣（5.8mm）</entityname.tsm_58_smgmag>
+  <entitydescription.tsm_58_smgmag>装填50发5.8mm弹药</entitydescription.tsm_58_smgmag>
+
+  <entityname.tsm_57_smgmag>冲锋枪弹匣（5.7*28）</entityname.tsm_57_smgmag>
+  <entitydescription.tsm_57_smgmag>沉重的弹夹里可以装下50发子弹，5.7*28mm弹药可以轻易的穿透具有三级、四级甚至于五级防护能力防弹背心</entitydescription.tsm_57_smgmag>
+
+  <entityname.tsm_9_mag>手枪弹匣（9mm）</entityname.tsm_9_mag>
+  <entitydescription.tsm_9_mag>填装18发9mm手枪弹</entitydescription.tsm_9_mag>
+
+  <entityname.tsm_9_krmag>手枪扩容弹匣（9mm）</entityname.tsm_9_krmag>
+  <entitydescription.tsm_9_krmag>沉重的弹夹里可以装下33发子弹</entitydescription.tsm_9_krmag>
+  
+  <entityname.tsm_9_drum>手枪弹鼓（9mm）</entityname.tsm_9_drum>
+  <entitydescription.tsm_9_drum>装填50发9mm弹药，目前适配Glock 18</entitydescription.tsm_9_drum>
+
+  <entityname.tsm_1143_mag>手枪弹匣（.45ACP）</entityname.tsm_1143_mag>
+  <entitydescription.tsm_1143_mag>装填有12发百年流传的.45ACP口径弹药。</entitydescription.tsm_1143_mag>
+
+  <entityname.tsm_127_mag>手枪弹匣（.50AE）</entityname.tsm_127_mag>
+  <entitydescription.tsm_127_mag>装填有7发大威力手枪弹的弹匣，因体积过大，携带数量会受影响。</entitydescription.tsm_127_mag>
+
+  <entityname.tsm_58ammo_mag>狙击步枪弹匣（5.8mm）</entityname.tsm_58ammo_mag>
+  <entitydescription.tsm_58ammo_mag>内装10发5.8mm子弹</entitydescription.tsm_58ammo_mag>
+
+  <entityname.tsm_762ammo_mag>狙击步枪弹匣（7.62*51）</entityname.tsm_762ammo_mag>
+  <entitydescription.tsm_762ammo_mag>内装10发7.62*51mm子弹</entitydescription.tsm_762ammo_mag>
+
+  <entityname.tsm_86_mag>狙击步枪弹匣（8.6*70）</entityname.tsm_86_mag>
+  <entitydescription.tsm_86_mag>内装8发8.6*70mm子弹</entitydescription.tsm_86_mag>
+
+  <entityname.tsm_127ammo_mag>狙击步枪弹匣（12.7*99）</entityname.tsm_127ammo_mag>
+  <entitydescription.tsm_127ammo_mag>内装5发12.7*99mm子弹</entitydescription.tsm_127ammo_mag>
+
+  <entityname.tsm_mg42_mag>弹鼓（7.92*57）</entityname.tsm_mg42_mag>
+  <entitydescription.tsm_mg42_mag>装载75发大口径子弹</entitydescription.tsm_mg42_mag>
+
+  <entityname.tsm_stock_pistols>短枪托枪托</entityname.tsm_stock_pistols>
+  <entitydescription.tsm_stock_pistols>专供手枪使用</entitydescription.tsm_stock_pistols>
+
+  <entityname.tsm_sighting_pistols>手枪瞄具</entityname.tsm_sighting_pistols>
+  <entitydescription.tsm_sighting_pistols>专供手枪使用</entitydescription.tsm_sighting_pistols>
+
+  <entityname.tsm_barrel_pistols>手枪消音器</entityname.tsm_barrel_pistols>
+  <entitydescription.tsm_barrel_pistols>专供手枪使用</entitydescription.tsm_barrel_pistols>
+
+<!--三神丘-->
+ <entityname.tsm_kep>‖color:255,100,100,255‖'三神丘'‖color:end‖</entityname.tsm_kep>
+ <entitydescription.tsm_kep>奇迹之海动能穿透器\n\n可发射鱼叉弹药以及长矛\n可安装三神丘专用电池来辅助使用\n\n'你说错了，我们那些死去的兄弟并不是屹立的松柏，只是不愿倒下的坟墓'</entitydescription.tsm_kep>
+
+ <entityname.tsm_kep_spear>「穿刺长矛」</entityname.tsm_kep_spear>
+ <entitydescription.tsm_kep_spear>‖color:211,206,28,255‖酒是穿肠毒药‖color:end‖\n动能穿透器穿刺型长矛弹药，极其尖利的刺头，可以穿透一部分墙壁。</entitydescription.tsm_kep_spear>
+
+ <entityname.tsm_kep_spear_he>「高爆长矛」</entityname.tsm_kep_spear_he>
+ <entitydescription.tsm_kep_spear_he>‖color:211,206,28,255‖气是雷烟火炮‖color:end‖\n动能穿透器高爆型长矛弹药，拥有小范围的爆炸伤害，注意误伤！</entitydescription.tsm_kep_spear_he>
+
+ <entityname.tsm_kep_spear_12>「霰弹长矛」</entityname.tsm_kep_spear_12>
+ <entitydescription.tsm_kep_spear_12>‖color:211,206,28,255‖色是刮骨钢刀‖color:end‖\n动能穿透器霰弹型长矛弹药，可以喷射出多枚箭头，造成大范围损伤</entitydescription.tsm_kep_spear_12>
+
+ <entityname.tsm_kep_spear_heat>「榴弹长矛」</entityname.tsm_kep_spear_heat>
+ <entitydescription.tsm_kep_spear_heat>‖color:211,206,28,255‖财是惹祸根苗‖color:end‖\n动能穿透器榴弹型长矛弹药，爆炸范围较大，有最小起爆距离。</entitydescription.tsm_kep_spear_heat>
+
+ <entityname.tsm_kep_battery>三神丘专用电池</entityname.tsm_kep_battery>
+ <entitydescription.tsm_kep_battery>给予‖color:255,100,100,255‖'三神丘'‖color:end‖强大的动力，提高射速以及射击动能。</entitydescription.tsm_kep_battery>
+<!--救赎-->
+ <entityname.tsm_redemption>‖color:30,0,180,255‖救赎‖color:end‖</entityname.tsm_redemption>
+ <entitydescription.tsm_redemption>能量发射器\n\n用能量拘束盒作为弹药\n\n拥有两种模式可根据环境随意切换。\n由疯狂星期四投稿提供</entitydescription.tsm_redemption>
+
+ <entityname.tsm_redemption_RestraintBox>救赎能量拘束盒</entityname.tsm_redemption_RestraintBox>
+ <entitydescription.tsm_redemption_RestraintBox>用[机密]方法把能量拘束在这个一个小盒子里，搭配特定发射器可以很好的发挥这种能量的功效。</entitydescription.tsm_redemption_RestraintBox>
+
+<!--背包-->
+ <entityname.tsm_toolbox>奇迹之海手提箱</entityname.tsm_toolbox>
+ <entitydescription.tsm_toolbox>大容量手提箱，运用异星材料制作，可免费申请售后</entitydescription.tsm_toolbox>
+
+ <entityname.tsm_weaponbackpack>武器箱</entityname.tsm_weaponbackpack>
+ <entitydescription.tsm_weaponbackpack>拥有9个槽位，可以用来装武器、弹药或者潜水服，也可以背在背上</entitydescription.tsm_weaponbackpack>
+
+ <entityname.tsm_bag_medium>协奏战术包</entityname.tsm_bag_medium>
+ <entitydescription.tsm_bag_medium>战术背包，容量适中</entitydescription.tsm_bag_medium>
+
+ <entityname.tsm_bag_small>背包</entityname.tsm_bag_small>
+ <entitydescription.tsm_bag_small>多用途小容量背包，制作简单，但是容量较小</entitydescription.tsm_bag_small>
+
+ <entityname.tsm_bag_big>战术背包</entityname.tsm_bag_big>
+ <entitydescription.tsm_bag_big>可以装入很多弹药与一把重型枪械，有效增强了士兵的持续战斗能力</entitydescription.tsm_bag_big>
+
+ <entityname.tsm_bag_heavy>大载物背包</entityname.tsm_bag_heavy>
+ <entitydescription.tsm_bag_heavy>大包，可以装很多东西和挂个工具箱与大枪，稍微会影响到使用武器与驾驶潜艇</entitydescription.tsm_bag_heavy>
+
+ <entityname.tsm_bag_heavy_big>大型运输背包</entityname.tsm_bag_heavy_big>
+ <entitydescription.tsm_bag_heavy_big>更大的背包，甚至可以挂上两个工具箱和两把大枪。但是因为体积太大背上后不方便使用武器与驾驶潜艇</entitydescription.tsm_bag_heavy_big>
+
+ <entityname.tsm_bag_diving_special>联盟特别行动背包</entityname.tsm_bag_diving_special>
+ <entitydescription.tsm_bag_diving_special>联盟内部一些特种部队的精英才会配发的一种背包，容量适中，但是有两个专门的槽位用来安置潜水服，还有一个专门用来携带重型枪械的挂点，不过体型太大会影响到武器使用</entitydescription.tsm_bag_diving_special>
+
+ <entityname.tsm_bag_diving>特种作业背包</entityname.tsm_bag_diving>
+ <entitydescription.tsm_bag_diving>容量适中，另外有个专门的空间用于放置潜水服，过大的体积会影响到武器使用</entitydescription.tsm_bag_diving>
+
+ <entityname.tsm_bag_diving_big>大型特种作业背包</entityname.tsm_bag_diving_big>
+ <entitydescription.tsm_bag_diving_big>容量比较大的背包，有个专门的空间放置潜水服，但是背上后不便于使用工具维修潜艇</entitydescription.tsm_bag_diving_big>
+
+
+<!--任务/npc-->
+  <entityname.tsm_mission1>实验日志</entityname.tsm_mission1>
+  <entitydescription.tsm_mission1>似乎是战士们从站点得到实验日志的一部分</entitydescription.tsm_mission1>
+
+  <charactername.TSM_convertible_npc>ARS公司驻奇迹之海职员</charactername.TSM_convertible_npc>
+  <charactername.TSM_customisation_qiuwu>邱芜</charactername.TSM_customisation_qiuwu>
+
+<!--联盟-->
+  <!--快反-->
+  <npctitle.rapidreaction_leader>快速反应部队-观测者</npctitle.rapidreaction_leader>
+  <npctitle.rapidreaction_breaker>快速反应部队-突破手</npctitle.rapidreaction_breaker>
+  <npctitle.rapidreaction_elite>快速反应部队-精英</npctitle.rapidreaction_elite>
+  <npctitle.rapidreaction_elite_p>快速反应部队-精英</npctitle.rapidreaction_elite_p>
+  <npctitle.rapidreaction>快速反应部队-突击手</npctitle.rapidreaction>
+  <npctitle.rapidreaction_p>快速反应部队-突击手</npctitle.rapidreaction_p>
+
+  <npctitle.rapidreaction_reinforcement>快速反应支援部队</npctitle.rapidreaction_reinforcement>
+  <!--贝奥武夫-->
+  <npctitle.beowulf_leader>贝奥武夫中队-假寐</npctitle.beowulf_leader>
+  <npctitle.beowulf>贝奥武夫中队-突击手</npctitle.beowulf>
+  <npctitle.beowulf_p>贝奥武夫中队-突击手</npctitle.beowulf_p>
+  <npctitle.beowulf_ex>贝奥武夫中队-爆破手</npctitle.beowulf_ex>
+  <npctitle.beowulf_ex_p>贝奥武夫中队-爆破手</npctitle.beowulf_ex_p>
+  <npctitle.beowulf_elite>贝奥武夫中队-精英</npctitle.beowulf_elite>
+  <npctitle.beowulf_elite_p>贝奥武夫中队-精英</npctitle.beowulf_elite_p>
+  <npctitle.beowulf_breaker>贝奥武夫中队-突破手</npctitle.beowulf_breaker>
+  <npctitle.beowulf_fire>贝奥武夫中队-火力手</npctitle.beowulf_fire>
+  <!--占领军-->
+  <npctitle.occupation_leader>占领军-战术刀</npctitle.occupation_leader>
+  <npctitle.occupation_elite>占领军-精英</npctitle.occupation_elite>
+  <npctitle.occupation_elite_p>占领军-精英</npctitle.occupation_elite_p>
+  <npctitle.occupation_ex>占领军-爆破手</npctitle.occupation_ex>
+  <npctitle.occupation_ex_p>占领军-爆破手</npctitle.occupation_ex_p>
+  <npctitle.occupation>占领军-突击手</npctitle.occupation>
+  <npctitle.occupation_p>占领军-突击手</npctitle.occupation_p>
+  <!--串扰中队-->
+  <npctitle.crosstalk_leader>串扰中队-屏蔽者</npctitle.crosstalk_leader>
+  <npctitle.crosstalk_leader_e>串扰中队-屏蔽者</npctitle.crosstalk_leader_e>
+  <npctitle.crosstalk_e>串扰中队-突击手</npctitle.crosstalk_e>
+  <npctitle.crosstalk>串扰中队-突击手</npctitle.crosstalk>
+  <!--普通部队-->
+  <npctitle.coalition_leader>联盟士官</npctitle.coalition_leader>
+  <npctitle.coalition_leader_e>联盟士官</npctitle.coalition_leader_e>
+  <npctitle.coalition>联盟士兵</npctitle.coalition>
+  <npctitle.coalition_e>联盟士兵</npctitle.coalition_e>
+  <!--奇迹之海-->
+  <npctitle.tsm_jz>九州作战部</npctitle.tsm_jz>
+  <npctitle.tsm_pgc>九州亲卫队</npctitle.tsm_pgc>
+  <npctitle.tsm_advanced>先进作战部</npctitle.tsm_advanced>
+  <npctitle.tsm_sundawn>日暮山作战部</npctitle.tsm_sundawn>
+  <npctitle.tsm_soldier_elite>奇迹之海-精英</npctitle.tsm_soldier_elite>
+  <npctitle.tsm_soldier_elite_p>奇迹之海-精英</npctitle.tsm_soldier_elite_p>
+  <npctitle.tsm_soldier>奇迹之海战士</npctitle.tsm_soldier>
+  <npctitle.tsm_soldier_p>奇迹之海战士</npctitle.tsm_soldier_p>
+  <npctitle.tsm_outpost_combat_3>奇迹之海第三站点突袭中队</npctitle.tsm_outpost_combat_3>
+  <npctitle.tsm_outpost_combat_2>奇迹之海第二站点突袭中队</npctitle.tsm_outpost_combat_2>
+
+  <npctitle.tsm_outpost_combat_npc_a>奇迹之海先进作战部外勤</npctitle.tsm_outpost_combat_npc_a>
+  <npctitle.tsm_outpost_combat_npc_j>奇迹之海九州作战部外勤</npctitle.tsm_outpost_combat_npc_j>
+
+  <npctitle.tsm_military_advisers>猫科动物军事顾问</npctitle.tsm_military_advisers>
+  <npctitle.tsm_soldier_military_advisers>军事顾问随行安保人员</npctitle.tsm_soldier_military_advisers>
+<!--反抗军-->
+  <!--野火-->
+  <npctitle.yehuo_leader>野火反抗军-啸铁</npctitle.yehuo_leader>
+  <npctitle.yehuo_elite>野火反抗军-精英</npctitle.yehuo_elite>
+  <npctitle.yehuo_elite_p>野火反抗军-精英</npctitle.yehuo_elite_p>
+  <npctitle.yehuo>野火反抗军-突击手</npctitle.yehuo>
+  <npctitle.yehuo_p>野火反抗军-突击手</npctitle.yehuo_p>
+  <npctitle.yehuo_ex>野火反抗军-爆破手</npctitle.yehuo_ex>
+
+  <npctitle.fkj_elite>反抗军-精英士官学员</npctitle.fkj_elite>
+  <npctitle.fkj_elite_p>反抗军-精英士官学员</npctitle.fkj_elite_p>
+
+  <npctitle.yehuo_reinforcement>野火反抗军-战锤支援小队</npctitle.yehuo_reinforcement>
+  <!--突袭者-->
+  <npctitle.Anonymous_leader>尖锐突袭者-巨声波</npctitle.Anonymous_leader>
+  <npctitle.Anonymous_elite>尖锐突袭者-精英</npctitle.Anonymous_elite>
+  <npctitle.Anonymous_elite_p>尖锐突袭者-精英</npctitle.Anonymous_elite_p>
+  <npctitle.Anonymous>尖锐突袭者-突击手</npctitle.Anonymous>
+  <npctitle.Anonymous_p>尖锐突袭者-突击手</npctitle.Anonymous_p>
+  <!--反抗军普通部队-->
+  <npctitle.separatists_leader>反抗军-小队长</npctitle.separatists_leader>
+  <npctitle.separatists>反抗军士兵</npctitle.separatists>
+  <npctitle.separatists_e>反抗军士兵</npctitle.separatists_e>
+  <!--降临派-->
+  <npctitle.adventists_leader>降临派头目</npctitle.adventists_leader>
+  <npctitle.adventists>降临派武装教徒</npctitle.adventists>
+  <npctitle.adventists_p>降临派武装教徒</npctitle.adventists_p>
+  <npctitle.adventists_elite>降临派-盗窃者</npctitle.adventists_elite>
+  <!--其他-->
+  <npctitle.ship_combat_leader>盗窃者船长</npctitle.ship_combat_leader>
+  <npctitle.ship_combat_elite>盗窃者精英</npctitle.ship_combat_elite>
+  <npctitle.ship_combat>盗窃者蛮兵</npctitle.ship_combat>
+  <npctitle.ship_combat_leader_e>盗窃者船长</npctitle.ship_combat_leader_e>
+  <npctitle.ship_combat_elite_e>盗窃者精英</npctitle.ship_combat_elite_e>
+  <npctitle.ship_combat_e>盗窃者蛮兵</npctitle.ship_combat_e>
+
+  <npctitle.gunner_Passive>枪手</npctitle.gunner_Passive>
+  <npctitle.gunner_Patrol>枪手</npctitle.gunner_Patrol>
+  <npctitle.gunner_solomon>所罗门</npctitle.gunner_solomon>
+  <!--定制-->
+  <npctitle.coalition_themohavemailman>莫哈维邮差</npctitle.coalition_themohavemailman>
+  <npctitle.TSM_c_baiye>白夜</npctitle.TSM_c_baiye>
+  <npctitle.separatists_leader_rbq>RBQ</npctitle.separatists_leader_rbq>
+  <npctitle.coalition_AloneFllen>AloneFallen</npctitle.coalition_AloneFllen>
+  <npctitle.separatists_000032>000032</npctitle.separatists_000032>
+  <npctitle.beowulf_sl>殤-凌</npctitle.beowulf_sl>
+  <npctitle.crosstalk_tianjie>天洁</npctitle.crosstalk_tianjie>
+  <npctitle.tsm_soldier_Finianna>菲尼安娜</npctitle.tsm_soldier_Finianna>
+  <npctitle.adventists_bmyl>薄暮银龙</npctitle.adventists_bmyl>
+  <npctitle.tsm_soldier_FFFFFour>FFFFFour</npctitle.tsm_soldier_FFFFFour>
+  <npctitle.crosstalk_ckhs233>ckhs233</npctitle.crosstalk_ckhs233>
+  <npctitle.moon_shadow>月影</npctitle.moon_shadow>
+  <npctitle.tsm_soldier_ml>墨鳞</npctitle.tsm_soldier_ml>
+  <npctitle.occupation_qiuwu>邱芜</npctitle.occupation_qiuwu>
+
+  <!--npc对话-->
+  <tsm.dh>我是来兑换一些东西的</tsm.dh>
+  <tsm.see>兑换物品</tsm.see>
+  <tsm.wait>我等下再来</tsm.wait>
+  <tsm.wait1>我还是再等等吧</tsm.wait1>
+  <tsm.d1>现在本部发放的许可证是以往的几倍。但是也没办法，现在战争开始了，各处情况都很危急，希望能够早日结束战争。</tsm.d1>
+  <tsm.d2>抱歉，你并没有官方配发的许可证，下次再开这种玩笑，你将会被逮捕。</tsm.d2>
+  <tsm.bg1>请您出示本部发放的许可证</tsm.bg1>
+  <tsm.bg>奇迹之海变革弹许可证兑换氚核心包</tsm.bg>
+  <tsm.ammo_resupply>5000马克兑换弹药补给</tsm.ammo_resupply>
+  <tsm.ammo_resupply_next>记得在安全的地方使用，我们看到信号后给你投放补给，目前是两个联盟弹药箱+两个反抗军弹药+两个奇迹之海弹药箱</tsm.ammo_resupply_next>
+  <tsm.bg2>先生，经过验证，许可证是真的，这里是你需要的核心包，请您妥善保管。</tsm.bg2>
+  <tsm.t1>你好，我是ARS公司驻奇迹之海职员，请问你有什么需要帮助的吗？</tsm.t1>
+  <tsm.arsrw>我看见悬赏公告上说有新任务，所以我来看看有没有什么我可以完成的。</tsm.arsrw>
+  <tsm.other>你好，有人告诉我现在有比较棘手的任务，我想听听。</tsm.other>
+  <tsm.ars.1>听起来不错</tsm.ars.1>
+  <tsm.ars.11>接受的话就，很好，去吧，生死不论</tsm.ars.11>
+  <tsm.ars.2>还是算了，我不参与</tsm.ars.2>
+  <tsm.ars.22>拒绝就，行吧，我会去找其他人的</tsm.ars.22>
+  <tsm.urgent>让我看看，稍等一下。</tsm.urgent>
+  <tsm.urgent_save_yes>现在确实有一个很紧急的事情，先前奇迹之海有一个很危险的人物在航道内人劫持了。刚刚我们通过定位已经知道了他们目前所在的位置，所以现在是需要人手把邱小姐解救出来。</tsm.urgent_save_yes>
+  <tsm.save_yes>乐意至极！</tsm.save_yes>
+  <tsm.save_yes_1>那么好，位置已经发到你终端了，刻不容缓！</tsm.save_yes_1>
+  <tsm.urgent_save_no>现在暂时没有什么棘手的任务</tsm.urgent_save_no>
+  <tsm_opdeco_hrflyers_1.c1>当你还在悠哉游哉逛街的时候，后面有一个联盟士兵打扮的人叫住了你。</tsm_opdeco_hrflyers_1.c1>
+  <tsm_opdeco_hrflyers_1.o1>你是在叫我吗？有什么事吗？</tsm_opdeco_hrflyers_1.o1>
+  <tsm_opdeco_hrflyers_1.o1.c1>我们需要搭乘你的船前往下个站点，如果你可以搭载我们，我们可以支付5000mk的费用。</tsm_opdeco_hrflyers_1.o1.c1>
+  <tsm_opdeco_hrflyers_1.o2>额..这个，我得询问一下我的船员。如果可以的话，我们出港时会叫你。</tsm_opdeco_hrflyers_1.o2>
+  <tsm_opdeco_hrflyers_1.o3>没问题，我们等着你的消息。</tsm_opdeco_hrflyers_1.o3>
+
+  <tsm_srm_text.rescuetargetmessage1>你发现了一名少女，通过之前任务中的描述，能确定他是被绑架的邱小姐</tsm_srm_text.rescuetargetmessage1>
+  <tsm_srm_text.arrested>邱小姐，别怕！奇迹之海来保护你了。</tsm_srm_text.arrested>
+
+  <tsm_srm_text.thanks1>欸？你是之前救我的那个英雄！上次走的太匆忙了，我都还没来得及感谢你。你好，我叫邱芜，很高兴再次见到你。</tsm_srm_text.thanks1>
+  <tsm_srm_text.thanks2>“没事没事，早就好了...”邱芜还想说些什么，身上的传呼机便响了起来，她微笑的摇了摇头说：“本来还想着要去怎么感谢你，但是现在看起来没时间了，我得走了。”邱芜说完便向着远处向她招手的一个奇迹之海的士兵跑去。跑一半她又回过头朝你喊道：“下次！下次见面请你吃饭！”，说完不久便消失在拐角处。</tsm_srm_text.thanks2>
+  <tsm_srm_text.answer1>哈哈哈算不上英雄，我只是做了我该做的事情。对了你身上的伤怎么样了？</tsm_srm_text.answer1>
+
+  <tsm_combat_tsm_event.1>猫科顾问呼叫奇迹之海，T-31-s紧急事件！T-31-s紧急事件！请求增援。</tsm_combat_tsm_event.1>
+  <tsm_combat_tsm_event.2>坚持住顾问，总教官让我把你们全带回家。</tsm_combat_tsm_event.2>
+
+  <tsm_combat_adventists_event_tsm.1>奇迹之海第二站点突袭中队：到达预定位置，开始进攻。\n\n降临派头目：真是蠢货，居然敢自己找上门来，把我们改装的机器开出来！</tsm_combat_adventists_event_tsm.1>
+  <!--职业-->
+  <jobname.tsm_soldier>站点突袭士兵</jobname.tsm_soldier>
+  <jobdescription.tsm_soldier>隶属于奇迹之海先进作战部</jobdescription.tsm_soldier>
+
+
+  <!--任务-->
+  <Override>
+  <missionname.tsm_combat_qrf>拨云见日</missionname.tsm_combat_qrf>
+  <missiondescription.tsm_combat_qrf>联盟的快速反应部队正在这个废弃站点进行部署，他们准备突袭附近的敌对站点。但是附近的站点不会坐以待毙，此刻你立功的时机到了。清理掉所有快反部队并炸掉反应堆！</missiondescription.tsm_combat_qrf>
+  <missionsuccess.tsm_combat_qrf>水下之雾</missionsuccess.tsm_combat_qrf>
+  <missionfailure.tsm_combat_qrf>这个结局如你所愿吗？</missionfailure.tsm_combat_qrf>
+  <missionheader0.tsm_combat_qrf>黑夜奔袭</missionheader0.tsm_combat_qrf>
+  <missionmessage0.tsm_combat_qrf>？？？：\n干得不错，这次行动狠狠的打击了联盟的士气。钱已发到你的账户，记住是没有人给你们下指令，是你们自己的行为。</missionmessage0.tsm_combat_qrf>
+  </Override>
+
+  <missionname.tsm_combat_beowulf>贝奥武夫的蛮人</missionname.tsm_combat_beowulf>
+  <missiondescription.tsm_combat_beowulf>联盟的贝奥武夫中队是出了名的蛮横，不讲理，但也是真正的硬茬！在装备和作战素养的加持下，他们是块很难啃的骨头。但是反抗军不想听到这些，向他们证明你和你团队的实力。打下这个站点并炸掉反应堆，勇气和荣耀都将属于你！</missiondescription.tsm_combat_beowulf>
+  <missionsuccess.tsm_combat_beowulf>坟丘</missionsuccess.tsm_combat_beowulf>
+  <missionfailure.tsm_combat_beowulf>这个结局如你所愿吗？</missionfailure.tsm_combat_beowulf>
+  <missionheader0.tsm_combat_beowulf>岬角</missionheader0.tsm_combat_beowulf>
+  <missionmessage0.tsm_combat_beowulf>无数的挑战者们，将利刃深深刺入巨龙的腹部杀死了巨龙。巨龙在弥留之际终于想起了自己的名字-贝奥武夫</missionmessage0.tsm_combat_beowulf>
+
+  <missionname.tsm_combat_occupation>支配的王锡</missionname.tsm_combat_occupation>
+  <missiondescription.tsm_combat_occupation>联盟的占领军是联盟真正的精英，他们以重装和重火力闻名。他们正在对这一片区域进行军事管制。反抗军命令我们，清剿所有的联盟占领军，好为后来的部队清空通道。船长切记，在交火之前一定要做好装备。</missiondescription.tsm_combat_occupation>
+  <missionsuccess.tsm_combat_occupation>深不可测的要塞</missionsuccess.tsm_combat_occupation>
+  <missionfailure.tsm_combat_occupation>这个结局如你所愿吗？</missionfailure.tsm_combat_occupation>
+  <missionheader0.tsm_combat_occupation>深不可测的要塞</missionheader0.tsm_combat_occupation>
+  <missionmessage0.tsm_combat_occupation>占领军眼睁睁看着自己被反应堆的爆炸所吞噬。\n与此同时另一个站点内，反抗军和联盟的士兵依旧在战斗。反应堆爆炸所发出的光热也传到了这边，他们望着同一个闪光缓缓熄灭。这一切本来是政客们站在对立的站台上对喷，一场对骂的擂台变成了一场血腥的战争，局外人恨不得立刻手撕了对方的阵营，而真正的参与者只想早点回家。</missionmessage0.tsm_combat_occupation>
+
+  <missionname.tsm_combat_coalition>树立的旗帜</missionname.tsm_combat_coalition>
+  <missiondescription.tsm_combat_coalition>一小队联盟士兵在这片区域活动，想到之前反抗军和联盟的开战宣言。想必不会对你们的此刻的出现表示欢迎，如果想与联盟交好的话，还是不要掺和进去比较好</missiondescription.tsm_combat_coalition>
+  <missionsuccess.tsm_combat_coalition>起义时刻</missionsuccess.tsm_combat_coalition>
+  <missionfailure.tsm_combat_coalition>这个结局如你所愿吗？</missionfailure.tsm_combat_coalition>
+  <missionheader0.tsm_combat_coalition>战争起始</missionheader0.tsm_combat_coalition>
+  <missionmessage0.tsm_combat_coalition>反抗军联络员：\n很高兴船长能够弃暗投明选择正确的道路。</missionmessage0.tsm_combat_coalition>
+
+  <missionname.tsm_combat_separatists>执法者</missionname.tsm_combat_separatists>
+  <missiondescription.tsm_combat_separatists>当地的居民反对驻扎在[location1]的联盟部队。当联盟部队撤离后，反抗军居然悄悄的潜入了站点。而作为我们作为木卫二秩序的维护者，不能容忍敌军这种行为。船长，突袭这个站点，击杀他们的领导者，让反抗军们看看，谁才是执法者。</missiondescription.tsm_combat_separatists>
+  <missionsuccess.tsm_combat_separatists>破碎</missionsuccess.tsm_combat_separatists>
+  <missionfailure.tsm_combat_separatists>这个结局如你所愿吗？</missionfailure.tsm_combat_separatists>
+  <missionheader0.tsm_combat_separatists>镇压开始</missionheader0.tsm_combat_separatists>
+  <missionmessage0.tsm_combat_separatists>联盟联络员：\n船长，在这之后不能松懈，我们还有更多仗要打。</missionmessage0.tsm_combat_separatists>
+
+  <missionname.tsm_combat_Anonymous>突袭者-征服虚弱的灵魂</missionname.tsm_combat_Anonymous>
+  <missiondescription.tsm_combat_Anonymous>船长，各地的暴乱的消息已经传到了上将那里，最近上将的脸色不太好。我想我们得干点实事了，我定位到[location1]，反抗军的一伙精锐部队-尖锐突袭者在这里进行部署，他们准备突袭周围的站点，这种时候正是我们出击的时候！清剿所有的突袭者并炸掉反应堆</missiondescription.tsm_combat_Anonymous>
+  <missionsuccess.tsm_combat_Anonymous>突袭者之墓</missionsuccess.tsm_combat_Anonymous>
+  <missionfailure.tsm_combat_Anonymous>这个结局如你所愿吗？</missionfailure.tsm_combat_Anonymous>
+  <missionheader0.tsm_combat_Anonymous>碰撞</missionheader0.tsm_combat_Anonymous>
+  <missionmessage0.tsm_combat_Anonymous>联盟联络员：\n船长，上将收到了咱们胜利的消息，并对我们表示嘉奖。同时，我们也审问出了这次反抗军‘起义’的幕后主使-维多利亚培德兰将军，该拟定下次作战计划了。</missionmessage0.tsm_combat_Anonymous>
+
+  <missionname.tsm_combat_yehuo>野火-绽放的最后红花</missionname.tsm_combat_yehuo>
+  <missiondescription.tsm_combat_yehuo>野火反抗军通过消灭在[location1]的联盟的驻军，来削弱联盟在这个海域的统治，他们在攻占了大部分站点后，计划着最后一击。船长，野火反抗军是维多利亚培德兰将军手下精锐的部队，还拥有重火力，我们要尽快部署，来应对这次突袭。目标：清理所有反抗军并炸毁反应堆。</missiondescription.tsm_combat_yehuo>
+  <missionsuccess.tsm_combat_yehuo>熄灭</missionsuccess.tsm_combat_yehuo>
+  <missionfailure.tsm_combat_yehuo>这个结局如你所愿吗？</missionfailure.tsm_combat_yehuo>
+  <missionheader0.tsm_combat_yehuo>真将军姿态</missionheader0.tsm_combat_yehuo>
+  <missionmessage0.tsm_combat_yehuo>最后一个反抗军成员倒下了，倒下之前还大叫着：“我们会像野火一般不停的燃烧！终有一天！会将联盟燃烧殆尽！”\n人们究竟是为了什么寻求什么？彼此斗争，难道血流成河是为了使花儿绽放吗？</missionmessage0.tsm_combat_yehuo>
+
+  <tsm_haulagecombat_1.c1>这里有个紧急的委托，我们与对方的合作要以此为依靠，有一群自信的蛀虫自认为能啃下一块烫手的山芋，如果你愿意做，报酬肯定不会少了你的</tsm_haulagecombat_1.c1>
+  <missionname.tsm_haulagecombat_1>觊觎天机</missionname.tsm_haulagecombat_1>
+  <missiondescription.tsm_haulagecombat_1>一群不开眼的海盗抢走了一批装有个人隐私的数据模块，我不希望它们被明码标价，要么他们死，要么他们带着东西一起消失（注意，船外壳为无敌，无法打破，所以请船员们尽情跳帮吧，但是注意船上的慢速舰炮。）</missiondescription.tsm_haulagecombat_1>
+  <missionsuccess.tsm_haulagecombat_1>记住，此事不要声张</missionsuccess.tsm_haulagecombat_1>
+  <missionfailure.tsm_haulagecombat_1>令人失望，但我想黑市会有比你们更合适的合作对象</missionfailure.tsm_haulagecombat_1>
+  <missionsonarlabel.tsm_haulagecombat_1>失窃盗船</missionsonarlabel.tsm_haulagecombat_1>
+  <missionheader0.tsm_haulagecombat_1>已发现盗窃者</missionheader0.tsm_haulagecombat_1>
+  <missionmessage0.tsm_haulagecombat_1>该把他们抬出去喂鱼了</missionmessage0.tsm_haulagecombat_1>
+  <missionheader1.tsm_haulagecombat_1>已消灭盗窃者</missionheader1.tsm_haulagecombat_1>
+  <missionmessage1.tsm_haulagecombat_1>窥探秘密的人付出了代价，现在，我们可以谈谈其他合作了</missionmessage1.tsm_haulagecombat_1>
+
+  <missionname.tsm_combat_crosstalk>串扰侵袭</missionname.tsm_combat_crosstalk>
+  <missiondescription.tsm_combat_crosstalk>呼叫红松石，红松石，听到请回答！\n该死，他们把我们的信号干扰了，等等，有潜艇靠岸了。\n..........\n你们之前都去哪儿了？我们需要增援！\n这里是日暮山作战部渊献小队，准备拦截\n把这些联盟狗赶出我们的地盘！</missiondescription.tsm_combat_crosstalk>
+  <missionsuccess.tsm_combat_crosstalk>风来了...</missionsuccess.tsm_combat_crosstalk>
+  <missionfailure.tsm_combat_crosstalk>报告，日暮山作战部，第二突击队，全员阵亡。</missionfailure.tsm_combat_crosstalk>
+  <missionheader0.tsm_combat_crosstalk>风来了...</missionheader0.tsm_combat_crosstalk>
+  <missionmessage0.tsm_combat_crosstalk>感谢你船长，帮我们处理这些联盟的串扰中队，你放心，我们不会透露任何有关你的信息</missionmessage0.tsm_combat_crosstalk>
+
+  <missionname.tsm_combat_escort>黑船</missionname.tsm_combat_escort>
+  <missiondescription.tsm_combat_escort>联盟的一个全副武装的小队需要搭乘你的船前往下一个站点，但是看起来不怎么正规，还是得小心一点了。</missiondescription.tsm_combat_escort>
+  <missionsuccess.tsm_combat_escort>联盟的土匪兵痞就该扔进深渊喂鱼</missionsuccess.tsm_combat_escort>
+  <missionfailure.tsm_combat_escort>该船已被军事征用</missionfailure.tsm_combat_escort>
+  <missionheader0.tsm_combat_escort>把尸体抛出去</missionheader0.tsm_combat_escort>
+  <missionmessage0.tsm_combat_escort>你们这些联盟狗，滚出我的船！</missionmessage0.tsm_combat_escort>
+
+  <missionname.tsm_combat_aria>咏叹调</missionname.tsm_combat_aria>
+  <missiondescription.tsm_combat_aria>此前，查到一处降临派的人体控制实验的站点，我们派遣一支部队突袭后，就失去联系了。\n根据生命检测反馈来看，他们还活着。或许也不能称之为活着，现在应该是被控制了。\n目前我们也没有好的办法去应对，只能牺牲这支小队了。请船长消灭站点内一切活着的人。\n注意，这支小队部分队员是配发了变革弹匣，请务必小心。</missiondescription.tsm_combat_aria>
+  <missionsuccess.tsm_combat_aria>下次你路过的时候，木卫二已无我们</missionsuccess.tsm_combat_aria>
+  <missionfailure.tsm_combat_aria>任务失败，本部已派遣更精锐小队前去剿灭</missionfailure.tsm_combat_aria>
+  <missionheader0.tsm_combat_aria>我像腐烂的尸体，孤独而无助</missionheader0.tsm_combat_aria>
+  <missionmessage0.tsm_combat_aria>太阳出来了，黑暗留在后面，但太阳不是我们的，我们要睡了。</missionmessage0.tsm_combat_aria>
+
+  <missionname.tsm_adventists_save>营救邱小姐</missionname.tsm_adventists_save>
+  <missiondescription.tsm_adventists_save>我们已经定位到邱小姐被绑架到[location1],看装饰应该是降临派所为。我们需要把邱小姐营救出来并安全送到奇迹之海的站点，务必保证她的安全。</missiondescription.tsm_adventists_save>
+  <missionsuccess.tsm_adventists_save>任务完成，接下来就由我们来护送吧</missionsuccess.tsm_adventists_save>
+  <missionfailure.tsm_adventists_save></missionfailure.tsm_adventists_save>
+  <missionheader0.tsm_adventists_save>第一次会面</missionheader0.tsm_adventists_save>
+  <missionmessage0.tsm_adventists_save>在临走的时候她频频回头，似乎想要记住你的脸。</missionmessage0.tsm_adventists_save>
+
+  <missionname.tsm_combat_advisers>"猫科动物"顾问</missionname.tsm_combat_advisers>
+  <missiondescription.tsm_combat_advisers>最近我们的部队在和反抗军作战中发现了一些端倪：反抗军的许多战术很眼熟，并且对联盟很有针对性。这种战术在以前联盟对奇迹之海作战时遇见过，所以我们断定，背后肯定有奇迹之海的人在指导他们一些战术。根据情报来看，奇迹之海的猫科动物顾问目前就在这所建筑内，内部还有大量反抗军的精英，这次目标是斩首所有的猫科动物军事顾问。</missiondescription.tsm_combat_advisers>
+  <missionsuccess.tsm_combat_advisers>斩首行动</missionsuccess.tsm_combat_advisers>
+  <missionfailure.tsm_combat_advisers>今夜的星星都将溺死在水里</missionfailure.tsm_combat_advisers>
+  <missionheader0.tsm_combat_advisers>斩首</missionheader0.tsm_combat_advisers>
+  <missionmessage0.tsm_combat_advisers>障碍与子弹，敌人以此拦路，我们置之一笑，然后招摇的闯过。</missionmessage0.tsm_combat_advisers>
+
+  <missionname.tsm_combat_adventists>地狱泅渡</missionname.tsm_combat_adventists>
+  <missiondescription.tsm_combat_adventists>根据上次取得的盗窃者资料来看，他们现在应该跟降临派勾搭在一起了。我们正好借此机会把他们一网打尽。这次我们会派遣一个小队与你一起突袭站点，人员已经安排好了。等你们开始行动，他们会配合你们一起行动</missiondescription.tsm_combat_adventists>
+  <missionsuccess.tsm_combat_adventists>第一次联合行动</missionsuccess.tsm_combat_adventists>
+  <missionfailure.tsm_combat_adventists>本该行动，屡屡蹉跎</missionfailure.tsm_combat_adventists>
+  <missionheader0.tsm_combat_adventists>第一次联合行动</missionheader0.tsm_combat_adventists>
+  <missionmessage0.tsm_combat_adventists>第一次与你们合作突袭站点，希望下次能够配合的更好。</missionmessage0.tsm_combat_adventists>
+
+  <missionname.tsm_combat_nz>枪火</missionname.tsm_combat_nz>
+  <missiondescription.tsm_combat_nz>一些射击技术非常精湛的人占据了这个站点，这些人个个手持手炮，渴望来一场公平的对决。</missiondescription.tsm_combat_nz>
+  <missionsuccess.tsm_combat_nz>牛仔对决</missionsuccess.tsm_combat_nz>
+  <missionfailure.tsm_combat_nz>第一枪宣判我的到来，第二枪宣布你的死亡</missionfailure.tsm_combat_nz>
+  <missionheader0.tsm_combat_nz>枪王之王</missionheader0.tsm_combat_nz>
+  <missionmessage0.tsm_combat_nz>子弹洞穿了大脑，恍惚之间，他像是站在了一个舞台之上，看见台下乌黑一片，但却能清晰听见两个人的讲话。\n“这台上扮演的是谁？”一个声音疑问。\n另一个声音回答道“台上之人看似嗤嗤蠢蠢却游刃有余，他扮演的若不是小丑，那便是国王了。”\n话音刚落，台下掌声四起，一曲欢乐颂响起。\n诸位，这便是-所罗门的结局。</missionmessage0.tsm_combat_nz>
+
+  <tsm_escort_lm>现在情况有变，所有人放下武器投降，我们需要军事征用这条船</tsm_escort_lm>
+  <tsm_escort_lm>军事征用，放下武器</tsm_escort_lm>
+  <tsm_escort_lm>开火，击毙这些反动分子</tsm_escort_lm>
+
+<!--加载界面-->
+  <loadingscreentip>亚希晶体主要在难度25以上的站点处购买，当然遗迹或者沉船也可能会捞出--------奇迹之海</loadingscreentip>
+  <loadingscreentip>恒伯利之星只有在难度40以上的城市或者研究所才会有商人贩卖，如果你运气够好，那么就去遗迹或者沉船里面去找吧--------奇迹之海</loadingscreentip>
+  <loadingscreentip>战车和飞鸦的一些部件可以在各个站点内买到，但是枪主体目前已经遗失，或许在沉船内能找到？--------奇迹之海</loadingscreentip>
+  <loadingscreentip>ARS是做着自动录像功能产品的公司，但背后他们在收集各种资料用于交易或加强内部武力--------奇迹之海</loadingscreentip>
+  <loadingscreentip>有消息称，降临派正在各个废弃站点树立起'信标'--------奇迹之海</loadingscreentip>
+  <loadingscreentip>奇迹之海最开始在无光海源发迹--------奇迹之海</loadingscreentip>
+  <loadingscreentip>联盟和反抗军正在展开一场战争--------奇迹之海</loadingscreentip>
+  <loadingscreentip>随着战争的愈演愈烈，奇迹之海董事会表示：护航服务项目收入首次超过其他服务项目，同时考虑增加投资--------奇迹之海</loadingscreentip>
+  <loadingscreentip>经过长时间的建设，冰上城市工程终于完结。据报道将会在所有项目验收成功之后对外开放，提供居住和商业服务--------奇迹之海</loadingscreentip>
+  <loadingscreentip>DS104边境站点失联：奇迹之海已经派遣相关人员前去调查--------奇迹之海</loadingscreentip>
+  <loadingscreentip>奇迹之海下辖三个武装部门：先进作战部、日暮山作战部、九州作战部，他们的职能分别对应对人作战、对公司安保以及对怪物作战</loadingscreentip>
+  <loadingscreentip>奇迹之海始终只算是一个企业，但是他木卫二开发、城市建设、科技研发等方面也扮演着关键角色。下属的部门几乎覆盖了木卫二所有的行业，例如军工制造、医疗制造、学校、船坞等等，甚至还有自己的遗孀站点</loadingscreentip>
+  <loadingscreentip>降临派在展示‘神迹’之后，他们的信徒几何式增长，其中不免有联盟的高官这种拥有权力的人员--------奇迹之海</loadingscreentip>
+  <loadingscreentip>降临派的宗旨是让他们独一无二的神降临在木卫二，但神的降临需要载体，木卫二目前没有任何生物适合做这个载体，所以他们现在的目标就是创造出一个完美的生物--------奇迹之海</loadingscreentip>
+  <loadingscreentip>反抗军是从分离组织脱离出来的，他们更具有威胁，也更强大，意图推翻联盟的铁腕统治--------奇迹之海</loadingscreentip>
+  <loadingscreentip>现在通讯得到了大力发展，但是仍有限制--------奇迹之海</loadingscreentip>
+  <loadingscreentip>无论是联盟、反抗军还是奇迹之海的部队，他们在见到第一个敌人之后都会呼叫增援，请务必小心。--------奇迹之海</loadingscreentip>
+
+</infotexts>

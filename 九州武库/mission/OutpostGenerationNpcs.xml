@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<npcsets>
+  <npcset identifier="TSM_convertible_npc">
+    <npc identifier="TSM_convertible_npc" commonness="0" spawnpointtags="admin" behavior="Patrol" preferredoutpostmoduletypes="admin,adminmodule,researchmodule" healthmultiplier="1.5" healthmultiplierinmultiplayer="2.0" aimspeed="50" aimaccuracy="1" reportrange="2500" skillmultiplier="5">
+      <Character name="" speciesname="human" gender="male" headspriteid="8" hairindex="0" beardindex="0" moustacheindex="0" faceattachmentindex="0" personality="professional">
+        <job name="securityofficer" identifier="securityofficer">
+          <skill identifier="electrical" level="80" />
+          <skill identifier="mechanical" level="80" />
+          <skill identifier="weapons" level="80" />
+          <skill identifier="medical" level="80" />
+          <skill identifier="helm" level="80" />
+        </job>
+      </Character>
+       <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_old_uniform" equip="true" />
+        <Item identifier="tsm_helmet_respirator" equip="true"/>
+        <Item identifier="tsm_old_vest" equip="true"/>
+        <Item identifier="tsm_enhancement_outpost">
+        </Item>
+        <Item identifier="tsm_thbq" equip="true">
+        <Item identifier="tsm_magazinebg" />
+        <Item identifier="tsm_magazinecj" amount="2" />
+        </Item>
+      </ItemSet>
+    </npc>
+  </npcset>
+  <npcset identifier="TSM_customisation_npc">
+    <npc identifier="TSM_c_baiye" commonness="0" spawnpointtags="admin" behavior="Patrol" preferredoutpostmoduletypes="admin,adminmodule,researchmodule" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.5" aimspeed="50" aimaccuracy="1" reportrange="2500" skillmultiplier="5">
+      <Character name="" speciesname="human" gender="male" headspriteid="8" hairindex="0" beardindex="0" moustacheindex="0" faceattachmentindex="0" personality="professional">
+        <job name="securityofficer" identifier="securityofficer">
+          <skill identifier="electrical" level="80" />
+          <skill identifier="mechanical" level="80" />
+          <skill identifier="weapons" level="80" />
+          <skill identifier="medical" level="80" />
+          <skill identifier="helm" level="80" />
+        </job>
+      </Character>
+       <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_anonymous_uniform" equip="true" />
+        <Item identifier="fkj_fast_helmet_thermalgoggles" equip="true"/>
+        <Item identifier="fkj_vest_elite" equip="true"/>
+        <Item identifier="tsm_enhancement_outpost">
+        </Item>
+        <Item identifier="tsm_cslr4" equip="true">
+        <Item identifier="tsm_762ammo_mag" />
+        <Item identifier="tsm_762ammo_mag" amount="2" />
+        </Item>
+      </ItemSet>
+    </npc>
+  </npcset>
+  <npcset identifier="TSM_mission_npc">
+    <npc identifier="TSM_customisation_qiuwu" commonness="0" spawnpointtags="admin" behavior="Patrol" preferredoutpostmoduletypes="admin,adminmodule,researchmodule" healthmultiplier="1.5" healthmultiplierinmultiplayer="2.0" aimspeed="50" aimaccuracy="1" reportrange="2500" skillmultiplier="5">
+      <Character name="邱芜" speciesname="human" gender="female" headspriteid="13" hairindex="6" beardindex="8" moustacheindex="0" faceattachmentindex="0" personality="professional">
+        <job name="assistant" identifier="securityofficer">
+          <skill identifier="electrical" level="50" />
+          <skill identifier="mechanical" level="50" />
+          <skill identifier="weapons" level="50" />
+          <skill identifier="medical" level="50" />
+          <skill identifier="helm" level="50" />
+        </job>
+      </Character>
+       <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="commonerclothes1" equip="true" />
+        <Item identifier="energydrink">
+        <Item identifier="tsm_enhancement_outpost"/>
+        </Item>
+      </ItemSet>
+    </npc>
+  </npcset>
+</npcsets>

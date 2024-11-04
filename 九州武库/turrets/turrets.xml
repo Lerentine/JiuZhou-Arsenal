@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="三神丘冲击炮" description="" subcategory="tsm" identifier="tsm_ssqcjp" Tags="turret" category="Machine,Weapon" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="800" linkable="true" allowedlinks="flakcannonequipment">
+    <Sprite texture="%ModDir%/turrets/tsm_battering_ram.png" depth="0.01" sourcerect="556,512,468,512" canflipy="false" origin="0.5358778,0.62847704" />
+    <MinimapIcon name="tsm_Weapons_Ssq" texture="%ModDir%/turrets/tsm_battering_ram.png" sourcerect="512,768,128,128" />
+    <SwappableItem price="7500" replacementonuninstall="largeturrethardpoint" origin="256,438" swapidentifier="largeturret">
+      <SchematicSprite texture="Content/UI/WeaponUI.png" sourcerect="768,389,256,389" />
+      <SwapConnectedItem tag="periscope" swapto="periscope" />
+      <SwapConnectedItem tag="turretammosource" swapto="railgunloadersmall" />
+    </SwappableItem>
+    <UpgradePreviewSprite scale="3.5" texture="Content/UI/WeaponUI.png" sourcerect="628,805,102,70" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <Turret canbeselected="false" spread="8.0" launchimpulse="70.0" characterusable="false" linkable="true" barrelpos="250,180" rotationlimits="180,360" weapondamagemodifier="1" powerconsumption="8500.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="120" reload="1.5" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8" firingoffset="0,-510">
+      <sound file="%ModDir%/turrets/battering_ram1.ogg" range="10000" type="OnUse" volume="2.0" />
+      <sound file="%ModDir%/turrets/battering_ram2.ogg" range="10000" type="OnUse" volume="2.0" />
+      <sound file="%ModDir%/turrets/battering_ram3.ogg" range="10000" type="OnUse" volume="2.0" />
+      <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="653,908,73,44" origin="0.24, 0.472" />
+      <RailSprite texture="%ModDir%/turrets/tsm_battering_ram.png" depth="0.011" sourcerect="0,401,320,623" origin="0.49400273,0.88652456" />
+      <BarrelSprite texture="%ModDir%/turrets/tsm_battering_ram.png" depth="0.012" sourcerect="400,416,112,609" origin="0.52678573,0.87" />
+      <Crosshair texture="crosshair.png" sourcerect="136,231,169,167" />
+      <CrosshairPointer texture="crosshair.png" sourcerect="636,409,20,18" />
+      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="2500" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+      <ParticleEmitter particle="muzzleflashflakcannon" particleamount="1" velocitymin="50" velocitymax="100" distance="-20" />
+      <ParticleEmitter particle="swirlysmoke" particleamount="10" velocitymin="0" velocitymax="0" scalemin="10" scalemax="15" distancemin="-100" distancemax="50" />
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="1000.0" structuredamage="0" force="0.0" camerashake="50.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
+      </StatusEffect>
+    </Turret>
+    <aitarget maxsightrange="3000" maxsoundrange="8000" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+      <input name="set_light" displayname="connection.setlight" />
+    </ConnectionPanel>
+    <SkillRequirementHint identifier="weapons" level="50" />
+  </Item>
+</Items>

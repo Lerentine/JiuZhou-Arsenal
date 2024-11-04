@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<style>
+  <Override>
+    <MainMenuBackground color="255,255,255,255">
+      <Sprite texture="%ModDir%/png/tsm_yl_1.png" sourcerect="0,0,1920,1080" premultiplyalpha="false" />
+    </MainMenuBackground>
+    <MainMenuVignette color="255,255,255,255">
+    <Sprite name="MainMenuVignette" texture="%ModDir%/png/tsm_yl_1.png" sourcerect="0,0,1,1" origin="0.5,0.5"/>
+  </MainMenuVignette>  
+  </Override>
+</style>
