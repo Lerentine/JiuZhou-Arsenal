@@ -8,14 +8,15 @@
     <StatValue stattype="MeleeAttackMultiplier" value="0.7" />
     <StatValue stattype="AttackMultiplier" value="0.25" />
     <StatValue stattype="MovementSpeed" value="0.25" />
+    <StatValue stattype="MaximumHealthMultiplier" value="0.5" />
     <StatusEffect target="Character">
       <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.3" />
     </StatusEffect>
   </Effect>
   </Affliction>
   <Affliction name="快反眩晕抗性" hideiconafterdelay="true" identifier="tsm_qrf_stun" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
-  <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="stun" minresistance="0.00" maxresistance="0.75" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
-  </Effect>
+   <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="stun" minresistance="0.00" maxresistance="0.75" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+   </Effect>
   </Affliction>
   <!--快反-->
   <Affliction name="快反队长加成" hideiconafterdelay="true" identifier="tsm_qrf_jia_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
@@ -24,6 +25,7 @@
     <StatValue stattype="RangedSpreadReduction" value="0.3" />
     <StatValue stattype="MeleeAttackSpeed" value="0.3" />
     <StatValue stattype="AttackMultiplier" value="0.4" />
+    <StatValue stattype="MaximumHealthMultiplier" value="0.55" />
     <StatusEffect target="Character">
       <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.25" />
     </StatusEffect>
@@ -33,6 +35,7 @@
     <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,acidburn,triton_7L,tsm_bl" minresistance="0.00" maxresistance="0.35" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
     <StatValue stattype="MeleeAttackMultiplier" value="0.35" />
     <StatValue stattype="RangedSpreadReduction" value="0.3" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.4" />
     <StatValue stattype="AttackMultiplier" value="0.3" />
     </Effect>
   </Affliction>
@@ -40,6 +43,7 @@
     <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,acidburn,triton_7L,tsm_bl" minresistance="0.00" maxresistance="0.25" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
     <StatValue stattype="MeleeAttackMultiplier" value="0.35" />
     <StatValue stattype="RangedSpreadReduction" value="0.3" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.3" />
     <StatValue stattype="AttackMultiplier" value="0.2" />
     </Effect>
   </Affliction>
@@ -48,7 +52,8 @@
     <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,stun,acidburn" minresistance="0.00" maxresistance="0.5" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
     <StatValue stattype="MeleeAttackMultiplier" value="0.7" />
     <StatValue stattype="MeleeAttackSpeed" value="0.1" />
-    <StatValue stattype="RangedAttackSpeed" value="0.2" />
+    <StatValue stattype="RangedAttackSpeed" value="0.15" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.6" />
     <StatusEffect target="Character">
       <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.3" />
     </StatusEffect>
@@ -57,7 +62,8 @@
   <Affliction name="贝奥武夫精英加成" hideiconafterdelay="true" identifier="tsm_beowulf_yi_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
     <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,acidburn" minresistance="0.00" maxresistance="0.35" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
     <StatValue stattype="MeleeAttackMultiplier" value="0.35" />
-    <StatValue stattype="RangedAttackSpeed" value="0.15" />
+    <StatValue stattype="RangedAttackSpeed" value="0.1" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.4" />
     <StatusEffect target="Character">
       <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.1" />
     </StatusEffect>
@@ -66,7 +72,8 @@
   <Affliction name="贝奥武夫普通加成" hideiconafterdelay="true" identifier="tsm_beowulf_bing_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
     <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,acidburn" minresistance="0.00" maxresistance="0.25" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
     <StatValue stattype="MeleeAttackMultiplier" value="0.35" />
-    <StatValue stattype="RangedAttackSpeed" value="0.1" />
+    <StatValue stattype="RangedAttackSpeed" value="0.05" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.3" />
     </Effect>
   </Affliction>
   <!--占领军-->
@@ -77,6 +84,7 @@
     <StatValue stattype="MeleeAttackSpeed" value="0.25" />
     <StatValue stattype="AttackMultiplier" value="0.3" />
     <StatValue stattype="RangedAttackSpeed" value="0.1" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.6" />
     <StatusEffect target="Character">
       <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.35" />
     </StatusEffect>
@@ -88,6 +96,7 @@
     <StatValue stattype="MeleeAttackMultiplier" value="0.6" />
     <StatValue stattype="MeleeAttackSpeed" value="0.15" />
     <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.4" />
     <StatusEffect target="Character">
       <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.2" />
     </StatusEffect>
@@ -97,6 +106,7 @@
     <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,acidburn" minresistance="0.00" maxresistance="0.35" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
     <StatValue stattype="MeleeAttackMultiplier" value="0.35" />
     <StatValue stattype="AttackMultiplier" value="0.25" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.3" />
     </Effect>
   </Affliction>
   <!--串扰-->
@@ -104,6 +114,7 @@
     <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,stun,acidburn" minresistance="0.00" maxresistance="0.45" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
     <StatValue stattype="AttackMultiplier" value="0.3" />
     <StatValue stattype="RangedAttackSpeed" value="0.1" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.5" />
     </Effect>
   </Affliction>
   <!--野火-->
@@ -114,6 +125,7 @@
     <StatValue stattype="MeleeAttackSpeed" value="0.1" />
     <StatValue stattype="MeleeAttackMultiplier" value="1.0" />
     <StatValue stattype="RangedAttackSpeed" value="0.1" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.6" />
     <StatusEffect target="Character">
       <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.25" />
     </StatusEffect>
@@ -124,6 +136,7 @@
     <StatValue stattype="MovementSpeed" value="0.2" />
     <StatValue stattype="MeleeAttackMultiplier" value="0.7" />
     <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.4" />
     <StatusEffect target="Character">
       <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.2" />
     </StatusEffect>
@@ -133,6 +146,7 @@
     <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,bleeding,acidburn" minresistance="0.00" maxresistance="0.37" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
     <StatValue stattype="MovementSpeed" value="0.15" />
     <StatValue stattype="AttackMultiplier" value="0.25" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.3" />
     <StatusEffect target="Character">
     <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.1" />
     </StatusEffect>
@@ -142,7 +156,8 @@
   <Affliction name="突袭者队长加成" hideiconafterdelay="true" identifier="tsm_anonymous_jia_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
     <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,bleeding,acidburn" minresistance="0.00" maxresistance="0.45" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
     <StatValue stattype="MovementSpeed" value="0.4" />
-    <StatValue stattype="RangedAttackSpeed" value="0.2" />
+    <StatValue stattype="RangedAttackSpeed" value="0.1" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.5" />
     <StatusEffect target="Character">
       <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.3" />
     </StatusEffect>
@@ -151,7 +166,8 @@
   <Affliction name="突袭者精英加成" hideiconafterdelay="true" identifier="tsm_anonymous_yi_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
     <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,bleeding,acidburn" minresistance="0.00" maxresistance="0.3" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
     <StatValue stattype="MovementSpeed" value="0.25" />
-    <StatValue stattype="RangedAttackSpeed" value="0.1" />
+    <StatValue stattype="RangedAttackSpeed" value="0.05" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.4" />
     </Effect>
   </Affliction>
   <!--咏叹调-->
@@ -159,6 +175,7 @@
     <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,stun,acidburn" minresistance="0.00" maxresistance="0.45" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
     <StatValue stattype="RangedAttackSpeed" value="0.3" />
     <StatValue stattype="RangedSpreadReduction" value="0.4" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.45" />
     <StatusEffect target="Character">
       <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.3" />
     </StatusEffect>
@@ -168,6 +185,7 @@
     <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,bleeding,acidburn" minresistance="0.00" maxresistance="0.45" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
     <StatValue stattype="AttackMultiplier" value="0.3" />
     <StatValue stattype="RangedSpreadReduction" value="0.2" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.45" />
     <StatusEffect target="Character">
       <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.3" />
     </StatusEffect>
@@ -176,7 +194,8 @@
   <Affliction name="普通加成" hideiconafterdelay="true" identifier="tsm_pt_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
     <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,bleeding,acidburn" minresistance="0.00" maxresistance="0.3" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
     <StatValue stattype="AttackMultiplier" value="0.25" />
-    <StatValue stattype="RangedAttackSpeed" value="0.1" />
+    <StatValue stattype="RangedAttackSpeed" value="0.05" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.3" />
     <StatusEffect target="Character">
       <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.3" />
     </StatusEffect>
@@ -188,6 +207,7 @@
     <StatValue stattype="RangedAttackSpeed" value="0.2" />
     <StatValue stattype="RangedSpreadReduction" value="0.35" />
     <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.6" />
     <StatusEffect target="Character">
       <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.3" />
     </StatusEffect>
@@ -199,6 +219,7 @@
     <StatValue stattype="RangedSpreadReduction" value="0.2" />
     <StatValue stattype="MeleeAttackMultiplier" value="1.0" />
     <StatValue stattype="MeleeAttackSpeed" value="0.25" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.45" />
     <StatusEffect target="Character">
       <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.1" />
     </StatusEffect>
@@ -210,6 +231,7 @@
     <!--StatValue stattype="RangedAttackSpeed" value="0.1" /-->
     <StatValue stattype="RangedSpreadReduction" value="0.35" />
     <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.3" />
     <StatusEffect target="Character">
     <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.5" />
     </StatusEffect>
@@ -223,26 +245,26 @@
   </Affliction>
   <Affliction name="恢复" identifier="tsm_eyi_rev" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
     <Effect minstrength="0" maxstrength="1" >
-      <StatusEffect target="Character">
-        <ReduceAffliction type="bleeding" amount="3" />
-        <ReduceAffliction type="burn" amount="0.3" />
-        <ReduceAffliction type="damage" amount="0.3" />
-        <ReduceAffliction type="bloodloss" amount="0.5" />
+      <StatusEffect target="Character" interval="5" duration="5">
+        <ReduceAffliction type="bleeding" amount="5" />
+        <ReduceAffliction type="burn" amount="1" />
+        <ReduceAffliction type="damage" amount="1" />
+        <ReduceAffliction type="bloodloss" amount="1.5" />
       </StatusEffect>
     </Effect>
   </Affliction>
   <Affliction name="出血恢复" identifier="tsm_ai_bleeding" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
-    <Effect minstrength="0" maxstrength="1" >
+    <Effect minstrength="0" maxstrength="1" interval="5" duration="5">
       <StatusEffect target="Character">
-        <ReduceAffliction type="bleeding" amount="3" />
-        <ReduceAffliction type="bloodloss" amount="0.15" />
+        <ReduceAffliction type="bleeding" amount="15" />
+        <ReduceAffliction type="bloodloss" amount="0.5" />
       </StatusEffect>
     </Effect>
   </Affliction>
   <Affliction name="眩晕恢复" identifier="tsm_ai_stun" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
     <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.00" maxresistance="0.4" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
-      <StatusEffect target="Character">
-        <ReduceAffliction type="stun" amount="0.1" />
+      <StatusEffect target="Character" interval="5" duration="5">
+        <ReduceAffliction type="stun" amount="0.55" />
       </StatusEffect>
     </Effect>
   </Affliction>
@@ -255,8 +277,8 @@
   </Affliction>
   <Affliction name="眩晕恢复" identifier="tsm_ai_stun_5" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
     <Effect minstrength="0" maxstrength="1">
-      <StatusEffect target="Character">
-        <ReduceAffliction type="stun" amount="0.5" />
+      <StatusEffect target="Character" interval="5" duration="5">
+        <ReduceAffliction type="stun" amount="2.5" />
       </StatusEffect>
     </Effect>
   </Affliction>
@@ -269,12 +291,12 @@
   duration="1"
   treatmentthreshold="1000"
   iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-  <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.5" maxresistance="0.7">
-    <StatValue stattype="RangedAttackSpeed" value="0.15" />
+  <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.3" maxresistance="0.3">
+    <StatValue stattype="RangedAttackSpeed" value="0.05" />
     <StatValue stattype="RangedSpreadReduction" value="0.2" />
     <StatValue stattype="MeleeAttackMultiplier" value="1" />
-    <StatValue stattype="AttackMultiplier" value="0.5" />
-    <StatValue stattype="Maximumhealthmultiplier" value="0.3" />
+    <StatValue stattype="AttackMultiplier" value="0.1" />
+    <StatValue stattype="Maximumhealthmultiplier" value="0.1" />
   </Effect>
   <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,3" sheetelementsize="128,128"/>
   </Affliction>
@@ -314,5 +336,13 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0" />
     <AfflictionOverlay texture="%ModDir%/png/screenwhite.png" />
+  </Affliction>
+  <!--暴乱挺进者-->
+  <Affliction hideiconafterdelay="true" identifier="tsm_operator_revolt" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-1" resistancefor="stun" minresistance="0.00" maxresistance="0.4" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="MovementSpeed" value="0.2" />
+      <StatValue stattype="AttackMultiplier" value="-0.6" />
+      <StatValue stattype="MeleeAttackSpeed" value="2.0" />
+    </Effect>
   </Affliction>
 </Afflictions>

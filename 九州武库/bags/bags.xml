@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
- <Item name="奇迹之海货运箱" identifier="tsm_metalcrate" category="Equipment" tags="crate,allowcleanup,securecrate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" fireproof="true" waterproof="true">
+ <Item name="奇迹之海货运箱" identifier="tsm_metalcrate" subcategory="tsm_bags" category="Equipment" tags="crate,allowcleanup,securecrate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" fireproof="true" waterproof="true">
     <Price baseprice="150">
       <Price storeidentifier="merchantoutpost" multiplier="1" minavailable="2" />
       <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="3" />
@@ -31,7 +31,7 @@
       </StatusEffect>
     </ItemComponent>
   </Item>
-  <Item name="奇迹之海手提箱" identifier="tsm_toolbox" subcategory="TSM" category="Equipment" tags="mobilecontainer,toolbox,tsm_box,securecrate" cargocontaineridentifier="tsm_metalcrate" showcontentsintooltip="true" Scale="0.23" fireproof="true" waterproof="true" description="" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
+  <Item name="奇迹之海手提箱" identifier="tsm_toolbox" subcategory="tsm_bags" category="Equipment" tags="mobilecontainer,toolbox,tsm_box,securecrate" cargocontaineridentifier="tsm_metalcrate" showcontentsintooltip="true" Scale="0.23" fireproof="true" waterproof="true" description="" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
     <Deconstruct time="10">
       <Item identifier="steel" />
     </Deconstruct>
@@ -64,7 +64,7 @@
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-   <Item name="武器箱" identifier="tsm_weaponbackpack" subcategory="TSM" category="Equipment" tags="mobilecontainer,toolbox,tsm_weapons_box,securecrate" cargocontaineridentifier="tsm_metalcrate" showcontentsintooltip="true" Scale="0.23" fireproof="true" waterproof="true" description="" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
+  <Item name="武器箱" identifier="tsm_weaponbackpack" subcategory="tsm_bags" category="Equipment" tags="mobilecontainer,toolbox,tsm_weapons_box,securecrate" cargocontaineridentifier="tsm_metalcrate" showcontentsintooltip="true" Scale="0.23" fireproof="true" waterproof="true" description="" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
     <PreferredContainer primary="engcab" />
     <PreferredContainer secondary="wreckstoragecab" spawnprobability="0.05" />
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.5" />
@@ -109,8 +109,7 @@
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-
-  <Item name="背包" identifier="tsm_bag_small" subcategory="TSM" description="" scale="0.35" category="Equipment" tags="mediumitem,toolbelt,toolbox,mobilecontainer,securecrate,backpack" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+  <Item name="背包" identifier="tsm_bag_small" subcategory="tsm_bags" description="" scale="0.35" category="Equipment" tags="mediumitem,toolbelt,toolbox,mobilecontainer,securecrate,backpack" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
     <Deconstruct time="5">
       <Item identifier="organicfiber" />
     </Deconstruct>
@@ -130,8 +129,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/bags/bags.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" canbehiddenbyotherwearables="false" hideotherwearables="false" sourcerect="325,742,183,208" origin="0.7,0.55" scale="0.35" />
     </Wearable>
   </Item>
-
-  <Item name="协奏型战术背包" identifier="tsm_bag_medium" subcategory="TSM" description="" scale="0.36" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" waterproof="true" fireproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+  <Item name="协奏型战术背包" identifier="tsm_bag_medium" subcategory="tsm_bags" description="" scale="0.36" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" waterproof="true" fireproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
     <Deconstruct time="5">
       <Item identifier="organicfiber" />
     </Deconstruct>
@@ -152,8 +150,7 @@
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.95" setvalue="true" disabledeltatime="true" />
     </Wearable>
   </Item>
-
-  <Item name="战术背包" identifier="tsm_bag_big" subcategory="TSM" description="" scale="0.36" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+  <Item name="战术背包" identifier="tsm_bag_big" subcategory="tsm_bags" description="" scale="0.36" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
     <Deconstruct time="5">
       <Item identifier="organicfiber" amount="2"/>
     </Deconstruct>
@@ -178,8 +175,7 @@
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.9" setvalue="true" disabledeltatime="true" />
     </Wearable>
   </Item>
-
-  <Item name="大载物背包" identifier="tsm_bag_heavy" subcategory="TSM" description="" scale="0.34" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+  <Item name="大载物背包" identifier="tsm_bag_heavy" subcategory="tsm_bags" description="" scale="0.34" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
     <Deconstruct time="5">
       <Item identifier="organicfiber" amount="3"/>
     </Deconstruct>
@@ -211,8 +207,7 @@
       <SkillModifier skillidentifier="helm" skillvalue="-5" />
     </Wearable>
   </Item>
-
-  <Item name="大型运输背包" identifier="tsm_bag_heavy_big" subcategory="TSM" description="" scale="0.35" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+  <Item name="大型运输背包" identifier="tsm_bag_heavy_big" subcategory="tsm_bags" description="" scale="0.35" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
     <Deconstruct time="5">
       <Item identifier="organicfiber" amount="3"/>
     </Deconstruct>
@@ -253,8 +248,7 @@
       <SkillModifier skillidentifier="helm" skillvalue="-10" />
     </Wearable>
   </Item>
-
-  <Item name="联盟特别行动背包" identifier="tsm_bag_diving_special" subcategory="TSM" description="" scale="0.33" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+  <Item name="联盟特别行动背包" identifier="tsm_bag_diving_special" subcategory="tsm_bags" description="" scale="0.33" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
     <Deconstruct time="5">
       <Item identifier="organicfiber" amount="4"/>
     </Deconstruct>
@@ -283,8 +277,7 @@
       <SkillModifier skillidentifier="weapons" skillvalue="-10" />
     </Wearable>
   </Item>
-
-  <Item name="特种作业背包" identifier="tsm_bag_diving" subcategory="TSM" description="" scale="0.3" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+  <Item name="特种作业背包" identifier="tsm_bag_diving" subcategory="tsm_bags" description="" scale="0.3" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
     <Deconstruct time="5">
       <Item identifier="organicfiber" amount="3"/>
     </Deconstruct>
@@ -312,9 +305,7 @@
       <SkillModifier skillidentifier="weapons" skillvalue="-10" />
     </Wearable>
   </Item>
-
-
-  <Item name="大型特种作业背包" identifier="tsm_bag_diving_big" subcategory="TSM" description="" scale="0.33" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+  <Item name="大型特种作业背包" identifier="tsm_bag_diving_big" subcategory="tsm_bags" description="" scale="0.33" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
     <Deconstruct time="5">
       <Item identifier="organicfiber" amount="5"/>
     </Deconstruct>
@@ -343,5 +334,79 @@
       <SkillModifier skillidentifier="electrical" skillvalue="-10" />
       <SkillModifier skillidentifier="mechanical" skillvalue="-10" />
     </Wearable>
+  </Item>
+  <Item name="联盟武器盲盒" identifier="tsm_lm_lockbox" subcategory="tsm_bags" tags="crate,securecrate,bigitem" category="Equipment" fireproof="true" scale="0.2" impactsoundtag="impact_metal_heavy">
+    <InventoryIcon texture="%ModDir%/bags/blindbox.png" sourcerect="0,299,775,242" />
+    <Sprite texture="%ModDir%/bags/blindbox.png" depth="0.55" sourcerect="0,299,775,242" origin="0.5,0.5" />
+    <ContainedSprite allowedcontainertags="container,cargocontainer" texture="%ModDir%/png/if_box.png" sourcerect="4,173,190,88" depth="0.54" origin="0.5,0.5" />
+    <Body width="750" height="220" density="30" />
+    <Holdable slots="LeftHand" controlpose="true" holdpos="2,25" handle1="48,28" handle2="48,28" aimable="false" holdangle="-15" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.2" setvalue="true" />
+    </Holdable>
+    <ItemContainer capacity="1" canbeselected="false" hideitems="true" keepopenwhenequipped="false" movableframe="false" showcontainedstateindicator="false">
+      <!--容器图标-->
+      <SlotIcon texture="%ModDir%/png/ui.png" sourcerect="1169,335,57,36" />
+      <!--权限卡解锁-->
+      <Containable items="tsm_identifier" excludeditems="none">
+        <StatusEffect type="OnContaining" target="This" Condition="-15" drawinventory="false">
+          <Sound file="%ModDir%/bags/Box_Rollx.ogg" range="5000" loop="false" />
+          <Explosion range="200.0" force="0.3" shockwave="false" smoke="false" flames="false" flash="false" sparks="true" underwaterbubble="true" camerashake="5" />
+        </StatusEffect>
+        <StatusEffect type="OnContaining" target="This">
+          <particleemitter particle="spark" particleamount="20" emitinterval="1000" velocitymin="0" velocitymax="50" anglemin="0" anglemax="180" scalemin="2" scalemax="3" />
+          <Conditional Condition="eq 0" />
+          <!--SpawnItem identifier="if_military_lockbox" spawnposition="This" /-->
+          <Explosion range="500.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="true" underwaterbubble="true" camerashake="50" />
+          <Sound file="%ModDir%/bags/Box_drop_lv1.ogg" range="5000" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnContaining" target="This" stackable="false" spawnitemrandomly="true" amount="1">
+          <Conditional Condition="eq 0" />
+          <SpawnItem identifiers="tsm_lm_l85a2" />
+          <SpawnItem identifiers="tsm_lm_famas" />
+          <SpawnItem identifiers="tsm_lm_aug" />
+          <SpawnItem identifiers="tsm_lm_tavor21" />
+          <SpawnItem identifiers="tsm_lm_vsh2" />
+          <SpawnItem identifiers="tsm_lm_mdr" />
+          <SpawnItem identifiers="tsm_lm_mdr_c" />
+          <SpawnItem identifiers="tsm_lm_rm277" />
+          <SpawnItem identifiers="tsm_lm_m16" />
+          <SpawnItem identifiers="tsm_lm_m16a4" />
+          <SpawnItem identifiers="tsm_lm_m110" />
+          <SpawnItem identifiers="tsm_lm_ar15" />
+          <SpawnItem identifiers="tsm_lm_m4" />
+          <SpawnItem identifiers="tsm_lm_mk18" />
+          <SpawnItem identifiers="tsm_lm_scarh" />
+          <SpawnItem identifiers="tsm_lm_mcx" />
+          <SpawnItem identifiers="tsm_lm_hk417" />
+          <SpawnItem identifiers="tsm_lm_mk14ebr" />
+          <SpawnItem identifiers="tsm_lm_hk433" />
+          <SpawnItem identifiers="tsm_lm_drh" />
+          <SpawnItem identifiers="tsm_lm_97" />
+          <SpawnItem identifiers="tsm_lm_mk18_c" />
+          <SpawnItem identifiers="tsm_lm_m4_c" />
+          <SpawnItem identifiers="tsm_lm_cz805a1" />
+          <SpawnItem identifiers="tsm_lm_cz806" />
+          <SpawnItem identifiers="tsm_lm_mcxxws" />
+          <SpawnItem identifiers="tsm_lm_mk18_l" />
+          <SpawnItem identifiers="tsm_lm_g36c" />
+          <SpawnItem identifiers="tsm_lm_g36ka4" />
+          <SpawnItem identifiers="tsm_lm_mk46" />
+          <SpawnItem identifiers="tsm_honeybadger" />
+          <SpawnItem identifiers="tsm_lm_czbren3" />
+          <SpawnItem identifiers="tsm_lm_m249" />
+          <SpawnItem identifiers="tsm_lm_mk48" />
+          <SpawnItem identifiers="tsm_lm_m240b" />
+          <SpawnItem identifiers="tsm_lm_m60e6" />
+          <SpawnItem identifiers="tsm_lm_xm250" />
+          <SpawnItem identifiers="tsm_lm_minigun" />
+          <SpawnItem identifiers="tsm_m1014" />
+          <SpawnItem identifiers="tsm_ksg" />
+          <SpawnItem identifiers="tsm_lm_dp12" />
+          <SpawnItem identifiers="tsm_lm_spas12" />
+          <SpawnItem identifiers="tsm_lm_ks23" />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer>
   </Item>
 </Items>

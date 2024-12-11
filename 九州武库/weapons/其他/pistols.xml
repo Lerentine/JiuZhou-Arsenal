@@ -4,7 +4,7 @@
     <Item name="92" identifier="tsm_92_pistols" category="Weapon" subcategory="other" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,pistolitem,provocativetohumanai,gunsmith,mountableweapon,tsm_gun" Scale="0.24" impactsoundtag="impact_metal_light">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="770,915,58,84" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="0,270,147,109" depth="0.55" origin="0.5,0.5" />
-      <Body width="147" height="109" density="25" />
+      <Body width="147" height="109" density="12" />
       <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="20">
         <RequiredSkill identifier="weapons" level="40" />
         <RequiredItem identifier="steel" />
@@ -13,7 +13,7 @@
       <Deconstruct time="10">
         <Item identifier="steel" />
       </Deconstruct>
-      <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="90,5" handle1="-50,-7" msg="ItemMsgPickUpSelect" />
+      <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="150,0" holdangle="-45" aimpos="90,5" handle1="-50,-7" msg="ItemMsgPickUpSelect" />
       <RangedWeapon barrelpos="35,15" spread="10" unskilledspread="35" combatPriority="30" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.35">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -29,7 +29,17 @@
         <RequiredSkill identifier="weapons" level="20" />
       </RangedWeapon>
       <ItemContainer capacity="1" maxstacksize="1" containedstateindicatorstyle="bullet">
-        <Containable items="tsm_9_mag" />
+        <Containable items="tsm_9_mag" >
+          <!--换弹-->
+          <StatusEffect type="OnInserted" target="This" maxchargetime="999" setvalue="true"/>
+          <StatusEffect type="OnInserted" target="This" setvalue="true">
+            <Conditional isActive="eq true" />
+            <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          </StatusEffect>
+          <StatusEffect target="This" disabledeltatime="true" checkconditionalalways="true" delay="0.5" maxchargetime="0" setvalue="true">
+            <conditional maxchargetime="eq 999"/>
+          </StatusEffect>
+        </Containable>
       </ItemContainer>
       <aitarget sightrange="4500" soundrange="6000" fadeouttime="10" />
       <Quality>
@@ -40,7 +50,7 @@
     <Item name="FN 509 Tactical" identifier="tsm_fn509_pistols" category="Weapon" subcategory="other" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,pistolitem,provocativetohumanai,gunsmith,mountableweapon,tsm_gun" Scale="0.24" impactsoundtag="impact_metal_light">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="367,916,54,79" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="19,705,133,102" depth="0.55" origin="0.5,0.5" />
-      <Body width="133" height="102" density="25" />
+      <Body width="133" height="102" density="12" />
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20">
         <RequiredSkill identifier="weapons" level="60" />
         <RequiredItem identifier="tsm_92_pistols" />
@@ -51,7 +61,7 @@
       <Deconstruct time="10">
         <Item identifier="titanium" />
       </Deconstruct>
-      <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="90,5" handle1="-50,-7" msg="ItemMsgPickUpSelect" />
+      <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="150,0" holdangle="-45" aimpos="90,5" handle1="-50,-7" msg="ItemMsgPickUpSelect" />
       <RangedWeapon weapondamagemodifier="1" barrelpos="35,30" spread="10" unskilledspread="35" combatPriority="35" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.3">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -70,7 +80,17 @@
         <!-- 外观 itempos(x)-=26 -->
         <!--1.弹匣-->
         <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-        <Containable items="tsm_9_mag" hide="false" itempos="-11,-10.5" depth="0.56" />
+        <Containable items="tsm_9_mag" hide="false" itempos="-11,-10.5" depth="0.56">
+          <!--换弹-->
+          <StatusEffect type="OnInserted" target="This" maxchargetime="999" setvalue="true"/>
+          <StatusEffect type="OnInserted" target="This" setvalue="true">
+            <Conditional isActive="eq true" />
+            <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          </StatusEffect>
+          <StatusEffect target="This" disabledeltatime="true" checkconditionalalways="true" delay="0.65" maxchargetime="0" setvalue="true">
+            <conditional maxchargetime="eq 999"/>
+          </StatusEffect>
+        </Containable>
         <!--2.灯-->
         <!--SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
@@ -78,8 +98,8 @@
       </SubContainer-->
         <!--3.瞄具-->
         <SubContainer capacity="1" maxstacksize="1">
-          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
-          <Containable items="sighting_pistols" hide="false" itempos="-3.5,12.5" depth="0.56" setactive="true" />
+          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="632,289,24,21" origin="0.45,0.5" />
+          <Containable items="sighting_pistols" hide="false" itempos="-3,13" depth="0.56" setactive="true" />
         </SubContainer>
       </ItemContainer>
       <aitarget sightrange="4500" soundrange="6000" fadeouttime="10" />
@@ -91,7 +111,7 @@
     <Item name="M1911" identifier="tsm_1911_pistols" category="Weapon" subcategory="other" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,pistolitem,provocativetohumanai,gunsmith,mountableweapon,tsm_gun" Scale="0.25" impactsoundtag="impact_metal_light">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="945,916,55,79" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="8,138,140,93" depth="0.55" origin="0.5,0.5" />
-      <Body width="140" height="93" density="25" />
+      <Body width="140" height="93" density="15" />
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20">
         <RequiredSkill identifier="weapons" level="55" />
         <RequiredItem identifier="tsm_92_pistols" />
@@ -100,7 +120,7 @@
       <Deconstruct time="10">
         <Item identifier="titanium" />
       </Deconstruct>
-      <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="90,5" handle1="-50,-7" msg="ItemMsgPickUpSelect" />
+      <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="150,0" holdangle="-45" aimpos="90,5" handle1="-50,-7" msg="ItemMsgPickUpSelect" />
       <RangedWeapon barrelpos="33,13" spread="8" unskilledspread="35" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.35">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -116,7 +136,17 @@
         <RequiredSkill identifier="weapons" level="40" />
       </RangedWeapon>
       <ItemContainer capacity="1" maxstacksize="1" containedstateindicatorstyle="bullet">
-        <Containable items="tsm_1143_mag" />
+        <Containable items="tsm_1143_mag">
+          <!--换弹-->
+          <StatusEffect type="OnInserted" target="This" maxchargetime="999" setvalue="true"/>
+          <StatusEffect type="OnInserted" target="This" setvalue="true">
+            <Conditional isActive="eq true" />
+            <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          </StatusEffect>
+          <StatusEffect target="This" disabledeltatime="true" checkconditionalalways="true" delay="0.75" maxchargetime="0" setvalue="true">
+            <conditional maxchargetime="eq 999"/>
+          </StatusEffect>
+        </Containable>
       </ItemContainer>
       <aitarget sightrange="4500" soundrange="6000" fadeouttime="10" />
       <Quality>
@@ -128,7 +158,7 @@
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="455,915,58,85" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="6,436,149,112" depth="0.55" origin="0.5,0.5" />
       <BrokenSprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="0,567,161,99" depth="0.55" origin="0.5,0.5" maxcondition="0" />
-      <Body width="149" height="112" density="25" />
+      <Body width="149" height="112" density="15" />
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20">
         <RequiredSkill identifier="weapons" level="60" />
         <RequiredItem identifier="tsm_fn509_pistols" />
@@ -139,7 +169,7 @@
       <Deconstruct time="10">
         <Item identifier="titaniumaluminiumalloy" />
       </Deconstruct>
-      <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="90,5" handle1="-50,-7" msg="ItemMsgPickUpSelect">
+      <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="150,0" holdangle="-45" aimpos="90,5" handle1="-50,-7" msg="ItemMsgPickUpSelect">
         <StatusEffect type="OnActive" target="This">
           <Conditional Condition="lte 0" />
         </StatusEffect>
@@ -148,7 +178,14 @@
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-        <Sound file="%ModDir%/weapons/其他/92.ogg" type="OnUse" range="2000" />
+        <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
+          <RequiredItem items="1" matchonempty="true" type="Contained" targetslot="4"/>
+          <Sound file="%ModDir%/weapons/其他/92.ogg" type="OnUse" range="2000" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
+          <RequiredItem items="tsm_pistols_silencers" type="Contained" targetslot="4"/>
+          <Sound file="%ModDir%/weapons/其他/xy2.ogg" type="OnUse" range="3000" />
+        </StatusEffect>
         <StatusEffect type="OnUse" target="This">
           <Explosion range="150.0" force="0.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12" />
         </StatusEffect>
@@ -162,11 +199,21 @@
         <!-- 外观 itempos(x)-=26 -->
         <!--1.弹匣-->
         <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-        <Containable items="tsm_9_mag_18" hide="false" itempos="-13,-10.5" depth="0.56" />
+        <Containable items="tsm_9_mag_18" hide="false" itempos="-13,-10.5" depth="0.56">
+          <!--换弹-->
+          <StatusEffect type="OnInserted" target="This" maxchargetime="999" setvalue="true"/>
+          <StatusEffect type="OnInserted" target="This" setvalue="true">
+            <Conditional isActive="eq true" />
+            <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          </StatusEffect>
+          <StatusEffect target="This" disabledeltatime="true" checkconditionalalways="true" delay="0.8" maxchargetime="0" setvalue="true">
+            <conditional maxchargetime="eq 999"/>
+          </StatusEffect>
+        </Containable>
         <!--2.枪托-->
         <SubContainer capacity="1" maxstacksize="1">
           <SlotIcon slotindex="1" texture="%ModDir%/png/ui.png" sourcerect="1002,210,101,72" origin="0.45,0.5" />
-          <Containable items="stock_pistols" hide="false" itempos="-5,1" depth="0.56" setactive="true" />
+          <Containable items="stock_pistols" hide="false" itempos="-5,6" depth="0.56" setactive="true" />
         </SubContainer>
         <!--3.灯-->
         <SlotIcon slotindex="2" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
@@ -175,13 +222,13 @@
         </SubContainer>
         <!--4.瞄具-->
         <SubContainer capacity="1" maxstacksize="1">
-          <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
+          <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="632,289,24,21" origin="0.45,0.5" />
           <Containable items="sighting_pistols" hide="false" itempos="-5,16" depth="0.56" setactive="true" />
         </SubContainer>
         <!--5.枪口/枪管-->
         <SubContainer capacity="1" maxstacksize="1">
           <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="517,220,82,22" origin="0.45,0.5" />
-          <Containable items="barrel_pistols" hide="false" itempos="28,10.5" containedspritedepth="0.51" Scale="0.20" setactive="true" />
+          <Containable items="barrel_pistols" hide="false" itempos="27,10.5" containedspritedepth="0.51" Scale="0.20" setactive="true" />
         </SubContainer>
       </ItemContainer>
       <aitarget sightrange="4500" soundrange="6000" fadeouttime="10" />
@@ -193,7 +240,7 @@
     <Item name="沙漠之鹰" identifier="tsm_de_handgun" category="Weapon" subcategory="other" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,pistolitem,provocativetohumanai,gunsmith,mountableweapon,tsm_gun" Scale="0.27" impactsoundtag="impact_metal_light">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="860,916,58,84" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="4,12,162,87" depth="0.55" origin="0.5,0.5" />
-      <Body width="162" height="87" density="25" />
+      <Body width="162" height="87" density="20" />
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20">
         <RequiredSkill identifier="weapons" level="70" />
         <RequiredItem identifier="tsm_1911_pistols" />
@@ -226,7 +273,17 @@
         <RequiredSkill identifier="weapons" level="60" />
       </RangedWeapon>
       <ItemContainer capacity="1" maxstacksize="1" containedstateindicatorstyle="bullet">
-        <Containable items="tsm_127_mag" />
+        <Containable items="tsm_127_mag">
+          <!--换弹-->
+          <StatusEffect type="OnInserted" target="This" maxchargetime="999" setvalue="true"/>
+          <StatusEffect type="OnInserted" target="This" setvalue="true">
+            <Conditional isActive="eq true" />
+            <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          </StatusEffect>
+          <StatusEffect target="This" disabledeltatime="true" checkconditionalalways="true" delay="0.85" maxchargetime="0" setvalue="true">
+            <conditional maxchargetime="eq 999"/>
+          </StatusEffect>
+        </Containable>
       </ItemContainer>
       <aitarget sightrange="4500" soundrange="6000" fadeouttime="10" />
       <Quality>
@@ -240,7 +297,7 @@
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="658,914,80,85" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="279,7,352,128" depth="0.55" origin="0.5,0.5" />
-      <Body width="352" height="128" density="52" />
+      <Body width="352" height="128" density="25" />
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
       <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-10,-18" handle2="42,10" holdangle="-35" msg="ItemMsgPickUpSelect">
         <!--降低移动速度-->
@@ -248,7 +305,7 @@
         <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
       </Holdable>
-      <RangedWeapon reload="0.08" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="170,30" spread="10" unskilledspread="20" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.3">
+      <RangedWeapon reload="0.08" weapondamagemodifier="0.75" holdtrigger="true" barrelpos="170,30" spread="10" unskilledspread="20" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -276,7 +333,17 @@
         <RequiredSkill identifier="weapons" level="40" />
       </RangedWeapon>
       <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="-62,-36" containedstateindicatorstyle="bullet" containedstateindicatorslot="0" containedspritedepth="0.56">
-        <Containable items="tsm_58_smgmag" setactive="true" />
+        <Containable items="tsm_58_smgmag" setactive="true">
+          <!--换弹-->
+          <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="15,-25" holdangle="60" setvalue="true"/>
+          <StatusEffect type="OnInserted" target="This" setvalue="true">
+            <Conditional isActive="eq true" />
+            <sound file="%ModDir%/weapons/reload_ogg/reload_2_0.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          </StatusEffect>
+          <StatusEffect target="This" disabledeltatime="true" holdpos="50,0" aimpos="50,0" handle1="-10,-18" handle2="42,10" holdangle="-35" checkconditionalalways="true" delay="2" maxchargetime="0" setvalue="true">
+            <conditional maxchargetime="eq 999"/>
+          </StatusEffect>
+        </Containable>
         <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
         <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
         <SubContainer capacity="1" maxstacksize="1">
@@ -301,7 +368,7 @@
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="546,906,82,94" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="281,193,368,112" depth="0.55" origin="0.5,0.5" />
-      <Body width="368" height="112" density="52" />
+      <Body width="368" height="112" density="23" />
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
       <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="55,-3" aimpos="55,-3" handle1="-82,-18" handle2="42,10" holdangle="-35" msg="ItemMsgPickUpSelect">
         <!--降低移动速度-->
@@ -330,14 +397,46 @@
         <StatusEffect type="OnUse" target="Contained">
           <Use />
         </StatusEffect>
+        <StatusEffect type="Always" target="This" unskilledspread="-25">
+          <Conditional unskilledspread="gt 15" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="+1.8" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 35" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="+2.2" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 20" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" spread="-15">
+          <Conditional spread="gt 9" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="+2" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 15" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="+2.5" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 12" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
         <StatusEffect type="OnUse" target="This">
           <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="2" scalemax="2" />
         </StatusEffect>
         <RequiredItems items="tsm_9_smgmag" type="Contained" msg="ItemMsgAmmoRequired" />
         <RequiredSkill identifier="weapons" level="20" />
       </RangedWeapon>
-      <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="0,-36" containedstateindicatorstyle="bullet" containedstateindicatorslot="0" containedspritedepth="0.56">
-        <Containable items="tsm_9_smgmag" setactive="true" />
+      <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="4,-43" containedstateindicatorstyle="bullet" containedstateindicatorslot="0" containedspritedepth="0.56">
+        <Containable items="tsm_9_smgmag" setactive="true">
+          <!--换弹-->
+          <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="15,-30" holdangle="80" setvalue="true"/>
+          <StatusEffect type="OnInserted" target="This" setvalue="true">
+            <Conditional isActive="eq true" />
+            <sound file="%ModDir%/weapons/reload_ogg/reload_1_6.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          </StatusEffect>
+          <StatusEffect target="This" disabledeltatime="true" holdpos="55,-3" aimpos="55,-3" handle1="-82,-18" handle2="42,10" holdangle="-35" checkconditionalalways="true" delay="1.6" maxchargetime="0" setvalue="true">
+            <conditional maxchargetime="eq 999"/>
+          </StatusEffect>
+        </Containable>
         <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
         <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
         <SubContainer capacity="1" maxstacksize="1">
@@ -354,7 +453,7 @@
     <Item name="JS-9冲锋枪" identifier="tsm_js9" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" scale="0.265" impactsoundtag="impact_metal_light" description="">
       <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="15" requiresrecipe="false">
         <RequiredSkill identifier="weapons" level="20" />
-        <RequiredItem identifier="tsm_plastic" amount="1" />
+        <RequiredItem identifier="tsm_plastic" amount="2" />
         <RequiredItem identifier="tsm_item_box" amount="2" />
         <RequiredItem identifier="tsm_171" amount="1" />
       </Fabricate>
@@ -365,8 +464,8 @@
       <PreferredContainer secondary="wreckarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="256,918,80,82" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="452,385,350,115" depth="0.55" origin="0.5,0.5" />
-      <Body width="350" height="115" density="52" />
+      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="282,320,350,115" depth="0.55" origin="0.5,0.5" />
+      <Body width="350" height="115" density="23" />
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
       <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="48,0" aimpos="48,0" handle1="-25,-18" handle2="42,10" holdangle="-35" msg="ItemMsgPickUpSelect">
         <!--降低移动速度-->
@@ -395,6 +494,28 @@
         <StatusEffect type="OnUse" target="Contained">
           <Use />
         </StatusEffect>
+        <StatusEffect type="Always" target="This" unskilledspread="-40">
+          <Conditional unskilledspread="gt 15" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="+3.1" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 35" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="+0.75" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 20" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" spread="-8">
+          <Conditional spread="gt 7" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="+2.2" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 11" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="+2" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 9" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
         <StatusEffect type="OnUse" target="This">
           <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="2" scalemax="2" />
         </StatusEffect>
@@ -402,7 +523,17 @@
         <RequiredSkill identifier="weapons" level="40" />
       </RangedWeapon>
       <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="-75,-36" containedstateindicatorstyle="bullet" containedstateindicatorslot="0" containedspritedepth="0.56">
-        <Containable items="tsm_9_smgmag" setactive="true" />
+        <Containable items="tsm_9_smgmag" setactive="true">
+          <!--换弹-->
+          <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="35,-25" holdangle="55" setvalue="true"/>
+          <StatusEffect type="OnInserted" target="This" setvalue="true">
+            <Conditional isActive="eq true" />
+            <sound file="%ModDir%/weapons/reload_ogg/reload_1_6.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          </StatusEffect>
+          <StatusEffect target="This" disabledeltatime="true" holdpos="48,0" aimpos="48,0" handle1="-25,-18" handle2="42,10" holdangle="-35" checkconditionalalways="true" delay="1.6" maxchargetime="0" setvalue="true">
+            <conditional maxchargetime="eq 999"/>
+          </StatusEffect>
+        </Containable>
         <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
         <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
         <SubContainer capacity="1" maxstacksize="1">
@@ -419,25 +550,29 @@
     <Item name="P90冲锋枪" identifier="tsm_p90" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" scale="0.255" impactsoundtag="impact_metal_light" description="">
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="15" requiresrecipe="false">
         <RequiredSkill identifier="weapons" level="50" />
-        <RequiredItem identifier="tsm_05" amount="1" />
-        <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
+        <RequiredItem identifier="tsm_js9" amount="1" />
+        <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="3" />
         <RequiredItem identifier="tsm_item_box" amount="2" />
-        <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
       </Fabricate>
       <Deconstruct time="10">
-        <Item identifier="steel" />
+        <Item identifier="tsm_item_box" />
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="159,918,73,82" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="448,552,313,114" depth="0.56" origin="0.5,0.5" />
-      <Body width="313" height="114" density="52" />
+      <Body width="313" height="114" density="25" />
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
       <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="43,3" aimpos="43,3" handle1="10,-18" handle2="50,10" holdangle="-35" msg="ItemMsgPickUpSelect">
         <!--降低移动速度-->
         <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.9" setvalue="true" />
         <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
+        <StatusEffect type="Always" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="true" setvalue="true">
+          <RequiredItem items="tsm_sight_hamr" type="Contained" />
+        </StatusEffect>
       </Holdable>
-      <RangedWeapon reload="0.08" weapondamagemodifier="1" holdtrigger="true" barrelpos="150,20" spread="10" unskilledspread="20" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
+      <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
+      <StatusHUD drawhudwhenequipped="false" range="0" thermalgoggles="false" showdeadcharacters="false" showtexts="false" />
+      <RangedWeapon reload="0.08" weapondamagemodifier="1" holdtrigger="true" barrelpos="150,20" spread="8" unskilledspread="20" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -460,18 +595,83 @@
         <StatusEffect type="OnUse" target="Contained">
           <Use />
         </StatusEffect>
+        <StatusEffect type="Always" target="This" unskilledspread="-30">
+          <Conditional unskilledspread="gt 15" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="+2.74" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 35" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="+2.4" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 20" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" spread="-15">
+          <Conditional spread="gt 8" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="+2.3" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 12" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="+2.1" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 10" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
+
+        <StatusEffect type="Always" target="This" unskilledspread="-10">
+          <Conditional unskilledspread="gt 15" />
+          <Conditional HasStatusTag="tsm_sight_holographic" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="-1" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 35" />
+          <Conditional HasStatusTag="tsm_sight_reddot" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="-1" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 20" />
+          <Conditional HasStatusTag="tsm_sight_reddot" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" spread="-5">
+          <Conditional spread="gt 8" />
+          <Conditional HasStatusTag="tsm_sight_holographic" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="-0.5" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 12" />
+          <Conditional HasStatusTag="tsm_sight_reddot" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="-0.3" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 10" />
+          <Conditional HasStatusTag="tsm_sight_reddot" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
         <StatusEffect type="OnUse" target="This">
           <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="2" scalemax="2" />
         </StatusEffect>
         <RequiredItems items="tsm_57_smgmag" type="Contained" msg="ItemMsgAmmoRequired" />
-        <RequiredSkill identifier="weapons" level="20" />
+        <RequiredSkill identifier="weapons" level="40" />
       </RangedWeapon>
       <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="0,-36" containedstateindicatorstyle="bullet" containedstateindicatorslot="0" containedspritedepth="0.56">
-        <Containable items="tsm_57_smgmag" setactive="true" hide="true" />
+        <Containable items="tsm_57_smgmag" setactive="true" hide="true">
+          <!--换弹-->
+          <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="50,5" holdangle="-55" setvalue="true"/>
+          <StatusEffect type="OnInserted" target="This" setvalue="true">
+            <Conditional isActive="eq true" />
+            <sound file="%ModDir%/weapons/reload_ogg/reload_2_0.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          </StatusEffect>
+          <StatusEffect target="This" disabledeltatime="true" holdpos="43,3" aimpos="43,3" handle1="10,-18" handle2="50,10" holdangle="-35" checkconditionalalways="true" delay="2.0" maxchargetime="0" setvalue="true">
+            <conditional maxchargetime="eq 999"/>
+          </StatusEffect>
+        </Containable>
         <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
         <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
         <SubContainer capacity="1" maxstacksize="1">
           <Containable items="flashlight" hide="false" itempos="20,10" setactive="true" containedspritedepth="0.54" />
+        </SubContainer>
+        <SubContainer capacity="1" maxstacksize="1">
+          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+          <Containable items="sighting" hide="false" itempos="18,18" depth="0.56" setactive="true" />
         </SubContainer>
       </ItemContainer>
       <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
@@ -479,89 +679,416 @@
         <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       </Quality>
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
-      <SkillRequirementHint identifier="weapons" level="20" />
+      <SkillRequirementHint identifier="weapons" level="40" />
     </Item>
-    <Item name="蜜獾.308 短突击步枪" identifier="tsm_honeybadger" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.3" impactsoundtag="impact_metal_light" description="">
-      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-      <!--制作-->
-      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="20" requiresrecipe="false">
+    <Item name="MP7冲锋枪" identifier="tsm_mp7" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" scale="0.255" impactsoundtag="impact_metal_light" description="">
+      <Fabricate suitablefabricators="tsm_fabricator" requiredtime="15" requiresrecipe="false">
         <RequiredSkill identifier="weapons" level="50" />
-        <RequiredItem identifier="tsm_hpc" amount="1" />
-        <RequiredItem identifier="tsm_yh_weaponbox" amount="1" />
-        <RequiredItem identifier="tsm_item_box" amount="2" />
+        <RequiredItem identifier="tsm_js9" amount="1" />
+        <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
+        <RequiredItem identifier="tsm_item_box" amount="1" />
         <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
       </Fabricate>
-      <!--分解-->
       <Deconstruct time="10">
-        <Item identifier="tsm_hpc" />
+        <Item identifier="tsm_item_box" />
       </Deconstruct>
-      <!--图标以及局内贴图-->
-      <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="666,2050,189,206" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="575,8,363,93" depth="0.55" origin="0.5,0.5" />
-      <Body width="363" height="93" density="52" />
-      <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
-      <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="58,-5" aimpos="60,-5" handle1="-90,-15" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
-        <!--拿手上时减速、瞄准时减速以及射击时减速-->
-        <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.95" setvalue="true" />
+      <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="71,920,76,80" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="520,712,229,105" depth="0.56" origin="0.5,0.5" />
+      <Body width="210" height="90" density="25" />
+      <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
+      <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,0" aimpos="40,-5" handle1="-15,-18" handle2="50,0" holdangle="-35" msg="ItemMsgPickUpSelect">
+        <!--降低移动速度-->
+        <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.9" setvalue="true" />
         <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
+        <StatusEffect type="Always" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="true" setvalue="true">
+          <RequiredItem items="tsm_sight_hamr" type="Contained" />
+        </StatusEffect>
       </Holdable>
-      <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-      <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="165,25" spread="8" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
-        <!--准星图标-->
+      <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
+      <StatusHUD drawhudwhenequipped="false" range="0" thermalgoggles="false" showdeadcharacters="false" showtexts="false" />
+      <RangedWeapon reload="0.08" weapondamagemodifier="1" holdtrigger="true" barrelpos="120,20" spread="9" unskilledspread="20" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-        <!--枪口火焰-->
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
-        <!--枪声-->
-        <Sound file="%ModDir%/weapons/反抗军/hb.ogg" type="OnUse" range="3000" />
-        <StatusEffect type="OnUse" target="Contained">
-          <Use />
+        <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
+          <RequiredItem items="1" matchonempty="true" type="Contained" targetslot="3"/>
+          <Sound file="%ModDir%/weapons/其他/mp71.ogg" type="OnUse" range="3000" selectionmode="Random"/>
+          <Sound file="%ModDir%/weapons/其他/mp72.ogg" type="OnUse" range="3000" />
+          <Sound file="%ModDir%/weapons/其他/mp73.ogg" type="OnUse" range="3000" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
+          <RequiredItem items="tsm_pistols_silencers" type="Contained" targetslot="3"/>
+          <Sound file="%ModDir%/weapons/其他/xy1.ogg" type="OnUse" range="3000" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This">
           <!--后坐力,屏幕抖动-->
-          <Explosion range="100.0" force="0.65" camerashake="30" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" />
+          <Explosion range="100.0" force="0.4" camerashake="15" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" />
         </StatusEffect>
-        <!--子弹落地音效（延迟0.5s）-->
         <StatusEffect type="OnUse" delay="0.5" target="This" forceplaysounds="true">
           <Conditional InWater="false"/>
-          <Sound file="%ModDir%/weapons/反抗军/bullet_concerete1.ogg" type="OnUse" range="1500" selectionmode="Random" />
-          <Sound file="%ModDir%/weapons/反抗军/bullet_concerete2.ogg" type="OnUse" range="1500" />
-          <Sound file="%ModDir%/weapons/反抗军/bullet_concerete3.ogg" type="OnUse" range="1500" />
-          <Sound file="%ModDir%/weapons/反抗军/bullet_concerete4.ogg" type="OnUse" range="1500" />
+          <Sound file="%ModDir%/weapons/木卫二联盟/bullet_general1.ogg" type="OnUse" range="1500" selectionmode="Random" />
+          <Sound file="%ModDir%/weapons/木卫二联盟/bullet_general2.ogg" type="OnUse" range="1500" />
+          <Sound file="%ModDir%/weapons/木卫二联盟/bullet_general3.ogg" type="OnUse" range="1500" />
+          <Sound file="%ModDir%/weapons/木卫二联盟/bullet_general4.ogg" type="OnUse" range="1500" />
+          <Sound file="%ModDir%/weapons/木卫二联盟/bullet_general5.ogg" type="OnUse" range="1500" />
         </StatusEffect>
-        <!--抛弹壳-->
+        <!--"Use" contained magazine to spawn projectiles.-->
+        <StatusEffect type="OnUse" target="Contained">
+          <Use />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" unskilledspread="-25">
+          <Conditional unskilledspread="gt 15" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="+2" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 35" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="+2.8" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 20" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" spread="-8">
+          <Conditional spread="gt 9" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="+2.8" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 12" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="+1" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 11" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
+
+        <StatusEffect type="Always" target="This" unskilledspread="-10">
+          <Conditional unskilledspread="gt 15" />
+          <Conditional HasStatusTag="tsm_sight_holographic" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="-1" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 35" />
+          <Conditional HasStatusTag="tsm_sight_reddot" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="-1" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 20" />
+          <Conditional HasStatusTag="tsm_sight_reddot" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" spread="-5">
+          <Conditional spread="gt 11" />
+          <Conditional HasStatusTag="tsm_sight_holographic" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="-0.5" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 15" />
+          <Conditional HasStatusTag="tsm_sight_reddot" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="-0.3" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 12" />
+          <Conditional HasStatusTag="tsm_sight_reddot" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
         <StatusEffect type="OnUse" target="This">
           <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="2" scalemax="2" />
         </StatusEffect>
-        <!--需要的弹匣以及武器等级-->
-        <RequiredItems items="762mag" type="Contained" msg="ItemMsgAmmoRequired" />
-        <RequiredSkill identifier="weapons" level="45" />
+        <RequiredItems items="tsm_46_smgmag" type="Contained" msg="ItemMsgAmmoRequired" />
+        <RequiredSkill identifier="weapons" level="40" />
       </RangedWeapon>
-      <!--里容器-->
       <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
-        <!-- 外观 itempos(x)-=26 -->
-        <!--1.弹匣-->
-        <Containable items="762mag" hide="false" itempos="-4,-7" depth="0.56" setactive="true" />
+        <Containable items="tsm_46_smgmag" itempos="-7,-2" setactive="true" hide="false" containedspritedepth="0.56" depth="0.56">
+          <!--换弹-->
+          <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="20,-20" holdangle="50" setvalue="true"/>
+          <StatusEffect type="OnInserted" target="This" setvalue="true">
+            <Conditional isActive="eq true" />
+            <sound file="%ModDir%/weapons/reload_ogg/reload_1_8.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          </StatusEffect>
+          <StatusEffect target="This" disabledeltatime="true" holdpos="40,0" holdangle="-35" checkconditionalalways="true" delay="1.9" maxchargetime="0" setvalue="true">
+            <conditional maxchargetime="eq 999"/>
+          </StatusEffect>
+        </Containable>
         <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-        <!--2.灯-->
+        <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
         <SubContainer capacity="1" maxstacksize="1">
-          <Containable items="flashlight" hide="false" itempos="13,3" setactive="true" />
-          <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+          <Containable items="flashlight" hide="false" itempos="12,5" setactive="true" containedspritedepth="0.54" />
+        </SubContainer>
+        <SubContainer capacity="1" maxstacksize="1">
+          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+          <Containable items="sighting" hide="false" itempos="-8,15" depth="0.56" setactive="true" />
+        </SubContainer>
+        <SubContainer capacity="1" maxstacksize="1">
+          <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="517,220,82,22" origin="0.45,0.5" />
+          <Containable items="barrel_pistols" hide="false" itempos="35,4" containedspritedepth="0.51" Scale="0.20" setactive="true" />
         </SubContainer>
       </ItemContainer>
-      <aitarget sightrange="2100" soundrange="3500" fadeouttime="6" />
-      <!--品质-->
+      <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
       <Quality>
         <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       </Quality>
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
-      <!--等级提示-->
-      <SkillRequirementHint identifier="weapons" level="45" />
+      <SkillRequirementHint identifier="weapons" level="40" />
     </Item>
-    <Item name="冲锋枪弹匣（9mm）" identifier="tsm_9_smgmag" scale="0.28" category="weapon" subcategory="other" maxstacksize="10" maxstacksizecharacterinventory="8" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_9_smgmag,magazine,9mmammo" impactsoundtag="impact_metal_light" health="30" description="">
-      <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="710,238,47,92" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="710,238,47,92" depth="0.55" origin="0.5,0.5" />
+    <Item name="ump45" identifier="tsm_ump45" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" scale="0.255" impactsoundtag="impact_metal_light" description="">
+      <Fabricate suitablefabricators="tsm_fabricator" requiredtime="15" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="50" />
+        <RequiredItem identifier="tsm_js9" amount="1" />
+        <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
+        <RequiredItem identifier="tsm_item_box" amount="1" />
+        <RequiredItem identifier="tsm_hpc" amount="1" />
+      </Fabricate>
+      <Deconstruct time="10">
+        <Item identifier="tsm_item_box" />
+      </Deconstruct>
+      <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="914,802,86,95" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="500,441,288,91" depth="0.55" origin="0.5,0.5" />
+      <Body width="210" height="90" density="27" />
+      <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
+      <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,0" aimpos="40,-5" handle1="-15,-18" handle2="50,0" holdangle="-35" msg="ItemMsgPickUpSelect">
+        <!--降低移动速度-->
+        <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.9" setvalue="true" />
+        <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
+        <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
+        <StatusEffect type="Always" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="true" setvalue="true">
+          <RequiredItem items="tsm_sight_hamr" type="Contained" />
+        </StatusEffect>
+      </Holdable>
+      <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
+      <StatusHUD drawhudwhenequipped="false" range="0" thermalgoggles="false" showdeadcharacters="false" showtexts="false" />
+      <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="140,20" spread="10" unskilledspread="20" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
+        <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+        <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+        <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
+        <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
+          <RequiredItem items="1" matchonempty="true" type="Contained" targetslot="3"/>
+          <Sound file="%ModDir%/weapons/其他/ump45.ogg" type="OnUse" range="3000" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
+          <RequiredItem items="tsm_pistols_silencers" type="Contained" targetslot="3"/>
+          <Sound file="%ModDir%/weapons/其他/xy3.ogg" type="OnUse" range="3000" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This">
+          <!--后坐力,屏幕抖动-->
+          <Explosion range="100.0" force="0.4" camerashake="15" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" delay="0.5" target="This" forceplaysounds="true">
+          <Conditional InWater="false"/>
+          <Sound file="%ModDir%/weapons/木卫二联盟/bullet_general1.ogg" type="OnUse" range="1500" selectionmode="Random" />
+          <Sound file="%ModDir%/weapons/木卫二联盟/bullet_general2.ogg" type="OnUse" range="1500" />
+          <Sound file="%ModDir%/weapons/木卫二联盟/bullet_general3.ogg" type="OnUse" range="1500" />
+          <Sound file="%ModDir%/weapons/木卫二联盟/bullet_general4.ogg" type="OnUse" range="1500" />
+          <Sound file="%ModDir%/weapons/木卫二联盟/bullet_general5.ogg" type="OnUse" range="1500" />
+        </StatusEffect>
+        <!--"Use" contained magazine to spawn projectiles.-->
+        <StatusEffect type="OnUse" target="Contained">
+          <Use />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" unskilledspread="-22">
+          <Conditional unskilledspread="gt 15" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="+2.3" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 35" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="+2.4" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 20" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" spread="-12">
+          <Conditional spread="gt 8" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="+1" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 12" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="+2.8" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 10" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
+
+        <StatusEffect type="Always" target="This" unskilledspread="-10">
+          <Conditional unskilledspread="gt 15" />
+          <Conditional HasStatusTag="tsm_sight_holographic" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="-1" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 35" />
+          <Conditional HasStatusTag="tsm_sight_reddot" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="-1" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 20" />
+          <Conditional HasStatusTag="tsm_sight_reddot" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" spread="-5">
+          <Conditional spread="gt 11" />
+          <Conditional HasStatusTag="tsm_sight_holographic" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="-0.3" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 15" />
+          <Conditional HasStatusTag="tsm_sight_reddot" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="-0.5" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 12" />
+          <Conditional HasStatusTag="tsm_sight_reddot" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This">
+          <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="2" scalemax="2" />
+        </StatusEffect>
+        <RequiredItems items="tsm_45_smgmag" type="Contained" msg="ItemMsgAmmoRequired" />
+        <RequiredSkill identifier="weapons" level="40" />
+      </RangedWeapon>
+      <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
+        <Containable items="tsm_45_smgmag" itempos="15.5,-8.5" setactive="true" hide="false" containedspritedepth="0.56" depth="0.56">
+          <!--换弹-->
+          <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="20,-20" holdangle="50" setvalue="true"/>
+          <StatusEffect type="OnInserted" target="This" setvalue="true">
+            <Conditional isActive="eq true" />
+            <sound file="%ModDir%/weapons/reload_ogg/reload_1_6.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          </StatusEffect>
+          <StatusEffect target="This" disabledeltatime="true" holdpos="40,0" holdangle="-35" checkconditionalalways="true" delay="1.6" maxchargetime="0" setvalue="true">
+            <conditional maxchargetime="eq 999"/>
+          </StatusEffect>
+        </Containable>
+        <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
+        <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+        <SubContainer capacity="1" maxstacksize="1">
+          <Containable items="flashlight" hide="false" itempos="16,5" setactive="true" containedspritedepth="0.54" />
+        </SubContainer>
+        <SubContainer capacity="1" maxstacksize="1">
+          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+          <Containable items="sighting" hide="false" itempos="6,13.5" depth="0.56" setactive="true" />
+        </SubContainer>
+        <SubContainer capacity="1" maxstacksize="1">
+          <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="517,220,82,22" origin="0.45,0.5" />
+          <Containable items="barrel_pistols" hide="false" itempos="45,4" containedspritedepth="0.51" Scale="0.20" setactive="true" />
+        </SubContainer>
+      </ItemContainer>
+      <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
+      <Quality>
+        <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+      </Quality>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+      <SkillRequirementHint identifier="weapons" level="40" />
+    </Item>
+    <Item name="维克托" identifier="tsm_vk" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" scale="0.33" impactsoundtag="impact_metal_light" description="">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <Price baseprice="555" displaynonempty="true">
+        <Price storeidentifier="merchantarmory" minamount="0" maxamount="0" />
+        <Price storeidentifier="merchantcity" minamount="0" maxamount="0" />
+        <Price storeidentifier="merchantresearch" minamount="0" maxamount="0" />
+      </Price>
+      <Fabricate suitablefabricators="tsm_fabricator" requiredtime="15" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="65" />
+        <RequiredItem identifier="tsm_ump45" amount="1" />
+        <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="2" />
+        <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
+        <RequiredItem identifier="tsm_hpc" amount="1" />
+      </Fabricate>
+      <Deconstruct time="10">
+        <Item identifier="tsm_lm_weaponbox" />
+        <Item identifier="tsm_yh_weaponbox" />
+      </Deconstruct>
+      <InventoryIcon texture="%ModDir%/weapons/其他/legacy_weapons.png" sourcerect="1889,451,101,110" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/其他/legacy_weapons.png" sourcerect="37,342,252,88" depth="0.55" origin="0.5,0.5" />
+      <Body width="240" height="75" density="20" />
+      <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
+      <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-20,-12" handle2="42,10" holdangle="-35" msg="ItemMsgPickUpSelect">
+        <!--降低移动速度-->
+        <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.95" setvalue="true" />
+        <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
+        <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
+      </Holdable>
+      <RangedWeapon reload="0.05" weapondamagemodifier="1" holdtrigger="true" barrelpos="120,20" spread="9" unskilledspread="20" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.3">
+        <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+        <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+        <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
+        <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
+          <RequiredItem items="1" matchonempty="true" type="Contained" targetslot="3"/>
+          <Sound file="%ModDir%/weapons/其他/vk.ogg" type="OnUse" range="1000" loop="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
+          <RequiredItem items="tsm_pistols_silencers" type="Contained" targetslot="3"/>
+          <Sound file="%ModDir%/weapons/其他/xy3.ogg" type="OnUse" range="3000" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This">
+          <!--后坐力,屏幕抖动-->
+          <Explosion range="100.0" force="0.4" camerashake="15" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" delay="0.5" target="This" forceplaysounds="true">
+          <Conditional InWater="false"/>
+          <Sound file="%ModDir%/weapons/奇迹之海/bullet_metal1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+          <Sound file="%ModDir%/weapons/奇迹之海/bullet_metal2.ogg" type="OnUse" range="1000" />
+          <Sound file="%ModDir%/weapons/奇迹之海/bullet_metal3.ogg" type="OnUse" range="1000" />
+        </StatusEffect>
+        <!--"Use" contained magazine to spawn projectiles.-->
+        <StatusEffect type="OnUse" target="Contained">
+          <Use />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This">
+          <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="2" scalemax="2" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" unskilledspread="-25">
+          <Conditional unskilledspread="gt 15" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="+2" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 35" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="+2" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 20" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" spread="-20">
+          <Conditional spread="gt 9" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="+1.8" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 12" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="+1.8" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 10.5" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
+        <RequiredItems items="tsm_45_smgmag" type="Contained" msg="ItemMsgAmmoRequired" />
+        <RequiredSkill identifier="weapons" level="40" />
+      </RangedWeapon>
+      <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="40,-40" containedstateindicatorstyle="bullet" containedstateindicatorslot="0" containedspritedepth="0.56">
+        <Containable items="tsm_45_smgmag" setactive="true" rotation="-35">
+          <!--换弹-->
+          <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="10,-40" holdangle="70" setvalue="true"/>
+          <StatusEffect type="OnInserted" target="This" setvalue="true">
+            <Conditional isActive="eq true" />
+            <sound file="%ModDir%/weapons/reload_ogg/reload_0_85.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          </StatusEffect>
+          <StatusEffect target="This" disabledeltatime="true" holdpos="50,0" aimpos="50,0" handle1="-20,-12" handle2="42,10" holdangle="-35" checkconditionalalways="true" delay="1" maxchargetime="0" setvalue="true">
+            <conditional maxchargetime="eq 999"/>
+          </StatusEffect>
+        </Containable>
+        <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
+        <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+        <SubContainer capacity="1" maxstacksize="1">
+          <Containable items="flashlight" hide="false" itempos="28,-3" setactive="true" />
+        </SubContainer>
+        <SubContainer capacity="1" maxstacksize="1">
+          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
+          <Containable items="sighting_pistols" hide="false" itempos="10,13" depth="0.56" setactive="true" />
+        </SubContainer>
+        <SubContainer capacity="1" maxstacksize="1">
+          <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="517,220,82,22" origin="0.45,0.5" />
+          <Containable items="barrel_pistols" hide="false" itempos="45,3" containedspritedepth="0.51" Scale="0.20" setactive="true" />
+        </SubContainer>
+      </ItemContainer>
+      <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
+      <Quality>
+        <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+      </Quality>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+      <SkillRequirementHint identifier="weapons" level="40" />
+    </Item>
+    <Item name="冲锋枪弹匣（9mm）" identifier="tsm_9_smgmag" scale="0.25" category="weapon" subcategory="other" maxstacksize="10" maxstacksizecharacterinventory="8" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_9_smgmag,magazine,9mmammo,handheldammo" impactsoundtag="impact_metal_light" health="32" description="">
+      <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2201,889,67,111" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2201,889,67,111" depth="0.56" origin="0.5,0.5" />
       <Body width="47" height="92" density="40" />
       <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="6" amount="3">
         <RequiredItem identifier="plastic" />
@@ -585,9 +1112,9 @@
       </ItemContainer>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     </Item>
-    <Item name="冲锋枪穿甲弹匣（9mm）" identifier="tsm_9_smgmag_cj" scale="0.28" category="weapon" subcategory="other" maxstacksize="10" maxstacksizecharacterinventory="8" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_9_smgmag,magazine,9mmammo" impactsoundtag="impact_metal_light" health="30" description="">
-      <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="775,236,47,92" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="775,236,47,92" depth="0.55" origin="0.5,0.5" />
+    <Item name="冲锋枪穿甲弹匣（9mm）" identifier="tsm_9_smgmag_cj" scale="0.25" category="weapon" subcategory="other" maxstacksize="8" maxstacksizecharacterinventory="8" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_9_smgmag,magazine,9mmammo,handheldammo" impactsoundtag="impact_metal_light" health="30" description="">
+      <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2178,751,67,111" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2178,751,67,111" depth="0.56" origin="0.5,0.5" />
       <Body width="47" height="92" density="40" />
       <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="6" amount="3">
         <RequiredItem identifier="plastic" />
@@ -613,9 +1140,61 @@
       </ItemContainer>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     </Item>
-    <Item name="冲锋枪弹匣（5.8mm）" identifier="tsm_58_smgmag" scale="0.28" category="weapon" subcategory="other" maxstacksize="8" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_58_smgmag,magazine" impactsoundtag="impact_metal_light" health="50" description="">
+    <Item name="冲锋枪扩容弹匣（9mm）" identifier="tsm_9_smgmag_kr" scale="0.25" category="weapon" subcategory="other" maxstacksize="8" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_9_smgmag,magazine,9mmammo,handheldammo" impactsoundtag="impact_metal_light" health="45" description="">
+      <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2282,884,82,139" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2282,884,82,139" depth="0.56" origin="0.5,0.5" />
+      <Body width="47" height="92" density="40" />
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="6" amount="2">
+        <RequiredItem identifier="plastic" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="3" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5" amount="1">
+        <RequiredItem tag="tsm_9_smgmag" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="1" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="1" />
+      </Fabricate>
+      <Deconstruct time="10">
+        <Item identifier="plastic" outcondition="0.5" />
+        <Item identifier="copper" mincondition="0.9" />
+      </Deconstruct>
+      <ItemContainer maxstacksize="1" hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_9_ammo" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_9_ammo" />
+        <StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_9_ammo" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    </Item>
+    <Item name="冲锋枪弹鼓（9mm）" identifier="tsm_9_smgmag_drum" scale="0.21" category="weapon" subcategory="other" maxstacksize="6" maxstacksizecharacterinventory="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_9_smgmag,magazine,9mmammo,handheldammo" impactsoundtag="impact_metal_light" health="72" description="">
+      <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2390,880,96,131" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2390,880,96,131" depth="0.56" origin="0.5,0.5" />
+      <Body width="47" height="92" density="40" />
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="6" amount="1">
+        <RequiredItem identifier="plastic" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5" amount="1">
+        <RequiredItem tag="tsm_9_smgmag" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="2" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="2" />
+      </Fabricate>
+      <Deconstruct time="10">
+        <Item identifier="plastic" outcondition="0.5" />
+        <Item identifier="copper" mincondition="0.9" />
+      </Deconstruct>
+      <ItemContainer maxstacksize="1" hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_9_ammo" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_9_ammo" />
+        <StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_9_ammo" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    </Item>
+    <Item name="冲锋枪弹匣（5.8mm）" identifier="tsm_58_smgmag" scale="0.28" category="weapon" subcategory="other" maxstacksize="8" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_58_smgmag,magazine,handheldammo" impactsoundtag="impact_metal_light" health="50" description="">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="680,43,47,90" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="680,43,47,90" depth="0.55" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="680,43,47,90" depth="0.56" origin="0.5,0.5" />
       <Body width="47" height="90" density="40" />
       <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="6" amount="2">
         <RequiredItem identifier="plastic" />
@@ -639,10 +1218,10 @@
       </ItemContainer>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     </Item>
-    <Item name="冲锋枪弹匣（5.7*28）" identifier="tsm_57_smgmag" scale="0.28" category="weapon" subcategory="other" maxstacksize="8" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_57_smgmag,magazine" impactsoundtag="impact_metal_light" health="50" description="">
+    <Item name="冲锋枪弹匣（5.7*28）" identifier="tsm_57_smgmag" scale="0.28" category="weapon" subcategory="other" maxstacksize="8" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_57_smgmag,magazine,handheldammo" impactsoundtag="impact_metal_light" health="50" description="">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="911,568,73,107" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="911,568,73,107" depth="0.55" origin="0.5,0.5" />
-      <Body width="73" height="107" density="40" />
+      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="911,568,73,107" depth="0.56" origin="0.5,0.5" />
+      <Body width="65" height="95" density="10" />
       <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="10" amount="1">
         <RequiredItem identifier="plastic" amount="1" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
@@ -667,7 +1246,91 @@
       </ItemContainer>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     </Item>
-    <Item name="手枪弹匣（9mm）" identifier="tsm_9_mag" scale="0.28" category="weapon" subcategory="other" maxstacksize="8" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_9_mag,tsm_9_mag_18,handheldammo,pistolammoitem,magazine,9mmpistolammo" impactsoundtag="impact_metal_light" health="18" description="">
+    <Item name="冲锋枪弹匣（4.6*30）" identifier="tsm_46_smgmag" scale="0.25" category="weapon" subcategory="other" maxstacksize="8" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_46_smgmag,magazine,handheldammo" impactsoundtag="impact_metal_light" health="40" description="">
+    <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="780,710,34,98" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="780,710,34,98" depth="0.61" origin="0.5,0.5" />
+    <Body width="25" height="85" density="10" />
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="10" amount="1">
+      <RequiredItem identifier="plastic" amount="1" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="1" />
+      <RequiredItem identifier="tsm_tungsten" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5" amount="1">
+      <RequiredItem tag="tsm_46_smgmag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="1" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="1" />
+      <RequiredItem identifier="tsm_tungsten" mincondition="1" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="plastic" outcondition="0.5" />
+      <Item identifier="copper" mincondition="0.9" />
+    </Deconstruct>
+    <ItemContainer maxstacksize="1" hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_46_ammo" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="tsm_46_ammo" />
+      <StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true">
+        <SpawnItem identifiers="tsm_46_ammo" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    </Item>
+    <Item name="冲锋枪弹匣（.45）" identifier="tsm_45_smgmag" scale="0.25" category="weapon" subcategory="other" maxstacksize="8" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_45_smgmag,magazine,handheldammo" impactsoundtag="impact_metal_light" health="25" description="">
+      <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="863,11,51,130" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="863,11,51,130" depth="0.56" origin="0.5,0.5" />
+      <Body width="65" height="95" density="10" />
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="10" amount="2">
+        <RequiredItem identifier="plastic" amount="2" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
+        <RequiredItem identifier="tsm_tungsten" amount="2" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5" amount="1">
+        <RequiredItem identifier="tsm_45_smgmag" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="1" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="1" />
+        <RequiredItem identifier="tsm_tungsten" mincondition="1" />
+      </Fabricate>
+      <Deconstruct time="10">
+        <Item identifier="plastic" outcondition="0.5" />
+        <Item identifier="copper" mincondition="0.9" />
+      </Deconstruct>
+      <ItemContainer maxstacksize="1" hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_57_ammo" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_57_ammo" />
+        <StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_57_ammo" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    </Item>
+    <Item name="冲锋枪扩容弹匣（.45）" identifier="tsm_45_smgmag_kr" scale="0.25" category="weapon" subcategory="other" maxstacksize="6" maxstacksizecharacterinventory="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_45_smgmag,magazine,handheldammo" impactsoundtag="impact_metal_light" health="40" description="">
+      <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="919,7,60,137" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="919,7,60,137" depth="0.56" origin="0.5,0.5" />
+      <Body width="65" height="95" density="10" />
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="10" amount="1">
+        <RequiredItem identifier="plastic" amount="1" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
+        <RequiredItem identifier="tsm_tungsten" amount="2" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_45_smgmag" displayname="recycleitem" requiredtime="5" amount="1">
+        <RequiredItem identifier="tsm_45_smgmag" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="2" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
+        <RequiredItem identifier="tsm_tungsten" mincondition="2" />
+      </Fabricate>
+      <Deconstruct time="10">
+        <Item identifier="plastic" outcondition="0.5" />
+        <Item identifier="copper" mincondition="0.9" />
+      </Deconstruct>
+      <ItemContainer maxstacksize="1" hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_57_ammo" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_57_ammo" />
+        <StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_57_ammo" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    </Item>
+    <Item name="手枪弹匣（9mm）" identifier="tsm_9_mag" scale="0.28" category="weapon" subcategory="other" maxstacksize="8" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_9_mag,tsm_9_mag_18,handheldammo,pistolammoitem,magazine,9mmpistolammo,handheldammo" impactsoundtag="impact_metal_light" health="18" description="">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="221,431,46,76" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="221,431,46,76" depth="0.56" origin="0.5,0.5" />
       <Body width="46" height="76" density="40" />
@@ -703,7 +1366,7 @@
       </ItemContainer>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     </Item>
-    <Item name="手枪扩容弹匣（9mm）" identifier="tsm_9_krmag" scale="0.28" category="weapon" subcategory="other" maxstacksize="8" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_9_mag,tsm_9_mag_18,handheldammo,pistolammoitem,magazine,9mmpistolammo" impactsoundtag="impact_metal_light" health="33" description="">
+    <Item name="手枪扩容弹匣（9mm）" identifier="tsm_9_krmag" scale="0.28" category="weapon" subcategory="other" maxstacksize="8" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_9_mag,tsm_9_mag_18,handheldammo,pistolammoitem,magazine,9mmpistolammo,handheldammo" impactsoundtag="impact_metal_light" health="33" description="">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="200,548,62,116" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="200,548,62,116" depth="0.56" origin="0.5,0.5" />
       <Body width="62" height="116" density="40" />
@@ -732,7 +1395,7 @@
       </ItemContainer>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     </Item>
-    <Item name="手枪弹鼓（9mm）" identifier="tsm_9_drum" scale="0.28" category="weapon" subcategory="other" maxstacksize="6" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_9_mag_18,handheldammo,pistolammoitem,magazine" impactsoundtag="impact_metal_light" health="50" description="">
+    <Item name="手枪弹鼓（9mm）" identifier="tsm_9_drum" scale="0.28" category="weapon" subcategory="other" maxstacksize="6" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_9_mag_18,handheldammo,pistolammoitem,magazine,handheldammo" impactsoundtag="impact_metal_light" health="50" description="">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="310,469,66,163" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="310,469,66,163" depth="0.56" origin="0.5,0.5" />
       <Body width="66" height="163" density="40" />
@@ -760,9 +1423,9 @@
       </ItemContainer>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     </Item>
-    <Item name="手枪弹匣（11.43）" identifier="tsm_1143_mag" scale="0.28" category="weapon" subcategory="other" maxstacksize="8" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_1143_mag,handheldammo,pistolammoitem,magazine,45pistolammo" impactsoundtag="impact_metal_light" health="12" description="">
+    <Item name="手枪弹匣（11.43）" identifier="tsm_1143_mag" scale="0.28" category="weapon" subcategory="other" maxstacksize="8" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_1143_mag,handheldammo,pistolammoitem,magazine,45pistolammo,handheldammo" impactsoundtag="impact_metal_light" health="12" description="">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="175,159,52,76" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="175,159,52,76" depth="0.55" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="175,159,52,76" depth="0.56" origin="0.5,0.5" />
       <Body width="52" height="76" density="40" />
       <Price baseprice="112" displaynonempty="true">
         <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="3" multiplier="1.5" />
@@ -796,9 +1459,9 @@
       </ItemContainer>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     </Item>
-    <Item name="手枪弹匣（12.7）" identifier="tsm_127_mag" scale="0.28" category="weapon" subcategory="other" maxstacksize="6" maxstacksizecharacterinventory="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_127_mag,magazine,deagleammo" impactsoundtag="impact_metal_light" health="7" description="">
+    <Item name="手枪弹匣（12.7）" identifier="tsm_127_mag" scale="0.28" category="weapon" subcategory="other" maxstacksize="6" maxstacksizecharacterinventory="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,tsm_127_mag,magazine,deagleammo,handheldammo" impactsoundtag="impact_metal_light" health="7" description="">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="186,7,41,79" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="186,7,41,79" depth="0.55" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="186,7,41,79" depth="0.56" origin="0.5,0.5" />
       <Body width="41" height="79" density="40" />
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" amount="2">
         <RequiredSkill identifier="weapons" level="40" />
@@ -881,6 +1544,34 @@
         </StatusEffect>
       </Projectile>
     </Item>
+    <Item name="4.6*30" identifier="tsm_46_ammo" category="Weapon" interactthroughwalls="true" subcategory="other" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="30" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+      <Attack structuredamage="0.3" targetforce="1" itemdamage="1" penetration="0.23" severlimbsprobability="0.1">
+        <Affliction identifier="bleeding" strength="12" />
+        <Affliction identifier="bleeding" strength="7" probability="0.3" />
+        <Affliction identifier="gunshotwound" strength="15" />
+        <Affliction identifier="tsm_armorbreak_30" strength="2" />
+        <Affliction identifier="gunshotwound" strength="3" probability="0.3" />
+        <Affliction identifier="stun" strength="0.2" probability="0.18" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
     <Item name="5.7*28" identifier="tsm_57_ammo" category="Weapon" interactthroughwalls="true" subcategory="other" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
@@ -895,6 +1586,36 @@
           <Affliction identifier="tsm_armorbreak_30" strength="1" />
           <Affliction identifier="gunshotwound" strength="5" probability="0.3" />
           <Affliction identifier="stun" strength="0.25" probability="0.15" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
+    </Item>
+    <Item name=".45" identifier="tsm_45_ammo" category="Weapon" interactthroughwalls="true" subcategory="other" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+      <Body width="40" height="14" density="30" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="0.3" targetforce="1" itemdamage="1" penetration="0.18" severlimbsprobability="0.1">
+          <Affliction identifier="bleeding" strength="10" />
+          <Affliction identifier="bleeding" strength="10" probability="0.3" />
+          <Affliction identifier="gunshotwound" strength="15" />
+          <Affliction identifier="tsm_armorbreak_50" strength="1" />
+          <Affliction identifier="gunshotwound" strength="6" probability="0.3" />
+          <Affliction identifier="stun" strength="0.25" probability="0.15" />
+          <Affliction identifier="stun" strength="0.15" probability="0.25" />
+          <Affliction identifier="stun" strength="0.2" probability="0.2" />
         </Attack>
         <StatusEffect type="OnImpact" target="UseTarget">
           <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -946,10 +1667,10 @@
         <Attack structuredamage="4" targetforce="18" itemdamage="5" severlimbsprobability="1.0" penetration="0.2">
           <Affliction identifier="bleeding" strength="30" />
           <Affliction identifier="bleeding" strength="20" probability="0.5" />
-          <Affliction identifier="gunshotwound" strength="60" />
+          <Affliction identifier="gunshotwound" strength="65" />
           <Affliction identifier="tsm_armorbreak_30" strength="5" />
-          <Affliction identifier="explosiondamage" strength="10" probability="0.5" />
-          <Affliction identifier="stun" strength="0.3" />
+          <Affliction identifier="explosiondamage" strength="15" probability="0.5" />
+          <Affliction identifier="stun" strength="0.25" />
         </Attack>
         <StatusEffect type="OnImpact" target="UseTarget">
           <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -964,86 +1685,5 @@
         </StatusEffect>
       </Projectile>
     </Item>
-    <Item name="短枪托" identifier="tsm_stock_pistols" subcategory="other" category="Equipment" Tags="smallitem,stock_pistols" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
-      <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="823,80,177,96" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="823,80,177,96" depth="0.54" origin="0.5,0.5" />
-      <Body width="177" height="96" density="15" />
-      <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
-        <StatusEffect type="OnActive" target="Character">
-          <Affliction identifier="tsm_grip_buff" strength="2" />
-        </StatusEffect>
-      </Holdable>
-      <Price baseprice="301" buyingpricemultiplier="1.2" minleveldifficulty="0">
-        <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
-        <Price locationtype="research" multiplier="1.25" maxavailable="3" />
-        <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
-      </Price>
-      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
-        <RequiredSkill identifier="weapons" level="20" />
-        <RequiredItem identifier="steel" amount="1" />
-        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
-        <RequiredItem identifier="tsm_plastic" amount="1" />
-        <RequiredItem identifier="tsm_item_box" amount="1" />
-      </Fabricate>
-      <Deconstruct time="5">
-        <Item identifier="steel" />
-      </Deconstruct>
-      <AiTarget sightrange="3000" />
-      <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
-    <Item name="手枪瞄具" identifier="tsm_sighting_pistols" subcategory="other" category="Equipment" Tags="smallitem,sighting_pistols" cargocontaineridentifier="tsm_metalcrate" Scale="0.12" impactsoundtag="impact_metal_light">
-      <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="859,256,115,64" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="859,256,115,64" depth="0.55" origin="0.5,0.5" />
-      <Body width="115" height="64" density="15" />
-      <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
-        <StatusEffect type="OnActive" target="Character">
-          <Affliction identifier="tsm_sight1_buff" strength="2" />
-        </StatusEffect>
-      </Holdable>
-      <Price baseprice="291" buyingpricemultiplier="1.2" minleveldifficulty="0">
-        <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
-        <Price locationtype="research" multiplier="1.25" maxavailable="3" />
-        <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
-      </Price>
-      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
-        <RequiredSkill identifier="weapons" level="20" />
-        <RequiredItem identifier="fpgacircuit" amount="1" />
-        <RequiredItem identifier="tin" amount="1" />
-        <RequiredItem identifier="copper" amount="2" />
-        <RequiredItem identifier="zinc" amount="1" />
-      </Fabricate>
-      <Deconstruct time="5">
-        <Item identifier="fpgacircuit" />
-      </Deconstruct>
-      <AiTarget sightrange="3000" />
-      <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
-    <Item name="手枪消音器" identifier="tsm_barrel_pistols" subcategory="other" category="Equipment" Tags="smallitem,barrel_pistols" cargocontaineridentifier="tsm_metalcrate" Scale="0.22" impactsoundtag="impact_metal_light">
-      <InventoryIcon texture="%ModDir%//weapons/其他/pistols.png" sourcerect="842,12,96,28" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%//weapons/其他/pistols.png" sourcerect="842,12,96,28" depth="0.53" origin="0.5,0.5" />
-      <Body width="96" height="28" density="15" />
-      <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
-        <StatusEffect type="OnActive" target="Character">
-          <Affliction identifier="tsm_barrel1_buff" strength="2" />
-        </StatusEffect>
-      </Holdable>
-      <Price baseprice="277" buyingpricemultiplier="1.2" minleveldifficulty="0">
-        <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
-        <Price locationtype="research" multiplier="1.25" maxavailable="3" />
-        <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
-      </Price>
-      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
-        <RequiredSkill identifier="weapons" level="20" />
-        <RequiredItem identifier="steel" amount="1" />
-        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
-        <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
-        <RequiredItem identifier="tsm_item_box" amount="1" />
-      </Fabricate>
-      <Deconstruct time="5">
-        <Item identifier="steel" />
-      </Deconstruct>
-      <AiTarget sightrange="3000" />
-      <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
     </Items>
-</Override>
+  </Override>

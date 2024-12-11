@@ -586,7 +586,7 @@
         <SkillModifier skillidentifier="weapons" skillvalue="-15" />
         <SkillModifier skillidentifier="mechanical" skillvalue="-10" />
         <SkillModifier skillidentifier="electrical" skillvalue="-10" />
-        <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true"></StatusEffect>
+        <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true"/>
         <sprite name="occupation Torso" texture="%ModDir%/Jobgear/lm_occupation_vest.png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="6,10,109,173" origin="0.49,0.42" scale="0.43" />
         <sprite name="occupation Right Lower Arm" texture="%ModDir%/Jobgear/lm_occupation_vest.png" limb="RightArm" depthlimb="RightForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="197,30,51,40" origin="0.5,1.35" scale="0.4" />
         <sprite name="occupation Left Lower Arm" texture="%ModDir%/Jobgear/lm_occupation_vest.png" limb="LeftArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="284,29,47,45" origin="0.5,1.35" scale="0.4" />
@@ -602,9 +602,9 @@
         <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
       </ItemContainer>
     </Item>
-    <Item name="联盟快速反应防弹衣" identifier="lm_rapidreaction_vest" subcategory="tsm_coalition" category="Equipment" tags="smallitem,clothing" scale="0.5" cargocontaineridentifier="tsm_metalcrate" description="" impactsoundtag="impact_soft">
+    <Item name="联盟快速反应防弹衣" identifier="lm_rapidreaction_vest" subcategory="tsm_coalition" category="Equipment" tags="smallitem,clothing" scale="0.6" cargocontaineridentifier="tsm_metalcrate" description="" impactsoundtag="impact_soft">
       <InventoryIcon texture="%ModDir%/Jobgear/lm_rapidreaction_vest.png" sourcerect="445,178,65,76" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%/Jobgear/lm_rapidreaction_vest.png" sourcerect="182,17,85,133" depth="0.5" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Jobgear/lm_rapidreaction_vest.png" sourcerect="379,0,133,85" depth="0.5" origin="0.5,0.5" />
       <Body width="120" height="35" density="25" />
       <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
         <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.35" />
@@ -1282,7 +1282,7 @@
         </StatusEffect>
       </Wearable>
     </Item>
-    <Item name="奇迹之海老式防弹衣" identifier="tsm_old_vest" subcategory="TSM" category="Equipment" tags="smallitem,clothing,vest" scale="0.5" cargocontaineridentifier="tsm_metalcrate" description="" impactsoundtag="impact_soft">
+    <Item name="奇迹之海老式防弹衣" identifier="tsm_old_vest" subcategory="TSM" category="Equipment" tags="smallitem,clothing,vest" scale="0.6" cargocontaineridentifier="tsm_metalcrate" description="" impactsoundtag="impact_soft">
       <Deconstruct time="20">
         <Item identifier="ballisticfiber" />
       </Deconstruct>
@@ -1292,8 +1292,8 @@
         <RequiredItem identifier="organicfiber" amount="3" />
       </Fabricate>
       <InventoryIcon texture="%ModDir%/Jobgear/tsm_old_vest.png" sourcerect="411,141,92,115" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%/Jobgear/tsm_old_vest.png" sourcerect="173,31,86,149" depth="0.51" origin="0.5,0.5" />
-      <Body width="120" height="35" density="25" />
+      <Sprite texture="%ModDir%/Jobgear/tsm_old_vest.png" sourcerect="0,168,115,88" depth="0.51" origin="0.5,0.5" />
+      <Body width="110" height="35" density="80" />
       <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
         <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.25" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" deflectprojectiles="true" />
@@ -1311,7 +1311,7 @@
         <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
       </ItemContainer>
     </Item>
-    <Item name="奇迹之海重型防弹衣" identifier="tsm_heavy_vest" subcategory="TSM" aliases="securityuniform" category="Equipment" hideinmenus="true" tags="smallitem,clothing,vest" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Item name="奇迹之海重型防弹衣" identifier="tsm_heavy_vest" subcategory="TSM" aliases="securityuniform" category="Equipment" hideinmenus="true" tags="smallitem,clothing,vest" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.8" impactsoundtag="impact_soft">
       <Deconstruct time="10">
         <Item identifier="organicfiber" />
         <Item identifier="ballisticfiber" />
@@ -1323,7 +1323,7 @@
         <RequiredItem identifier="titaniumaluminiumalloy" amount="3" />
       </Fabricate>
       <InventoryIcon name="heavy uniform Icon" texture="%ModDir%/Jobgear/tsm_heavy_vest.png" sourcerect="458,173,43,75" origin="0.5,0.5" />
-      <Sprite name="heavy uniform" texture="%ModDir%/Jobgear/tsm_heavy_vest.png" sourcerect="458,173,43,75" depth="0.55" origin="0.5,0.5" />
+      <Sprite name="heavy uniform" texture="%ModDir%/Jobgear/tsm_heavy_vest.png" sourcerect="400,0,112,65" depth="0.55" origin="0.5,0.5" />
       <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
       <Wearable slots="OuterClothes,Any" msg="itemmsgequipselect" canbeselected="false" canbepicked="true" pickkey="Select">
         <sprite name="heavy Torso" texture="%ModDir%/Jobgear/tsm_heavy_vest.png" limb="Torso" depthlimb="Jaw" sourcerect="197,18,89,160" inheritsourcerect="false" hideotherwearables="false" hidelimb="false" inherittexturescale="false" inheritorigin="false" scale="0.49" origin="0.52,0.44" />
@@ -1378,7 +1378,7 @@
         <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
       </ItemContainer>
     </Item>
-    <Item name="亲卫队防弹衣" identifier="tsm_pgvest" subcategory="TSM" category="Equipment" tags="smallitem,clothing,tsm_clothing" scale="0.5" cargocontaineridentifier="tsm_metalcrate" description="" impactsoundtag="impact_soft">
+    <Item name="亲卫队防弹衣" identifier="tsm_pgvest" subcategory="TSM" category="Equipment" tags="smallitem,clothing,tsm_clothing" scale="0.8" cargocontaineridentifier="tsm_metalcrate" description="" impactsoundtag="impact_soft">
       <Deconstruct time="10">
         <Item identifier="ballisticfiber" />
         <Item identifier="titaniumaluminiumalloy" amount="0.5" />
@@ -1391,8 +1391,8 @@
         <RequiredItem identifier="organicfiber" amount="2" />
       </Fabricate>
       <InventoryIcon texture="%ModDir%/Jobgear/tsm_vest_male.png" sourcerect="168,18,94,200" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%/Jobgear/tsm_vest_male.png" sourcerect="168,18,94,200" depth="0.5" origin="0.5,0.5" />
-      <Body radius="70" height="30" density="40" />
+      <Sprite texture="%ModDir%/Jobgear/tsm_vest_female.png" sourcerect="393,199,119,57" depth="0.5" origin="0.5,0.5" />
+      <Body width="110" height="50" density="10" />
       <Wearable slots="OuterClothes,Any" msg="itemmsgequipselect" canbeselected="false" canbepicked="true" pickkey="Select">
         <sprite name="PGC Armor Torso" texture="%ModDir%/Jobgear/tsm_vest_[GENDER].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="false" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="174,18,98,200" scale="0.45" origin="0.44,0.42" />
         <sprite name="PGC Armor Right Lower Arm" texture="%ModDir%/Jobgear/tsm_vest_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />

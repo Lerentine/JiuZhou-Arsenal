@@ -38,7 +38,7 @@
       <Item identifier="plastic" />
     </Deconstruct>
 
-    <Body width="2720" height="2337" density="40" />
+    <Body width="2500" height="2300" density="40" />
 
     <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="256,960,64,64" origin="0.5,0.45" />
     <Sprite texture="%ModDir%/Fabricators/Fabricators.png" sourcerect="688,886,2720,2337" depth="0.8"/>

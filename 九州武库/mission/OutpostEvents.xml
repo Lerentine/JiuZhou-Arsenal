@@ -29,6 +29,26 @@
         <StatusEffect target="This" indestructible="true" />
       </StatusEffectAction>
     </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_forsaken">
+      <TagAction Criteria="speciesname:Human" Tag="enemy" Team="None" IgnoreIncapacitatedCharacters="false" />
+      <TagAction Criteria="hull" Tag="anyhull" SubmarineType="Player" />
+      <Label Name="waitforintruder" />
+      <ClearTagAction Tag="defender" />
+      <ClearTagAction Tag="intruder" />
+      <ClearTagAction Tag="targetidcard" />
+      <TagAction Criteria="eventtag:enemy" Tag="defender" SubmarineType="Outpost" IgnoreIncapacitatedCharacters="false" />
+      <TriggerAction Target1Tag="defender" Target2Tag="anyhull" ApplyToTarget1="intruder" DisableInCombat="false" DisableIfTargetIncapacitated="false" />
+      <StatusEffectAction TargetTag="intruder">
+        <StatusEffect target="This">
+          <LuaHook name="intruder.SetOrder" />
+        </StatusEffect>
+      </StatusEffectAction>
+      <CheckItemAction TargetTag="intruder" ItemIdentifiers="idcard" ApplyTagToItem="targetidcard" />
+      <StatusEffectAction targettag="targetidcard">
+        <StatusEffect target="This" SubmarineSpecificID="0" setvalue="true" />
+      </StatusEffectAction>
+      <GoTo Name="waitforintruder" />
+    </ScriptedEvent>
     <!--站点清除画皮-->
     <ScriptedEvent identifier="tsm_remove_husk">
       <TagAction criteria="itemtag:reactor" tag="reactor" submarinetype="Outpost" chooserandom="true" />
@@ -300,7 +320,7 @@
         </Failure>
       </CheckVisibilityAction>
       <WaitAction time="4" />
-      <ConversationAction text="情况不妙，附近的快速反应部队正在向这个站点靠拢，我们得加紧了！" dialogtype="Small" />
+      <ConversationAction text="tsm_combat_occupation_event.1" dialogtype="Small" />
       <Label name="delay" />
       <RNGAction chance="0.5">
         <Success>
@@ -439,7 +459,7 @@
         </Failure>
       </CheckVisibilityAction>
       <WaitAction time="3" />
-      <ConversationAction text="该死，我们截取到贝奥武夫中队发送的信息了，他们呼叫了增援。联盟最近的快速反应部队正在过来，我们得加紧了。" dialogtype="Small" />
+      <ConversationAction text="tsm_combat_beowulf_event.1" dialogtype="Small" />
       <Label name="delay" />
       <RNGAction chance="0.5">
         <Success>
@@ -605,7 +625,7 @@
         </Failure>
       </CheckVisibilityAction>
       <WaitAction time="3" />
-      <ConversationAction text="野火呼叫战锤支援小队，已接敌，需要增援！需要增援！" dialogtype="Small" />
+      <ConversationAction text="tsm_combat_yehuo_event.1" dialogtype="Small" />
       <Label name="delay" />
       <RNGAction chance="0.5">
         <Success>
@@ -1017,9 +1037,9 @@
     <!--暗夜降临-->
     <ScriptedEvent identifier="tsm_darkstormynight">
       <TagAction criteria="player" tag="player" />
-      <ConversationAction text="闪电风暴接近了！" targettag="player" fadetoblack="true" continueconversation="true" />
-      <ConversationAction text="看起来并不是好兆头啊，今天可不是送死的好日子" targettag="player" fadetoblack="true" continueconversation="true" />
-      <ConversationAction text="该来场真正的枪手对决了" targettag="player" fadetoblack="true" />
+      <ConversationAction text="tsm_darkstormynight.1！" targettag="player" fadetoblack="true" continueconversation="true" />
+      <ConversationAction text="tsm_darkstormynight.2" targettag="player" fadetoblack="true" continueconversation="true" />
+      <ConversationAction text="tsm_darkstormynight.3" targettag="player" fadetoblack="true" />
       <AfflictionAction targettag="player" affliction="tsm_darknight" strength="1" multiplybymaxvitality="true" />
       <Label name="eventloop" />
       <WaitAction time="0.5" />

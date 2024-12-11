@@ -535,27 +535,27 @@
       </SubContainer>
     </ItemContainer>
   </Item>
-  <Item subcategory="TSM" identifier="tsm_bltj_suit" category="Diving" tags="diving,deepdiving,divinggear_wearableindoors,provocative,tsm_suit" allowasextracargo="true" scale="0.5" fireproof="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="2">
-    <!--Deconstruct time="25">
+  <Item subcategory="TSM" identifier="tsm_bltj_suit" category="Diving" tags="diving,deepdiving,divinggear_wearableindoors,provocative,tsm_suit,tsm_operator_revolt" allowasextracargo="true" scale="0.5" fireproof="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="2">
+    <Deconstruct time="25">
       <Item identifier="titaniumaluminiumalloy" amount="2" />
       <Item identifier="physicorium" />
       <Item identifier="ballisticfiber" amount="2" />
       <Item identifier="fpgacircuit" amount="2" />
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="60" displayname="防护服改造">
-      <RequiredSkill identifier="weapons" level="50" />
-      <RequiredSkill identifier="electrical" level="45" />
+    <!--Fabricate suitablefabricators="tsm_fabricator" requiredtime="60" displayname="防护服改造">
+      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredSkill identifier="electrical" level="25" />
       <RequiredItem identifier="tsm_xjzz_suit" />
       <RequiredItem identifier="physicorium" amount="2" />
-      <RequiredItem identifier="tsm_hpc" />
+      <RequiredItem identifier="tsm_hpc" amount="2"/>
       <RequiredItem identifier="tsm_ic" />
       <RequiredItem identifier="tsm_plastic" amount="2" />
       <RequiredItem identifier="tsm_hengberley_star" />
     </Fabricate-->
-    <InventoryIcon texture="%ModDir%/Jobgear/icon.png" sourcerect="522,284,142,121" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Jobgear/icon.png" sourcerect="672,277,128,128" origin="0.5,0.5" />
     <Sprite name="bltj Item" texture="%ModDir%/suit/bltj_item.png" sourcerect="0,0,166,144" depth="0.55" origin="0.5,0.5" />
     <ContainedSprite name="bltj In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/suit/bltj_item.png" sourcerect="164,0,87,190" depth="0.55" origin="0.5,0.5" />
-    <ContainedSprite name="bltj Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/Jobgear/icon.png" sourcerect="551,0,77,209" depth="0.55" origin="-0.12,-0.14" />
+    <ContainedSprite name="bltj Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/Jobgear/icon.png" sourcerect="800,0,80,207" depth="0.55" origin="-0.12,-0.14" />
     <ContainedSprite name="bltj In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/suit/bltj_item.png" sourcerect="0,191,225,66" depth="0.55" origin="0.6,0.5" />
     <Body radius="45" width="34" density="20" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
@@ -655,6 +655,9 @@
           <Sound file="Content/Items/WarningBeep.ogg" range="250" loop="true" />
         </StatusEffect>
       </ItemComponent>
+      <StatusEffect type="OnWearing" target="Character" interval="5">
+        <GiveTalentInfo giverandom="false" talentidentifiers="tsm_operator_revolt" />
+      </StatusEffect>
     </Wearable>
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
     <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0" autoinject="true">

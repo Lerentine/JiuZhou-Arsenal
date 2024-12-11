@@ -6,7 +6,7 @@
     <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
-        <GiveTalentInfo giverandom="false" talentidentifiers="grounded,foolhardy,medicalexpertise,revengesquad,crustyseaman,specops,rifleman,lonewolf,swole,easyturtle,tsm_ai_combat_ship" />
+        <GiveTalentInfo giverandom="false" talentidentifiers="grounded,foolhardy,medicalexpertise,revengesquad,crustyseaman,specops,rifleman,lonewolf,swole,easyturtle" />
       </StatusEffect>
       <StatusEffect type="OnContained" target="This" delay="1">
         <Remove />
@@ -19,7 +19,7 @@
     <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
-        <GiveTalentInfo giverandom="false" talentidentifiers="grounded,foolhardy,medicalexpertise,revengesquad,swole,tsm_ai_bleeding,specops,rifleman,lonewolf,inordinateexsanguination,stonewall,quickdraw,pyromaniac,lightningwizard,warlord,drsubmarine,plaguedoctor,easyturtle,tsm_ai_combat_ship" />
+        <GiveTalentInfo giverandom="false" talentidentifiers="grounded,foolhardy,medicalexpertise,revengesquad,swole,tsm_ai_bleeding,specops,rifleman,lonewolf,inordinateexsanguination,stonewall,quickdraw,pyromaniac,lightningwizard,warlord,drsubmarine,plaguedoctor,easyturtle" />
       </StatusEffect>
       <StatusEffect type="OnContained" target="This" delay="1">
         <Remove />
@@ -32,7 +32,7 @@
     <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
-        <GiveTalentInfo giverandom="false" talentidentifiers="grounded,foolhardy,medicalexpertise,revengesquad,tsm_ai_bleeding,specops,rifleman,lonewolf,inordinateexsanguination,stonewall,swole,quickdraw,tsm_lightningwizard,drsubmarine,warlord,implacable,plaguedoctor,easyturtle,tsm_ai_stun,tsm_ai_combat_ship" />
+        <GiveTalentInfo giverandom="false" talentidentifiers="grounded,foolhardy,medicalexpertise,revengesquad,tsm_ai_bleeding,specops,rifleman,lonewolf,inordinateexsanguination,stonewall,swole,quickdraw,tsm_lightningwizard,drsubmarine,warlord,implacable,plaguedoctor,easyturtle,tsm_ai_stun" />
       </StatusEffect>
       <StatusEffect type="OnContained" target="This" delay="1">
         <Remove />
@@ -45,7 +45,7 @@
     <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
-        <GiveTalentInfo giverandom="false" talentidentifiers="grounded,foolhardy,crustyseaman,easyturtle,extrapowder,plaguedoctor,exampleofhealth,warlord,tsm_ai_combat_ship" />
+        <GiveTalentInfo giverandom="false" talentidentifiers="grounded,foolhardy,crustyseaman,easyturtle,extrapowder,plaguedoctor,exampleofhealth,warlord" />
       </StatusEffect>
       <StatusEffect type="OnContained" target="This" delay="1">
         <Remove />
@@ -71,7 +71,7 @@
     <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
-        <GiveTalentInfo giverandom="false" talentidentifiers="tsm_ai_combat_ship" />
+        <GiveTalentInfo giverandom="false" talentidentifiers="crustyseaman" />
       </StatusEffect>
       <StatusEffect type="OnContained" target="This" delay="1">
         <Remove />

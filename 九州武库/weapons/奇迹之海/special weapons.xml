@@ -56,7 +56,7 @@
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
  <!--三神丘弹药-->
-  <Item name="穿刺长矛" identifier="tsm_kep_spear" subcategory="TSM" description="酒是穿肠毒药\n\n动能穿透器穿刺型长矛弹药，极其尖利的刺头，可以穿透一部分墙壁。" category="Weapon" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" sonarsize="3" tags="mediumitem,kep_bolt,harpoonammo" Scale="0.13" impactsoundtag="impact_metal_heavy">
+  <Item name="穿刺长矛" identifier="tsm_kep_spear" subcategory="TSM" description="酒是穿肠毒药\n\n动能穿透器穿刺型长矛弹药，极其尖利的刺头，可以穿透一部分墙壁。" category="Weapon" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" sonarsize="3" tags="mediumitem,kep_bolt,harpoonammo,handheldammo" Scale="0.13" impactsoundtag="impact_metal_heavy">
     <InventoryIcon texture="%ModDir%/weapons/奇迹之海/电磁穿透器.png" sourcerect="391,1000,557,49" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/奇迹之海/电磁穿透器.png" sourcerect="391,1000,557,49" depth="0.55" alpha="1" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -109,7 +109,7 @@
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="高爆长矛" identifier="tsm_kep_spear_he" subcategory="TSM" description="气是雷烟火炮\n\n动能穿透器高爆型长矛弹药，拥有小范围的爆炸伤害，注意误伤！" tags="mediumitem,kep_bolt,harpoonammo" category="Weapon" cargocontaineridentifier="tsm_metalcrate" maxstacksize="30" sonarsize="3" scale="0.13" impactsoundtag="impact_metal_heavy">
+  <Item name="高爆长矛" identifier="tsm_kep_spear_he" subcategory="TSM" description="气是雷烟火炮\n\n动能穿透器高爆型长矛弹药，拥有小范围的爆炸伤害，注意误伤！" tags="mediumitem,kep_bolt,harpoonammo,handheldammo" category="Weapon" cargocontaineridentifier="tsm_metalcrate" maxstacksize="30" sonarsize="3" scale="0.13" impactsoundtag="impact_metal_heavy">
     <Price baseprice="92">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="3" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4"/>
@@ -154,7 +154,7 @@
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
- <Item name="霰弹长矛" identifier="tsm_kep_spear_12" subcategory="TSM" category="Weapon" description="财是惹祸根苗\n\n动能穿透器霰弹型长矛弹药，可以喷射出多枚箭头，造成大范围损伤" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" sonarsize="3" tags="mediumitem,kep_bolt,harpoonammo" Scale="0.13" impactsoundtag="impact_metal_heavy">
+ <Item name="霰弹长矛" identifier="tsm_kep_spear_12" subcategory="TSM" category="Weapon" description="财是惹祸根苗\n\n动能穿透器霰弹型长矛弹药，可以喷射出多枚箭头，造成大范围损伤" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" sonarsize="3" tags="mediumitem,kep_bolt,harpoonammo,handheldammo" Scale="0.13" impactsoundtag="impact_metal_heavy">
     <Price baseprice="45">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" sold="true"/>
@@ -195,7 +195,7 @@
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="榴弹长矛" identifier="tsm_kep_spear_heat" subcategory="TSM" category="Weapon" description="财是惹祸根苗\n\n动能穿透器榴弹型长矛弹药，爆炸范围较大，有最小起爆距离。" maxstacksize="30" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" sonarsize="3" tags="mediumitem,kep_bolt,harpoonammo" Scale="0.13" impactsoundtag="impact_metal_heavy">
+  <Item name="榴弹长矛" identifier="tsm_kep_spear_heat" subcategory="TSM" category="Weapon" description="财是惹祸根苗\n\n动能穿透器榴弹型长矛弹药，爆炸范围较大，有最小起爆距离。" maxstacksize="30" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" sonarsize="3" tags="mediumitem,kep_bolt,harpoonammo,handheldammo" Scale="0.13" impactsoundtag="impact_metal_heavy">
     <Price baseprice="122" sold="false">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
@@ -419,7 +419,7 @@
     </StatusEffect>
   </Projectile>
 </Item>
-<Item name="救赎能量拘束盒" identifier="tsm_redemption_RestraintBox" subcategory="TSM" Category="Weapon" Tags="smallitem,refillableoxygensource" maxstacksize="5" health="150" cargocontaineridentifier="tsm_metalcrate" scale="0.5">
+<Item name="救赎能量拘束盒" identifier="tsm_redemption_RestraintBox" subcategory="TSM" Category="Weapon" Tags="smallitem,refillableoxygensource,handheldammo" maxstacksize="5" health="150" cargocontaineridentifier="tsm_metalcrate" scale="0.5">
   <Price baseprice="213" displaynonempty="true" minavailable="2">
     <Price storeidentifier="merchantoutpost" />
     <Price storeidentifier="merchantcity" minavailable="3" />

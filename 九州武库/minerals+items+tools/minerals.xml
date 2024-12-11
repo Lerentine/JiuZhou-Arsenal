@@ -212,11 +212,11 @@
     <Body radius="60" width="65" density="50" />
   <!--生成-->
     <LevelResource deattachduration="4" randomoffsetfromwall="80">
-      <Commonness commonness="0.35" cavecommonness="0.1" abysscommonness="25" />
-      <Commonness commonness="0.4" cavecommonness="0.1" abysscommonness="10" leveltype="europanridge" />
-      <Commonness commonness="0.2" cavecommonness="0.1" abysscommonness="0" leveltype="theaphoticplateau" />
-      <Commonness commonness="0.15" cavecommonness="0.1" abysscommonness="0" leveltype="thegreatsea" />
-      <Commonness commonness="0.1" cavecommonness="0.1" abysscommonness="0" leveltype="hydrothermalwastes" />
+      <Commonness commonness="0.35" cavecommonness="0.13" abysscommonness="25" />
+      <Commonness commonness="0.4" cavecommonness="0.3" abysscommonness="10" leveltype="europanridge" />
+      <Commonness commonness="0.2" cavecommonness="0.4" abysscommonness="1" leveltype="theaphoticplateau" />
+      <Commonness commonness="0.15" cavecommonness="0.3" abysscommonness="2" leveltype="thegreatsea" />
+      <Commonness commonness="0.1" cavecommonness="0.2" abysscommonness="2" leveltype="hydrothermalwastes" />
       <RequiredItem items="cuttingequipment" type="Equipped" />
     </LevelResource>
    <!--握持-->

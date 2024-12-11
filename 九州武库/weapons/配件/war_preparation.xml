@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--自杀式袭击-->
+  <Item name="自杀式背心" identifier="tsm_suecide_vest" subcategory="TSM" Health="100" category="Equipment" tags="smallitem,clothing,vest" scale="0.5" cargocontaineridentifier="tsm_metalcrate" description="" impactsoundtag="impact_soft">
+    <Deconstruct time="20">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="45">
+      <RequiredItem identifier="tsm_bulletproof" amount="1" />
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/配件/war_preparation.png" sourcerect="155,182,149,123" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/war_preparation.png" sourcerect="155,182,149,123" depth="0.51" origin="0.5,0.5" />
+    <Body width="140" height="115" density="25" />
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.6" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.5" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.6" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.7" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.4" />
+      <sprite name="general Torso" texture="%ModDir%/weapons/配件/war_preparation.png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="155,182,149,123" origin="0.5,0.5" />
+      <sprite name="general Boobs" texture="%ModDir%/weapons/配件/war_preparation.png" limb="Tail" sourcerect="0,0,1,1" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" />
+    </Wearable>
+    <ItemComponent characterusable="false" >
+      <StatusEffect type="OnBroken" target="This">
+        <Explosion range="50.0" force="30" ignoreCover="true" severlimbsprobability="8" penetration="1">
+          <Affliction identifier="explosiondamage" strength="5000" />
+          <Affliction identifier="burn" strength="5000" />
+          <Affliction identifier="burn" strength="5000" />
+        </Explosion>
+        <Explosion range="500.0" force="10" debris="true" decal="explosion" decalsize="0.75" penetration="0.8">
+          <Affliction identifier="explosiondamage" strength="200" />
+          <Affliction identifier="bleeding" strength="100" />
+          <Affliction identifier="burn" strength="80" probability="0.5" />
+          <Affliction identifier="stun" strength="3" />
+        </Explosion>
+      </StatusEffect>
+    </ItemComponent>
+    <LightComponent LightColor="255,0,0,0" range="60" powerconsumption="0.0" IsOn="false" canbeselected="false" AllowInGameEditing="false">
+    <StatusEffect type="Always" target="This" condition="-10" checkconditionalalways="true" comparison="And">
+      <Conditional IsOn="true" />
+    </StatusEffect>
+    </LightComponent>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="false" ElementStates="8, false">
+      <GuiFrame relativesize="0.2,0.15" anchor="CenterLeft" pivot="TopLeft" relativeoffset="0.006,0.006" style="ItemUI" />
+      <IntegerInput text="bomb.timer" targetitemcomponent="PowerContainer" propertyname="Charge" min="0" max="10" step="1" GetValueInterval="1"/>
+      <TickBox text="bomb.armed" connection="signal_out1" targetitemcomponent="LightComponent" propertyname="IsOn" ContinuousSignal="false" GetValueInterval="1" />
+    </CustomInterface>
+  </Item>
+  <!--破片雷-->
+  <Item name="破片雷" identifier="tsm_fragmentation_grenade" category="Weapon" tags="smallitem,weapon,explosive" maxstacksize="12" maxstacksizecharacterinventory="6" scale="0.35" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="0.05" notcampaign="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab" minamount="1" maxamount="2" spawnprobability="0.04" />
+    <PreferredContainer secondary="armcab" />
+    <Price baseprice="235">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.35" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="15">
+      <Item identifier="iron" />
+      <Item identifier="sodium" amount="2" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="25">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="iron" />
+      <RequiredItem identifier="iron" usecondition="true" mincondition="0.5" />
+      <RequiredItem identifier="uex" />
+      <RequiredItem identifier="sodium" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="453,33,41,46" />
+    <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="222,398,54,93" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/weapons/bullet.png" sourcerect="304,402,54,93" depth="0.55" origin="0.5,0.5" maxcondition="99.9" />
+    <BrokenSprite texture="%ModDir%/weapons/bullet.png" sourcerect="370,412,54,93" depth="0.55" origin="0.5,0.4" maxcondition="99.8" />
+    <Body width="54" height="93" density="30" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="OnUse" target="This" condition="0" setvalue="true" />
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="5000" frequency="2.0" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="5000" frequency="2.0" />
+        <Sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="5000" frequency="2.0" />
+        <ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" distancemax="500" particleamount="270" velocitymin="1500" velocitymax="2000" scalemin="0.7" scalemax="1.2" />
+        <Explosion range="300.0" ballastfloradamage="100" structuredamage="20" levelwalldamage="140" itemdamage="350" force="5" debris="false" decal="explosion" decalsize="0.5">
+          <Affliction identifier="explosiondamage" strength="150" />
+          <Affliction identifier="stun" strength="4.0" />
+        </Explosion>
+        <Explosion range="500.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="5">
+          <Affliction identifier="explosiondamage" strength="10" dividebylimbcount="false" />
+          <Affliction identifier="bleedingnonstop" probability="0.3" strength="10" dividebylimbcount="false" />
+          <Affliction identifier="stun" strength="0.5" />
+        </Explosion>
+        <Explosion range="900.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="4">
+          <Affliction identifier="gunshotwound" probability="0.3" strength="15" dividebylimbcount="false" />
+          <Affliction identifier="bleedingnonstop" probability="0.3" strength="15" dividebylimbcount="false" />
+          <Affliction identifier="stun" strength="0.5" />
+        </Explosion>
+        <Explosion range="1000.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="3">
+          <Affliction identifier="gunshotwound" probability="0.3" strength="20" dividebylimbcount="false" />
+          <Affliction identifier="bleedingnonstop" probability="0.3" strength="20" dividebylimbcount="false" />
+          <Affliction identifier="stun" strength="0.5" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+    <Powered powerconsumption="infinity" minvoltage="0.00" isactive="true">
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="Powered" voltage="0.15" setvalue="true" />
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="Powered" voltage="0.00" setvalue="true">
+        <Conditional isfullcondition="true" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="Throwable" condition="-20">
+        <Conditional condition="lte 99.80" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="Throwable" condition="99.90" setvalue="true">
+        <Conditional condition="99.95" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="Throwable" condition="99.80" setvalue="true">
+        <Conditional condition="99.85" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="Throwable" condition="99.80" setvalue="true" comparison="And">
+        <Conditional condition="99.90" />
+        <Conditional hasstatustag="holderknockeddown" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="Throwable" condition="99.80" setvalue="true" comparison="And">
+        <Conditional condition="99.90" />
+        <Conditional hasstatustag="! onholding" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="Contained" targetslot="0" condition="0" setvalue="true">
+        <Conditional targetcontainer="true" condition="lte 99.90" />
+        <RequiredItems identifier="tsm_Pullsafetypin" type="Contained" targetslot="0" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="Contained" targetslot="1" condition="0" setvalue="true">
+        <Conditional targetcontainer="true" condition="lte 99.80" />
+        <RequiredItems identifier="tsm_fraggrenadespoon" type="Contained" targetslot="1" />
+      </StatusEffect>
+    </Powered>
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect">
+      <!-- 4SE Technical quirk: SetUser -->
+      <StatusEffect type="OnSecondaryUse" target="This" condition="-0.005" disabledeltatime="true" />
+      <StatusEffect type="OnSecondaryUse" target="This" condition="+0.005" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="This" condition="-0.005" disabledeltatime="true" comparison="And">
+        <Conditional targetitemcomponent="Throwable" hasstatustag="! disallowuse" />
+        <RequiredItems identifier="tsm_fraggrenadespoon" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="+0.005" disabledeltatime="true" comparison="And">
+        <Conditional targetitemcomponent="Throwable" hasstatustag="! disallowuse" />
+        <RequiredItems identifier="tsm_fraggrenadespoon" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="99.95" voltage="0.15" setvalue="true" comparison="And">
+        <Conditional isfullcondition="true" />
+        <Conditional targetitemcomponent="Throwable" hasstatustag="! disallowuse" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="99.85" voltage="0.15" setvalue="true" comparison="And">
+        <Conditional condition="99.90" />
+        <Conditional targetitemcomponent="Throwable" hasstatustag="! disallowuse" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" targetitemcomponent="Throwable" tags="disallowuse" duration="0.03" stackable="false" />
+      <StatusEffect type="OnActive" target="This,Character" targetitemcomponent="Throwable" tags="onholding" duration="0.03" stackable="false" />
+      <StatusEffect type="OnActive" target="This,Character" targetitemcomponent="Throwable" tags="holderknockeddown" duration="0.03" stackable="false">
+        <Conditional isknockeddown="true" />
+      </StatusEffect>
+    </Throwable>
+    <ItemContainer canbeselected="false" drawinventory="false" allowaccess="false" capacity="1" maxstacksize="1" hideitems="true" showcontainedstateindicator="false" removecontaineditemsondeconstruct="true" spawnwithid="tsm_Pullsafetypin,tsm_fraggrenadespoon">
+      <Containable identifier="tsm_Pullsafetypin" itempos="0,8" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable identifier="tsm_fraggrenadespoon" itempos="0,8" />
+      </SubContainer>
+    </ItemContainer>
+    <Quality>
+      <QualityStat stattype="ExplosionDamage" value="0.1" />
+    </Quality>
+  </Item>
+  <Item name="" identifier="tsm_Pullsafetypin" noninteractable="true" hiddeningame="true" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="%ModDir%\ogg\grenade_pinpull1.ogg" range="500" selectionmode="Random" />
+        <Sound file="%ModDir%\ogg\grenade_pinpull2.ogg" range="500" />
+        <ParticleEmitter particle="tsm_grenade_drop_1" particleamount="1" copyentityangle="true" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="" identifier="tsm_fraggrenadespoon" noninteractable="true" hiddeningame="true" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="%ModDir%\ogg\grenade_strikerlever1.ogg" range="500" selectionmode="Random" />
+        <Sound file="%ModDir%\ogg\grenade_strikerlever2.ogg" range="500" />
+        <ParticleEmitter particle="tsm_grenade_drop_2" particleamount="1" copyentityangle="true" anglemin="-60" anglemax="-30" velocitymin="100" velocitymax="200" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.3">
+        <Sound file="%ModDir%\ogg\grenade_strikerimpact1.ogg" volume="0.65" range="800" />
+        <ParticleEmitter particle="weldspark" particleamount="15" anglemin="0" anglemax="360" velocitymin="1000" velocitymax="1500" maxdistance="100" scalemin="0.5" scalemax="1.0" colormultiplier="100,75,200,255" />
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,3.0" colormultiplier="255,200,200,200" />
+        <ParticleEmitter particle="steamspray" particleamount="1" velocitymin="0" velocitymax="0" scalemin="1.5" scalemax="2.5" anglemin="0" anglemax="360" colormultiplier="15,15,15,255" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <!--C4-->
+  <Item identifier="tsm_jz_c4" category="Weapon" tags="smallitem,weapon,remotedetonatable,explosive" isdangerous="true" maxstacksize="8" maxstacksizecharacterinventory="4" scale="0.6" cargocontaineridentifier="explosivecrate">
+    <InventoryIcon texture="%ModDir%/weapons/配件/war_preparation.png" sourcerect="299,427,81,35" />
+    <Sprite texture="%ModDir%/weapons/配件/war_preparation.png" depth="0.55" sourcerect="299,427,81,35" origin="0.5,0.5" />
+    <Body width="80" height="20" density="15" />
+    <Deconstruct time="15">
+      <Item identifier="organicfiber" amount="1"/>
+      <Item identifier="c4block" amount="1"/>
+      <Item identifier="wificomponent" amount="1"/>
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" amount="2" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="wificomponent" amount="2"/>
+      <RequiredItem tag="wire" amount="2"/>
+      <RequiredItem identifier="c4block" amount="3"/>
+      <RequiredItem identifier="organicfiber" amount="3"/>
+    </Fabricate>
+    <RangedWeapon reload="1" weapondamagemodifier="1.0" holdtrigger="false" barrelpos="50,0"/>
+    <Projectile characterusable="true" DoesStick="true" LaunchImpulse="7">
+      <StatusEffect type="OnBroken" target="This">
+        <Explosion range="300.0" ballastfloradamage="400" structuredamage="800" itemdamage="5000" force="20" severlimbsprobability="2" debris="true" decal="explosion" decalsize="0.75" penetration="1">
+          <Affliction identifier="explosiondamage" strength="250" />
+          <Affliction identifier="lacerations" strength="60" dividebylimbcount="false"/>
+          <Affliction identifier="bleeding" strength="40" />
+          <Affliction identifier="burn" strength="20" dividebylimbcount="false"/>
+          <Affliction identifier="stun" strength="10" />
+        </Explosion>
+        <Explosion range="400.0" ballastfloradamage="300" structuredamage="400" itemdamage="2500" force="10" debris="true" penetration="1">
+          <Affliction identifier="explosiondamage" strength="60" dividebylimbcount="false"/>
+          <Affliction identifier="bleeding" strength="20" />
+          <Affliction identifier="burn" strength="10" probability="0.8" dividebylimbcount="false"/>
+          <Affliction identifier="stun" strength="3" />
+        </Explosion>
+        <Explosion range="500.0" force="5" debris="true" penetration="0.8">
+          <Affliction identifier="lacerations" strength="40" />
+          <Affliction identifier="bleeding" strength="15" />
+          <Affliction identifier="burn" strength="5" probability="0.3" />
+          <Affliction identifier="stun" strength="1" />
+        </Explosion>
+        <Explosion range="600.0" force="3" debris="true" penetration="0.5">
+          <Affliction identifier="lacerations" strength="15"/>
+          <Affliction identifier="bleeding" strength="10" />
+          <Affliction identifier="burn" strength="2" probability="0.1"/>
+          <Affliction identifier="stun" strength="0.2" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="1000" />
+      </StatusEffect>
+    </Projectile>
+    <LightComponent range="50.0" lightcolor="255,100,0,255" powerconsumption="0" IsOn="false" characterusable="false">
+      <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
+      <StatusEffect type="Always" target="This" Voltage="1.0" Interval="1" setvalue="true"/>
+    </LightComponent>
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="0,-45" aimpos="45,0" handle1="0,0" handle2="0,0" holdangle="90" aimangle="70" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item identifier="tsm_jz_m57detonator" category="Weapon" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="explosivecrate" tags="smallitem,remotedetonator" Scale="0.3" impactsoundtag="impact_metal_light">
+    <Upgrade gameversion="0.9.2.0" scale="0.5" />
+    <InventoryIcon texture="%ModDir%/weapons/配件/war_preparation.png" sourcerect="112,390,40,82" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/war_preparation.png" sourcerect="112,390,40,82" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="75" density="5" />
+    <Deconstruct time="15">
+      <Item identifier="wificomponent"/>
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="wificomponent" amount="1"/>
+      <RequiredItem identifier="plastic" amount="2"/>
+      <RequiredItem tag="wire" amount="2"/>
+    </Fabricate>
+    <RangedWeapon />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="false" holdpos="40,10" handle1="-7,-20" handle2="-7,-20" msg="ItemMsgPickUpSelect" >
+      <StatusEffect type="OnUse" targettype="This" condition="-100" delay="0.01" disabledeltatime="true">
+        <sound file="%ModDir%/ogg/minus.ogg" type="OnUse" range="250.0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" targettype="This" condition="100" delay="1" setvalue="true"/>
+    </Holdable>
+  </Item>
+  <!--C2-->
+  <Item identifier="tsm_c2" health="30" description="" category="Equipment,Weapon" Tags="smallitem,detonator" DamagedByContainedItemExplosions="true" explosiondamagemultiplier="0.3" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="secarmcab" amount="1" spawnprobability="0.1" notcampaign="true" notpvp="true"/>
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" amount="1" spawnprobability="0.01"/>
+    <PreferredContainer secondary="armcab"/>
+    <Price baseprice="231" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1.4" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantengineering" sold="true" multiplier="1.2" minavailable="1" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/weapons/配件/war_preparation.png" sourcerect="189,378,79,89" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/war_preparation.png" sourcerect="189,378,79,89" depth="0.55" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="5">
+      <RequiredSkill identifier="electrical" level="10" />
+      <RequiredItem identifier="detonator" />
+      <RequiredItem identifier="uex" />
+      <RequiredItem tag="wire" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="copper" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Body width="70" height="75" density="20" />
+    <Holdable selectkey="Action" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" aimpos="35,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect target="This" type="Always">
+        <Conditional attached="false" targetitemcomponentname="Holdable"/>
+        <Use />
+      </StatusEffect>
+    </Holdable>
+    <ItemComponent characterusable="false">
+      <StatusEffect type="OnBroken" target="This">
+        <Explosion range="300.0" force="5" ignoreCover="true" severlimbsprobability="8" penetration="1" ballastfloradamage="300" structuredamage="800" itemdamage="3000" debris="true">
+          <Affliction identifier="explosiondamage" strength="10"/>
+          <Affliction identifier="bleeding" strength="5"/>
+          <Affliction identifier="burn" strength="5" />
+          <Affliction identifier="stun" strength="3" />
+        </Explosion>
+      </StatusEffect>
+    </ItemComponent>
+    <PowerContainer capacity="60" Charge="8" canbeselected="false">
+    </PowerContainer>
+    <LightComponent LightColor="248,81,81,80" range="20" powerconsumption="0" IsOn="false" blinkfrequency="1.0" offset="13,0" castshadows="false" allowingameediting="false">
+      <sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.55" sourcerect="239,243,14,18" origin="-0.24,0.5" alpha="1.0"/>
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="PowerContainer" Charge="-1.0" interval="1" disabledeltatime="true" />
+      <StatusEffect type="OnActive" target="This" interval="1" disabledeltatime="true">
+        <sound file="Content/Items/WarningBeepSlow.ogg" range="750" frequencymultiplier="2.0" volume="0.3" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" interval="1" disabledeltatime="true" checkconditionalalways="true" delay="0.5" blinkfrequency="2.0" setvalue="true">
+        <Conditional Charge="lt 3" targetitemcomponentname="PowerContainer" />
+        <sound file="Content/Items/WarningBeepSlow.ogg" range="750" frequencymultiplier="2.0" volume="0.3" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This,Contained" IsOn="false" checkconditionalalways="true" blinkfrequency="1.0" condition="-100" setvalue="true">
+        <Conditional Charge="lte 0.0" targetitemcomponentname="PowerContainer" />
+        <sound file="Content/Items/Button/Switch1.ogg" range="500.0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </LightComponent>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="false" ElementStates="8, false">
+      <GuiFrame relativesize="0.2,0.15" anchor="CenterLeft" pivot="TopLeft" relativeoffset="0.006,0.006" style="ItemUI" />
+      <IntegerInput text="bomb.timer" targetitemcomponent="PowerContainer" propertyname="Charge" min="0" max="60" step="1" GetValueInterval="1"/>
+      <TickBox text="bomb.armed" connection="signal_out1" targetitemcomponent="LightComponent" propertyname="IsOn" ContinuousSignal="false" GetValueInterval="1" />
+    </CustomInterface>
+  </Item>
+  <!--轨道炮支援-->
+  <Item identifier="tsm_fs_backpack" category="Weapon" Tags="smallitem" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
+    <InventoryIcon texture="%ModDir%/weapons/配件/war_preparation.png" sourcerect="362,76,77,211" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/war_preparation.png" sourcerect="362,76,77,211" depth="0.55" origin="0.5,0.5" />
+    <Body width="60" height="200" density="33" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Select" allowswappingwhenpicked="false" />
+    <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+      <sprite name="Backpack Wearable" texture="%ModDir%/weapons/配件/war_preparation.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" canbehiddenbyotherwearables="false" hideotherwearables="false" sourcerect="362,76,77,211" origin="1.2,0.8" scale="0.5" />
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.9" setvalue="true" disabledeltatime="true" />
+    </Wearable>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.15,0.2" anchor="BottomLeft" absoluteoffset="20,20" style="ItemUI" />
+      <Button text="initfiresupport">
+        <StatusEffect type="OnUse" target="NearbyCharacters" range="500" disabledeltatime="true">
+          <LuaHook name="Firesupport.callsupportinit" />
+          <RequiredItem items="mobilebattery" type="Contained" />
+        </StatusEffect>
+      </Button>
+    </CustomInterface>
+    <ItemContainer capacity="1" maxstacksize="1" depth="0.5" >
+      <Containable items="mobilebattery" />
+    </ItemContainer>
+  </Item>
+  <Item identifier="tsm_firesupportbinocle" category="Weapon" Tags="smallitem,firesupportrequest" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_soft">
+    <Sprite texture="%ModDir%/weapons/配件/war_preparation.png" depth="0.55" sourcerect="65,312,98,47" origin="0.5,0.5" />
+    <Body width="85" height="30" density="20" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="30,20" handle1="-20,-7" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon barrelpos="35,15" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.35">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <StatusEffect type="OnUse" target="This">
+        <SpawnItem identifiers="firesupportammo" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <RequiredItem items="mobilebattery" type="Contained" />
+    </RangedWeapon>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" ContainedStateIndicatorSlot="1" SpawnWithId="firesupportammo" removecontaineditemsondeconstruct="true">
+      <Containable items="firesupportammo" drawinventory="false"/>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="mobilebattery" />
+      </SubContainer>
+    </ItemContainer>
+  </Item>
+  <Item identifier="firesupportammo" interactthroughwalls="true" cargocontaineridentifier="" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="40" />
+    <Projectile characterusable="false">
+      <StatusEffect type="OnImpact" target="This">
+        <LuaHook name="Firesupport.supportinbound" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Explosion range="500.0" itemdamage="200" force="5" severlimbsprobability="3" stun="5" sparks="true" AimSpread="50" shockwave="true" flames="true" underwaterbubble="false" smoke="true" playtinnitus="true" flash="true" camerashake="50" delay="5">
+          <Affliction identifier="explosiondamage" strength="400" dividebylimbcount="true" />
+        </Explosion>
+      </StatusEffect>
+    </Projectile>
+  </Item>
+</Items>

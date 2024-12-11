@@ -49,6 +49,7 @@
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_qrf_buff" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_qrf_buff_other" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_remove_husk" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
     <message header="" text="" />
   </AbandonedOutpostMission>
   <AbandonedOutpostMission identifier="tsm_combat_beowulf"
@@ -61,7 +62,7 @@
     commonness="65"
     allowretry="true"
     targetitem="reactor"
-    minleveldifficulty="30"
+    minleveldifficulty="33"
     maxleveldifficulty="60"
     unhideentitysubcategories="abandonedhuman">
     <Icon texture="%ModDir%/png/ui.png" sourcerect="16,750,345,344" color="255,255,255,255" />
@@ -100,6 +101,7 @@
     <TriggerEvent state="0" delay="1" eventidentifier="tsm_beowulf_buff" campaignonly="true" />
     <TriggerEvent state="0" delay="1" eventidentifier="tsm_beowulf_buff_other" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_remove_husk" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
     <message header="" text="" />
   </AbandonedOutpostMission>
   <AbandonedOutpostMission identifier="tsm_combat_occupation"
@@ -152,6 +154,7 @@
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_occupation_buff" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_occupation_buff_other" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_remove_husk" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
     <message header="" text="" />
   </AbandonedOutpostMission>
   <OutpostDestroyMission identifier="tsm_combat_coalition" 
@@ -194,6 +197,7 @@
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_pt_buff" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_remove_husk" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
     <message header="" text="" />
   </OutpostDestroyMission>
   <OutpostDestroyMission identifier="tsm_combat_separatists" 
@@ -237,6 +241,7 @@
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_pt_buff" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_remove_husk" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
     <message header="" text="" />
   </OutpostDestroyMission>
   <AbandonedOutpostMission identifier="tsm_combat_Anonymous"
@@ -250,7 +255,7 @@
     commonness="65"
     allowretry="true"
     targetitem="reactor"
-    minleveldifficulty="25"
+    minleveldifficulty="20"
     maxleveldifficulty="50"
     unhideentitysubcategories="abandonedhuman">
     <Icon texture="%ModDir%/png/ui.png" sourcerect="16,1108,345,344" color="255,255,255,255" />
@@ -288,6 +293,7 @@
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_anonymous_buff_other" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_remove_husk" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
     <message header="" text="" />
   </AbandonedOutpostMission>
   <AbandonedOutpostMission identifier="tsm_combat_yehuo"
@@ -340,6 +346,7 @@
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_yehuo_buff" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_yehuo_buff_other" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_remove_husk" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
     <message header="" text="" />
   </AbandonedOutpostMission>
   <OutpostDestroyMission identifier="tsm_combat_crosstalk" 
@@ -384,6 +391,7 @@
       <TriggerEvent state="0" delay="5" eventidentifier="tsm_crosstalk_buff" campaignonly="true" />
       <TriggerEvent state="0" delay="5" eventidentifier="tsm_crosstalk_buff_other" campaignonly="true" />
       <TriggerEvent state="0" delay="5" eventidentifier="tsm_remove_husk" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
       <message header="" text="" />
   </OutpostDestroyMission>
 <!-- 船-->
@@ -550,6 +558,7 @@
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_combat_buff" campaignonly="true"/>
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_combat_buff_other" campaignonly="true"/>
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_remove_husk" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
     <message header="我像腐烂的尸体，孤独而无助" text="太阳出来了，黑暗留在后面，但太阳不是我们的，我们要睡了。"/>
   </OutpostDestroyMission>
 
@@ -562,7 +571,7 @@
     difficulty="6"
     commonness="60"
     allowretry="true"
-    minleveldifficulty="35"
+    minleveldifficulty="30"
     maxleveldifficulty="65"
     successmessage=""
     unhideentitysubcategories="abandonedhuman">
@@ -604,6 +613,7 @@
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true"/>
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_combat_buff_cat" campaignonly="true"/>
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_remove_husk" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
     <message header="" text=""/>
   </OutpostDestroyMission>
 
@@ -616,7 +626,7 @@
     difficulty="6"
     commonness="60"
     allowretry="true"
-    minleveldifficulty="25"
+    minleveldifficulty="20"
     maxleveldifficulty="50"
     successmessage=""
     unhideentitysubcategories="abandonedhuman">
@@ -649,6 +659,7 @@
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_combat_adventists_event" campaignonly="true"/>
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_combat_adventists_event_tsm" campaignonly="true"/>
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true"/>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
     <message header="" text=""/>
   </OutpostDestroyMission>
 
@@ -661,7 +672,7 @@
     difficulty="6"
     commonness="60"
     allowretry="true"
-    minleveldifficulty="20"
+    minleveldifficulty="25"
     maxleveldifficulty="55"
     successmessage=""
     unhideentitysubcategories="abandonedhuman">
@@ -696,6 +707,7 @@
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_nz_combat" campaignonly="true"/>
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true"/>
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_darkstormynight" campaignonly="true"/>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
     <message header="" text=""/>
   </OutpostDestroyMission>
 

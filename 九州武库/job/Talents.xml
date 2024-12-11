@@ -160,10 +160,10 @@
             <StatusEffect type="OnAbility" target="This" disabledeltatime="true">
               <Affliction identifier="tsm_ai_combat_ship" amount="50.0"/>
             </StatusEffect>
-            <StatusEffect type="OnAbility" target="Character">
-              <ReduceAffliction type="damage" strength="0.3" />
+            <StatusEffect type="OnAbility" target="Character" interval="5" duration="5">
+              <ReduceAffliction type="damage" strength="1" />
               <ReduceAffliction type="bleeding" amount="5" />
-              <ReduceAffliction type="burn" amount="0.3" />
+              <ReduceAffliction type="burn" amount="1" />
             </StatusEffect>
           </StatusEffects>
         </CharacterAbilityApplyStatusEffects>
@@ -175,9 +175,10 @@
       <Abilities>
         <CharacterAbilityApplyStatusEffects>
           <StatusEffects>
-            <StatusEffect type="OnAbility" target="Character">
-              <ReduceAffliction identifier="bleeding" strength="2.0"/>
-              <ReduceAffliction identifier="bloodloss" strength="0.2"/>
+            <StatusEffect type="OnAbility" target="Character" interval="5" duration="5">
+              <ReduceAffliction identifier="bleeding" strength="5"/>
+              <ReduceAffliction identifier="bleedingnonstop" strength="5"/>
+              <ReduceAffliction identifier="bloodloss" strength="2"/>
             </StatusEffect>
           </StatusEffects>
         </CharacterAbilityApplyStatusEffects>
@@ -235,6 +236,24 @@
       </Abilities>
     </AbilityGroupEffect>
     <AddedRecipe itemidentifier="arcemitter" />
+  </Talent>
+  <Talent identifier="tsm_operator_revolt">
+    <Icon texture="%ModDir%/job/skill_icon.png" sourcerect="177,163,119,120"/>
+    <Description tag="talentdescription.enrollintoclowncollege"/>
+    <AbilityGroupInterval interval="0.9">
+      <Conditions>
+        <AbilityConditionHasItem tags="tsm_operator_revolt,tsm_riotshields_round,stunner" requireall="true"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+              <Affliction identifier="tsm_operator_revolt" amount="1.0"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
   </Talent>
 <!--先进作战部-->
  <!--增加30%武器操作获取速度-->

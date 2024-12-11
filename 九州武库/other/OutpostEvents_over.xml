@@ -12,188 +12,188 @@
     <Label name="beginningofthejourney" />
     <NPCWaitAction npctag="tsm_wz_ff" wait="false" />
     <TriggerAction target1tag="tsm_wz_ff" target2tag="player" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
-    <ConversationAction targettag="triggerer_player" text="你好，我是奇迹之海的军需官，请问您能需要什么帮助">
-      <Option text="用友军识别码兑换物品">
-        <ConversationAction targettag="triggerer_player" text="因为目前各方势力混战，情况很不乐观，所以暂时只能兑换这些" >
-          <Option text="兑换矿物补给">
+    <ConversationAction targettag="triggerer_player" text="jxg.help">
+      <Option text="tsm.dh.yjsbm">
+        <ConversationAction targettag="triggerer_player" text="tsm.dh.xh1" >
+          <Option text="tsm.dh.kw">
             <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
               <Success>
                 <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1"/>
-                <ConversationAction targettag="triggerer_player" text="请您收好你的物品" />
+                <ConversationAction targettag="triggerer_player" text="tsm.over" />
                 <SpawnAction itemidentifier="tsm_wz_cl_flare" targetinventory="triggerer_player" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Success>
               <Failure>
-                <ConversationAction targettag="triggerer_player" text="您身上并没有友军识别码，请您不要浪费我的时间" />
+                <ConversationAction targettag="triggerer_player" text="tsm.no.id" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Failure>
             </CheckItemAction>
           </Option>
-          <Option text="兑换医疗补给">
+          <Option text="tsm.dh.yl">
             <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
               <Success>
                 <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1"/>
-                <ConversationAction targettag="triggerer_player" text="请您收好你的物品" />
+                <ConversationAction targettag="triggerer_player" text="tsm.over" />
                 <SpawnAction itemidentifier="tsm_wz_yl_flare" targetinventory="triggerer_player" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Success>
               <Failure>
-                <ConversationAction targettag="triggerer_player" text="您身上并没有友军识别码，请您不要浪费我的时间" />
+                <ConversationAction targettag="triggerer_player" text="tsm.no.id" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Failure>
             </CheckItemAction>
           </Option>
-          <Option text="兑换弹药补给">
+          <Option text="tsm.dh.dy">
             <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
               <Success>
                 <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1"/>
-                <ConversationAction targettag="triggerer_player" text="请您收好你的物品" />
+                <ConversationAction targettag="triggerer_player" text="tsm.over" />
                 <SpawnAction itemidentifier="tsm_ammunition_resupply" targetinventory="triggerer_player" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Success>
               <Failure>
-                <ConversationAction targettag="triggerer_player" text="您身上并没有友军识别码，请您不要浪费我的时间" />
+                <ConversationAction targettag="triggerer_player" text="tsm.no.id" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Failure>
             </CheckItemAction>
           </Option>
-          <Option text="兑换护卫服务">
+          <Option text="tsm.dh.hy">
             <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
               <Success>
                 <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
-                <ConversationAction targettag="triggerer_player" text="请您收好你的物品" />
+                <ConversationAction targettag="triggerer_player" text="tsm.over" />
                 <SpawnAction itemidentifier="tsm_pgcflare" targetinventory="triggerer_player" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Success>
               <Failure>
-                <ConversationAction targettag="triggerer_player" text="您身上并没有友军识别码，请您不要浪费我的时间" />
+                <ConversationAction targettag="triggerer_player" text="tsm.no.id" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Failure>
             </CheckItemAction>
           </Option>
-          <Option text="兑换氚核心包">
+          <Option text="tsm.dh.bg">
             <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
               <Success>
                 <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
-                <ConversationAction targettag="triggerer_player" text="请您收好你的物品" />
+                <ConversationAction targettag="triggerer_player" text="tsm.over" />
                 <SpawnAction itemidentifier="tsm_triton_bag" targetinventory="triggerer_player" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Success>
               <Failure>
-                <ConversationAction targettag="triggerer_player" text="您身上并没有友军识别码，请您不要浪费我的时间" />
+                <ConversationAction targettag="triggerer_player" text="tsm.no.id" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Failure>
             </CheckItemAction>
           </Option>
-          <Option text="我等下再来">
-            <ConversationAction text="随时静候你的光临" dialogtype="Small" targettag="triggerer_player" />
+          <Option text="tsm.wait">
+            <ConversationAction text="tsm.npc.wait" dialogtype="Small" targettag="triggerer_player" />
             <ClearTagAction tag="triggerer_player"/>
             <GoTo name="beginningofthejourney" />
           </Option>
         </ConversationAction>
       </Option>
-      <Option text="用奇迹之海声望兑换物品">
-        <ConversationAction targettag="triggerer_player" text="你首先要达到25声望以上才能够兑换补给">
-          <Option text="兑换矿物补给">
+      <Option text="tsm.dh.faction">
+        <ConversationAction targettag="triggerer_player" text="tsm.dh.faction.25">
+          <Option text="tsm.dh.kw">
             <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
               <Success>
                 <ReputationAction targettype="Faction" identifier="tsm" increase="-3" />
-                <ConversationAction targettag="triggerer_player" text="请您收好你的物品" />
+                <ConversationAction targettag="triggerer_player" text="tsm.over" />
                 <SpawnAction itemidentifier="tsm_wz_cl_flare" targetinventory="triggerer_player" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Success>
               <Failure>
-                <ConversationAction targettag="triggerer_player" text="您并没有足够的声望，请您不要浪费我的时间" />
+                <ConversationAction targettag="triggerer_player" text="tsm.no.faction" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Failure>
             </CheckReputationAction>
           </Option>
-          <Option text="兑换医疗补给">
+          <Option text="tsm.dh.yl">
             <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
               <Success>
                 <ReputationAction targettype="Faction" identifier="tsm" increase="-3" />
-                <ConversationAction targettag="triggerer_player" text="请您收好你的物品" />
+                <ConversationAction targettag="triggerer_player" text="tsm.over" />
                 <SpawnAction itemidentifier="tsm_wz_yl_flare" targetinventory="triggerer_player" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Success>
               <Failure>
-                <ConversationAction targettag="triggerer_player" text="您并没有足够的声望，请您不要浪费我的时间" />
+                <ConversationAction targettag="triggerer_player" text="tsm.no.faction" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Failure>
             </CheckReputationAction>
           </Option>
-          <Option text="兑换弹药补给">
+          <Option text="tsm.dh.dy">
             <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
               <Success>
                 <ReputationAction targettype="Faction" identifier="tsm" increase="-3" />
-                <ConversationAction targettag="triggerer_player" text="请您收好你的物品" />
+                <ConversationAction targettag="triggerer_player" text="tsm.over" />
                 <SpawnAction itemidentifier="tsm_ammunition_resupply" targetinventory="triggerer_player" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Success>
               <Failure>
-                <ConversationAction targettag="triggerer_player" text="您并没有足够的声望，请您不要浪费我的时间" />
+                <ConversationAction targettag="triggerer_player" text="tsm.no.faction" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Failure>
             </CheckReputationAction>
           </Option>
-          <Option text="兑换护卫服务">
+          <Option text="tsm.dh.hy">
             <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
               <Success>
                 <ReputationAction targettype="Faction" identifier="tsm" increase="-2" />
-                <ConversationAction targettag="triggerer_player" text="请您收好你的物品" />
+                <ConversationAction targettag="triggerer_player" text="tsm.over" />
                 <SpawnAction itemidentifier="tsm_pgcflare" targetinventory="triggerer_player" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Success>
               <Failure>
-                <ConversationAction targettag="triggerer_player" text="您并没有足够的声望，请您不要浪费我的时间" />
+                <ConversationAction targettag="triggerer_player" text="tsm.no.faction" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Failure>
             </CheckReputationAction>
           </Option>
-          <Option text="兑换氚核心包">
+          <Option text="tsm.dh.bg">
             <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
               <Success>
                 <ReputationAction targettype="Faction" identifier="tsm" increase="-2" />
-                <ConversationAction targettag="triggerer_player" text="请您收好你的物品" />
+                <ConversationAction targettag="triggerer_player" text="tsm.over" />
                 <SpawnAction itemidentifier="tsm_triton_bag" targetinventory="triggerer_player" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Success>
               <Failure>
-                <ConversationAction targettag="triggerer_player" text="您并没有足够的声望，请您不要浪费我的时间" />
+                <ConversationAction targettag="triggerer_player" text="tsm.no.faction" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
               </Failure>
             </CheckReputationAction>
           </Option>
-          <Option text="我等下再来">
-            <ConversationAction text="随时静候你的光临" dialogtype="Small" targettag="triggerer_player" />
+          <Option text="tsm.wait">
+            <ConversationAction text="tsm.npc.wait" dialogtype="Small" targettag="triggerer_player" />
             <ClearTagAction tag="triggerer_player"/>
             <GoTo name="beginningofthejourney" />
           </Option>
         </ConversationAction>
       </Option>
-      <Option text="tsm.bg">
+      <Option text="tsm.bg_licences">
         <ConversationAction targettag="triggerer_player" text="tsm.d1" >
-          <Option text="兑换氚核心包">
+          <Option text="tsm.dh.bg">
             <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_bg_licences" amount="1">
               <Success>
                 <RemoveItemAction targettag="triggerer_player" identifier="tsm_bg_licences" amount="1"/>
@@ -209,11 +209,11 @@
               </Failure>
             </CheckItemAction>
           </Option>
-          <Option text="兑换友军识别码">
+          <Option text="tsm.dh.id">
             <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_bg_licences" amount="1">
               <Success>
                 <RemoveItemAction targettag="triggerer_player" identifier="tsm_bg_licences" amount="1"/>
-                <ConversationAction targettag="triggerer_player" text="请您收好你的物品" />
+                <ConversationAction targettag="triggerer_player" text="tsm.over" />
                 <SpawnAction itemidentifier="tsm_identifier" targetinventory="triggerer_player" />
                 <ClearTagAction tag="triggerer_player"/>
                 <GoTo name="beginningofthejourney" />
@@ -225,21 +225,21 @@
               </Failure>
             </CheckItemAction>
           </Option>
-          <Option text="我等下再来">
-            <ConversationAction text="随时静候你的光临" dialogtype="Small" targettag="triggerer_player" />
+          <Option text="tsm.wait">
+            <ConversationAction text="tsm.npc.wait" dialogtype="Small" targettag="triggerer_player" />
             <ClearTagAction tag="triggerer_player"/>
             <GoTo name="beginningofthejourney" />
           </Option>
         </ConversationAction>
       </Option>
-      <Option text="我等下再来">
-        <ConversationAction text="随时静候你的光临" dialogtype="Small" targettag="triggerer_player" />
+      <Option text="tsm.wait">
+        <ConversationAction text="tsm.npc.wait" dialogtype="Small" targettag="triggerer_player" />
         <ClearTagAction tag="triggerer_player"/>
         <GoTo name="beginningofthejourney" />
       </Option>
     </ConversationAction>
     <NPCWaitAction npctag="tsm_wz_ff" wait="false" />
   </ScriptedEvent>
-</EventPrefabs>
+  </EventPrefabs>
 </Randomevents>
 </Override>
