@@ -2,7 +2,7 @@
 <Override>
 <Items>
   <!--手炮子弹-->
-  <Item name="手炮尖晶弹" identifier="tsm_handcannonround" category="Weapon" subcategory="TSM" maxstacksize="12" maxstacksizecharacterinventory="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,handcannonammo,pistolammoitem,handcannonround" impactsoundtag="impact_metal_light">
+  <Item name="手炮尖晶弹" identifier="tsm_handcannonround" category="Weapon" subcategory="TSM" maxstacksize="12" maxstacksizecharacterinventory="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,handcannonammo,pistolammoitem,handcannonround,tsmrifleammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="458,213,39,27" />
     <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="122,71,42,11" origin="0.5,0.5" />
@@ -109,8 +109,8 @@
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="false" amount="2">
       <RequiredItem tag="shotgunammo" description="fabricationdescription.shotgunammo" amount="6"/>
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2"/>
-      <RequiredItem identifier="aluminium" amount="2" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1"/>
+      <RequiredItem identifier="aluminium" amount="1" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="377,129,46,35" />
     <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="129,243,45,15" origin="0.5,0.5" />
@@ -119,9 +119,9 @@
     <Projectile characterusable="false" hitscan="true" hitscancount="7" removeonhit="true" spread="11">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="252,218,94,100" scalemultiplier="1,0.5"/>
       <Attack structuredamage="0" targetforce="6" itemdamage="20" penetration="0.15" severlimbsprobability="0.5">
-        <Affliction identifier="gunshotwound" strength="11" />
+        <Affliction identifier="gunshotwound" strength="12" />
         <Affliction identifier="explosiondamage" strength="2" />
-        <Affliction identifier="explosiondamage" strength="1" probability="0.3"/>
+        <Affliction identifier="explosiondamage" strength="2" probability="0.3"/>
         <Affliction identifier="bleedingnonstop" strength="5" />
         <Affliction identifier="stun" strength="0.03" probability="0.3"/>
         <Affliction identifier="stun" strength="0.03" probability="0.3"/>
@@ -138,6 +138,39 @@
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <Item name="4号龙息霰弹" identifier="tsm_shotgunammo_4_db" subcategory="TSM" category="Weapon" maxstacksize="16" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsm_shotgunammo_4,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="false" amount="8">
+            <RequiredItem identifier="tsm_shotgunammo_4" amount="8" />
+            <RequiredItem identifier="incendium" amount="1" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="1051,522,81,85" />
+        <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="129,243,45,15" origin="0.5,0.5" />
+        <Body width="37" height="15" density="40" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+        <Projectile characterusable="false" hitscan="true" hitscancount="7" removeonhit="true" spread="11">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="252,218,94,100" scalemultiplier="1,0.5"/>
+            <ParticleEmitter particle="spark" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="252,218,94,100" scalemultiplier="1,1"/>
+            <Attack structuredamage="0" targetforce="6" itemdamage="20" severlimbsprobability="0.5">
+                <Affliction identifier="gunshotwound" strength="12" />
+                <Affliction identifier="burning" strength="3" />
+                <Affliction identifier="burning" strength="2" probability="0.3"/>
+                <Affliction identifier="bleedingnonstop" strength="5" />
+                <Affliction identifier="stun" strength="0.03" probability="0.3"/>
+                <Affliction identifier="stun" strength="0.03" probability="0.3"/>
+                <Affliction identifier="stun" strength="0.03" probability="0.3"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="3" scalemax="6" />
+            </StatusEffect>
+        </Projectile>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
   <!--双弹托独头弹-->
   <Item name="双弹托独头弹" identifier="tsm_sabot" subcategory="TSM" category="Weapon" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -159,9 +192,9 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
     <Projectile characterusable="false" hitscan="true" hitscancount="1" removeonhit="true" spread="0">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="0,47,167,100" scalemultiplier="1,0.5"/>
-      <Attack structuredamage="2" targetforce="4" itemdamage="15" penetration="0.3" severlimbsprobability="0.5">
+      <Attack structuredamage="2" targetforce="4" itemdamage="15" penetration="0.28" severlimbsprobability="0.5">
         <Affliction identifier="explosiondamage" strength="20" />
-        <Affliction identifier="gunshotwound" strength="35" />
+        <Affliction identifier="gunshotwound" strength="30" />
         <Affliction identifier="bleedingnonstop" strength="20" />
         <Affliction identifier="stun" strength="0.2" />
       </Attack>
@@ -429,7 +462,7 @@
     </Projectile>
   </Item>
   <!--特殊子弹-->
-   <Item name="5.8mm雷素弹" identifier="tsm_58_fulgurium" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+   <Item name="5.8mm雷素弹" identifier="tsm_58_fulgurium" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
         <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="40" />
@@ -464,7 +497,7 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.8mm钢素弹" identifier="tsm_58_physicorium" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+   <Item name="5.8mm钢素弹" identifier="tsm_58_physicorium" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
         <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="40" />
@@ -484,11 +517,13 @@
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
                 <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,150,150,175" />
+                <particleemitter particle="spark" particleamount="20" emitinterval="1000" velocitymin="0" velocitymax="50" anglemin="0" anglemax="180" scalemin="2" scalemax="3" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <Conditional entitytype="eq Structure" />
                 <Conditional hastag="eq door" />
                 <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+                <particleemitter particle="spark" particleamount="20" emitinterval="1000" velocitymin="0" velocitymax="50" anglemin="0" anglemax="180" scalemin="2" scalemax="3" />
             </StatusEffect>
             <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
                 <Remove />
@@ -496,7 +531,7 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.8mm酸液弹" identifier="tsm_58_sulphuriteshard" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+   <Item name="5.8mm酸液弹" identifier="tsm_58_sulphuriteshard" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
         <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="40" />
@@ -529,7 +564,7 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.8mm燃素弹" identifier="tsm_58_incendium" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+   <Item name="5.8mm燃素弹" identifier="tsm_58_incendium" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
         <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="40" />
@@ -832,8 +867,8 @@
                 <SpawnItem identifiers="tsm_58_fulgurium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
-            <RequiredItem identifier="tsm_58_mag" amount="2" />
+        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="4">
+            <RequiredItem identifier="tsm_58_mag" amount="4" />
             <RequiredItem identifier="fulgurium" amount="1" />
         </Fabricate>
         <Deconstruct time="5">
@@ -854,8 +889,8 @@
                 <SpawnItem identifiers="tsm_58_physicorium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
-        <RequiredItem identifier="tsm_58_mag" amount="2" />
+        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="4">
+        <RequiredItem identifier="tsm_58_mag" amount="4" />
         <RequiredItem identifier="physicorium" amount="1" />
         </Fabricate>
         <Deconstruct time="5">
@@ -876,8 +911,8 @@
                 <SpawnItem identifiers="tsm_58_sulphuriteshard" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
-        <RequiredItem identifier="tsm_58_mag" amount="2" />
+        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="4">
+        <RequiredItem identifier="tsm_58_mag" amount="4" />
         <RequiredItem identifier="sulphuriteshard" amount="1" />
         </Fabricate>
         <Deconstruct time="5">
@@ -898,8 +933,8 @@
             <SpawnItem identifiers="tsm_58_incendium" spawnposition="ThisInventory" />
         </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
-    <RequiredItem identifier="tsm_58_mag" amount="2" />
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="4">
+    <RequiredItem identifier="tsm_58_mag" amount="4" />
     <RequiredItem identifier="incendium" amount="1" />
     </Fabricate>
     <Deconstruct time="5">
@@ -920,8 +955,8 @@
                 <SpawnItem identifiers="tsm_58_fulgurium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
-            <RequiredItem identifier="tsm_magazine" amount="2" />
+        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="4">
+            <RequiredItem identifier="tsm_magazine" amount="4" />
             <RequiredItem identifier="fulgurium" amount="1" />
         </Fabricate>
         <Deconstruct time="5">
@@ -942,8 +977,8 @@
                 <SpawnItem identifiers="tsm_58_physicorium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
-        <RequiredItem identifier="tsm_magazine" amount="2" />
+        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="4">
+        <RequiredItem identifier="tsm_magazine" amount="4" />
         <RequiredItem identifier="physicorium" amount="1" />
         </Fabricate>
         <Deconstruct time="5">
@@ -964,9 +999,9 @@
             <SpawnItem identifiers="tsm_58_sulphuriteshard" spawnposition="ThisInventory" />
         </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
-    <RequiredItem identifier="tsm_magazine" amount="2" />
-    <RequiredItem identifier="tsm_58_sulphuriteshard" amount="1" />
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="4">
+    <RequiredItem identifier="tsm_magazine" amount="4" />
+    <RequiredItem identifier="sulphuriteshard" amount="1" />
     </Fabricate>
     <Deconstruct time="5">
         <Item identifier="plastic" outcondition="0.5" />
@@ -986,8 +1021,8 @@
                 <SpawnItem identifiers="tsm_58_incendium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
-        <RequiredItem identifier="tsm_magazine" amount="2" />
+        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="4">
+        <RequiredItem identifier="tsm_magazine" amount="4" />
         <RequiredItem identifier="incendium" amount="1" />
         </Fabricate>
         <Deconstruct time="5">
@@ -1008,8 +1043,8 @@
                 <SpawnItem identifiers="tsm_545_fulgurium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="2">
-            <RequiredItem identifier="fkj_545_mag" amount="2" />
+        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="4">
+            <RequiredItem identifier="fkj_545_mag" amount="4" />
             <RequiredItem identifier="fulgurium" amount="1" />
         </Fabricate>
         <Deconstruct time="5">
@@ -1030,8 +1065,8 @@
                 <SpawnItem identifiers="tsm_545_physicorium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="2">
-            <RequiredItem identifier="fkj_545_mag" amount="2" />
+        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="4">
+            <RequiredItem identifier="fkj_545_mag" amount="4" />
             <RequiredItem identifier="physicorium" amount="1" />
         </Fabricate>
         <Deconstruct time="5">
@@ -1052,8 +1087,8 @@
                 <SpawnItem identifiers="tsm_545_sulphuriteshard" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="2">
-            <RequiredItem identifier="fkj_545_mag" amount="2" />
+        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="4">
+            <RequiredItem identifier="fkj_545_mag" amount="4" />
             <RequiredItem identifier="sulphuriteshard" amount="1" />
         </Fabricate>
         <Deconstruct time="5">
@@ -1074,8 +1109,8 @@
                 <SpawnItem identifiers="tsm_545_incendium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="2">
-            <RequiredItem identifier="fkj_545_mag" amount="2" />
+        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="4">
+            <RequiredItem identifier="fkj_545_mag" amount="4" />
             <RequiredItem identifier="incendium" amount="1" />
         </Fabricate>
         <Deconstruct time="5">
@@ -1096,8 +1131,8 @@
                 <SpawnItem identifiers="tsm_556_fulgurium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="2">
-            <RequiredItem identifier="lm_556_mag" amount="2" />
+        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="4">
+            <RequiredItem identifier="lm_556_mag" amount="4" />
             <RequiredItem identifier="fulgurium" amount="1" />
         </Fabricate>
         <Deconstruct time="5">
@@ -1118,8 +1153,8 @@
                 <SpawnItem identifiers="tsm_58_physicorium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="2">
-            <RequiredItem identifier="lm_556_mag" amount="2" />
+        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="4">
+            <RequiredItem identifier="lm_556_mag" amount="4" />
             <RequiredItem identifier="physicorium" amount="1" />
         </Fabricate>
         <Deconstruct time="5">
@@ -1140,8 +1175,8 @@
                 <SpawnItem identifiers="tsm_58_sulphuriteshard" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="2">
-            <RequiredItem identifier="lm_556_mag" amount="2" />
+        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="4">
+            <RequiredItem identifier="lm_556_mag" amount="4" />
             <RequiredItem identifier="sulphuriteshard" amount="1" />
         </Fabricate>
         <Deconstruct time="5">
@@ -1162,8 +1197,8 @@
                 <SpawnItem identifiers="tsm_556_incendium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="2">
-            <RequiredItem identifier="lm_556_mag" amount="2" />
+        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="4">
+            <RequiredItem identifier="lm_556_mag" amount="4" />
             <RequiredItem identifier="incendium" amount="1" />
         </Fabricate>
         <Deconstruct time="5">

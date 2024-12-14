@@ -45,7 +45,7 @@
       <sprite name="xjzz Right Shoe" texture="%ModDir%/suit/xjzz.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Hide Boobs" texture="%ModDir%/Jobgear/wu.png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <StatusEffect type="OnWearing" target="Character" UseHullOxygen="false" ObstructVisionAmount="0.4" PressureProtection="6000.0" SpeedMultiplier="0.8" PropulsionSpeedMultiplier="1.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
-        <StatValue stattype="FlowResistance" value="0.8" />
+        <StatValue stattype="FlowResistance" value="0.65" />
         <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />
         <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true" />
       </StatusEffect>
@@ -190,7 +190,7 @@
       <sprite name="orangeconstant Right Shoe" texture="%ModDir%/suit/orangeconstant.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="272,208,69,48" origin="0.5,0.5" />
       <sprite name="Hide Boobs" texture="%ModDir%/Jobgear/wu.png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <StatusEffect type="OnWearing" target="Character" UseHullOxygen="false" ObstructVisionAmount="0.1" PressureProtection="6000.0" SpeedMultiplier="0.85" PropulsionSpeedMultiplier="1.0" LowPassMultiplier="0.8" setvalue="true" disabledeltatime="true">
-        <StatValue stattype="FlowResistance" value="0.9" />
+        <StatValue stattype="FlowResistance" value="0.75" />
         <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />
         <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true" />
       </StatusEffect>
@@ -240,8 +240,10 @@
           <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" setvalue="true" />
         </TickBox>
       </CustomInterface>
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.25" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.2" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="explosiondamage" damagemultiplier="0.25" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.4" damagesound="" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.2" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.2" damagesound="LimbArmor" />
       <SkillModifier skillidentifier="electrical" skillvalue="+10" />
@@ -311,7 +313,7 @@
     <ContainedSprite name="zlqy suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/suit/gravity_traction_suit.png" sourcerect="413,499,179,101" depth="0.55" origin="0.6,0.5" />
     <Body radius="45" width="34" density="20" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="zlqy Helmet Wearable" texture="%ModDir%/suit/gravity_traction_suit.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="false" depthlimb="LeftArm" scale="0.6" hideotherwearables="true" hidelimb="true" sourcerect="350,220,57,71" origin="0.45,0.7"></sprite>
+      <sprite name="zlqy Helmet Wearable" texture="%ModDir%/suit/gravity_traction_suit.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="false" depthlimb="LeftArm" scale="0.6" hideotherwearables="true" hidelimb="true" sourcerect="350,220,57,71" origin="0.45,0.7"/>
       <sprite name="zlqy suit Torso" texture="%ModDir%/suit/gravity_traction_suit.png" limb="Torso" hidelimb="true" depthlimb="Jaw" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="48,7,131,268" scale="0.55" origin="0.57,0.48" />
       <sprite name="zlqy suit Right Hand" texture="%ModDir%/suit/gravity_traction_suit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="460,41,31,31" origin="0.1,0.55" />
       <sprite name="zlqy suit Left Hand" texture="%ModDir%/suit/gravity_traction_suit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="460,129,31,31" origin="0.1,0.55" />
@@ -444,7 +446,7 @@
       <sprite name="sbz Right Shoe" texture="%ModDir%/suit/sbz.png" limb="RightFoot" sound="tsm_footstep_III" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="337,224,75,32" origin="0.55,0.32" />
       <sprite name="Hide Boobs" texture="%ModDir%/Jobgear/wu.png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <StatusEffect type="OnWearing" target="Character" UseHullOxygen="true" ObstructVisionAmount="0.2" PressureProtection="10000.0" SpeedMultiplier="0.9" PropulsionSpeedMultiplier="1.2" LowPassMultiplier="0.1" setvalue="true" disabledeltatime="true">
-        <StatValue stattype="FlowResistance" value="0.1" />
+        <StatValue stattype="FlowResistance" value="0.85" />
         <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />
         <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true" />
       </StatusEffect>
@@ -583,7 +585,7 @@
       <sprite name="bltj Right Shoe" texture="%ModDir%/suit/bltj.png" limb="RightFoot" depthlimb="RightThigh" sound="tsm_footstep_III" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="362,208,74,48" origin="0.55,0.38" />
       <sprite name="Hide Boobs" texture="%ModDir%/Jobgear/wu.png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <StatusEffect type="OnWearing" target="Character" UseHullOxygen="true" ObstructVisionAmount="0.2" PressureProtection="6000.0" SpeedMultiplier="0.8" PropulsionSpeedMultiplier="1" LowPassMultiplier="0.1" setvalue="true" disabledeltatime="true">
-        <StatValue stattype="FlowResistance" value="0.1" />
+        <StatValue stattype="FlowResistance" value="0.8" />
         <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />
         <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true" />
       </StatusEffect>

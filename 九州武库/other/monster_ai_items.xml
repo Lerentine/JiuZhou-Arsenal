@@ -85,7 +85,10 @@
       <RequiredItems items="tsm_miniammo_ai" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="60" />
     </RangedWeapon>
-    <Propulsion force="-30" usablein="both" ApplyToHands="false">
+    <StatusEffect type="OnNotContained" target="This" stackable="false">
+      <Remove />
+    </StatusEffect>
+    <Propulsion force="-10" usablein="both" ApplyToHands="false">
       <RequiredItems items="tsm_miniammo_ai" type="Contained" />
     </Propulsion>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.54">
@@ -104,10 +107,13 @@
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.545" sourcerect="2365,431,125,193" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="125" height="193" density="50" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt65" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-      <Containable items="pt65" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="68_51_pt" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="68_51_pt" />
       <StatusEffect type="OnUse" target="This" condition="-0" disabledeltatime="true">
-        <SpawnItem identifiers="pt65" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="68_51_pt" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false">
+        <Remove />
       </StatusEffect>
     </ItemContainer>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -148,6 +154,9 @@
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="flashlight" hide="false" itempos="17,4" setactive="true"/>
       </SubContainer>
+      <StatusEffect type="OnNotContained" target="This" stackable="false">
+        <Remove />
+      </StatusEffect>
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
     <Quality>
@@ -190,6 +199,9 @@
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="flashlight" hide="false" itempos="17,4" setactive="true"/>
       </SubContainer>
+      <StatusEffect type="OnNotContained" target="This" stackable="false">
+        <Remove />
+      </StatusEffect>
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
     <Quality>
@@ -207,6 +219,9 @@
       <StatusEffect type="OnUse" target="This" condition="-0.0" disabledeltatime="true">
         <SpawnItem identifiers="tsm_handcannonround" spawnposition="ThisInventory" />
       </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
     </ItemContainer>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -220,6 +235,9 @@
       <Containable items="tsm_handcannonround" />
       <StatusEffect type="OnUse" target="This" condition="-0.0" disabledeltatime="true">
         <SpawnItem identifiers="tsm_handcannonround" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
       </StatusEffect>
     </ItemContainer>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />

@@ -88,12 +88,12 @@
       <Character requirekill="true" moduleflags="engineeringmodule" identifier="beowulf_ex" from="beowulf_npcs" multiplayeronly="true"/>
       <Character requirekill="true" moduleflags="securitymodule" identifier="beowulf_leader" from="beowulf_npcs" multiplayeronly="true"/>
       <Character requirekill="true" moduleflags="securitymodule" identifier="beowulf_breaker" from="beowulf_npcs" asfaraspossible="true"/>
-      <Character requirekill="true" moduleflags="securitymodule" identifier="beowulf_elite" from="beowulf_npcs"  multiplayeronly="true"/>
+      <Character requirekill="true" moduleflags="securitymodule" identifier="beowulf_fox" from="Combat_Npc_Customisation"  />
       <Character requirekill="true" moduleflags="securitymodule" identifier="beowulf_p" from="beowulf_npcs" asfaraspossible="true" multiplayeronly="true" />
       <Character requirekill="true" moduleflags="securitymodule" identifier="beowulf_fire" from="beowulf_npcs" />
       <Character requirekill="true" moduleflags="banditleader" identifier="beowulf_elite_p" from="beowulf_npcs" />
-      <Character requirekill="true" moduleflags="banditleader" identifier="beowulf_leader" from="beowulf_npcs" />
-      <Character requirekill="true" moduleflags="securitymodule" identifier="beowulf_sl" from="Combat_Npc_Customisation" /> 
+      <Character requirekill="true" moduleflags="banditleader" identifier="beowulf_leader" from="beowulf_npcs" multiplayeronly="true"/>
+      <Character requirekill="true" moduleflags="banditleader" identifier="beowulf_sl" from="Combat_Npc_Customisation" />
       <Character requirekill="true" moduleflags="banditleader" identifier="beowulf_elite_p" from="beowulf_npcs" asfaraspossible="true" multiplayeronly="true" />
     </Characters>
     <TriggerEvent state="0" delay="1" eventidentifier="tsm_combat_beowulf_event" campaignonly="true" />
@@ -128,7 +128,7 @@
       <Character requirekill="true" identifier="occupation_fire" from="occupation_npcs" moduleflags="crewmodule" multiplayeronly="true" />
       <Character requirekill="true" identifier="occupation_leader" from="occupation_npcs" moduleflags="crewmodule" multiplayeronly="true" />
       <Character requirekill="true" identifier="occupation_p" from="occupation_npcs" moduleflags="researchmodule" />
-      <Character requirekill="true" identifier="occupation" from="occupation_npcs" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="occupation_tarler" from="Combat_Npc_Customisation" moduleflags="researchmodule" />
       <Character requirekill="true" identifier="occupation_p" from="occupation_npcs" moduleflags="researchmodule" asfaraspossible="true" />
       <Character requirekill="true" identifier="occupation_elite_p" from="occupation_npcs" moduleflags="researchmodule" multiplayeronly="true" />
       <Character requirekill="true" identifier="occupation_p" from="occupation_npcs" moduleflags="researchmodule" multiplayeronly="true" />
@@ -176,10 +176,10 @@
     <Reputation identifier="coalition" amount="-6" />
     <Characters>
       <Character requirekill="true" identifier="coalition_e" from="tsm_coalition_npcs" moduleflags="crewmodule" />
-      <Character requirekill="true" identifier="coalition" from="tsm_coalition_npcs" moduleflags="crewmodule" />
-      <Character requirekill="true" identifier="coalition_e" from="tsm_coalition_npcs" moduleflags="researchmodule" asfaraspossible="true"/>
+      <Character requirekill="true" identifier="coalition" from="tsm_coalition_npcs" moduleflags="crewmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="coalition_e" from="tsm_coalition_npcs" moduleflags="researchmodule" asfaraspossible="true" />
       <Character requirekill="true" identifier="coalition_themohavemailman" from="Combat_Npc_Customisation" moduleflags="researchmodule" />
-      <Character requirekill="true" identifier="coalition_AloneFllen" from="Combat_Npc_Customisation" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="coalition_AloneFllen" from="Combat_Npc_Customisation" moduleflags="researchmodule" />
       <Character requirekill="true" identifier="coalition" from="tsm_coalition_npcs" moduleflags="engineeringmodule" />
       <Character requirekill="true" identifier="coalition_e" from="tsm_coalition_npcs" moduleflags="engineeringmodule" />
       <Character requirekill="true" identifier="coalition_e" from="tsm_coalition_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
@@ -226,7 +226,7 @@
       <Character requirekill="true" identifier="separatists_e" from="tsm_separatists_npcs" moduleflags="researchmodule" asfaraspossible="true" multiplayeronly="true" />
       <Character requirekill="true" identifier="separatists" from="tsm_separatists_npcs" moduleflags="engineeringmodule" />
       <Character requirekill="true" identifier="separatists" from="tsm_separatists_npcs" moduleflags="engineeringmodule" asfaraspossible="true" />
-      <Character requirekill="true" identifier="separaseparatists_etists" from="tsm_separatists_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="separatists" from="tsm_separatists_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
       <Character requirekill="true" identifier="separatists_leader" from="tsm_separatists_npcs" moduleflags="engineeringmodule" asfaraspossible="true" multiplayeronly="true" />
       <Character requirekill="true" identifier="separatists_e" from="tsm_separatists_npcs" moduleflags="securitymodule" />
       <Character requirekill="true" identifier="separatists_e" from="tsm_separatists_npcs" moduleflags="securitymodule" multiplayeronly="true" />
@@ -326,7 +326,9 @@
       <Character requirekill="true" identifier="yehuo" from="yehuo_npcs" moduleflags="researchmodule" multiplayeronly="true" />
       <Character requirekill="true" identifier="yehuo_ex" from="yehuo_npcs" moduleflags="researchmodule" asfaraspossible="true" multiplayeronly="true" />
       <Character requirekill="true" identifier="yehuo_p" from="yehuo_npcs" moduleflags="engineeringmodule" />
+      <Character requirekill="true" identifier="yehuo" from="yehuo_npcs" moduleflags="engineeringmodule" multiplayeronly="true"/>
       <Character requirekill="true" identifier="yehuo" from="yehuo_npcs" moduleflags="engineeringmodule" />
+      <Character requirekill="true" identifier="yehuo_leader_cce" from="Combat_Npc_Customisation" moduleflags="engineeringmodule" asfaraspossible="true"/>
       <Character requirekill="true" identifier="yehuo_elite_p" from="yehuo_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
       <Character requirekill="true" identifier="yehuo_p" from="yehuo_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
       <Character requirekill="true" identifier="yehuo" from="yehuo_npcs" moduleflags="securitymodule" />
@@ -533,18 +535,18 @@
         <Character identifier="tsm_soldier" from="tsm_npcs" moduleflags="crewmodule" requirekill="true" />
         <Character identifier="tsm_soldier_p" from="tsm_npcs" moduleflags="crewmodule" requirekill="true" asfaraspossible="true" multiplayeronly="true" />
         <Character identifier="tsm_soldier_elite_p" from="tsm_npcs" moduleflags="crewmodule" requirekill="true" />
-        <Character identifier="tsm_soldier_ml" from="tsm_npcs" moduleflags="researchmodule" requirekill="true" multiplayeronly="true" />
-        <Character identifier="tsm_advanced" from="tsm_npcs" moduleflags="researchmodule" requirekill="true" />
+        <Character identifier="tsm_soldier_ml" from="Combat_Npc_Customisation" moduleflags="researchmodule" requirekill="true" />
+        <Character identifier="tsm_advanced" from="tsm_npcs" moduleflags="researchmodule" requirekill="true" multiplayeronly="true"/>
         <Character identifier="tsm_soldier_p" from="tsm_npcs" moduleflags="researchmodule" requirekill="true" />
         <Character identifier="tsm_soldier_elite" from="tsm_npcs" moduleflags="researchmodule" asfaraspossible="true" requirekill="true" />
         <Character identifier="tsm_soldier" from="tsm_npcs" moduleflags="researchmodule" requirekill="true" multiplayeronly="true" />
-        <Character identifier="tsm_soldier_elite_p" from="tsm_npcs" moduleflags="engineeringmodule" requirekill="true" multiplayeronly="true" />
+        <Character identifier="tsm_soldier_sm" from="Combat_Npc_Customisation" moduleflags="engineeringmodule" requirekill="true" />
         <Character identifier="tsm_soldier" from="tsm_npcs" moduleflags="engineeringmodule" requirekill="true" multiplayeronly="true" />
-        <Character identifier="tsm_advanced" from="tsm_npcs" moduleflags="engineeringmodule" requirekill="true" />
-        <Character identifier="tsm_soldier_Finianna" from="Combat_Npc_Customisation" moduleflags="engineeringmodule" requirekill="true" asfaraspossible="true" multiplayeronly="true" />
+        <Character identifier="tsm_advanced" from="tsm_npcs" moduleflags="engineeringmodule" requirekill="true" multiplayeronly="true"/>
+        <Character identifier="tsm_soldier_Finianna" from="Combat_Npc_Customisation" moduleflags="engineeringmodule" requirekill="true" asfaraspossible="true" />
         <Character identifier="tsm_soldier_p" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" />
-        <Character identifier="tsm_soldier" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" />
-        <Character identifier="tsm_soldier_p" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" />
+        <Character identifier="tsm_soldier" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" multiplayeronly="true"/>
+        <Character identifier="tsm_soldier_csms" from="Combat_Npc_Customisation" moduleflags="securitymodule" requirekill="true" />
         <Character identifier="tsm_soldier" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" />
         <Character identifier="tsm_advanced" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" multiplayeronly="true" />
         <Character identifier="tsm_soldier_elite" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" />
@@ -712,7 +714,7 @@
   </OutpostDestroyMission>
 
    <!--降临派-->
-    <AbandonedOutpostMission
+  <AbandonedOutpostMission
     identifier="tsm_adventists_save"
     tags="tsm_adventists_save"
     type="AbandonedOutpost"

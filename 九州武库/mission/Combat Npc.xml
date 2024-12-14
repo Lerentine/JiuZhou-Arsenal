@@ -1441,7 +1441,7 @@
           <Item identifier="tsm_fkj_g3a4" equip="true">
           <Item identifier="tsm_grip_mounts" equip="true"/>
           <Item identifier="tsm_recoil" equip="true"/>
-          <Item identifier="tsm_sight_reddot1" equip="true"/>
+          <Item identifier="tsm_sight_reddot" equip="true"/>
           <Item identifier="fkj_762_51_ap_mag" amount="4"/>
           <Item identifier="fkj_762_51_mag" amount="4"/>
           </Item>

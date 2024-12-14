@@ -25,7 +25,7 @@
         <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.38" setvalue="true" />
         <StatusEffect  type="OnUse" target="Character" SpeedMultiplier="0.3" setvalue="true" />
       </Holdable>
-      <RangedWeapon reload="0.11" weapondamagemodifier="1" penetration="0.1" holdtrigger="true" barrelpos="205,35" spread="6" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
+      <RangedWeapon reload="0.11" weapondamagemodifier="1" penetration="0.1" holdtrigger="true" barrelpos="205,35" spread="8" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,512,203,201" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,539,174,170" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -205,9 +205,9 @@
           <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_2_6.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
           </StatusEffect>
-          <StatusEffect target="This" holdpos="55,-5" aimpos="55,0" handle1="-83,-15" handle2="53,8" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.6" maxchargetime="0" setvalue="true">
+          <StatusEffect target="This" holdpos="55,-5" aimpos="55,0" handle1="-83,-15" handle2="53,8" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.7" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
           </StatusEffect>
         </Containable>
@@ -421,12 +421,12 @@
         <StatusEffect type="Always" target="This" spread="-5">
           <Conditional spread="gt 5" />
         </StatusEffect>
-        <StatusEffect type="OnUse" target="This,Character" spread="+2" disabledeltatime="true" comparison="and">
-          <Conditional spread="lt 11" />
+        <StatusEffect type="OnUse" target="This,Character" spread="+2.25" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 10" />
           <Conditional CanRun="true" />
         </StatusEffect>
-        <StatusEffect type="OnUse" target="This,Character" spread="+2" disabledeltatime="true" comparison="and">
-          <Conditional spread="lt 8" />
+        <StatusEffect type="OnUse" target="This,Character" spread="+2.31" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 7" />
           <Conditional CanRun="false" />
         </StatusEffect>
         <RequiredItems items="tsm_jz_magazine" type="Contained" msg="ItemMsgAmmoRequired" />
@@ -537,12 +537,12 @@
         <StatusEffect type="Always" target="This" spread="-5">
           <Conditional spread="gt 5" />
         </StatusEffect>
-        <StatusEffect type="OnUse" target="This,Character" spread="+2" disabledeltatime="true" comparison="and">
-          <Conditional spread="lt 11" />
+        <StatusEffect type="OnUse" target="This,Character" spread="+2.25" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 10" />
           <Conditional CanRun="true" />
         </StatusEffect>
-        <StatusEffect type="OnUse" target="This,Character" spread="+2" disabledeltatime="true" comparison="and">
-          <Conditional spread="lt 8" />
+        <StatusEffect type="OnUse" target="This,Character" spread="+2.31" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 7" />
           <Conditional CanRun="false" />
         </StatusEffect>
         <RequiredItems items="tsm_jz_magazine" type="Contained" msg="ItemMsgAmmoRequired" />
@@ -840,8 +840,8 @@
         </StatusEffect>
       </Holdable>
       <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
-      <StatusHUD drawhudwhenequipped="false" range="0" thermalgoggles="false" showdeadcharacters="false" showtexts="false" />
-      <RangedWeapon reload="0.085" weapondamagemodifier="1.25" penetration="0.1" holdtrigger="true" barrelpos="205,35" spread="5" unskilledspread="20" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.3">
+       
+      <RangedWeapon reload="0.085" weapondamagemodifier="1.25" penetration="0.1" holdtrigger="true" barrelpos="205,35" spread="7" unskilledspread="20" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,512,203,201" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,539,174,170" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -878,11 +878,11 @@
         <StatusEffect type="Always" target="This" spread="-10">
           <Conditional spread="gt 5" />
         </StatusEffect>
-        <StatusEffect type="OnUse" target="This,Character" spread="+1.8" disabledeltatime="true" comparison="and">
+        <StatusEffect type="OnUse" target="This,Character" spread="+2.35" disabledeltatime="true" comparison="and">
           <Conditional spread="lt 13" />
           <Conditional CanRun="true" />
         </StatusEffect>
-        <StatusEffect type="OnUse" target="This,Character" spread="+2" disabledeltatime="true" comparison="and">
+        <StatusEffect type="OnUse" target="This,Character" spread="+2.75" disabledeltatime="true" comparison="and">
           <Conditional spread="lt 7" />
           <Conditional CanRun="false" />
         </StatusEffect>
@@ -901,17 +901,17 @@
           <Conditional HasStatusTag="tsm_sight_reddot" />
           <Conditional CanRun="false" />
         </StatusEffect>
-        <StatusEffect type="Always" target="This" spread="-3">
-          <Conditional spread="gt 10" />
+        <StatusEffect type="Always" target="This" spread="-8">
+          <Conditional spread="gt 3" />
           <Conditional HasStatusTag="tsm_sight_holographic" />
         </StatusEffect>
-        <StatusEffect type="OnUse" target="This,Character" spread="-0.1" disabledeltatime="true" comparison="and">
-          <Conditional spread="lt 15" />
+        <StatusEffect type="OnUse" target="This,Character" spread="-0.3" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 13" />
           <Conditional HasStatusTag="tsm_sight_reddot" />
           <Conditional CanRun="true" />
         </StatusEffect>
-        <StatusEffect type="OnUse" target="This,Character" spread="-0.15" disabledeltatime="true" comparison="and">
-          <Conditional spread="lt 12" />
+        <StatusEffect type="OnUse" target="This,Character" spread="-0.5" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 7" />
           <Conditional HasStatusTag="tsm_sight_reddot" />
           <Conditional CanRun="false" />
         </StatusEffect>
@@ -961,7 +961,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
       <SkillRequirementHint identifier="weapons" level="40" />
     </Item>
-    <Item name="95突击步枪" identifier="tsm_advanced_95" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.26" impactsoundtag="impact_metal_light" description="">
+    <Item name="95突击步枪" identifier="tsm_advanced_95" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,tsm_gun,mountableweapon,provocativetohumanai" scale="0.26" impactsoundtag="impact_metal_light" description="">
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="40" requiresrecipe="false">
         <RequiredSkill identifier="weapons" level="60" />
@@ -988,8 +988,8 @@
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
       <RangedWeapon reload="0.11" weapondamagemodifier="1" holdtrigger="true" barrelpos="180,20" spread="9" unskilledspread="60" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
         <!--准星图标-->
-        <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-        <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,2594,195,195" />
+        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="309,2594,195,195" />
         <!--枪口火焰-->
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
         <!--枪声-->
@@ -1028,15 +1028,15 @@
           <Conditional unskilledspread="lt 20" />
           <Conditional CanRun="false" />
         </StatusEffect>
-        <StatusEffect type="Always" target="This" spread="-2.5">
-          <Conditional spread="gt 7" />
+        <StatusEffect type="Always" target="This" spread="-5">
+          <Conditional spread="gt 5" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This,Character" spread="+3" disabledeltatime="true" comparison="and">
-          <Conditional spread="lt 14" />
+          <Conditional spread="lt 12" />
           <Conditional CanRun="true" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This,Character" spread="+2" disabledeltatime="true" comparison="and">
-          <Conditional spread="lt 10" />
+          <Conditional spread="lt 9" />
           <Conditional CanRun="false" />
         </StatusEffect>
         <!--需要的弹匣以及武器等级-->
@@ -1100,8 +1100,8 @@
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.3" setvalue="true" />
       </Holdable>
       <RangedWeapon reload="0.11" penetration="0.1" holdtrigger="true" barrelpos="205,35" spread="8" unskilledspread="25" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
-        <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-        <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,2804,195,195" />
+        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="309,2804,195,195" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
         <StatusEffect type="OnUse" target="This" forceplaysounds="true">
           <Sound file="%ModDir%/weapons/奇迹之海/031.ogg" type="OnUse" range="3000" selectionmode="Random"/>
@@ -1140,15 +1140,15 @@
           <Conditional unskilledspread="lt 20" />
           <Conditional CanRun="false" />
         </StatusEffect>
-        <StatusEffect type="Always" target="This" spread="-5">
-          <Conditional spread="gt 6" />
+        <StatusEffect type="Always" target="This" spread="-10">
+          <Conditional spread="gt 5" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This,Character" spread="+2.5" disabledeltatime="true" comparison="and">
           <Conditional spread="lt 10" />
           <Conditional CanRun="true" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This,Character" spread="+2.5" disabledeltatime="true" comparison="and">
-          <Conditional spread="lt 6" />
+          <Conditional spread="lt 7" />
           <Conditional CanRun="false" />
         </StatusEffect>
         <RequiredItems items="tsm_58_mag" type="Contained" msg="ItemMsgAmmoRequired" />
@@ -1219,8 +1219,8 @@
       </Holdable>
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
       <RangedWeapon reload="0.11" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="200,30" spread="10" unskilledspread="60" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.2">
-        <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-        <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="305,654,194,195" />
+        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="34,654,195,195" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
         <StatusEffect type="OnUse" target="This" forceplaysounds="true">
           <Sound file="%ModDir%/weapons/奇迹之海/QBZ191.ogg" type="OnUse" range="3000" selectionmode="Random" />
@@ -1275,20 +1275,20 @@
           <Conditional unskilledspread="lt 20" />
           <Conditional CanRun="false" />
         </StatusEffect>
-        <StatusEffect type="Always" target="This" spread="-4">
-          <Conditional spread="gt 6" />
+        <StatusEffect type="Always" target="This" spread="-5">
+          <Conditional spread="gt 8" />
         </StatusEffect>
-        <StatusEffect type="OnUse" target="This,Character" spread="+1.5" disabledeltatime="true" comparison="and">
-          <Conditional spread="lt 11" />
+        <StatusEffect type="OnUse" target="This,Character" spread="+2.45" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 13" />
           <Conditional CanRun="true" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This,Character" spread="+3" disabledeltatime="true" comparison="and">
-          <Conditional spread="lt 8" />
+          <Conditional spread="lt 10" />
           <Conditional CanRun="false" />
         </StatusEffect>
 
         <StatusEffect type="Always" target="This" unskilledspread="-10">
-          <Conditional unskilledspread="gt 12" />
+          <Conditional unskilledspread="gt 15" />
           <Conditional HasStatusTag="tsm_sight_holographic" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This,Character" unskilledspread="-1" disabledeltatime="true" comparison="and">
@@ -1301,17 +1301,17 @@
           <Conditional HasStatusTag="tsm_sight_reddot" />
           <Conditional CanRun="false" />
         </StatusEffect>
-        <StatusEffect type="Always" target="This" spread="-3">
-          <Conditional spread="gt 8" />
+        <StatusEffect type="Always" target="This" spread="-8">
+          <Conditional spread="gt 5" />
           <Conditional HasStatusTag="tsm_sight_holographic" />
         </StatusEffect>
-        <StatusEffect type="OnUse" target="This,Character" spread="-0.1" disabledeltatime="true" comparison="and">
-          <Conditional spread="lt 11" />
+        <StatusEffect type="OnUse" target="This,Character" spread="-0.37" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 13" />
           <Conditional HasStatusTag="tsm_sight_reddot" />
           <Conditional CanRun="true" />
         </StatusEffect>
-        <StatusEffect type="OnUse" target="This,Character" spread="-0.15" disabledeltatime="true" comparison="and">
-          <Conditional spread="lt 18" />
+        <StatusEffect type="OnUse" target="This,Character" spread="-0.23" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 10" />
           <Conditional HasStatusTag="tsm_sight_reddot" />
           <Conditional CanRun="false" />
         </StatusEffect>
@@ -1328,7 +1328,7 @@
           <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_2_6.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
           </StatusEffect>
           <StatusEffect target="This" holdpos="55,-8" aimpos="60,2" handle1="-80,-15" handle2="30,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.65" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
@@ -1351,7 +1351,7 @@
         </SubContainer>
         <!--5.瞄具-->
         <SubContainer capacity="1" maxstacksize="1">
-          <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="632,289,24,21" origin="0.45,0.5" />
+          <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="1173,411,67,40" origin="0.45,0.5" />
           <Containable items="tsm_sight_low" hide="false" itempos="5,12" depth="0.56" setactive="true" />
         </SubContainer>
         <SubContainer capacity="1" maxstacksize="1">
@@ -1431,15 +1431,15 @@
           <Conditional unskilledspread="lt 20" />
           <Conditional CanRun="false" />
         </StatusEffect>
-        <StatusEffect type="Always" target="This" spread="-25">
-          <Conditional spread="gt 5" />
+        <StatusEffect type="Always" target="This" spread="-10">
+          <Conditional spread="gt 2" />
         </StatusEffect>
-        <StatusEffect type="OnUse" target="This,Character" spread="+2" disabledeltatime="true" comparison="and">
-          <Conditional spread="lt 10" />
+        <StatusEffect type="OnUse" target="This,Character" spread="+2.8" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 9" />
           <Conditional CanRun="true" />
         </StatusEffect>
-        <StatusEffect type="OnUse" target="This,Character" spread="+2" disabledeltatime="true" comparison="and">
-          <Conditional spread="lt 7" />
+        <StatusEffect type="OnUse" target="This,Character" spread="+2.7" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 6" />
           <Conditional CanRun="false" />
         </StatusEffect>
         <RequiredItems items="tsm_58_mag" type="Contained" msg="ItemMsgAmmoRequired" />
@@ -1741,7 +1741,7 @@
       <SkillRequirementHint identifier="weapons" level="100" />
     </Item>
    <!--次抛筒-->
-   <Item name="醒狮" identifier="tsm_fire_gun" subcategory="TSM" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.28" impactsoundtag="impact_metal_light">
+   <Item name="醒狮" identifier="tsm_fire_gun" subcategory="TSM" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon" scale="0.28" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="1935,1563,153,167" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="1173,52,403,129" depth="0.55" origin="0.5,0.5" />
     <Body width="500" height="95" density="60" />
@@ -2356,7 +2356,7 @@
     </Item>
     <!--子弹-->
     <!--普通弹-->
-    <Item name="普通弹" identifier="tsm_bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+    <Item name="普通弹" identifier="tsm_bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
       <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
       <Body width="40" height="14" density="40" />
@@ -2392,7 +2392,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
     <!--穿甲弹-->
-    <Item name="穿甲弹" identifier="tsm_cjbullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+    <Item name="穿甲弹" identifier="tsm_cjbullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
       <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
       <Body width="40" height="14" density="40" />
@@ -2428,7 +2428,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
     <!--变革弹药-->
-    <Item name="变革弹" identifier="tsm_bgbullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+    <Item name="变革弹" identifier="tsm_bgbullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
       <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="122,71,42,11" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="122,71,42,11" depth="0.55" origin="0.5,0.5" />
       <Body width="40" height="14" density="40" />
@@ -2461,7 +2461,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
     <!--燃烧弹-->
-    <Item name="燃烧弹" identifier="tsm_rsbullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+    <Item name="燃烧弹" identifier="tsm_rsbullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
       <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
       <Body width="40" height="14" density="40" />
@@ -2494,7 +2494,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
     <!--5.8mm子弹-->
-    <Item name="5.8mm普通弹" identifier="tsm_58" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+    <Item name="5.8mm普通弹" identifier="tsm_58" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
       <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
       <Body width="40" height="14" density="40" />
@@ -2527,7 +2527,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
     <!--5.8mm穿甲弹-->
-    <Item name="5.8mm穿甲弹" identifier="tsm_cj58" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+    <Item name="5.8mm穿甲弹" identifier="tsm_cj58" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
       <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
       <Body width="40" height="14" density="40" />
@@ -2560,7 +2560,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
     <!--新月弹药-->
-    <Item name="" identifier="tsm_xybullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <Item name="" identifier="tsm_xybullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,sniperammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
       <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="31,201,59,14" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="31,201,59,14" depth="0.55" origin="0.5,0.5" />
       <Body width="40" height="14" density="40" />
@@ -2588,7 +2588,7 @@
         </StatusEffect>
       </Projectile>
     </Item>
-    <Item name="" identifier="tsm_xybullet_bg" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <Item name="" identifier="tsm_xybullet_bg" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,sniperammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
       <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="31,230,61,14" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="31,230,61,14" depth="0.55" origin="0.5,0.5" />
       <Body width="40" height="14" density="40" />

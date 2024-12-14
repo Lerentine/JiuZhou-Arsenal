@@ -633,7 +633,7 @@
     sourcerect="0,0,512,512"
     origin="0.5,0.5" />
 </tsm_flash>
-  <tsm_grenade_drop_1
+    <tsm_grenade_drop_1
   LifeTime="1.5"
   LifeTimeMin="0"
   StartDelayMin="0"
@@ -676,7 +676,7 @@
     depth="0.55"
     origin="0.5,0.5" />
   </tsm_grenade_drop_1>
-  <tsm_grenade_drop_2
+    <tsm_grenade_drop_2
   LifeTime="1.5"
   LifeTimeMin="0"
   StartDelayMin="0"
@@ -719,11 +719,11 @@
     depth="0.55"
     origin="0.5,0.5" />
   </tsm_grenade_drop_2>
-  <tsm_blacklaser lifetime="1" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="0" startrotationmax="0" rotatetodirection="False" drag="0" waterdrag="0" velocitychange="0,0" velocitychangewater="0,0" collisionradius="1" usecollision="False" deleteoncollision="False" friction="0.5" restitution="0.5" startsizemin="1,0.4" startsizemax="1,0.4" growtime="0.02" startcolor="255,255,255,180" endcolor="255,255,255,0" drawtarget="Both" drawontop="True" blendstate="Additive" loopanim="False" lifetimemin="0" sizechangemin="10,10" sizechangemax="10,10" middlecolor="255,255,255,255" usemiddlecolor="False" animduration="1" priority="10">
+    <tsm_blacklaser lifetime="1" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="0" startrotationmax="0" rotatetodirection="False" drag="0" waterdrag="0" velocitychange="0,0" velocitychangewater="0,0" collisionradius="1" usecollision="False" deleteoncollision="False" friction="0.5" restitution="0.5" startsizemin="1,0.4" startsizemax="1,0.4" growtime="0.02" startcolor="255,255,255,180" endcolor="255,255,255,0" drawtarget="Both" drawontop="True" blendstate="Additive" loopanim="False" lifetimemin="0" sizechangemin="10,10" sizechangemax="10,10" middlecolor="255,255,255,255" usemiddlecolor="False" animduration="1" priority="10">
     <sprite texture="%ModDir%/ParticlePrefabs/whitelaser.png" sourcerect="32,0,1,32" origin="0.5,0.5" />
   </tsm_blacklaser>
-  <!--问君内容-->
-  <tsm_lighter_flame 
+    <!--问君内容-->
+    <tsm_lighter_flame
   lifetime="0.2" 
   startdelaymin="0" 
   startdelaymax="0" 
@@ -760,7 +760,7 @@
   priority="1">
   <animatedsprite texture="Content/Particles/FlameRoundParticleSheet.png" sourcerect="0,0,2048,2048" columns="10" rows="5" origin="0.5,0.4" premultiplyalpha="false" />
   </tsm_lighter_flame>
-  <tsm_hh 
+    <tsm_hh
   lifetime="0.5" 
   angularvelocitymin="0" 
   angularvelocitymax="0" 
@@ -796,7 +796,7 @@
   priority="0">
   <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="392,83,106,16" />
   </tsm_hh>
-  <tsm_smoke 
+    <tsm_smoke
   lifetime="4" 
   startdelaymin="0" 
   startdelaymax="0" 
@@ -832,6 +832,9 @@
   priority="0">
   <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="384,254,128,128" />
   </tsm_smoke>
+    <tsm_confettifall LifeTime="2" LifeTimeMin="0" StartDelayMin="0" StartDelayMax="0.2" AngularVelocityMin="-30" AngularVelocityMax="30" StartRotationMin="0" StartRotationMax="360" RotateToDirection="False" Drag="0" WaterDrag="30" VelocityChange="0,-1" VelocityChangeWater="0,-0.5" CollisionRadius="3" InvariantCollisionSize="False" UseCollision="True" DeleteOnCollision="False" Friction="1" Restitution="1" StartSizeMin="0.1,0.1" StartSizeMax="0.2,0.2" SizeChangeMin="0,0" SizeChangeMax="0,0" GrowTime="0.2" StartColor="255,255,255,255" MiddleColor="255,255,255,255" EndColor="255,255,255,0" UseMiddleColor="False" DrawTarget="Both" DrawOnTop="False" DrawAlways="False" BlendState="Additive" Priority="0" AnimDuration="3" LoopAnim="False">
+      <sprite texture="%ModDir%/ParticlePrefabs/confetti.png" sourcerect="0,0,1169,1114" origin="0.5,0.5" />
+    </tsm_confettifall>
 
   </prefabs>
 </Override>

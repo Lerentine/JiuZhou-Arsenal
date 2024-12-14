@@ -2,7 +2,7 @@
 <Items>
  <!--发射器-->
   <!--rpg-7-->
-  <Item name="rpg-7" identifier="tsm_rpg" category="Weapon" subcategory="other" cargocontaineridentifier="metalcrate" tags="bigitem,gunsmith,weapon,gun,tsm_weapon,mountableweapon,provocativetohumanai,bulkyweapon" Scale="0.28" impactsoundtag="impact_metal_light">
+  <Item name="rpg-7" identifier="tsm_rpg" category="Weapon" subcategory="other" cargocontaineridentifier="metalcrate" tags="bigitem,gunsmith,weapon,,lm_gun,tsm_weapon,mountableweapon,provocativetohumanai,bulkyweapon" Scale="0.28" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="1539,1799,189,189" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="22,201,504,177" depth="0.55" origin="0.5,0.5" />
@@ -62,7 +62,7 @@
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
   <!--巴祖卡-->
-  <Item name="bazooka" identifier="tsm_bazooka" category="Weapon" subcategory="other" cargocontaineridentifier="metalcrate" tags="bigitem,gunsmith,weapon,gun,tsm_weapon,mountableweapon,provocativetohumanai,bulkyweapon" Scale="0.28" impactsoundtag="impact_metal_light">
+  <Item name="bazooka" identifier="tsm_bazooka" category="Weapon" subcategory="other" cargocontaineridentifier="metalcrate" tags="bigitem,gunsmith,weapon,gun,fkj_gun,tsm_weapon,mountableweapon,provocativetohumanai,bulkyweapon" Scale="0.28" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="1768,1786,214,214" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="22,46,551,124" depth="0.55" origin="0.5023961,0.5019316" />
@@ -118,7 +118,7 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="40" />
   </Item>
-  <Item name="M32" identifier="tsm_m32_launcher" category="Weapon" subcategory="other" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,tsm_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" Scale="0.35" impactsoundtag="impact_metal_light">
+  <Item name="M32" identifier="tsm_m32_launcher" category="Weapon" subcategory="other" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,lm_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" Scale="0.35" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="1348,1852,128,136" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="22,459,331,98" depth="0.55" origin="0.5,0.5" />
@@ -351,7 +351,7 @@
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item name="MG42通用机枪" identifier="tsm_mg42" subcategory="other" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon" Scale="0.27" impactsoundtag="impact_metal_light">
+  <Item name="MG42通用机枪" identifier="tsm_mg42" subcategory="other" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" Scale="0.27" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="80" />
@@ -437,9 +437,9 @@
           <conditional maxchargetime="eq 999"/>
         </StatusEffect>
       </Containable>
-      <SlotIcon slotindex="1" texture="%ModDir%/png/ui.png" sourcerect="638,214,18,36" origin="0.45,0.5" />
+      <SlotIcon slotindex="1" texture="%ModDir%/png/ui.png" sourcerect="1429,202,37,97" origin="0.45,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="tsm_advanced_grip" hide="false" itempos="45,-6" Scale="0.5" depth="0.56" setactive="true" />
+        <Containable items="tsm_grip_mounts" hide="false" itempos="45,-6" Scale="0.5" depth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2400" soundrange="4500" fadeouttime="5" />

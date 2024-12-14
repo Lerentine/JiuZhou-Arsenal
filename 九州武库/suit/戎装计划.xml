@@ -86,7 +86,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn" damagemultiplier="0.15" damagesound=""/>
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.0" damagesound="LimbArmor"/>
       <sound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" type="OnWearing" range="500.0" volumeproperty="Speed" volume="0.2" loop="true" frequencymultiplier="0.5" />
-      <StatValue stattype="FlowResistance" value="0.0" />
+      <StatValue stattype="FlowResistance" value="1" />
     </Wearable>
     <ItemContainer capacity="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
@@ -250,7 +250,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_7L" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.5" damagesound="LimbArmor"/>
-      <StatValue stattype="FlowResistance" value="0.1" />
+      <StatValue stattype="FlowResistance" value="0.9" />
     </Wearable>
     <Holdable slots="OuterClothes+RightHand" controlpose="true" aimpos="70,5" handle1="-25,-7" />
     <RangedWeapon barrelpos="29,11" spread="5" penetration="0.2" unskilledspread="10" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.28">
@@ -356,7 +356,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.3" damagesound="LimbArmor"/>
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.5" damagesound="LimbArmor"/>
-      <StatValue stattype="FlowResistance" value="0.1" />
+      <StatValue stattype="FlowResistance" value="0.8" />
     </Wearable>
     <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
       <Containable items="none" />
@@ -434,7 +434,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.3" damagesound="LimbArmor"/>
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.5" damagesound="LimbArmor"/>
-      <StatValue stattype="FlowResistance" value="0.1" />
+      <StatValue stattype="FlowResistance" value="0.85" />
     </Wearable>
     <Holdable slots="OuterClothes+RightHand" controlpose="true" aimpos="70,5" handle1="-25,-7" />
     <RangedWeapon barrelpos="29,11" spread="7" unskilledspread="15" combatPriority="80" penetration="0.2" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.2">

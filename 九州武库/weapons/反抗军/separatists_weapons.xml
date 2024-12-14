@@ -2,7 +2,7 @@
 <Items>
   <!--武器-->
   <!--AN94-->
-  <Item name="AN94" identifier="tsm_fkj_an94" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.23" health="10" impactsoundtag="impact_metal_light" description="">
+  <Item name="AN94" identifier="tsm_fkj_an94" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.23" health="10" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="762" displaynonempty="true" minleveldifficulty="35" buyingpricemultiplier="5">
       <Price storeidentifier="merchantarmory" minamount="0" maxamount="2" />
@@ -37,8 +37,8 @@
       </StatusEffect>
     </Holdable>
     <RangedWeapon reload="0.11" weapondamagemodifier="1.25" holdtrigger="true" barrelpos="230,20" spread="15" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.15">
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1498,198,198" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1497,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="true">
         <Sound file="%ModDir%/weapons/反抗军/an94.ogg" type="OnUse" range="3000" />
@@ -142,7 +142,7 @@
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
   <!--AK74u-->
-  <Item name="AK74u" identifier="tsm_fkj_ak74u" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK74u" identifier="tsm_fkj_ak74u" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="262" displaynonempty="true" minleveldifficulty="0" buyingpricemultiplier="5"/>
     <Price storeidentifier="merchantcity" minavailable="0" maxavailable="1">
@@ -172,9 +172,9 @@
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.12" weapondamagemodifier="1" holdtrigger="true" barrelpos="130,30" spread="13" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+    <RangedWeapon reload="0.12" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="130,30" spread="13" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1498,198,198" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1497,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="true">
         <Sound file="%ModDir%/weapons/反抗军/74.ogg" type="OnUse" range="3000" />
@@ -254,7 +254,7 @@
     <SkillRequirementHint identifier="weapons" level="20" />
   </Item>
   <!--AK74-->
-  <Item name="AK74" identifier="tsm_fkj_ak74" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK74" identifier="tsm_fkj_ak74" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="262" displaynonempty="true" minleveldifficulty="0" buyingpricemultiplier="5"/>
     <Price storeidentifier="merchantcity" minavailable="0" maxavailable="1">
@@ -271,6 +271,7 @@
     </Price>
     <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="15" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="tsm_fkj_ak74u" amount="1" />
       <RequiredItem identifier="tsm_plastic" amount="1" />
       <RequiredItem identifier="tsm_item_box" amount="1" />
     </Fabricate>
@@ -285,9 +286,9 @@
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.12" weapondamagemodifier="1" holdtrigger="true" barrelpos="230,20" spread="11" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+    <RangedWeapon reload="0.115" weapondamagemodifier="1" holdtrigger="true" barrelpos="230,20" spread="11" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1498,198,198" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1497,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="true">
         <Sound file="%ModDir%/weapons/反抗军/74.ogg" type="OnUse" range="3000" />
@@ -367,7 +368,7 @@
     <SkillRequirementHint identifier="weapons" level="30" />
   </Item>
   <!--OTS Groza-1 “闪电”反抗军无托突击步枪-->
-  <Item name="反抗军OTS Groza-1 “闪电”无托突击步枪" identifier="tsm_fkj_groza" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" scale="0.3" impactsoundtag="impact_metal_light" >
+  <Item name="反抗军OTS Groza-1 “闪电”无托突击步枪" identifier="tsm_fkj_groza" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" scale="0.3" impactsoundtag="impact_metal_light" >
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
     <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.1" />
@@ -395,8 +396,8 @@
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <RangedWeapon reload="0.09" holdtrigger="true" weapondamagemodifier="1" barrelpos="140,10" spread="12" unskilledspread="30" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.3">
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="True">
         <Sound file="%ModDir%/weapons/反抗军/groza1.ogg" type="OnUse" range="3000" selectionmode="Random" />
@@ -476,7 +477,7 @@
     <SkillRequirementHint identifier="weapons" level="55" />
   </Item>
   <!--AK103-->
-  <Item name="AK103" identifier="tsm_fkj_ak103" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,jq430cl,provocativetohumanai,bulkyweapon" scale="0.28" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK103" identifier="tsm_fkj_ak103" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,jq430cl,provocativetohumanai,bulkyweapon" scale="0.28" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--售价-->
     <Price baseprice="402" displaynonempty="true" minleveldifficulty="10" buyingpricemultiplier="5"/>
@@ -518,8 +519,8 @@
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <RangedWeapon reload="0.11" weapondamagemodifier="1" holdtrigger="true" barrelpos="230,20" spread="7" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.15">
       <!--准星图标-->
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1498,198,198" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1497,198,199" />
       <!--枪口火焰-->
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <!--枪声-->
@@ -611,7 +612,7 @@
     <!--等级提示-->
     <SkillRequirementHint identifier="weapons" level="45" />
   </Item>
-  <Item name="AK103（轻量化枪托）" identifier="tsm_fkj_ak103_l" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,jq430cl,provocativetohumanai,bulkyweapon" scale="0.28" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK103（轻量化枪托）" identifier="tsm_fkj_ak103_l" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,jq430cl,provocativetohumanai,bulkyweapon" scale="0.28" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--分解-->
     <Deconstruct time="10">
@@ -636,8 +637,8 @@
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <RangedWeapon reload="0.11" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="230,20" spread="8" unskilledspread="40" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.2">
       <!--准星图标-->
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1498,198,198" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1497,198,199" />
       <!--枪口火焰-->
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <!--枪声-->
@@ -729,7 +730,7 @@
     <SkillRequirementHint identifier="weapons" level="45" />
   </Item>
   <!--ak105-->
-  <Item name="AK105" identifier="tsm_fkj_ak105" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,jq430cl,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK105" identifier="tsm_fkj_ak105" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,jq430cl,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--售价-->
     <Price baseprice="400" displaynonempty="true" minleveldifficulty="10" buyingpricemultiplier="5"/>
@@ -771,8 +772,8 @@
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <RangedWeapon reload="0.105" weapondamagemodifier="1.1" penetration="0.1" holdtrigger="true" barrelpos="230,20" spread="8" unskilledspread="85" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.25">
       <!--准星图标-->
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1498,198,198" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1497,198,199" />
       <!--枪口火焰-->
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <!--枪声-->
@@ -863,7 +864,7 @@
     <!--等级提示-->
     <SkillRequirementHint identifier="weapons" level="40" />
   </Item>
-  <Item name="AK105(轻量化枪托)" identifier="tsm_fkj_ak105_l" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,jq430cl,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK105(轻量化枪托)" identifier="tsm_fkj_ak105_l" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,jq430cl,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--分解-->
     <Deconstruct time="10">
@@ -888,8 +889,8 @@
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <RangedWeapon reload="0.1" weapondamagemodifier="1.1" penetration="0.1" holdtrigger="true" barrelpos="230,20" spread="9" unskilledspread="80" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
       <!--准星图标-->
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1498,198,198" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1497,198,199" />
       <!--枪口火焰-->
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <!--枪声-->
@@ -981,7 +982,7 @@
     <SkillRequirementHint identifier="weapons" level="40" />
   </Item>
   <!--AM17-->
-  <Item name="AM17" identifier="tsm_fkj_am17" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,jq430cl,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="AM17" identifier="tsm_fkj_am17" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,jq430cl,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--分解-->
     <Deconstruct time="10">
@@ -1006,8 +1007,8 @@
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <RangedWeapon reload="0.1" weapondamagemodifier="1.15" penetration="0.1" holdtrigger="true" barrelpos="210,20" spread="8" unskilledspread="80" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
       <!--准星图标-->
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <!--枪口火焰-->
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <!--枪声-->
@@ -1132,7 +1133,7 @@
     <SkillRequirementHint identifier="weapons" level="40" />
   </Item>
   <!--ak12-->
-  <Item name="AK12" identifier="tsm_fkj_ak12" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,ak12,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK12" identifier="tsm_fkj_ak12" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,ak12,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--制作-->
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="25" requiresrecipe="false">
@@ -1160,8 +1161,8 @@
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <RangedWeapon reload="0.11" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="230,20" spread="8" unskilledspread="50" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
       <!--准星图标-->
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <!--枪口火焰-->
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <!--枪声-->
@@ -1288,7 +1289,7 @@
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
   <!--rpk-->
-  <Item name="RPK—16轻机枪" identifier="tsm_fkj_rpk16" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
+  <Item name="RPK—16轻机枪" identifier="tsm_fkj_rpk16" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--制作-->
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="25" requiresrecipe="false">
@@ -1316,8 +1317,8 @@
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <RangedWeapon reload="0.1" weapondamagemodifier="1.35" penetration="0.1" holdtrigger="true" barrelpos="200,55" spread="8" unskilledspread="50" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.4">
       <!--准星图标-->
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <!--枪口火焰-->
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <!--枪声-->
@@ -1463,7 +1464,7 @@
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
   <!--sks-->
-  <Item name="西蒙诺夫步枪" identifier="tsm_fkj_sks" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="西蒙诺夫步枪" identifier="tsm_fkj_sks" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="463" minleveldifficulty="20" buyingpricemultiplier="5"/>
     <Price storeidentifier="merchantcity" minavailable="0" maxavailable="1">
@@ -1499,8 +1500,8 @@
       <!--半自动模式-->
     </Holdable>
     <RangedWeapon reload="0.14" weapondamagemodifier="1.4" holdtrigger="true" barrelpos="200,30" spread="5" unskilledspread="50" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1498,198,198" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1497,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <Sound file="%ModDir%/weapons/反抗军/SKS.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse" target="This">
@@ -1576,7 +1577,7 @@
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
   <!--AA12-->
-  <Item name="AA12" identifier="tsm_fkj_aa12" subcategory="tsm_separatists" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,stunner,gunsmith,mountableweapon,provocativetohumanai" Scale="0.29" impactsoundtag="impact_metal_light">
+  <Item name="AA12" identifier="tsm_fkj_aa12" subcategory="tsm_separatists" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,fkj_gun,stunner,gunsmith,mountableweapon,provocativetohumanai" Scale="0.29" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="2818" sold="true" canbespecial="false" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40">
@@ -1623,7 +1624,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_1_4.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_1_5.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="62,0" aimpos="62,0" handle1="-85,-15" handle2="50,15" holdangle="-30" disabledeltatime="true" checkconditionalalways="true" delay="1.45" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -1638,7 +1639,7 @@
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
   <!--SVD-->
-  <Item name="SVD" identifier="tsm_fkj_svd" category="weapon" subcategory="tsm_separatists" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_farsight,provocativetohumanai,bulkyweapon" scale="0.23" impactsoundtag="impact_metal_light" description="">
+  <Item name="SVD" identifier="tsm_fkj_svd" category="weapon" subcategory="tsm_separatists" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,tsm_farsight,provocativetohumanai,bulkyweapon" scale="0.23" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="65" />
@@ -1662,8 +1663,8 @@
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
     <RangedWeapon reload="0.45" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="300,15" spread="3" unskilledspread="70" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="939,84,71,76" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1498,198,198" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1497,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <Sound file="%ModDir%/weapons/反抗军/svd1.ogg" type="OnUse" target="This" range="3000" selectionmode="Random" />
       <Sound file="%ModDir%/weapons/反抗军/svd2.ogg" type="OnUse" target="This" range="3000" />
@@ -1758,7 +1759,7 @@
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
   <!--M2-->
-  <Item name="M2" identifier="tsm_fkj_m2" subcategory="tsm_separatists" description="" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="bigitem,weapon,gun,gunsmith,mountableweapon,biggun,provocativetohumanai,bulkyweapon" Scale="0.27" impactsoundtag="impact_metal_light">
+  <Item name="M2" identifier="tsm_fkj_m2" subcategory="tsm_separatists" description="" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="bigitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,biggun,provocativetohumanai,bulkyweapon" Scale="0.27" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="30" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="60" />
@@ -1864,7 +1865,7 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="80" />
   </Item>
-  <Item name="M2（白鹰）" identifier="tsm_fkj_m2_eagle" subcategory="tsm_separatists" description="" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="bigitem,weapon,gun,gunsmith,mountableweapon,biggun,provocativetohumanai,bulkyweapon" Scale="0.27" impactsoundtag="impact_metal_light">
+  <Item name="M2（白鹰）" identifier="tsm_fkj_m2_eagle" subcategory="tsm_separatists" description="" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="bigitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,biggun,provocativetohumanai,bulkyweapon" Scale="0.27" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="60" />
@@ -1968,7 +1969,7 @@
     <SkillRequirementHint identifier="weapons" level="80" />
   </Item>
   <!--通用机枪-->
-  <Item name="反抗军通用轻型机枪" identifier="tsm_fkj_jts" subcategory="tsm_separatists" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon" Scale="0.23" impactsoundtag="impact_metal_light">
+  <Item name="反抗军通用轻型机枪" identifier="tsm_fkj_jts" subcategory="tsm_separatists" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon" Scale="0.23" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.15" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.12" />
@@ -2093,14 +2094,14 @@
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
   <!--反抗军通用机枪-->
-  <Item name="反抗军通用机枪（PKP）" identifier="tsm_fkj_pkp" subcategory="tsm_separatists" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon" Scale="0.27" impactsoundtag="impact_metal_light">
+  <Item name="反抗军通用机枪（PKP）" identifier="tsm_fkj_pkp" subcategory="tsm_separatists" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon" Scale="0.27" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="43" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
+      <RequiredItem identifier="tsm_fkj_saw" amount="1" />
       <RequiredItem identifier="tsm_yh_weaponbox" amount="2" />
-      <RequiredItem identifier="tsm_fkj_jts" amount="1" />
-      <RequiredItem identifier="tsm_grip_mounts" amount="1" />
-      <RequiredItem identifier="tsm_yx_crystallography" amount="2" />
+      <RequiredItem identifier="tsm_plastic" amount="3" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="tsm_grip_mounts" amount="1" />
@@ -2219,14 +2220,14 @@
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
   <!--Chain-->
-  <Item name="Chain" identifier="tsm_fkj_saw" subcategory="tsm_separatists" description="" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="bigitem,weapon,gun,gunsmith,mountableweapon,biggun,provocativetohumanai,bulkyweapon" Scale="0.24" impactsoundtag="impact_metal_light">
+  <Item name="Chain" identifier="tsm_fkj_saw" subcategory="tsm_separatists" description="" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="bigitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,biggun,provocativetohumanai,bulkyweapon" Scale="0.24" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="30" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="60" />
-      <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
-      <RequiredItem identifier="tsm_fkj_pkp" amount="1" />
       <RequiredItem identifier="tsm_yh_weaponbox" amount="2" />
-      <RequiredItem identifier="tsm_plastic" amount="3" />
+      <RequiredItem identifier="tsm_fkj_jts" amount="1" />
+      <RequiredItem identifier="tsm_item_box" amount="2" />
+      <RequiredItem identifier="steel" amount="3" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="tsm_fkj_jts" />
@@ -2353,7 +2354,7 @@
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
   <!--加利尔-->
-  <Item name="反抗军加利尔ACE52战斗步枪" identifier="tsm_fkj_ace52" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
+  <Item name="反抗军加利尔ACE52战斗步枪" identifier="tsm_fkj_ace52" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="30" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="30" />
@@ -2373,8 +2374,8 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
     </Holdable>
     <RangedWeapon reload="0.155" penetration="0.25" holdtrigger="true" barrelpos="230,20" spread="15" unskilledspread="50" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="307,3013,197,199" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="24,3083,222,136" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="True">
         <Sound file="%ModDir%/weapons/反抗军/ace1.ogg" type="OnUse" range="3000" selectionmode="Random" />
@@ -2466,7 +2467,7 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <!--G3A4-->
-  <Item name="反抗军G3A4站斗步枪" identifier="tsm_fkj_g3a4" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
+  <Item name="反抗军G3A4站斗步枪" identifier="tsm_fkj_g3a4" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="30" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="30" />
@@ -2489,10 +2490,10 @@
       </StatusEffect>
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
-    <StatusHUD drawhudwhenequipped="false" range="0" thermalgoggles="false" showdeadcharacters="false" showtexts="false" />
+     
     <RangedWeapon reload="0.155" holdtrigger="true" barrelpos="215,20" spread="7" unskilledspread="50" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="310,407,197,199" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="41,471,211,141" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="True">
         <Sound file="%ModDir%/weapons/反抗军/G31.ogg" type="OnUse" range="3000" selectionmode="Random" />
@@ -2618,7 +2619,7 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <!--fal-->
-  <Item name="反抗军FAL“法老”战斗步枪" identifier="tsm_fkj_fal" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
+  <Item name="反抗军FAL“法老”战斗步枪" identifier="tsm_fkj_fal" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="30" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="30" />
@@ -2637,8 +2638,8 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
     </Holdable>
     <RangedWeapon reload="0.13" penetration="0.15" holdtrigger="true" barrelpos="230,20" spread="10" unskilledspread="50" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="311,3750,198,199" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="35,3750,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="True">
         <Sound file="%ModDir%/weapons/反抗军/fal1.ogg" type="OnUse" range="3000" selectionmode="Random" />
@@ -2712,7 +2713,7 @@
       </SubContainer>
       <!--3.护木-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="638,214,18,36" origin="0.45,0.5" />
+        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="1429,202,37,97" origin="0.45,0.5" />
         <Containable items="tsm_grip_mech" hide="false" itempos="35,-6" depth="0.56" setactive="true" />
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
@@ -2730,7 +2731,7 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <!--sg553-R-->
-  <Item name="反抗军SG553-R“突击者”步枪" identifier="tsm_fkj_sg553" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon" scale="0.26" impactsoundtag="impact_metal_light" description="">
+  <Item name="反抗军SG553-R“突击者”步枪" identifier="tsm_fkj_sg553" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon" scale="0.26" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="60" />
@@ -2756,10 +2757,10 @@
       </StatusEffect>
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
-    <StatusHUD drawhudwhenequipped="false" range="0" thermalgoggles="false" showdeadcharacters="false" showtexts="false" />
+     
     <RangedWeapon reload="0.11" penetration="0.1" holdtrigger="true" barrelpos="205,35" spread="10" unskilledspread="25" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="310,1708,197,199" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="6,1763,254,156" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="true">
         <Sound file="%ModDir%/weapons/反抗军/sg553.ogg" type="OnUse" range="3000" selectionmode="Random"/>
@@ -2895,7 +2896,7 @@
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
   <!--JQ430-->
-  <Item name="JQ430" identifier="tsm_fkj_jq430" category="weapon" subcategory="tsm_separatists" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.23" impactsoundtag="impact_metal_light" description="">
+  <Item name="JQ430" identifier="tsm_fkj_jq430" category="weapon" subcategory="tsm_separatists" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.23" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Deconstruct time="10">
       <Item identifier="titanium" />
@@ -2923,7 +2924,7 @@
     </ItemComponent>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <RangedWeapon reload="0.12" weapondamagemodifier="1.3" holdtrigger="true" barrelpos="230,5" spread="8" unskilledspread="50" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.25">
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="320,289,178,184" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <Sound file="%ModDir%/weapons/反抗军/jq4301.ogg" type="OnUse" range="3000" selectionmode="Random" />
@@ -3026,7 +3027,7 @@
     </CustomInterface>
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
-  <Item name="AK12 custom" identifier="tsm_fkj_ak12_c" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,ak12,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK12 custom" identifier="tsm_fkj_ak12_c" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,ak12,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--分解-->
     <Deconstruct time="10">
@@ -3051,8 +3052,8 @@
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <RangedWeapon reload="0.11" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="230,20" spread="6" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <!--准星图标-->
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <!--枪口火焰-->
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <!--枪声-->
@@ -3124,7 +3125,7 @@
     </CustomInterface>
   </Item>
   <!--type561a-->
-  <Item name="type 56-1A" identifier="tsm_fkj_561a" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,ak12,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
+  <Item name="type 56-1A" identifier="tsm_fkj_561a" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,ak12,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--分解-->
     <Deconstruct time="10">
@@ -3149,8 +3150,8 @@
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <RangedWeapon reload="0.105" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="230,20" spread="6" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <!--准星图标-->
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <!--枪口火焰-->
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <!--枪声-->
@@ -3281,7 +3282,7 @@
     <!--等级提示-->
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
-  <Item name="AK105 custom" identifier="tsm_fkj_ak105_c" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK105 custom" identifier="tsm_fkj_ak105_c" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--分解-->
     <Deconstruct time="10">
@@ -3313,8 +3314,8 @@
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <RangedWeapon reload="0.11" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="220,20" spread="7" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.25">
       <!--准星图标-->
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <!--枪口火焰-->
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <!--枪声-->
@@ -3395,7 +3396,7 @@
     <SkillRequirementHint identifier="weapons" level="40" />
   </Item>
   <!--A545-->
-  <Item name="A545" identifier="tsm_fkj_a545" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="A545" identifier="tsm_fkj_a545" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--分解-->
     <Deconstruct time="10">
@@ -3427,8 +3428,8 @@
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <RangedWeapon reload="0.1" penetration="0.2" holdtrigger="true" barrelpos="220,20" spread="7" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.25">
       <!--准星图标-->
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <!--枪口火焰-->
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <!--枪声-->
@@ -3543,7 +3544,7 @@
     </CustomInterface>
   </Item>
   <!--TAC-9-->
-  <Item name="TAC-9" identifier="tsm_fkj_tac9" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="TAC-9" identifier="tsm_fkj_tac9" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="262" displaynonempty="true" minleveldifficulty="0" buyingpricemultiplier="5"/>
     <Price storeidentifier="merchantcity" minavailable="0" maxavailable="1">
@@ -3574,8 +3575,8 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
     </Holdable>
     <RangedWeapon reload="0.11" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="90,40" spread="10" unskilledspread="20" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="true">
         <Sound file="%ModDir%/weapons/反抗军/tac1.ogg" type="OnUse" range="3000" selectionmode="Random"/>
@@ -3649,7 +3650,7 @@
     <SkillRequirementHint identifier="weapons" level="20" />
   </Item>
   <!--uzi-->
-  <Item name="uzi" identifier="tsm_fkj_uzi" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="uzi" identifier="tsm_fkj_uzi" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="262" displaynonempty="true" minleveldifficulty="0" buyingpricemultiplier="5"/>
     <Price storeidentifier="merchantcity" minavailable="0" maxavailable="1">
@@ -3680,8 +3681,8 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
     </Holdable>
     <RangedWeapon reload="0.09" weapondamagemodifier="1" holdtrigger="true" barrelpos="60,40" spread="12" unskilledspread="20" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="24,3083,222,136" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="307,3013,197,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="true">
         <Sound file="%ModDir%/weapons/反抗军/piso_1.ogg" type="OnUse" range="3000" />
@@ -3763,7 +3764,7 @@
     <SkillRequirementHint identifier="weapons" level="40" />
   </Item>
   <!--ppk-20-->
-  <Item name="ppk-20" identifier="tsm_fkj_ppk20" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="ppk-20" identifier="tsm_fkj_ppk20" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="262" displaynonempty="true" minleveldifficulty="0" buyingpricemultiplier="5"/>
     <Price storeidentifier="merchantcity" minavailable="0" maxavailable="1">
@@ -3795,8 +3796,8 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
     </Holdable>
     <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="180,25" spread="12" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
         <RequiredItem items="1" matchonempty="true" type="Contained" targetslot="2"/>
@@ -3883,7 +3884,7 @@
     <SkillRequirementHint identifier="weapons" level="35" />
   </Item>
   <!--EVO3-->
-  <Item name="EVO3" identifier="tsm_fkj_evo3" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="EVO3" identifier="tsm_fkj_evo3" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="262" displaynonempty="true" minleveldifficulty="0" buyingpricemultiplier="5"/>
     <Price storeidentifier="merchantcity" minavailable="0" maxavailable="1">
@@ -3918,10 +3919,10 @@
       </StatusEffect>
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
-    <StatusHUD drawhudwhenequipped="false" range="0" thermalgoggles="false" showdeadcharacters="false" showtexts="false" />
+     
     <RangedWeapon reload="0.1" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="160,30" spread="11" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,275,198,198" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
         <RequiredItem items="1" matchonempty="true" type="Contained" targetslot="2"/>

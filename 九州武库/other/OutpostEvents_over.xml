@@ -12,7 +12,7 @@
     <Label name="beginningofthejourney" />
     <NPCWaitAction npctag="tsm_wz_ff" wait="false" />
     <TriggerAction target1tag="tsm_wz_ff" target2tag="player" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
-    <ConversationAction targettag="triggerer_player" text="jxg.help">
+    <ConversationAction targettag="triggerer_player" text="tsm.jxg.help">
       <Option text="tsm.dh.yjsbm">
         <ConversationAction targettag="triggerer_player" text="tsm.dh.xh1" >
           <Option text="tsm.dh.kw">
@@ -63,7 +63,7 @@
               </Failure>
             </CheckItemAction>
           </Option>
-          <Option text="tsm.dh.hy">
+          <Option text="tsm.dh.hw">
             <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
               <Success>
                 <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
@@ -152,7 +152,7 @@
               </Failure>
             </CheckReputationAction>
           </Option>
-          <Option text="tsm.dh.hy">
+          <Option text="tsm.dh.hw">
             <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
               <Success>
                 <ReputationAction targettype="Faction" identifier="tsm" increase="-2" />
@@ -231,6 +231,30 @@
             <GoTo name="beginningofthejourney" />
           </Option>
         </ConversationAction>
+      </Option>
+      <Option text="tsm.dh.vip">
+      <CheckReputationAction targettype="Faction" identifier="tsm" condition="gt 59">
+        <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.js"/>
+        <Failure>
+          <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.60.failure"/>
+          <GoTo name="beginningofthejourney" />
+        </Failure>
+        <Success>
+          <CheckDataAction identifier="tsm_vip_save_1" condition="eq true">
+          <Success>
+            <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.success"/>
+          </Success>
+          <Failure>
+          <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.60.success"/>
+          <SpawnAction npcsetidentifier="tsm_outpost_combat_npcs" npcidentifier="tsm_vip_bodyguard_1" targettag="tsm_vip_bodyguard_1" teamid="FriendlyNPC" spawnpointtag="admin" spawnlocation="Outpost" />
+          <NPCChangeTeamAction npctag="tsm_vip_bodyguard_1" teamid="Team1" addtocrew="true" />
+          <SetDataAction identifier="tsm_vip_save_1" value="true" />
+          <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.rd.success"/>
+          <GoTo name="beginningofthejourney" />
+          </Failure>
+          </CheckDataAction>
+        </Success>
+      </CheckReputationAction>
       </Option>
       <Option text="tsm.wait">
         <ConversationAction text="tsm.npc.wait" dialogtype="Small" targettag="triggerer_player" />

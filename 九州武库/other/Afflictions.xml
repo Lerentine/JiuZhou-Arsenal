@@ -537,13 +537,13 @@
   <Affliction identifier="tsm_cqr_grip_buff" description="" isbuff="true" type="grip" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
    <Effect minstrength="0" maxstrength="1" strengthchange="-1" resistancefor="stun" minresistance="0.1" maxresistance="0.1">
      <StatValue stattype="RangedSpreadReduction" value="0.25" />
-     <StatValue stattype="MovementSpeed" value="-0.05" />
+     <StatValue stattype="MovementSpeed" value="-0.06" />
    </Effect>
   </Affliction>
     <Affliction identifier="tsm_triangle_grip_buff" description="" isbuff="true" type="grip" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
         <Effect minstrength="0" maxstrength="1" strengthchange="-1">
             <StatValue stattype="RangedSpreadReduction" value="0.15" />
-            <StatValue stattype="FlowResistance" value="0.2" />
+            <StatValue stattype="FlowResistance" value="0.15" />
         </Effect>
     </Affliction>
     <Affliction identifier="tsm_thumb_grip_buff" description="" isbuff="true" type="grip" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
@@ -554,7 +554,7 @@
     </Affliction>
     <Affliction identifier="tsm_light_grip_buff" description="" isbuff="true" type="grip" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
         <Effect minstrength="0" maxstrength="1" strengthchange="-1">
-            <StatValue stattype="RangedSpreadReduction" value="0.25" />
+            <StatValue stattype="RangedSpreadReduction" value="0.2" />
             <StatValue stattype="FlowResistance" value="0.2" />
             <StatValue stattype="MovementSpeed" value="-0.03" />
         </Effect>

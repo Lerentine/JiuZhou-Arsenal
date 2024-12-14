@@ -112,6 +112,33 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <Item name="轻型握把" identifier="tsm_grip_light" subcategory="accessories" category="weapon" Tags="smallitem,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1040,420,58,52" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1040,420,58,52" depth="0.56" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="31" height="43" density="15" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Affliction identifier="tsm_light_grip_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="333" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" amount="1" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
   <Item name="脚架" identifier="tsm_grip_mounts" subcategory="TSM" category="weapon" Tags="smallitem,tsm_grip_mounts,tsm_grip_mech" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2255,609,37,97" origin="0.5,0.5" />
@@ -138,7 +165,7 @@
   <!--瞄具类-->
   <Item name="红点瞄具" identifier="tsm_sight_reddot" subcategory="accessories" category="weapon" Tags="smallitem,sighting,tsm_sight_low,tsm_sight_reddot" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1058,206,67,40" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1058,208,67,40" depth="0.536" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1058,206,67,40" depth="0.536" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="67" height="40" density="15" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">

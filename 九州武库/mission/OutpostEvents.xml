@@ -264,6 +264,7 @@
       <TagAction criteria="humanprefabidentifier:occupation_p" tag="enemy" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:occupation_fire" tag="enemy" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:occupation_qiuwu" tag="enemy" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:occupation_tarler" tag="enemy" continueifnotargetsfound="true" />
       <StatusEffectAction targettag="enemy" >
         <StatusEffect target="This">
           <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
@@ -283,6 +284,7 @@
       <TagAction criteria="humanprefabidentifier:occupation_p" tag="enemy_pt" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:occupation_fire" tag="enemy_elite" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:occupation_qiuwu" tag="enemy_elite" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:occupation_tarler" tag="enemy_elite" continueifnotargetsfound="true" />
       <StatusEffectAction targettag="enemy_leader">
         <StatusEffect target="This">
           <Affliction identifier="tsm_occupation_jia_buff" strength="50" />
@@ -402,6 +404,7 @@
       <TagAction criteria="humanprefabidentifier:beowulf" tag="enemy" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:beowulf_p" tag="enemy" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:beowulf_sl" tag="enemy" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:beowulf_fox" tag="enemy" continueifnotargetsfound="true" />
       <StatusEffectAction targettag="enemy">
         <StatusEffect target="This">
           <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
@@ -421,6 +424,7 @@
       <TagAction criteria="humanprefabidentifier:beowulf" tag="enemy_pt" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:beowulf_p" tag="enemy_pt" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:beowulf_sl" tag="enemy_leader" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:beowulf_fox" tag="enemy_leader" continueifnotargetsfound="true" />
       <StatusEffectAction targettag="enemy_leader">
         <StatusEffect target="This">
           <Affliction identifier="tsm_beowulf_jia_buff" strength="50" />
@@ -571,6 +575,7 @@
       <TagAction criteria="humanprefabidentifier:yehuo_p" tag="enemy" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:yehuo_ex" tag="enemy" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:yehuo_reinforcement" tag="enemy" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:yehuo_leader_cce" tag="enemy" continueifnotargetsfound="true" />
       <StatusEffectAction targettag="enemy" >
         <StatusEffect target="This" enabledespawn="true">
           <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
@@ -588,6 +593,7 @@
       <TagAction criteria="humanprefabidentifier:yehuo_p" tag="enemy_pt" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:yehuo_ex" tag="enemy_ex" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:yehuo_reinforcement" tag="enemy_elite" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:yehuo_leader_cce" tag="enemy_leader" continueifnotargetsfound="true" />
       <StatusEffectAction targettag="enemy_leader">
         <StatusEffect target="This">
           <Affliction identifier="tsm_yehuo_jia_buff" strength="50" />
@@ -750,6 +756,8 @@
       <TagAction criteria="humanprefabidentifier:tsm_soldier_p" tag="enemy" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:tsm_soldier_ml" tag="enemy" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:tsm_soldier_Finianna" tag="enemy" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:tsm_soldier_sm" tag="enemy" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:tsm_soldier_csms" tag="enemy" continueifnotargetsfound="true" />
       <StatusEffectAction targettag="enemy">
         <StatusEffect target="This">
           <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
@@ -769,6 +777,8 @@
       <TagAction criteria="humanprefabidentifier:tsm_soldier" tag="enemy_pt" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:tsm_soldier_p" tag="enemy_pt" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:tsm_soldier_ml" tag="enemy_advanced" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:tsm_soldier_sm" tag="enemy_jz" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:tsm_soldier_csms" tag="enemy_advanced" continueifnotargetsfound="true" />
       <StatusEffectAction targettag="enemy_jz">
         <StatusEffect target="This">
           <Affliction identifier="tsm_jz_buff" strength="50" />
@@ -793,6 +803,7 @@
     <!--猫科-->
     <ScriptedEvent identifier="tsm_outpost_combat">
       <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_3" tag="enemy_outpost_combat" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_naiya" tag="enemy_outpost_combat" continueifnotargetsfound="true" />
       <StatusEffectAction targettag="enemy_outpost_combat">
         <StatusEffect target="This" enabledespawn="true">
           <Affliction identifier="tsm_ai_stun" strength="50" />
@@ -897,7 +908,10 @@
           <WaitAction time="0.1" />
           <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
           <WaitAction time="0.1" />
-          <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_3" tag="enemy_outpost_combat" continueifnotargetsfound="true" />
+          <SpawnAction npcsetidentifier="Combat_Npc_Customisation" npcidentifier="tsm_outpost_combat_naiya" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+          <WaitAction time="0.1" />
+          <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_3" tag="enemy_outpost_combat" continueifnotargetsfound="true" />.
+          <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_naiya" tag="enemy_outpost_combat" continueifnotargetsfound="true" />
           <StatusEffectAction targettag="enemy_outpost_combat">
           <StatusEffect target="This" enabledespawn="true">
           <Affliction identifier="tsm_ai_stun" strength="50" />

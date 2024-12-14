@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!--自杀式袭击-->
-  <Item name="自杀式背心" identifier="tsm_suecide_vest" subcategory="TSM" Health="100" category="Equipment" tags="smallitem,clothing,vest" scale="0.5" cargocontaineridentifier="tsm_metalcrate" description="" impactsoundtag="impact_soft">
+  <Item name="自杀式背心" identifier="tsm_suecide_vest" subcategory="TSM" Health="100" category="Equipment" tags="smallitem,clothing,vest" scale="0.5" cargocontaineridentifier="tsm_metalcrate" HideConditionBar="true" impactsoundtag="impact_soft">
     <Deconstruct time="20">
       <Item identifier="organicfiber" />
     </Deconstruct>
@@ -12,7 +12,7 @@
     </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/配件/war_preparation.png" sourcerect="155,182,149,123" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/war_preparation.png" sourcerect="155,182,149,123" depth="0.51" origin="0.5,0.5" />
-    <Body width="140" height="115" density="25" />
+    <Body width="140" height="100" density="25" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
       <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.6" />
       <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.5" />
@@ -22,29 +22,44 @@
       <sprite name="general Torso" texture="%ModDir%/weapons/配件/war_preparation.png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="155,182,149,123" origin="0.5,0.5" />
       <sprite name="general Boobs" texture="%ModDir%/weapons/配件/war_preparation.png" limb="Tail" sourcerect="0,0,1,1" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" />
     </Wearable>
-    <ItemComponent characterusable="false" >
+    <ItemComponent characterusable="false">
       <StatusEffect type="OnBroken" target="This">
-        <Explosion range="50.0" force="30" ignoreCover="true" severlimbsprobability="8" penetration="1">
+        <Explosion range="100.0" force="30" ignoreCover="true" severlimbsprobability="8" penetration="1">
           <Affliction identifier="explosiondamage" strength="5000" />
           <Affliction identifier="burn" strength="5000" />
           <Affliction identifier="burn" strength="5000" />
         </Explosion>
-        <Explosion range="500.0" force="10" debris="true" decal="explosion" decalsize="0.75" penetration="0.8">
+        <Explosion range="500.0" force="10" ignoreCover="true" debris="true" decal="explosion" decalsize="0.75" penetration="0.8">
           <Affliction identifier="explosiondamage" strength="200" />
           <Affliction identifier="bleeding" strength="100" />
           <Affliction identifier="burn" strength="80" probability="0.5" />
           <Affliction identifier="stun" strength="3" />
         </Explosion>
+        <Explosion range="800.0" force="10" ignoreCover="true" debris="true" decal="explosion" decalsize="0.75" penetration="0.8">
+          <Affliction identifier="explosiondamage" strength="100" />
+          <Affliction identifier="bleeding" strength="60" />
+          <Affliction identifier="burn" strength="50" probability="0.5" />
+          <Affliction identifier="stun" strength="1" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" oneshot="true" checkconditionalalways="true" comparison="And">
+        <Conditional Condition="lt 100" />
+        <Sound file="%ModDir%/weapons/配件/IEDtone1.ogg" range="800" selectionmode="Random" />
+        <Sound file="%ModDir%/weapons/配件/IEDtone2.ogg" range="800" />
+        <Sound file="%ModDir%/weapons/配件/IEDtone3.ogg" range="800" />
       </StatusEffect>
     </ItemComponent>
     <LightComponent LightColor="255,0,0,0" range="60" powerconsumption="0.0" IsOn="false" canbeselected="false" AllowInGameEditing="false">
-    <StatusEffect type="Always" target="This" condition="-10" checkconditionalalways="true" comparison="And">
-      <Conditional IsOn="true" />
-    </StatusEffect>
+      <StatusEffect type="Always" target="This" condition="-10" checkconditionalalways="true" comparison="And">
+        <Conditional IsOn="true" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true" delay="1">
+        <Remove />
+      </StatusEffect>
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="false" ElementStates="8, false">
-      <GuiFrame relativesize="0.2,0.15" anchor="CenterLeft" pivot="TopLeft" relativeoffset="0.006,0.006" style="ItemUI" />
-      <IntegerInput text="bomb.timer" targetitemcomponent="PowerContainer" propertyname="Charge" min="0" max="10" step="1" GetValueInterval="1"/>
+      <GuiFrame relativesize="0.1,0.1" anchor="CenterLeft" pivot="TopLeft" relativeoffset="0.006,0.006" style="ItemUI" />
+      <IntegerInput text="bomb.timer" targetitemcomponent="PowerContainer" propertyname="Charge" min="0" max="9" step="1" GetValueInterval="1" />
       <TickBox text="bomb.armed" connection="signal_out1" targetitemcomponent="LightComponent" propertyname="IsOn" ContinuousSignal="false" GetValueInterval="1" />
     </CustomInterface>
   </Item>

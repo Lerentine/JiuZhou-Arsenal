@@ -93,13 +93,7 @@
   </Talent>
   <Talent identifier="tsm_lightningwizard">
       <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,0" sheetelementsize="128,128"/>
-      <Description tag="talentdescription.electrochemist">
-        <Replace tag="[seconds]" value="10" color="gui.green"/>
-        <Replace tag="[powerreduction]" value="80" color="gui.green"/>
-        <Replace tag="[stunseconds]" value="4" color="gui.green"/>
-      </Description>
-      <Description tag="talentdescription.unlockrecipe">
-        <Replace tag="[itemname]" value="entityname.arcemitter" color="gui.orange"/>
+      <Description tag="talentdescription.tsm_lightningwizard">
       </Description>
       <AbilityGroupInterval interval="1">
         <Abilities>
@@ -141,7 +135,6 @@
           </CharacterAbilityApplyStatusEffects>
         </Abilities>
       </AbilityGroupEffect>
-      <AddedRecipe itemidentifier="arcemitter" />
   </Talent>
   <Talent identifier="tsm_ai_combat_ship">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,3" sheetelementsize="128,128"/>
