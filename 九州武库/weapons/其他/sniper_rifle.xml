@@ -1055,12 +1055,12 @@
       <StatusEffect type="OnUse" target="This">
         <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="3" scalemax="3" />
       </StatusEffect>
-      <RequiredItems items="tsm_86_mag" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredItems items="86_mag" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="85" />
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="tsm_86_mag" hide="false" itempos="-13,-5" depth="0.56" >
+      <Containable items="86_mag" hide="false" itempos="-13,-5" depth="0.56" >
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="25,-25" holdangle="80" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -1148,12 +1148,12 @@
       <StatusEffect type="OnUse" target="This">
         <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="3" scalemax="3" />
       </StatusEffect>
-      <RequiredItems items="tsm_86_mag" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredItems items="86_mag" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="85" />
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="tsm_86_mag" hide="false" itempos="-13,-5" depth="0.56" >
+      <Containable items="86_mag" hide="false" itempos="-13,-5" depth="0.56" >
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="25,-25" holdangle="80" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">

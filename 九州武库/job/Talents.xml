@@ -232,7 +232,7 @@
   </Talent>
   <Talent identifier="tsm_operator_revolt">
     <Icon texture="%ModDir%/job/skill_icon.png" sourcerect="177,163,119,120"/>
-    <Description tag="talentdescription.enrollintoclowncollege"/>
+    <Description tag="talentdescription.tsm_operator_revolt"/>
     <AbilityGroupInterval interval="0.9">
       <Conditions>
         <AbilityConditionHasItem tags="tsm_operator_revolt,tsm_riotshields_round,stunner" requireall="true"/>

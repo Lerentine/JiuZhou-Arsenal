@@ -339,9 +339,9 @@
   </Affliction>
   <!--暴乱挺进者-->
   <Affliction hideiconafterdelay="true" identifier="tsm_operator_revolt" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
-    <Effect minstrength="0" maxstrength="2" strengthchange="-1" resistancefor="stun" minresistance="0.00" maxresistance="0.4" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-1" resistancefor="stun,damage" minresistance="0.00" maxresistance="0.4" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
       <StatValue stattype="MovementSpeed" value="0.2" />
-      <StatValue stattype="AttackMultiplier" value="-0.6" />
+      <StatValue stattype="AttackMultiplier" value="-0.3" />
       <StatValue stattype="MeleeAttackSpeed" value="2.0" />
     </Effect>
   </Affliction>

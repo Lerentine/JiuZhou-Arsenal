@@ -330,11 +330,11 @@
     </Holdable>
     <ItemComponent characterusable="false">
       <StatusEffect type="OnBroken" target="This">
-        <Explosion range="300.0" force="5" ignoreCover="true" severlimbsprobability="8" penetration="1" ballastfloradamage="300" structuredamage="800" itemdamage="3000" debris="true">
-          <Affliction identifier="explosiondamage" strength="10"/>
+        <Explosion range="200.0" force="10" ignoreCover="true" severlimbsprobability="8" penetration="1" ballastfloradamage="300" structuredamage="800" itemdamage="3000" debris="true">
+          <Affliction identifier="explosiondamage" strength="20"/>
           <Affliction identifier="bleeding" strength="5"/>
           <Affliction identifier="burn" strength="5" />
-          <Affliction identifier="stun" strength="3" />
+          <Affliction identifier="stun" strength="10" />
         </Explosion>
       </StatusEffect>
     </ItemComponent>

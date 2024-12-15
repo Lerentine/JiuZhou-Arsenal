@@ -26,8 +26,8 @@
         <StatusEffect  type="OnUse" target="Character" SpeedMultiplier="0.3" setvalue="true" />
       </Holdable>
       <RangedWeapon reload="0.11" weapondamagemodifier="1" penetration="0.1" holdtrigger="true" barrelpos="205,35" spread="8" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
-        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,512,203,201" />
-        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,539,174,170" />
+        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4216,203,201" />
+        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,4243,174,170" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
         <StatusEffect type="OnUse" target="This" forceplaysounds="true">
           <Sound file="%ModDir%/weapons/奇迹之海/th.ogg" type="OnUse" range="3000" selectionmode="Random" />
@@ -133,8 +133,8 @@
         </StatusEffect>
       </Holdable>
       <RangedWeapon reload="0.01" weapondamagemodifier="1.9" holdtrigger="true" barrelpos="205,35" spread="4" unskilledspread="25" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.25">
-        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,512,203,201" />
-        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,539,174,170" />
+        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4216,203,201" />
+        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,4243,174,170" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
         <Sound file="%ModDir%/weapons/奇迹之海/gy1.ogg" type="OnUse" range="3000" selectionmode="Random" />
         <Sound file="%ModDir%/weapons/奇迹之海/gy2.ogg" type="OnUse" range="3000" />
@@ -250,8 +250,8 @@
         <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.82" setvalue="true" disabledeltatime="true" />
       </Wearable>
       <RangedWeapon reload="2" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="205,35" spread="0" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.2">
-        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,512,203,201" />
-        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="939,84,71,76" />
+        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4216,203,201" />
+        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,4243,174,170" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
         <Sound file="%ModDir%/weapons/奇迹之海/T8.ogg" type="OnUse" range="3000" />
         <StatusEffect type="OnUse" target="This">
@@ -362,8 +362,8 @@
         </StatusEffect>
       </Holdable>
       <RangedWeapon reload="0.1" weapondamagemodifier="1.25" holdtrigger="true" barrelpos="240,25" spread="7" unskilledspread="65" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.25">
-        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,512,203,201" />
-        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,539,174,170" />
+        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4216,203,201" />
+        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,4243,174,170" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
         <Sound file="%ModDir%/weapons/奇迹之海/zc1.ogg" type="OnUse" range="3000" selectionmode="Random" />
         <Sound file="%ModDir%/weapons/奇迹之海/zc2.ogg" type="OnUse" range="3000" />
@@ -478,8 +478,8 @@
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.45" setvalue="true"/>
       </Holdable>
       <RangedWeapon reload="0.1" weapondamagemodifier="1.25" holdtrigger="true" barrelpos="240,25" spread="7" unskilledspread="65" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.25">
-        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,512,203,201" />
-        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,539,174,170" />
+        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4216,203,201" />
+        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,4243,174,170" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
         <Sound file="%ModDir%/weapons/奇迹之海/zc1.ogg" type="OnUse" range="3000" selectionmode="Random" />
         <Sound file="%ModDir%/weapons/奇迹之海/zc2.ogg" type="OnUse" range="3000" />
@@ -595,8 +595,8 @@
         </StatusEffect>
       </Holdable>
       <RangedWeapon reload="0.25" weapondamagemodifier="1.6" penetration="0.1" holdtrigger="true" barrelpos="170,25" spread="5" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
-        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,512,203,201" />
-        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,539,174,170" />
+        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4216,203,201" />
+        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,4243,174,170" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
         <Sound file="%ModDir%/weapons/奇迹之海/fy1.ogg" type="OnUse" range="3000" selectionmode="Random" />
         <Sound file="%ModDir%/weapons/奇迹之海/fy3.ogg" type="OnUse" range="3000" />
@@ -715,8 +715,8 @@
         </StatusEffect>
       </Holdable>
       <RangedWeapon reload="0.25" weapondamagemodifier="1.6" penetration="0.1" holdtrigger="true" barrelpos="170,25" spread="5" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
-        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,512,203,201" />
-        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,539,174,170" />
+        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4216,203,201" />
+        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,4243,174,170" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
         <Sound file="%ModDir%/weapons/奇迹之海/fy1.ogg" type="OnUse" range="3000" selectionmode="Random" />
         <Sound file="%ModDir%/weapons/奇迹之海/fy3.ogg" type="OnUse" range="3000" />
@@ -842,8 +842,8 @@
       <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
        
       <RangedWeapon reload="0.085" weapondamagemodifier="1.25" penetration="0.1" holdtrigger="true" barrelpos="205,35" spread="7" unskilledspread="20" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.3">
-        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,512,203,201" />
-        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,539,174,170" />
+        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4216,203,201" />
+        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,4243,174,170" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
         <StatusEffect type="OnUse" target="This" forceplaysounds="true">
           <Sound file="%ModDir%/weapons/奇迹之海/791.ogg" type="OnUse" range="3000" selectionmode="Random" />
@@ -1705,8 +1705,8 @@
       </Wearable>
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
       <RangedWeapon singlechargedshot="true" weapondamagemodifier="2" minchargetime="1.0" maxchargetime="1.5" barrelpos="320,-5" spread="0" unskilledspread="40" combatPriority="10" drawhudwhenequipped="true" crosshairscale="0.4">
-        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,512,203,201" />
-        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="939,84,71,76" />
+        <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4216,203,201" />
+        <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,4243,174,170" />
         <Sound file="%ModDir%/weapons/奇迹之海/zltzq1.ogg" type="OnUse" range="3000" selectionmode="Random" />
         <Sound file="%ModDir%/weapons/奇迹之海/zltzq2.ogg" type="OnUse" range="3000" />
         <Sound file="%ModDir%/weapons/奇迹之海/zltzq3.ogg" type="OnUse" range="3000" />

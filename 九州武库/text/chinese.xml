@@ -16,7 +16,7 @@
  <talentdescription.tsm_lightningwizard>受到远程伤害时，会击晕攻击你的人</talentdescription.tsm_lightningwizard>
  <talentname.tsm_ai_stun>强力反应</talentname.tsm_ai_stun>
  <talentname.tsm_operator_revolt>暴乱挺进</talentname.tsm_operator_revolt>
- <talentdescription.tsm_operator_revolt>当你身着暴乱挺进者防护服，手持电棍和圆形防爆盾时，增加‖color:0,0,150,255‖40%眩晕抗性‖color:end‖、‖color:0,0,150,255‖20%移速‖color:end‖、‖color:0,0,150,255‖200%近战攻击速度‖color:end‖以及减少‖color:150,0,0,255‖60%攻击伤害‖color:end‖</talentdescription.tsm_operator_revolt>
+ <talentdescription.tsm_operator_revolt>当你身着暴乱挺进者防护服，手持电棍和圆形防爆盾时，增加‖color:0,0,150,255‖40%眩晕和物理伤害抗性‖color:end‖、‖color:0,0,150,255‖20%移速‖color:end‖、‖color:0,0,150,255‖200%近战攻击速度‖color:end‖以及减少‖color:150,0,0,255‖30%攻击伤害‖color:end‖</talentdescription.tsm_operator_revolt>
 <!--伤害类型-->
 
  <afflictionname.triton_7L>变革</afflictionname.triton_7L>
@@ -225,8 +225,8 @@
   <entityname.tsm_jz_m57detonator>C4起爆器</entityname.tsm_jz_m57detonator>
   <entitydescription.tsm_jz_m57detonator>用于引爆C4炸药，你只需要按下按钮，剩下的交给C4</entitydescription.tsm_jz_m57detonator>
 
-  <entityname.tsm_c2>C2炸药</entityname.tsm_c2>
-  <entitydescription.tsm_c2>向头疼的结构说再见吧</entitydescription.tsm_c2>
+  <entityname.tsm_c2>C2破拆炸药</entityname.tsm_c2>
+  <entitydescription.tsm_c2>一种用于反恐行动中破门而入的惰性炸药，能够炸开掩体后让敌人晕头转向而不致命</entitydescription.tsm_c2>
 
   <entityname.tsm_fs_backpack>支援呼叫背包</entityname.tsm_fs_backpack>
   <entitydescription.tsm_fs_backpack>用于传递支援信号\n和手持支援指示器搭配使用，一人背背包，一人手持指示器进行标记</entitydescription.tsm_fs_backpack>
@@ -1176,7 +1176,7 @@
   <entitydescription.tsm_qbu10>搭载热成像智能瞄具，对于躲藏在潜艇内的目标也将无处遁行，由于其保密性只会在最为艰巨的任务出现暗中一击必杀斩首目标,使用‖color:150,0,0,255‖12.7*99‖color:end‖口径狙击枪子弹</entitydescription.tsm_qbu10>
 
   <entityname.tsm_qlu11>原型QLU-11狙击榴弹发射器</entityname.tsm_qlu11>
-  <entitydescription.tsm_qlu11>使用‖color:150,0,0,255‖狙击榴弹弹鼓‖color:end‖的原型武器，目前口径最大的“枪”，不同与普通榴弹发射器，经过狙击枪更高的膛压和特质穿甲榴弹，甚至能够穿透潜艇外壳轰碎目标，搭载集成式热成像火控系统让射速更能看清目标</entitydescription.tsm_qlu11>
+  <entitydescription.tsm_qlu11>使用‖color:150,0,0,255‖狙击榴弹弹鼓‖color:end‖的原型武器，目前口径最大的“枪”，不同与普通榴弹发射器，经过狙击枪更高的膛压和特质穿甲榴弹，甚至能够穿透潜艇外壳轰碎目标，搭载集成式热成像火控系统让射手更能看清目标</entitydescription.tsm_qlu11>
 
   <entityname.tsm_mg42>MG42通用机枪</entityname.tsm_mg42>
   <entitydescription.tsm_mg42>已被欧罗巴公约禁止生产的重机枪，其恐怖的射速发出的声音早在地球时期就被誉为独裁者电锯，使用‖color:150,0,0,255‖7.92 MG42弹鼓‖color:end‖，疯狂的初速与穿透力使得敌人的任何掩体都变得可笑，唯一不足在于续航能力差</entitydescription.tsm_mg42>

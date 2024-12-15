@@ -2906,8 +2906,8 @@
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <RangedWeapon reload="0.11" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="250,20" spread="11" unskilledspread="40" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="24,3083,222,136" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="307,3013,197,199" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="307,3013,197,199" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="24,3083,222,136" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
         <Sound file="%ModDir%/weapons/木卫二联盟/556_2.ogg" type="OnUse" range="3000" />
@@ -4283,8 +4283,8 @@
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <RangedWeapon reload="0.1" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="200,30" spread="6" unskilledspread="50" combatPriority="89" drawhudwhenequipped="true" crosshairscale="0.2">
       <!--准星图标-->
-      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4469,241,243" />
-      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="336,4520,176,175" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="336,4520,176,175" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,4469,241,243" />
       <!--枪口火焰-->
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <!--枪声-->
@@ -5192,7 +5192,7 @@
   </Item>
   <!--机枪-->
   <!--M249-->
-  <Item name="M249" identifier="tsm_lm_m249" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,lm_gun,provocativetohumanai,bulkyweapon" Scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="M249" identifier="tsm_lm_m249" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" Scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.15" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.12" />
@@ -5329,7 +5329,7 @@
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
   <!--mk48-->
-  <Item name="MK48" identifier="tsm_lm_mk48" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,lm_gun,m60_item,provocativetohumanai,bulkyweapon" Scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="MK48" identifier="tsm_lm_mk48" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,m60_item,provocativetohumanai,bulkyweapon" Scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="43" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="50" />
@@ -5458,7 +5458,7 @@
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
   <!--M240B-->
-  <Item name="M240B" identifier="tsm_lm_m240b" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,lm_gun,m60_item,provocativetohumanai,bulkyweapon" Scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="M240B" identifier="tsm_lm_m240b" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,m60_item,provocativetohumanai,bulkyweapon" Scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="43" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="50" />
@@ -5483,8 +5483,8 @@
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
     <RangedWeapon reload="0.1" weapondamagemodifier="1.0" holdtrigger="true" barrelpos="200,20" spread="30" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="307,3237,199,198" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="24,3230,220,219" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="307,3237,199,198" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="24,3230,220,219" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="true">
         <Sound file="%ModDir%/weapons/木卫二联盟/mec_1.ogg" type="OnUse" range="3000" />
@@ -5588,7 +5588,7 @@
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
   <!--M60E6-->
-  <Item name="M60E6" identifier="tsm_lm_m60e6" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,lm_gun,provocativetohumanai,bulkyweapon" Scale="0.24" impactsoundtag="impact_metal_light">
+  <Item name="M60E6" identifier="tsm_lm_m60e6" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" Scale="0.24" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="43" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="50" />
@@ -5724,7 +5724,7 @@
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
   <!--XM250-->
-  <Item name="XM250" identifier="tsm_lm_xm250" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,lm_gun,provocativetohumanai,bulkyweapon" Scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="XM250" identifier="tsm_lm_xm250" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" Scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="43" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="50" />
@@ -5977,7 +5977,7 @@
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
   <!--m1014-->
-  <Item name="M1014" identifier="tsm_m1014" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,tsm_gun,gun,stunner,gunsmith,mountableweapon,lm_gun,provocativetohumanai" Scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="M1014" identifier="tsm_m1014" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,stunner,gunsmith,mountableweapon,lm_gun,provocativetohumanai" Scale="0.25" impactsoundtag="impact_metal_light">
     <Price baseprice="512" soldeverywhere="false" buyingpricemultiplier="5">
       <Price locationtype="city" minavailable="1" />
       <Price locationtype="research" sold="false" />
@@ -6042,7 +6042,7 @@
     <SkillRequirementHint identifier="weapons" level="40" />
   </Item>
   <!--KSG-->
-  <Item name="ksg" identifier="tsm_ksg" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,tsm_gun,gun,stunner,gunsmith,mountableweapon,lm_gun,provocativetohumanai" Scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="ksg" identifier="tsm_ksg" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,stunner,gunsmith,mountableweapon,lm_gun,provocativetohumanai" Scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" spawnprobability="0.1" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40">
@@ -6134,7 +6134,7 @@
     <SkillRequirementHint identifier="weapons" level="45" />
   </Item>
   <!--DP-12-->
-  <Item name="DP-12" identifier="tsm_lm_dp12" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,tsm_gun,gun,stunner,gunsmith,mountableweapon,lm_gun,provocativetohumanai" Scale="0.22" impactsoundtag="impact_metal_light">
+  <Item name="DP-12" identifier="tsm_lm_dp12" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,stunner,gunsmith,mountableweapon,lm_gun,provocativetohumanai" Scale="0.22" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" spawnprobability="0.1" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40">
@@ -6228,7 +6228,7 @@
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
   <!--SPAS-12-->
-  <Item name="SPAS-12" identifier="tsm_lm_spas12" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,tsm_gun,gun,stunner,gunsmith,mountableweapon,lm_gun,provocativetohumanai" Scale="0.22" impactsoundtag="impact_metal_light">
+  <Item name="SPAS-12" identifier="tsm_lm_spas12" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,stunner,gunsmith,mountableweapon,lm_gun,provocativetohumanai" Scale="0.22" impactsoundtag="impact_metal_light">
     <!--Price baseprice="512" soldeverywhere="false" buyingpricemultiplier="5">
       <Price locationtype="city" minavailable="1" />
       <Price locationtype="research" sold="false" />
@@ -6293,70 +6293,7 @@
     </ItemContainer>
     <SkillRequirementHint identifier="weapons" level="40" />
   </Item>
-  <!--KS-23-->
-  <Item name="KS-23" identifier="tsm_lm_ks23" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,tsm_gun,gun,stunner,gunsmith,mountableweapon,lm_gun,provocativetohumanai" Scale="0.22" impactsoundtag="impact_metal_light">
-    <!--Price baseprice="512" soldeverywhere="false" buyingpricemultiplier="5">
-      <Price locationtype="city" minavailable="1" />
-      <Price locationtype="research" sold="false" />
-      <Price locationtype="military" minavailable="1" />
-    </Price-->
-    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Price baseprice="2818" sold="true" canbespecial="false" />
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40">
-      <RequiredSkill identifier="weapons" level="30" />
-      <Item identifier="tsm_lm_weaponbox" amount="1" />
-      <Item identifier="tsm_hpc" amount="1" />
-      <Item identifier="tsm_kore" amount="1" />
-      <Item identifier="tsm_yx_crystallography" amount="1" />
-      <Item identifier="shotgununique" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="tsm_lm_weaponbox" amount="0.5" />
-    </Deconstruct>
-    <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2343,2763,144,180" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1227,2628,436,89" depth="0.56" origin="0.5,0.5" />
-    <Body width="420" height="75" density="35" />
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="25,-20" aimpos="70,0" handle1="-140,-10" handle2="50,5" holdangle="40" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.86" setvalue="true" />
-      <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.83" setvalue="true" />
-      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true"/>
-    </Holdable>
-    <RangedWeapon weapondamagemodifier="1" barrelpos="150,20" spread="1" unskilledspread="10" combatPriority="85" reload="0.75" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <ParticleEmitter particle="spark" particlespersecond="3" anglemin="-20" anglemax="20" velocitymin="100" velocitymax="800" />
-      <Sound file="%ModDir%/weapons/木卫二联盟/ks23.ogg" type="OnUse" target="This" range="3000" />
-      <StatusEffect type="OnUse" target="This">
-        <Explosion range="150.0" force="1" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="25" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" target="This" delay="0.2">
-        <ParticleEmitter particle="casingfirearm" colormultiplier="0.5,0.5,0.5,1" ScaleMultiplier="1.5,1.5" particleamount="1" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
-      </StatusEffect>
-      <RequiredItems items="tsm_shotgunammo_4" type="Contained" msg="ItemMsgAmmoRequired" />
-      <RequiredSkill identifier="weapons" level="40" />
-    </RangedWeapon>
-    <aitarget sightrange="2300" soundrange="3500" fadeouttime="6" />
-    <Quality>
-      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
-    </Quality>
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    <ItemContainer capacity="1" maxstacksize="4" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0" containedspritedepth="0.56">
-      <Containable items="tsm_shotgunammo_4" hide="true">
-        <!--换弹-->
-        <StatusEffect type="OnInserted" target="This" holdpos="0,-30" holdangle="60" maxchargetime="999" setvalue="true"/>
-        <StatusEffect type="OnInserted" target="This" setvalue="true">
-          <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/shotgun_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
-        </StatusEffect>
-        <StatusEffect target="This" holdpos="25,-20" holdangle="40" disabledeltatime="true" checkconditionalalways="true" delay="1.2" maxchargetime="0" setvalue="true">
-          <conditional maxchargetime="eq 999"/>
-        </StatusEffect>
-      </Containable>
-      <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-    </ItemContainer>
-    <SkillRequirementHint identifier="weapons" level="40" />
-  </Item>
+
   <!--子弹-->
   <!--普通5.56弹药-->
   <Item name="5.56*45" identifier="pt556*45" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
