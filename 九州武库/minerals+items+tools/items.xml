@@ -650,7 +650,7 @@
       </StatusEffect>
     </Holdable>
   </Item>
-  <Item name="大型防弹面罩" identifier="tsm_ballistic_faceshield_big" category="Material" subcategory="TSM" Tags="smallitem" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.15" impactsoundtag="impact_metal_light">
+  <Item name="大型防弹面罩" identifier="tsm_ballistic_faceshield_big" category="Material" subcategory="TSM" Tags="smallitem" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
     <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.03" />
     <PreferredContainer primary="storagecab" />
     <Price baseprice="215">
@@ -680,7 +680,7 @@
       </StatusEffect>
     </Holdable>
   </Item>
-  <Item name="小型防弹面罩" identifier="tsm_ballistic_faceshield_small" category="Material" subcategory="TSM" Tags="smallitem" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.15" impactsoundtag="impact_metal_light">
+  <Item name="小型防弹面罩" identifier="tsm_ballistic_faceshield_small" category="Material" subcategory="TSM" Tags="smallitem" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
     <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.03" />
     <PreferredContainer primary="storagecab" />
     <Price baseprice="275">
@@ -710,7 +710,28 @@
       </StatusEffect>
     </Holdable>
   </Item>
-  <Item name="头盔用护颚" identifier="tsm_protective_jaw" category="Material" subcategory="TSM" Tags="smallitem" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.15" impactsoundtag="impact_metal_light">
+  <Item name="未穿透" identifier="tsm_collider_head" subcategory="TSM" damagedbyprojectiles="true" hideinmenus="true" scale="0.5">
+    <Sprite texture="%ModDir%/weapons/其他/近战.png" sourcerect="0,0,5,5" origin="0.5,0.5" />
+    <Body radius="50" bodytype="Static"/>
+    <ItemComponent>
+      <StatusEffect type="OnSpawn" target="This" delay="0.02" >
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnDamaged" target="This">
+        <Explosion range="30.0" force="1" camerashake="6.0" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false">
+          <Affliction identifier="tsm_ondamaged_head" strength="1" />
+        </Explosion>
+        <particleemitter particle="weldspark" particlespersecond="100" scalemin="0.45" scalemax="0.7" anglemin="-180" anglemax="180" velocitymin="200" velocitymax="1000" distancemin="1" distancemax="10" />
+        <Sound file="%ModDir%/ogg/sword_impact.ogg" selectionmode="random" range="2000" />
+        <Sound file="%ModDir%/ogg/sword_impact_1.ogg" range="2000" />
+        <Sound file="%ModDir%/ogg/sword_impact_2.ogg" range="2000" />
+        <Sound file="%ModDir%/ogg/sword_impact_3.ogg" range="2000" />
+        <Sound file="%ModDir%/ogg/sword_impact_4.ogg" range="2000" />
+        <Sound file="%ModDir%/ogg/sword_impact_5.ogg" range="2000" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="头盔用护颚" identifier="tsm_protective_jaw" category="Material" subcategory="TSM" Tags="smallitem" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
     <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.03" />
     <PreferredContainer primary="storagecab" />
     <Price baseprice="301" minleveldifficulty="20">

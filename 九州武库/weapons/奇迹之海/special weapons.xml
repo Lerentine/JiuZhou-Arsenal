@@ -74,7 +74,7 @@
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="10" />
     </Price>
     <Deconstruct time="5" />
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="15" amount="8">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="15" amount="8">
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="carbon" />
       <RequiredItem identifier="iron" />
@@ -120,7 +120,7 @@
     </Price>
     <Deconstruct time="5">
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" amount="5">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" amount="5">
       <RequiredSkill identifier="weapons" level="25" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="tsm_sulphur" />
@@ -168,7 +168,7 @@
       <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
       <sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="262,363,172,14" alpha="1" />
     </LightComponent>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="false" amount="8">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="8">
       <RequiredItem identifier="magnesium" amount="2" />
       <RequiredItem identifier="aluminium" amount="2" />
     </Fabricate>
@@ -208,7 +208,7 @@
       <Item identifier="iron" />
     </Deconstruct>
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" amount="5">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" amount="5">
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="iron" amount="2" />
       <RequiredItem identifier="uex" />
@@ -433,13 +433,13 @@
     <Item identifier="steel" />
     <Item identifier="uranium" mincondition="0.95"/>
   </Deconstruct>
-  <Fabricate suitablefabricators="fabricator" requiredtime="5">
+  <Fabricate suitablefabricators="fabricator,tsm_fabricator_ammo" requiredtime="5">
     <RequiredSkill identifier="electrical" level="25" />
     <RequiredItem identifier="uranium" />
     <RequiredItem identifier="steel" />
     <RequiredItem identifier="lead" />
   </Fabricate>
-  <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="5">
+  <Fabricate suitablefabricators="fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5">
     <RequiredSkill identifier="electrical" level="15" />
     <RequiredItem identifier="uranium" />
     <RequiredItem identifier="tsm_redemption_RestraintBox" mincondition="0.0" maxcondition="0.0" usecondition="false"/>

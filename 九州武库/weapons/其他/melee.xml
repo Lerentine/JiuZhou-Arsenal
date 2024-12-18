@@ -200,7 +200,7 @@
       <!--作战范围,声音-->
     </Item>
     <!--碰撞检测器-->
-    <Item name="格挡" identifier="collider_sword" damagedbyprojectiles="true" hideinmenus="true">
+    <Item name="格挡" identifier="collider_sword" subcategory="TSM" damagedbyprojectiles="true" hideinmenus="true">
       <Sprite texture="%ModDir%/weapons/其他/近战.png" sourcerect="0,0,1,1" origin="0.5,0.5" />
       <Body radius="60" bodytype="Static" />
       <ItemComponent>
@@ -481,7 +481,7 @@
         <QualityStat stattype="Condition" value="0.1" />
       </Quality>
     </Item>
-    <Item name="幻象" identifier="hxl_knife" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool,provocativetohumanai" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Item name="幻象" identifier="hxl_knife" subcategory="TSM" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool,provocativetohumanai" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_metal_light" RequireAimToUse="True">
       <InventoryIcon texture="%ModDir:2852411866%/npc/hxl/hxl_weapons.png" sourcerect="1,92,103,103" origin="0.5,0.5" />
       <Sprite texture="%ModDir:2852411866%/npc/hxl/hxl_weapons.png" sourcerect="7,0,201,47" depth="0.55" origin="0.5,0.5" />
       <Body width="200" height="40" density="25" />
@@ -508,7 +508,7 @@
       </Quality>
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="热能刀" identifier="tsm_thermal_knife" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool,provocativetohumanai" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Item name="热能刀" identifier="tsm_thermal_knife" subcategory="TSM" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool,provocativetohumanai" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_metal_light" RequireAimToUse="True">
       <InventoryIcon texture="%ModDir%/weapons/其他/近战.png" sourcerect="1841,266,158,157" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/近战.png" sourcerect="1194,386,411,114" depth="0.55" origin="0.5,0.5" />
       <Deconstruct time="10">

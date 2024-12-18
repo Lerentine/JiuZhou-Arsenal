@@ -2,13 +2,11 @@
 <Randomevents>
   <EventPrefabs>
     <ScriptedEvent identifier="tsm_openblindbox_lm">
-      <TagAction criteria="player" tag="player" />
-      <SpawnAction ItemTag="lm_gun" TargetTag="lm_gun" targetinventory="player" />
+      <SpawnAction ItemTag="lm_gun" TargetTag="lm_gun" targetinventory="itemusingplayer" />
       <RNGAction Chance="0.5">
         <Success>
           <RNGAction Chance="0.5">
-            <Success>
-            </Success>
+            <Success></Success>
             <Failure>
               <StatusEffectAction TargetTag="lm_gun">
                 <StatusEffect target="This" TargetItemComponent="Quality" quality="1" setValue="true" />
@@ -33,13 +31,11 @@
       </RNGAction>
     </ScriptedEvent>
     <ScriptedEvent identifier="tsm_openblindbox_fkj">
-      <TagAction criteria="player" tag="player" />
-      <SpawnAction ItemTag="fkj_gun" TargetTag="fkj_gun" targetinventory="player" />
+      <SpawnAction ItemTag="fkj_gun" TargetTag="fkj_gun" targetinventory="itemusingplayer" />
       <RNGAction Chance="0.5">
         <Success>
           <RNGAction Chance="0.5">
-            <Success>
-            </Success>
+            <Success></Success>
             <Failure>
               <StatusEffectAction TargetTag="fkj_gun">
                 <StatusEffect target="This" TargetItemComponent="Quality" quality="1" setValue="true" />
@@ -64,13 +60,11 @@
       </RNGAction>
     </ScriptedEvent>
     <ScriptedEvent identifier="tsm_openblindbox_tsm">
-      <TagAction criteria="player" tag="player" />
-      <SpawnAction ItemTag="tsm_gun" TargetTag="tsm_gun" targetinventory="player" />
+      <SpawnAction ItemTag="tsm_gun" TargetTag="tsm_gun" targetinventory="itemusingplayer" />
       <RNGAction Chance="0.5">
         <Success>
           <RNGAction Chance="0.5">
-            <Success>
-            </Success>
+            <Success></Success>
             <Failure>
               <StatusEffectAction TargetTag="tsm_gun">
                 <StatusEffect target="This" TargetItemComponent="Quality" quality="1" setValue="true" />

@@ -14,6 +14,18 @@
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,94,91" color="255,255,255,255" origin="0,0" />
   </Affliction>
 
+
+    <Affliction name="检测受击" identifier="tsm_ondamaged" type="tsm_ondamaged" isbuff="true" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="100" maxstrength="1" Duration="5.0" hideiconafterdelay="true" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="1" >
+            <StatusEffect type="OnDamaged" target="Character">
+                <Affliction identifier="tsm_ondamaged_head" strength="1" />
+            </StatusEffect>
+        </Effect>
+    </Affliction>
+    <Affliction name="检测受击减少耐久" identifier="tsm_ondamaged_head" type="tsm_ondamaged" isbuff="true" limbspecific="false" indicatorlimb="Torso" showiconthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="2" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="2" strengthchange="-1" />
+    </Affliction>
+
   <Affliction name="三神丘辅助系统" description="" type="tsm_kep_buff" identifier="tsm_kep_buff" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="25">
     <Effect minstrength="0" maxstrength="5" strengthchange="-0.5" >
     </Effect>
@@ -667,9 +679,9 @@
   </Affliction>
   <Affliction identifier="tsm_barrel_silencers_buff" description="" isbuff="true" type="barrel" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
     <Effect minstrength="0" maxstrength="1" strengthchange="-1">
-       <StatValue stattype="SoundRangeMultiplier" value="-1.0" />
+       <StatValue stattype="SoundRangeMultiplier" value="-0.6" />
        <StatValue stattype="RangedSpreadReduction" value="0.05" />
-       <StatValue stattype="MovementSpeed" value="-0.02" />
+       <StatValue stattype="RangedAttackSpeed" value="-0.02" />
     </Effect>
   </Affliction>
   <Affliction identifier="tsm_barrel2_buff" description="" isbuff="true" type="barrel" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">

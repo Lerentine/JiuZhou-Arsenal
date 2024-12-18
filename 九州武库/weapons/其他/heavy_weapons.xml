@@ -238,7 +238,7 @@
       <Item identifier="iron"/>
       <Item identifier="aluminium"/>
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10">
       <RequiredSkill identifier="weapons" level="30"/>
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem identifier="iron"/>
@@ -280,7 +280,7 @@
 	<Deconstruct time="5">
       <Item identifier="uex"/>
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10">
       <RequiredItem identifier="uex" amount="2" />
       <RequiredItem identifier="plastic" />
       <RequiredItem identifier="flashpowder" amount="2"/>
@@ -321,7 +321,7 @@
 	<Deconstruct time="5">
       <Item identifier="uex"/>
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10">
       <RequiredItem identifier="uex" amount="1" />
       <RequiredItem identifier="plastic" />
       <RequiredItem identifier="flashpowder" />
@@ -431,7 +431,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="10,-40" holdangle="80" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_4_7.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_4_7.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="50,-60" aimpos="75,-5" handle1="-120,-30" handle2="60,0" holdangle="40" disabledeltatime="true" checkconditionalalways="true" delay="4.7" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -466,14 +466,14 @@
       <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="8" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="8" requiresrecipe="false">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem identifier="tsm_oilshale" amount="2" />
       <RequiredItem identifier="physicorium" amount="1" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="8">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="8">
       <RequiredItem identifier="tsm_mg42_mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_oilshale" amount="1" />
       <RequiredItem identifier="physicorium" amount="1" />
@@ -512,7 +512,7 @@
         <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="8" />
       </Price>
       <Deconstruct time="1" />
-      <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" amount="2">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="2">
         <RequiredSkill identifier="weapons" level="30" />
         <RequiredItem identifier="iron" />
         <RequiredItem identifier="uex" />
@@ -562,7 +562,7 @@
         <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="8" />
       </Price>
       <Deconstruct time="1" />
-      <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" amount="2">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="2">
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem identifier="flashpowder" amount="1" />

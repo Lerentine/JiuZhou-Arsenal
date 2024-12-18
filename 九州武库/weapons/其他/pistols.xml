@@ -34,7 +34,7 @@
           <StatusEffect type="OnInserted" target="This" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
           <StatusEffect target="This" disabledeltatime="true" checkconditionalalways="true" delay="0.5" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
@@ -85,7 +85,7 @@
           <StatusEffect type="OnInserted" target="This" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
           <StatusEffect target="This" disabledeltatime="true" checkconditionalalways="true" delay="0.65" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
@@ -141,7 +141,7 @@
           <StatusEffect type="OnInserted" target="This" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
           <StatusEffect target="This" disabledeltatime="true" checkconditionalalways="true" delay="0.75" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
@@ -204,7 +204,7 @@
           <StatusEffect type="OnInserted" target="This" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
           <StatusEffect target="This" disabledeltatime="true" checkconditionalalways="true" delay="0.8" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
@@ -228,7 +228,7 @@
         <!--5.枪口/枪管-->
         <SubContainer capacity="1" maxstacksize="1">
           <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="509,148,100,27" origin="0.45,0.5" />
-          <Containable items="barrel_pistols" hide="false" itempos="27,10" containedspritedepth="0.51" Scale="0.20" setactive="true" />
+          <Containable items="barrel_pistols" hide="false" itempos="26,10" containedspritedepth="0.51" Scale="0.20" setactive="true" />
         </SubContainer>
       </ItemContainer>
       <aitarget sightrange="4500" soundrange="6000" fadeouttime="10" />
@@ -278,7 +278,7 @@
           <StatusEffect type="OnInserted" target="This" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
           <StatusEffect target="This" disabledeltatime="true" checkconditionalalways="true" delay="0.85" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
@@ -338,7 +338,7 @@
           <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="15,-25" holdangle="60" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_2_0.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_2_0.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
           <StatusEffect target="This" disabledeltatime="true" holdpos="50,0" aimpos="50,0" handle1="-10,-18" handle2="42,10" holdangle="-35" checkconditionalalways="true" delay="2" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
@@ -431,7 +431,7 @@
           <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="15,-30" holdangle="80" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_1_6.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_1_6.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
           <StatusEffect target="This" disabledeltatime="true" holdpos="55,-3" aimpos="55,-3" handle1="-82,-18" handle2="42,10" holdangle="-35" checkconditionalalways="true" delay="1.6" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
@@ -528,7 +528,7 @@
           <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="35,-25" holdangle="55" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_1_6.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_1_6.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
           <StatusEffect target="This" disabledeltatime="true" holdpos="48,0" aimpos="48,0" handle1="-25,-18" handle2="42,10" holdangle="-35" checkconditionalalways="true" delay="1.6" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
@@ -571,13 +571,17 @@
         </StatusEffect>
       </Holdable>
       <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
-      
       <RangedWeapon reload="0.08" weapondamagemodifier="1" holdtrigger="true" barrelpos="150,20" spread="8" unskilledspread="20" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="307,3237,199,198" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="24,3230,220,219" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
-        <StatusEffect type="OnUse" target="This" forceplaysounds="true">
+        <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
+          <RequiredItem items="1" matchonempty="true" type="Contained" targetslot="2"/>
           <Sound file="%ModDir%/weapons/其他/p90.ogg" type="OnUse" range="3000" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
+          <RequiredItem items="tsm_pistols_silencers" type="Contained" targetslot="2"/>
+          <Sound file="%ModDir%/weapons/其他/xy4.ogg" type="OnUse" range="3000" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This">
           <!--后坐力,屏幕抖动-->
@@ -617,7 +621,6 @@
           <Conditional spread="lt 8" />
           <Conditional CanRun="false" />
         </StatusEffect>
-
         <StatusEffect type="Always" target="This" unskilledspread="-10">
           <Conditional unskilledspread="gt 13" />
           <Conditional HasStatusTag="tsm_sight_holographic" />
@@ -658,7 +661,7 @@
           <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="50,5" holdangle="-55" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_2_0.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_2_0.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
           <StatusEffect target="This" disabledeltatime="true" holdpos="43,3" aimpos="43,3" handle1="10,-18" handle2="50,10" holdangle="-35" checkconditionalalways="true" delay="2.0" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
@@ -672,6 +675,10 @@
         <SubContainer capacity="1" maxstacksize="1">
           <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
           <Containable items="sighting" hide="false" itempos="18,18" depth="0.56" setactive="true" />
+        </SubContainer>
+        <SubContainer capacity="1" maxstacksize="1">
+          <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="517,220,82,22" origin="0.45,0.5" />
+          <Containable items="barrel_pistols" hide="false" itempos="41,1" containedspritedepth="0.51" Scale="0.20" setactive="true" />
         </SubContainer>
       </ItemContainer>
       <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
@@ -800,7 +807,7 @@
           <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="20,-20" holdangle="50" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_1_6.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_1_6.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
           <StatusEffect target="This" disabledeltatime="true" holdpos="40,0" holdangle="-35" checkconditionalalways="true" delay="1.6" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
@@ -817,7 +824,7 @@
         </SubContainer>
         <SubContainer capacity="1" maxstacksize="1">
           <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="517,220,82,22" origin="0.45,0.5" />
-          <Containable items="barrel_pistols" hide="false" itempos="35,4" containedspritedepth="0.51" Scale="0.20" setactive="true" />
+          <Containable items="barrel_pistols" hide="false" itempos="32,4" containedspritedepth="0.51" Scale="0.20" setactive="true" />
         </SubContainer>
       </ItemContainer>
       <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
@@ -943,7 +950,7 @@
           <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="20,-20" holdangle="50" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_1_6.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_1_6.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
           <StatusEffect target="This" disabledeltatime="true" holdpos="40,0" holdangle="-35" checkconditionalalways="true" delay="1.6" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
@@ -960,7 +967,7 @@
         </SubContainer>
         <SubContainer capacity="1" maxstacksize="1">
           <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="517,220,82,22" origin="0.45,0.5" />
-          <Containable items="barrel_pistols" hide="false" itempos="45,4" containedspritedepth="0.51" Scale="0.20" setactive="true" />
+          <Containable items="barrel_pistols" hide="false" itempos="42,4" containedspritedepth="0.51" Scale="0.20" setactive="true" />
         </SubContainer>
       </ItemContainer>
       <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
@@ -1058,7 +1065,7 @@
           <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="10,-40" holdangle="70" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_0_85.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_0_85.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
           <StatusEffect target="This" disabledeltatime="true" holdpos="50,0" aimpos="50,0" handle1="-20,-12" handle2="42,10" holdangle="-35" checkconditionalalways="true" delay="1" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
@@ -1075,7 +1082,7 @@
         </SubContainer>
         <SubContainer capacity="1" maxstacksize="1">
           <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="517,220,82,22" origin="0.45,0.5" />
-          <Containable items="barrel_pistols" hide="false" itempos="47,2" containedspritedepth="0.51" Scale="0.20" setactive="true" />
+          <Containable items="barrel_pistols" hide="false" itempos="45,2" containedspritedepth="0.51" Scale="0.20" setactive="true" />
         </SubContainer>
       </ItemContainer>
       <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
@@ -1089,12 +1096,12 @@
       <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2201,889,67,111" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2201,889,67,111" depth="0.56" origin="0.5,0.5" />
       <Body width="47" height="92" density="40" />
-      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="6" amount="3">
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="6" amount="3">
         <RequiredItem identifier="plastic" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
       </Fabricate>
-      <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5" amount="1">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5" amount="1">
         <RequiredItem tag="tsm_9_smgmag" mincondition="0.0" maxcondition="0.0" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
@@ -1115,13 +1122,13 @@
       <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2178,751,67,111" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2178,751,67,111" depth="0.56" origin="0.5,0.5" />
       <Body width="47" height="92" density="40" />
-      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="6" amount="3">
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="6" amount="3">
         <RequiredItem identifier="plastic" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
         <RequiredItem identifier="tsm_tungsten" amount="3" />
       </Fabricate>
-      <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5" amount="1">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5" amount="1">
         <RequiredItem tag="tsm_9_smgmag" mincondition="0.0" maxcondition="0.0" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
@@ -1143,12 +1150,12 @@
       <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2282,884,82,139" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2282,884,82,139" depth="0.56" origin="0.5,0.5" />
       <Body width="47" height="92" density="40" />
-      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="6" amount="2">
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="6" amount="2">
         <RequiredItem identifier="plastic" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="3" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
       </Fabricate>
-      <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5" amount="1">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5" amount="1">
         <RequiredItem tag="tsm_9_smgmag" mincondition="0.0" maxcondition="0.0" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="1" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="1" />
@@ -1169,12 +1176,12 @@
       <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2390,880,96,131" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2390,880,96,131" depth="0.56" origin="0.5,0.5" />
       <Body width="47" height="92" density="40" />
-      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="6" amount="1">
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="6" amount="1">
         <RequiredItem identifier="plastic" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
       </Fabricate>
-      <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5" amount="1">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5" amount="1">
         <RequiredItem tag="tsm_9_smgmag" mincondition="0.0" maxcondition="0.0" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="2" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="2" />
@@ -1195,12 +1202,12 @@
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="680,43,47,90" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="680,43,47,90" depth="0.56" origin="0.5,0.5" />
       <Body width="47" height="90" density="40" />
-      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="6" amount="2">
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="6" amount="2">
         <RequiredItem identifier="plastic" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
       </Fabricate>
-      <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6" amount="1">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6" amount="1">
         <RequiredItem tag="tsm_58_smgmag" mincondition="0.0" maxcondition="0.0" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
@@ -1221,13 +1228,13 @@
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="911,568,73,107" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="911,568,73,107" depth="0.56" origin="0.5,0.5" />
       <Body width="65" height="95" density="10" />
-      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="10" amount="1">
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
         <RequiredItem identifier="plastic" amount="1" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
         <RequiredItem identifier="tsm_tungsten" amount="2" />
       </Fabricate>
-      <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5" amount="1">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5" amount="1">
         <RequiredItem tag="tsm_57_smgmag" mincondition="0.0" maxcondition="0.0" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="1" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="1" />
@@ -1249,13 +1256,13 @@
     <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="780,710,34,98" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="780,710,34,98" depth="0.61" origin="0.5,0.5" />
     <Body width="25" height="85" density="10" />
-    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="10" amount="2">
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="10" amount="2">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
       <RequiredItem identifier="tsm_tungsten" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5" amount="1">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5" amount="1">
       <RequiredItem tag="tsm_46_smgmag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="1" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="1" />
@@ -1277,13 +1284,13 @@
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="863,11,51,130" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="863,11,51,130" depth="0.56" origin="0.5,0.5" />
       <Body width="65" height="95" density="10" />
-      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="10" amount="2">
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="10" amount="2">
         <RequiredItem identifier="plastic" amount="2" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
         <RequiredItem identifier="tsm_tungsten" amount="2" />
       </Fabricate>
-      <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5" amount="1">
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5" amount="1">
         <RequiredItem identifier="tsm_45_smgmag" mincondition="0.0" maxcondition="0.0" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="1" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="1" />
@@ -1305,14 +1312,14 @@
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="919,7,60,137" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="919,7,60,137" depth="0.56" origin="0.5,0.5" />
       <Body width="65" height="95" density="10" />
-      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="10" amount="1">
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
         <RequiredItem identifier="plastic" amount="1" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
         <RequiredItem identifier="tsm_tungsten" amount="2" />
       </Fabricate>
-      <Fabricate suitablefabricators="tsm_45_smgmag" displayname="recycleitem" requiredtime="5" amount="1">
-        <RequiredItem identifier="tsm_45_smgmag" mincondition="0.0" maxcondition="0.0" />
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5" amount="1">
+        <RequiredItem identifier="tsm_45_smgmag_kr" mincondition="0.0" maxcondition="0.0" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="2" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
         <RequiredItem identifier="tsm_tungsten" mincondition="2" />
@@ -1341,13 +1348,13 @@
         <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
         <Price storeidentifier="merchantarmory" multiplier="1" minavailable="1" maxavailable="4" />
       </Price>
-      <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" amount="2">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="6" amount="2">
         <RequiredItem identifier="steel" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
         <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
       </Fabricate>
-      <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5" amount="1">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5" amount="1">
         <RequiredItem identifier="tsm_9_mag" mincondition="0.0" maxcondition="0.0" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
@@ -1369,13 +1376,13 @@
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="200,548,62,116" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="200,548,62,116" depth="0.56" origin="0.5,0.5" />
       <Body width="62" height="116" density="40" />
-      <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" amount="1">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="6" amount="1">
         <RequiredItem identifier="steel" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
         <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2"/>
       </Fabricate>
-      <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5" amount="1">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5" amount="1">
         <RequiredItem identifier="tsm_9_krmag" mincondition="0.0" maxcondition="0.0" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="1" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="1" />
@@ -1398,13 +1405,13 @@
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="310,469,66,163" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="310,469,66,163" depth="0.56" origin="0.5,0.5" />
       <Body width="66" height="163" density="40" />
-      <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" amount="1">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="6" amount="1">
         <RequiredItem identifier="steel" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
         <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2"/>
       </Fabricate>
-      <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5" amount="1">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5" amount="1">
         <RequiredItem identifier="tsm_9_drum" mincondition="0.0" maxcondition="0.0" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="1" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="1" />
@@ -1434,13 +1441,13 @@
         <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
         <Price storeidentifier="merchantarmory" multiplier="1" minavailable="1" maxavailable="4" />
       </Price>
-      <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" amount="3">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="6" amount="3">
         <RequiredItem identifier="steel" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
         <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
       </Fabricate>
-      <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5" amount="1">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5" amount="1">
         <RequiredItem tag="tsm_1143_mag" mincondition="0.0" maxcondition="0.0" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="1" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="1" />
@@ -1462,14 +1469,14 @@
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="186,7,41,79" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="186,7,41,79" depth="0.56" origin="0.5,0.5" />
       <Body width="41" height="79" density="40" />
-      <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" amount="2">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="6" amount="2">
         <RequiredSkill identifier="weapons" level="40" />
         <RequiredItem identifier="steel" />
         <RequiredItem identifier="flashpowder" amount="2" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
         <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
       </Fabricate>
-      <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5" amount="1">
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5" amount="1">
         <RequiredSkill identifier="weapons" level="40" />
         <RequiredItem identifier="tsm_127_mag" mincondition="0.0" maxcondition="0.0" />
         <RequiredItem identifier="flashpowder" />
@@ -1488,7 +1495,7 @@
       </ItemContainer>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     </Item>
-    <Item name="" identifier="tsm_9_ammo" category="Weapon" interactthroughwalls="true" subcategory="other" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <Item name="" identifier="tsm_9_ammo" subcategory="bullet" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
       <Body width="17" height="6" density="30" />
@@ -1515,7 +1522,7 @@
         </StatusEffect>
       </Projectile>
     </Item>
-    <Item name="" identifier="tsm_9_ammo_cj" category="Weapon" interactthroughwalls="true" subcategory="other" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <Item name="" identifier="tsm_9_ammo_cj" subcategory="bullet" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
       <Body width="40" height="14" density="30" />
@@ -1543,7 +1550,7 @@
         </StatusEffect>
       </Projectile>
     </Item>
-    <Item name="4.6*30" identifier="tsm_46_ammo" category="Weapon" interactthroughwalls="true" subcategory="other" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <Item name="4.6*30" identifier="tsm_46_ammo" subcategory="bullet" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="30" />
@@ -1571,7 +1578,7 @@
       </StatusEffect>
     </Projectile>
   </Item>
-    <Item name="5.7*28" identifier="tsm_57_ammo" category="Weapon" interactthroughwalls="true" subcategory="other" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <Item name="5.7*28" identifier="tsm_57_ammo" subcategory="bullet" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
       <Body width="40" height="14" density="30" />
@@ -1599,7 +1606,7 @@
         </StatusEffect>
       </Projectile>
     </Item>
-    <Item name=".45" identifier="tsm_45_ammo" category="Weapon" interactthroughwalls="true" subcategory="other" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <Item name=".45" identifier="tsm_45_ammo" subcategory="bullet" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
       <Body width="40" height="14" density="30" />
@@ -1630,7 +1637,7 @@
         </StatusEffect>
       </Projectile>
     </Item>
-    <Item name="" identifier="tsm_1143_ammo" category="Weapon" interactthroughwalls="true" subcategory="other" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <Item name="" identifier="tsm_1143_ammo" subcategory="bullet" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
       <Body width="40" height="14" density="30" />
@@ -1657,7 +1664,7 @@
         </StatusEffect>
       </Projectile>
     </Item>
-    <Item name="" identifier="tsm_127_ammo" category="Weapon" interactthroughwalls="true" subcategory="other" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <Item name="" identifier="tsm_127_ammo" subcategory="bullet" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
       <Body width="40" height="14" density="30" />

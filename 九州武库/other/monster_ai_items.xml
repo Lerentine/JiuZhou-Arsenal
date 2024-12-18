@@ -32,6 +32,9 @@
       <StatusEffect type="OnUse" target="This">
         <Explosion range="180.0" force="0.7" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="27.0" />
       </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
       <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
         <SpawnItem identifier="tsm_miniammo_ai" spawnposition="ThisInventory" />
       </StatusEffect>
@@ -43,40 +46,19 @@
         <Sound file="%ModDir%/weapons/木卫二联盟/bullet_general4.ogg" type="OnUse" range="1500" />
         <Sound file="%ModDir%/weapons/木卫二联盟/bullet_general5.ogg" type="OnUse" range="1500" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
-        <Conditional skillrequirement="true" weapons="lt 60" />
-        <Conditional recoilstabilized="lte 0" />
-        <Conditional incrementalstun="lte 54" />
-        <Affliction identifier="incrementalstun" strength="3" />
-        <Affliction identifier="stun" strength="0.1" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
-        <Conditional skillrequirement="true" weapons="lt 40" />
-        <Conditional recoilstabilized="lte 0" />
-        <Conditional incrementalstun="lte 69" />
-        <Affliction identifier="incrementalstun" strength="4" />
-        <Affliction identifier="stun" strength="0.5" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" setvalue="true">
-        <Conditional skillrequirement="true" weapons="lt 20" />
-        <Conditional recoilstabilized="lte 0" />
-        <Conditional incrementalstun="lte 89" />
-        <Affliction identifier="incrementalstun" strength="5" />
-        <Affliction identifier="stun" strength="0.8" />
-      </StatusEffect>
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" spread="-0.1" unskilledspread="-1" disabledeltatime="true">
+      <StatusEffect type="OnUse" target="This" spread="-0.2" unskilledspread="-1" disabledeltatime="true">
         <Conditional spread="gte 0.6" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="-0.1" unskilledspread="-1" disabledeltatime="true">
+      <StatusEffect type="OnUse" target="This,Character" spread="-0.2" unskilledspread="-1" disabledeltatime="true">
         <Conditional skillrequirement="true" weapons="gte 75" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" spread="0" unskilledspread="10" setvalue="true" disabledeltatime="true">
         <Conditional spread="lt 0.6" />
       </StatusEffect>
-      <StatusEffect type="OnSecondaryUse" target="This" spread="28" unskilledspread="50" setvalue="true" delay="0.2" stackable="false" checkconditionalalways="true" disabledeltatime="true">
+      <StatusEffect type="OnSecondaryUse" target="This" spread="18" unskilledspread="50" setvalue="true" delay="0.2" stackable="false" checkconditionalalways="true" disabledeltatime="true">
         <Conditional ReloadTimer="0" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This">
@@ -85,10 +67,7 @@
       <RequiredItems items="tsm_miniammo_ai" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="60" />
     </RangedWeapon>
-    <StatusEffect type="OnNotContained" target="This" stackable="false">
-      <Remove />
-    </StatusEffect>
-    <Propulsion force="-10" usablein="both" ApplyToHands="false">
+    <Propulsion force="-2" usablein="both" ApplyToHands="false">
       <RequiredItems items="tsm_miniammo_ai" type="Contained" />
     </Propulsion>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.54">
@@ -112,7 +91,7 @@
       <StatusEffect type="OnUse" target="This" condition="-0" disabledeltatime="true">
         <SpawnItem identifiers="68_51_pt" spawnposition="ThisInventory" />
       </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" stackable="false">
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
         <Remove />
       </StatusEffect>
     </ItemContainer>
@@ -146,6 +125,9 @@
       </StatusEffect>
       <RequiredItems items="tsm_handgun_mg_jj" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="60" />
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="6" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0" containedspritedepth="0.56">
       <Containable items="tsm_handgun_mg_jj" hide="true"/>
@@ -154,9 +136,6 @@
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="flashlight" hide="false" itempos="17,4" setactive="true"/>
       </SubContainer>
-      <StatusEffect type="OnNotContained" target="This" stackable="false">
-        <Remove />
-      </StatusEffect>
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
     <Quality>
@@ -191,6 +170,9 @@
       </StatusEffect>
       <RequiredItems items="tsm_handgun_mg" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="60" />
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="6" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0" containedspritedepth="0.56">
       <Containable items="tsm_handgun_mg" hide="true"/>
@@ -199,9 +181,6 @@
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="flashlight" hide="false" itempos="17,4" setactive="true"/>
       </SubContainer>
-      <StatusEffect type="OnNotContained" target="This" stackable="false">
-        <Remove />
-      </StatusEffect>
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
     <Quality>
@@ -231,10 +210,10 @@
     <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="122,71,42,11" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="50" height="92" density="50" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_handcannonround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-      <Containable items="tsm_handcannonround" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="handcannonround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="handcannonround" />
       <StatusEffect type="OnUse" target="This" condition="-0.0" disabledeltatime="true">
-        <SpawnItem identifiers="tsm_handcannonround" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="handcannonround" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
         <Remove />

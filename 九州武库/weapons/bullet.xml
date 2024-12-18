@@ -6,7 +6,7 @@
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="458,213,39,27" />
     <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="122,71,42,11" origin="0.5,0.5" />
-    <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="5" amount="3">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="5" amount="3">
       <RequiredSkill identifier="weapons" level="50" />
       <RequiredSkill identifier="helm" level="90" />
       <RequiredItem identifier="handcannonround" amount="3" />
@@ -35,12 +35,12 @@
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="手炮铜制子弹" identifier="tsm_handcannonround_easy" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" allowasextracargo="true" Scale="0.5" tags="smallitem,handcannonammo,handheldammo,pistolammoitem,handcannonround" impactsoundtag="impact_metal_light">
+  <Item name="手炮铜制子弹" identifier="tsm_handcannonround_easy" subcategory="other" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" allowasextracargo="true" Scale="0.5" tags="smallitem,handcannonammo,handheldammo,pistolammoitem,handcannonround" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab"/>
     <PreferredContainer primary="handcannon" amount="6" spawnprobability="1.0"/>
     <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="6" spawnprobability="0.02"/>    
     <Price baseprice="50" sold="false" />
-    <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="6">
+    <Fabricate suitablefabricators="fabricator,tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="6">
       <RequiredSkill identifier="weapons" level="45" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" />
@@ -68,7 +68,7 @@
     </Projectile>
   </Item>
   <!--普通鹿弹-->
-  <Item name="普通鹿弹" identifier="tsm_12_ld" subcategory="TSM" category="Weapon" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="普通鹿弹" identifier="tsm_12_ld" subcategory="other" category="Weapon" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="45">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
@@ -78,7 +78,7 @@
       <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="12" />
     </Price>
-    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="20" requiresrecipe="false" amount="8">
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="8">
       <RequiredItem identifier="magnesium" amount="1" />
       <RequiredItem identifier="aluminium" amount="1" />
     </Fabricate>
@@ -105,9 +105,9 @@
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="4号霰弹" identifier="tsm_shotgunammo_4" subcategory="TSM" category="Weapon" maxstacksize="16" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsm_shotgunammo_4,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="4号霰弹" identifier="tsm_shotgunammo_4" subcategory="tsm_separatists" category="Weapon" maxstacksize="16" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsm_shotgunammo_4,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="false" amount="2">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="2">
       <RequiredItem tag="shotgunammo" description="fabricationdescription.shotgunammo" amount="6"/>
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1"/>
       <RequiredItem identifier="aluminium" amount="1" />
@@ -138,9 +138,9 @@
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="4号龙息霰弹" identifier="tsm_shotgunammo_4_db" subcategory="TSM" category="Weapon" maxstacksize="16" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsm_shotgunammo_4,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="4号龙息霰弹" identifier="tsm_shotgunammo_4_db" subcategory="tsm_separatists" category="Weapon" maxstacksize="16" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsm_shotgunammo_4,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="false" amount="8">
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="8">
             <RequiredItem identifier="tsm_shotgunammo_4" amount="8" />
             <RequiredItem identifier="incendium" amount="1" />
         </Fabricate>
@@ -172,7 +172,7 @@
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
   <!--双弹托独头弹-->
-  <Item name="双弹托独头弹" identifier="tsm_sabot" subcategory="TSM" category="Weapon" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="双弹托独头弹" identifier="tsm_sabot" subcategory="other" category="Weapon" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="53">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
@@ -182,7 +182,7 @@
       <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="12" />
     </Price>
-    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="20" requiresrecipe="false" amount="8">
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="8">
       <RequiredItem identifier="magnesium" amount="2" />
       <RequiredItem identifier="lead" amount="2" />
     </Fabricate>
@@ -213,7 +213,7 @@
   <!--变革弹-->
   <Item name="贫化变革弹" identifier="tsm_12_bg" subcategory="TSM" category="Weapon" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="false" amount="8">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="8">
       <RequiredItem identifier="uranium" amount="2" />
       <RequiredItem identifier="lead" amount="2" />
       <RequiredItem identifier="tsm_triton_bag" mincondition="0.25" uescondition="ture" />
@@ -241,7 +241,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--平息弹-->
-  <Item name="平息弹" identifier="tsm_12_slience" category="Weapon" subcategory="TSM" maxstacksize="32" maxstacksizecharacterinventory="16" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="平息弹" identifier="tsm_12_slience" category="Weapon" subcategory="other" maxstacksize="32" maxstacksizecharacterinventory="16" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="shotgun,autoshotgun,shotgununique" />
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <PreferredContainer primary="armcab" minamount="8" maxamount="16" spawnprobability="1" notcampaign="true" />
@@ -256,7 +256,7 @@
         <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
         <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="64" />
       </Price>
-      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="20" amount="16">
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="20" amount="16">
         <RequiredSkill identifier="weapons" level="30" />
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
         <RequiredItem identifier="rubber" amount="2" />
@@ -281,7 +281,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--轨道炮-->
-  <Item name="奇迹之海诱饵型炮射导弹" description="轨道炮弹药&#xD;&#xA;诱饵型炮射导弹，发射后会在150m左右的位置停止，并持续发出声波信号吸引生物靠近，请注意爆炸范围内的强emp效果" identifier="tsm_snoar_shell" tags="railgunequipment,railgunammo,decoy" category="Weapon" sonarsize="7" scale="0.5" impactsoundtag="impact_metal_heavy">
+  <Item name="奇迹之海诱饵型炮射导弹" subcategory="other" identifier="tsm_snoar_shell" tags="railgunequipment,railgunammo,decoy" category="Weapon" sonarsize="7" scale="0.5" impactsoundtag="impact_metal_heavy">
     <PreferredContainer primary="railgunammocontainer" />
     <Price baseprice="358" soldeverywhere="false">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" sold="false" />
@@ -294,7 +294,7 @@
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="iron" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="8">
+    <Fabricate suitablefabricators="fabricator,tsm_fabricator,tsm_fabricator_ammo" requiredtime="8">
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="c4block" />
       <RequiredItem identifier="fpgacircuit" />
@@ -340,7 +340,7 @@
     </LightComponent>
   </Item>
   <!-- 命运之拳：拐弯核弹，取消近炸效果 -->
-  <Item name="命运之拳" identifier="tsm_embi_shell" description="轨道炮弹药&#xD;&#xA;由EMBI研发制造的特殊弹道修正型炮射核弹，这种弹药可以在一定范围内修正弹道" tags="railgunequipment,railgunammo,myzqshell" category="Weapon" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
+  <Item name="命运之拳" identifier="tsm_embi_shell" subcategory="other" tags="railgunequipment,railgunammo,myzqshell" category="Weapon" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
     <PreferredContainer primary="railgunammocontainer" minamount="1" maxamount="2" spawnprobability="0.1" />
     <PreferredContainer primary="wreckrailgun" minamount="0" maxamount="2" spawnprobability="0.1" />
     <Price baseprice="550" sold="false">
@@ -403,7 +403,7 @@
         </StatusEffect>
     </Projectile>
   </Item>
-  <Item name="命运之拳_拐弯左感" identifier="tsm_embi_shell_left" category="Misc" cargocontaineridentifier="metalcrate" scale="0.5" spritecolor="255,255,255,0" hideinmenus="true">
+  <Item name="命运之拳_拐弯左感" identifier="tsm_embi_shell_left" subcategory="other" category="Misc" cargocontaineridentifier="metalcrate" scale="0.5" spritecolor="255,255,255,0" hideinmenus="true">
     <Sprite texture="%ModDir%/weapons/ammo.png" sourcerect="8,89,204,29" depth="0.55" origin="0.5,0.5" />
     <Body width="20" height="20" density="0" />
     <MotionSensor canbeselected="true" target="Monster" ignoredead="True" rangex="1000" rangey="15" detectoffset="-1000,0" updateinterval="0.1" maxoutputlength="200" output="" falseoutput="" minimumvelocity="0" pickingtime="0" canbepicked="False" allowingameediting="True" msg="" DetectOwnMotion="false">
@@ -423,11 +423,11 @@
         <Containable items="tsm_embi_myzq" />
     </ItemContainer>
   </Item>
-  <Item name="命运之拳_拐弯右感" identifier="tsm_embi_shell_right" variantof="tsm_embi_shell_left">
+  <Item name="命运之拳_拐弯右感" identifier="tsm_embi_shell_right" subcategory="other" variantof="tsm_embi_shell_left">
     <MotionSensor detectoffset="1000,0" />
     <Turret rotationlimits="0,0" />
   </Item>
-  <Item name="命运之拳_拐弯炮弹" identifier="tsm_embi_myzq" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy" hideinmenus="true">
+  <Item name="命运之拳_拐弯炮弹" identifier="tsm_embi_myzq" subcategory="other" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy" hideinmenus="true">
     <InventoryIcon texture="%ModDir%/weapons/ammo.png" sourcerect="8,89,204,29" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/ammo.png" sourcerect="8,89,204,29" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" density="35" />
@@ -462,7 +462,7 @@
     </Projectile>
   </Item>
   <!--特殊子弹-->
-   <Item name="5.8mm雷素弹" identifier="tsm_58_fulgurium" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+   <Item name="5.8mm雷素弹" identifier="tsm_58_fulgurium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
         <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="40" />
@@ -497,7 +497,7 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.8mm钢素弹" identifier="tsm_58_physicorium" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+   <Item name="5.8mm钢素弹" identifier="tsm_58_physicorium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
         <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="40" />
@@ -531,7 +531,7 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.8mm酸液弹" identifier="tsm_58_sulphuriteshard" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+   <Item name="5.8mm酸液弹" identifier="tsm_58_sulphuriteshard" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
         <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="40" />
@@ -564,7 +564,7 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.8mm燃素弹" identifier="tsm_58_incendium" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+   <Item name="5.8mm燃素弹" identifier="tsm_58_incendium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
         <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="40" />
@@ -597,7 +597,7 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.45雷素弹" identifier="tsm_545_fulgurium" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+   <Item name="5.45雷素弹" identifier="tsm_545_fulgurium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
         <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="40" />
@@ -630,7 +630,7 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.45钢素弹" identifier="tsm_545_physicorium" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+   <Item name="5.45钢素弹" identifier="tsm_545_physicorium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
         <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="40" />
@@ -660,7 +660,7 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.45酸液弹" identifier="tsm_545_sulphuriteshard" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+   <Item name="5.45酸液弹" identifier="tsm_545_sulphuriteshard" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
         <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="40" />
@@ -691,7 +691,7 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.45燃素弹" identifier="tsm_545_incendium" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+   <Item name="5.45燃素弹" identifier="tsm_545_incendium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
         <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="40" />
@@ -722,7 +722,7 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.56雷素弹" identifier="tsm_556_fulgurium" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+   <Item name="5.56雷素弹" identifier="tsm_556_fulgurium" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
         <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" depth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="40" />
@@ -757,7 +757,7 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.56钢素弹" identifier="tsm_556_physicorium" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+   <Item name="5.56钢素弹" identifier="tsm_556_physicorium" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
         <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" depth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="40" />
@@ -789,7 +789,7 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.56酸液弹" identifier="tsm_556_sulphuriteshard" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+   <Item name="5.56酸液弹" identifier="tsm_556_sulphuriteshard" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
         <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" depth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="40" />
@@ -822,7 +822,7 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.56燃素弹" identifier="tsm_556_incendium" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+   <Item name="5.56燃素弹" identifier="tsm_556_incendium" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
         <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" depth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="40" />
@@ -867,7 +867,7 @@
                 <SpawnItem identifiers="tsm_58_fulgurium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="4">
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="4">
             <RequiredItem identifier="tsm_58_mag" amount="4" />
             <RequiredItem identifier="fulgurium" amount="1" />
         </Fabricate>
@@ -889,7 +889,7 @@
                 <SpawnItem identifiers="tsm_58_physicorium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="4">
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="4">
         <RequiredItem identifier="tsm_58_mag" amount="4" />
         <RequiredItem identifier="physicorium" amount="1" />
         </Fabricate>
@@ -911,7 +911,7 @@
                 <SpawnItem identifiers="tsm_58_sulphuriteshard" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="4">
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="4">
         <RequiredItem identifier="tsm_58_mag" amount="4" />
         <RequiredItem identifier="sulphuriteshard" amount="1" />
         </Fabricate>
@@ -933,7 +933,7 @@
             <SpawnItem identifiers="tsm_58_incendium" spawnposition="ThisInventory" />
         </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="4">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="4">
     <RequiredItem identifier="tsm_58_mag" amount="4" />
     <RequiredItem identifier="incendium" amount="1" />
     </Fabricate>
@@ -955,7 +955,7 @@
                 <SpawnItem identifiers="tsm_58_fulgurium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="4">
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="4">
             <RequiredItem identifier="tsm_magazine" amount="4" />
             <RequiredItem identifier="fulgurium" amount="1" />
         </Fabricate>
@@ -977,7 +977,7 @@
                 <SpawnItem identifiers="tsm_58_physicorium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="4">
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="4">
         <RequiredItem identifier="tsm_magazine" amount="4" />
         <RequiredItem identifier="physicorium" amount="1" />
         </Fabricate>
@@ -999,7 +999,7 @@
             <SpawnItem identifiers="tsm_58_sulphuriteshard" spawnposition="ThisInventory" />
         </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="4">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="4">
     <RequiredItem identifier="tsm_magazine" amount="4" />
     <RequiredItem identifier="sulphuriteshard" amount="1" />
     </Fabricate>
@@ -1021,7 +1021,7 @@
                 <SpawnItem identifiers="tsm_58_incendium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="4">
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="4">
         <RequiredItem identifier="tsm_magazine" amount="4" />
         <RequiredItem identifier="incendium" amount="1" />
         </Fabricate>
@@ -1043,7 +1043,7 @@
                 <SpawnItem identifiers="tsm_545_fulgurium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="4">
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="4">
             <RequiredItem identifier="fkj_545_mag" amount="4" />
             <RequiredItem identifier="fulgurium" amount="1" />
         </Fabricate>
@@ -1065,7 +1065,7 @@
                 <SpawnItem identifiers="tsm_545_physicorium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="4">
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="4">
             <RequiredItem identifier="fkj_545_mag" amount="4" />
             <RequiredItem identifier="physicorium" amount="1" />
         </Fabricate>
@@ -1087,7 +1087,7 @@
                 <SpawnItem identifiers="tsm_545_sulphuriteshard" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="4">
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="4" amount="4">
             <RequiredItem identifier="fkj_545_mag" amount="4" />
             <RequiredItem identifier="sulphuriteshard" amount="1" />
         </Fabricate>
@@ -1109,7 +1109,7 @@
                 <SpawnItem identifiers="tsm_545_incendium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="4">
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="4">
             <RequiredItem identifier="fkj_545_mag" amount="4" />
             <RequiredItem identifier="incendium" amount="1" />
         </Fabricate>
@@ -1131,7 +1131,7 @@
                 <SpawnItem identifiers="tsm_556_fulgurium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="4">
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="4">
             <RequiredItem identifier="lm_556_mag" amount="4" />
             <RequiredItem identifier="fulgurium" amount="1" />
         </Fabricate>
@@ -1153,7 +1153,7 @@
                 <SpawnItem identifiers="tsm_58_physicorium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="4">
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="4">
             <RequiredItem identifier="lm_556_mag" amount="4" />
             <RequiredItem identifier="physicorium" amount="1" />
         </Fabricate>
@@ -1175,7 +1175,7 @@
                 <SpawnItem identifiers="tsm_58_sulphuriteshard" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="4">
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="4">
             <RequiredItem identifier="lm_556_mag" amount="4" />
             <RequiredItem identifier="sulphuriteshard" amount="1" />
         </Fabricate>
@@ -1197,7 +1197,7 @@
                 <SpawnItem identifiers="tsm_556_incendium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator" requiredtime="4">
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="4">
             <RequiredItem identifier="lm_556_mag" amount="4" />
             <RequiredItem identifier="incendium" amount="1" />
         </Fabricate>

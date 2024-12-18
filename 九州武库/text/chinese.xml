@@ -119,13 +119,15 @@
  <minus1seconds>减1秒</minus1seconds>
  <plus1seconds>加1秒</plus1seconds>
  <bomb.timer>设置时间</bomb.timer>
- <bomb.armed>起爆按钮</bomb.armed>
+ <tsm_boom>按下开始10S倒计时</tsm_boom>
  <subcategory.TSM>奇迹之海为你保驾护航\n不以成败论英雄</subcategory.TSM>
  <mapentitycategory.tsm_ammo>奇迹之海弹药</mapentitycategory.tsm_ammo>
  <subcategory.the_adventists>降临派</subcategory.the_adventists>
  <subcategory.tsm_separatists>反抗军</subcategory.tsm_separatists>
  <subcategory.tsm_coalition>联盟</subcategory.tsm_coalition>
  <displayname.防护服改造>[itemname] (防护服改造)</displayname.防护服改造>
+
+ <entityname.tsm_collider_head>未穿透</entityname.tsm_collider_head>
 <!--药品-->
  <entityname.triton_9C_antidote>特殊伤害清除剂</entityname.triton_9C_antidote>
  <entitydescription.triton_9C_antidote>用于治疗氚中毒、变革伤以及爆裂伤的药品</entitydescription.triton_9C_antidote>
@@ -213,7 +215,15 @@
  <entitydescription.tsm_danger_box>专业收容异常事物，内置两个格子。</entitydescription.tsm_danger_box>
 
  <entityname.tsm_fabricator>武器弹药加工台</entityname.tsm_fabricator>
- <entitydescription.tsm_fabricator>用于制作九州武库内所有的弹药和枪械\n安装方式：拿在手上，右键对准然后按使用键（默认E键）即可安装。</entitydescription.tsm_fabricator>
+ <entitydescription.tsm_fabricator>用于制作九州武库内所有的弹药和枪械\n安装方式：拿在手上，右键对准然后按使用键（默认E键）即可安装，记得连线通电</entitydescription.tsm_fabricator>
+
+ <entityname.tsm_fabricator_ammo>弹药制作台</entityname.tsm_fabricator_ammo>
+ <entitydescription.tsm_fabricator_ammo>专用于制作弹药的加工台\n安装方式：拿在手上，右键对准然后按使用键（默认E键）即可安装.</entitydescription.tsm_fabricator_ammo>
+
+ <entityname.tsm_fabricator_quality>品质升级台</entityname.tsm_fabricator_quality>
+ <entitydescription.tsm_fabricator_quality>专用于升级品质的加工台\n安装方式：拿在手上，右键对准然后按使用键（默认E键）即可安装.</entitydescription.tsm_fabricator_quality>
+
+
 
 <!--战备-->
   <entityname.tsm_suecide_vest>自杀式背心</entityname.tsm_suecide_vest>
@@ -235,19 +245,19 @@
   <entitydescription.tsm_firesupportbinocle>用于标记打击区域\n和手持支援指示器搭配使用，一人背背包，一人手持指示器进行标记</entitydescription.tsm_firesupportbinocle>
 
   <entityname.tsm_lm_lockbox>联盟武器盲盒</entityname.tsm_lm_lockbox>
-  <entitydescription.tsm_lm_lockbox>优秀抽奖机制，毫无保底的池子，这就是潜渊症，使用友军识别码开启</entitydescription.tsm_lm_lockbox>
+  <entitydescription.tsm_lm_lockbox>优秀抽奖机制，毫无保底的池子，这就是潜渊症\n使用友军识别码开启\耐久为0后再使用右键+左键进行打开</entitydescription.tsm_lm_lockbox>
   <entityname.tsm_lm_lockbox>联盟武器盲盒</entityname.tsm_lm_lockbox>
-  <entitydescription.tsm_lm_lockbox>该十连抽了，使用友军识别码开启</entitydescription.tsm_lm_lockbox>
+  <entitydescription.tsm_lm_lockbox>该十连抽了\n使用友军识别码开启\耐久为0后再使用右键+左键进行打开</entitydescription.tsm_lm_lockbox>
 
   <entityname.tsm_fkj_lockbox>反抗军武器盲盒</entityname.tsm_fkj_lockbox>
-  <entitydescription.tsm_fkj_lockbox>优秀抽奖机制，毫无保底的池子，这就是潜渊症，使用友军识别码开启</entitydescription.tsm_fkj_lockbox>
+  <entitydescription.tsm_fkj_lockbox>优秀抽奖机制，毫无保底的池子，这就是潜渊症\n使用友军识别码开启\耐久为0后再使用右键+左键进行打开</entitydescription.tsm_fkj_lockbox>
   <entityname.tsm_fkj_lockbox>反抗军武器盲盒</entityname.tsm_fkj_lockbox>
-  <entitydescription.tsm_fkj_lockbox>该十连抽了，使用友军识别码开启</entitydescription.tsm_fkj_lockbox>
+  <entitydescription.tsm_fkj_lockbox>该十连抽了\n使用友军识别码开启\耐久为0后再使用右键+左键进行打开</entitydescription.tsm_fkj_lockbox>
 
   <entityname.tsm_tsm_lockbox>奇迹之海武器盲盒</entityname.tsm_tsm_lockbox>
-  <entitydescription.tsm_tsm_lockbox>优秀抽奖机制，毫无保底的池子，这就是潜渊症，使用友军识别码开启</entitydescription.tsm_tsm_lockbox>
+  <entitydescription.tsm_tsm_lockbox>优秀抽奖机制，毫无保底的池子\n使用友军识别码开启\耐久为0后再使用右键+左键进行打开</entitydescription.tsm_tsm_lockbox>
   <entityname.tsm_tsm_lockbox>奇迹之海武器盲盒</entityname.tsm_tsm_lockbox>
-  <entitydescription.tsm_tsm_lockbox>该十连抽了，使用友军识别码开启</entitydescription.tsm_tsm_lockbox>
+  <entitydescription.tsm_tsm_lockbox>该十连抽了\n使用友军识别码开启\耐久为0后再使用右键+左键进行打开</entitydescription.tsm_tsm_lockbox>
 
 
 <!--装备-->
@@ -907,14 +917,20 @@
   <entityname.lm_762_51_mgmag_cj>联盟机枪穿甲弹匣（7.62*51）</entityname.lm_762_51_mgmag_cj>
   <entitydescription.lm_762_51_mgmag_cj>装有200发7.62*51mm穿甲子弹。</entitydescription.lm_762_51_mgmag_cj>
 
- <entityname.lm_68_51_mgmag>联盟机枪弹袋(6.8*51)</entityname.lm_68_51_mgmag>
- <entitydescription.lm_68_51_mgmag>装有150发8.6*43mm穿甲子弹。</entitydescription.lm_68_51_mgmag>
+  <entityname.lm_68_51_mgmag>联盟机枪弹袋(6.8*51)</entityname.lm_68_51_mgmag>
+  <entitydescription.lm_68_51_mgmag>装有150发8.6*43mm穿甲子弹。</entitydescription.lm_68_51_mgmag>
 
- <entityname.lm_68_51_mgmag_cj>联盟机枪穿甲弹袋（6.8*51）</entityname.lm_68_51_mgmag_cj>
- <entitydescription.lm_68_51_mgmag_cj>装有150发8.6*43mm穿甲子弹。</entitydescription.lm_68_51_mgmag_cj>
+  <entityname.lm_68_51_mgmag_cj>联盟机枪穿甲弹袋（6.8*51）</entityname.lm_68_51_mgmag_cj>
+  <entitydescription.lm_68_51_mgmag_cj>装有150发8.6*43mm穿甲子弹。</entitydescription.lm_68_51_mgmag_cj>
 
   <entityname.lm_556_mag>联盟普通弹匣（5.56*45）</entityname.lm_556_mag>
   <entitydescription.lm_556_mag>其内装填了33发标准子弹的弹匣，数量众多。</entitydescription.lm_556_mag>
+
+  <entityname.lm_556kr_mag>联盟扩容弹匣（5.56*45）</entityname.lm_556kr_mag>
+  <entitydescription.lm_556kr_mag>其内装填了45发标准子弹的弹匣</entitydescription.lm_556kr_mag>
+
+  <entityname.lm_556kr_drum>联盟弹鼓（5.56*45）</entityname.lm_556kr_drum>
+  <entitydescription.lm_556kr_drum>其内装填了60发标准子弹的弹鼓</entitydescription.lm_556kr_drum>
   
   <entityname.lm_556cj_mag>联盟穿甲弹匣（5.56*45）</entityname.lm_556cj_mag>
   <entitydescription.lm_556cj_mag>内部填装了31发穿甲弹，可以有效应对有甲生物与防弹衣，但是不知道为什么弹匣的标记上写着里面有33发子弹？数量较少，不建议携带太多。</entitydescription.lm_556cj_mag>
@@ -1262,8 +1278,11 @@
   <entityname.tsm_sighting_pistols>手枪瞄具</entityname.tsm_sighting_pistols>
   <entitydescription.tsm_sighting_pistols>专供手枪使用</entitydescription.tsm_sighting_pistols>
 
-  <entityname.tsm_pistols_silencers>消音器</entityname.tsm_pistols_silencers>
-  <entitydescription.tsm_pistols_silencers>能够减少声音传播，让怪物更不容易以你为目标\n+5%扩散\-2%移速</entitydescription.tsm_pistols_silencers>
+  <entityname.tsm_pistols_silencers>鱼鹰小口径消音器</entityname.tsm_pistols_silencers>
+  <entitydescription.tsm_pistols_silencers>能够减少声音传播，让怪物更不容易以你为目标，主要装备于冲锋枪和手枪\n+5%扩散\n-2%攻击速度</entitydescription.tsm_pistols_silencers>
+
+  <entityname.tsm_gun_silencers>消音器</entityname.tsm_gun_silencers>
+  <entitydescription.tsm_gun_silencers>能够减少声音传播，让怪物更不容易以你为目标，主要装备于突击步枪\n+5%扩散\n-2%攻击速度</entitydescription.tsm_gun_silencers>
 
 <!--三神丘-->
  <entityname.tsm_kep>‖color:255,100,100,255‖'三神丘'‖color:end‖</entityname.tsm_kep>

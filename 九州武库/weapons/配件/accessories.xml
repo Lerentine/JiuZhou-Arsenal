@@ -139,7 +139,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="脚架" identifier="tsm_grip_mounts" subcategory="TSM" category="weapon" Tags="smallitem,tsm_grip_mounts,tsm_grip_mech" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="脚架" identifier="tsm_grip_mounts" subcategory="accessories" category="weapon" Tags="smallitem,tsm_grip_mounts,tsm_grip_mech" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2255,609,37,97" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2255,609,37,97" depth="0.56" origin="0.5,0.5" />
@@ -544,6 +544,33 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="消音器" identifier="tsm_pistols_silencers" subcategory="accessories" category="Equipment" Tags="smallitem,barrel_pistols" cargocontaineridentifier="tsm_metalcrate" Scale="0.1" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%//weapons/配件/accessories.png" sourcerect="85,426,178,46" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%//weapons/配件/accessories.png" sourcerect="85,426,178,46" depth="0.53" origin="0.5,0.5" />
+    <Body width="96" height="28" density="15" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Affliction identifier="tsm_barrel1_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="277" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" amount="1" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
+      <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
+      <RequiredItem identifier="tsm_item_box" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="消音器" identifier="tsm_gun_silencers" subcategory="accessories" category="Equipment" Tags="smallitem,barrel" cargocontaineridentifier="tsm_metalcrate" Scale="0.1" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%//weapons/配件/accessories.png" sourcerect="81,329,200,53" origin="0.5,0.5" />
     <Sprite texture="%ModDir%//weapons/配件/accessories.png" sourcerect="81,329,200,53" depth="0.53" origin="0.5,0.5" />
     <Body width="96" height="28" density="15" />

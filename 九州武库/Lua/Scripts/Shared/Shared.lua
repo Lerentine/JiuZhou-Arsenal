@@ -1,6 +1,6 @@
 activeCharge = { }
 
-Hook.Add("roundEnd", "Charge.resetonend", function()
+Hook.Add("roundEnd", "JZ_Charge.resetonend", function()
     for i,v in pairs(activeCharge) do
         local light = i.GetComponentString("LightComponent")
         light.isOn = false
@@ -8,7 +8,7 @@ Hook.Add("roundEnd", "Charge.resetonend", function()
     activeCharge = { }
 end)
 
-Hook.Add("character.death", "Charge.resetOndead", function(character)  --Reset on death
+Hook.Add("character.death", "JZ_Charge.resetOndead", function(character)  --Reset on death
     if activeCharge == nil or character == nil then return end
     for i,v in pairs(activeCharge) do
         if v == character then
@@ -19,7 +19,7 @@ Hook.Add("character.death", "Charge.resetOndead", function(character)  --Reset o
     end
 end)
 
-Hook.Add("item.use", "Charge.itemused", function(item, usingCharacter)
+Hook.Add("item.use", "JZ_Charge.itemused", function(item, usingCharacter)
     if item == nil or  usingCharacter == nil then return end
     local identifier = item.Prefab.Identifier.Value
     local methodtorun = JZ_Main.ItemMethods[identifier]
@@ -32,8 +32,12 @@ end)
 JZ_Main.ItemMethods = {}
 
 JZ_Main.ItemMethods.tsm_jz_m57detonator = function(item, usingCharacter)
-    if usingCharacter == nil or activeCharge == nil then return end
+    if usingCharacter == nil or activeCharge == nil then
+        print("//TSM DEBUG MESSAGE// ERROR: NO VALID ITEM FOUND")
+        return
+    end
     for i,v in pairs(activeCharge) do
+        print("//TSM DEBUG MESSAGE// ITEM:",i,"ITEM USER:",v.Name,"CURRENT USER:",usingCharacter.Name)
         if v == usingCharacter then
             i.Condition = 0
             activeCharge[i] = nil
@@ -44,6 +48,7 @@ end
 JZ_Main.ItemMethods.tsm_jz_c4 = function(item, usingCharacter)
     if usingCharacter == nil then return end
     activeCharge[item] = usingCharacter
+    print("//TSM DEBUG MESSAGE// ITEM:",item,"ITEM USER:",activeCharge[item].Name)
     local light = item.GetComponentString("LightComponent")
     light.isOn = true
 end

@@ -118,7 +118,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="70,-1" aimpos="70,-1" handle1="-140,-20" handle2="70,12" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.7" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -230,7 +230,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_45.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_45.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="70,-1" aimpos="70,-1" handle1="-140,-20" handle2="70,12" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.45" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -344,7 +344,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="70,-1" aimpos="70,-1" handle1="-140,-20" handle2="70,12" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.5" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -458,7 +458,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="0,-40" holdangle="80" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_3_0.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_3_0.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="40,-10" aimpos="40,-5" handle1="15,-20" handle2="80,20" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="3.0" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -586,7 +586,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="63,0" aimpos="65,0" handle1="-90,-10" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.7" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -618,7 +618,7 @@
     <Deconstruct time="10">
       <Item identifier="tsm_fkj_ak74" />
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="tsm_fkj_ak103_l" amount="1" />
       <RequiredItem identifier="tsm_yh_weaponbox" amount="1" />
@@ -703,7 +703,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="63,0" aimpos="65,0" handle1="-90,-10" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.6" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -838,7 +838,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="60,-5" aimpos="60,-5" handle1="-90,-10" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.5" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -870,7 +870,7 @@
     <Deconstruct time="10">
       <Item identifier="tsm_fkj_ak74" />
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="tsm_fkj_ak105_l" amount="1" />
       <RequiredItem identifier="tsm_yh_weaponbox" amount="1" />
@@ -955,7 +955,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_4.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_4.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="60,-5" aimpos="60,-5" handle1="-90,-10" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.4" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -988,7 +988,7 @@
     <Deconstruct time="10">
       <Item identifier="tsm_yh_weaponbox" />
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="tsm_fkj_am17" amount="1" />
       <RequiredItem identifier="tsm_yh_weaponbox" amount="1" />
@@ -1100,7 +1100,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="60,-5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.8" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -1257,7 +1257,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="60,-5" aimpos="60,-5" handle1="-90,-10" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.6" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -1431,7 +1431,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_3_3.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_3_3.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="60,-20" aimpos="60,-20" handle1="-130,20" handle2="50,50" holdangle="-30" disabledeltatime="true" checkconditionalalways="true" delay="3.3" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -1544,7 +1544,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_3_0.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_3_0.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="60,2" aimpos="60,2" handle1="-90,-15" handle2="53,8" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="3.0" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -1624,7 +1624,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_1_5.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_1_5.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="62,0" aimpos="62,0" handle1="-85,-15" handle2="50,15" holdangle="-30" disabledeltatime="true" checkconditionalalways="true" delay="1.45" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -1639,7 +1639,7 @@
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
   <!--KS-23-->
-  <Item name="KS-23" identifier="tsm_lm_ks23" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,fkj_gun,gun,stunner,gunsmith,mountableweapon,provocativetohumanai" Scale="0.22" impactsoundtag="impact_metal_light">
+  <Item name="KS-23" identifier="tsm_lm_ks23" subcategory="tsm_separatists" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,fkj_gun,gun,stunner,gunsmith,mountableweapon,provocativetohumanai" Scale="0.22" impactsoundtag="impact_metal_light">
     <!--Price baseprice="512" soldeverywhere="false" buyingpricemultiplier="5">
       <Price locationtype="city" minavailable="1" />
       <Price locationtype="research" sold="false" />
@@ -1692,7 +1692,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="0,-30" holdangle="60" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/shotgun_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/shotgun_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="25,-20" holdangle="40" disabledeltatime="true" checkconditionalalways="true" delay="1.2" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -1808,7 +1808,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_85.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_85.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="80,0" aimpos="85,10" handle1="-160,-25" handle2="60,10" holdangle="-45" disabledeltatime="true" checkconditionalalways="true" delay="2.9" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -1823,7 +1823,7 @@
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
   <!--M2-->
-  <Item name="M2" identifier="tsm_fkj_m2" subcategory="tsm_separatists" description="" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="bigitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,biggun,provocativetohumanai,bulkyweapon" Scale="0.27" impactsoundtag="impact_metal_light">
+  <Item name="M2" identifier="tsm_fkj_m2" subcategory="tsm_separatists" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="bigitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,biggun,provocativetohumanai,bulkyweapon" Scale="0.27" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="30" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="60" />
@@ -1915,7 +1915,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="55" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_5_7.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_5_7.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="70,-50" aimpos="70,-35" handle1="-330,20" handle2="35,-20" holdangle="-13" disabledeltatime="true" checkconditionalalways="true" delay="5.7" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -1929,7 +1929,7 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="80" />
   </Item>
-  <Item name="M2（白鹰）" identifier="tsm_fkj_m2_eagle" subcategory="tsm_separatists" description="" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="bigitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,biggun,provocativetohumanai,bulkyweapon" Scale="0.27" impactsoundtag="impact_metal_light">
+  <Item name="M2（白鹰）" identifier="tsm_fkj_m2_eagle" subcategory="tsm_separatists" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="bigitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,biggun,provocativetohumanai,bulkyweapon" Scale="0.27" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="60" />
@@ -2018,7 +2018,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="55" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_5_7.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_5_7.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="70,-50" aimpos="70,-35" handle1="-330,20" handle2="35,-20" holdangle="-13" disabledeltatime="true" checkconditionalalways="true" delay="5.7" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -2139,7 +2139,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_5_3.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_5_3.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="70,-50" aimpos="70,-35" handle1="-330,20" handle2="35,-20" holdangle="-13" disabledeltatime="true" checkconditionalalways="true" delay="5.4" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -2256,7 +2256,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_5_6.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_5_6.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="50,-60" aimpos="75,-5" handle1="-120,-30" handle2="60,0" holdangle="40" disabledeltatime="true" checkconditionalalways="true" delay="5.6" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -2284,7 +2284,7 @@
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
   <!--Chain-->
-  <Item name="Chain" identifier="tsm_fkj_saw" subcategory="tsm_separatists" description="" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="bigitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,biggun,provocativetohumanai,bulkyweapon" Scale="0.24" impactsoundtag="impact_metal_light">
+  <Item name="Chain" identifier="tsm_fkj_saw" subcategory="tsm_separatists" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="bigitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,biggun,provocativetohumanai,bulkyweapon" Scale="0.24" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="30" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="60" />
@@ -2389,8 +2389,7 @@
       <RequiredItems items="fkj_jts_mag" type="Contained" />
     </Propulsion>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="1" containedstateindicatorstyle="bullet" containedspritedepth="0.54">
-      <SlotIcon slotindex="1" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="448,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.5,0.5" />
       <Containable items="grenade" hide="true">
         <StatusEffect type="OnContaining" target="This" tags="grenade_reload" duration="0.05" stackable="false">
           <RequiredItem items="grenade" type="Contained" />
@@ -2402,7 +2401,7 @@
           <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="55" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_5_3.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_5_3.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
           <StatusEffect target="This" holdpos="30,-40" holdangle="10" disabledeltatime="true" checkconditionalalways="true" delay="5.3" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
@@ -2499,7 +2498,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="63,-5" aimpos="65,-5" handle1="-100,-10" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.5" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -2646,7 +2645,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_85.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_85.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="63,-5" aimpos="65,-5" handle1="-100,-10" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.85" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -2763,7 +2762,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="68,0" aimpos="72,3" handle1="-110,-15" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.7" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -2923,7 +2922,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="65,2" aimpos="65,2" handle1="-88,-18" handle2="42,10" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.55" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -2966,7 +2965,7 @@
       <Item identifier="titanium" />
       <Item identifier="tsm_item_box" />
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="70" />
       <RequiredItem identifier="tsm_fkj_jq430" amount="1" />
       <RequiredItem identifier="tsm_yh_weaponbox" amount="1" />
@@ -3059,7 +3058,7 @@
           <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_2_85.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_2_85.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
           <StatusEffect target="This" holdpos="70,-5" aimpos="60,-5" handle1="-130,-25" handle2="53,8" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.85" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
@@ -3160,7 +3159,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="60,-5" aimpos="60,-5" handle1="-90,-10" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.6" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -3195,7 +3194,7 @@
     <Deconstruct time="10">
       <Item identifier="tsm_yh_weaponbox" />
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="70" />
       <RequiredItem identifier="tsm_fkj_561a" amount="1" />
       <RequiredItem identifier="tsm_yh_weaponbox" amount="1" />
@@ -3309,7 +3308,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="60,-5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.7" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -3352,7 +3351,7 @@
     <Deconstruct time="10">
       <Item identifier="tsm_fkj_ak74" />
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="70" />
       <RequiredItem identifier="tsm_fkj_ak105_c" amount="1" />
       <RequiredItem identifier="tsm_yh_weaponbox" amount="1" />
@@ -3433,7 +3432,7 @@
           <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
           <StatusEffect target="This" holdpos="60,-5" aimpos="60,-5" handle1="-90,-10" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.55" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
@@ -3466,7 +3465,7 @@
     <Deconstruct time="10">
       <Item identifier="tsm_yh_weaponbox" />
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="70" />
       <RequiredItem identifier="tsm_fkj_a545" amount="1" />
       <RequiredItem identifier="tsm_yh_weaponbox" amount="1" />
@@ -3569,7 +3568,7 @@
           <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_2_4.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_2_4.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
           <StatusEffect target="This" holdpos="60,-5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.4" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
@@ -3698,7 +3697,7 @@
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" disabledeltatime="true" checkconditionalalways="true" delay="0.75" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -3802,7 +3801,7 @@
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" disabledeltatime="true" checkconditionalalways="true" delay="0.8" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -3817,7 +3816,7 @@
       <!--3.枪口/枪管-->
       <SubContainer capacity="1" maxstacksize="1">
         <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="517,220,82,22" origin="0.45,0.5" />
-        <Containable items="barrel_pistols" hide="false" itempos="21.5,6" containedspritedepth="0.51" Scale="0.20" setactive="true" />
+        <Containable items="barrel_pistols" hide="false" itempos="21,6" containedspritedepth="0.51" Scale="0.20" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="3000" fadeouttime="6" />
@@ -3924,7 +3923,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-20" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_1_6.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_1_6.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="40,-5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="1.6" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -3937,7 +3936,7 @@
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
         <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="517,220,82,22" origin="0.45,0.5" />
-        <Containable items="barrel_pistols" hide="false" itempos="42,6" containedspritedepth="0.51" Scale="0.20" setactive="true" />
+        <Containable items="barrel_pistols" hide="false" itempos="40.5,6" containedspritedepth="0.51" Scale="0.20" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="3000" fadeouttime="6" />
@@ -4041,7 +4040,6 @@
         <Conditional spread="lt 12" />
         <Conditional CanRun="false" />
       </StatusEffect>
-
       <StatusEffect type="Always" target="This" unskilledspread="-10">
         <Conditional unskilledspread="gt 15" />
         <Conditional HasStatusTag="tsm_sight_holographic" />
@@ -4077,7 +4075,7 @@
         <StatusEffect type="OnInserted" target="This" holdpos="20,-20" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_1_7.ogg" type="OnInserted" range="200.0" loop="false" volume="1"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_1_7.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
         <StatusEffect target="This" holdpos="40,-5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="1.7" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
@@ -4090,7 +4088,7 @@
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
         <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="517,220,82,22" origin="0.45,0.5" />
-        <Containable items="barrel_pistols" hide="false" itempos="50,5" containedspritedepth="0.51" Scale="0.20" setactive="true" />
+        <Containable items="barrel_pistols" hide="false" itempos="47.5,5" containedspritedepth="0.51" Scale="0.20" setactive="true" />
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
@@ -4112,7 +4110,7 @@
   </Item>
   <!--弹匣-->
   <!--反抗军弹药箱-->
-  <Item name="反抗军弹药箱" description="反抗军之间流行的弹药箱&#xD;&#xA;[放入弹匣,右键+左键压弹.]" subcategory="tsm_separatists" identifier="fkj_ammobox" health="700" category="Equipment" tags="mediumitem,ammobox,fkj_ammobox" scale="0.5" pickdistance="150" impactsoundtag="impact_metal_heavy" maxstacksize="1">
+  <Item name="反抗军弹药箱" subcategory="tsm_separatists" identifier="fkj_ammobox" health="700" category="Equipment" tags="mediumitem,ammobox,fkj_ammobox" scale="0.5" pickdistance="150" impactsoundtag="impact_metal_heavy" maxstacksize="1">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.54" sourcerect="2270,2378,219,105" origin="0.5,0.5" />
     <Body width="219" height="105" density="50" />
@@ -4186,13 +4184,13 @@
       <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price>
-    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="10" requiresrecipe="false" amount="4">
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="4">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator,fabricator" displayname="recycleitem" requiredtime="4">
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="4">
       <RequiredItem tag="545mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" outcondition="0.5" />
@@ -4224,13 +4222,13 @@
       <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price-->
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="1">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="3">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="3">
       <RequiredItem tag="fkj_545_krmag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="1" />
@@ -4267,28 +4265,28 @@
       <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price-->
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="3">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="3">
       <RequiredItem identifier="plastic" amount="3" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="3" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="4" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
       <RequiredItem identifier="carbon" amount="6" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="3">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="3">
       <RequiredItem identifier="plastic" amount="3" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="3" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="4" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
       <RequiredItem identifier="tsm_tungsten" amount="6" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5">
       <RequiredItem tag="fkj_545cj_mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1"/>
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
       <RequiredItem identifier="tsm_tungsten" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5">
       <RequiredItem tag="fkj_545cj_mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1"/>
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
@@ -4315,14 +4313,14 @@
         <SpawnItem identifiers="gb545" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="2">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
       <RequiredItem identifier="titanium" amount="3" />
       <RequiredItem identifier="tsm_pyrotechnic" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5">
       <RequiredItem identifier="fkj_545hz_mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="1" />
@@ -4356,13 +4354,13 @@
       <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price>
-    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="10" requiresrecipe="false" amount="2">
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="2">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem identifier="tsm_oilshale" amount="3" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="4" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator,fabricator" displayname="recycleitem" requiredtime="5">
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5">
       <RequiredItem tag="762mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_oilshale" mincondition="1" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
@@ -4394,13 +4392,13 @@
       <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price-->
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="1">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem identifier="tsm_oilshale" amount="3" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5">
       <RequiredItem tag="fkj_762_krmag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_oilshale" amount="1" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
@@ -4437,28 +4435,28 @@
       <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price-->
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="2">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem identifier="tsm_oilshale" amount="3" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="4" />
       <RequiredItem identifier="carbon" amount="5" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="2">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem identifier="tsm_oilshale" amount="3" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="4" />
       <RequiredItem identifier="tsm_tungsten" amount="5" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5">
       <RequiredItem tag="fkj_762cj_mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
       <RequiredItem identifier="tsm_tungsten" amount="2" />
       <RequiredItem identifier="tsm_oilshale" amount="1" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5">
       <RequiredItem tag="fkj_762cj_mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
@@ -4485,14 +4483,14 @@
         <SpawnItem identifiers="gb762*39" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="1">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem identifier="tsm_oilshale" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
       <RequiredItem identifier="titanium" amount="2" />
       <RequiredItem identifier="tsm_pyrotechnic" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5">
       <RequiredItem identifier="fkj_762hz_mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_oilshale" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
@@ -4518,13 +4516,13 @@
         <SpawnItem identifiers="pt762_51" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="10" requiresrecipe="false" amount="1">
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
       <RequiredItem identifier="plastic" amount="1" />
       <RequiredItem identifier="tsm_oilshale" amount="2" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator,fabricator" displayname="recycleitem" requiredtime="6">
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
       <RequiredItem tag="762_51mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_oilshale" mincondition="2" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
@@ -4548,14 +4546,14 @@
         <SpawnItem identifiers="pt762_51_ap" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false" amount="1">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="6" requiresrecipe="false" amount="1">
       <RequiredItem identifier="plastic" amount="1" />
       <RequiredItem identifier="tsm_oilshale" amount="2" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
       <RequiredItem identifier="tsm_tungsten" amount="3" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
       <RequiredItem tag="762_51mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_oilshale" mincondition="1" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
@@ -4588,13 +4586,13 @@
       <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price>
-    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="6" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="6" requiresrecipe="false">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="5" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="4" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="4" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator,fabricator" displayname="recycleitem" requiredtime="6">
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
       <RequiredItem identifier="fkj_jts_mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="4" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
@@ -4619,24 +4617,24 @@
         <SpawnItem identifiers="cj545" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="6" requiresrecipe="false">
       <RequiredItem identifier="fkj_jts_mag" amount="1" />
       <RequiredItem identifier="tsm_tungsten" amount="4" />
       <RequiredItem identifier="tsm_oilshale" amount="3" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="6" requiresrecipe="false">
       <RequiredItem identifier="fkj_jts_mag" amount="1" />
       <RequiredItem identifier="carbon" amount="4" />
       <RequiredItem identifier="tsm_oilshale" amount="3" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
       <RequiredItem identifier="fkj_jts_cjmag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_oilshale" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
       <RequiredItem identifier="carbon" amount="3" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
       <RequiredItem identifier="fkj_jts_cjmag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_oilshale" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
@@ -4651,7 +4649,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="反抗军通用机枪弹匣（7.62*51）" identifier="fkj_pkp_mag" subcategory="tsm_coalition" scale="0.36" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="fkj_mag,smallitem,fkj_pkp_mag,fkj_zd,magazine,gpmgammo,handheldammo" impactsoundtag="impact_metal_light" health="100" description="">
+  <Item name="反抗军通用机枪弹匣（7.62*51）" identifier="fkj_pkp_mag" subcategory="tsm_separatists" scale="0.36" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="fkj_mag,smallitem,fkj_pkp_mag,fkj_zd,magazine,gpmgammo,handheldammo" impactsoundtag="impact_metal_light" health="100" description="">
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1934,221,48,109" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.54" sourcerect="1934,221,48,109" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -4662,13 +4660,13 @@
         <SpawnItem identifiers="pt762_51" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="6" requiresrecipe="false">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem identifier="tsm_oilshale" amount="3" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
       <RequiredItem tag="fkj_pkp_mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_oilshale" amount="3" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
@@ -4681,7 +4679,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="反抗军通用机枪穿甲弹匣（7.62*51）" identifier="fkj_pkp_mag_cj" subcategory="tsm_coalition" scale="0.36" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="fkj_mag,smallitem,fkj_pkp_mag,magazine,gpmgammo,handheldammo" impactsoundtag="impact_metal_light" health="100" description="">
+  <Item name="反抗军通用机枪穿甲弹匣（7.62*51）" identifier="fkj_pkp_mag_cj" subcategory="tsm_separatists" scale="0.36" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="fkj_mag,smallitem,fkj_pkp_mag,magazine,gpmgammo,handheldammo" impactsoundtag="impact_metal_light" health="100" description="">
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2003,69,51,109" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.54" sourcerect="2003,69,51,109" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -4692,24 +4690,24 @@
         <SpawnItem identifiers="pt762_51_ap" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="6" requiresrecipe="false">
       <RequiredItem identifier="fkj_pkp_mag" amount="1" />
       <RequiredItem identifier="tsm_tungsten" amount="3" />
       <RequiredItem identifier="tsm_sulphur" amount="3" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="6" requiresrecipe="false">
       <RequiredItem identifier="fkj_pkp_mag" amount="1" />
       <RequiredItem identifier="carbon" amount="3" />
       <RequiredItem identifier="tsm_sulphur" amount="3" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
       <RequiredItem identifier="fkj_pkp_mag_cj" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_sulphur" amount="3" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
       <RequiredItem identifier="carbon" mincondition="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
       <RequiredItem identifier="fkj_pkp_mag_cj" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_sulphur" amount="3" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
@@ -4742,13 +4740,13 @@
       <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price>
-    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="6" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="6" requiresrecipe="false">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator,fabricator" displayname="recycleitem" requiredtime="6">
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
       <RequiredItem identifier="fkj_rpk_mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
@@ -4781,13 +4779,13 @@
       <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price-->
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="1">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
       <RequiredItem identifier="plastic" amount="5" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="6" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="6" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="6" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
       <RequiredItem tag="fkj_m2_mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="5" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="5" />
@@ -4820,13 +4818,13 @@
       <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price-->
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false" amount="1">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="6" requiresrecipe="false" amount="1">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem identifier="tsm_tungsten" amount="3" />
       <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" amount="2" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
       <RequiredItem tag="fkj_svd_mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_tungsten" amount="2" />
       <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" amount="2" />
@@ -4841,7 +4839,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--AA12弹匣-->
-  <Item name="反抗军霰弹弹鼓" identifier="fkj_aa12_mag" subcategory="tsm_separatists" description="" scale="0.29" category="weapon" health="15" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" tags="fkj_aa12_mag,fkj_hzzd,smallitem,fkj_mag,magazine,handheldammo" impactsoundtag="impact_metal_light">
+  <Item name="反抗军霰弹弹鼓" identifier="fkj_aa12_mag" subcategory="tsm_separatists" scale="0.33" category="weapon" health="15" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" tags="fkj_aa12_mag,fkj_hzzd,smallitem,fkj_mag,magazine,handheldammo" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2453,231,36,99" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.56" sourcerect="2453,231,36,99" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -4859,13 +4857,13 @@
       <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price-->
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false" amount="1">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="6" requiresrecipe="false" amount="1">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="3" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
       <RequiredItem tag="fkj_aa12_mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
@@ -4881,7 +4879,7 @@
   </Item>
   <!--子弹-->
   <!--545-->
-  <Item name="5.45普通弹" identifier="pt545" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name="5.45普通弹" identifier="pt545" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
@@ -4912,7 +4910,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--545ap-->
-  <Item name="5.45穿甲弹" identifier="cj545" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name="5.45穿甲弹" identifier="cj545" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
@@ -4943,7 +4941,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--545ex-->
-  <Item name="5.45混合爆炸弹" identifier="gb545" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name="5.45混合爆炸弹" identifier="gb545" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
@@ -4980,7 +4978,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--762*39-->
-  <Item name="普通7.62*39" identifier="pt762*39" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name="普通7.62*39" identifier="pt762*39" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
@@ -5012,7 +5010,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--7.62*39ap-->
-  <Item name="穿甲7.62*39" identifier="cj762*39" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name="穿甲7.62*39" identifier="cj762*39" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
@@ -5043,7 +5041,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--762ex-->
-  <Item name="7.62*39混合爆炸弹" identifier="gb762*39" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name="7.62*39混合爆炸弹" identifier="gb762*39" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
@@ -5081,7 +5079,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--7.62*54-->
-  <Item name="pt7.62*54" identifier="pt762*54" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name="pt7.62*54" identifier="pt762*54" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
@@ -5113,7 +5111,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--12-->
-  <Item name="aa12ammo" identifier="12ammo" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,12ammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name="aa12ammo" identifier="12ammo" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,12ammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="126,155,37,15" />
     <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="126,155,37,15" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
