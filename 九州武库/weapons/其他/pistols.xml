@@ -66,7 +66,7 @@
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-        <Sound file="%ModDir%/weapons/其他/92.ogg" type="OnUse" range="2000" />
+        <Sound file="%ModDir%/weapons/其他/9mm_pistols.ogg" type="OnUse" range="2000" />
         <StatusEffect type="OnUse" target="This">
           <Explosion range="150.0" force="0.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12" />
         </StatusEffect>
@@ -180,11 +180,11 @@
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
         <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
           <RequiredItem items="1" matchonempty="true" type="Contained" targetslot="4"/>
-          <Sound file="%ModDir%/weapons/其他/92.ogg" type="OnUse" range="2000" />
+          <Sound file="%ModDir%/weapons/其他/glock18.ogg" type="OnUse" range="2000" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
           <RequiredItem items="tsm_pistols_silencers" type="Contained" targetslot="4"/>
-          <Sound file="%ModDir%/weapons/其他/xy2.ogg" type="OnUse" range="3000" />
+          <Sound file="%ModDir%/weapons/其他/xy2.ogg" type="OnUse" range="1000" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This">
           <Explosion range="150.0" force="0.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12" />
@@ -381,7 +381,7 @@
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
         <StatusEffect type="OnUse" target="This" forceplaysounds="true">
-          <Sound file="%ModDir%/weapons/其他/171.ogg" type="OnUse" range="3000" />
+          <Sound file="%ModDir%/weapons/其他/smg_9mm.ogg" type="OnUse" range="3000" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This">
           <!--后坐力,屏幕抖动-->
@@ -576,12 +576,12 @@
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="24,3230,220,219" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
         <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
-          <RequiredItem items="1" matchonempty="true" type="Contained" targetslot="2"/>
+          <RequiredItem items="1" matchonempty="true" type="Contained" targetslot="3"/>
           <Sound file="%ModDir%/weapons/其他/p90.ogg" type="OnUse" range="3000" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
-          <RequiredItem items="tsm_pistols_silencers" type="Contained" targetslot="2"/>
-          <Sound file="%ModDir%/weapons/其他/xy4.ogg" type="OnUse" range="3000" />
+          <RequiredItem items="tsm_pistols_silencers" type="Contained" targetslot="3"/>
+          <Sound file="%ModDir%/weapons/其他/silence_p90.ogg" type="OnUse" range="1000" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This">
           <!--后坐力,屏幕抖动-->
@@ -713,7 +713,6 @@
         </StatusEffect>
       </Holdable>
       <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
-      
       <RangedWeapon reload="0.08" weapondamagemodifier="1" holdtrigger="true" barrelpos="120,20" spread="9" unskilledspread="20" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -726,7 +725,7 @@
         </StatusEffect>
         <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
           <RequiredItem items="tsm_pistols_silencers" type="Contained" targetslot="3"/>
-          <Sound file="%ModDir%/weapons/其他/xy1.ogg" type="OnUse" range="3000" />
+          <Sound file="%ModDir%/weapons/其他/silence_mp7.ogg" type="OnUse" range="1000" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This">
           <!--后坐力,屏幕抖动-->
@@ -865,11 +864,11 @@
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
         <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
           <RequiredItem items="1" matchonempty="true" type="Contained" targetslot="3"/>
-          <Sound file="%ModDir%/weapons/其他/ump45.ogg" type="OnUse" range="3000" />
+          <Sound file="%ModDir%/weapons/其他/silence_ump45.ogg" type="OnUse" range="3000" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
           <RequiredItem items="tsm_pistols_silencers" type="Contained" targetslot="3"/>
-          <Sound file="%ModDir%/weapons/其他/xy3.ogg" type="OnUse" range="3000" />
+          <Sound file="%ModDir%/weapons/其他/xy3.ogg" type="OnUse" range="1000" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This">
           <!--后坐力,屏幕抖动-->
@@ -1015,7 +1014,7 @@
         </StatusEffect>
         <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
           <RequiredItem items="tsm_pistols_silencers" type="Contained" targetslot="3"/>
-          <Sound file="%ModDir%/weapons/其他/xy3.ogg" type="OnUse" range="3000" />
+          <Sound file="%ModDir%/weapons/其他/xy3.ogg" type="OnUse" range="1000" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This">
           <!--后坐力,屏幕抖动-->
@@ -1364,10 +1363,10 @@
         <Item identifier="steel" outcondition="0.5" />
         <Item identifier="copper" mincondition="0.9" />
       </Deconstruct>
-      <ItemContainer maxstacksize="1" hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_9_ammo" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-        <Containable items="tsm_9_ammo" />
+      <ItemContainer maxstacksize="1" hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_9_ammo_pistols" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_9_ammo_pistols" />
         <StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true">
-          <SpawnItem identifiers="tsm_9_ammo" spawnposition="ThisInventory" />
+          <SpawnItem identifiers="tsm_9_ammo_pistols" spawnposition="ThisInventory" />
         </StatusEffect>
       </ItemContainer>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -1393,10 +1392,10 @@
         <Item identifier="copper" mincondition="0.9" />
         <Item identifier="copper" mincondition="0.9" />
       </Deconstruct>
-      <ItemContainer maxstacksize="1" hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_9_ammo" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-        <Containable items="tsm_9_ammo" />
+      <ItemContainer maxstacksize="1" hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_9_ammo_pistols" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_9_ammo_pistols" />
         <StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true">
-          <SpawnItem identifiers="tsm_9_ammo" spawnposition="ThisInventory" />
+          <SpawnItem identifiers="tsm_9_ammo_pistols" spawnposition="ThisInventory" />
         </StatusEffect>
       </ItemContainer>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -1421,10 +1420,10 @@
         <Item identifier="steel" outcondition="0.5" />
         <Item identifier="copper" mincondition="0.9" />
       </Deconstruct>
-      <ItemContainer maxstacksize="1" hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_9_ammo" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-        <Containable items="tsm_9_ammo" />
+      <ItemContainer maxstacksize="1" hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_9_ammo_pistols" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_9_ammo_pistols" />
         <StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true">
-          <SpawnItem identifiers="tsm_9_ammo" spawnposition="ThisInventory" />
+          <SpawnItem identifiers="tsm_9_ammo_pistols" spawnposition="ThisInventory" />
         </StatusEffect>
       </ItemContainer>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -1494,6 +1493,33 @@
         </StatusEffect>
       </ItemContainer>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    </Item>
+    <Item name="" identifier="tsm_9_ammo_pistols" subcategory="bullet" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+      <Body width="17" height="6" density="30" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="0" targetforce="2" itemdamage="1" severlimbsprobability="0.1">
+          <Affliction identifier="bleeding" strength="5" />
+          <Affliction identifier="bleeding" strength="10" probability="0.3" />
+          <Affliction identifier="gunshotwound" strength="12" />
+          <Affliction identifier="gunshotwound" strength="1" probability="0.25" />
+          <Affliction identifier="stun" strength="0.1" probability="0.15" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
     </Item>
     <Item name="" identifier="tsm_9_ammo" subcategory="bullet" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />

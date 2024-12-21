@@ -334,6 +334,7 @@
         <Item identifier="lm_beowulf_uniform" equip="true"/>
         <Item identifier="lm_vest_beowulf" equip="true"/>
         <Item identifier="lm_beowulf_helmet" equip="true"/>
+        <Item identifier="tsm_ballistic_faceshield_big" equip="true"/>
         <Item identifier="tsm_enhancement_lightningwizard"/>
         <Item identifier="tsm_thermal_knife"/>
         <Item identifier="tsm_enhancement_combatship">
@@ -354,6 +355,7 @@
         <Item identifier="lm_beowulf_uniform" equip="true"/>
         <Item identifier="lm_vest_beowulf" equip="true"/>
         <Item identifier="lm_beowulf_helmet" equip="true"/>
+        <Item identifier="tsm_ballistic_faceshield_big" equip="true"/>
         <Item identifier="tsm_enhancement_lightningwizard"/>
         <Item identifier="tsm_thermal_knife"/>
         <Item identifier="tsm_enhancement_combatship">
@@ -681,6 +683,7 @@
         <Item identifier="lm_occupation_uniform" equip="true"/>
         <Item identifier="lm_vest_elite" equip="true"/>
         <Item identifier="lm_heavy_helmet" equip="true"/>
+        <Item identifier="tsm_ballistic_faceshield_big" equip="true"/>
         <Item identifier="tsm_thermal_knife"/>
         <Item identifier="tsm_enhancement_combatship">
         <Item identifier="tsm_medicalkits"/>
@@ -720,6 +723,7 @@
           <Item identifier="lm_occupation_uniform" equip="true"/>
           <Item identifier="lm_vest_occupation" equip="true"/>
           <Item identifier="lm_heavy_helmet" equip="true"/>
+          <Item identifier="tsm_ballistic_faceshield_big" equip="true"/>
           <Item identifier="tsm_thermal_knife"/>
           <Item identifier="tsm_enhancement_combatship">
           <Item identifier="tsm_medicalkits"/>
@@ -759,6 +763,7 @@
         <Item identifier="idcard" equip="true"/>
         <Item identifier="lm_occupation_uniform" equip="true"/>
         <Item identifier="lm_vest_occupation" equip="true"/>
+        <Item identifier="tsm_ballistic_faceshield_big" equip="true"/>
         <Item identifier="lm_heavy_helmet" equip="true"/>
         <Item identifier="tsm_thermal_knife"/>
         <Item identifier="tsm_enhancement_combatship">
@@ -849,6 +854,7 @@
         <Item identifier="idcard" equip="true"/>
         <Item identifier="lm_occupation_uniform" equip="true"/>
         <Item identifier="lm_vest_occupation" equip="true"/>
+        <Item identifier="tsm_ballistic_faceshield_big" equip="true"/>
         <Item identifier="lm_fast_helmet_faceshield" equip="true"/>
         <Item identifier="tsm_enhancement_combatship">
         <Item identifier="tsm_medicalkits"/>
@@ -857,7 +863,6 @@
         <Item identifier="tsm_sight_reddot" equip="true"/>
         <Item identifier="tsm_flame_arrester" equip="true"/>
         <Item identifier="tsm_grip_thumb" equip="true"/>
-        <Item identifier="tsm_barrel" equip="true"/>
         <Item identifier="lm_556cj_mag" amount="3"/>
         <Item identifier="lm_556_sulphuriteshard_mag" amount="2"/>
         <Item identifier="lm_556_mag" amount="4"/>
@@ -885,6 +890,7 @@
         <Item identifier="lm_occupation_uniform" equip="true"/>
         <Item identifier="lm_vest_elite" equip="true"/>
         <Item identifier="lm_fast_helmet_faceshield" equip="true"/>
+        <Item identifier="tsm_ballistic_faceshield_big" equip="true"/>
         <Item identifier="tsm_enhancement_combatship">
         <Item identifier="tsm_medicalkits"/>
         </Item>
@@ -1264,6 +1270,7 @@
         <Item identifier="fkj_vest_yehuo" equip="true"/>
         <Item identifier="tsm_steel_knife" equip="true"/>
         <Item identifier="tsm_enhancement_lightningwizard"/>
+        <Item identifier="tsm_ballistic_faceshield_small" equip="true"/>
         <Item identifier="tsm_enhancement_combatship"/>
         <Item identifier="tsm_medicalkits_s">
         <Item identifier="fkj_yehuo_helmet" equip="true"/>
@@ -1287,6 +1294,7 @@
         <Item identifier="fkj_yehuo_uniform" equip="true"/>
         <Item identifier="fkj_vest_yehuo" equip="true"/>
         <Item identifier="fkj_yehuo_helmet" equip="true"/>
+        <Item identifier="tsm_ballistic_faceshield_small" equip="true"/>
         <Item identifier="tsm_steel_knife" equip="true"/>
         <Item identifier="tsm_enhancement_lightningwizard"/>
         <Item identifier="tsm_enhancement_combatship">
@@ -1322,6 +1330,7 @@
         <Item identifier="idcard" equip="true"/>
         <Item identifier="fkj_yehuo_uniform" equip="true"/>
         <Item identifier="fkj_heavy_vest" equip="true"/>
+        <Item identifier="tsm_ballistic_faceshield_small" equip="true"/>
         <Item identifier="tsm_thermal_knife"/>
         <Item identifier="fkj_545cj_mag" >
         <Item identifier="fkj_heavy_helmet" equip="true"/>
@@ -1340,6 +1349,7 @@
         <Item identifier="idcard" equip="true"/>
         <Item identifier="fkj_yehuo_uniform" equip="true"/>
         <Item identifier="fkj_heavy_vest" equip="true"/>
+        <Item identifier="tsm_ballistic_faceshield_small" equip="true"/>
         <Item identifier="tsm_thermal_knife"/>
         <Item identifier="fkj_762cj_mag" >
         <Item identifier="fkj_heavy_helmet" equip="true"/>
@@ -1434,6 +1444,7 @@
           <Item identifier="idcard" equip="true"/>
           <Item identifier="fkj_yehuo_uniform" equip="true"/>
           <Item identifier="fkj_heavy_vest" equip="true"/>
+          <Item identifier="tsm_ballistic_faceshield_small" equip="true"/>
           <Item identifier="tsm_thermal_knife"/>
           <Item identifier="fkj_762_51_ap_mag">
           <Item identifier="fkj_heavy_helmet" equip="true"/>
@@ -1630,6 +1641,7 @@
         <Item identifier="idcard" equip="true"/>
         <Item identifier="fkj_yehuo_uniform" equip="true"/>
         <Item identifier="fkj_heavy_vest" equip="true"/>
+        <Item identifier="tsm_ballistic_faceshield_small" equip="true"/>
         <Item identifier="tsm_enhancement_combatship">
         <Item identifier="fkj_heavy_helmet" equip="true"/>
         </Item>
@@ -1647,8 +1659,9 @@
         <Item identifier="idcard" equip="true"/>
         <Item identifier="fkj_yehuo_uniform" equip="true"/>
         <Item identifier="fkj_heavy_vest" equip="true"/>
+        <Item identifier="tsm_ballistic_faceshield_small" equip="true"/>
         <Item identifier="tsm_enhancement_combatship">
-          <Item identifier="fkj_heavy_helmet" equip="true"/>
+        <Item identifier="fkj_heavy_helmet" equip="true"/>
         </Item>
         <Item identifier="tsm_fkj_g3a4" equip="true">
           <Item identifier="tsm_sight_holographic" equip="true"/>
@@ -1685,6 +1698,7 @@
         <Item identifier="fkj_anonymous_uniform" equip="true"/>
         <Item identifier="fkj_heavy_vest" equip="true"/>
         <Item identifier="fkj_Anonymous_helmet" equip="true"/>
+        <Item identifier="tsm_ballistic_faceshield_small" equip="true"/>
         <Item identifier="tsm_enhancement_combatship">
         <Item identifier="tsm_medicalkits_s"/>
         </Item>
@@ -1702,6 +1716,7 @@
         <Item identifier="fkj_anonymous_uniform" equip="true"/>
         <Item identifier="fkj_heavy_vest" equip="true"/>
         <Item identifier="fkj_Anonymous_helmet" equip="true"/>
+        <Item identifier="tsm_ballistic_faceshield_small" equip="true"/>
         <Item identifier="tsm_enhancement_combatship">
         <Item identifier="tsm_medicalkits_s"/>
         </Item>
@@ -1720,6 +1735,7 @@
         <Item identifier="fkj_anonymous_uniform" equip="true"/>
         <Item identifier="fkj_heavy_vest" equip="true"/>
         <Item identifier="fkj_Anonymous_helmet" equip="true"/>
+        <Item identifier="tsm_ballistic_faceshield_small" equip="true"/>
         <Item identifier="tsm_enhancement_combatship">
         <Item identifier="tsm_medicalkits_s"/>
         </Item>
@@ -2115,6 +2131,7 @@
         <Item identifier="tsm_advanced_uniform" equip="true"/>
         <Item identifier="tsm_heavy_vest" equip="true"/>
         <Item identifier="tsm_heavycombat_helmet" equip="true"/>
+        <Item identifier="tsm_ballistic_faceshield_big" equip="true"/>
         <Item identifier="tsm_enhancement_combatship">
         <Item identifier="tsm_medicalkits"/>
         </Item>
@@ -2136,6 +2153,7 @@
         <Item identifier="tsm_heavy_vest" equip="true"/>
         <Item identifier="tsm_heavycombat_helmet" equip="true"/>
         <Item identifier="tsm_enhancement_lightningwizard"/>
+        <Item identifier="tsm_ballistic_faceshield_big" equip="true"/>
         <Item identifier="tsm_enhancement_combatship"/>
         <Item identifier="tsm_bg_licences">
         <Item identifier="tsm_medicalkits"/>
@@ -2264,6 +2282,7 @@
       <Item identifier="idcard" equip="true"/>
       <Item identifier="fkj_abyssrambler_uniform" equip="true"/>
       <Item identifier="fkj_heavy_vest" equip="true"/>
+      <Item identifier="tsm_ballistic_faceshield_small" equip="true"/>
       <Item identifier="tsm_enhancement_combatship">
       <Item identifier="fkj_heavy_helmet" equip="true"/>
       </Item>
@@ -2278,6 +2297,7 @@
       <Item identifier="idcard" equip="true"/>
       <Item identifier="fkj_abyssrambler_uniform" equip="true"/>
       <Item identifier="fkj_heavy_vest" equip="true"/>
+      <Item identifier="tsm_ballistic_faceshield_small" equip="true"/>
       <Item identifier="tsm_enhancement_combatship">
       <Item identifier="fkj_heavy_helmet" equip="true"/>
       </Item>
@@ -2304,7 +2324,6 @@
       <Item identifier="fkj_762hz_mag" amount="3"/>
       <Item identifier="fkj_762cj_mag" amount="4"/>
       <Item identifier="tsm_sight_reddot" equip="true"/>
-      <Item identifier="tsm_barrel" equip="true"/>
       </Item>
     </ItemSet>
     </npc>
@@ -2325,6 +2344,7 @@
         <Item identifier="idcard" equip="true"/>
         <Item identifier="fkj_yehuo_uniform" equip="true"/>
         <Item identifier="fkj_heavy_vest" equip="true"/>
+        <Item identifier="tsm_ballistic_faceshield_small" equip="true"/>
         <Item identifier="tsm_enhancement_combatship">
         <Item identifier="fkj_heavy_helmet" equip="true"/>
         </Item>
@@ -2361,7 +2381,6 @@
         </Item>
         <Item identifier="tsm_advanced_03" equip="true">
         <Item identifier="tsm_03_sight" equip="true"/>
-        <Item identifier="tsm_barrel" equip="true"/>
         <Item identifier="tsm_58_mag_cj" amount="4"/>
         <Item identifier="tsm_58_mag" amount="4"/>
         </Item>

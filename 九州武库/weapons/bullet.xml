@@ -517,13 +517,11 @@
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
                 <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,150,150,175" />
-                <particleemitter particle="spark" particleamount="20" emitinterval="1000" velocitymin="0" velocitymax="50" anglemin="0" anglemax="180" scalemin="2" scalemax="3" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <Conditional entitytype="eq Structure" />
                 <Conditional hastag="eq door" />
                 <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-                <particleemitter particle="spark" particleamount="20" emitinterval="1000" velocitymin="0" velocitymax="50" anglemin="0" anglemax="180" scalemin="2" scalemax="3" />
             </StatusEffect>
             <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
                 <Remove />
@@ -867,13 +865,13 @@
                 <SpawnItem identifiers="tsm_58_fulgurium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="4">
-            <RequiredItem identifier="tsm_58_mag" amount="4" />
-            <RequiredItem identifier="fulgurium" amount="1" />
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
+            <RequiredItem identifier="tsm_58_mag" amount="1" />
+            <RequiredItem identifier="fulgurium" mincondition="0.25" />
         </Fabricate>
         <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.5" />
-            <Item identifier="fulgurium" mincondition="0.9" />
+            <Item identifier="plastic" outcondition="0.25" />
+            <Item identifier="fulgurium" outcondition="0.25" mincondition="0.9" />
         </Deconstruct>
         <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -889,13 +887,13 @@
                 <SpawnItem identifiers="tsm_58_physicorium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="4">
-        <RequiredItem identifier="tsm_58_mag" amount="4" />
-        <RequiredItem identifier="physicorium" amount="1" />
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
+        <RequiredItem identifier="tsm_58_mag" amount="1" />
+        <RequiredItem identifier="physicorium" mincondition="0.25" />
         </Fabricate>
         <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.5" />
-            <Item identifier="physicorium" mincondition="0.9" />
+            <Item identifier="plastic" outcondition="0.25" />
+            <Item identifier="physicorium" outcondition="0.25" mincondition="0.9" />
         </Deconstruct>
         <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -911,13 +909,13 @@
                 <SpawnItem identifiers="tsm_58_sulphuriteshard" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="4">
-        <RequiredItem identifier="tsm_58_mag" amount="4" />
-        <RequiredItem identifier="sulphuriteshard" amount="1" />
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
+        <RequiredItem identifier="tsm_58_mag" amount="1" />
+        <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
         </Fabricate>
         <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.5" />
-            <Item identifier="sulphuriteshard" mincondition="0.9" />
+            <Item identifier="plastic" outcondition="0.25" />
+            <Item identifier="sulphuriteshard" outcondition="0.25" mincondition="0.9" />
         </Deconstruct>
         <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -933,13 +931,13 @@
             <SpawnItem identifiers="tsm_58_incendium" spawnposition="ThisInventory" />
         </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="4">
-    <RequiredItem identifier="tsm_58_mag" amount="4" />
-    <RequiredItem identifier="incendium" amount="1" />
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
+    <RequiredItem identifier="tsm_58_mag" amount="1" />
+    <RequiredItem identifier="incendium" mincondition="0.25" />
     </Fabricate>
     <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.5" />
-        <Item identifier="incendium" mincondition="0.9" />
+        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="incendium" outcondition="0.25" mincondition="0.9" />
     </Deconstruct>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -955,13 +953,13 @@
                 <SpawnItem identifiers="tsm_58_fulgurium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="4">
-            <RequiredItem identifier="tsm_magazine" amount="4" />
-            <RequiredItem identifier="fulgurium" amount="1" />
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
+            <RequiredItem identifier="tsm_magazine" amount="1" />
+            <RequiredItem identifier="fulgurium" mincondition="0.25" />
         </Fabricate>
         <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.5" />
-            <Item identifier="fulgurium" mincondition="0.9" />
+            <Item identifier="plastic" outcondition="0.25" />
+            <Item identifier="fulgurium" outcondition="0.25" mincondition="0.9" />
         </Deconstruct>
         <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -977,13 +975,13 @@
                 <SpawnItem identifiers="tsm_58_physicorium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="4">
-        <RequiredItem identifier="tsm_magazine" amount="4" />
-        <RequiredItem identifier="physicorium" amount="1" />
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
+        <RequiredItem identifier="tsm_magazine" amount="1" />
+        <RequiredItem identifier="physicorium" mincondition="0.25" />
         </Fabricate>
         <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.5" />
-            <Item identifier="physicorium" mincondition="0.9" />
+            <Item identifier="plastic" outcondition="0.25" />
+            <Item identifier="physicorium" outcondition="0.25" mincondition="0.9" />
         </Deconstruct>
         <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -999,13 +997,13 @@
             <SpawnItem identifiers="tsm_58_sulphuriteshard" spawnposition="ThisInventory" />
         </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="4">
-    <RequiredItem identifier="tsm_magazine" amount="4" />
-    <RequiredItem identifier="sulphuriteshard" amount="1" />
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
+    <RequiredItem identifier="tsm_magazine" amount="1" />
+    <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
     </Fabricate>
     <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.5" />
-        <Item identifier="tsm_58_sulphuriteshard" mincondition="0.9" />
+        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="tsm_58_sulphuriteshard" outcondition="0.25" mincondition="0.9" />
     </Deconstruct>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -1021,13 +1019,13 @@
                 <SpawnItem identifiers="tsm_58_incendium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="4">
-        <RequiredItem identifier="tsm_magazine" amount="4" />
-        <RequiredItem identifier="incendium" amount="1" />
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
+        <RequiredItem identifier="tsm_magazine" amount="1" />
+        <RequiredItem identifier="incendium" mincondition="0.25" />
         </Fabricate>
         <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.5" />
-            <Item identifier="incendium" mincondition="0.9" />
+            <Item identifier="plastic"  outcondition="0.25" />
+            <Item identifier="incendium" outcondition="0.25" mincondition="0.9" />
         </Deconstruct>
         <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -1043,13 +1041,13 @@
                 <SpawnItem identifiers="tsm_545_fulgurium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="4">
-            <RequiredItem identifier="fkj_545_mag" amount="4" />
-            <RequiredItem identifier="fulgurium" amount="1" />
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
+            <RequiredItem identifier="fkj_545_mag" amount="1" />
+            <RequiredItem identifier="fulgurium" mincondition="0.25" />
         </Fabricate>
         <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.5" />
-            <Item identifier="fulgurium" mincondition="0.9" />
+            <Item identifier="plastic" outcondition="0.25" />
+            <Item identifier="fulgurium" outcondition="0.25" mincondition="0.9" />
         </Deconstruct>
         <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -1065,13 +1063,13 @@
                 <SpawnItem identifiers="tsm_545_physicorium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="4">
-            <RequiredItem identifier="fkj_545_mag" amount="4" />
-            <RequiredItem identifier="physicorium" amount="1" />
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
+            <RequiredItem identifier="fkj_545_mag" amount="1" />
+            <RequiredItem identifier="physicorium" mincondition="0.25" />
         </Fabricate>
         <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.5" />
-            <Item identifier="physicorium" mincondition="0.9" />
+            <Item identifier="plastic" outcondition="0.25" />
+            <Item identifier="physicorium" outcondition="0.25" mincondition="0.9" />
         </Deconstruct>
         <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -1087,13 +1085,13 @@
                 <SpawnItem identifiers="tsm_545_sulphuriteshard" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="4" amount="4">
-            <RequiredItem identifier="fkj_545_mag" amount="4" />
-            <RequiredItem identifier="sulphuriteshard" amount="1" />
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="4" amount="1">
+            <RequiredItem identifier="fkj_545_mag" amount="1" />
+            <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
         </Fabricate>
         <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.5" />
-            <Item identifier="sulphuriteshard" mincondition="0.9" />
+            <Item identifier="plastic" outcondition="0.25" />
+            <Item identifier="sulphuriteshard" outcondition="0.25" mincondition="0.9" />
         </Deconstruct>
         <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -1109,13 +1107,13 @@
                 <SpawnItem identifiers="tsm_545_incendium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="4">
-            <RequiredItem identifier="fkj_545_mag" amount="4" />
-            <RequiredItem identifier="incendium" amount="1" />
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
+            <RequiredItem identifier="fkj_545_mag" amount="1" />
+            <RequiredItem identifier="incendium" mincondition="0.25" />
         </Fabricate>
         <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.5" />
-            <Item identifier="incendium" mincondition="0.9" />
+            <Item identifier="plastic" outcondition="0.25" />
+            <Item identifier="incendium" outcondition="0.25" mincondition="0.9" />
         </Deconstruct>
         <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -1131,13 +1129,13 @@
                 <SpawnItem identifiers="tsm_556_fulgurium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="4">
-            <RequiredItem identifier="lm_556_mag" amount="4" />
-            <RequiredItem identifier="fulgurium" amount="1" />
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
+            <RequiredItem identifier="lm_556_mag" amount="1" />
+            <RequiredItem identifier="fulgurium" mincondition="0.25" />
         </Fabricate>
         <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.5" />
-            <Item identifier="fulgurium" mincondition="0.9" />
+            <Item identifier="plastic" outcondition="0.25" />
+            <Item identifier="fulgurium" outcondition="0.25" mincondition="0.9" />
         </Deconstruct>
         <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -1153,13 +1151,13 @@
                 <SpawnItem identifiers="tsm_58_physicorium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="4">
-            <RequiredItem identifier="lm_556_mag" amount="4" />
-            <RequiredItem identifier="physicorium" amount="1" />
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
+            <RequiredItem identifier="lm_556_mag" amount="1" />
+            <RequiredItem identifier="physicorium" mincondition="0.25" />
         </Fabricate>
         <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.5" />
-            <Item identifier="physicorium" mincondition="0.9" />
+            <Item identifier="plastic" outcondition="0.25" />
+            <Item identifier="physicorium" outcondition="0.25" mincondition="0.9" />
         </Deconstruct>
         <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -1175,13 +1173,13 @@
                 <SpawnItem identifiers="tsm_58_sulphuriteshard" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="4">
-            <RequiredItem identifier="lm_556_mag" amount="4" />
-            <RequiredItem identifier="sulphuriteshard" amount="1" />
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
+            <RequiredItem identifier="lm_556_mag" amount="1" />
+            <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
         </Fabricate>
         <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.5" />
-            <Item identifier="sulphuriteshard" mincondition="0.9" />
+            <Item identifier="plastic" outcondition="0.25" />
+            <Item identifier="sulphuriteshard" outcondition="0.25" mincondition="0.9" />
         </Deconstruct>
         <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -1197,13 +1195,13 @@
                 <SpawnItem identifiers="tsm_556_incendium" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="4">
-            <RequiredItem identifier="lm_556_mag" amount="4" />
-            <RequiredItem identifier="incendium" amount="1" />
+        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
+            <RequiredItem identifier="lm_556_mag" amount="1" />
+            <RequiredItem identifier="incendium" mincondition="0.25" />
         </Fabricate>
         <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.5" />
-            <Item identifier="incendium" mincondition="0.9" />
+            <Item identifier="plastic" outcondition="0.25" />
+            <Item identifier="incendium" outcondition="0.25" mincondition="0.9" />
         </Deconstruct>
         <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
         <Upgrade gameversion="0.10.0.0" scale="0.5" />

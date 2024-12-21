@@ -5,7 +5,7 @@
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="798,9,31,48" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="798,9,31,48" depth="0.56" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="31" height="43" density="15" />
+    <Body width="31" height="43" density="8" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_straight_grip_buff" strength="2" />
@@ -33,7 +33,7 @@
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="399,6,94,51" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="399,6,94,51" depth="0.56" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="31" height="43" density="15" />
+    <Body width="31" height="43" density="9" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_cqr_grip_buff" strength="2" />
@@ -61,7 +61,7 @@
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="509,8,90,51" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="509,8,90,51" depth="0.56" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="31" height="43" density="15" />
+    <Body width="31" height="43" density="6" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_triangle_grip_buff" strength="2" />
@@ -89,7 +89,7 @@
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="633,3,83,58" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="633,3,83,58" depth="0.56" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="31" height="43" density="15" />
+    <Body width="31" height="43" density="4" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_thumb_grip_buff" strength="2" />
@@ -116,7 +116,7 @@
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1040,420,58,52" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1040,420,58,52" depth="0.56" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="31" height="43" density="15" />
+    <Body width="31" height="43" density="5" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_light_grip_buff" strength="2" />
@@ -143,7 +143,7 @@
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2255,609,37,97" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2255,609,37,97" depth="0.56" origin="0.5,0.5" />
-    <Body width="37" height="97" density="15" />
+    <Body width="37" height="97" density="8" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_mounts_grip_buff" strength="2" />
@@ -167,7 +167,7 @@
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1058,206,67,40" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1058,206,67,40" depth="0.536" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="67" height="40" density="15" />
+    <Body width="67" height="40" density="7" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_sight_reddot" strength="2" />
@@ -195,7 +195,7 @@
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1440,280,54,44" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1440,280,54,44" depth="0.536" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="54" height="44" density="15" />
+    <Body width="54" height="44" density="7" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_sight_holographic" strength="2" />
@@ -223,7 +223,7 @@
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1425,210,78,44" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1425,210,78,44" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="78" height="44" density="15" />
+    <Body width="78" height="44" density="7" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_sight_double" strength="2" />
@@ -255,7 +255,7 @@
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="33,86,173,88" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="33,86,173,88" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="78" height="44" density="15" />
+    <Body width="78" height="44" density="8" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_sight_pso" strength="2" />
@@ -282,7 +282,7 @@
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="327,92,109,47" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="327,92,109,47" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="78" height="44" density="15" />
+    <Body width="78" height="44" density="10" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_sight_c79" strength="2" />
@@ -310,7 +310,7 @@
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="455,91,89,48" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="455,91,89,48" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="78" height="44" density="15" />
+    <Body width="78" height="44" density="11" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect"/>
     <StatusHUD range="150" overlaycolor="0,50,25,30">
       <StatusEffect type="OnActive" target="This,Character" drawhudwhenequipped="true" setvalue="true" comparison="And"/>
@@ -344,7 +344,7 @@
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="641,83,88,54" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="641,83,88,54" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="78" height="44" density="15" />
+    <Body width="78" height="44" density="9" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_sight_acog" strength="2" />
@@ -366,7 +366,7 @@
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="762,90,134,47" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="762,90,134,47" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="78" height="44" density="15" />
+    <Body width="78" height="44" density="10" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_sight_thermal" strength="2" />
@@ -399,7 +399,7 @@
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2355,654,130,44" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2355,654,130,44" depth="0.54" origin="0.5,0.5" />
-    <Body width="130" height="44" density="15" />
+    <Body width="130" height="44" density="8" />
     <Holdable slots="Any" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_sight_95" strength="2" />
@@ -422,7 +422,7 @@
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2346,836,134,44" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2346,836,134,44" depth="0.54" origin="0.5,0.5" />
-    <Body width="134" height="44" density="15" />
+    <Body width="134" height="44" density="8" />
     <Holdable slots="Any" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_sight_03" strength="2" />
@@ -445,7 +445,7 @@
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1050,338,93,63" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1050,338,93,63" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="78" height="44" density="15" />
+    <Body width="78" height="44" density="8" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_sight_qmk152" strength="2" />
@@ -468,7 +468,7 @@
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2335,605,150,24" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2335,605,150,24" depth="0.56" origin="0.5,0.5" />
-    <Body width="150" height="24" density="15" />
+    <Body width="150" height="24" density="8" />
     <Holdable slots="Any" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_barrel2_buff" strength="2" />
@@ -491,7 +491,7 @@
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1227,78,175,57" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1227,78,175,57" depth="0.53" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="175" height="57" density="15" />
+    <Body width="175" height="57" density="3" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_barrel_buff" strength="2" />
@@ -519,7 +519,7 @@
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1224,8,174,49" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1224,8,174,49" depth="0.53" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="174" height="49" density="15" />
+    <Body width="174" height="49" density="4" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_barrel1_buff" strength="2" />
@@ -546,7 +546,7 @@
   <Item name="消音器" identifier="tsm_pistols_silencers" subcategory="accessories" category="Equipment" Tags="smallitem,barrel_pistols" cargocontaineridentifier="tsm_metalcrate" Scale="0.1" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%//weapons/配件/accessories.png" sourcerect="85,426,178,46" origin="0.5,0.5" />
     <Sprite texture="%ModDir%//weapons/配件/accessories.png" sourcerect="85,426,178,46" depth="0.53" origin="0.5,0.5" />
-    <Body width="96" height="28" density="15" />
+    <Body width="96" height="28" density="3" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_barrel1_buff" strength="2" />
@@ -570,10 +570,10 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="消音器" identifier="tsm_gun_silencers" subcategory="accessories" category="Equipment" Tags="smallitem,barrel" cargocontaineridentifier="tsm_metalcrate" Scale="0.1" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%//weapons/配件/accessories.png" sourcerect="81,329,200,53" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%//weapons/配件/accessories.png" sourcerect="81,329,200,53" depth="0.53" origin="0.5,0.5" />
-    <Body width="96" height="28" density="15" />
+  <Item name="消音器" identifier="tsm_gun_silencers" subcategory="accessories" category="Equipment" Tags="smallitem,barrel" cargocontaineridentifier="tsm_metalcrate" Scale="0.08" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%//weapons/配件/accessories.png" sourcerect="82,344,176,47" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%//weapons/配件/accessories.png" sourcerect="82,344,176,47" depth="0.53" origin="0.5,0.5" />
+    <Body width="150" height="35" density="3" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_barrel1_buff" strength="2" />
@@ -627,7 +627,7 @@
   <Item name="手枪瞄具" identifier="tsm_sighting_pistols" subcategory="accessories" category="Equipment" Tags="smallitem,sighting_pistols" cargocontaineridentifier="tsm_metalcrate" Scale="0.12" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="588,472,115,64" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="588,472,115,64" depth="0.53" origin="0.5,0.5" />
-    <Body width="115" height="64" density="15" />
+    <Body width="115" height="64" density="7" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_straight_grip_buff" strength="2" />
@@ -674,7 +674,7 @@
       </StatusEffect>
     </ItemContainer>
     <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2346,904,128,84" depth="0.54" origin="0.5,0.5" />
-    <Body width="128" height="84" density="15" />
+    <Body width="128" height="84" density="12" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,0" handle1="-20,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnContained" target="This" tags="ingun" duration="0.6" interval="0.5" delay="0.1" AllowWhenBroken="true">
         <Conditional hastag="gun" targetcontainer="true" />

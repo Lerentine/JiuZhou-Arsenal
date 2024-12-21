@@ -304,10 +304,10 @@
   <entitydescription.tsm_jz_vest>九州作战部制式甲胄，以先进作战作战甲胄作为基底而成，定期维护以保证足够防护效能。</entitydescription.tsm_jz_vest>
 
   <entityname.tsm_riotcontrol_helmet>奇迹之海防暴头盔</entityname.tsm_riotcontrol_helmet>
-  <entitydescription.tsm_riotcontrol_helmet>不管是民用武器还是棍棒刀刃，都能有效阻止它们伤害到佩戴者的头部</entitydescription.tsm_riotcontrol_helmet>
+  <entitydescription.tsm_riotcontrol_helmet>不管是民用武器还是棍棒刀刃，都能有效阻止它们伤害到佩戴者的头部，可以放入一块大型防弹面罩，以获得更好的防护</entitydescription.tsm_riotcontrol_helmet>
 
   <entityname.tsm_heavycombat_helmet>奇迹之海重型战斗头盔</entityname.tsm_heavycombat_helmet>
-  <entitydescription.tsm_heavycombat_helmet>加厚了内衬，拥有更强的抗击打能力</entitydescription.tsm_heavycombat_helmet>
+  <entitydescription.tsm_heavycombat_helmet>加厚了内衬，拥有更强的抗击打能力，可以放入一块大型防弹面罩，以获得更好的防护</entitydescription.tsm_heavycombat_helmet>
 
   <entityname.tsm_helmet_respirator>奇迹之海重型防毒头盔</entityname.tsm_helmet_respirator>
   <entitydescription.tsm_helmet_respirator></entitydescription.tsm_helmet_respirator>
@@ -331,11 +331,14 @@
   <entityname.lm_fast_helmet>联盟突击头盔</entityname.lm_fast_helmet>
   <entitydescription.lm_fast_helmet>制式头盔，被大量分发给基层士兵，大量的挂点使其拥有丰富的改造选项</entitydescription.lm_fast_helmet>
 
+  <entityname.lm_heavy_helmet>联盟重型战斗头盔</entityname.lm_heavy_helmet>
+  <entitydescription.lm_heavy_helmet>可以放入一块大型防弹面罩，以获得更好的防护</entitydescription.lm_heavy_helmet>
+
   <entityname.lm_fast_helmet_headset>联盟突击通讯头盔</entityname.lm_fast_helmet_headset>
   <entitydescription.lm_fast_helmet_headset>安装有一副无线电耳机，让军官与同僚的声音可以更快地传递到士兵耳中</entitydescription.lm_fast_helmet_headset>
 
   <entityname.lm_fast_helmet_faceshield>联盟突击头盔（防弹面罩）</entityname.lm_fast_helmet_faceshield>
-  <entitydescription.lm_fast_helmet_faceshield>一大块透明的防弹面罩被安装在上面，使原本最为危险的面部也有了一定的防护</entitydescription.lm_fast_helmet_faceshield>
+  <entitydescription.lm_fast_helmet_faceshield>一大块透明的防弹面罩被安装在上面，使原本最为危险的面部也有了一定的防护，可以放入一块大型防弹面罩，以获得更好的防护</entitydescription.lm_fast_helmet_faceshield>
 
   <entityname.lm_fast_helmet_thermalgoggles>联盟突击头盔（热成像）</entityname.lm_fast_helmet_thermalgoggles>
   <entitydescription.lm_fast_helmet_thermalgoggles>安装有一副头戴式单兵热成像仪的制式头盔，出色的悬挂系统让重心始终未变，记得勤换电池保证热成像仪处于可用状态</entitydescription.lm_fast_helmet_thermalgoggles>
@@ -344,7 +347,7 @@
   <entitydescription.lm_fast_helmet_protectivejaw>带有护颚的通讯耳机，对佩戴者的保护更上一层楼</entitydescription.lm_fast_helmet_protectivejaw>
 
   <entityname.lm_beowulf_helmet>联盟贝奥武夫头盔</entityname.lm_beowulf_helmet>
-  <entitydescription.lm_beowulf_helmet>贝奥武夫中队所配备的制式头盔，优越的性能让优秀的士兵可以更加从容地执行战术与命令</entitydescription.lm_beowulf_helmet>
+  <entitydescription.lm_beowulf_helmet>贝奥武夫中队所配备的制式头盔，优越的性能让优秀的士兵可以更加从容地执行战术与命令，可以放入一块大型防弹面罩，以获得更好的防护</entitydescription.lm_beowulf_helmet>
 
   <entityname.lm_beowulf_uniform>联盟贝奥武夫作战服服</entityname.lm_beowulf_uniform>
   <entitydescription.lm_beowulf_uniform>贝奥武夫中队所配备的制式作战服</entitydescription.lm_beowulf_uniform>
@@ -390,13 +393,13 @@
   <entitydescription.fkj_fast_helmet_thermalgoggles>安装了一副头戴式单兵热成像仪的，因为重心偏移，受击后头盔并不稳定，防护效果稍微降低。如果你想一直使用热成像带来的便利，记得勤换电池</entitydescription.fkj_fast_helmet_thermalgoggles>
 
   <entityname.fkj_Anonymous_helmet>反抗军尖锐突袭者头盔</entityname.fkj_Anonymous_helmet>
-  <entitydescription.fkj_Anonymous_helmet>加装了护耳与护目镜，使用了全新的缓冲结构，使士兵可以有效抵抗联盟的新式弹药。</entitydescription.fkj_Anonymous_helmet>
+  <entitydescription.fkj_Anonymous_helmet>加装了护耳与护目镜，使用了全新的缓冲结构，使士兵可以有效抵抗联盟的新式弹药，可以放入一块小型防弹面罩，以获得更好的防护</entitydescription.fkj_Anonymous_helmet>
 
   <entityname.fkj_yehuo_helmet>野火反抗军作战头盔</entityname.fkj_yehuo_helmet>
-  <entitydescription.fkj_yehuo_helmet>新型全防护头盔，给您的头部最好的保护，就连下巴都在它的防护之内！</entitydescription.fkj_yehuo_helmet>
+  <entitydescription.fkj_yehuo_helmet>新型全防护头盔，给您的头部最好的保护，就连下巴都在它的防护之内！可以放入一块小型防弹面罩，以获得更好的防护</entitydescription.fkj_yehuo_helmet>
 
   <entityname.fkj_heavy_helmet>反抗军精英头盔</entityname.fkj_heavy_helmet>
-  <entitydescription.fkj_heavy_helmet></entitydescription.fkj_heavy_helmet>
+  <entitydescription.fkj_heavy_helmet>可以放入一块小型防弹面罩，以获得更好的防护</entitydescription.fkj_heavy_helmet>
 
   <entityname.fkj_vest_pt>反抗军防弹衣</entityname.fkj_vest_pt>
   <entitydescription.fkj_vest_pt>没什么好说的，就一件反抗军制式防弹衣，有几个携行包可以塞弹匣和手雷</entitydescription.fkj_vest_pt>
@@ -552,9 +555,9 @@
   <entityname.tsm_sight_thermal>热成像瞄具</entityname.tsm_sight_thermal>
   <entitydescription.tsm_sight_thermal>提供热成像效果\n+10%武器操作获取速度</entitydescription.tsm_sight_thermal>
   <entityname.tsm_flame_arrester>枪口消焰器</entityname.tsm_flame_arrester>
-  <entitydescription.tsm_flame_arrester>略微增加武器伤害\n+22%伤害\n-5%射速</entitydescription.tsm_flame_arrester>
+  <entitydescription.tsm_flame_arrester>略微增加武器伤害\n+13%伤害\n-3%射速</entitydescription.tsm_flame_arrester>
   <entityname.tsm_recoil>枪口制退器</entityname.tsm_recoil>
-  <entitydescription.tsm_recoil>略微增加武器伤害和精准度\n+10%伤害\n-10%扩散</entitydescription.tsm_recoil>
+  <entitydescription.tsm_recoil>略微增加武器伤害和精准度\n+10%伤害\n-7%扩散</entitydescription.tsm_recoil>
   <entityname.tsm_95_sight>95式长弓套件瞄具</entityname.tsm_95_sight>
   <entitydescription.tsm_95_sight>95式长弓套件瞄具,略微增加手持武器时的视野偏移\n+25%武器操作获取速度\n-7%扩散\n-5%移速</entitydescription.tsm_95_sight>
   <entityname.tsm_gun_grenade>下挂榴弹发射器</entityname.tsm_gun_grenade>
@@ -706,7 +709,7 @@
   <entitydescription.tsm_advanced_191>基于QBZ191衍生的射手步枪，使用‖color:150,0,0,255‖5.8mm‖color:end‖子弹。更长的枪管带来枪膛更高的后座空间，不仅可控性更好，精度更是达到了狙击枪水准，可以很好的搭载特制枪管与瞄准镜</entitydescription.tsm_advanced_191>
 
   <entityname.tsm_ots11>QTS11式战略突击步枪</entityname.tsm_ots11>
-  <entitydescription.tsm_ots11>诞生于“理想单兵作战武器”计划的武器，重量轻巧的同时，采用了全一体式设计，包含了榴弹发射器(注意，不能同时使用弹匣和榴弹，否则会引起炸膛)，先进光电热成像瞄准镜，采用现有的‖color:150,0,0,255‖5.8mm‖color:end‖突击步枪弹匣。但最终因为造价过于昂贵没有列装，只有部分原型枪流传。</entitydescription.tsm_ots11>
+  <entitydescription.tsm_ots11>诞生于“理想单兵作战武器”计划的武器，重量轻巧的同时，采用了全一体式设计，包含了榴弹发射器，先进光电热成像瞄准镜，采用现有的‖color:150,0,0,255‖5.8mm‖color:end‖突击步枪弹匣。但最终因为造价过于昂贵没有列装，只有部分原型枪流传。</entitydescription.tsm_ots11>
   
   <entityname.tsm_gm6>GM6“山猫”无托反器材狙击步枪</entityname.tsm_gm6>
   <entitydescription.tsm_gm6>一把结构高精且紧凑的大口径狙击枪，浮动式枪管与无托结构即使是是在室内作战也非常趁手。其制造图纸更是高度机密，就是落入敌手反向拆解也无法将其仿制，能列装的部队都是精英中的精英，使用‖color:150,0,0,255‖12.7*99‖color:end‖口径狙击枪子弹。</entitydescription.tsm_gm6>
@@ -1023,7 +1026,7 @@
   <entitydescription.tsm_fkj_saw>看上去是将一把电锯拆解掉后组装上去，外观极其可怕，急促的开火声也像极了一把索命的电锯。使用‖color:150,0,0,255‖反抗军通用机枪弹匣（5.45*39）‖color:end‖</entitydescription.tsm_fkj_saw>
 
   <entityname.tsm_fkj_jq430>反抗军JQ430突击步枪</entityname.tsm_fkj_jq430>
-  <entitydescription.tsm_fkj_jq430>使用了类实木的枪托与护木，让使用者能感受到地球的气息，榴弹发射器也能给敌人来一点木卫二的震撼(注意，不能同时使用弹匣和榴弹，否则会引起炸膛)。不过枪口的刺刀因为使用难度过大，几乎无人能用。发射‖color:150,0,0,255‖7.62*39‖color:end‖弹药。</entitydescription.tsm_fkj_jq430>
+  <entitydescription.tsm_fkj_jq430>使用了类实木的枪托与护木，让使用者能感受到地球的气息，榴弹发射器也能给敌人来一点木卫二的震撼。不过枪口的刺刀因为使用难度过大，几乎无人能用。发射‖color:150,0,0,255‖7.62*39‖color:end‖弹药。</entitydescription.tsm_fkj_jq430>
 
   <entityname.tsm_fkj_ak12_c>AK12突击步枪（战术型）</entityname.tsm_fkj_ak12_c>
   <entitydescription.tsm_fkj_ak12_c>加装了三角前握，拥有更好的操控性。同样可以发射‖color:150,0,0,255‖5.45*39‖color:end‖与‖color:150,0,0,255‖7.62*39‖color:end‖两种弹药。</entitydescription.tsm_fkj_ak12_c>
@@ -1032,7 +1035,7 @@
   <entitydescription.tsm_fkj_561a>经过现代化改造的传奇旧式武器，某个神秘势力通过黑市出口到了反抗军的手里，成为反抗军手中为数不多的先进武器。同样可以发射‖color:150,0,0,255‖5.45*39‖color:end‖与‖color:150,0,0,255‖7.62*39‖color:end‖两种弹药。</entitydescription.tsm_fkj_561a>
 
   <entityname.tsm_fkj_ak105_c>AK105突击步枪（战术型）</entityname.tsm_fkj_ak105_c>
-  <entitydescription.tsm_fkj_ak105_c>下挂了一具单兵榴弹发射器，可以发射各种榴弹而无需额外携带发射器(注意，不能同时使用弹匣和榴弹，否则会引起炸膛)，比普通的AK-105射速更快。发射‖color:150,0,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak105_c>
+  <entitydescription.tsm_fkj_ak105_c>下挂了一具单兵榴弹发射器，可以发射各种榴弹而无需额外携带发射器，比普通的AK-105射速更快。发射‖color:150,0,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak105_c>
 
   <entityname.tsm_fkj_a545>反抗军A-545突击步枪</entityname.tsm_fkj_a545>
   <entitydescription.tsm_fkj_a545>反抗军基于AK系列改进的新武器，采用了更加泛用的材料，和更短的枪托，搭载GP25榴弹发射器，尽管口碑不如传统ak，但它确实是把好枪。发射‖color:150,0,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_a545>
@@ -1281,7 +1284,7 @@
   <entityname.tsm_pistols_silencers>鱼鹰小口径消音器</entityname.tsm_pistols_silencers>
   <entitydescription.tsm_pistols_silencers>能够减少声音传播，让怪物更不容易以你为目标，主要装备于冲锋枪和手枪\n+5%扩散\n-2%攻击速度</entitydescription.tsm_pistols_silencers>
 
-  <entityname.tsm_gun_silencers>消音器</entityname.tsm_gun_silencers>
+  <entityname.tsm_gun_silencers>枪口消音器</entityname.tsm_gun_silencers>
   <entitydescription.tsm_gun_silencers>能够减少声音传播，让怪物更不容易以你为目标，主要装备于突击步枪\n+5%扩散\n-2%攻击速度</entitydescription.tsm_gun_silencers>
 
 <!--三神丘-->

@@ -87,9 +87,9 @@
           <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_2_2.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_1_7.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
-          <StatusEffect target="This" holdpos="55,-3" aimpos="55,-3" handle1="-82,-18" handle2="42,10" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.3" maxchargetime="0" setvalue="true">
+          <StatusEffect target="This" holdpos="55,-3" aimpos="55,-3" handle1="-82,-18" handle2="42,10" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="1.75" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
           </StatusEffect>
         </Containable>
@@ -205,9 +205,9 @@
           <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
-          <StatusEffect target="This" holdpos="55,-5" aimpos="55,0" handle1="-83,-15" handle2="53,8" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.7" maxchargetime="0" setvalue="true">
+          <StatusEffect target="This" holdpos="55,-5" aimpos="55,0" handle1="-83,-15" handle2="53,8" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.6" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
           </StatusEffect>
         </Containable>
@@ -438,9 +438,9 @@
           <StatusEffect type="OnInserted" target="This" holdpos="10,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_2_0.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
-          <StatusEffect target="This" holdpos="52,0" aimpos="52,5" handle1="-90,-30" handle2="80,8" holdangle="-30" disabledeltatime="true" checkconditionalalways="true" delay="2.5" maxchargetime="0" setvalue="true">
+          <StatusEffect target="This" holdpos="52,0" aimpos="52,5" handle1="-90,-30" handle2="80,8" holdangle="-30" disabledeltatime="true" checkconditionalalways="true" delay="2.0" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
           </StatusEffect>
         </Containable>
@@ -554,9 +554,9 @@
           <StatusEffect type="OnInserted" target="This" holdpos="10,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_2_0.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
-          <StatusEffect target="This" holdpos="52,0" aimpos="52,5" handle1="-90,-30" handle2="80,8" holdangle="-30" disabledeltatime="true" checkconditionalalways="true" delay="2.5" maxchargetime="0" setvalue="true">
+          <StatusEffect target="This" holdpos="52,0" aimpos="52,5" handle1="-90,-30" handle2="80,8" holdangle="-30" disabledeltatime="true" checkconditionalalways="true" delay="2.0" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
           </StatusEffect>
         </Containable>
@@ -681,10 +681,14 @@
       <CustomInterface canbeselected="true" drawhudwhenequipped="true">
         <GuiFrame relativesize="0.08,0.1" anchor="BottomLeft" relativeoffset="0,0.31" style="ItemUI" />
         <Button text="fullauto">
-          <StatusEffect type="OnUse" target="This" Tags="" unskilledspread="15" setvalue="true" />
+          <StatusEffect type="OnUse" target="This" Tags="" unskilledspread="15" setvalue="true">
+          <Sound file="%ModDir%/weapons/木卫二联盟/aad.ogg" type="OnUse" range="500" />
+        </StatusEffect>
         </Button>
         <Button text="burst">
-          <StatusEffect type="OnUse" target="This" Tags="tsm_burst_1" unskilledspread="15" setvalue="true" />
+          <StatusEffect type="OnUse" target="This" Tags="tsm_burst_1" unskilledspread="15" setvalue="true">
+          <Sound file="%ModDir%/weapons/木卫二联盟/aad.ogg" type="OnUse" range="500" />
+        </StatusEffect>
         </Button>
       </CustomInterface>
       <aitarget sightrange="3200" soundrange="5000" fadeouttime="10" />
@@ -801,10 +805,14 @@
       <CustomInterface canbeselected="true" drawhudwhenequipped="true">
         <GuiFrame relativesize="0.08,0.1" anchor="BottomLeft" relativeoffset="0,0.31" style="ItemUI" />
         <Button text="fullauto">
-          <StatusEffect type="OnUse" target="This" Tags="" unskilledspread="15" setvalue="true" />
+          <StatusEffect type="OnUse" target="This" Tags="" unskilledspread="15" setvalue="true">
+          <Sound file="%ModDir%/weapons/木卫二联盟/aad.ogg" type="OnUse" range="500"/>
+        </StatusEffect>
         </Button>
         <Button text="burst">
-          <StatusEffect type="OnUse" target="This" Tags="tsm_burst_1" unskilledspread="15" setvalue="true" />
+          <StatusEffect type="OnUse" target="This" Tags="tsm_burst_1" unskilledspread="15" setvalue="true">
+          <Sound file="%ModDir%/weapons/木卫二联盟/aad.ogg" type="OnUse" range="500"/>
+        </StatusEffect>
         </Button>
       </CustomInterface>
       <aitarget sightrange="3200" soundrange="5000" fadeouttime="10" />
@@ -840,7 +848,6 @@
         </StatusEffect>
       </Holdable>
       <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
-       
       <RangedWeapon reload="0.085" weapondamagemodifier="1.25" penetration="0.1" holdtrigger="true" barrelpos="205,35" spread="7" unskilledspread="20" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4216,203,201" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,4243,174,170" />
@@ -886,7 +893,6 @@
           <Conditional spread="lt 7" />
           <Conditional CanRun="false" />
         </StatusEffect>
-
         <StatusEffect type="Always" target="This" unskilledspread="-10">
           <Conditional unskilledspread="gt 15" />
           <Conditional HasStatusTag="tsm_sight_holographic" />
@@ -932,9 +938,9 @@
           <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="35,-25" holdangle="55" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_1_7.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_1_5.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
-          <StatusEffect target="This" disabledeltatime="true" holdpos="65,-3" aimpos="65,3" handle1="-82,-18" handle2="42,10" holdangle="-35" checkconditionalalways="true" delay="1.75" maxchargetime="0" setvalue="true">
+          <StatusEffect target="This" disabledeltatime="true" holdpos="65,-3" aimpos="65,3" handle1="-82,-18" handle2="42,10" holdangle="-35" checkconditionalalways="true" delay="1.5" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
           </StatusEffect>
         </Containable>
@@ -1052,9 +1058,9 @@
           <StatusEffect type="OnInserted" target="This" holdpos="15,-25" holdangle="80" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_2_2.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
-          <StatusEffect target="This" holdpos="50,0" aimpos="52,7" handle1="-30,-12" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.5" maxchargetime="0" setvalue="true">
+          <StatusEffect target="This" holdpos="50,0" aimpos="52,7" handle1="-30,-12" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.2" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
           </StatusEffect>
         </Containable>
@@ -1160,9 +1166,9 @@
           <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_2_2.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
-          <StatusEffect target="This" holdpos="65,2" aimpos="65,5" handle1="-95,-18" handle2="42,10" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.7" maxchargetime="0" setvalue="true">
+          <StatusEffect target="This" holdpos="65,2" aimpos="65,5" handle1="-95,-18" handle2="42,10" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.3" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
           </StatusEffect>
         </Containable>
@@ -1222,8 +1228,22 @@
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="305,654,194,195" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="34,654,195,195" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
-        <StatusEffect type="OnUse" target="This" forceplaysounds="true">
-          <Sound file="%ModDir%/weapons/奇迹之海/QBZ191.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <!--枪声-->
+        <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
+          <RequiredItem items="1" matchonempty="true" type="Contained" targetslot="5"/>
+          <Sound file="%ModDir%/weapons/奇迹之海/QBZ191.ogg" type="OnUse" range="3000" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
+          <RequiredItem items="tsm_flame_arrester" type="Contained" targetslot="5"/>
+          <Sound file="%ModDir%/weapons/奇迹之海/QBZ191.ogg" type="OnUse" range="3000" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
+          <RequiredItem items="tsm_recoil" type="Contained" targetslot="5"/>
+          <Sound file="%ModDir%/weapons/奇迹之海/QBZ191.ogg" type="OnUse" range="3000" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" forceplaysounds="true" >
+          <RequiredItem items="tsm_gun_silencers" type="Contained" targetslot="5"/>
+          <Sound file="%ModDir%/weapons/反抗军/silence_762_51.ogg" type="OnUse" range="1000" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This">
           <!--后坐力,屏幕抖动-->
@@ -1286,7 +1306,6 @@
           <Conditional spread="lt 10" />
           <Conditional CanRun="false" />
         </StatusEffect>
-
         <StatusEffect type="Always" target="This" unskilledspread="-10">
           <Conditional unskilledspread="gt 15" />
           <Conditional HasStatusTag="tsm_sight_holographic" />
@@ -1328,9 +1347,9 @@
           <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_2_4.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
-          <StatusEffect target="This" holdpos="55,-8" aimpos="60,2" handle1="-80,-15" handle2="30,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.65" maxchargetime="0" setvalue="true">
+          <StatusEffect target="This" holdpos="55,-8" aimpos="60,2" handle1="-80,-15" handle2="30,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.4" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
           </StatusEffect>
         </Containable>
@@ -1454,9 +1473,9 @@
           <StatusEffect type="OnInserted" target="This" holdpos="10,-30" holdangle="70" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_2_85.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_2_8.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
-          <StatusEffect target="This" holdpos="60,-3" aimpos="60,10" handle1="-80,-18" handle2="58,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.85" maxchargetime="0" setvalue="true">
+          <StatusEffect target="This" holdpos="60,-3" aimpos="60,10" handle1="-80,-18" handle2="58,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.8" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
           </StatusEffect>
         </Containable>
