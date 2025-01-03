@@ -256,6 +256,12 @@
         </Success>
       </CheckReputationAction>
       </Option>
+      <!--Option text="tsm.hd.mc">
+            <ConversationAction targettag="triggerer_player" text="tsm.hd.mc1" />
+            <SpawnAction itemidentifier="tsm_holiday_g11" targetinventory="triggerer_player" />
+            <ClearTagAction tag="triggerer_player"/>
+            <GoTo name="beginningofthejourney" />
+      </Option-->
       <Option text="tsm.wait">
         <ConversationAction text="tsm.npc.wait" dialogtype="Small" targettag="triggerer_player" />
         <ClearTagAction tag="triggerer_player"/>
@@ -264,6 +270,21 @@
     </ConversationAction>
     <NPCWaitAction npctag="tsm_wz_ff" wait="false" />
   </ScriptedEvent>
+  <!--运输任务锁装备-->
+  <ScriptedEvent identifier="tsm_lockgear_mission">
+      <TagAction criteria="itemidentifier:tsm_helmet_outpost_combat" tag="locked" continueifnotargetsfound="true" />
+      <TagAction criteria="itemidentifier:tsm_nujiang_uniform" tag="locked" continueifnotargetsfound="true" />
+      <TagAction criteria="itemidentifier:tsm_heavycombat_helmet" tag="locked" continueifnotargetsfound="true" />
+      <TagAction criteria="itemidentifier:tsm_heavy_vest" tag="locked" continueifnotargetsfound="true" />
+      <TagAction criteria="itemidentifier:tsm_advanced_uniform" tag="locked" continueifnotargetsfound="true" />
+      <TagAction criteria="itemidentifier:tsm_qbz_191" tag="locked" continueifnotargetsfound="true" />
+      <TagAction criteria="itemidentifier:tsm_advanced_191" tag="locked" continueifnotargetsfound="true" />
+      <StatusEffectAction targettag="locked">
+        <StatusEffect target="This" nonplayerteaminteractable="true">
+          <Conditional targetcontainer="true" teamid="FriendlyNPC" />
+        </StatusEffect>
+      </StatusEffectAction>
+    </ScriptedEvent>
   </EventPrefabs>
 </Randomevents>
 </Override>

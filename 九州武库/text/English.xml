@@ -1,5 +1,1352 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <infotexts language="English" nowhitespace="false" translatedname="English">
-  <firemode.laser>Laser Mode</firemode.laser>
-  <firemode.charge>Charge Mode</firemode.charge>
+  <Override>
+    <firemode.laser>Laser Mode</firemode.laser>
+    <firemode.charge>Charge Mode</firemode.charge>
+    <locationname.none></locationname.none>
+    <locationnameformat.none>[name]</locationnameformat.none>
+    <locationdescription.tsm_abandoned>Abandoned site, the facilities are relatively intact, but there are no inhabitants</locationdescription.tsm_abandoned>
+    <locationname.tsm_abandoned>Old World</locationname.tsm_abandoned>
+    <biomename.thegreatsea>Great Sea</biomename.thegreatsea>
+    <randomnews8>The Coalition officially declares war on the Separatist</randomnews8>
+    <randomnews9>Sea of Miracles will safeguard you</randomnews9>
+    <!--mod内容-->
+    <!--天赋-->
+    <talentname.tsm_ai_asphyxiating_pressure>Golden Lion</talentname.tsm_ai_asphyxiating_pressure>
+    <talentname.tsm_lightningwizard>Counter Spike Armor</talentname.tsm_lightningwizard>
+    <talentname.tsm_ai_stun>Power Reaction</talentname.tsm_ai_stun>
+    <talentname.tsm_operator_revolt>Revolt Advancing</talentname.tsm_operator_revolt>
+    <talentdescription.tsm_operator_revolt>While wearing the Revolt Advancing Suit, and holding a stun baton with a round riot shield,gain‖color:0,150,0,255‖40% resistance to stun and physical damage‖color:end‖,‖color:0,150,0,255‖20% movement speed‖color:end‖,‖color:0,150,0,255‖200% melee attack speed‖color:end‖and reduce‖color:0,150,0,255‖30% damage dealt‖color:end‖</talentdescription.tsm_operator_revolt>
+    <!--伤害类型-->
+    <afflictionname.triton_7L>Triton 7L</afflictionname.triton_7L>
+    <afflictiondescription.triton_7L>Wounds caused by Triton 7L show induced decay, which if left untreated can induce tritium poisoning resulting in burns, etc.</afflictiondescription.triton_7L>
+    <afflictioncauseofdeath.triton_7L>Severe tritium nucleation destroys your body's tissues.</afflictioncauseofdeath.triton_7L>
+    <afflictioncauseofdeathself.triton_7L>Tritium nuclei fill your body and you begin to rot and fester.</afflictioncauseofdeathself.triton_7L>
+    <afflictiondescription.triton_7L.low>The wounds inflicted so far do not look serious, but there is a risk of deterioration.</afflictiondescription.triton_7L.low>
+    <afflictiondescription.triton_7L>The bullet has penetrated your body, with intense burning at the wound site; some tissue has been expelled.</afflictiondescription.triton_7L>
+    <afflictionname.triton_9C>Tritium Poisoning</afflictionname.triton_9C>
+    <afflictiondescription.triton_9C>The affected area is starting to rot, and you feel a churn in your stomach, wanting to vomit.</afflictiondescription.triton_9C>
+    <afflictiondescription.triton_9C.low.self>Burning sensations start at the wound site, feeling as if it is on fire</afflictiondescription.triton_9C.low.self>
+    <afflictiondescription.triton_9C.high.self>You begin to feel dizzy and nauseous; the wound is rotting and decaying</afflictiondescription.triton_9C.high.self>
+    <afflictiondescription.triton_9C.high>You cannot stop vomiting; symptoms of ulcers and various soft tissue decay appear.</afflictiondescription.triton_9C.high>
+    <afflictionname.triton_burn>Tritium Burns</afflictionname.triton_burn>
+    <afflictiondescription.triton_burn>Burning sensations start at the wound site</afflictiondescription.triton_burn>
+    <afflictionname.tsm_armorbreak_jz>Shattered Armor</afflictionname.tsm_armorbreak_jz>
+    <afflictiondescription.tsm_armorbreak_jz>More easily penetrated by bullets</afflictiondescription.tsm_armorbreak_jz>
+    <entityname.triton_9C_antidote>Triton-9C Antidote</entityname.triton_9C_antidote>
+    <entitydescription.triton_9C_antidote>A medication used to treat Triton-9C disfiguration and burns.</entitydescription.triton_9C_antidote>
+    <afflictionname.zlyz>Gravity Suppression</afflictionname.zlyz>
+    <afflictiondescription.zlyz>You feel an invisible pressure immobilizing you</afflictiondescription.zlyz>
+    <afflictioncauseofdeath.zlyz>Crushed</afflictioncauseofdeath.zlyz>
+    <afflictioncauseofdeathself.zlyz>Ignored the rules, faced the consequences</afflictioncauseofdeathself.zlyz>
+    <afflictionname.zlqy>Gravity Traction</afflictionname.zlqy>
+    <afflictiondescription.zlqy>Let us sink together into the shadows woven between good and evil</afflictiondescription.zlqy>
+    <afflictioncauseofdeath.zlqy>Annihilation</afflictioncauseofdeath.zlqy>
+    <afflictioncauseofdeathself.zlqy>The death knell has sounded</afflictioncauseofdeathself.zlqy>
+    <afflictionname.tsm_bl>Rupture</afflictionname.tsm_bl>
+    <afflictiondescription.tsm_bl>After the bullet hits the body, the explosion creates shrapnel and pressure that directly injures the body; it seems that failing to treat these wounds properly will halve the effectiveness of treating other injuries</afflictiondescription.tsm_bl>
+    <afflictioncauseofdeath.tsm_bl>Your body has ruptured</afflictioncauseofdeath.tsm_bl>
+    <afflictioncauseofdeathself.tsm_bl>Died from high-explosive shells</afflictioncauseofdeathself.tsm_bl>
+    <afflictiondescription.tsm_bl.low>Some small shrapnel entered your body after the bullet exploded; it seems that failing to treat these wounds properly will halve the effectiveness of treating other injuries</afflictiondescription.tsm_bl.low>
+    <afflictiondescription.tsm_bl>High-explosive shells have destroyed some of your body tissues, and shrapnel and pressure rage within you.</afflictiondescription.tsm_bl>
+    <afflictionname.tsm_aftermath_success>Quality Battlefield Treatment</afflictionname.tsm_aftermath_success>
+    <afflictiondescription.tsm_aftermath_success>Good treatment; the injured areas are well treated and bandaged, but it will still affect your repair and weapon usage, making it inconvenient to move\n-50% repair speed\n-20 weapon operation level\n-20% movement speed</afflictiondescription.tsm_aftermath_success>
+    <afflictionname.tsm_aftermath_failure>Poor Battlefield Treatment</afflictionname.tsm_aftermath_failure>
+    <afflictiondescription.tsm_aftermath_failure>The doctor only ensures you don't die on the front lines; the treatment of wounds is poor, allowing you to move temporarily, but every movement causes pain\n-70% repair speed\n-30 weapon operation\n-15 medical level\nNow you can only walk</afflictiondescription.tsm_aftermath_failure>
+    <afflictionname.tsm_armor_allbuff>All-Protective Insert Plate</afflictionname.tsm_armor_allbuff>
+    <afflictiondescription.tsm_armor_allbuff>Resistance Against Various Types of Damage</afflictiondescription.tsm_armor_allbuff>
+    <afflictionname.tsm_armor_bleeding>Bleeding Resistance</afflictionname.tsm_armor_bleeding>
+    <afflictiondescription.tsm_armor_bleeding>Resistance Type: Bleeding</afflictiondescription.tsm_armor_bleeding>
+    <afflictionname.tsm_armor_lacerations>Laceration Resistance</afflictionname.tsm_armor_lacerations>
+    <afflictiondescription.tsm_armor_lacerations>Resistance Type: Laceration</afflictiondescription.tsm_armor_lacerations>
+    <afflictionname.tsm_armor_stun>Stun Resistance</afflictionname.tsm_armor_stun>
+    <afflictiondescription.tsm_armor_stun>Resistance Type: Stun</afflictiondescription.tsm_armor_stun>
+    <afflictionname.tsm_armor_blunttrauma>Blunt Injury Resistance</afflictionname.tsm_armor_blunttrauma>
+    <afflictiondescription.tsm_armor_blunttrauma>Resistance Type: Blunt Injury</afflictiondescription.tsm_armor_blunttrauma>
+    <afflictionname.tsm_armor_huskinfection>Husk Infection Resistance</afflictionname.tsm_armor_huskinfection>
+    <afflictiondescription.tsm_armor_huskinfection>Resistance Type: Husk Infection</afflictiondescription.tsm_armor_huskinfection>
+    <afflictionname.tsm_armor_paralysis>Paralysis Resistance</afflictionname.tsm_armor_paralysis>
+    <afflictiondescription.tsm_armor_paralysis>Resistance Type: Paralysis</afflictiondescription.tsm_armor_paralysis>
+    <afflictionname.tsm_armor_triton>Triton Resistance</afflictionname.tsm_armor_triton>
+    <afflictiondescription.tsm_armor_triton>Resistance Type: Tritium Poisoning, Explosion</afflictiondescription.tsm_armor_triton>
+    <afflictionname.tsm_armor_bitewounds>Bite Resistance</afflictionname.tsm_armor_bitewounds>
+    <afflictiondescription.tsm_armor_bitewounds>Resistance Type: Bite</afflictiondescription.tsm_armor_bitewounds>
+    <afflictionname.tsm_armor_explosiondamage>Explosion Resistance</afflictionname.tsm_armor_explosiondamage>
+    <afflictiondescription.tsm_armor_explosiondamage>Resistance Type: Deep Tissue Damage</afflictiondescription.tsm_armor_explosiondamage>
+    <afflictionname.tsm_armor_gunshotwound>Gunshot Wound Resistance</afflictionname.tsm_armor_gunshotwound>
+    <afflictiondescription.tsm_armor_gunshotwound>Resistance Type: Gunshot Wound</afflictiondescription.tsm_armor_gunshotwound>
+    <afflictionname.tsm_kep_buff>Three Divine Hills Assistance System</afflictionname.tsm_kep_buff>
+    <afflictiondescription.tsm_kep_buff>Slightly increases the operator's damage and stun resistance, and allows the operator to have a faster shooting speed.\n\nThree Divine Hills Squad? Unfortunately, I couldn't keep any of them, but their sacrifices paved the way for the operators that followed.</afflictiondescription.tsm_kep_buff>
+    <afflictionname.tsm_anger>Wrath</afflictionname.tsm_anger>
+    <afflictiondescription.tsm_anger>Experimental Injection\n\nResearch Location: Nine State Research Institute\n\nEnhancement Type:\nLand/Water movement speed 20%\nMaximum health 20%\nMelee attack speed 20%\nMelee damage 15%\n\nUsage Permission: II</afflictiondescription.tsm_anger>
+    <!--标识-->
+    <semi_auto>Semi-Automatic</semi_auto>
+    <fullauto>Fully Automatic</fullauto>
+    <burst>Three-Round Burst</burst>
+    <nightvision>Activate Night Vision</nightvision>
+    <thermalgoggles>Activate Thermal Imaging</thermalgoggles>
+    <burst>Three-Round Burst</burst>
+    <laser>Laser Indicator</laser>
+    <pucsscooter>Propulsion System</pucsscooter>
+    <lightswitch>Twilight System</lightswitch>
+    <mode.laser>Cutting Mode</mode.laser>
+    <mode.charge>Energy Mode</mode.charge>
+    <subcategory.TSM>Sea of Miracles provides protection for you\nNot judged by success or failure, but in heroism.</subcategory.TSM>
+    <mapentitycategory.tsm_ammo>T.S.M Ammunition</mapentitycategory.tsm_ammo>
+    <subcategory.the_adventists>The Adventists</subcategory.the_adventists>
+    <subcategory.tsm_separatists>Separatist Army</subcategory.tsm_separatists>
+    <subcategory.tsm_coalition>Coalition</subcategory.tsm_coalition>
+    <displayname.防护服改造>[itemname] (Protective Suit Modification)</displayname.防护服改造>
+    <entityname.tsm_collider_head>non-penetration</entityname.tsm_collider_head>
+    <!--药品-->
+    <entityname.triton_9C_antidote>Special Damage Neutralizer</entityname.triton_9C_antidote>
+    <entitydescription.triton_9C_antidote>A medicine used to treat Tritium poisoning, Triton injuries, and blast wounds.</entitydescription.triton_9C_antidote>
+    <entityname.tsm_medicalkits>Medical Kit</entityname.tsm_medicalkits>
+    <entitydescription.tsm_medicalkits>A standard medical kit produced by The Sea of Miracles, containing sufficient medical instruments to handle most common situations on the battlefield, used for treating physical injuries, burns, and bleeding. This medical kit is not expensive and is sold without returns or exchanges.</entitydescription.tsm_medicalkits>
+    <entityname.tsm_medicalkits_s>Enhanced Medical Kit</entityname.tsm_medicalkits_s>
+    <entitydescription.tsm_medicalkits_s>An enhanced medical kit produced by The Sea of Miracles, equipped with sufficient medical supplies for performing battlefield surgeries, used for treating physical injuries, burns, and bleeding. This medical kit is expensive but worth the price.</entitydescription.tsm_medicalkits_s>
+    <entityname.tsm_anger>Enhanced Injection</entityname.tsm_anger>
+    <entitydescription.tsm_anger>Used in conjunction with the operator assistance system to enhance combat capabilities.</entitydescription.tsm_anger>
+    <!--矿物/金属/物品-->
+    <entityname.tsm_tungstenore>Tungsten Ore</entityname.tsm_tungstenore>
+    <entitydescription.tsm_tungstenore></entitydescription.tsm_tungstenore>
+    <entityname.tsm_tungsten>Tungsten</entityname.tsm_tungsten>
+    <entitydescription.tsm_tungsten></entitydescription.tsm_tungsten>
+    <entityname.tsm_sulphurore>Sulfur Ore</entityname.tsm_sulphurore>
+    <entitydescription.tsm_sulphurore></entitydescription.tsm_sulphurore>
+    <entityname.tsm_sulphur>Sulfur</entityname.tsm_sulphur>
+    <entitydescription.tsm_sulphur></entitydescription.tsm_sulphur>
+    <entityname.tsm_kore>Alien Mineral Deposit</entityname.tsm_kore>
+    <entitydescription.tsm_kore></entitydescription.tsm_kore>
+    <entityname.tsm_oilshaleore>Oil Shale Deposit</entityname.tsm_oilshaleore>
+    <entitydescription.tsm_oilshaleore></entitydescription.tsm_oilshaleore>
+    <entityname.tsm_oilshale>Oil Shale</entityname.tsm_oilshale>
+    <entitydescription.tsm_oilshale></entitydescription.tsm_oilshale>
+    <entityname.tsm_yx_crystallography>Yakhi Crystal</entityname.tsm_yx_crystallography>
+    <entitydescription.tsm_yx_crystallography></entitydescription.tsm_yx_crystallography>
+    <entityname.tsm_hengberley_star>Hengberli Star</entityname.tsm_hengberley_star>
+    <entitydescription.tsm_hengberley_star></entitydescription.tsm_hengberley_star>
+    <entityname.tsm_pq>Spray Paint</entityname.tsm_pq>
+    <entitydescription.tsm_pq>Can only be manufactured by large industrial equipment at the site, used to spray your favorite coating on firearms.</entitydescription.tsm_pq>
+    <entityname.tsm_lm_weaponbox>Coalition Weapon Parts Box</entityname.tsm_lm_weaponbox>
+    <entitydescription.tsm_lm_weaponbox>Contains some general parts and disposable tools, usable for manufacturing and modifying Coalition standard weapons.</entitydescription.tsm_lm_weaponbox>
+    <entityname.tsm_yh_weaponbox>Separatist Army Weapon Parts Box</entityname.tsm_yh_weaponbox>
+    <entitydescription.tsm_yh_weaponbox>Contains some general parts and disposable tools, usable for modifying and manufacturing Separatist standard weapons.</entitydescription.tsm_yh_weaponbox>
+    <entityname.tsm_handgun_box>Pistol Kit</entityname.tsm_handgun_box>
+    <entitydescription.tsm_handgun_box>A universal rough model for handguns, which can be modified into the desired pistol according to needs.</entitydescription.tsm_handgun_box>
+    <entityname.tsm_plastic>Engineering Plastic</entityname.tsm_plastic>
+    <entitydescription.tsm_plastic></entitydescription.tsm_plastic>
+    <entityname.tsm_pyrotechnic>Bottled High-Grade Ammunition Propellant</entityname.tsm_pyrotechnic>
+    <entitydescription.tsm_pyrotechnic></entitydescription.tsm_pyrotechnic>
+    <entityname.tsm_item_box>Parts Box</entityname.tsm_item_box>
+    <entitydescription.tsm_item_box></entitydescription.tsm_item_box>
+    <entityname.tsm_hpc>High Precision Firearm Components</entityname.tsm_hpc>
+    <entitydescription.tsm_hpc></entitydescription.tsm_hpc>
+    <entityname.tsm_ic>Integrated Circuit</entityname.tsm_ic>
+    <entitydescription.tsm_ic></entitydescription.tsm_ic>
+    <entityname.tsm_hydrocarbons>Barreled Oil Gas</entityname.tsm_hydrocarbons>
+    <entitydescription.tsm_hydrocarbons></entitydescription.tsm_hydrocarbons>
+    <entityname.tsm_blueprint>Coalition Weapon Blueprint</entityname.tsm_blueprint>
+    <entitydescription.tsm_blueprint>Records the design of standard weapons used by the Coalition, which can be used as a reference for manufacturing Coalition standard weapons.</entitydescription.tsm_blueprint>
+    <entityname.tsm_blueprint1>T.S.M Weapon Blueprint</entityname.tsm_blueprint1>
+    <entitydescription.tsm_blueprint1>Records the design of The Sea of Miracles weapons, which can be used as a reference for manufacturing firearms.</entitydescription.tsm_blueprint1>
+    <entityname.tsm_bg_licences>T.S.M Tritium Core Package License</entityname.tsm_bg_licences>
+    <entitydescription.tsm_bg_licences>A certificate used at NPCs to exchange for Tritium core packages.</entitydescription.tsm_bg_licences>
+    <entityname.tsm_triton_bag>T.S.M Tritium Core Package</entityname.tsm_triton_bag>
+    <entitydescription.tsm_triton_bag>A small package of Tritium core, used at the processing table to craft items related to the Triton projectile. This packaging does not completely prevent the internal Tritium core from leaking, and it needs to be placed in a The Sea of Miracles anomaly containment box to avoid burning.</entitydescription.tsm_triton_bag>
+    <entityname.tsm_danger_box>T.S.M Anomaly Containment Box</entityname.tsm_danger_box>
+    <entitydescription.tsm_danger_box>A specialized box for containing anomalies, featuring two compartments.</entitydescription.tsm_danger_box>
+    <entityname.tsm_fabricator>Weapon Ammunition Fabricator</entityname.tsm_fabricator>
+    <entitydescription.tsm_fabricator>Used to manufacture all types of ammunition and firearms within the Nine State Armory. Installation method: Hold it in your hand, right-click to aim, and then press the use key (default is E) to install.</entitydescription.tsm_fabricator>
+    <entityname.tsm_fabricator_ammo>Ammunition Fabricator</entityname.tsm_fabricator_ammo>
+    <entitydescription.tsm_fabricator_ammo>Fabricator used only for fabricating ammo\nInstallation method: Hold it in your hand, right-click to aim, and then press the use key (default is E) to install.</entitydescription.tsm_fabricator_ammo>
+    <entityname.tsm_fabricator_quality>Quality Upgrade Fabricator</entityname.tsm_fabricator_quality>
+    <entitydescription.tsm_fabricator_quality>Fabricator used only for upgrading item quality\nInstallation method: Hold it in your hand, right-click to aim, and then press the use key (default is E) to install.</entitydescription.tsm_fabricator_quality>
+    <!--战备-->
+    <entityname.tsm_suecide_vest>Suicide Vest</entityname.tsm_suecide_vest>
+    <entitydescription.tsm_suecide_vest>Spread terror to the world, 10-second countdown begins after activation</entitydescription.tsm_suecide_vest>
+    <entityname.tsm_jz_c4>C4 Explosive</entityname.tsm_jz_c4>
+    <entitydescription.tsm_jz_c4>Just throw it where you need the explosion, the rest is up to the button</entitydescription.tsm_jz_c4>
+    <entityname.tsm_jz_m57detonator>C4 Detonator</entityname.tsm_jz_m57detonator>
+    <entitydescription.tsm_jz_m57detonator>Used to detonate the C4 Explosive,you just need to press the button, the rest is up to the C4</entitydescription.tsm_jz_m57detonator>
+    <entityname.tsm_c2>C2 Demolition Explosive</entityname.tsm_c2>
+    <entitydescription.tsm_c2>An inert explosive used to demolish doors in counter-terrorist operations, capable of demolishing cover while acting as a non-lethal means to stun enemies</entitydescription.tsm_c2>
+    <entityname.tsm_fs_backpack>Signal Transmitter Backpack</entityname.tsm_fs_backpack>
+    <entitydescription.tsm_fs_backpack>Used to transmit a support signal\nUsed with the Handheld Support Pointer,one wearing the backpack，while the other holds the pointer to mark an area</entitydescription.tsm_fs_backpack>
+    <entityname.tsm_firesupportbinocle>Handheld Support Pointer</entityname.tsm_firesupportbinocle>
+    <entitydescription.tsm_firesupportbinocle>Used to mark the target area\nUsed with the Handheld Support Pointer,one wearing the backpack，while the other holds the pointer to mark an area</entitydescription.tsm_firesupportbinocle>
+    <entityname.tsm_lm_lockbox>Coalition Weapon Lootbox</entityname.tsm_lm_lockbox>
+    <entitydescription.tsm_lm_lockbox>Fantastic Gacha Mechanics, no guarantee at all, Barotrauma in a nutshell\nOpen using an ally identification code\Open with Left click+Right click after the condition reaches zero</entitydescription.tsm_lm_lockbox>
+    <entityname.tsm_lm_lockbox>Coalition Weapon Lootbox</entityname.tsm_lm_lockbox>
+    <entitydescription.tsm_lm_lockbox>Time for a 10 pull\nOpen using an ally identification code\Open with Left click+Right click after the condition reaches zero</entitydescription.tsm_lm_lockbox>
+    <entityname.tsm_fkj_lockbox>Rebel Weapon Lootbox</entityname.tsm_fkj_lockbox>
+    <entitydescription.tsm_fkj_lockbox>Fantastic Gacha Mechanics, no guarantee at all, Barotrauma in a nutshell\nOpen using an ally identification code\Open with Left click+Right click after the condition reaches zero</entitydescription.tsm_fkj_lockbox>
+    <entityname.tsm_fkj_lockbox>Rebel Weapon Lootbox</entityname.tsm_fkj_lockbox>
+    <entitydescription.tsm_fkj_lockbox>Time for a 10 pull\nOpen using an ally identification code\Open with Left click+Right click after the condition reaches zero</entitydescription.tsm_fkj_lockbox>
+    <entityname.tsm_tsm_lockbox>T.S.M Weapon Lootbox</entityname.tsm_tsm_lockbox>
+    <entitydescription.tsm_tsm_lockbox>Fantastic Gacha Mechanics, no guarantee at all, Barotrauma in a nutshell\nOpen using an ally identification code\Open with Left click+Right click after the condition reaches zero</entitydescription.tsm_tsm_lockbox>
+    <entityname.tsm_tsm_lockbox>T.S.M Weapon Lootbox</entityname.tsm_tsm_lockbox>
+    <entitydescription.tsm_tsm_lockbox>Time for a 10 pull\nOpen using an ally identification code\Open with Left click+Right click after the condition reaches zero</entitydescription.tsm_tsm_lockbox>
+    <!--装备-->
+    <entityname.tsm_bulletproof>Chest Rig</entityname.tsm_bulletproof>
+    <entitydescription.tsm_bulletproof>Perhaps those soldiers who like to carry large amounts of ammunition couldn't bear it anymore; this chest rig appeared on Europa. By sacrificing some protection, it provides more carry pouches for storing additional items.</entitydescription.tsm_bulletproof>
+    <entityname.tsm_medical_vest>Frontline Medical Officer Bulletproof Vest</entityname.tsm_medical_vest>
+    <entitydescription.tsm_medical_vest>A white bulletproof vest with numerous carry pouches for medications, all of which signal to those around that the wearer is a skilled medic. If injured, find him, and you won't go wrong.</entitydescription.tsm_medical_vest>
+    <entityname.tsm_general_vest>Standard Bulletproof Vest</entityname.tsm_general_vest>
+    <entitydescription.tsm_general_vest>A plain bulletproof vest with moderate protective performance and two carry pouches.</entitydescription.tsm_general_vest>
+    <!--奇迹之海-->
+    <entityname.tsm_old_uniform>Old-Style Combat Suit</entityname.tsm_old_uniform>
+    <entitydescription.tsm_old_uniform>The standard combat suit from The Sea of Miracles. Although its performance does not match the latest designs from various departments, its cheap and durable attributes are still favored by most tactical teams.</entitydescription.tsm_old_uniform>
+    <entityname.tsm_old_vest>Old-Style Bulletproof Vest</entityname.tsm_old_vest>
+    <entitydescription.tsm_old_vest>Offers more protected areas than a standard bulletproof vest, but its protective performance is not particularly good.</entitydescription.tsm_old_vest>
+    <entityname.tsm_advanced_uniform>Advanced Combat Suit</entityname.tsm_advanced_uniform>
+    <entitydescription.tsm_advanced_uniform>Uniform of the Advanced Combat Department.</entitydescription.tsm_advanced_uniform>
+    <entityname.tsm_sundawn_uniform>Sunset Security Uniform</entityname.tsm_sundawn_uniform>
+    <entitydescription.tsm_sundawn_uniform>A security uniform worn by the Sunset Combat Department during internal security periods.</entitydescription.tsm_sundawn_uniform>
+    <entityname.tsm_pgvest>T.S.M Insert Plate Bulletproof Vest</entityname.tsm_pgvest>
+    <entitydescription.tsm_pgvest>A bulletproof vest modified by the Nine State Armory, featuring insert plate slots that can accommodate corresponding insert plates to protect against specific damage.</entitydescription.tsm_pgvest>
+    <entityname.tsm_heavy_vest>T.S.M New-Style Bulletproof Vest</entityname.tsm_heavy_vest>
+    <entitydescription.tsm_heavy_vest>A bulletproof vest issued by The Sea of Miracles to cope with more complex environments, offering greater protection without hindering soldiers' movements, and equipped with more tactical mounting points.</entitydescription.tsm_heavy_vest>
+    <entityname.tsm_pgc_uniform>Guardian Squad Combat Suit</entityname.tsm_pgc_uniform>
+    <entitydescription.tsm_pgc_uniform>A combat suit exclusively used by the Lerentine Guardian Squad, featuring numerous convenient decorations and patterns for processing. It is sturdy, durable, and extremely comfortable, with small hidden pockets under the decorative designs for carrying several magazines or grenades.</entitydescription.tsm_pgc_uniform>
+    <entityname.tsm_pgc_helmet>Guardian Squad Helmet</entityname.tsm_pgc_helmet>
+    <entitydescription.tsm_pgc_helmet>The standard helmet for the Guardian Squad, with reserved chip positions. Installing different chips provides various effects.</entitydescription.tsm_pgc_helmet>
+    <entityname.tsm_jz_uniform>Nine State Combat Suit</entityname.tsm_jz_uniform>
+    <entitydescription.tsm_jz_uniform>The uniform for the Nine State Combat Department. Enhanced effects against blunt force impacts and bites, with carry pouches on the clothing that can hold some equipment, providing a comfortable wearing experience.</entitydescription.tsm_jz_uniform>
+    <entityname.tsm_jz_helmet>Nine State Combat Helmet</entityname.tsm_jz_helmet>
+    <entitydescription.tsm_jz_helmet>The standard helmet for the Nine State Combat Department, modified from the advanced combat helmet, featuring built-in night vision that requires electric activation.</entitydescription.tsm_jz_helmet>
+    <entityname.tsm_jz_vest>Nine State Combat Armor</entityname.tsm_jz_vest>
+    <entitydescription.tsm_jz_vest>The standard armor for the Nine State Combat Department, made from advanced combat armor as a base, requiring regular maintenance to ensure adequate protective performance.</entitydescription.tsm_jz_vest>
+    <entityname.tsm_riotcontrol_helmet>T.S.M Riot Helmet</entityname.tsm_riotcontrol_helmet>
+    <entitydescription.tsm_riotcontrol_helmet>Effectively prevents both civilian weapons and blunt instruments from harming the wearer's head.</entitydescription.tsm_riotcontrol_helmet>
+    <entityname.tsm_heavycombat_helmet>T.S.M Heavy Combat Helmet</entityname.tsm_heavycombat_helmet>
+    <entitydescription.tsm_heavycombat_helmet>Thicker inner lining, providing stronger impact resistance.</entitydescription.tsm_heavycombat_helmet>
+    <entityname.tsm_helmet_respirator>T.S.M Heavy Gas Mask Helmet</entityname.tsm_helmet_respirator>
+    <entitydescription.tsm_helmet_respirator></entitydescription.tsm_helmet_respirator>
+    <entityname.tsm_helmet_outpost_combat>T.S.M "Raging River" Combat Helmet</entityname.tsm_helmet_outpost_combat>
+    <entitydescription.tsm_helmet_outpost_combat>A special combat helmet designed specifically for site assaults in The Sea of Miracles, currently only equipped for a small number of site assault troops.</entitydescription.tsm_helmet_outpost_combat>
+    <entityname.tsm_nujiang_uniform>T.S.M "Raging River" Combat Suit</entityname.tsm_nujiang_uniform>
+    <entitydescription.tsm_nujiang_uniform>A combat suit criticized for its design; this is not to say its protective effects are poor, but its overall appearance resembles that of a plumber. Therefore, every time the site assault squad goes on a mission, someone always jokes about going to fix the toilets at some site.</entitydescription.tsm_nujiang_uniform>
+    <!--联盟-->
+    <entityname.lm_rapidreaction_helmet>Coalition Rapid Response Combat Helmet</entityname.lm_rapidreaction_helmet>
+    <entitydescription.lm_rapidreaction_helmet>A helmet specifically for rapid response troops, capable of resisting direct bullet hits and featuring night vision. Remember to replace the batteries in time to maintain equipment and information advantages.</entitydescription.lm_rapidreaction_helmet>
+    <entityname.lm_rapidreaction_vest>Coalition Rapid Response Bulletproof Vest</entityname.lm_rapidreaction_vest>
+    <entitydescription.lm_rapidreaction_vest>A bulletproof vest specifically for the Coalition task force, sturdier than standard bulletproof vests, with excellent bulletproof performance. It shone in the Splinter War, protecting the lives of many task force members.</entitydescription.lm_rapidreaction_vest>
+    <entityname.lm_rapidreaction_uniform>Coalition Rapid Response Combat Suit</entityname.lm_rapidreaction_uniform>
+    <entitydescription.lm_rapidreaction_uniform>A combat suit specifically for the Coalition task force; while it is not bulletproof, it is sturdy, durable, and warm. The pockets on the clothing allow the wearer to carry more items.</entitydescription.lm_rapidreaction_uniform>
+    <entityname.lm_fast_helmet>Coalition Assault Helmet</entityname.lm_fast_helmet>
+    <entitydescription.lm_fast_helmet>A standard helmet widely distributed to basic soldiers, featuring numerous attachment points for various modification options.</entitydescription.lm_fast_helmet>
+    <entityname.lm_fast_helmet_headset>Coalition Assault Communication Helmet</entityname.lm_fast_helmet_headset>
+    <entitydescription.lm_fast_helmet_headset>Equipped with a set of radio earphones, allowing officers' and colleagues' voices to be transmitted to the soldier's ears more quickly.</entitydescription.lm_fast_helmet_headset>
+    <entityname.lm_fast_helmet_faceshield>Coalition Assault Helmet (Bulletproof Visor)</entityname.lm_fast_helmet_faceshield>
+    <entitydescription.lm_fast_helmet_faceshield>A large transparent bulletproof visor is installed on top, providing a certain level of protection to the most dangerous part of the body, the face.</entitydescription.lm_fast_helmet_faceshield>
+    <entityname.lm_fast_helmet_thermalgoggles>Coalition Assault Helmet (Thermal Imaging)</entityname.lm_fast_helmet_thermalgoggles>
+    <entitydescription.lm_fast_helmet_thermalgoggles>A standard helmet equipped with a head-mounted thermal imaging device, featuring an excellent suspension system that keeps the center of gravity unchanged. Remember to frequently change the batteries to ensure the thermal imaging device is operational.</entitydescription.lm_fast_helmet_thermalgoggles>
+    <entityname.lm_fast_helmet_protectivejaw>Coalition Assault Helmet (Jaw Guard)</entityname.lm_fast_helmet_protectivejaw>
+    <entitydescription.lm_fast_helmet_protectivejaw>A communication headset with a jaw guard, providing even better protection for the wearer.</entitydescription.lm_fast_helmet_protectivejaw>
+    <entityname.lm_beowulf_helmet>Coalition Beowulf Helmet</entityname.lm_beowulf_helmet>
+    <entitydescription.lm_beowulf_helmet>A standard helmet equipped for the Beowulf squad, with superior performance that allows outstanding soldiers to execute tactics and orders more calmly.</entitydescription.lm_beowulf_helmet>
+    <entityname.lm_beowulf_uniform>Coalition Beowulf Combat Suit</entityname.lm_beowulf_uniform>
+    <entitydescription.lm_beowulf_uniform>A standard combat suit equipped for the Beowulf squad.</entitydescription.lm_beowulf_uniform>
+    <entityname.lm_occupation_helmet>Coalition Occupation Army Combat Helmet</entityname.lm_occupation_helmet>
+    <entitydescription.lm_occupation_helmet>A helmet equipped with a jaw guard and large transparent protective visor, effectively bulletproof and resistant to cuts, and can effectively prevent concussions from impacts.</entitydescription.lm_occupation_helmet>
+    <entityname.lm_crosstalk_helmet>Coalition Disruption Squad Helmet</entityname.lm_crosstalk_helmet>
+    <entitydescription.lm_crosstalk_helmet></entitydescription.lm_crosstalk_helmet>
+    <entityname.lm_vest_pt>Coalition Bulletproof Vest</entityname.lm_vest_pt>
+    <entitydescription.lm_vest_pt>A standard bulletproof vest with average performance, characterized by fewer carry pouches and a design that does not hinder soldier movement.</entitydescription.lm_vest_pt>
+    <entityname.lm_vest_elite>Coalition Elite Bulletproof Vest</entityname.lm_vest_elite>
+    <entitydescription.lm_vest_elite>A bulletproof vest made from new materials, offering stronger protection than the original design, but still only has a few carry pouches.</entitydescription.lm_vest_elite>
+    <entityname.lm_vest_beowulf>Coalition Beowulf Bulletproof Vest</entityname.lm_vest_beowulf>
+    <entitydescription.lm_vest_beowulf>Excellent performance without sacrificing mobility; this bulletproof vest also features additional carry pouches, allowing the wearer to carry more ammunition for mission completion.</entitydescription.lm_vest_beowulf>
+    <entityname.lm_vest_occupation>Coalition Occupation Army Bulletproof Vest</entityname.lm_vest_occupation>
+    <entitydescription.lm_vest_occupation>This thick bulletproof vest effectively protects the wearer, with several spacious carry pouches enabling soldiers to carry more ammunition. However, its thickness may affect the soldier's use of weapons and tools.</entitydescription.lm_vest_occupation>
+    <entityname.lm_stormyseas_uniform>Coalition Havoc Combat Suit</entityname.lm_stormyseas_uniform>
+    <entitydescription.lm_stormyseas_uniform>A common combat suit in the Coalition; while it lacks space for storing magazines, its excellent quality control has ensured it has never received negative reviews.</entitydescription.lm_stormyseas_uniform>
+    <!--反抗军-->
+    <entityname.fkj_anonymous_uniform>Separatist Shadow Raider Combat Suit</entityname.fkj_anonymous_uniform>
+    <entitydescription.fkj_anonymous_uniform>A combat suit made from new materials that slightly sacrifices bulletproof performance for corrosion resistance and hemorrhage resistance, featuring four large pockets for carrying more ammunition. However, the glove issue remains unresolved, and the use of medical supplies by the wearer is still not recommended.</entitydescription.fkj_anonymous_uniform>
+    <entityname.fkj_abyssrambler_uniform>Separatist Combat Suit</entityname.fkj_abyssrambler_uniform>
+    <entitydescription.fkj_abyssrambler_uniform>The standard combat suit for the Separatists, made with solid materials and good quality. The small pockets sewn onto it allow soldiers to carry personal items or ammunition. The gloves are made from overly solid material (too thick), making the use of medical supplies inadvisable for soldiers.</entitydescription.fkj_abyssrambler_uniform>
+    <entityname.fkj_yehuo_uniform>Wildfire Separatist Combat Suit</entityname.fkj_yehuo_uniform>
+    <entitydescription.fkj_yehuo_uniform>An excellent combat suit with a very good wearing experience. For some reason, wearers seem clumsy when using tools.</entitydescription.fkj_yehuo_uniform>
+    <entityname.fkj_fast_helmet>Separatist Assault Helmet</entityname.fkj_fast_helmet>
+    <entitydescription.fkj_fast_helmet>A standard helmet, while its performance is barely adequate, the designer has provided numerous slots for custom modifications and upgrades.</entitydescription.fkj_fast_helmet>
+    <entityname.fkj_fast_helmet_reinforce>Separatist Enhanced Assault Helmet</entityname.fkj_fast_helmet_reinforce>
+    <entitydescription.fkj_fast_helmet_reinforce>Features ear protection, upgraded inner lining, and shock absorption design, effectively reducing the likelihood of the wearer suffering a concussion from severe impacts.</entitydescription.fkj_fast_helmet_reinforce>
+    <entityname.fkj_fast_helmet_thermalgoggles>Separatist Thermal Imaging Helmet</entityname.fkj_fast_helmet_thermalgoggles>
+    <entitydescription.fkj_fast_helmet_thermalgoggles>Equipped with a head-mounted thermal imaging device. Due to a shift in the center of gravity, the helmet is unstable after taking hits, slightly reducing its protective effect. If you wish to consistently use the convenience of thermal imaging, remember to change the batteries frequently.</entitydescription.fkj_fast_helmet_thermalgoggles>
+    <entityname.fkj_Anonymous_helmet>Separatist Shadow Raider Helmet</entityname.fkj_Anonymous_helmet>
+    <entitydescription.fkj_Anonymous_helmet>Equipped with ear protection and goggles, utilizing a new cushioning structure to effectively resist the Coalition's new type of ammunition.</entitydescription.fkj_Anonymous_helmet>
+    <entityname.fkj_yehuo_helmet>Wildfire Separatist Combat Helmet</entityname.fkj_yehuo_helmet>
+    <entitydescription.fkj_yehuo_helmet>A new type of all-protection helmet, providing the best protection for your head, even your chin is covered!</entitydescription.fkj_yehuo_helmet>
+    <entityname.fkj_heavy_helmet>Separatist Elite Helmet</entityname.fkj_heavy_helmet>
+    <entitydescription.fkj_heavy_helmet></entitydescription.fkj_heavy_helmet>
+    <entityname.fkj_vest_pt>Separatist Bulletproof Vest</entityname.fkj_vest_pt>
+    <entitydescription.fkj_vest_pt>Nothing much to say, just a standard Separatist bulletproof vest with several carry pouches for magazines and grenades.</entitydescription.fkj_vest_pt>
+    <entityname.fkj_vest_elite>Separatist Elite Bulletproof Vest</entityname.fkj_vest_elite>
+    <entitydescription.fkj_vest_elite>Improved internal design and material innovation based on the ordinary bulletproof vest, providing soldiers with some resistance against the Coalition's new bullets, although carry pouches are still limited.</entitydescription.fkj_vest_elite>
+    <entityname.fkj_heavy_vest>Separatist Heavy Bulletproof Vest</entityname.fkj_heavy_vest>
+    <entitydescription.fkj_heavy_vest>A thick bulletproof vest that gives the wearer a strong sense of security; wearing it makes you the thickest meat shield in submarine urban warfare! (The Separatist advises you not to actually be a meat shield; remember to carry a shield.)</entitydescription.fkj_heavy_vest>
+    <entityname.fkj_vest_yehuo>Wildfire Separatist Bulletproof Vest</entityname.fkj_vest_yehuo>
+    <entitydescription.fkj_vest_yehuo>A bulletproof vest reserved for the elite among the Separatist, featuring extensive use of new materials and excellent strap structure that provide high bulletproof performance and hemorrhage resistance, capable of withstanding some of the Coalition's new bullets.</entitydescription.fkj_vest_yehuo>
+    <!--降临派-->
+    <entityname.adventists_uniform>Ascendant Sect Leader's Robe</entityname.adventists_uniform>
+    <entitydescription.adventists_uniform>The robe often worn by leaders of the Ascendant Sect, symbolizing their status. It is quite warm to wear on the cold icy surface.</entitydescription.adventists_uniform>
+    <entityname.adventists_Wind_proof>Ascendant Sect Windbreaker</entityname.adventists_Wind_proof>
+    <entitydescription.adventists_Wind_proof></entitydescription.adventists_Wind_proof>
+    <!--插板-->
+    <entityname.tsm_armor_allbuff>TSM Technology - All-Protective Plate</entityname.tsm_armor_allbuff>
+    <entitydescription.tsm_armor_allbuff>Developed by Meier Yu's research team, this all-protective armor plate integrates various types of protective armor, achieving more protective effects; however, it is more prone to damage compared to single-type protection, and the protection level does not meet the highest standards.</entitydescription.tsm_armor_allbuff>
+    <entityname.tsm_armor_bleeding>TSM Technology - Bleeding Protection Plate</entityname.tsm_armor_bleeding>
+    <entitydescription.tsm_armor_bleeding>Bleeding protection armor plate\n\nResearch Location: Nine State Armory\n\nProtection Type: Bleeding\n\nProtection Level: III</entitydescription.tsm_armor_bleeding>
+    <entityname.tsm_armor_lacerations>TSM Technology - Laceration Protection Plate</entityname.tsm_armor_lacerations>
+    <entitydescription.tsm_armor_lacerations>Laceration injury protection armor plate\n\nResearch Location: Nine State Armory\n\nProtection Type: Laceration\n\nProtection Level: III</entitydescription.tsm_armor_lacerations>
+    <entityname.tsm_armor_stun>TSM Technology - Stun Protection Plate</entityname.tsm_armor_stun>
+    <entitydescription.tsm_armor_stun>Stun protection armor plate\n\nResearch Location: Nine State Armory\n\nProtection Type: Stun\n\nProtection Level: III</entitydescription.tsm_armor_stun>
+    <entityname.tsm_armor_blunttrauma>TSM Technology - Blunt Force Protection Plate</entityname.tsm_armor_blunttrauma>
+    <entitydescription.tsm_armor_blunttrauma>Blunt force injury protection armor plate\n\nResearch Location: Nine State Armory\n\nProtection Type: Blunt Force\n\nProtection Level: II</entitydescription.tsm_armor_blunttrauma>
+    <entityname.tsm_armor_huskinfection>TSM Technology - Husk Infection Protection Plate</entityname.tsm_armor_huskinfection>
+    <entitydescription.tsm_armor_huskinfection>Husk Infection protection armor plate\n\nResearch Location: Nine State Armory\n\nProtection Type: Husk Infection\n\nProtection Level: IV</entitydescription.tsm_armor_huskinfection>
+    <entityname.tsm_armor_paralysis>TSM Technology - Paralysis Protection Plate</entityname.tsm_armor_paralysis>
+    <entitydescription.tsm_armor_paralysis>Paralysis protection armor plate\n\nResearch Location: Nine State Armory\n\nProtection Type: Paralysis\n\nProtection Level: IV</entitydescription.tsm_armor_paralysis>
+    <entityname.tsm_armor_triton>TSM Technology - Special Damage Protection Plate</entityname.tsm_armor_triton>
+    <entitydescription.tsm_armor_triton>Special protection armor plate\n\nResearch Location: Nine State Armory\n\nProtection Type: Triton/Explosion\n\nProtection Level: II</entitydescription.tsm_armor_triton>
+    <entityname.tsm_armor_bitewounds>TSM Technology - Bite Protection Plate</entityname.tsm_armor_bitewounds>
+    <entitydescription.tsm_armor_bitewounds>Bite protection armor plate\n\nResearch Location: Nine State Armory\n\nProtection Type: Bite\n\nProtection Level: II</entitydescription.tsm_armor_bitewounds>
+    <entityname.tsm_armor_explosiondamage>TSM Technology - Explosion Protection Plate</entityname.tsm_armor_explosiondamage>
+    <entitydescription.tsm_armor_explosiondamage>Deep tissue damage protection armor plate\n\nResearch Location: Nine State Armory\n\nProtection Type: Deep Tissue Damage\n\nProtection Level: II</entitydescription.tsm_armor_explosiondamage>
+    <entityname.tsm_armor_gunshotwound>TSM Technology - Gunshot Protection Plate</entityname.tsm_armor_gunshotwound>
+    <entitydescription.tsm_armor_gunshotwound>Gunshot protection armor plate\n\nResearch Location: Nine State Armory\n\nProtection Type: Gunshot\n\nProtection Level: II</entitydescription.tsm_armor_gunshotwound>
+    <entityname.tsm_xjzz_suit>Military Advanced Protective Suit</entityname.tsm_xjzz_suit>
+    <entitydescription.tsm_xjzz_suit>This military-grade protective suit is mainly equipped by the Advanced Combat Department in the The Sea of Miracles, capable of adapting to many harsh environments. When paired with magnetic shoes, it can maintain stability under minor floods, with a maximum dive depth of 6000 meters.</entitydescription.tsm_xjzz_suit>
+    <entityname.tsm_orangeconstant_suit>Orange Uncommon Protective Suit</entityname.tsm_orangeconstant_suit>
+    <entitydescription.tsm_orangeconstant_suit>Hazardous environment protective suit, with a maximum dive depth of 6000 meters.</entitydescription.tsm_orangeconstant_suit>
+    <entityname.tsm_typeiexposure_suit>Type I Contact Protective Suit</entityname.tsm_typeiexposure_suit>
+    <entitydescription.tsm_typeiexposure_suit>Modified from military protective suits, this suit incorporates advanced life and biological maintenance technology. Special fibers separate the wearer from harsh environments. The helmet has a built-in night vision device, greatly improving effectiveness, while specialized shoes securely grip the ground, reducing impact from shocks, with a maximum dive depth of 8000 meters.</entitydescription.tsm_typeiexposure_suit>
+    <entityname.tsm_bltj_suit>Riot Advancing Protective Suit</entityname.tsm_bltj_suit>
+    <entitydescription.tsm_bltj_suit>Modified from military protective suits, using alien material to fabricate armor plate for defense, fitted with riot control module, makes the user capable of swinging stun batons faster, aggressive appearance to intimidate rioters, capable of withstanding 6000m depths.</entitydescription.tsm_bltj_suit>
+    <entityname.tsm_rcsuit>Anti-Riot Protective Suit</entityname.tsm_rcsuit>
+    <entitydescription.tsm_rcsuit></entitydescription.tsm_rcsuit>
+    <entityname.rz_prototype>“Rongzhuang” Prototype</entityname.rz_prototype>
+    <entitydescription.rz_prototype>Due to various reasons and the increasingly severe situation, the headquarters of the The Sea of Miracles urgently needed a heavy fire support platform that could enter submarines. Thus, the “Rongzhuang” heavy fire platform prototype was born.</entitydescription.rz_prototype>
+    <entityname.tsm_rz_2b>“Rongzhuang” Prototype No. 2 Type B</entityname.tsm_rz_2b>
+    <entitydescription.tsm_rz_2b>This is a combat platform equipped with heavy firepower. The operator can enter and exit the body more quickly, and the heavy firepower mounted on the arms can easily respond to various situations inside submarines, but it is still a platform for technical verification. Uses ‖color:150,0,0,255‖Rongzhuang Magazines‖color:end‖ for ammunition supply.</entitydescription.tsm_rz_2b>
+    <entityname.tsm_rz_pirent>Rongzhuang Bandit Type</entityname.tsm_rz_pirent>
+    <entitydescription.tsm_rz_pirent>Original Type B body, modified by bandits to enhance protective and output capabilities.</entitydescription.tsm_rz_pirent>
+    <entityname.tsm_rz_pirent_k>Rongzhuang Bandit Type</entityname.tsm_rz_pirent_k>
+    <entitydescription.tsm_rz_pirent_k>Original Type B body, modified by bandits to enhance protective and output capabilities.</entitydescription.tsm_rz_pirent_k>
+    <entityname.tsm_kepuniform>Three Divine Hills Combat Suit</entityname.tsm_kepuniform>
+    <entitydescription.tsm_kepuniform>As an experimental team for operators, headquarters designed a dedicated combat system for them, but it needs to be paired with the Three Divine Hills combat helmet and cloak to activate.</entitydescription.tsm_kepuniform>
+    <entityname.tsm_kepcape>Three Divine Hills Cloak</entityname.tsm_kepcape>
+    <entitydescription.tsm_kepcape>A dedicated cloak for the Three Divine Hills experimental team, designed to withstand a certain amount of damage, and it also has some resistance to Triton bullets. When paired with the Three Divine Hills combat suit and helmet, it can activate the auxiliary system.</entitydescription.tsm_kepcape>
+    <entityname.tsm_kepcap>Three Divine Hills Combat Helmet</entityname.tsm_kepcap>
+    <entitydescription.tsm_kepcap>A dedicated combat helmet for the Three Divine Hills team, it has a certain amount of defense and can be used with chips. When paired with the combat suit and cloak, it can activate the auxiliary system.</entitydescription.tsm_kepcap>
+    <entityname.tsm_advisers_vest>'Feline' Consultant Bulletproof Vest</entityname.tsm_advisers_vest>
+    <entitydescription.tsm_advisers_vest>Made from alien minerals, this bulletproof plate offers higher protection without hindering the movement of combat personnel.</entitydescription.tsm_advisers_vest>
+    <entityname.tsm_advisers_mask>'Feline' Consultant Camouflage Mask</entityname.tsm_advisers_mask>
+    <entitydescription.tsm_advisers_mask>Issued to the consultant team for outdoor missions, this mask effectively hides their identity.</entitydescription.tsm_advisers_mask>
+    <entityname.tsm_advisers_uniform>'Feline' Consultant Uniform</entityname.tsm_advisers_uniform>
+    <entitydescription.tsm_advisers_uniform>The most professional team, reasonably priced, honest service. The Feline Consultants are always on the front lines, providing the best quality service.</entitydescription.tsm_advisers_uniform>
+    <entityname.tsm_65_uniform>Type 65 Military Uniform</entityname.tsm_65_uniform>
+    <entitydescription.tsm_65_uniform>Brave soldiers of the Hundred Battles New Division, three years of hard struggle for my life.</entitydescription.tsm_65_uniform>
+    <entityname.tsm_65_hat>Type 65 Military Cap</entityname.tsm_65_hat>
+    <entitydescription.tsm_65_hat>In the drizzling night rain, the troops are washed clean, and the hot blood solidifies the golden vase.</entitydescription.tsm_65_hat>
+    <entityname.tsm_63_gear>Type 63 Carrying Equipment</entityname.tsm_63_gear>
+    <entitydescription.tsm_63_gear>Returning to the spring to summon the old troops, with banners to cut down Yan Luo.</entitydescription.tsm_63_gear>
+    <!--工具-->
+    <entityname.CODE002>CODE:002</entityname.CODE002>
+    <entitydescription.CODE002>This seems to be a music tape. If I remember correctly, the adjacent MOD: “When Will You Return?” has a player for this type of tape; it might be worth checking out.</entitydescription.CODE002>
+    <entityname.tsm_daylight>Daytime Illumination Shell</entityname.tsm_daylight>
+    <entitydescription.tsm_daylight>Illuminates the surroundings as bright as daytime on Earth.</entitydescription.tsm_daylight>
+    <entityname.tsm_flashlight>High-Intensity Flashlight</entityname.tsm_flashlight>
+    <entitydescription.tsm_flashlight>Longer illumination distance.</entitydescription.tsm_flashlight>
+    <entityname.tsm_flashlight_t>Tactical Flashlight</entityname.tsm_flashlight_t>
+    <entitydescription.tsm_flashlight_t>Wider illumination range.</entitydescription.tsm_flashlight_t>
+    <entityname.tsm_jgzsq>Laser Pointer</entityname.tsm_jgzsq>
+    <entitydescription.tsm_jgzsq>Can be inserted into the gun to provide friendly identification without harming allies, but it will be ineffective underwater.\n-5% rate of fire\n-10% damage</entitydescription.tsm_jgzsq>
+    <entityname.tsm_thermalgoggles>T.S.M Thermal Imaging Chip</entityname.tsm_thermalgoggles>
+    <entitydescription.tsm_thermalgoggles>Installed in the The Sea of Miracles helmet, this chip unlocks thermal imaging capabilities.</entitydescription.tsm_thermalgoggles>
+    <entityname.tsm_healthscanner>T.S.M Health Scanning Chip</entityname.tsm_healthscanner>
+    <entitydescription.tsm_healthscanner>Installed in the The Sea of Miracles helmet, this chip unlocks health scanner capabilities.</entitydescription.tsm_healthscanner>
+    <entityname.tsm_operatorassistancesystems>Operator Assistance System (OAS)</entityname.tsm_operatorassistancesystems>
+    <entitydescription.tsm_operatorassistancesystems>Operator Riot Maker Initiator\n\nThe Operator Assistance System can provide necessary treatment in crisis situations, as well as communication functions.</entitydescription.tsm_operatorassistancesystems>
+    <entityname.tsm_grip_straight>Straight Grip</entityname.tsm_grip_straight>
+    <entitydescription.tsm_grip_straight>Small increase to stability\n-30% Spread\n+40% Flow resistance\n-10% Movement speed\n+20% Stun Resistance</entitydescription.tsm_grip_straight>
+    <entityname.tsm_grip_cqr>Cqr Grip</entityname.tsm_grip_cqr>
+    <entitydescription.tsm_grip_cqr>Small increase to stability\n-25% Spread\n-6% Movement speed\n+10% Stun resistance</entitydescription.tsm_grip_cqr>
+    <entityname.tsm_grip_triangle>Triangle Grip</entityname.tsm_grip_triangle>
+    <entitydescription.tsm_grip_triangle>Small increase to stability\n-15% Spread\n+15% Flow resistance</entitydescription.tsm_grip_triangle>
+    <entityname.tsm_grip_thumb>Thumb Grip</entityname.tsm_grip_thumb>
+    <entitydescription.tsm_grip_thumb>Small increase to stability\n-5% Spread\n+10% Movement Speed</entitydescription.tsm_grip_thumb>
+    <entityname.tsm_grip_light>Shift Vertical Grip</entityname.tsm_grip_light>
+    <entitydescription.tsm_grip_light>Small increase to stability\n-20% Spread\n+20% Flow resistance\n-3% Movement Speed</entitydescription.tsm_grip_light>
+    <entityname.tsm_grip_mounts>Mount</entityname.tsm_grip_mounts>
+    <entitydescription.tsm_grip_mounts>When installed, provides moderate stability\n-50% Spread\n+40% Flow resistance\n-20% Movement Speed\n+30% Stun resistance</entitydescription.tsm_grip_mounts>
+    <entityname.tsm_sight_reddot>Red Dot Sight</entityname.tsm_sight_reddot>
+    <entitydescription.tsm_sight_reddot>Slightly increase sight range while holding weapons, reduce spread while firing\n+25% Skill gain speed\n-4% Movement speed</entitydescription.tsm_sight_reddot>
+    <entityname.tsm_sight_holographic>Holographic Sight</entityname.tsm_sight_holographic>
+    <entitydescription.tsm_sight_holographic>Slightly increase sight range while holding weapons, reduce spread while firing\n+25% Skill gain speed\n-4% Movement speed</entitydescription.tsm_sight_holographic>
+    <entityname.tsm_sight_double>2x Sight</entityname.tsm_sight_double>
+    <entitydescription.tsm_sight_double>Increase sight range while holding weapons\n-10% Spread\n-7% Movement Speed</entitydescription.tsm_sight_double>
+    <entityname.tsm_sight_pso>PSO AK Sight</entityname.tsm_sight_pso>
+    <entitydescription.tsm_sight_pso>Slightly increase sight range while holding weapons\n+5% Skill gain speed\n-15% Spread\n-10% Movement speed</entitydescription.tsm_sight_pso>
+    <entityname.tsm_sight_c79>C79 6x Machine Gun Sight</entityname.tsm_sight_c79>
+    <entitydescription.tsm_sight_c79>Significantly increase sight range while holding weapons\n-13% Spread\n-12% Movement speed</entitydescription.tsm_sight_c79>
+    <entityname.tsm_sight_hamr>HAMR Health Scanner Sight</entityname.tsm_sight_hamr>
+    <entitydescription.tsm_sight_hamr>Provides Health Scanner effect\n+10% Weapons skill gain</entitydescription.tsm_sight_hamr>
+    <entityname.tsm_sight_acog>ACOG 4x Sight</entityname.tsm_sight_acog>
+    <entitydescription.tsm_sight_acog>Slightly increase sight range while holding weapons\n+30% Weapons skill gain\n-5% Spread\n-6% Movement speed</entitydescription.tsm_sight_acog>
+    <entityname.tsm_sight_thermal>Thermal Sight</entityname.tsm_sight_thermal>
+    <entitydescription.tsm_sight_thermal>Provides Thermal Goggles Effect\n+10% Weapons skill gain</entitydescription.tsm_sight_thermal>
+    <entityname.tsm_flame_arrester>Muzzle Flash Suppressor</entityname.tsm_flame_arrester>
+    <entitydescription.tsm_flame_arrester>Slightly increase weapon damage\n+13% Damage\n-3% Fire rate</entitydescription.tsm_flame_arrester>
+    <entityname.tsm_recoil>Muzzle Brake</entityname.tsm_recoil>
+    <entitydescription.tsm_recoil>Slightly increase weapon damage and accuracy\n+10% Damage\n-7% Spread</entitydescription.tsm_recoil>
+    <entityname.tsm_advanced_sight>Type 95 Longbow Kit Scope</entityname.tsm_advanced_sight>
+    <entitydescription.tsm_advanced_sight>Type 95 Longbow Kit Scope, slightly increase sight range while holding weapons\n+25% Weapons skill gain\n-7% Spread\n-5% Movement speed</entitydescription.tsm_advanced_sight>
+    <entityname.tsm_gun_grenade>Underbarrel Grenade Launcher</entityname.tsm_gun_grenade>
+    <entitydescription.tsm_gun_grenade>Can launch grenades after installation</entitydescription.tsm_gun_grenade>
+    <entityname.tsm_advanced_barrel>Precision Marksman Rifle Special Barrel</entityname.tsm_advanced_barrel>
+    <entitydescription.tsm_advanced_barrel>Advanced QBU-191 precision rifle dedicated barrel, paired with the weapon to become a precision marksman rifle\n+60% damage\n-50% rate of fire</entitydescription.tsm_advanced_barrel>
+    <entityname.tsm_advanced_grip>Tripod</entityname.tsm_advanced_grip>
+    <entitydescription.tsm_advanced_grip>Provides certain stability after installation\nReduces 40% spread, reduces 20% movement speed, increases 40% water resistance</entitydescription.tsm_advanced_grip>
+    <entityname.tsm_03_sight>Type 03 Rifle Scope</entityname.tsm_03_sight>
+    <entitydescription.tsm_03_sight>Dedicated Type 03 Rifle Scope, slightly increase sight range while holding weapons\n-10% Spread\n-5% Movement speed</entitydescription.tsm_03_sight>
+    <entityname.tsm_sight_qmk152>QMK152 White Light Scope</entityname.tsm_sight_qmk152>
+    <entitydescription.tsm_sight_qmk152>Type 191 photoelectric aiming system\n+5 Weapons skill\n-12% Spread\n-7% Movement speed</entitydescription.tsm_sight_qmk152>
+    <entityname.tsm_gun_grenade_lm>M203 Grenade Underbarrel</entityname.tsm_gun_grenade_lm>
+    <entitydescription.tsm_gun_grenade_lm>Underbarrel kit for M4 and M16 series, can launch grenades after installation</entitydescription.tsm_gun_grenade_lm>
+    <!--近战-->
+    <entityname.tsm_round_riotshields>Round Riot Shield</entityname.tsm_round_riotshields>
+    <entitydescription.tsm_round_riotshields></entitydescription.tsm_round_riotshields>
+    <entityname.tsm_square_riotshields>T.S.M "Phalanx" Advanced Combat Shield</entityname.tsm_square_riotshields>
+    <entitydescription.tsm_square_riotshields>A heavy shield made of high-density ballistic fibers and high-strength titanium-aluminum alloy, capable of completely shielding the user's body, allowing steady advancement amidst gunfire.</entitydescription.tsm_square_riotshields>
+    <entityname.tsm_stunbaton_melee>Special Electric Baton</entityname.tsm_stunbaton_melee>
+    <entitydescription.tsm_stunbaton_melee>Installed with Ray Sub Battery to provide more powerful control</entitydescription.tsm_stunbaton_melee>
+    <entityname.tsm_moonlight_sword>Moonlight</entityname.tsm_moonlight_sword>
+    <entitydescription.tsm_moonlight_sword>‖color:255,144,48,255‖An honorary melee weapon, a ring-hilted katana made from alien materials‖color:end‖</entitydescription.tsm_moonlight_sword>
+    <entityname.tsm_lerentine_zhong>‖color:221,106,29,255‖Tomb‖color:end‖</entityname.tsm_lerentine_zhong>
+    <entitydescription.tsm_lerentine_zhong>‖color:221,106,29,255‖Born in shadow, not bound by form in life; dead, the soul does not connect with my dreams‖color:end‖</entitydescription.tsm_lerentine_zhong>
+    <entityname.tsm_zhong_handgun>‖color:221,106,29,255‖Gray Eye‖color:end‖</entityname.tsm_zhong_handgun>
+    <entitydescription.tsm_zhong_handgun>‖color:221,106,29,255‖Leirentine's sidearm, uses hand cannon ammunition. It is said to have been the sidearm of her squad leader in the advanced operations department. When they were ambushed, the leader died trying to save her. She later picked up this gun, donned the leader's helmet, and issued commands. "Harbinger of Doom," they called him. She is a child of the Sea of Miracles, your last hope when shrouded in death.‖color:end‖</entitydescription.tsm_zhong_handgun>
+    <entityname.tsm_pmf_melee>Breach Axe</entityname.tsm_pmf_melee>
+    <entitydescription.tsm_pmf_melee>A tool for breaching, commonly used in Sea of Miracles</entitydescription.tsm_pmf_melee>
+    <entityname.tsm_pqc_melee>Breach Hammer</entityname.tsm_pqc_melee>
+    <entitydescription.tsm_pqc_melee>A tool for breaking walls, commonly used in Sea of Miracles</entitydescription.tsm_pqc_melee>
+    <entityname.tsm_thermal_knife>"Wind Whisper" Tactical Blade</entityname.tsm_thermal_knife>
+    <entitydescription.tsm_thermal_knife>This blade's manufacturing process is not disclosed. It is lightweight, and can reach high temperatures in a very short time, making cutting efficiency high.</entitydescription.tsm_thermal_knife>
+    <entityname.tsm_steel_knife>"Sithir" Command Blade</entityname.tsm_steel_knife>
+    <entitydescription.tsm_steel_knife>A symbol of status, forged from expensive alien metals. Before Earth lost contact, it was awarded to captains who bravely ventured into the unknown.</entitydescription.tsm_steel_knife>
+    <!--弹药-->
+    <entityname.tsm_12_ld>Buckshot</entityname.tsm_12_ld>
+    <entitydescription.tsm_12_ld>Fewer rounds but with greater power.</entitydescription.tsm_12_ld>
+    <entityname.tsm_shotgunammo_4>4 Gauge Shotgun Shell</entityname.tsm_shotgunammo_4>
+    <entitydescription.tsm_shotgunammo_4>Time for some pleasure</entitydescription.tsm_shotgunammo_4>
+    <entityname.tsm_shotgunammo_4_db>4 Gauge "Dragon Breath" Shell</entityname.tsm_shotgunammo_4_db>
+    <entitydescription.tsm_shotgunammo_4_db></entitydescription.tsm_shotgunammo_4_db>
+    <entityname.tsm_sabot>Double Shot Slug</entityname.tsm_sabot>
+    <entitydescription.tsm_sabot>Innovative double-shot design, where the outer projectile detaches upon hitting the target and quickly flips inside to cause damage.</entitydescription.tsm_sabot>
+    <entityname.tsm_12_bg>Depleted Uranium Triton Shell</entityname.tsm_12_bg>
+    <entitydescription.tsm_12_bg>Tritium fusion core, Tritium fragment killing component</entitydescription.tsm_12_bg>
+    <entityname.tsm_12_slience>Rubber Suppression Round</entityname.tsm_12_slience>
+    <entitydescription.tsm_12_slience>Provides strong control</entitydescription.tsm_12_slience>
+    <entityname.tsm_handcannonround>Hand Cannon Crystal ammo</entityname.tsm_handcannonround>
+    <entitydescription.tsm_handcannonround>Large-caliber armor-piercing bullet developed by Sea of Miracles</entitydescription.tsm_handcannonround>
+    <entityname.tsm_handcannonround_easy>Copper Handcannon Ammo</entityname.tsm_handcannonround_easy>
+    <entitydescription.tsm_handcannonround_easy>An inexpensive handcannon ammo; don't underestimate its low damage, as it is cheap.</entitydescription.tsm_handcannonround_easy>
+    <entityname.tsm_58_fulgurium_mag>Fulgarium Magazine(5.8mm)</entityname.tsm_58_fulgurium_mag>
+    <entitydescription.tsm_58_fulgurium_mag>loaded with 30 rounds of 5.8 caliber Fulgarium ammo，these rounds can make the enemy feel what it's like getting tased</entitydescription.tsm_58_fulgurium_mag>
+    <entityname.tsm_58_physicorium_mag>Physicorium Magazine(5.8mm)</entityname.tsm_58_physicorium_mag>
+    <entitydescription.tsm_58_physicorium_mag>loaded with 30 rounds of 5.8 caliber Physicorium ammo，Increasing damage using its Physicorium base</entitydescription.tsm_58_physicorium_mag>
+    <entityname.tsm_58_sulphuriteshard_mag>Sulphuric Acid Magazine(5.8mm)</entityname.tsm_58_sulphuriteshard_mag>
+    <entitydescription.tsm_58_sulphuriteshard_mag>loaded with 30 rounds of 5.8 caliber Sulphuric Acid ammo，emits acid to burn enemies on hit</entitydescription.tsm_58_sulphuriteshard_mag>
+    <entityname.tsm_58_incendium_mag>Incendium Magazine(5.8mm)</entityname.tsm_58_incendium_mag>
+    <entitydescription.tsm_58_incendium_mag>loaded with 30 rounds of 5.8 caliber Incendium ammo，Igniting enemies using the properties of Incendium</entitydescription.tsm_58_incendium_mag>
+    <entityname.tsm_magazine_fulgurium>T.S.M Fulgarium Magazine</entityname.tsm_magazine_fulgurium>
+    <entitydescription.tsm_magazine_fulgurium>loaded with 30 rounds of Fulgarium ammo，these rounds can make the enemy feel what it's like getting tased</entitydescription.tsm_magazine_fulgurium>
+    <entityname.tsm_magazine_physicorium>T.S.M Physicorium Magazine</entityname.tsm_magazine_physicorium>
+    <entitydescription.tsm_magazine_physicorium>loaded with 30 rounds of Physicorium ammo，Increasing damage using its Physicorium base</entitydescription.tsm_magazine_physicorium>
+    <entityname.tsm_magazine_sulphuriteshard>T.S.M Sulphuric Acid Magazine</entityname.tsm_magazine_sulphuriteshard>
+    <entitydescription.tsm_magazine_sulphuriteshard>loaded with 30 rounds of Sulphuric Acid ammo，emits acid to burn enemies on hit</entitydescription.tsm_magazine_sulphuriteshard>
+    <entityname.tsm_magazine_incendium>T.S.M Incendium Magazine</entityname.tsm_magazine_incendium>
+    <entitydescription.tsm_magazine_incendium>loaded with 30 rounds of Incendium ammo，Igniting enemies using the properties of Incendium</entitydescription.tsm_magazine_incendium>
+    <entityname.fkj_545_fulgurium_mag>Fulgarium Magazine(5.45*39)</entityname.fkj_545_fulgurium_mag>
+    <entitydescription.fkj_545_fulgurium_mag>loaded with 30 rounds of 5.45*39 caliber Fulgarium ammo，these rounds can make the enemy feel what it's like getting tased</entitydescription.fkj_545_fulgurium_mag>
+    <entityname.fkj_545_physicorium_mag>Physicorium Magazine(5.45*39)</entityname.fkj_545_physicorium_mag>
+    <entitydescription.fkj_545_physicorium_mag>loaded with 30 rounds of 5.45*39 caliber Physicorium ammo，Increasing damage using its Physicorium base</entitydescription.fkj_545_physicorium_mag>
+    <entityname.fkj_545_sulphuriteshard_mag>Sulphuric Acid Magazine(5.45*39)</entityname.fkj_545_sulphuriteshard_mag>
+    <entitydescription.fkj_545_sulphuriteshard_mag>loaded with 30 rounds of 5.45*39 caliber Sulphuric Acid ammo，emits acid to burn enemies on hit</entitydescription.fkj_545_sulphuriteshard_mag>
+    <entityname.fkj_545_incendium_mag>Incendium Magazine(5.45*39)</entityname.fkj_545_incendium_mag>
+    <entitydescription.fkj_545_incendium_mag>loaded with 30 rounds of 5.45*39 caliber Incendium ammo，Igniting enemies using the properties of Incendium</entitydescription.fkj_545_incendium_mag>
+    <entityname.lm_556_fulgurium_mag>Fulgarium Magazine(5.56*45)</entityname.lm_556_fulgurium_mag>
+    <entitydescription.lm_556_fulgurium_mag>loaded with 30 rounds of 5.56*45 caliber Fulgarium ammo，these rounds can make the enemy feel what it's like getting tased</entitydescription.lm_556_fulgurium_mag>
+    <entityname.lm_556_physicorium_mag>Physicorium Magazine(5.56*45)</entityname.lm_556_physicorium_mag>
+    <entitydescription.lm_556_physicorium_mag>loaded with 30 rounds of 5.56*45 caliber Physicorium ammo，Increasing damage using its Physicorium base</entitydescription.lm_556_physicorium_mag>
+    <entityname.lm_556_sulphuriteshard_mag>Sulphuric Acid Magazine(5.56*45)</entityname.lm_556_sulphuriteshard_mag>
+    <entitydescription.lm_556_sulphuriteshard_mag>loaded with 30 rounds of 5.56*45 caliber Sulphuric Acid ammo，emits acid to burn enemies on hit</entitydescription.lm_556_sulphuriteshard_mag>
+    <entityname.lm_556_incendium_mag>Incendium Magazine(5.56*45)</entityname.lm_556_incendium_mag>
+    <entitydescription.lm_556_incendium_mag>loaded with 30 rounds of 5.56*45 caliber Incendium ammo，Igniting enemies using the properties of Incendium</entitydescription.lm_556_incendium_mag>
+    <entityname.tsm_fragmentation_grenade>Fragmentation Grenade</entityname.tsm_fragmentation_grenade>
+    <entitydescription.tsm_fragmentation_grenade>A common type of grenade using a delayed fuse, with a fragmentation kill radius of 6-10. When held, right-click then press 'E' to sequentially pull the safety pin and release the firing pin spoon.</entitydescription.tsm_fragmentation_grenade>
+    <!--武器-->
+    <!--节日-->
+    <entityname.tsm_holiday_g11>G11 Caseless Assault Rifle·2024 Christmas Special</entityname.tsm_holiday_g11>
+    <entitydescription.tsm_holiday_g11>2024 Christmas Special Voting Event\nAn experimental caseless assault rifle, fires custom caseless rounds, uses propellant to replace traditional shells, 50 round magazine, needs to be placed in an ammo loader to reload. Its internal structure is as complex as clockwork, so continued firing could lead to malfunction, it is way more valuable as a collection item than a weapon.\nCould be reloaded when placed in an ammo box</entitydescription.tsm_holiday_g11>
+    <!--奇迹之海-->
+    <entityname.tsm_zc>Chariot Assault Rifle</entityname.tsm_zc>
+    <entitydescription.tsm_zc>No design can withstand drug-enhanced bullets; practice is needed to hit accurately. However, its suppressor is quite good. Uses ‖color:150,0,0,255‖Sea of Miracles ammunition‖color:end‖.</entitydescription.tsm_zc>
+    <entityname.tsm_fy>Flying Raven Assault Rifle</entityname.tsm_fy>
+    <entitydescription.tsm_fy>Uses ‖color:150,0,0,255‖Sea of Miracles ammunition‖color:end‖</entitydescription.tsm_fy>
+    <entityname.tsm_rsmagazine>T.S.M Incendiary Magazine</entityname.tsm_rsmagazine>
+    <entitydescription.tsm_rsmagazine>Special magazine exclusively for two rifles, Chariot and Flying Raven.</entitydescription.tsm_rsmagazine>
+    <entityname.tsm_magazine>T.S.M Standard Magazine</entityname.tsm_magazine>
+    <entitydescription.tsm_magazine>Standard magazine that can hold 30 rounds of 5.8mm ammunition. However, reports indicate that using this magazine allows for continuous fire up to 33 times. — Don't joke! This magazine can only hold 30 rounds!</entitydescription.tsm_magazine>
+    <entityname.tsm_identifier>T.S.M Friendly Identification Code</entityname.tsm_identifier>
+    <entitydescription.tsm_identifier>Identification code of Sea of Miracles, which can be synthesized with sonar beacons and flares into various drop pod flares.</entitydescription.tsm_identifier>
+    <entityname.tsm_ammunition_resupply>Ammunition Supply Indicator</entityname.tsm_ammunition_resupply>
+    <entitydescription.tsm_ammunition_resupply>After use, can summon an airdrop capsule.</entitydescription.tsm_ammunition_resupply>
+    <entityname.tsm_snoar_shell>T.S.M Railgun Decoy Shell</entityname.tsm_snoar_shell>
+    <entitydescription.tsm_snoar_shell>Railgun Shell\nDecoy-type artillery missile that stops around 150m after launch and continuously emits a sonar pulse to attract creatures. Please note the strong EMP effects within the explosion radius.</entitydescription.tsm_snoar_shell>
+    <entityname.tsm_embi_shell>Fist of Fate</entityname.tsm_embi_shell>
+    <entitydescription.tsm_embi_shell>Railgun Shell
+  Special ballistic correction artillery nuclear bomb developed and manufactured by EMBI. This ammunition can correct its trajectory within a certain range.</entitydescription.tsm_embi_shell>
+    <entityname.tsm_fire_gun>Awakening Lion</entityname.tsm_fire_gun>
+    <entitydescription.tsm_fire_gun>Sub-throw Launcher
+  Single-use bombardment launcher capable of disrupting enemy formations.</entitydescription.tsm_fire_gun>
+    <entityname.tsm_thbq>Same Twilight</entityname.tsm_thbq>
+    <entitydescription.tsm_thbq>Sea of Miracles's standard assault rifle, developed for external combat, offers exceptional suppression due to its high rate of fire, allowing ordinary soldiers to achieve squad-level fire density. The specialized armor-piercing ammunition is an added bonus. After installing specialized components, it becomes even more formidable, deadlier, and pricier... Using ‖color:150,0,0,255‖Sea of Miracles ammunition‖color:end‖ "Burlinghill, they told you, Europa's sea is too deep and dark, and 'clean' people find it hard to go far..."</entitydescription.tsm_thbq>
+    <entityname.tsm_gybq>Shared Shadow</entityname.tsm_gybq>
+    <entitydescription.tsm_gybq>Another outcome of Sea of Miracles's development of Same Twilight: a designated marksman rifle that can only fire in semi-automatic mode. Its unique structure not only delivers powerful rounds but also increases recoil and ammunition consumption, reducing rate of fire, and special stocks offer little improvement. If misused, it could even harm the shooter; only experienced soldiers can use it flexibly and efficiently to eliminate enemies. Using ‖color:150,0,0,255‖Sea of Miracles ammunition‖color:end‖</entitydescription.tsm_gybq>
+    <entityname.tsm_xylz>New Moon Revolution</entityname.tsm_xylz>
+    <entitydescription.tsm_xylz>A large-caliber anti-material weapon developed by Sea of Miracles at any cost. The ammunition used possesses tremendous lethality, making it unmanageable for shooters without extensive specialized training. As a result, this weapon is in very limited supply and costly to produce.</entitydescription.tsm_xylz>
+    <entityname.tsm_gravitythrower>Gravity Launcher</entityname.tsm_gravitythrower>
+    <entitydescription.tsm_gravitythrower>We bring change to this world, executing judgment in the land of the gods\n Sea of Miracles's latest developed gravity weapon, the Judgment-Bringer\n Each use requires wearing specific protective gear; otherwise, there will be severe consequences.\n Ammunition ‖color:150,0,0,255‖Zero Gravity Traction Laser Beam‖color:end‖ can only be purchased at designated sites.</entitydescription.tsm_gravitythrower>
+    <entityname.tsm_201>Model 201 General Machine Gun</entityname.tsm_201>
+    <entitydescription.tsm_201>Utilizes modern design principles, focusing on ergonomics and combat performance. Its moderate length makes it easy to carry and operate, while the empty weight is effectively controlled to reduce soldiers' burden. The canvas belt-fed system allows for rapid ammunition replenishment, ensuring sustained firepower and improving combat efficiency. It can use both ‖color:150,0,0,255‖Canvas Ammo Bags‖color:end‖ and ‖color:150,0,0,255‖5.8mm Rifle Magazines‖color:end‖, further expanding battlefield adaptability.</entitydescription.tsm_201>
+    <entityname.tsm_advanced_95>Type 95 Assault Rifle</entityname.tsm_advanced_95>
+    <entitydescription.tsm_advanced_95>Achieves advanced performance comparable to similar weapons, enabling infantry squads to engage both point and area targets while being effective against light armor. It can be equipped with extended lighting devices or grenade launchers, using ‖color:150,0,0,255‖5.8mm ammunition‖color:end‖.</entitydescription.tsm_advanced_95>
+    <entityname.tsm_advanced_03>Type 03 Automatic Rifle</entityname.tsm_advanced_03>
+    <entitydescription.tsm_advanced_03>This rifle features a longer automatic mechanism guide rail, increasing the recoil buffer. It uses a temperature-controlled forged aluminum upper and lower receiver, with the upper receiver directly compatible with Type 03 specialized sights. The lower receiver and other parts are made of titanium-aluminum alloy. The left and right side plates, grip, and stock are constructed from high-strength, high-temperature-resistant engineering plastics, with a hollow section for accessory tubes, using ‖color:150,0,0,255‖5.8mm ammunition‖color:end‖.</entitydescription.tsm_advanced_03>
+    <entityname.tsm_qbz_191>QBZ-191 Standard Rifle</entityname.tsm_qbz_191>
+    <entitydescription.tsm_qbz_191>After engaging in various combat scenarios, the exceptional performance and fully modular design of the QBZ-191, utilizing ‖color:150,0,0,255‖5.8mm‖color:end‖ magazines, has come to fruition. Its high versatility and balanced cost fully meet service standards, crafted from innovative materials and battle-tested experience.</entitydescription.tsm_qbz_191>
+    <entityname.tsm_advanced_191>QBU-191 Precision Marksman Rifle</entityname.tsm_advanced_191>
+    <entitydescription.tsm_advanced_191>A designated marksman rifle derived from the QBZ-191, utilizing ‖color:150,0,0,255‖5.8mm‖color:end‖ ammunition. The longer barrel provides greater recoil space, improving control and achieving sniper-level accuracy, making it suitable for special barrels and scopes.</entitydescription.tsm_advanced_191>
+    <entityname.tsm_ots11>QTS-11 Strategic Assault Rifle</entityname.tsm_ots11>
+    <entitydescription.tsm_ots11>A weapon born from the “Ideal Individual Combat Weapon” program, lightweight and featuring an all-in-one design, including a grenade launcher (note: magazines and grenades cannot be used simultaneously, as it may cause a catastrophic failure), advanced electro-optical thermal imaging sights, and utilizing existing ‖color:150,0,0,255‖5.8mm‖color:end‖ assault rifle magazines. However, due to its exorbitant cost, it was never put into service, with only a few prototypes circulating.</entitydescription.tsm_ots11>
+    <entityname.tsm_gm6>GM6 "Wildcat" Bullpup Anti-Material Sniper Rifle</entityname.tsm_gm6>
+    <entitydescription.tsm_gm6>A highly precise and compact large-caliber sniper rifle. The floating barrel and bullpup design make it very handy even in indoor combat. Its manufacturing blueprints are highly classified; even if they fall into enemy hands, reverse engineering is impossible. Only elite forces can equip it, using ‖color:150,0,0,255‖12.7x99mm‖color:end‖ caliber sniper ammunition.</entitydescription.tsm_gm6>
+    <entityname.tsm_qbs>QBS-09 Semi-auto Shotgun</entityname.tsm_qbs>
+    <entitydescription.tsm_qbs>A semi-auto shotgun with remarkable reliability and adaptability, no matter if it's silt-filled ocean depths or cramped outposts, though the gun is short, its chamber pressure is enough to sweep through enemies.</entitydescription.tsm_qbs>
+    <entityname.tsm_krmagazine>T.S.M Extended Capacity Magazine</entityname.tsm_krmagazine>
+    <entitydescription.tsm_krmagazine>Can hold 60 rounds of standard ammunition, with a special design ensuring reliability, but the price is not guaranteed.</entitydescription.tsm_krmagazine>
+    <entityname.tsm_58_mag_kr>Assault Rifle Drum Magazine (5.8mm)</entityname.tsm_58_mag_kr>
+    <entitydescription.tsm_58_mag_kr>Holds 60 rounds of 5.8mm ammunition.</entitydescription.tsm_58_mag_kr>
+    <entityname.tsm_magazinebg>T.S.M Triton Magazine</entityname.tsm_magazinebg>
+    <entitydescription.tsm_magazinebg>Triton magazine developed by Sea of Miracles, featuring more powerful ammunition types; take care not to cause friendly fire. Only select squads have permission to use this ammunition.</entitydescription.tsm_magazinebg>
+    <entityname.tsm_magazinecj>T.S.M Armor-Piercing Magazine</entityname.tsm_magazinecj>
+    <entitydescription.tsm_magazinecj>Contains 30 rounds of standard armor-piercing ammunition, effectively countering the swift onslaught of mud golems in the ship's cabin. The magazine is marked for armor-piercing rounds for easy identification.</entitydescription.tsm_magazinecj>
+    <entityname.tsm_ammobox>T.S.M Ammunition Box</entityname.tsm_ammobox>
+    <entitydescription.tsm_ammobox>Sea of Miracles Ammunition Box
+[Insert magazine, right-click + left-click to load.]</entitydescription.tsm_ammobox>
+    <entityname.tsm_weightless_traction_laser_beam>Zero Gravity Traction Laser Beam</entityname.tsm_weightless_traction_laser_beam>
+    <entitydescription.tsm_weightless_traction_laser_beam>Expensive custom shell containing gravity fluid undergoing intense reactions; each use creates a gravity field.</entitydescription.tsm_weightless_traction_laser_beam>
+    <entityname.tsm_xymagazine>New Moon Magazine</entityname.tsm_xymagazine>
+    <entitydescription.tsm_xymagazine>Holds 5 rounds. Even though the capacity of a single magazine is pitifully low, it still doesn't reduce its size in the slightest.</entitydescription.tsm_xymagazine>
+    <entityname.tsm_xymagazine_bg>New Moon Triton Ammunition Magazine</entityname.tsm_xymagazine_bg>
+    <entitydescription.tsm_xymagazine_bg>Holds 5 rounds of special ammunition, delivering tremendous power and extreme lethality.</entitydescription.tsm_xymagazine_bg>
+    <entityname.tsm_58_mag>Assault Rifle Magazine (5.8mm)</entityname.tsm_58_mag>
+    <entitydescription.tsm_58_mag>Holds 30 rounds of 5.8mm ammunition, can be loaded using Sea of Miracles ammunition boxes.</entitydescription.tsm_58_mag>
+    <entityname.tsm_58_mag_cj>Assault Rifle Armor-Piercing Magazine (5.8mm)</entityname.tsm_58_mag_cj>
+    <entitydescription.tsm_58_mag_cj>Holds 30 rounds of 5.8mm armor-piercing ammunition, can be loaded using Sea of Miracles ammunition boxes.</entitydescription.tsm_58_mag_cj>
+    <entityname.tsm_58_201mag>Model 201 Canvas Ammo Bag</entityname.tsm_58_201mag>
+    <entitydescription.tsm_58_201mag>Holds 100 rounds of 5.8mm caliber ammunition, using a dispersible ammo belt internally, but stored in canvas allows for compact size, easy carrying, and light weight; can be loaded using Sea of Miracles ammunition boxes.</entitydescription.tsm_58_201mag>
+    <entityname.tsm_58_201cjmag>Model 201 Canvas Ammo Bag (Armor-Piercing)</entityname.tsm_58_201cjmag>
+    <entitydescription.tsm_58_201cjmag>Holds 100 rounds of 5.8mm armor-piercing ammunition, can be loaded using Sea of Miracles ammunition boxes.</entitydescription.tsm_58_201cjmag>
+    <!--联盟-->
+    <!--无托线-->
+    <entityname.tsm_lm_l85a2>Coalition L85A2 Bullpup Rifle</entityname.tsm_lm_l85a2>
+    <entitydescription.tsm_lm_l85a2>Once considered the world's worst assault rifle, due to issues like incompatible magazine wells and frequent jams, "the world's best spear that occasionally shoots bullets," yet the improved version is acceptable as a foundational bullpup product. Uses Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazines.</entitydescription.tsm_lm_l85a2>
+    <entityname.tsm_lm_famas>Coalition FAMAS Bullpup Assault Rifle</entityname.tsm_lm_famas>
+    <entitydescription.tsm_lm_famas>The efficient operation of the delayed locking lever mechanism gives the FAMAS the most aggressive firing speed among rifles, but the downside is obvious: its excessive rate of fire leads to extremely poor endurance, thus it features a three-round burst selector. Uses Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazines.</entitydescription.tsm_lm_famas>
+    <entityname.tsm_lm_aug>Coalition AUG Assault Rifle</entityname.tsm_lm_aug>
+    <entitydescription.tsm_lm_aug>Coalition standard assault rifle, modernized to adapt to various tactical accessories. Uses Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazines.</entitydescription.tsm_lm_aug>
+    <entityname.tsm_lm_tavor21>Coalition Tavor-21 Bullpup Assault Rifle</entityname.tsm_lm_tavor21>
+    <entitydescription.tsm_lm_tavor21>A stable and reliable bullpup rifle, featuring comprehensive modularity. However, its high cost and lack of outstanding advantages prevented its adoption by the Coalition, instead serving as a transitional product for advanced bullpup rifles. Uses Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazines.</entitydescription.tsm_lm_tavor21>
+    <entityname.tsm_lm_mdr>Coalition MDR Bullpup Combat Rifle</entityname.tsm_lm_mdr>
+    <entitydescription.tsm_lm_mdr>In increasingly harsh combat scenarios, the Coalition found its small-caliber ammunition increasingly inadequate. The MDR was introduced as a response, maintaining a length of 79cm while using a 5.56mm configuration; it can switch to a 7.62mm configuration, allowing for quick conversion to engage targets while maintaining stability and versatility. Using ‖color:150,0,0,255‖5.56mm‖color:end‖ or ‖color:150,0,0,255‖7.62mm‖color:end‖ magazines.</entitydescription.tsm_lm_mdr>
+    <entityname.tsm_lm_mdr_c>Coalition MDR Bullpup Combat Rifle - Infiltration Type</entityname.tsm_lm_mdr_c>
+    <entitydescription.tsm_lm_mdr_c>This rifle is a special modification for the Coalition's decapitation operations, equipped with a custom suppressor for better infiltration. It uses ‖color:150,0,0,255‖7.62x51mm‖color:end‖ ammunition.</entitydescription.tsm_lm_mdr_c>
+    <entityname.tsm_lm_vsh2>Coalition VSH-2 "Rogue" Advanced Bullpup Combat Rifle</entityname.tsm_lm_vsh2>
+    <entitydescription.tsm_lm_vsh2>The ideal bullpup rifle, integrating a series of predecessor advantages. Its high rate of fire and accuracy have made the "Rogue" famous. The fully modernized modules and extensive use of engineering plastics make it lightweight, versatile, and visually appealing, earning high praise from various frontline units. It uses Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazines.</entitydescription.tsm_lm_vsh2>
+    <entityname.tsm_lm_rm277>Coalition RM277 Special Bullpup Combat Rifle</entityname.tsm_lm_rm277>
+    <entitydescription.tsm_lm_rm277>Undoubtedly a revolutionary product. It combines cutting-edge technology from general dynamics and future weapon systems, boasting dual advantages in firepower and accuracy. This rifle uses a unique ‖color:150,0,0,255‖6.8x51‖color:end‖ caliber magazine, demonstrating real and astonishing accuracy and armor-penetrating capability on the battlefield. The specially designed suppressor not only extends the lifespan of the barrel but also reduces flash and sound levels to a very low level.</entitydescription.tsm_lm_rm277>
+    <!--ar线-->
+    <entityname.tsm_lm_m16>Coalition M16A1 Assault Rifle</entityname.tsm_lm_m16>
+    <entitydescription.tsm_lm_m16>A reliable assault rifle that can take down enemies rushing towards you, even if you have no experience with weapons. Uses the Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazine.</entitydescription.tsm_lm_m16>
+    <entityname.tsm_lm_m16a4>Coalition M16A4 Assault Rifle</entityname.tsm_lm_m16a4>
+    <entitydescription.tsm_lm_m16a4>A fully improved model based on the M16A1, it becomes a fully modular platform. Its longer barrel gives it superior penetration among rifles, yet retains the three-round burst firing mode of the A1 version. The lack of suppressive fire was quickly replaced by the M4 carbine. Uses the Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazine.</entitydescription.tsm_lm_m16a4>
+    <entityname.tsm_lm_m110>Coalition M110 Designated Marksman Rifle</entityname.tsm_lm_m110>
+    <entitydescription.tsm_lm_m110>Utilizing a gas-operated semi-automatic firing system, it boasts a higher rate of fire than manually operated bolt-action sniper rifles. It features a 150mm long muzzle attachment to reduce noise and muzzle flash. It has become the preferred choice for Coalition counter-terrorism operations and can be fitted with a bipod for better stability. Uses the Coalition-issued ‖color:150,0,0,255‖7.62x51mm‖color:end‖ caliber magazine.</entitydescription.tsm_lm_m110>
+    <entityname.tsm_lm_ar15>Coalition AR15-Taran Rifle</entityname.tsm_lm_ar15>
+    <entitydescription.tsm_lm_ar15>Once the best-selling rifle on Earth, its stability and accuracy, combined with its affordable price and high modularity, make it popular among the public for defending their rights. The military version in the Coalition already features full-auto capability. Uses the Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazine.</entitydescription.tsm_lm_ar15>
+    <entityname.tsm_lm_M4>Coalition M4 Assault Rifle</entityname.tsm_lm_M4>
+    <entitydescription.tsm_lm_M4>An older carbine that does not use the banned 6.8mm ammunition. However, its excellent design keeps it as the most widely used weapon in the Coalition today, using the Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazine.</entitydescription.tsm_lm_M4>
+    <entityname.tsm_lm_hk416>Coalition HK416 Assault Rifle</entityname.tsm_lm_hk416>
+    <entitydescription.tsm_lm_hk416>using the Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazine, HK416 Assault Rifle as a high-capability tactical equipment, became an indispensable weapon for crews in dangerous abyssal environments. It not only fulfills the combat needs of deep sea colonizers with its remarkable reliability and wide functionality, it is also the mainstay of hope against unknown threats in the dark and terrifying environments.</entitydescription.tsm_lm_hk416>
+    <entityname.tsm_lm_scarh>Coalition MK17 Heavy Battle Rifle</entityname.tsm_lm_scarh>
+    <entitydescription.tsm_lm_scarh>The Coalition's standard 5.56*45 caliber ammo has shown insufficient penetration against the ever improving bullet vests, and to complete complex and diverse missions, the coalition's special forces proposes a higher standard to long-range penetration, so this Heavy Battle Rifle came to be. Uses ‖color:150,0,0,255‖7.62*51mm‖color:end‖ ammo.</entitydescription.tsm_lm_scarh>
+    <entityname.tsm_lm_mk18>Coalition MK18 Assault Rifle</entityname.tsm_lm_mk18>
+    <entitydescription.tsm_lm_mk18>With a shorter body than the Coalition carbine, it offers greater maneuverability. Its powerful explosive force made it a standard assault rifle for the Coalition. Uses the Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazine.</entitydescription.tsm_lm_mk18>
+    <entityname.tsm_lm_mcx>Coalition MCX·Spear Combat Rifle</entityname.tsm_lm_mcx>
+    <entitydescription.tsm_lm_mcx>Experimental advanced weapon planned for special forces of the Coalition, regarded as the pinnacle of AR rifles, using the experimental ‖color:150,0,0,255‖6.8x51mm‖color:end‖ magazine, it possesses considerable lethality, equipped with a fully modernized modular platform.</entitydescription.tsm_lm_mcx>
+    <entityname.tsm_lm_hk417>Coalition HK417 Designated Marksman Rifle</entityname.tsm_lm_hk417>
+    <entitydescription.tsm_lm_hk417>Using ‖color:150,0,0,255‖7.62*51‖color:end‖ caliber magazines, capable of single shot sniping, or suppressive fire, The modularity of the AR structure makes it fit for any kind of mission, but only the best of soldiers could handle its full-auto recoil.</entitydescription.tsm_lm_hk417>
+    <entityname.tsm_lm_mk14ebr>Coalition MK14 EBR Battle Marksman Rifle</entityname.tsm_lm_mk14ebr>
+    <entitydescription.tsm_lm_mk14ebr>Uses ‖color:150,0,0,255‖7.62*51‖color:end‖ caliber magazines, when bolt-action sniper rifles lack in suppression, and DMRs lack in power, this precise yet suppressive battle marksman rifle could clear the path.</entitydescription.tsm_lm_mk14ebr>
+    <!--狙击枪-->
+    <entityname.tsm_lm_spg1>Coalition SPG-1 Sniper Rifle</entityname.tsm_lm_spg1>
+    <entitydescription.tsm_lm_spg1>Uses ‖color:150,0,0,255‖Coalition magazine(7.62*51)‖color:end‖, with outstanding precision and mediocre power, especially fit for counter-terrorist operations.</entitydescription.tsm_lm_spg1>
+    <entityname.tsm_lm_awm>Coalition AWM Sniper Rifle</entityname.tsm_lm_awm>
+    <entitydescription.tsm_lm_awm>Uses ‖color:150,0,0,255‖Sniper rifle magazine(8.6*70)‖color:end‖, the Coalition's most common sniper rifle, often seen in outpost counter-terrorist operations, the simple structure and comfortable handling makes even less-experienced snipers able to complete the mission.</entitydescription.tsm_lm_awm>
+    <entityname.tsm_lm_m82a1>Coalition Barrett M82A1 Anti-Materiel Sniper Rifle</entityname.tsm_lm_m82a1>
+    <entitydescription.tsm_lm_m82a1>Uses ‖color:150,0,0,255‖Sniper rifle magazine(12.7*99)‖color:end‖, an anti-material sniper rifle that has served the Coalition for years, able to penetrate submarine hulls to decapitate high-value targets inside the submarine, but you need to be strong enough to handle this bad boy.</entitydescription.tsm_lm_m82a1>
+    <!--其他-->
+    <entityname.tsm_honeybadger>Coalition Honey Badger Short Assault Rifle</entityname.tsm_honeybadger>
+    <entitydescription.tsm_honeybadger>Submachine Guns have been proven to be maneuverable but ineffective in close range fights against targets with armor. After consideration of ammo compatability, the Honey Badger short assault rifle was born, using ‖color:150,0,0,255‖.300BLK Magazine‖color:end‖, with a built-in silencer, small size, big caliber, having both the advantages of SMGs and ARs.</entitydescription.tsm_honeybadger>
+    <entityname.tsm_lm_czbren3>Coalition CZ BREN3 Special Forces Short Assault Rifle </entityname.tsm_lm_czbren3>
+    <entitydescription.tsm_lm_czbren3>Uses ‖color:150,0,0,255‖.300BLK Magazine‖color:end‖,the built-in silencer and state-of-the-art material makes it elegant yet deadly, appearing in all kinds of secret missions, more lethal than an SMG, and more maneuverable than an AR.</entitydescription.tsm_lm_czbren3>
+    <entityname.tsm_lm_mcxxws>Coalition MCX "Rattler" Short Assault Rifle</entityname.tsm_lm_mcxxws>
+    <entitydescription.tsm_lm_mcxxws>Uses ‖color:150,0,0,255‖.300BLK Magazine‖color:end‖, the most compact AR yet, when the stock and the handgaurd are folded, it is small enough to carry in pockets, more maneuverable than an AR, more lethal than an SMG, like a rattlesnake waiting to ambush its prey.</entitydescription.tsm_lm_mcxxws>
+    <!--特殊-->
+    <entityname.tsm_lm_mk18_l>MK18 CQB</entityname.tsm_lm_mk18_l>
+    <entitydescription.tsm_lm_mk18_l>A modified MK18, more suitable for quick response units in indoor combat. Uses the Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazine.</entitydescription.tsm_lm_mk18_l>
+    <entityname.tsm_lm_g36c>Coalition G36C Assault Rifle</entityname.tsm_lm_g36c>
+    <entitydescription.tsm_lm_g36c>As the main assault weapon in Coalition raids, "short" and "light" are its biggest features, yet the recoil doesn't increase thanks to its ergonomics, well-praised by many outpost security officers. Uses Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazines, unable to load drum magazines.</entitydescription.tsm_lm_g36c>
+    <entityname.tsm_lm_mk18_c>Coalition MK18 Assault Rifle (Tactical) </entityname.tsm_lm_mk18_c>
+    <entitydescription.tsm_lm_mk18_c>A camouflage MK18 that has been equipped with a scope and grip for improved control, allowing the shooter to fire without awkwardly gripping a poorly designed forend. Uses the Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazine.</entitydescription.tsm_lm_mk18_c>
+    <entityname.tsm_lm_g36ka4>Coalition G36KA4 Assault Rifle</entityname.tsm_lm_g36ka4>
+    <entitydescription.tsm_lm_g36ka4>The Standard evolution of the short version, stronger firepower at the cost of being longer and clumsier.Uses Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazines, unable to load drum magazines.</entitydescription.tsm_lm_g36ka4>
+    <entityname.tsm_lm_hk433>Coalition HK433/G39 Assault Rifle</entityname.tsm_lm_hk433>
+    <entitydescription.tsm_lm_hk433>Uses ‖color:150,0,0,255‖5.56‖color:end‖caliber ammo or ‖color:150,0,0,255‖.300blk Magazine‖color:end‖,Based on a brand-new, unique, expandable, and efficient weapon platform, the future standard weapon of armies and security officers, unfortunately not equipped due to high manufacturing costs, some officers would buy this beautiful weapon even at their own expense.</entitydescription.tsm_lm_hk433>
+    <entityname.tsm_lm_97>Coalition Type97 Rapid Response Rifle</entityname.tsm_lm_97>
+    <entitydescription.tsm_lm_97>A new bullpup rifle modified at the request of certain Coalition units, adapted to use ‖color:150,0,0,255‖5.56mm‖color:end‖ ammunition, and employs a short burst mechanism to achieve fast suppression and accuracy.</entitydescription.tsm_lm_97>
+    <entityname.tsm_lm_drh>Coalition ACR Assault Rifle</entityname.tsm_lm_drh>
+    <entitydescription.tsm_lm_drh>An assault rifle using ‖color:150,0,0,255‖6.8mm‖color:end‖ military ammunition, it has a high rate of fire and considerable power. However, the significant recoil from the 6.5mm ammunition requires extensive training to master. Can be fitted with optics.</entitydescription.tsm_lm_drh>
+    <entityname.tsm_lm_m4_c>Coalition M4 Assault Rifle (Universal Key)</entityname.tsm_lm_m4_c>
+    <entitydescription.tsm_lm_m4_c>A specially modified assault rifle, equipped with a scope and a shotgun underbarrel on a camouflage M4. While easy to use, it cannot simultaneously fire 5.56 bullets and shotgun rounds due to excessive recoil that could injure the shooter. Uses the Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazine.</entitydescription.tsm_lm_m4_c>
+    <entityname.tsm_lm_cz805a1>Coalition CZ 805A1 bren Assault Rifle</entityname.tsm_lm_cz805a1>
+    <entitydescription.tsm_lm_cz805a1>A unused standard weapon of the Coalition, but certainly a remarkable one, beautiful structure, folding stock and use of engineering plastic makes the weight more comfortable, uses the Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazine.</entitydescription.tsm_lm_cz805a1>
+    <entityname.tsm_lm_cz806>CZ806 bren2 Assault Rifle</entityname.tsm_lm_cz806>
+    <entitydescription.tsm_lm_cz806>easier operation with underbarrel grenade launher, many mercenaries would get one if their budget allows, uses the Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazine.</entitydescription.tsm_lm_cz806>
+    <entityname.tsm_lm_dp12>DP-12 Pump-action Suppression Shotgun</entityname.tsm_lm_dp12>
+    <entitydescription.tsm_lm_dp12>A fearsome double-barreled beast, enemies are knocked into the wall the second they see it, provides a huge advantage to teams with the initiative, and give space for teammates in the back, the favorite of many vanguards.</entitydescription.tsm_lm_dp12>
+    <entityname.tsm_lm_ks23>KS-23 Pump-action Suppression Shotgun</entityname.tsm_lm_ks23>
+    <entitydescription.tsm_lm_ks23>Using the ‖color:150,0,0,255‖4 Gauge Shotgun Shell‖color:end‖ banned by the Europa Convention, this gun itself is also banned. Having a terrifying 23mm caliber, you only need to saw off a cannon barrel, and use three 12 gauge shotgun shell to fabricate it. Remember, no war changes because of a humanitarian treaty.</entitydescription.tsm_lm_ks23>
+    <entityname.tsm_lm_spas12>Franchi SPAS-12 Shotgun</entityname.tsm_lm_spas12>
+    <entitydescription.tsm_lm_spas12>An old versatile shotgun, able to switch between pump-action and semi-auto firing, resulting in a higher fire rate than most shotguns, most problems could be solved with just a few shots.</entitydescription.tsm_lm_spas12>
+    <!--机枪-->
+    <entityname.tsm_lm_mk46>Coalition General Purpose Light Machine Gun (MK46)</entityname.tsm_lm_mk46>
+    <entitydescription.tsm_lm_mk46>A squad light machine gun from Earth, with a shorter barrel making it more suitable for maneuvering in narrow station spaces or submarine corridors, using ‖color:150,0,0,255‖Coalition light machine gun magazines (5.56x45mm)‖color:end‖.</entitydescription.tsm_lm_mk46>
+    <entityname.tsm_lm_mk48>Coalition Squad Machine Gun (MK48)</entityname.tsm_lm_mk48>
+    <entitydescription.tsm_lm_mk48>Using ‖color:150,0,0,255‖Coalition squad machine gun magazines (7.62x51mm)‖color:end‖.</entitydescription.tsm_lm_mk48>
+    <entityname.tsm_lm_m249>Coalition Light Machine Gun (M249)</entityname.tsm_lm_m249>
+    <entitydescription.tsm_lm_m249>While its lethality is somewhat lacking, it offers reliability and strong firepower with a 200-round belt feed, making it the most enduring weapon for sustained fire in infantry squads. A bipod can be installed to provide some stability, using ‖color:150,0,0,255‖Coalition light machine gun magazines (5.56x45mm)‖color:end‖.</entitydescription.tsm_lm_m249>
+    <entityname.tsm_lm_m240b>Coalition General Purpose Machine Gun(M240B)</entityname.tsm_lm_m240b>
+    <entitydescription.tsm_lm_m240b>Extremely heavy due to the full steel body, to provide terrifying suppressive power, uses ‖color:150,0,0,255‖Coalition Machine Gun Magazine(7.62*51)‖color:end‖.</entitydescription.tsm_lm_m240b>
+    <entityname.tsm_lm_m60e6>Coalition General Purpose Machine Gun(MM60 E6)</entityname.tsm_lm_m60e6>
+    <entitydescription.tsm_lm_m60e6>Uses ‖color:150,0,0,255‖Coalition Machine Gun Magazine(7.62*51)‖color:end‖, due to prior general purpose machine guns being too large and heavy in a cramped submarine, the Coalition needs a shorter, more modular general purpose machine gun with better ergonomics, and this is the perfect answer.</entitydescription.tsm_lm_m60e6>
+    <entityname.tsm_lm_xm250>Coalition XM250 Prototype Squad Machine Gun</entityname.tsm_lm_xm250>
+    <entitydescription.tsm_lm_xm250>Uses a 150 round ‖color:150,0,0,255‖Coalition Machine Gun Ammo Bag(6.8*51)‖color:end‖, with new ammo and material, muzzle velocity almost twice the standard machine guns of the coalition, it could easily pierce any bulletproof vests and helmets, smaller ammo size to increase bag capacity, floating gun barrel and great ergonomics for better recoil control.</entitydescription.tsm_lm_xm250>
+    <entityname.tsm_m1014>Benelli M1014 Shotgun</entityname.tsm_m1014>
+    <entitydescription.tsm_m1014>A combat shotgun from centuries ago, it remains the top choice for security and self-defense in the oceans of Europa after design optimization.</entitydescription.tsm_m1014>
+    <entityname.tsm_lm_minigun>Minigun</entityname.tsm_lm_minigun>
+    <entitydescription.tsm_lm_minigun>A portable Gatling gun that can knock back inexperienced shooters even when using the same ammunition as assault rifles. Be careful not to hold the trigger down too long, as this could lead to uncontrolled fire and possibly hit your teammates.</entitydescription.tsm_lm_minigun>
+    <entityname.tsm_ksg>KSG Bullpup Pump-Action Shotgun</entityname.tsm_ksg>
+    <entitydescription.tsm_ksg>Short but capable of holding 9 rounds, which is a significant advantage in the cramped quarters of a Europa cabin. This means you can continue firing when monsters rush at you— and you won't easily lose your weapon to enemies. The double-trigger mechanism allows for a powerful burst of fire in a very short time.</entitydescription.tsm_ksg>
+    <entityname.tsm_lm_m700>Coalition M700 Sniper Rifle</entityname.tsm_lm_m700>
+    <entitydescription.tsm_lm_m700>The Coalition has upgraded older bolt-action rifles to fire more powerful ammunition. However, correspondingly, if you want to keep your shoulder intact, you should practice well before using it. Uses the Coalition-issued ‖color:150,0,0,255‖.338 caliber‖color:end‖ ammunition.</entitydescription.tsm_lm_m700>
+    <entityname.tsm_lm_m700_r>M700 (Redfield 3X-9XACCU-Range)</entityname.tsm_lm_m700_r>
+    <entitydescription.tsm_lm_m700_r>Featuring a longer barrel and higher precision, it can only be placed on a weapon rack due to its excessive length. Coalition snipers take pride in their ability to handle this M700. Uses ‖color:150,0,0,255‖.338 caliber‖color:end‖ ammunition.</entitydescription.tsm_lm_m700_r>
+    <entityname.lm_ammobox>Coalition Ammunition Box</entityname.lm_ammobox>
+    <entitydescription.lm_ammobox>Coalition-issued ammo box, can load common Coalition magazines
+[Insert magazine, right-click + left-click to load.]</entitydescription.lm_ammobox>
+    <entityname.tsm_556_45_mgmag>Coalition Light Machine Gun Magazine (5.56*45mm)</entityname.tsm_556_45_mgmag>
+    <entitydescription.tsm_556_45_mgmag>Contains 200 rounds of 5.56x45mm ammunition.</entitydescription.tsm_556_45_mgmag>
+    <entityname.tsm_556_45_mgmag_cj>Coalition Light Machine Gun Armor-Piercing Magazine (5.56*45mm)</entityname.tsm_556_45_mgmag_cj>
+    <entitydescription.tsm_556_45_mgmag_cj>Contains 200 rounds of 5.56x45mm armor-piercing ammunition.</entitydescription.tsm_556_45_mgmag_cj>
+    <entityname.lm_762_51_mgmag>Coalition Squad Machine Gun Magazine (7.62*51mm)</entityname.lm_762_51_mgmag>
+    <entitydescription.lm_762_51_mgmag>Contains 200 rounds of 7.62x51mm ammunition.</entitydescription.lm_762_51_mgmag>
+    <entityname.lm_762_51_mgmag_cj>Coalition Squad Machine Gun Armor-Piercing Magazine (7.62*51mm)</entityname.lm_762_51_mgmag_cj>
+    <entitydescription.lm_762_51_mgmag_cj>Contains 200 rounds of 7.62x51mm armor-piercing ammunition.</entitydescription.lm_762_51_mgmag_cj>
+    <entityname.lm_68_51_mgmag>Coalition Machine Gun Ammo Bag(6.8*51)</entityname.lm_68_51_mgmag>
+    <entitydescription.lm_68_51_mgmag>Loaded with 150 rounds of 6.8*51mm ammo.</entitydescription.lm_68_51_mgmag>
+    <entityname.lm_68_51ap_mgmag>Coalition Machine Gun Armor-Piercing Ammo Bag(6.8*51)</entityname.lm_68_51ap_mgmag>
+    <entitydescription.lm_68_51ap_mgmag>Loaded with 150 rounds of 6.8*51mm armor-piercing ammo.</entitydescription.lm_68_51ap_mgmag>
+    <entityname.lm_556_mag>Coalition Standard Magazine (5.56*45mm)</entityname.lm_556_mag>
+    <entitydescription.lm_556_mag>Contains a magazine loaded with 33 standard rounds, with a large quantity.</entitydescription.lm_556_mag>
+    <entityname.lm_556cj_mag>Coalition Armor-Piercing Magazine (5.56*45mm)</entityname.lm_556cj_mag>
+    <entitydescription.lm_556cj_mag>Holds 31 armor-piercing rounds that can effectively deal with armored creatures and bulletproof vests, but for some reason, the label on the magazine states it contains 33 rounds? The lower count suggests it's not advisable to carry too many.</entitydescription.lm_556cj_mag>
+    <entityname.lm_556gb_mag>Coalition High-Explosive Magazine (5.56*45mm)</entityname.lm_556gb_mag>
+    <entitydescription.lm_556gb_mag>Contains 30 rounds of precious high-explosive ammunition for military use within the Coalition, capable of efficiently neutralizing targets. Limited quantity, not advisable to carry too many at once.</entitydescription.lm_556gb_mag>
+    <entityname.lm_556kr_mag>Coalition Extended Magazine (5.56*45mm)</entityname.lm_556kr_mag>
+    <entitydescription.lm_556kr_mag>Loaded with 45 rounds of standard ammo</entitydescription.lm_556kr_mag>
+    <entityname.lm_556kr_drum>Coalition Extended Magazine (5.56*45mm)</entityname.lm_556kr_drum>
+    <entitydescription.lm_556kr_drum>Loaded with 60 rounds of standard ammo</entitydescription.lm_556kr_drum><entityname.lm_65_magazine>Coalition Standard Magazine (6.5mm)</entityname.lm_65_magazine>
+    <entitydescription.lm_65_magazine>Holds 30 rounds of standard 6.5x55mm ammunition with some armor-piercing capability for dealing with armored targets.</entitydescription.lm_65_magazine>
+    <entityname.lm_762_35_mag>Coalition Standard Magazine (.300blk)</entityname.lm_762_35_mag>
+    <entitydescription.lm_762_35_mag>Contains 30 round of .300 caliber ammo, a type of silent yet deadly subsonic ammo, different from standard supersonic ammo, its slower speed makes it lodge into the target's body and not pass through, resulting in higher stopping power, at the expense of lower penetration against armored targets, its advantages are fully utilized in riot control or hunting missions.</entitydescription.lm_762_35_mag>
+    <entityname.lm_65kj_magazine>Coalition Hollow Point Magazine (6.5mm)</entityname.lm_65kj_magazine>
+    <entitydescription.lm_65kj_magazine>Holds 30 rounds of hollow point ammunition designed to target unarmored foes, causing substantial bleeding upon impact.</entitydescription.lm_65kj_magazine>
+    <entityname.lm_68_51_magazine>Coalition Standard Magazine (6.8*51mm)</entityname.lm_68_51_magazine>
+    <entitydescription.lm_68_51_magazine>Holds 30 rounds of standard 6.8x51mm ammunition.</entitydescription.lm_68_51_magazine>
+    <entityname.lm_68_51ap_magazine>Coalition Armor-Piercing Magazine (6.8*51mm)</entityname.lm_68_51ap_magazine>
+    <entitydescription.lm_68_51ap_magazine>Holds 30 rounds of armor-piercing 6.8x51mm ammunition.</entitydescription.lm_68_51ap_magazine>
+    <entityname.lm_68_51_mag_kr>Coalition Extended Magazine (6.8*51mm)</entityname.lm_68_51_mag_kr>
+    <entitydescription.lm_68_51_mag_kr>Holds 45 rounds of standard 6.8x51mm ammunition.</entitydescription.lm_68_51_mag_kr>
+    <entityname.lm_68_51kj_magazine>Coalition Open Tip Match Magazine (6.8*51mm)</entityname.lm_68_51kj_magazine>
+    <entitydescription.lm_68_51kj_magazine>Holds 30 rounds of Open Tip Match 6.8x51mm ammunition.</entitydescription.lm_68_51kj_magazine>
+    <entityname.lm_762_51_mag>Coalition Standard Magazine (7.62*51mm)</entityname.lm_762_51_mag>
+    <entitydescription.lm_762_51_mag>Holds 20 rounds of standard 7.62x51mm ammunition.</entitydescription.lm_762_51_mag>
+    <entityname.lm_762_51_ap_mag>Coalition Armor-Piercing Magazine (7.62*51mm)</entityname.lm_762_51_ap_mag>
+    <entitydescription.lm_762_51_ap_mag>Holds 20 rounds of armor-piercing 7.62x51mm ammunition.</entitydescription.lm_762_51_ap_mag>
+    <entityname.tsm_762_51_mag_kr>Extended Magazine (7.62*51mm)</entityname.tsm_762_51_mag_kr>
+    <entitydescription.tsm_762_51_mag_kr>Holds 40 rounds of standard 7.62x51mm ammunition.</entitydescription.tsm_762_51_mag_kr>
+    <entityname.lm_m700_mag>Sniper Rifle Magazine (.338)</entityname.lm_m700_mag>
+    <entitydescription.lm_m700_mag>Contains 5 rounds of high-powered ammunition.</entitydescription.lm_m700_mag>
+    <entityname.tsm_miniammo>Minigun AmmoBox</entityname.tsm_miniammo>
+    <entitydescription.tsm_miniammo>200 rounds of 5.56 caliber ammunition, fire away.</entitydescription.tsm_miniammo>
+    <!--反抗军-->
+    <entityname.tsm_fkj_tac9>Rebel TAC-9 Automatic Pistol</entityname.tsm_fkj_tac9>
+    <entitydescription.tsm_fkj_tac9>Uses ‖color:150,0,0,255‖9mm‖color:end‖ pistol magazine, easily manufactured with a stamping press, cheap to make, easy to conceal, the deadly threat of full-auto firepower makes it the favorite of many gangsters, though it is lackluster in full-fledged military conflicts.</entitydescription.tsm_fkj_tac9>
+    <entityname.tsm_fkj_uzi>Rebel UZI Submachine Gun</entityname.tsm_fkj_uzi>
+    <entitydescription.tsm_fkj_uzi>Uses ‖color:150,0,0,255‖9mm‖color:end‖ pistol magazine, a high fire rate gives it outstanding firepower, though it is ineffective against armored targets and nasty spread. For transport personnel or shield users, one free hand could also be very lethal.</entitydescription.tsm_fkj_uzi>
+    <entityname.tsm_fkj_ppk20>Rebel ppk-20 Submachine Gun</entityname.tsm_fkj_ppk20>
+    <entitydescription.tsm_fkj_ppk20>Uses ‖color:150,0,0,255‖Submachine Gun Magazine(9mm)‖color:end‖, rebel logistics units have disused old submachine guns, and switched to this new submachine gun, making them capable of posing a threat even with minimal weapons training, gun barrel slot is only compatible with a silencer.</entitydescription.tsm_fkj_ppk20>
+    <entityname.tsm_fkj_evo3>Rebel "Scorpion"EVO3 Submachine Gun</entityname.tsm_fkj_evo3>
+    <entitydescription.tsm_fkj_evo3>Uses ‖color:150,0,0,255‖Submachine Gun Magazine(9mm)‖color:end‖, when its stock is folded, it looks like a scorpion ready to pounce, lethal yet elegant, full modularization and compatibility with pistol silencers, a favorite symbol of position for rebel officers, gun barrel slot is only compatible with a silencer.</entitydescription.tsm_fkj_evo3>
+    <entityname.tsm_fkj_an94>Rebel AN94 Assault Rifle</entityname.tsm_fkj_an94>
+    <entitydescription.tsm_fkj_an94>A relic from a once-existing country, inherited by the Separatists and brought to new heights. The Separatists not only increased its caliber to ‖color:150,0,0,255‖7.62x39mm‖color:end‖ but also retained its accuracy. However, it requires extensive training to use it properly. (The weapon's durability getting stuck at 50% after firing is normal, a necessary sacrifice for the recoil mechanism.)</entitydescription.tsm_fkj_an94>
+    <entityname.tsm_fkj_ak74>Rebel AK74 Automatic Rifle</entityname.tsm_fkj_ak74>
+    <entitydescription.tsm_fkj_ak74>Can be properly used after only half an hour of learning, the perfect weapon for a seven-year-old. Fires ‖color:150,0,0,255‖5.45x39mm‖color:end‖ rounds. </entitydescription.tsm_fkj_ak74>
+    <entityname.tsm_fkj_ak74u>Rebel AK74u Short Assault Rifle</entityname.tsm_fkj_ak74u>
+    <entitydescription.tsm_fkj_ak74u>Fires ‖color:150,0,0,255‖5.45*39‖color:end‖ ammo, folding stock makes transportation easier, gun muzzle is also further back, cheap to manufacture, brown engineering plastic for earth nostalgia, an ideal self-defense weapon for logistic units.</entitydescription.tsm_fkj_ak74u>
+    <entityname.tsm_fkj_groza>Rebel OTS Groza-1 “Lightning” Bullpup Assault Rifle</entityname.tsm_fkj_groza>
+    <entitydescription.tsm_fkj_groza>A short bullpup rifle modified from the AK74U, using a ‖color:150,0,0,255‖7.62x39mm‖color:end‖ caliber magazine. Despite its powerful large caliber and impressive fire rate, its poor ergonomics and uncontrollable recoil quickly led to it being phased out in submarine warfare, but its low cost and portability made it popular among pirates and Separatists. </entitydescription.tsm_fkj_groza>
+    <entityname.tsm_fkj_ak103>Rebel AK103 Assault Rifle</entityname.tsm_fkj_ak103>
+    <entitydescription.tsm_fkj_ak103>An excellent weapon, perfect for resisting Union tyranny. Many times, all you need to do is grab the gun and unload on the Union. Fires ‖color:150,0,0,255‖7.62x39mm‖color:end‖ rounds. </entitydescription.tsm_fkj_ak103>
+    <entityname.tsm_fkj_ak103_l>AK103 Assault Rifle (Lightweight Stock)</entityname.tsm_fkj_ak103_l>
+    <entitydescription.tsm_fkj_ak103_l>Lightened and improved firing rate, making it better suited for submarine combat. Fires ‖color:150,0,0,255‖7.62x39mm‖color:end‖ rounds. </entitydescription.tsm_fkj_ak103_l>
+    <entityname.tsm_fkj_ak105>Rebel AK105 Assault Rifle</entityname.tsm_fkj_ak105>
+    <entitydescription.tsm_fkj_ak105>The shorter barrel makes it more suitable for use in confined spaces, ideal for submariners during close-quarters retaliation or dock raids. Fires ‖color:150,0,0,255‖5.45x39mm‖color:end‖ rounds. </entitydescription.tsm_fkj_ak105>
+    <entityname.tsm_fkj_ak105_l>AK105 Assault Rifle (Lightweight Stock)</entityname.tsm_fkj_ak105_l>
+    <entitydescription.tsm_fkj_ak105_l>A lighter AK-105, with no other improvements. Since the stock has been replaced, remember to bring firearm cleaning tools. Fires ‖color:150,0,0,255‖5.45x39mm‖color:end‖ rounds. </entitydescription.tsm_fkj_ak105_l>
+    <entityname.tsm_fkj_am17>Rebel AM-17 Assault Rifle</entityname.tsm_fkj_am17>
+    <entitydescription.tsm_fkj_am17>Made for more covert missions of the rebels, equipped with a custom silencer, but due to the smaller caliber, it is only used by some squads. Fires ‖color:150,0,0,255‖5.45*39‖color:end‖Ammo.</entitydescription.tsm_fkj_am17>
+    <entityname.tsm_fkj_sks>Rebel SKS Rifle</entityname.tsm_fkj_sks>
+    <entitydescription.tsm_fkj_sks>A former weapon of the socialist bloc, but modified by the petty bourgeoisie. While it's more user-friendly, something just feels off? Uses ‖color:150,0,0,255‖7.62x39mm‖color:end‖ magazines. </entitydescription.tsm_fkj_sks>
+    <entityname.tsm_fkj_ak12>Rebel AK12 Assault Rifle</entityname.tsm_fkj_ak12>
+    <entitydescription.tsm_fkj_ak12>A "new" weapon with a century of history, modified by the Separatists with an adaptive barrel and chamber to fire both ‖color:150,0,0,255‖5.45x39mm‖color:end‖ and ‖color:150,0,0,255‖7.62x39mm‖color:end‖ calibers. </entitydescription.tsm_fkj_ak12>
+    <entityname.tsm_fkj_aa12>Rebel AA12 Automatic Shotgun</entityname.tsm_fkj_aa12>
+    <entitydescription.tsm_fkj_aa12>A powerhouse in the cabin, a meat grinder in close quarters. Just hold down the trigger and nothing, man or beast, in front of you will survive. Uses ‖color:150,0,0,255‖Rebel Shotgun Drum‖color:end‖ for ammunition. </entitydescription.tsm_fkj_aa12>
+    <entityname.tsm_fkj_svd>Rebel SVD Sniper Rifle</entityname.tsm_fkj_svd>
+    <entitydescription.tsm_fkj_svd>A semi-automatic precision rifle that allows a trained sniper to quickly pick off barricaded enemies from an elevated position. </entitydescription.tsm_fkj_svd>
+    <entityname.tsm_fkj_jts>Rebel General-Purpose Light Machine Gun</entityname.tsm_fkj_jts>
+    <entitydescription.tsm_fkj_jts>A powerful weapon that allows rebel fighters to suppress Union dogs, pinning them down, before ripping them and their cover to shreds. The recoil from continuous fire can even push the shooter backward, so it's advised to be trained before using this weapon. Uses ‖color:150,0,0,255‖Rebel General-Purpose Machine Gun Magazine (5.45x39mm)‖color:end‖. </entitydescription.tsm_fkj_jts>
+    <entityname.tsm_fkj_pkp>Rebel General-Purpose Machine Gun (PKP)</entityname.tsm_fkj_pkp>
+    <entitydescription.tsm_fkj_pkp>A modernized improvement of what's considered the world's best general-purpose machine gun, still formidable even on Europa. The name "Pecheneg" comes from the Pechenegs, a belligerent Western Turkic branch from Earth's steppes. Effective within range against light structures and basic cover. Now modified by the Separatists to use ‖color:150,0,0,255‖Rebel Machine Gun Magazine (7.62x51mm)‖color:end‖. </entitydescription.tsm_fkj_pkp>
+    <entityname.tsm_fkj_saw>Chain-SAW Machine Gun</entityname.tsm_fkj_saw>
+    <entitydescription.tsm_fkj_saw>Looks like a chainsaw broken down and then assembled together, a terrifying appearance, its rapid firing sounds also resemble a lethal chainsaw. Uses‖color:150,0,0,255‖Rebel General Purpose Machine Gun Magazine(5.45*39)‖color:end‖.</entitydescription.tsm_fkj_saw>
+    <entityname.tsm_fkj_jq430>Rebel JQ430 Assault Rifle</entityname.tsm_fkj_jq430>
+    <entitydescription.tsm_fkj_jq430>Features a faux-wood stock and foregrip, letting users feel the breath of Earth, while its grenade launcher can give enemies a taste of Europa's shockwaves (Note: Do not use both the magazine and grenade at the same time, as it may cause a barrel explosion). However, the bayonet at the muzzle is so difficult to use that almost no one can wield it. Fires ‖color:150,0,0,255‖7.62x39mm‖color:end‖ rounds. </entitydescription.tsm_fkj_jq430>
+    <entityname.tsm_fkj_ak12_c>AK12 Assault Rifle (Tactical Version)</entityname.tsm_fkj_ak12_c>
+    <entitydescription.tsm_fkj_ak12_c>Equipped with a foregrip for better control. Can also fire both ‖color:150,0,0,255‖5.45x39mm‖color:end‖ and ‖color:150,0,0,255‖7.62x39mm‖color:end‖ rounds. </entitydescription.tsm_fkj_ak12_c>
+    <entityname.tsm_fkj_561a>Rebel Type 56-1A Assault Rifle</entityname.tsm_fkj_561a>
+    <entitydescription.tsm_fkj_561a>An modernized version of an old weapon, sold by some mysterious faction through black markets to the rebels, became one of their most advanced weapons. Fires‖color:150,0,0,255‖5.45*39‖color:end‖ or ‖color:150,0,0,255‖7.62*39‖color:end‖ ammo.</entitydescription.tsm_fkj_561a>
+    <entityname.tsm_fkj_ak105_c>AK105 Assault Rifle (Tactical Version)</entityname.tsm_fkj_ak105_c>
+    <entitydescription.tsm_fkj_ak105_c>Equipped with an under-barrel grenade launcher, capable of firing grenades without the need for a separate launcher (Note: Do not use both the magazine and grenade at the same time, as it may cause a barrel explosion). Fires ‖color:150,0,0,255‖5.45x39mm‖color:end‖ rounds. </entitydescription.tsm_fkj_ak105_c>
+    <entityname.tsm_fkj_m2>M2 Browning Heavy Machine Gun (Portable Version)</entityname.tsm_fkj_m2>
+    <entitydescription.tsm_fkj_m2>Hey! it's a machinegun!\nUses ‖color:150,0,0,255‖Rebel Heavy Machine Gun Magazine‖color:end‖. </entitydescription.tsm_fkj_m2>
+    <entityname.tsm_fkj_m2_eagle>M2 Browning Heavy Machine Gun (White Eagle Paint)</entityname.tsm_fkj_m2_eagle>
+    <entitydescription.tsm_fkj_m2_eagle>To the brothers sharing the same boat</entitydescription.tsm_fkj_m2_eagle>
+    <entityname.tsm_fkj_rpk16>Rebel RPK-16 Light Machine Gun</entityname.tsm_fkj_rpk16>
+    <entitydescription.tsm_fkj_rpk16>Not only does it continue the excellent tradition of the AK family, but it has also undergone comprehensive modernization. Its lightweight and high firepower have made it extremely effective in submarine warfare, using ‖color:150,0,0,255‖5.45x39mm‖color:end‖ Rebel Magazine or ‖color:150,0,0,255‖RPK Drum‖color:end‖.</entitydescription.tsm_fkj_rpk16>
+    <entityname.tsm_fkj_ace52>Rebel Galil ACE52 Battle Rifle</entityname.tsm_fkj_ace52>
+    <entitydescription.tsm_fkj_ace52>As the AK series rifles became more common in the separatist forces, using mid-powered rounds, the full-powered Galil firing ‖color:150,0,0,255‖7.62x51mm‖color:end‖ still held its place. When the AK can't pierce enemy armor, the ACE52 might be the better choice.</entitydescription.tsm_fkj_ace52>
+    <entityname.tsm_fkj_g3a4>Rebel G3A4 Battle Rifle</entityname.tsm_fkj_g3a4>
+    <entitydescription.tsm_fkj_g3a4>Uses a ‖color:150,0,0,255‖7.62x51mm‖color:end‖ caliber magazine. The retractable stock reduces the weapon's weight, and though it has a slower rate of fire, what fighter could resist the super cool charging handle of the G3?</entitydescription.tsm_fkj_g3a4>
+    <entityname.tsm_fkj_fal>Rebel FAL “Pharaoh” Battle Rifle</entityname.tsm_fkj_fal>
+    <entitydescription.tsm_fkj_fal>Uses a ‖color:150,0,0,255‖7.62x51mm‖color:end‖ caliber magazine. Known as the "Right Arm of the Free World," it is praised as the best full-power rifle platform. Low-cost, high burst power, making it beloved by many underworld heroes.</entitydescription.tsm_fkj_fal>
+    <entityname.tsm_fkj_sg553>Rebel SG553-R “Raider” Rifle</entityname.tsm_fkj_sg553>
+    <entitydescription.tsm_fkj_sg553>Uses a ‖color:150,0,0,255‖7.62x39mm‖color:end‖ caliber magazine, modified from the now outdated small-caliber SG550, making it more suitable for conquest and raids.</entitydescription.tsm_fkj_sg553>
+    <entityname.fkj_ammobox>Rebel Ammo Box</entityname.fkj_ammobox>
+    <entitydescription.fkj_ammobox>Ammunition box with a semi-automatic reloading mechanism, containing ammunition used by Separatist standard-issue weapons.
+「Insert an empty magazine, left-click + right-click to reload the magazine.」
+    </entitydescription.fkj_ammobox>
+    <entityname.fkj_545_mag>Rebel Standard Magazine (5.45*39mm)</entityname.fkj_545_mag>
+    <entitydescription.fkj_545_mag>A 35-round extended magazine for 5.45 ammo, mass-produced, and users are accustomed to carrying extra magazines.</entitydescription.fkj_545_mag>
+    <entityname.fkj_545_krmag>Rebel Extended Magazine (5.45*39mm)</entityname.fkj_545_krmag>
+    <entitydescription.fkj_545_krmag>A drum magazine holding 70 rounds of 5.45 ammo, offering excellent sustainability.</entitydescription.fkj_545_krmag>
+    <entityname.fkj_545cj_mag>Rebel Armor-Piercing Magazine (5.45*39mm)</entityname.fkj_545cj_mag>
+    <entitydescription.fkj_545cj_mag>A 33-round magazine loaded with 5.45 armor-piercing rounds, effective against body armor and biological shells.</entitydescription.fkj_545cj_mag>
+    <entityname.fkj_545hz_mag>Rebel Mixed-HE Magazine (5.45*39mm)</entityname.fkj_545hz_mag>
+    <entitydescription.fkj_545hz_mag>Loaded with 30 rounds of new high-explosive bullets, though somewhat rare.</entitydescription.fkj_545hz_mag>
+    <entityname.fkj_762_mag>Rebel Standard Magazine (7.62*39mm)</entityname.fkj_762_mag>
+    <entitydescription.fkj_762_mag>A 30-round standard magazine for 7.62 ammo.</entitydescription.fkj_762_mag>
+    <entityname.fkj_762_krmag>Rebel Extended Magazine (7.62*39mm)</entityname.fkj_762_krmag>
+    <entitydescription.fkj_762_krmag>A drum magazine holding 60 rounds of 7.62 ammo, capable of giving an assault rifle machine-gun-like firepower.</entitydescription.fkj_762_krmag>
+    <entityname.fkj_762cj_mag>Rebel Armor-Piercing Magazine (7.62*39mm)</entityname.fkj_762cj_mag>
+    <entitydescription.fkj_762cj_mag>The standard magazine's regular ammo has been replaced with 30 rounds of 7.62 armor-piercing rounds. You won't need to worry about piercing body armor anymore!</entitydescription.fkj_762cj_mag>
+    <entityname.fkj_762hz_mag>Rebel Mixed-HE Magazine (7.62*39mm)</entityname.fkj_762hz_mag>
+    <entitydescription.fkj_762hz_mag>Loaded with 30 rounds of 7.62x39mm caliber explosive bullets.</entitydescription.fkj_762hz_mag>
+    <entityname.fkj_762_51_mag>Rebel Standard Magazine (7.62*51mm)</entityname.fkj_762_51_mag>
+    <entitydescription.fkj_762_51_mag>Holds 20 rounds of 7.62x51mm caliber ammo.</entitydescription.fkj_762_51_mag>
+    <entityname.fkj_762_51_ap_mag>Rebel Armor-Piercing Magazine (7.62*51mm)</entityname.fkj_762_51_ap_mag>
+    <entitydescription.fkj_762_51_ap_mag>Holds 20 rounds of 7.62x51mm caliber armor-piercing rounds.</entitydescription.fkj_762_51_ap_mag>
+    <entityname.fkj_jts_mag>Rebel General-Purpose Machine Gun Magazine (5.45*39mm)</entityname.fkj_jts_mag>
+    <entitydescription.fkj_jts_mag>A box holding a 200-round belt of 5.45x39mm ammo, allowing the shooter to waste as much ammo as they like.</entitydescription.fkj_jts_mag>
+    <entityname.fkj_jts_cjmag>Rebel General-Purpose Machine Gun Armor-Piercing Magazine (5.45*39mm)</entityname.fkj_jts_cjmag>
+    <entitydescription.fkj_jts_cjmag>A box holding a 200-round belt of 5.45x39mm armor-piercing rounds.</entitydescription.fkj_jts_cjmag>
+    <entityname.fkj_pkp_mag>Rebel General-Purpose Machine Gun Magazine (7.62*51mm)</entityname.fkj_pkp_mag>
+    <entitydescription.fkj_pkp_mag>A box holding a 100-round belt of 7.62 ammo.</entitydescription.fkj_pkp_mag>
+    <entityname.fkj_pkp_mag_cj>Rebel General-Purpose Machine Gun Armor-Piercing Magazine (7.62*51mm)</entityname.fkj_pkp_mag_cj>
+    <entitydescription.fkj_pkp_mag_cj>A box holding a 100-round belt of 7.62 armor-piercing rounds.</entitydescription.fkj_pkp_mag_cj>
+    <entityname.fkj_m2_mag>Rebel Heavy Machine Gun Magazine</entityname.fkj_m2_mag>
+    <entitydescription.fkj_m2_mag>A box of 150 rounds mounted on a heavy machine gun, providing prolonged fire. Too large to be portable, it's recommended to have an assistant gunner carry it.</entitydescription.fkj_m2_mag>
+    <entityname.fkj_svd_mag>SVD Magazine</entityname.fkj_svd_mag>
+    <entitydescription.fkj_svd_mag>A magazine holding 20 rifle rounds. Due to its size, shooters tend not to carry too many at once.</entitydescription.fkj_svd_mag>
+    <entityname.fkj_aa12_mag>Rebel Shotgun Drum</entityname.fkj_aa12_mag>
+    <entitydescription.fkj_aa12_mag>A drum holding 15 shotgun shells, providing the AA-12 with extended sustainability.</entitydescription.fkj_aa12_mag>
+    <entityname.fkj_rpk_mag>RPK Drum</entityname.fkj_rpk_mag>
+    <entitydescription.fkj_rpk_mag>A drum holding 95 rounds of 5.45x39mm caliber ammo, offering the RPK long-term sustainability.</entitydescription.fkj_rpk_mag>
+    <!--通用-->
+    <entityname.tsm_m32_launcher>Revolving Grenade Launcher</entityname.tsm_m32_launcher>
+    <entitydescription.tsm_m32_launcher>A revolving grenade launcher capable of firing various types of ammunition. Whether for suppressing riots and uprisings or resisting packs of Mudraptors, it's a highly efficient, ferocious weapon.</entitydescription.tsm_m32_launcher>
+    <entityname.tsm_rpg>RPG-7</entityname.tsm_rpg>
+    <entitydescription.tsm_rpg>This oversized rocket launcher is equipped with a series of new accessories to help the shooter grip and aim. More dangerous and deadly for everyone involved—make sure to follow proper usage guidelines!</entitydescription.tsm_rpg>
+    <entityname.tsm_bazooka>Bazooka</entityname.tsm_bazooka>
+    <entitydescription.tsm_bazooka>An antique, with blueprints from a collector's vault. The shell is isolated from the shooter, making it safer, though improper use can still cause harm.</entitydescription.tsm_bazooka>
+    <entityname.tsm_r_thermobaric>RPG Thermobaric Warhead</entityname.tsm_r_thermobaric>
+    <entitydescription.tsm_r_thermobaric>The oversized warhead drastically reduces portability. Filled with fuel-air explosives, one shot is enough to consume the oxygen in a large space while causing severe burns. A perfect choice for dealing with entrenched enemies.</entitydescription.tsm_r_thermobaric>
+    <entityname.tsm_r_aix>RPG High-Explosive Anti-Personnel Fragmentation Warhead</entityname.tsm_r_aix>
+    <entitydescription.tsm_r_aix>Nicknamed "The Pencil" due to its shape, but this pencil is far deadlier than the one John Wick uses—both to the target and the shooter.</entitydescription.tsm_r_aix>
+    <entityname.tsm_r_heat>RPG Armor-Piercing Grenade</entityname.tsm_r_heat>
+    <entitydescription.tsm_r_heat>A classic model, no further explanation needed.</entitydescription.tsm_r_heat>
+    <entityname.tsm_b_rocket>Bazooka Rocket</entityname.tsm_b_rocket>
+    <entitydescription.tsm_b_rocket>An antique x2mm. Modern craftsmanship still can't improve this relic much, but its size gives it better portability.</entitydescription.tsm_b_rocket>
+    <entityname.tsm_grenade_heat>High-Explosive Anti-Tank Grenade</entityname.tsm_grenade_heat>
+    <entitydescription.tsm_grenade_heat>A fast-flying grenade? Crude but accurate. It works just like that.</entitydescription.tsm_grenade_heat>
+    <entityname.tsm_grenade_fire>Incendiary Grenade</entityname.tsm_grenade_fire>
+    <entitydescription.tsm_grenade_fire>Creates a stable field of high-temperature flames upon explosion, consuming oxygen and life while igniting nearby flammable objects.</entitydescription.tsm_grenade_fire>
+    <entityname.tsm_171>QCQ-171 Submachine Gun</entityname.tsm_171>
+    <entitydescription.tsm_171>Uses ‖color:150,0,0,255‖9mm Submachine Gun Magazine‖color:end‖</entitydescription.tsm_171>
+    <entityname.tsm_05>Type 05 Suppressed Submachine Gun</entityname.tsm_05>
+    <entitydescription.tsm_05>Uses ‖color:150,0,0,255‖5.8mm Submachine Gun Magazine‖color:end‖</entitydescription.tsm_05>
+    <entityname.tsm_p90>P90 Submachine Gun</entityname.tsm_p90>
+    <entitydescription.tsm_p90>This gun, despite being a submachine gun, boasts excellent penetration capability, maintaining decent penetration power against high-level body armor within effective range. It is dubbed the “Body Armor Puncher” and utilizes a simple and reliable operational mechanism while having good shooting accuracy. In the cramped environments of submarines, its short bullpup design and penetration power quickly gained popularity among various factions on Europa, using ‖color:150,0,0,255‖5.7x28mm Rounds‖color:end‖</entitydescription.tsm_p90>
+    <entityname.tsm_mp7>MP7 Submachine Gun</entityname.tsm_mp7>
+    <entitydescription.tsm_mp7>MP7 uses‖color:150,0,0,255‖4.6×30‖color:end‖ caliber ammo, with the start of total war, the number of logistics, maintenance and support units has substantially increased, and these non-combatants require weapons that are light, easy to operate and carry, and effective against the quickly improving armor. High-powered self-defense weapons replaced submachine guns and pistols, so the MP7 makes its debut again, gun barrel slot is only compatible with silencers.</entitydescription.tsm_mp7>
+    <entityname.tsm_ump45>UMP45 Submachine Gun</entityname.tsm_ump45>
+    <entitydescription.tsm_ump45>Uses ‖color:150,0,0,255‖.45‖color:end‖ submachine gun ammo. UMP45 uses blowback action and open bolt to improve firing accuracy. The action awaits firing at the front of the gun barrel. In contrast with most submachine guns with the action positioned behind, this structure could increase accuracy and agility of the trigger. Gun barrel slot is only compatible with silencers.</entitydescription.tsm_ump45>
+    <entityname.tsm_92_pistols>Type 92 Lightweight Standard Automatic Pistol</entityname.tsm_92_pistols>
+    <entitydescription.tsm_92_pistols>An excellent individual defense weapon with low maintenance costs, suitable for engaging unarmored or lightly armored infantry targets, using ‖color:150,0,0,255‖9mm Pistol Magazine‖color:end‖</entitydescription.tsm_92_pistols>
+    <entityname.tsm_fn509_pistols>FN 509 Tactical Pistol</entityname.tsm_fn509_pistols>
+    <entitydescription.tsm_fn509_pistols>The FN 509 Tactical features a modern appearance and design with clear lines and a smooth surface. Its grip is covered with a special texture for better stability during use. Uses ‖color:150,0,0,255‖9mm Pistol Magazine‖color:end‖</entitydescription.tsm_fn509_pistols>
+    <entityname.tsm_1911_pistols>Browning Semi-Automatic Pistol</entityname.tsm_1911_pistols>
+    <entitydescription.tsm_1911_pistols>This classic weapon also requires targeted modifications. Adapted to the Europa environment, this firearm quickly became favored by law enforcement and vigilante justice seekers. Uses ‖color:150,0,0,255‖.45 Caliber‖color:end‖ Rounds</entitydescription.tsm_1911_pistols>
+    <entityname.tsm_glock18_pistols>Glock 18 Automatic Pistol</entityname.tsm_glock18_pistols>
+    <entitydescription.tsm_glock18_pistols>The Glock 18 is a 9mm caliber pistol known for its reliability and high rate of fire. Due to its considerable power, its production is restricted, and it is only provided to special forces. Uses ‖color:150,0,0,255‖9mm Pistol Magazine‖color:end‖</entitydescription.tsm_glock18_pistols>
+    <entityname.tsm_de_handgun>Desert Eagle Pistol</entityname.tsm_de_handgun>
+    <entitydescription.tsm_de_handgun>Once the large-caliber hunting pistol on Earth, it is striking in appearance and powerful, remaining a formidable weapon even on Europa. However, shooters require specialized training to handle it properly—nobody wants the gun to fly back at their face when fired, right? Uses ‖color:150,0,0,255‖.50 Caliber‖color:end‖ Rounds</entitydescription.tsm_de_handgun>
+    <entityname.tsm_88>Type 88 Sniper Rifle</entityname.tsm_88>
+    <entitydescription.tsm_88>This rifle is equipped with a 4x or 6x optical scope to enhance target recognition and strike capability. However, it uses ‖color:150,0,0,255‖5.8mm‖color:end‖ Rounds, which are relatively heavy and significantly affect the sniper rifle's accuracy. Additionally, the connection method between the barrel and bipod differs from standard sniper rifles, also impacting shooting precision. Uses ‖color:150,0,0,255‖5.8mm Sniper Rifle Magazine‖color:end‖</entitydescription.tsm_88>
+    <entityname.tsm_cslr4>CS LR4 Sniper Rifle</entityname.tsm_cslr4>
+    <entitydescription.tsm_cslr4>The CS/LR4 model ‖color:150,0,0,255‖7.62mm‖color:end‖ high-precision sniper rifle features a bullpup structure, a floating barrel design, a rotating bolt action, and magazine feeding. The rifle consists of a body, stock/handguard, action, feeding device, and bipod. It also includes an 8x-32x white light scope, night vision enhancement device, laser rangefinder/ballistic computer, maintenance tools, spare magazines, and other accessories. The complete system is priced at 260,000 excluding ammunition. Uses ‖color:150,0,0,255‖7.62mm Sniper Rifle Magazine‖color:end‖</entitydescription.tsm_cslr4>
+    <entityname.tsm_qbu202>QBU-202 High-Precision Sniper Rifle</entityname.tsm_qbu202>
+    <entitydescription.tsm_qbu202>The QBU202 model 8.6mm high-precision sniper rifle's barrel is manufactured through cold hammer forging, giving it a very high accuracy lifespan. It employs magazine feeding and uses ‖color:150,0,0,255‖8.6x70mm‖color:end‖ sniper rifle magazine.</entitydescription.tsm_qbu202>
+    <entityname.tsm_amr2>AMR-2 Heavy Sniper Rifle</entityname.tsm_amr2>
+    <entitydescription.tsm_amr2>The AMR-2 ‖color:150,0,0,255‖12.7x99mm‖color:end‖ non-automatic sniper rifle is an anti-material weapon used by infantry snipers to engage high-value targets at long distances, including individual personnel and important equipment. It allows for precise strikes and effective destruction. This model features a heavy barrel, and its non-automatic structure minimizes the number of components that may vibrate at the moment of firing, ensuring shooting accuracy. Uses ‖color:150,0,0,255‖12.7mm Sniper Rifle Magazine‖color:end‖</entitydescription.tsm_amr2>
+    <entityname.tsm_m99>M99 Anti-Material Sniper Rifle</entityname.tsm_m99>
+    <entitydescription.tsm_m99>As the war intensifies, soldiers' protection levels have been rising, making existing sniper rifles seem less effective in range and power. The active development of new ‖color:150,0,0,255‖12.7x99mm‖color:end‖ large-caliber sniper rifles has become a new battlefield for military forces. Consequently, light weapons researchers have vigorously pursued the development of semi-automatic large-caliber sniper rifles, leading to the emergence of the M99, which carries the designers' efforts and pride into Europa.</entitydescription.tsm_m99>
+    <entityname.tsm_qbu10>Prototype QBU-10 Anti-Material Sniper Rifle</entityname.tsm_qbu10>
+    <entitydescription.tsm_qbu10>Equipped with a smart thermal optic, even targets in submarines have nowhere to hide, due to its secrecy it would only appear in the most difficult missions to dispatch assasination targets in one shot, uses ‖color:150,0,0,255‖12.7*99‖color:end‖ caliber sniper ammo.</entitydescription.tsm_qbu10>
+    <entityname.tsm_qlu11>Prototype QLU-11 Sniper Grenade Launcher</entityname.tsm_qlu11>
+    <entitydescription.tsm_qlu11>Prototype weapon using ‖color:150,0,0,255‖Sniper Grenade Drum‖color:end‖, the biggest caliber "Gun" yet, in contrast with conventional grenade launchers, the high chamber pressure of a sniper rifle and special armor-piercing grenades, it could shatter targets through submarine hulls. Equipped with an ensemble thermal fire-control system for users to spot targets accurately.</entitydescription.tsm_qlu11>
+    <entityname.tsm_mg42>MG42 General Purpose Machine Gun</entityname.tsm_mg42>
+    <entitydescription.tsm_mg42>A heavy machine gun banned from production under the Europa Convention, its terrifying rate of fire has earned it the nickname "Dictator's Chainsaw" since Earth. Uses ‖color:150,0,0,255‖7.92 MG42 Drum‖color:end‖, with a frenzied muzzle velocity and penetration power rendering any enemy cover laughable; the only downside is its poor endurance.</entitydescription.tsm_mg42>
+    <entityname.tsm_56>Type 56 Submachine Gun</entityname.tsm_56>
+    <entitydescription.tsm_56>Lightweight, accurate, and reliable in operation. It uses a gas-operated automatic system and can fire single shots, using ‖color:150,0,0,255‖7.62mm‖color:end‖ rounds.\nBurying bones need not be soft earth; life has green mountains everywhere.</entitydescription.tsm_56>
+    <entityname.tsm_81>Type 81-1 Automatic Rifle</entityname.tsm_81>
+    <entitydescription.tsm_81>A well-performing weapon with good accuracy, reliable operation, and easy maintenance, this legacy firearm performs well in actual combat, using ‖color:150,0,0,255‖7.62mm‖color:end‖ rounds.</entitydescription.tsm_81>
+    <entityname.tsm_vk>Vector</entityname.tsm_vk>
+    <entitydescription.tsm_vk>An aesthetically pleasing modified white submachine gun, capable of mounting pistol sights and suppressors. Uses ‖color:150,0,0,255‖9mm Pistol Magazine‖color:end‖, featuring astonishing rate of fire and almost no recoil. However, due to its unsuitability for submarine warfare environments, it has not been adopted by the military and is only available in small quantities as a collectible within the Sea of Miracles.</entitydescription.tsm_vk>
+    <entityname.tsm_js9>JS-9 Submachine Gun</entityname.tsm_js9>
+    <entitydescription.tsm_js9>A ‖color:150,0,0,255‖9mm‖color:end‖ caliber suppressed submachine gun, this firearm features a stockless design, with the magazine located behind the pistol grip to shorten the weapon's length, typically also equipped with a suppressor. It operates using a blowback automatic system.</entitydescription.tsm_js9>
+    <entityname.tsm_79_smg>T.S.M Type 79 Submachine Gun</entityname.tsm_79_smg>
+    <entitydescription.tsm_79_smg>Uses ‖color:150,0,0,255‖.45 Caliber‖color:end‖ submachine gun magazine.</entitydescription.tsm_79_smg>
+    <entityname.tsm_9_smgmag>Submachine Gun Magazine (9mm)</entityname.tsm_9_smgmag>
+    <entitydescription.tsm_9_smgmag>Holds 30 rounds of 9mm ammunition.</entitydescription.tsm_9_smgmag>
+    <entityname.tsm_9_smgmag_cj>Submachine Gun Armor-Piercing Magazine (9mm)</entityname.tsm_9_smgmag_cj>
+    <entitydescription.tsm_9_smgmag_cj>Holds 30 rounds of 9mm armor-piercing rounds.</entitydescription.tsm_9_smgmag_cj>
+    <entityname.tsm_9_smgmag_kr>Submachine Gun Extended Magazine (9mm)</entityname.tsm_9_smgmag_kr>
+    <entitydescription.tsm_9_smgmag_kr>Holds 45 rounds of 9mm ammunition.</entitydescription.tsm_9_smgmag_kr>
+    <entityname.tsm_9_smgmag_drum>Submachine Gun Drum (9mm)</entityname.tsm_9_smgmag_drum>
+    <entitydescription.tsm_9_smgmag_drum>Holds 72 rounds of 9mm ammunition.</entitydescription.tsm_9_smgmag_drum><entityname.tsm_58_smgmag>Submachine Gun Magazine (5.8mm)</entityname.tsm_58_smgmag>
+    <entitydescription.tsm_58_smgmag>Holds 50 rounds of 5.8mm ammunition.</entitydescription.tsm_58_smgmag>
+    <entityname.tsm_57_smgmag>Submachine Gun Magazine (5.7*28mm)</entityname.tsm_57_smgmag>
+    <entitydescription.tsm_57_smgmag>A heavy magazine capable of holding 50 rounds, 5.7x28mm ammunition can easily penetrate level three, four, and even five protective vests.</entitydescription.tsm_57_smgmag>
+    <entityname.tsm_46_smgmag>Submachine Gun Magazine (4.6*30)</entityname.tsm_46_smgmag>
+    <entitydescription.tsm_46_smgmag>Loaded with 25 rounds of 4.6*30 caliber ammo, its design is to lower weight and recoil, and raise penetration to armor. It has a bottleneck shaped shell and sharp tip, steel core and copper coated warhead.</entitydescription.tsm_46_smgmag>
+    <entityname.tsm_45_smgmag>Submachine Gun Magazine (.45)</entityname.tsm_45_smgmag>
+    <entitydescription.tsm_45_smgmag>Loaded with 25 rounds of .45 caliber ammo, the main advantage of these rounds are its great stopping power and penetration.</entitydescription.tsm_45_smgmag>
+    <entityname.tsm_45_smgmag_kr>Submachine Gun Extended Magazine (.45)</entityname.tsm_45_smgmag_kr>
+    <entitydescription.tsm_45_smgmag_kr>Loaded with 40 rounds of .45 caliber ammo, though .45ACP rounds have higher recoil，but through design optimizations, such as closed bolt and fire rate reducer, it is possible to effectively control accuracy and recoil.</entitydescription.tsm_45_smgmag_kr>
+    <entityname.tsm_9_mag>Pistol Magazine (9mm)</entityname.tsm_9_mag>
+    <entitydescription.tsm_9_mag>Holds 18 rounds of 9mm pistol ammunition.</entitydescription.tsm_9_mag>
+    <entityname.tsm_9_krmag>Pistol Extended Magazine (9mm)</entityname.tsm_9_krmag>
+    <entitydescription.tsm_9_krmag>A heavy magazine capable of holding 33 rounds.</entitydescription.tsm_9_krmag>
+    <entityname.tsm_9_drum>Pistol Drum (9mm)</entityname.tsm_9_drum>
+    <entitydescription.tsm_9_drum>Holds 50 rounds of 9mm ammunition, currently compatible with Glock 18.</entitydescription.tsm_9_drum>
+    <entityname.tsm_1143_mag>Pistol Magazine (.45ACP)</entityname.tsm_1143_mag>
+    <entitydescription.tsm_1143_mag>Holds 12 rounds of the legendary .45ACP caliber ammunition.</entitydescription.tsm_1143_mag>
+    <entityname.tsm_127_mag>Pistol Magazine (.50AE)</entityname.tsm_127_mag>
+    <entitydescription.tsm_127_mag>Holds 7 rounds of high-powered pistol ammunition; due to its large size, the carrying quantity will be affected.</entitydescription.tsm_127_mag>
+    <entityname.tsm_58ammo_mag>Sniper Rifle Magazine (5.8mm)</entityname.tsm_58ammo_mag>
+    <entitydescription.tsm_58ammo_mag>Holds 10 rounds of 5.8mm ammunition.</entitydescription.tsm_58ammo_mag>
+    <entityname.tsm_762ammo_mag>Sniper Rifle Magazine (7.62*51mm)</entityname.tsm_762ammo_mag>
+    <entitydescription.tsm_762ammo_mag>Holds 10 rounds of 7.62x51mm ammunition.</entitydescription.tsm_762ammo_mag>
+    <entityname.tsm_86_mag>Sniper Rifle Magazine (8.6*70mm)</entityname.tsm_86_mag>
+    <entitydescription.tsm_86_mag>Holds 8 rounds of 8.6x70mm ammunition.</entitydescription.tsm_86_mag>
+    <entityname.tsm_127ammo_mag>Sniper Rifle Magazine (12.7*99mm)</entityname.tsm_127ammo_mag>
+    <entitydescription.tsm_127ammo_mag>Holds 5 rounds of 12.7x99mm ammunition.</entitydescription.tsm_127ammo_mag>
+    <entityname.tsm_grenade_mag>Sniper Grenade Drum</entityname.tsm_grenade_mag>
+    <entitydescription.tsm_grenade_mag>Loaded with 5 Grenades</entitydescription.tsm_grenade_mag>
+    <entityname.tsm_mg42_mag>Drum (7.92*57mm)</entityname.tsm_mg42_mag>
+    <entitydescription.tsm_mg42_mag>Holds 75 rounds of large-caliber ammunition.</entitydescription.tsm_mg42_mag>
+    <entityname.tsm_stock_pistols>Short Stock Buttstock</entityname.tsm_stock_pistols>
+    <entitydescription.tsm_stock_pistols>-30% Spread\n+20% Flow resistance\n+20% Stun resistance\n-10% Movement speed</entitydescription.tsm_stock_pistols>
+    <entityname.tsm_sighting_pistols>pistols Sight</entityname.tsm_sighting_pistols>
+    <entitydescription.tsm_sighting_pistols>pistols Only</entitydescription.tsm_sighting_pistols>
+    <entityname.tsm_pistols_silencers>"Osprey" Small Caliber Silencer</entityname.tsm_pistols_silencers>
+    <entitydescription.tsm_pistols_silencers>Lowers firing sound, makes you less of a target, mostly equipped on submachine guns and pistols.\n+5% Spread\n-2% Fire rate</entitydescription.tsm_pistols_silencers>
+    <entityname.tsm_gun_silencers>Silencer</entityname.tsm_gun_silencers>
+    <entitydescription.tsm_gun_silencers>Lowers firing sound, makes you less of a target, mostly equipped on assault rifles\n+5% Spread\n-2% Fire rate</entitydescription.tsm_gun_silencers>
+    <!--三神丘-->
+    <entityname.tsm_kep>‖color:255,100,100,255‖'Three Divine Hills'‖color:end‖</entityname.tsm_kep>
+    <entitydescription.tsm_kep>Sea of Miracles Kinetic Penetrator\n\nCan launch harpoon ammunition and spears\nCan install the special battery for the "Three Divine Hills" for assistance\n\n'You are mistaken, our fallen brothers are not standing pine trees, but unbending graves'</entitydescription.tsm_kep>
+    <entityname.tsm_kep_spear>"Piercing Spear"</entityname.tsm_kep_spear>
+    <entitydescription.tsm_kep_spear>‖color:211,206,28,255‖Wine is the stomach-piercing poison ‖color:end‖\nKinetic penetrator piercing-type spear ammunition, with an extremely sharp tip that can penetrate some walls.</entitydescription.tsm_kep_spear>
+    <entityname.tsm_kep_spear_he>"High-Explosive Spear"</entityname.tsm_kep_spear_he>
+    <entitydescription.tsm_kep_spear_he>‖color:211,206,28,255‖Wrath is the thunderous cannon‖color:end‖\nKinetic penetrator high-explosive spear ammunition, with a small area of explosive damage; beware of friendly fire!</entitydescription.tsm_kep_spear_he>
+    <entityname.tsm_kep_spear_12>"Shotgun Spear"</entityname.tsm_kep_spear_12>
+    <entitydescription.tsm_kep_spear_12>‖color:211,206,28,255‖Lust is the bone-scraping blade‖color:end‖\nKinetic penetrator shotgun-type spear ammunition that can launch multiple arrows, causing widespread damage.</entitydescription.tsm_kep_spear_12>
+    <entityname.tsm_kep_spear_heat>"Grenade Spear"</entityname.tsm_kep_spear_heat>
+    <entitydescription.tsm_kep_spear_heat>‖color:211,206,28,255‖Wealth is the root of disaster‖color:end‖\nKinetic penetrator grenade-type spear ammunition, with a large explosion radius and a minimum detonation distance.</entitydescription.tsm_kep_spear_heat>
+    <entityname.tsm_kep_battery>Special Battery for "Three Divine Hills"</entityname.tsm_kep_battery>
+    <entitydescription.tsm_kep_battery>Provides ‖color:255,100,100,255‖'Three Divine Hills'‖color:end‖ with powerful energy, increasing firing rate and kinetic energy.</entitydescription.tsm_kep_battery>
+    <!--救赎-->
+    <entityname.tsm_redemption>‖color:30,0,180,255‖Redemption‖color:end‖</entityname.tsm_redemption>
+    <entitydescription.tsm_redemption>Energy Launcher\n\nUses energy confinement boxes as ammunition\n\nHas two modes that can be switched freely according to the environment.\nProvided by submissions from Crazy Thursday</entitydescription.tsm_redemption>
+    <entityname.tsm_redemption_RestraintBox>Redemption Energy Confinement Box</entityname.tsm_redemption_RestraintBox>
+    <entitydescription.tsm_redemption_RestraintBox>Uses [classified] methods to confine energy in this small box, which can effectively utilize this energy when paired with a specific launcher.</entitydescription.tsm_redemption_RestraintBox>
+    <!--背包-->
+    <entityname.tsm_toolbox>T.S.M Briefcase</entityname.tsm_toolbox>
+    <entitydescription.tsm_toolbox>Large-capacity briefcase made from alien materials, available for free after-sale application</entitydescription.tsm_toolbox>
+    <entityname.tsm_weaponbackpack>Weapon Box</entityname.tsm_weaponbackpack>
+    <entitydescription.tsm_weaponbackpack>Has 9 slots for storing weapons, ammunition, or diving suits, and can be worn on the back</entitydescription.tsm_weaponbackpack>
+    <entityname.tsm_bag_medium>Concerto Tactical Pack</entityname.tsm_bag_medium>
+    <entitydescription.tsm_bag_medium>Tactical backpack with moderate capacity</entitydescription.tsm_bag_medium>
+    <entityname.tsm_bag_small>Backpack</entityname.tsm_bag_small>
+    <entitydescription.tsm_bag_small>Multipurpose small-capacity backpack, simple to make but with limited capacity</entitydescription.tsm_bag_small>
+    <entityname.tsm_bag_big>Tactical Backpack</entityname.tsm_bag_big>
+    <entitydescription.tsm_bag_big>Can hold a lot of ammunition and a heavy firearm, effectively enhancing the soldier's sustained combat capability</entitydescription.tsm_bag_big>
+    <entityname.tsm_bag_heavy>Large Load Backpack</entityname.tsm_bag_heavy>
+    <entitydescription.tsm_bag_heavy>Large backpack that can carry many items and hang a toolbox and a large gun, slightly affecting weapon use and submarine operation</entitydescription.tsm_bag_heavy>
+    <entityname.tsm_bag_heavy_big>Large Transport Backpack</entityname.tsm_bag_heavy_big>
+    <entitydescription.tsm_bag_heavy_big>An even larger backpack, capable of hanging two toolboxes and two large guns. However, its size makes it inconvenient for weapon use and submarine operation.</entitydescription.tsm_bag_heavy_big>
+    <entityname.tsm_bag_diving_special>Coalition Special Operations Backpack</entityname.tsm_bag_diving_special>
+    <entitydescription.tsm_bag_diving_special>A backpack distributed only to elites of some special forces within the Coalition, with moderate capacity but two dedicated slots for placing diving suits, and one special point for carrying heavy firearms; however, its large size affects weapon usage.</entitydescription.tsm_bag_diving_special>
+    <entityname.tsm_bag_diving>Special Operations Backpack</entityname.tsm_bag_diving>
+    <entitydescription.tsm_bag_diving>Moderate capacity, with a dedicated space for placing a diving suit, but its excessive size can affect weapon usage.</entitydescription.tsm_bag_diving>
+    <entityname.tsm_bag_diving_big>Large Special Operations Backpack</entityname.tsm_bag_diving_big>
+    <entitydescription.tsm_bag_diving_big>A relatively large backpack with a dedicated space for placing a diving suit, but inconvenient for using tools to repair the submarine.</entitydescription.tsm_bag_diving_big>
+    <!--任务/npc-->
+    <entityname.tsm_mission1>Experimental Log</entityname.tsm_mission1>
+    <entitydescription.tsm_mission1>Seems to be part of the experimental logs obtained by soldiers from the station</entitydescription.tsm_mission1>
+    <charactername.TSM_convertible_npc>ARS Company Staff stationed in Sea of Miracles</charactername.TSM_convertible_npc>
+    <charactername.TSM_customisation_qiuwu>Qiu Wu</charactername.TSM_customisation_qiuwu>
+    <!--联盟-->
+    <!--快反-->
+    <npctitle.rapidreaction_leader>Quick Reaction Force - Observer</npctitle.rapidreaction_leader>
+    <npctitle.rapidreaction_breaker>Quick Reaction Force - Breacher</npctitle.rapidreaction_breaker>
+    <npctitle.rapidreaction_elite>Quick Reaction Force - Elite</npctitle.rapidreaction_elite>
+    <npctitle.rapidreaction_elite_p>Quick Reaction Force - Elite</npctitle.rapidreaction_elite_p>
+    <npctitle.rapidreaction>Quick Reaction Force - Assault Trooper</npctitle.rapidreaction>
+    <npctitle.rapidreaction_p>Quick Reaction Force - Assault Trooper</npctitle.rapidreaction_p>
+    <npctitle.rapidreaction_reinforcement>Quick Reaction Support Unit</npctitle.rapidreaction_reinforcement>
+    <!--贝奥武夫-->
+    <npctitle.beowulf_leader>Beowulf Squad - Dormant</npctitle.beowulf_leader>
+    <npctitle.beowulf>Beowulf Squad - Assault Trooper</npctitle.beowulf>
+    <npctitle.beowulf_p>Beowulf Squad - Assault Trooper</npctitle.beowulf_p>
+    <npctitle.beowulf_ex>Beowulf Squad - Demolitionist</npctitle.beowulf_ex>
+    <npctitle.beowulf_ex_p>Beowulf Squad - Demolitionist</npctitle.beowulf_ex_p>
+    <npctitle.beowulf_elite>Beowulf Squad - Elite</npctitle.beowulf_elite>
+    <npctitle.beowulf_elite_p>Beowulf Squad - Elite</npctitle.beowulf_elite_p>
+    <npctitle.beowulf_breaker>Beowulf Squad - Breacher</npctitle.beowulf_breaker>
+    <npctitle.beowulf_fire>Beowulf Squad - Heavy Gunner</npctitle.beowulf_fire>
+    <!--占领军-->
+    <npctitle.occupation_leader>Occupation Force - Tactical Blade</npctitle.occupation_leader>
+    <npctitle.occupation_elite>Occupation Force - Elite</npctitle.occupation_elite>
+    <npctitle.occupation_elite_p>Occupation Force - Elite</npctitle.occupation_elite_p>
+    <npctitle.occupation_ex>Occupation Force - Demolitionist</npctitle.occupation_ex>
+    <npctitle.occupation_ex_p>Occupation Force - Demolitionist</npctitle.occupation_ex_p>
+    <npctitle.occupation>Occupation Force - Assault Trooper</npctitle.occupation>
+    <npctitle.occupation_p>Occupation Force - Assault Trooper</npctitle.occupation_p>
+    <!--串扰中队-->
+    <npctitle.crosstalk_leader>Interference Squad - Jammer</npctitle.crosstalk_leader>
+    <npctitle.crosstalk_leader_e>Interference Squad - Jammer</npctitle.crosstalk_leader_e>
+    <npctitle.crosstalk_e>Interference Squad - Assault Trooper</npctitle.crosstalk_e>
+    <npctitle.crosstalk>Interference Squad - Assault Trooper</npctitle.crosstalk>
+    <!--普通部队-->
+    <npctitle.coalition_leader>Coalition Officer</npctitle.coalition_leader>
+    <npctitle.coalition_leader_e>Coalition Officer</npctitle.coalition_leader_e>
+    <npctitle.coalition>Coalition Soldier</npctitle.coalition>
+    <npctitle.coalition_e>Coalition Soldier</npctitle.coalition_e>
+    <!--奇迹之海-->
+    <npctitle.tsm_jz>Nine State Operations Unit</npctitle.tsm_jz>
+    <npctitle.tsm_pgc>Nine State Guard Unit</npctitle.tsm_pgc>
+    <npctitle.tsm_advanced>Advanced Combat Unit</npctitle.tsm_advanced>
+    <npctitle.tsm_sundawn>Sunset Operations Unit</npctitle.tsm_sundawn>
+    <npctitle.tsm_soldier_elite>T.S.M - Elite</npctitle.tsm_soldier_elite>
+    <npctitle.tsm_soldier_elite_p>T.S.M - Elite</npctitle.tsm_soldier_elite_p>
+    <npctitle.tsm_soldier>T.S.M Soldier</npctitle.tsm_soldier>
+    <npctitle.tsm_soldier_p>T.S.M Soldier</npctitle.tsm_soldier_p>
+    <npctitle.tsm_outpost_combat_3>T.S.M Raid Unit III</npctitle.tsm_outpost_combat_3>
+    <npctitle.tsm_outpost_combat_2>T.S.M Raid Unit II</npctitle.tsm_outpost_combat_2>
+    <npctitle.tsm_outpost_combat_npc_a>T.S.M Advanced Combat Unit Field Ops</npctitle.tsm_outpost_combat_npc_a>
+    <npctitle.tsm_outpost_combat_npc_j>T.S.M Nine State Operations Unit Field Ops</npctitle.tsm_outpost_combat_npc_j>
+    <npctitle.tsm_military_advisers>Feline Military Advisor</npctitle.tsm_military_advisers>
+    <npctitle.tsm_soldier_military_advisers>Military Advisor Escort Personnel</npctitle.tsm_soldier_military_advisers>
+    <!--反抗军-->
+    <!--野火-->
+    <npctitle.yehuo_leader>Wildfire Separatist - Howling Iron</npctitle.yehuo_leader>
+    <npctitle.yehuo_elite>Wildfire Separatist - Elite</npctitle.yehuo_elite>
+    <npctitle.yehuo_elite_p>Wildfire Separatist - Elite</npctitle.yehuo_elite_p>
+    <npctitle.yehuo>Wildfire Separatist - Assault Trooper</npctitle.yehuo>
+    <npctitle.yehuo_p>Wildfire Separatist - Assault Trooper</npctitle.yehuo_p>
+    <npctitle.yehuo_ex>Wildfire Separatist - Demolitionist</npctitle.yehuo_ex>
+    <npctitle.fkj_elite>Separatist - Elite Officer Cadet</npctitle.fkj_elite>
+    <npctitle.fkj_elite_p>Separatist - Elite Officer Cadet</npctitle.fkj_elite_p>
+    <npctitle.yehuo_reinforcement>Wildfire Separatist - Warhammer Support Squad</npctitle.yehuo_reinforcement>
+    <!--突袭者-->
+    <npctitle.Anonymous_leader>Shadow Raiders - Sonic Boom</npctitle.Anonymous_leader>
+    <npctitle.Anonymous_elite>Shadow Raiders - Elite</npctitle.Anonymous_elite>
+    <npctitle.Anonymous_elite_p>Shadow Raiders - Elite</npctitle.Anonymous_elite_p>
+    <npctitle.Anonymous>Shadow Raiders - Assault Trooper</npctitle.Anonymous>
+    <npctitle.Anonymous_p>Shadow Raiders - Assault Trooper</npctitle.Anonymous_p>
+    <!--反抗军普通部队-->
+    <npctitle.separatists_leader>Separatist - Squad Leader</npctitle.separatists_leader>
+    <npctitle.separatists>Separatist Soldier</npctitle.separatists>
+    <npctitle.separatists_e>Separatist Soldier</npctitle.separatists_e>
+    <!--降临派-->
+    <npctitle.adventists_leader>Adventist Sect Leader</npctitle.adventists_leader>
+    <npctitle.adventists>Adventist Sect Armed Disciple</npctitle.adventists>
+    <npctitle.adventists_p>Adventist Sect Armed Disciple</npctitle.adventists_p>
+    <npctitle.adventists_elite>Adventist Sect - Thief</npctitle.adventists_elite>
+    <!--其他-->
+    <npctitle.ship_combat_leader>Thief Captain</npctitle.ship_combat_leader>
+    <npctitle.ship_combat_elite>Thief Elite</npctitle.ship_combat_elite>
+    <npctitle.ship_combat>Thief Barbarian</npctitle.ship_combat>
+    <npctitle.ship_combat_leader_e>Thief Captain</npctitle.ship_combat_leader_e>
+    <npctitle.ship_combat_elite_e>Thief Elite</npctitle.ship_combat_elite_e>
+    <npctitle.ship_combat_e>Thief Barbarian</npctitle.ship_combat_e>
+    <npctitle.gunner_Passive>Gunner</npctitle.gunner_Passive>
+    <npctitle.gunner_Patrol>Gunner</npctitle.gunner_Patrol>
+    <npctitle.gunner_solomon>Solomon</npctitle.gunner_solomon>
+    <!--定制-->
+    <npctitle.coalition_themohavemailman>莫哈维邮差</npctitle.coalition_themohavemailman>
+    <npctitle.TSM_c_baiye>白夜</npctitle.TSM_c_baiye>
+    <npctitle.separatists_leader_rbq>RBQ</npctitle.separatists_leader_rbq>
+    <npctitle.coalition_AloneFllen>AloneFallen</npctitle.coalition_AloneFllen>
+    <npctitle.separatists_000032>000032</npctitle.separatists_000032>
+    <npctitle.beowulf_sl>殤-凌</npctitle.beowulf_sl>
+    <npctitle.crosstalk_tianjie>天洁</npctitle.crosstalk_tianjie>
+    <npctitle.tsm_soldier_Finianna>菲尼安娜</npctitle.tsm_soldier_Finianna>
+    <npctitle.adventists_bmyl>薄暮银龙</npctitle.adventists_bmyl>
+    <npctitle.tsm_soldier_FFFFFour>FFFFFour</npctitle.tsm_soldier_FFFFFour>
+    <npctitle.crosstalk_ckhs233>ckhs233</npctitle.crosstalk_ckhs233>
+    <npctitle.moon_shadow>月影</npctitle.moon_shadow>
+    <npctitle.tsm_soldier_ml>墨鳞</npctitle.tsm_soldier_ml>
+    <npctitle.occupation_qiuwu>邱芜</npctitle.occupation_qiuwu>
+    <npctitle.beowulf_fox>狐狸杀手</npctitle.beowulf_fox>
+    <npctitle.tsm_soldier_sm>神茗</npctitle.tsm_soldier_sm>
+    <npctitle.tsm_outpost_combat_naiya>奈亚</npctitle.tsm_outpost_combat_naiya>
+    <npctitle.yehuo_leader_cce>CosmoChromE</npctitle.yehuo_leader_cce>
+    <npctitle.tsm_soldier_csms>彩色墨水</npctitle.tsm_soldier_csms>
+    <npctitle.occupation_tarler>TarLer</npctitle.occupation_tarler>
+    <!--npc对话-->
+    <tsm.jxg.help>Hi, I'm the Quartermaster of T.S.M, can I help you?</tsm.jxg.help>
+    <tsm.dh.yjsbm>Use the ally identification code to exchange for items</tsm.dh.yjsbm>
+    <tsm.dh.faction>Use T.S.M reputation to exchange for items</tsm.dh.faction>
+    <tsm.dh.faction.25>You need to be above 25 reputation to exchange for supplies</tsm.dh.faction.25>
+    <tsm.dh.xh1>Due to the mass chaos, the situation is looking grim, so only these are available for exchange</tsm.dh.xh1>
+    <tsm.dh>I'm here to exchange some items</tsm.dh>
+    <tsm.dh.kw>Exchange for mineral supplies</tsm.dh.kw>
+    <tsm.dh.yl>Exchange for medical supplies</tsm.dh.yl>
+    <tsm.dh.dy>Exchange for ammunition supplies</tsm.dh.dy>
+    <tsm.dh.hw>Exchange for guard units</tsm.dh.hw>
+    <tsm.dh.bg>Exchange for tritium pack</tsm.dh.bg>
+    <tsm.dh.id>Exchange for ally identification code</tsm.dh.id>
+    <tsm.see>Exchange Items</tsm.see>
+    <tsm.over>Please take your items</tsm.over>
+    <tsm.wait>I'll come back later</tsm.wait>
+    <tsm.wait1>I'll wait a little longer</tsm.wait1>
+    <tsm.npc.wait>Always waiting for your visit</tsm.npc.wait>
+    <tsm.no.id>You don't have an ally identification code, please don't waste my time</tsm.no.id>
+    <tsm.no.faction>You don't have enough reputation, please don't waste my time</tsm.no.faction>
+    <tsm.d1>Currently, the permits issued by headquarters are several times higher than before. But there's no choice; with the war starting, the situation everywhere is very dire. I hope the war ends soon.</tsm.d1>
+    <tsm.d2>Sorry, you do not have an official permit. Next time you make this kind of joke, you will be arrested.</tsm.d2>
+    <tsm.bg1>Please show the permit issued by headquarters</tsm.bg1>
+    <tsm.bg>Sea of Miracles Triton Ammunition Permit Exchange for Tritium Core Pack</tsm.bg>
+    <tsm.ammo_resupply>5000 Marks for Ammunition Supply</tsm.ammo_resupply>
+    <tsm.ammo_resupply_next>Remember to use it in a safe place. After we see the signal, we will drop the supplies. It currently includes two Coalition ammo crates + two Separatist ammo crates + two Sea of Miracles ammo crates.</tsm.ammo_resupply_next>
+    <tsm.bg2>Sir, after verification, the permit is genuine. Here is the core pack you need. Please keep it safe.</tsm.bg2>
+    <tsm.t1>Hello, I am an employee of ARS stationed in Sea of Miracles. Is there anything I can help you with?</tsm.t1>
+    <tsm.arsrw>I saw a new mission on the bounty board, so I came to see if there's anything I can complete.</tsm.arsrw>
+    <tsm.other>Hello, someone told me there's a particularly tricky mission right now. I'd like to hear about it.</tsm.other>
+    <tsm.ars.1>Sounds good</tsm.ars.1>
+    <tsm.ars.11>If you accept, great. Go ahead, live or die.</tsm.ars.11>
+    <tsm.ars.2>Never mind, I won't participate</tsm.ars.2>
+    <tsm.ars.22>Refuse, alright, I'll find someone else.</tsm.ars.22>
+    <tsm.urgent>Let me take a look, hold on.</tsm.urgent>
+    <tsm.urgent_save_yes>There is indeed an urgent matter. Earlier, a dangerous individual hijacked someone in the Sea of Miracles's shipping lane. We just located their current position, so we need manpower to rescue Miss Qiu right now.</tsm.urgent_save_yes>
+    <tsm.save_yes>Gladly!</tsm.save_yes>
+    <tsm.save_yes_1>Alright, the location has been sent to your terminal. There's no time to lose!</tsm.save_yes_1>
+    <tsm.urgent_save_no>There are no particularly tricky tasks at the moment</tsm.urgent_save_no>
+    <tsm_opdeco_hrflyers_1.c1>While you're leisurely walking around, a man dressed as an Coalition soldier calls out to you from behind.</tsm_opdeco_hrflyers_1.c1>
+    <tsm_opdeco_hrflyers_1.o1>Are you calling me? What's the matter?</tsm_opdeco_hrflyers_1.o1>
+    <tsm_opdeco_hrflyers_1.o1.c1>We need to board your ship to reach the next station. If you can take us, we can pay a fee of 5000mk.</tsm_opdeco_hrflyers_1.o1.c1>
+    <tsm_opdeco_hrflyers_1.o2>Uh... I need to check with my crew. If it's okay, we'll call you when we set sail.</tsm_opdeco_hrflyers_1.o2>
+    <tsm_opdeco_hrflyers_1.o3>No problem, we'll wait for your response.</tsm_opdeco_hrflyers_1.o3>
+    <tsm_srm_text.rescuetargetmessage1>You find a young girl, and based on the description from your previous mission, you confirm she's the kidnapped Miss Qiu.</tsm_srm_text.rescuetargetmessage1>
+    <tsm_srm_text.arrested>Miss Qiu, don't be afraid! The Sea of Miracles is here to protect you.</tsm_srm_text.arrested>
+    <tsm_srm_text.thanks1>Eh? You're the hero who saved me before! Last time I left in such a hurry, I didn't even get to thank you. Hello, my name is Qiu Wu, it's nice to meet you again.</tsm_srm_text.thanks1>
+    <tsm_srm_text.thanks2>“It's fine, it's healed a long time ago...” Qiu Wu wanted to say more, but her pager suddenly rang. She smiled and shook her head, saying, "I was thinking of how to thank you, but it seems I don't have time now. I have to go." After saying this, Qiu Wu ran towards a soldier from Sea of Miracles waving at her in the distance. Halfway through, she turned around and shouted, "Next time! Next time we meet, I'll treat you to a meal!" She disappeared around the corner shortly after.</tsm_srm_text.thanks2>
+    <tsm_srm_text.answer1>Hahaha, not much of a hero, just doing what I should. By the way, how's your injury?</tsm_srm_text.answer1>
+    <tsm_combat_tsm_event.1>Feline Advisor calling Sea of Miracles, T-31-s emergency! T-31-s emergency! Requesting reinforcements.</tsm_combat_tsm_event.1>
+    <tsm_combat_tsm_event.2>Hang on, Advisor. The Chief Instructor ordered me to bring all of you home.</tsm_combat_tsm_event.2>
+    <tsm_combat_occupation_event.1>Not good, the nearby quick reaction forces are heading towards this station, we got to hurry!</tsm_combat_occupation_event.1>
+    <tsm_combat_beowulf_event.1>Damn it, we intercepted the message sent by the Beowulf squadron, they called for reinforcements. Coalition's nearby quick reaction forces are heading towards this station, we got to hurry.</tsm_combat_beowulf_event.1>
+    <tsm_combat_yehuo_event.1>Wildfire calling Warhammer squad, contact with enemy, need reinforcements! Need reinforcements!</tsm_combat_yehuo_event.1>
+    <tsm_darkstormynight.1>The lightning storm is approaching</tsm_darkstormynight.1>
+    <tsm_darkstormynight.2>This is a bad omen, today's not a good day to die</tsm_darkstormynight.2>
+    <tsm_darkstormynight.3>Time for a real gunner showdown</tsm_darkstormynight.3>
+    <tsm_combat_adventists_event_tsm.1>Sea of Miracles Second Station Strike Squad: Reached the designated location, beginning the assault.\n\nAdventist Leader: Fools, they dare come to us! Bring out the modified machines!</tsm_combat_adventists_event_tsm.1>
+    <!--职业-->
+    <jobname.tsm_soldier>Strike Soldiers</jobname.tsm_soldier>
+    <jobdescription.tsm_soldier>Part of Sea of Miracles's Advanced Operations Division</jobdescription.tsm_soldier>
+    <!--任务-->
+    <missionname.tsm_combat_qrf>Clearing the Clouds</missionname.tsm_combat_qrf>
+    <missiondescription.tsm_combat_qrf>The Coalition's Quick Response Team is deploying at this abandoned site, preparing to raid a nearby enemy station. The nearby station won't sit idle, and now's your chance to shine. Clear out the Quick Response Team and blow up the reactor!</missiondescription.tsm_combat_qrf>
+    <missionsuccess.tsm_combat_qrf>Underwater Fog</missionsuccess.tsm_combat_qrf>
+    <missionfailure.tsm_combat_qrf>Is this the ending you wished for?</missionfailure.tsm_combat_qrf>
+    <missionheader0.tsm_combat_qrf>Night Raid</missionheader0.tsm_combat_qrf>
+    <missionmessage0.tsm_combat_qrf>???:\nWell done, this operation dealt a heavy blow to the Coalition's morale. The money's been deposited into your account, remember, no one gave you orders—it was your own doing.</missionmessage0.tsm_combat_qrf>
+    <missionname.tsm_combat_beowulf>Beowulf's Savages</missionname.tsm_combat_beowulf>
+    <missiondescription.tsm_combat_beowulf>The Coalition's Beowulf Squad is known for being brutish and unreasonable, but they're tough! With top-tier gear and combat training, they're a hard nut to crack. But the Separatists don't want excuses—prove your team's strength. Take this station and blow up the reactor. Courage and glory will be yours!</missiondescription.tsm_combat_beowulf>
+    <missionsuccess.tsm_combat_beowulf>Mound</missionsuccess.tsm_combat_beowulf>
+    <missionfailure.tsm_combat_beowulf>Is this the ending you wished for?</missionfailure.tsm_combat_beowulf>
+    <missionheader0.tsm_combat_beowulf>Cape</missionheader0.tsm_combat_beowulf>
+    <missionmessage0.tsm_combat_beowulf>Countless challengers drove their blades deep into the dragon's belly, slaying it. In its final moments, the dragon finally remembered its name—Beowulf.</missionmessage0.tsm_combat_beowulf>
+    <missionname.tsm_combat_occupation>Oppressive Scepter</missionname.tsm_combat_occupation>
+    <missiondescription.tsm_combat_occupation>The Coalition's occupation forces are their true elites, known for heavy armor and firepower. They're enforcing military control over this area. The Separatists order us to wipe them out, clearing the path for the forces to come. Captain, make sure you're well-prepared before the fight.</missiondescription.tsm_combat_occupation>
+    <missionsuccess.tsm_combat_occupation>Unfathomable Fortress</missionsuccess.tsm_combat_occupation>
+    <missionfailure.tsm_combat_occupation>Is this the ending you wished for?</missionfailure.tsm_combat_occupation>
+    <missionheader0.tsm_combat_occupation>Unfathomable Fortress</missionheader0.tsm_combat_occupation>
+    <missionmessage0.tsm_combat_occupation>The occupation forces watched in disbelief as they were consumed by the reactor's explosion.\nMeanwhile, in another station, Separatists and Coalition soldiers were still locked in combat. The light and heat from the explosion reached them, and they gazed at the same fading flash. What began as political grandstanding had devolved into bloody war; outsiders wish to tear each other apart, while those truly involved just want to go home.</missionmessage0.tsm_combat_occupation>
+    <missionname.tsm_combat_coalition>Raised Banner</missionname.tsm_combat_coalition>
+    <missiondescription.tsm_combat_coalition>A small squad of Coalition soldiers is active in this area, considering the Separatist-Coalition war declaration. They probably won't welcome your arrival. If you're looking to make friends with the Coalition, it's best not to get involved.</missiondescription.tsm_combat_coalition>
+    <missionsuccess.tsm_combat_coalition>Moment of Uprising</missionsuccess.tsm_combat_coalition>
+    <missionfailure.tsm_combat_coalition>Is this the ending you wished for?</missionfailure.tsm_combat_coalition>
+    <missionheader0.tsm_combat_coalition>War Begins</missionheader0.tsm_combat_coalition>
+    <missionmessage0.tsm_combat_coalition>Separatist Liaison:\nGlad to see you've chosen the right path, Captain.</missionmessage0.tsm_combat_coalition>
+    <missionname.tsm_combat_separatists>Enforcer</missionname.tsm_combat_separatists>
+    <missiondescription.tsm_combat_separatists>The locals oppose the Coalition forces stationed at [location1]. After the Coalition withdrew, the Separatists sneaked into the station. As keepers of order on Europa, we can't tolerate such behavior. Captain, raid the station and eliminate their leader, show the Separatists who's in charge.</missiondescription.tsm_combat_separatists>
+    <missionsuccess.tsm_combat_separatists>Shattered</missionsuccess.tsm_combat_separatists>
+    <missionfailure.tsm_combat_separatists>Is this the ending you wished for?</missionfailure.tsm_combat_separatists>
+    <missionheader0.tsm_combat_separatists>Suppression Begins</missionheader0.tsm_combat_separatists>
+    <missionmessage0.tsm_combat_separatists>Coalition Liaison:\nCaptain, we can't let up after this; there are more battles ahead.</missionmessage0.tsm_combat_separatists>
+    <missionname.tsm_combat_Anonymous>Raider - Conqueror of Weak Souls</missionname.tsm_combat_Anonymous>
+    <missiondescription.tsm_combat_Anonymous>Captain, reports of riots have reached the General. Lately, he hasn't been in the best mood. I think we need to take action. I've located [location1], where an elite Separatists unit, the Shadow Raiders, are setting up. They're planning attacks on nearby stations, and now's the time to strike! Wipe out all the raiders and blow up the reactor.</missiondescription.tsm_combat_Anonymous>
+    <missionsuccess.tsm_combat_Anonymous>Raider's Grave</missionsuccess.tsm_combat_Anonymous>
+    <missionfailure.tsm_combat_Anonymous>Is this the ending you wished for?</missionfailure.tsm_combat_Anonymous>
+    <missionheader0.tsm_combat_Anonymous>Collision</missionheader0.tsm_combat_Anonymous>
+    <missionmessage0.tsm_combat_Anonymous>Coalition Liaison:\nCaptain, the General received word of our victory and commended us. We've also uncovered the mastermind behind the Separatists' 'uprising'—General Victoria Petran. Time to plan the next operation.</missionmessage0.tsm_combat_Anonymous>
+    <missionname.tsm_combat_yehuo>Wildfire - The Final Blooming Crimson Flower</missionname.tsm_combat_yehuo>
+    <missiondescription.tsm_combat_yehuo>The Wildfire Separatists have weakened the Coalition's control over this sea by wiping out the stationed forces at [location1]. After taking over most of the stations, they are planning one final strike. Captain, Wildfire Separatists are an elite force under General Victoria Petran, and they have heavy firepower. We need to quickly mobilize to counter this attack. Target: Eliminate all Separatists forces and destroy the reactor.</missiondescription.tsm_combat_yehuo>
+    <missionsuccess.tsm_combat_yehuo>Extinguished</missionsuccess.tsm_combat_yehuo>
+    <missionfailure.tsm_combat_yehuo>Is this the ending you wished for?</missionfailure.tsm_combat_yehuo>
+    <missionheader0.tsm_combat_yehuo>True General's Stance</missionheader0.tsm_combat_yehuo>
+    <missionmessage0.tsm_combat_yehuo>The last Separatist member fell, yelling, "We'll burn like wildfire! One day, the Coalition will be consumed!"\nWhat do people truly seek? Endless conflict, bloodshed to make flowers bloom?</missionmessage0.tsm_combat_yehuo>
+    <tsm_haulagecombat_1.c1>There's an urgent contract. Our cooperation depends on this. A group of overconfident worms think they can chew through a hot potato. If you're willing, the pay will be generous.</tsm_haulagecombat_1.c1>
+    <missionname.tsm_haulagecombat_1>Coveting Heaven's Secret</missionname.tsm_haulagecombat_1>
+    <missiondescription.tsm_haulagecombat_1>A group of blind pirates stole some data modules containing personal information. I don't want them being sold. Either they die, or they disappear with the goods. (Note: The ship's hull is indestructible, so feel free to board, but beware the slow ship cannons.)</missiondescription.tsm_haulagecombat_1>
+    <missionsuccess.tsm_haulagecombat_1>Remember, keep this quiet.</missionsuccess.tsm_haulagecombat_1>
+    <missionfailure.tsm_haulagecombat_1>Disappointing, but I think the black market might have better partners than you.</missionfailure.tsm_haulagecombat_1>
+    <missionsonarlabel.tsm_haulagecombat_1>Stolen Pirate Ship</missionsonarlabel.tsm_haulagecombat_1>
+    <missionheader0.tsm_haulagecombat_1>Pirates found.</missionheader0.tsm_haulagecombat_1>
+    <missionmessage0.tsm_haulagecombat_1>Feed them to the fish.</missionmessage0.tsm_haulagecombat_1>
+    <missionheader1.tsm_haulagecombat_1>Pirates eliminated.</missionheader1.tsm_haulagecombat_1>
+    <missionmessage1.tsm_haulagecombat_1>The price for spying has been paid. Now, let's discuss other business.</missionmessage1.tsm_haulagecombat_1>
+    <missionname.tsm_combat_crosstalk>Disrupting Invasion</missionname.tsm_combat_crosstalk>
+    <missiondescription.tsm_combat_crosstalk>Calling Red Turquoise, Red Turquoise, do you copy?\nDamn, they've jammed our signal. Wait, there's a submarine docking.\n..........\nWhere have you all been? We need reinforcements!\nThis is Sunset's Abyss Squad, preparing to intercept.\nDrive these Coalition dogs off our turf!</missiondescription.tsm_combat_crosstalk>
+    <missionsuccess.tsm_combat_crosstalk>The wind is coming...</missionsuccess.tsm_combat_crosstalk>
+    <missionfailure.tsm_combat_crosstalk>Report, Sunset Operations, Second Assault Team, all members KIA.</missionfailure.tsm_combat_crosstalk>
+    <missionheader0.tsm_combat_crosstalk>The wind is coming...</missionheader0.tsm_combat_crosstalk>
+    <missionmessage0.tsm_combat_crosstalk>Thank you, Captain, for handling those Coalition interference squads. Don't worry, we won't disclose any information about you.</missionmessage0.tsm_combat_crosstalk>
+    <missionname.tsm_combat_escort>Black Ship</missionname.tsm_combat_escort>
+    <missiondescription.tsm_combat_escort>An armed Coalition squad needs a ride to the next station, but they seem suspicious. Better be cautious.</missiondescription.tsm_combat_escort>
+    <missionsuccess.tsm_combat_escort>Coalition thugs should be fed to the abyss.</missionsuccess.tsm_combat_escort>
+    <missionfailure.tsm_combat_escort>This vessel has been commandeered for military use.</missionfailure.tsm_combat_escort>
+    <missionheader0.tsm_combat_escort>Toss the bodies out.</missionheader0.tsm_combat_escort>
+    <missionmessage0.tsm_combat_escort>You Coalition dogs, get off my ship!</missionmessage0.tsm_combat_escort>
+    <missionname.tsm_combat_aria>Aria</missionname.tsm_combat_aria>
+    <missiondescription.tsm_combat_aria>Previously, we found a Adventists' site conducting human control experiments. After sending a team to raid it, we lost contact.\nAccording to life signs, they're still alive, but likely controlled.\nWe have no solution, so we must sacrifice the team. Captain, eliminate everything alive at the site.\nBe cautious—some members of the team have been issued Triton magazines.</missiondescription.tsm_combat_aria>
+    <missionsuccess.tsm_combat_aria>Next time you pass by, Europa will be without us.</missionsuccess.tsm_combat_aria>
+    <missionfailure.tsm_combat_aria>Mission failed, HQ has dispatched a more elite team for extermination.</missionfailure.tsm_combat_aria>
+    <missionheader0.tsm_combat_aria>I feel like a decaying corpse, lonely and helpless.</missionheader0.tsm_combat_aria>
+    <missionmessage0.tsm_combat_aria>The sun has risen, the darkness remains behind, but the sun isn't ours—we must sleep.</missionmessage0.tsm_combat_aria>
+    <missionname.tsm_adventists_save>Rescue Ms. Qiu</missionname.tsm_adventists_save>
+    <missiondescription.tsm_adventists_save>We've pinpointed Ms. Qiu's location at [location1], likely captured by the Adventists. We need to rescue her and ensure her safe transport to the Sea of Miracles station.</missiondescription.tsm_adventists_save>
+    <missionsuccess.tsm_adventists_save>Mission complete, we'll handle the escort from here.</missionsuccess.tsm_adventists_save>
+    <missionfailure.tsm_adventists_save></missionfailure.tsm_adventists_save>
+    <missionheader0.tsm_adventists_save>First Meeting</missionheader0.tsm_adventists_save>
+    <missionmessage0.tsm_adventists_save>As she left, she kept looking back, as if trying to remember your face.</missionmessage0.tsm_adventists_save>
+    <missionname.tsm_combat_advisers>"Feline" Consultant</missionname.tsm_combat_advisers>
+    <missiondescription.tsm_combat_advisers>Recently, our forces noticed something peculiar during fights with the Separatists: their tactics seem familiar and target the Coalition precisely. These tactics were used by Sea of Miracles during prior operations, leading us to believe someone from Sea of Miracles is advising them.\nAccording to intel, the Feline Consultant is in this building, along with elite Separatists. The goal is to eliminate all Feline military advisors.</missiondescription.tsm_combat_advisers>
+    <missionsuccess.tsm_combat_advisers>Decapitation Strike</missionsuccess.tsm_combat_advisers>
+    <missionfailure.tsm_combat_advisers>Tonight, the stars will drown in the water.</missionfailure.tsm_combat_advisers>
+    <missionheader0.tsm_combat_advisers>Decapitation</missionheader0.tsm_combat_advisers>
+    <missionmessage0.tsm_combat_advisers>Obstacles and bullets—they block the path, but we laugh and boldly charge through.</missionmessage0.tsm_combat_advisers>
+    <missionname.tsm_combat_adventists>Hell Crossing</missionname.tsm_combat_adventists>
+    <missiondescription.tsm_combat_adventists>Based on stolen data, the bandits are now working with the Adventists. We'll use this chance to wipe them out. A squad will assist you in raiding the site. They're ready and will coordinate with your actions.</missiondescription.tsm_combat_adventists>
+    <missionsuccess.tsm_combat_adventists>First Joint Operation</missionsuccess.tsm_combat_adventists>
+    <missionfailure.tsm_combat_adventists>We should've acted, but kept stalling.</missionfailure.tsm_combat_adventists>
+    <missionheader0.tsm_combat_adventists>First Joint Operation</missionheader0.tsm_combat_adventists>
+    <missionmessage0.tsm_combat_adventists>First time cooperating with you on a raid. Let's hope for better coordination next time.</missionmessage0.tsm_combat_adventists>
+    <missionname.tsm_combat_nz>Gunfire</missionname.tsm_combat_nz>
+    <missiondescription.tsm_combat_nz>Skilled marksmen have taken this site, all armed with handcannons, eager for a fair duel.</missiondescription.tsm_combat_nz>
+    <missionsuccess.tsm_combat_nz>Cowboy Duel</missionsuccess.tsm_combat_nz>
+    <missionfailure.tsm_combat_nz>The first shot announces my arrival; the second seals your fate.</missionfailure.tsm_combat_nz>
+    <missionheader0.tsm_combat_nz>King of Guns</missionheader0.tsm_combat_nz>
+    <missionmessage0.tsm_combat_nz>The bullet pierced his brain, and in his daze, he seemed to be on stage, seeing a dark audience. Yet, he clearly heard two voices.\n“Who is performing?” one asked.\nThe other replied, “The performer, awkward but skillful, is either a clown or a king.”\nAs the words fell, applause erupted, and an ode to joy began.\nLadies and gentlemen, this is Solomon's end.</missionmessage0.tsm_combat_nz>
+    <tsm_escort_lm>The situation has changed. Everyone drop your weapons; we're commandeering this ship for military use.</tsm_escort_lm>
+    <tsm_escort_lm>Military Commandeering, drop your weapons.</tsm_escort_lm>
+    <tsm_escort_lm>Open fire, kill these Separatists.</tsm_escort_lm>
+    <!--加载界面-->
+    <loadingscreentip>Yakhi Crystals can be bought at difficulty 25+ stations. You might also find them in ruins or shipwrecks.\n—The Sea of Miracles</loadingscreentip>
+    <loadingscreentip>Hengberli Stars are only sold in cities or research centers at difficulty 40+. If you're lucky, you might find some in ruins or shipwrecks.\n—The Sea of Miracles</loadingscreentip>
+    <loadingscreentip>Some parts for Chariot and Raven can be purchased at various stations, but the main gun has been lost. Maybe it's in a shipwreck?\n—Sea of Miracles</loadingscreentip>
+    <loadingscreentip>ARS, known for its automatic recording products, collects data to trade or strengthen internal forces.\n—The Sea of Miracles</loadingscreentip>
+    <loadingscreentip>Rumor has it that the Adventists are erecting 'Beacons' at abandoned sites.\n—The Sea of Miracles</loadingscreentip>
+    <loadingscreentip>Sea of Miracles began in the dark waters of the Sunless Sea (better known as Aphotic Plateau.)\n—The Sea of Miracles</loadingscreentip>
+    <loadingscreentip>The Coalition and the Separatists are engaged in full-scale war.\n—The Sea of Miracles</loadingscreentip>
+    <loadingscreentip>As the war intensifies, Sea of Miracles's board reported that escort service income has surpassed other sectors for the first time, with plans for further investment.\n—The Sea of Miracles</loadingscreentip>
+    <loadingscreentip>After long construction, the Ice City project is finally complete. Once all inspections pass, it will open to the public for residence and commerce.\n—The Sea of Miracles</loadingscreentip>
+    <loadingscreentip>DS104 border station lost contact. Sea of Miracles has dispatched personnel to investigate.\n—The Sea of Miracles</loadingscreentip>
+    <loadingscreentip>Sea of Miracles has three armed divisions: Advanced Operations, Sunset Operations, and Nine State Operations, focused on human combat, corporate security, and monster combat respectively.</loadingscreentip>
+    <loadingscreentip>Sea of Miracles remains a corporation, yet it plays a key role in Europa's development, city-building, and tech research. Its subsidiaries cover almost every industry on Europa, from military manufacturing to medical, schools, shipyards, and even its own Widow Station.</loadingscreentip>
+    <loadingscreentip>After showing 'miracles,' the Adventists gained followers exponentially, including some high-ranking Coalition officials.\n—The Sea of Miracles</loadingscreentip>
+    <loadingscreentip>The Adventists' goal is to bring their unique god to Europa, but the god requires a vessel, and none of Europa's life forms are suitable. Their current mission is to create a perfect host.\n—The Sea of Miracles</loadingscreentip>
+    <loadingscreentip>The Separatists are now more dangerous and powerful, aiming to overthrow the Coalition's iron rule.\n—The Sea of Miracles</loadingscreentip>
+    <loadingscreentip>Communication has advanced, but limitations remain.\n—The Sea of Miracles</loadingscreentip>
+    <loadingscreentip>Whether it's the Coalition, Separatists, or Sea of Miracles's forces, they all call for reinforcements upon seeing the first enemy. Be cautious.\n—The Sea of Miracles</loadingscreentip>
+    <!-- OutpostEvents.xml -->
+    <!-- OutpostEvents_over.xml -->
+    <entityname.tsm_metalcrate>T.S.M Cargo Crate</entityname.tsm_metalcrate>
+    <entityname.lm_heavy_helmet>Coalition Heavy Combat Helmet</entityname.lm_heavy_helmet>
+    <entityname.tsm_armor_burn>T.S.M Tech - Burn Protection Plate</entityname.tsm_armor_burn>
+    <entityname.tsm_armor_poisons>T.S.M Tech - Chemical Protection Plate</entityname.tsm_armor_poisons>
+    <entityname.lm_occupation_uniform>Coalition Combat Uniform</entityname.lm_occupation_uniform>
+    <entityname.tsm_vest_moban>Template</entityname.tsm_vest_moban>
+    <entityname.tsm_helmet_thermalgoggles>Thermal Imaging for Helmet</entityname.tsm_helmet_thermalgoggles>
+    <entityname.tsm_ballistic_faceshield_big>Large Ballistic Face Shield</entityname.tsm_ballistic_faceshield_big>
+    <entityname.tsm_ballistic_faceshield_small>Small Ballistic Face Shield</entityname.tsm_ballistic_faceshield_small>
+    <entityname.tsm_protective_jaw>Protective Jaw for Helmet</entityname.tsm_protective_jaw>
+    <entityname.tsm_land_wz_dy>Ammo Drop Pod</entityname.tsm_land_wz_dy>
+    <entityname.tsm_rz_jz>Base</entityname.tsm_rz_jz>
+    <entityname.tsm_radiojammer>Electronic Jammer</entityname.tsm_radiojammer>
+    <entityname.tsm_enhancement_bing>Grade C Combat Enhancement Syringe</entityname.tsm_enhancement_bing>
+    <entityname.tsm_enhancement_yi>Grade B Combat Enhancement Syringe</entityname.tsm_enhancement_yi>
+    <entityname.tsm_enhancement_jia>Grade A Combat Enhancement Syringe</entityname.tsm_enhancement_jia>
+    <entityname.tsm_enhancement_ex>EX Combat Enhancement Syringe</entityname.tsm_enhancement_ex>
+    <entityname.tsm_enhancement_lightningwizard>Lightning Wizard Activator</entityname.tsm_enhancement_lightningwizard>
+    <entityname.tsm_enhancement_combatship>Onboard Combat Enhancement Activator</entityname.tsm_enhancement_combatship>
+    <entityname.tsm_enhancement_stun>Quick Response Enhancement Syringe</entityname.tsm_enhancement_stun>
+    <entityname.tsm_eyi_attack>T.S.M Raid EYI Enhancement Syringe</entityname.tsm_eyi_attack>
+    <entityname.tsm_enhancement_ai>A.I Enhancement</entityname.tsm_enhancement_ai>
+    <entityname.tsm_enhancement_outpost>Station Soldier Enhancement Syringe</entityname.tsm_enhancement_outpost>
+    <entityname.tsm_lm_minigun_ai>Minigun</entityname.tsm_lm_minigun_ai>
+    <entityname.tsm_miniammo_ai>Minigun Magazine</entityname.tsm_miniammo_ai>
+    <entityname.tsm_handgun_ai_jj>Precision Competition Handcannon (Crystal)</entityname.tsm_handgun_ai_jj>
+    <entityname.tsm_handgun_ai_pt>Precision Competition Handcannon (Standard)</entityname.tsm_handgun_ai_pt>
+    <entityname.tsm_handgun_mg_jj>Handcannon Crystal Magazine</entityname.tsm_handgun_mg_jj>
+    <entityname.tsm_handgun_mg>Handcannon Magazine</entityname.tsm_handgun_mg>
+    <entityname.tsm_gravitational_suit>Gravitational Protective Suit</entityname.tsm_gravitational_suit>
+    <entityname.rz_bullet></entityname.rz_bullet>
+    <entityname.rz_mag>RZ Magazine</entityname.rz_mag>
+    <entityname.tsm_Pullsafetypin></entityname.tsm_Pullsafetypin>
+    <entityname.tsm_fraggrenadespoon></entityname.tsm_fraggrenadespoon>
+    <entityname.tsm_embi_shell_left>Fist of Fate_Left Curve</entityname.tsm_embi_shell_left>
+    <entityname.tsm_embi_shell_right>Fist of Fate_Right Curve</entityname.tsm_embi_shell_right>
+    <entityname.tsm_embi_myzq>Fist of Fate_Curve Shell</entityname.tsm_embi_myzq>
+    <entityname.airconsume>Air Pressure</entityname.airconsume>
+    <entityname.tsm_58ammo>5.8</entityname.tsm_58ammo>
+    <entityname.tsm_762ammo></entityname.tsm_762ammo>
+    <entityname.tsm_127ammo></entityname.tsm_127ammo>
+    <!-- <entityname.pt7.92x57mm>Standard 7.92x57mm</entityname.pt7.92x57mm> -->
+    <entityname.collider_sword>Block</entityname.collider_sword>
+    <entityname.hxl_knife>Phantom</entityname.hxl_knife>
+    <entityname.tsm_9_ammo></entityname.tsm_9_ammo>
+    <entityname.tsm_9_ammo_cj></entityname.tsm_9_ammo_cj>
+    <entityname.tsm_57_ammo>5.7*28mm</entityname.tsm_57_ammo>
+    <entityname.tsm_1143_ammo></entityname.tsm_1143_ammo>
+    <entityname.tsm_127_ammo></entityname.tsm_127_ammo>
+    <entityname.pt545>5.45 Standard Ammo</entityname.pt545>
+    <entityname.cj545>5.45 Armor-Piercing Ammo</entityname.cj545>
+    <entityname.gb545>5.45 Hybrid Explosive Ammo</entityname.gb545>
+    <!-- <entityname.pt762x39mm>Standard 7.62x39mm</entityname.pt762x39mm> -->
+    <!-- <entityname.cj762x39mm>Armor-Piercing 7.62x39mm</entityname.cj762x39mm> -->
+    <!-- <entityname.gb762x39mm>7.62x39mm Hybrid Explosive Ammo</entityname.gb762x39mm> -->
+    <!-- <entityname.pt762x54mm>Standard 7.62x54mm</entityname.pt762x54mm> -->
+    <entityname.12ammo>aa12ammo</entityname.12ammo>
+    <entityname.tsm_redemption_bolt>tsm_redemption_bolt</entityname.tsm_redemption_bolt>
+    <entityname.tsm_zc_c>Chariot (Nine State Paint)</entityname.tsm_zc_c>
+    <entityname.tsm_fy_c>Flying Raven (Nine State Paint)</entityname.tsm_fy_c>
+    <entityname.tsm_xs_ex>Awakened Lion Shell</entityname.tsm_xs_ex>
+    <entityname.tsm_bullet>Standard Ammo</entityname.tsm_bullet>
+    <entityname.tsm_cjbullet>Armor-Piercing Ammo</entityname.tsm_cjbullet>
+    <entityname.tsm_bgbullet>Triton Ammo</entityname.tsm_bgbullet>
+    <entityname.tsm_rsbullet>Incendiary Ammo</entityname.tsm_rsbullet>
+    <entityname.tsm_58>5.8mm Standard Ammo</entityname.tsm_58>
+    <entityname.tsm_cj58>5.8mm Armor-Piercing Ammo</entityname.tsm_cj58>
+    <entityname.tsm_xybullet></entityname.tsm_xybullet>
+    <entityname.tsm_xybullet_bg></entityname.tsm_xybullet_bg>
+    <entityname.tsm_szqyzlybullt>Zero Gravity Traction Fluid</entityname.tsm_szqyzlybullt>
+    <entityname.tsm_zc_1>Chariot Component</entityname.tsm_zc_1>
+    <entityname.tsm_zc_2>Chariot Component</entityname.tsm_zc_2>
+    <entityname.tsm_zc_3>Chariot Component</entityname.tsm_zc_3>
+    <entityname.tsm_zc_4>Chariot Component</entityname.tsm_zc_4>
+    <entityname.tsm_lm_m4>M4</entityname.tsm_lm_m4>
+    <!-- <entityname.pt556x45mm>5.56x45mm</entityname.pt556x45mm> -->
+    <!-- <entityname.cj556x45mm>5.56x45mm AP</entityname.cj556x45mm> -->
+    <!-- <entityname.gb556x45mm>5.56x45mm EX</entityname.gb556x45mm> -->
+    <entityname.pt65>6.5 Standard Ammo</entityname.pt65>
+    <entityname.kj65>6.5 Open Tip Ammo</entityname.kj65>
+    <entityname.68_51_pt>6.8 Standard Ammo</entityname.68_51_pt>
+    <entityname.68_51_ap>6.8 Armor-Piercing Ammo</entityname.68_51_ap>
+    <entityname.68_51_full>6.8 Full Power Ammo</entityname.68_51_full>
+    <entityname.pt762_51>7.62*51mm</entityname.pt762_51>
+    <entityname.pt762_51_ap>7.62*51mm AP</entityname.pt762_51_ap>
+    <entityname.338magnum>.338 Magnum</entityname.338magnum>
+  </Override>
 </infotexts>

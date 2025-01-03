@@ -712,7 +712,7 @@
   </Item>
   <Item name="未穿透" identifier="tsm_collider_head" subcategory="TSM" damagedbyprojectiles="true" hideinmenus="true" scale="0.5">
     <Sprite texture="%ModDir%/weapons/其他/近战.png" sourcerect="0,0,5,5" origin="0.5,0.5" />
-    <Body radius="30" bodytype="static"/>
+    <Body radius="32" bodytype="static"/>
     <ItemComponent>
       <StatusEffect type="OnSpawn" target="This" delay="0.02" >
         <Remove />

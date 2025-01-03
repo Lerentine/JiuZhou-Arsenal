@@ -14,15 +14,14 @@
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,94,91" color="255,255,255,255" origin="0,0" />
   </Affliction>
 
-
-    <Affliction name="检测受击" identifier="tsm_ondamaged" type="tsm_ondamaged" isbuff="true" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="100" maxstrength="1" Duration="5.0" hideiconafterdelay="true" iconcolors="94,94,94;163,164,164;255,255,255">
+  <Affliction name="检测受击" identifier="tsm_ondamaged" type="tsm_ondamaged" isbuff="true" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="100" maxstrength="1" Duration="5.0" hideiconafterdelay="true" iconcolors="94,94,94;163,164,164;255,255,255">
         <Effect minstrength="0" maxstrength="1" strengthchange="-1">
             <StatusEffect type="OnDamaged" target="Character">
                 <Affliction identifier="tsm_ondamaged_head" strength="1" />
             </StatusEffect>
         </Effect>
     </Affliction>
-    <Affliction name="检测受击减少耐久" identifier="tsm_ondamaged_head" type="tsm_ondamaged" isbuff="true" limbspecific="false" indicatorlimb="Torso" showiconthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="2" iconcolors="94,94,94;163,164,164;255,255,255">
+  <Affliction name="检测受击减少耐久" identifier="tsm_ondamaged_head" type="tsm_ondamaged" isbuff="true" limbspecific="false" indicatorlimb="Torso" showiconthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="2" iconcolors="94,94,94;163,164,164;255,255,255">
         <Effect minstrength="0" maxstrength="2" strengthchange="-1" />
     </Affliction>
 
@@ -125,7 +124,7 @@
     <icon texture="%ModDir%/png/ui.png" sourcerect="389,23,94,94" color="255,255,255,255" origin="0,0" />
   </Affliction>
 
-   <Affliction name="咬伤防护" description="" hideiconafterdelay="true" identifier="tsm_armor_bitewounds" isbuff="true" limbspecific="false" showiconthreshold="1" showinhealthscannerthreshold="500" maxstrength="10">
+  <Affliction name="咬伤防护" description="" hideiconafterdelay="true" identifier="tsm_armor_bitewounds" isbuff="true" limbspecific="false" showiconthreshold="1" showinhealthscannerthreshold="500" maxstrength="10">
     <Effect minstrength="0" maxstrength="10" strengthchange="-10" resistancefor="bitewounds" minresistance="0.00" maxresistance="0.75" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
       <StatValue stattype="MeleeattackSpeed" value="-0.1" />
       <StatValue stattype="MovementSpeed" value="-0.1" />
@@ -133,7 +132,7 @@
     <icon texture="%ModDir%/png/ui.png" sourcerect="389,23,94,94" color="255,255,255,255" origin="0,0" />
   </Affliction>
 
-   <Affliction name="深层组织损伤防护" description="" hideiconafterdelay="true" identifier="tsm_armor_explosiondamage" isbuff="true" limbspecific="false" showiconthreshold="1" showinhealthscannerthreshold="500" maxstrength="10">
+  <Affliction name="深层组织损伤防护" description="" hideiconafterdelay="true" identifier="tsm_armor_explosiondamage" isbuff="true" limbspecific="false" showiconthreshold="1" showinhealthscannerthreshold="500" maxstrength="10">
     <Effect minstrength="0" maxstrength="10" strengthchange="-10" resistancefor="explosiondamage" minresistance="0.00" maxresistance="0.7" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
       <StatValue stattype="MeleeattackSpeed" value="-0.1" />
       <StatValue stattype="MovementSpeed" value="-0.1" />
@@ -189,8 +188,7 @@
       maxvitalitydecrease="2"/>
     <icon texture="%ModDir%/png/ui.png" sourcerect="1112,26,90,91" color="255,255,255,255" origin="0,0"/>
   </triton_burn>
-
-  <Affliction
+  <triton_9C
     name="氚中毒"
     identifier="triton_9C"
     description=""
@@ -318,9 +316,8 @@
     </Effect>
 
     <icon texture="%ModDir%/png/ui.png" sourcerect="1328,698,133,130" color="255,255,255,255" origin="0,0"/>
-  </Affliction>
-
- <InternalDamage
+  </triton_9C>
+  <triton_7L
     name="变革"
     identifier="triton_7L"
     description=""
@@ -367,9 +364,8 @@
     </StatusEffect>
   </Effect>
     <icon texture="%ModDir%/png/ui.png" sourcerect="1319,539,133,130" color="255,255,255,255" origin="0,0"/>
-  </InternalDamage>
-  
-  <InternalDamage
+  </triton_7L>
+  <tsm_bl
     name="爆炸"
     identifier="tsm_bl"
     description=""
@@ -398,9 +394,8 @@
       </StatusEffect>
     </Effect>
     <icon texture="%ModDir%/png/ui.png" sourcerect="1430,38,50,51" color="70,10,10,200" origin="0,0"/>
-  </InternalDamage>
-
-  <InternalDamage
+  </tsm_bl>
+  <zlqy
     name=""
     identifier="zlqy"
     description=""
@@ -416,9 +411,8 @@
       maxvitalitydecrease="2"
       dialogflag="zlqy"/>
     <icon texture="%ModDir%/png/ui.png" sourcerect="513,26,90,91" color="255,255,255,255" origin="0,0"/>
-  </InternalDamage>
-
-  <InternalDamage
+  </zlqy>
+  <zlyz
     name=""
     identifier="zlyz"
     description=""
@@ -434,9 +428,20 @@
       maxvitalitydecrease="2"
       dialogflag="zlyz"/>
     <icon texture="%ModDir%/png/ui.png" sourcerect="513,26,90,91" color="255,255,255,255" origin="0,0"/>
-  </InternalDamage>
-
-   <Affliction
+  </zlyz>
+  <tsm_68_51
+    identifier="tsm_68_51"
+    type="tsm_68_51"
+    limbspecific="false"
+    maxstrength="4"
+    showiconthreshold="infinity">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" />
+    <Effect minstrength="3" maxstrength="4" strengthchange="0" minvitalitydecrease="0.1" maxvitalitydecrease="0.2">
+      <Affliction identifier="explosiondamage" amount="3" />
+      <ReduceAffliction identifier="tsm_68_51" strength="4" />
+    </Effect>
+    </tsm_68_51>
+  <Affliction
     name="碎甲"
     identifier="tsm_armorbreak_jz"
     description="你的子弹更容易击穿护甲"

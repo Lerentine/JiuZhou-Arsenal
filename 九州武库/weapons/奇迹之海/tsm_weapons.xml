@@ -11,6 +11,11 @@
         <RequiredItem identifier="tsm_plastic" amount="2" />
         <RequiredItem identifier="tsm_item_box" amount="1" />
       </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="50" />
+        <RequiredItem identifier="tsm_thbq" amount="1" />
+        <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
+      </Fabricate>
       <Deconstruct time="10">
         <Item identifier="steel" />
         <Item identifier="titanium" />
@@ -114,6 +119,11 @@
         <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
         <RequiredItem identifier="tsm_plastic" amount="1" />
       </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="60" />
+        <RequiredItem identifier="tsm_gybq" amount="1" />
+        <RequiredItem identifier="tsm_hpc" amount="1" />
+      </Fabricate>
       <Deconstruct time="10">
         <Item identifier="steel" />
         <Item identifier="titanium" />
@@ -205,9 +215,9 @@
           <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
             <Conditional isActive="eq true" />
-            <sound file="%ModDir%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
+            <sound file="%ModDir%/weapons/reload_ogg/reload_2_0.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
           </StatusEffect>
-          <StatusEffect target="This" holdpos="55,-5" aimpos="55,0" handle1="-83,-15" handle2="53,8" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.6" maxchargetime="0" setvalue="true">
+          <StatusEffect target="This" holdpos="55,-5" aimpos="55,0" handle1="-83,-15" handle2="53,8" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.0" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999"/>
           </StatusEffect>
         </Containable>
@@ -233,6 +243,11 @@
         <RequiredItem identifier="tsm_ic" amount="1" />
         <RequiredItem identifier="tsm_item_box" amount="3" />
         <RequiredItem identifier="tsm_yx_crystallography" amount="2" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="70" />
+        <RequiredItem identifier="tsm_xylz" amount="1" />
+        <RequiredItem identifier="tsm_blueprint1" amount="1" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="tsm_hpc" />
@@ -347,7 +362,12 @@
         <RequiredItem identifier="tsm_zc_1" amount="1" />
         <RequiredItem identifier="tsm_zc_2" amount="1" />
         <RequiredItem identifier="tsm_zc_3" amount="1" />
-        <RequiredItem identifier="tsm_zc_4" amount="3" />
+        <RequiredItem identifier="tsm_zc_4" amount="1" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="50" />
+        <RequiredItem identifier="tsm_zc" amount="1" />
+        <RequiredItem identifier="tsm_hpc" amount="1" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="steel" />
@@ -461,11 +481,11 @@
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2161,1840,165,151" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="585,434,446,126" depth="0.55" origin="0.5,0.5" />
-      <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40" requiresrecipe="false">
+      <!--Fabricate suitablefabricators="tsm_fabricator" requiredtime="40" requiresrecipe="false">
         <RequiredSkill identifier="weapons" level="50" />
         <RequiredItem identifier="tsm_zc" amount="1" />
         <RequiredItem identifier="tsm_pq" amount="2" />
-      </Fabricate>
+      </Fabricate-->
       <Deconstruct time="10">
         <Item identifier="steel" />
         <Item identifier="titanium" />
@@ -583,6 +603,11 @@
         <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
         <RequiredItem tag="tsm_bossitem" description="fabricationdescription.tsm_bossitem" mincondition="1" />
         <RequiredItem identifier="tsm_item_box" amount="1" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="50" />
+        <RequiredItem identifier="tsm_fy" amount="1" />
+        <RequiredItem identifier="tsm_hpc" amount="1" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="steel" />
@@ -702,11 +727,11 @@
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2337,1832,168,168" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="579,139,458,131" depth="0.55" origin="0.5,0.5" />
-      <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40" requiresrecipe="false">
+      <!--Fabricate suitablefabricators="tsm_fabricator" requiredtime="40" requiresrecipe="false">
         <RequiredSkill identifier="weapons" level="50" />
         <RequiredItem identifier="tsm_fy" amount="1" />
         <RequiredItem identifier="tsm_pq" amount="2" />
-      </Fabricate>
+      </Fabricate-->
       <Deconstruct time="10">
         <Item identifier="steel" />
         <Item identifier="titanium" />
@@ -824,7 +849,7 @@
     </Item>
     <Item name="奇迹之海79式冲锋枪" identifier="tsm_79_smg" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" scale="0.275" impactsoundtag="impact_metal_light" description="">
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-      <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40" requiresrecipe="false">
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
         <RequiredSkill identifier="weapons" level="50" />
         <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
         <RequiredItem identifier="tsm_79_smg" amount="1" />
@@ -970,11 +995,16 @@
     <Item name="95突击步枪" identifier="tsm_advanced_95" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,tsm_gun,mountableweapon,provocativetohumanai" scale="0.26" impactsoundtag="impact_metal_light" description="">
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="40" requiresrecipe="false">
-        <RequiredSkill identifier="weapons" level="60" />
+        <RequiredSkill identifier="weapons" level="40" />
         <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
         <RequiredItem identifier="tsm_plastic" amount="2" />
         <RequiredItem identifier="tsm_tungsten" amount="3" />
         <RequiredItem identifier="tsm_item_box" amount="1" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="40" />
+        <RequiredItem identifier="tsm_advanced_95" amount="1" />
+        <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="titanium" />
@@ -1090,6 +1120,11 @@
         <RequiredItem identifier="tsm_plastic" amount="2" />
         <RequiredItem identifier="tsm_advanced_95" amount="1" />
         <RequiredItem identifier="tsm_item_box" amount="2" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="60" />
+        <RequiredItem identifier="tsm_advanced_03" amount="1" />
+        <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="steel" />
@@ -1210,6 +1245,11 @@
         <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
         <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
         <RequiredItem identifier="tsm_item_box" amount="2" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="70" />
+        <RequiredItem identifier="tsm_advanced_03" amount="1" />
+        <RequiredItem identifier="tsm_hpc" amount="1" />
       </Fabricate>
       <!--分解-->
       <Deconstruct time="10">
@@ -1385,15 +1425,20 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
       <SkillRequirementHint identifier="weapons" level="70" />
     </Item>
-    <Item name="先进精准突击步枪" identifier="tsm_advanced_191" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
+    <Item name="先进精准突击步枪" identifier="tsm_advanced_191" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,tsm_mid_farsight,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40" requiresrecipe="false">
-        <RequiredSkill identifier="weapons" level="60" />
+        <RequiredSkill identifier="weapons" level="70" />
         <RequiredItem identifier="tsm_yx_crystallography" mincondition="2" />
         <RequiredItem identifier="tsm_blueprint1" amount="1" />
         <RequiredItem identifier="tsm_hpc" amount="1" />
         <RequiredItem identifier="tsm_qbz_191" amount="1" />
         <RequiredItem identifier="tsm_plastic" amount="3" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="70" />
+        <RequiredItem identifier="tsm_advanced_191" amount="1" />
+        <RequiredItem identifier="tsm_blueprint1" amount="1" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="steel" />
@@ -1509,6 +1554,11 @@
         <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="2" />
         <RequiredItem identifier="tsm_plastic" amount="2" />
         <RequiredItem identifier="tsm_item_box" amount="1" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="60" />
+        <RequiredItem identifier="tsm_201" amount="1" />
+        <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="plastic" amount="1" />
@@ -1637,10 +1687,15 @@
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <Price baseprice="2818" sold="true" canbespecial="false" />
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40">
-        <RequiredSkill identifier="weapons" level="30" />
-        <Item identifier="tsm_lm_weaponbox" amount="1" />
+        <RequiredSkill identifier="weapons" level="40" />
+        <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
         <Item identifier="tsm_item_box" amount="1" />
         <Item identifier="shotgun" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="40" />
+        <RequiredItem identifier="tsm_qbs" amount="1" />
+        <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="tsm_lm_weaponbox" amount="0.5" />
@@ -1692,7 +1747,7 @@
       <SkillRequirementHint identifier="weapons" level="45" />
     </Item>
     <!--重力投掷器-->
-    <Item name="重力投掷器" identifier="tsm_gravitythrower" subcategory="TSM" description="" category="weapon" cargocontaineridentifier="tsm_weapons" tags="mountableweapon,weapon,gun,gunsmith,tsm_gun,bigitem,tsm_biggun,provocativetohumanai,bulkyweapon" Scale="0.2" impactsoundtag="impact_metal_heavy">
+    <Item name="重力投掷器" identifier="tsm_gravitythrower" subcategory="TSM" description="" category="weapon" cargocontaineridentifier="tsm_weapons" tags="mountableweapon,tsm_farsight,weapon,gun,gunsmith,tsm_gun,bigitem,tsm_biggun,provocativetohumanai,bulkyweapon" Scale="0.2" impactsoundtag="impact_metal_heavy">
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <Price baseprice="5226" displaynonempty="true" minleveldifficulty="40" />
       <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="1"/>
@@ -2239,6 +2294,7 @@
           <RequiredItems items="tsm_zd" type="Contained" />
           <Conditional IsFullCondition="false" targetcontaineditem="true" />
           <sound file="%ModDir%/weapons/木卫二联盟/reload4.ogg" type="OnUse" range="300" loop="true" />
+          <!--sound file="%ModDir%/weapons/节日/bell.ogg" type="OnUse" range="300" loop="true" /-->
         </StatusEffect>
         <StatusEffect type="OnUse" target="This" Condition="-25" comparison="and">
           <RequiredItems items="tsm_cjzd" type="Contained" />

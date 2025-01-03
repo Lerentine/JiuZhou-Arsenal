@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
   <Items>
-    <Item name="丙级作战增强针剂" identifier="tsm_enhancement_bing" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="丙级作战增强针剂" identifier="tsm_enhancement_bing" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
@@ -130,5 +130,14 @@
       </StatusEffect>
     </Holdable>
   </Item>
-
+  <Item name="赛博增强针剂" identifier="tsm_enhancement_cyborg" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character">
+        <LuaHook name="tsm_enhancement_cyborg.OnContained" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
   </Items>

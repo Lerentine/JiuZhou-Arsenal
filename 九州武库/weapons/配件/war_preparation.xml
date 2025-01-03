@@ -6,7 +6,6 @@
       <Item identifier="organicfiber" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredItem identifier="tsm_bulletproof" amount="1" />
       <RequiredItem identifier="c4block" amount="1" />
       <RequiredItem identifier="organicfiber" amount="1" />
       <RequiredItem identifier="railgunshell" amount="1" />
@@ -301,7 +300,7 @@
     </Holdable>
   </Item>
   <!--C2-->
-  <Item identifier="tsm_c2" health="30" subcategory="war preparation" description="" category="Equipment,Weapon" Tags="smallitem,detonator" DamagedByContainedItemExplosions="true" explosiondamagemultiplier="0.3" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_light" isshootable="true">
+  <Item identifier="tsm_c2" health="30" subcategory="war preparation" description="" category="Equipment,Weapon" maxstacksize="6" Tags="smallitem,detonator" DamagedByContainedItemExplosions="true" explosiondamagemultiplier="0.3" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_light" isshootable="true">
     <PreferredContainer primary="secarmcab" amount="1" spawnprobability="0.1" notcampaign="true" notpvp="true"/>
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" amount="1" spawnprobability="0.1"/>
     <PreferredContainer secondary="armcab"/>
@@ -316,7 +315,7 @@
     </Price>
     <InventoryIcon texture="%ModDir%/weapons/配件/war_preparation.png" sourcerect="189,378,79,89" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/war_preparation.png" sourcerect="189,378,79,89" depth="0.55" origin="0.5,0.5" />
-    <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="5">
+    <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="5" amount="3">
       <RequiredSkill identifier="electrical" level="10" />
       <RequiredItem identifier="detonator" />
       <RequiredItem identifier="uex" />

@@ -441,7 +441,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="QMK152" identifier="tsm_sight_qmk152" subcategory="accessories" category="weapon" Tags="smallitem,sighting,tsm_sight_high,qmk152" cargocontaineridentifier="tsm_metalcrate" Scale="0.21" impactsoundtag="impact_metal_light">
+  <Item name="QMK152" identifier="tsm_sight_qmk152" subcategory="accessories" category="weapon" Tags="smallitem,tsm_sight_high,qmk152" cargocontaineridentifier="tsm_metalcrate" Scale="0.21" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1050,338,93,63" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1050,338,93,63" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />

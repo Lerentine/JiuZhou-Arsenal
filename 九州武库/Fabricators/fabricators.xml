@@ -192,7 +192,7 @@
           linkable="true"
           allowedlinks="deconstructor,locker"
           description=""
-          scale="0.08"
+          scale="0.06"
           damagedbyexplosions="true"
           explosiondamagemultiplier="0.2">
 

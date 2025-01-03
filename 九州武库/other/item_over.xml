@@ -104,8 +104,8 @@
   </Item>
   <!--材料补给-->
   <Item identifier="tsm_mcrate_replenishment1" tags="crate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" impacttolerance="2.9">
-    <Sprite texture="%ModDir:2852411866%/mission/tsm_mission_item.png" depth="0.54" sourcerect="0,478,275,105" origin="0.5,0.5" />
-    <Body width="150" height="85" density="50" />
+    <Sprite texture="%ModDir:2852411866%/mission/tsm_mission_item.png" depth="0.54" sourcerect="10,671,150,80" origin="0.5,0.5" />
+    <Body width="150" height="70" density="50" />
     <Holdable slots="RightHand,LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect"/>
     <Deconstruct time="8" chooserandom="true" amount="5">
       <Item identifier="titanite" commonness="0.1" />
@@ -143,8 +143,8 @@
     </Deconstruct>
   </Item>
   <Item identifier="tsm_mcrate_replenishment_med" tags="crate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" impacttolerance="2.9">
-    <Sprite texture="%ModDir:2852411866%/mission/tsm_mission_item.png" depth="0.54" sourcerect="0,630,275,105" origin="0.5,0.5" />
-    <Body width="150" height="85" density="50" />
+    <Sprite texture="%ModDir:2852411866%/mission/tsm_mission_item.png" depth="0.54" sourcerect="10,585,150,80" origin="0.5,0.5" />
+    <Body width="150" height="70" density="40" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect"/>
     <Deconstruct time="8" amount="3">
       <Item identifier="antibleeding2" amount="8"/>

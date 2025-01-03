@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="九州武库" modversion="1.0.109" corepackage="False" steamworkshopid="2953749635" gameversion="1.7.7.0">
+<contentpackage name="九州武库" modversion="1.0.113" corepackage="False" steamworkshopid="2953749635" gameversion="1.7.7.0">
   <Item file="%ModDir%/weapons/bullet.xml" />
   <Item file="%ModDir%/Jobgear/uniform.xml" />
   <Item file="%ModDir%/Jobgear/armor.xml" />
@@ -18,6 +18,7 @@
   <Item file="%ModDir%/weapons/其他/pistols.xml" />
   <Item file="%ModDir%/weapons/其他/melee.xml" />
   <Item file="%ModDir%/weapons/其他/legacy_weapons.xml" />
+  <Item file="%ModDir%/weapons/节日/holiday_weapons.xml" />
   <Item file="%ModDir%/weapons/配件/accessories.xml" />
   <Item file="%ModDir%/weapons/配件/war_preparation.xml" />
   <Item file="%ModDir%/mission/Combat NPC Enhancement.xml" />
@@ -28,6 +29,7 @@
   <Afflictions file="%ModDir%/other/Afflictions.xml" />
   <Afflictions file="%ModDir%/other/Afflictions_ai.xml" />
   <Text file="%ModDir%/text/chinese.xml" />
+  <Text file="%ModDir%/text/English.xml" />
   <Particles file="%ModDir%/ParticlePrefabs/ParticlePrefabs.xml" />
   <Sounds file="%ModDir%/other/sounds.xml" />
   <UIStyle file="%ModDir%/other/Types.xml" />
@@ -45,7 +47,7 @@
   <Character file="%ModDir%/character/sight5/sight5.xml" />
   <Other file="%ModDir%/Lua/Autorun/init.lua" />
   <Other file="%ModDir%/Lua/Scripts/Client/weapon_zoom.lua" />
+  <Submarine file="%ModDir%/九州武库：现版本武器全览.sub" />
   <EnemySubmarine file="%ModDir%/ship/ARS-运输.sub" />
   <EnemySubmarine file="%ModDir%/ship/pirates_tsm_1.sub" />
-  <Submarine file="%ModDir%/九州武库：现版本武器全览.sub" />
 </contentpackage>

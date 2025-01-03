@@ -153,8 +153,8 @@
             <ParticleEmitter particle="spark" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="252,218,94,100" scalemultiplier="1,1"/>
             <Attack structuredamage="0" targetforce="6" itemdamage="20" severlimbsprobability="0.5">
                 <Affliction identifier="gunshotwound" strength="12" />
-                <Affliction identifier="burning" strength="3" />
-                <Affliction identifier="burning" strength="2" probability="0.3"/>
+                <Affliction identifier="burning" strength="8" />
+                <Affliction identifier="burning" strength="4" probability="0.3"/>
                 <Affliction identifier="bleedingnonstop" strength="5" />
                 <Affliction identifier="stun" strength="0.03" probability="0.3"/>
                 <Affliction identifier="stun" strength="0.03" probability="0.3"/>
@@ -471,8 +471,8 @@
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,150,150,175" scalemultiplier="1,0.6" />
             <Attack structuredamage="0.5" targetforce="3" itemdamage="7" severlimbsprobability="0.2">
                 <Affliction identifier="gunshotwound" strength="15" />
-                <Affliction identifier="electricshock" strength="3" />
-                <Affliction identifier="emp" strength="3" />
+                <Affliction identifier="electricshock" strength="6" />
+                <Affliction identifier="emp" strength="6" />
                 <Affliction identifier="electricshock" strength="3" probability="0.2"/>
                 <Affliction identifier="gunshotwound" strength="3" probability="0.15" />
                 <Affliction identifier="gunshotwound" strength="2" probability="0.3" />
@@ -538,7 +538,7 @@
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,150,150,175" scalemultiplier="1,0.6" />
             <Attack structuredamage="0.5" targetforce="3" itemdamage="7" severlimbsprobability="0.2">
                 <Affliction identifier="gunshotwound" strength="15" />
-                <Affliction identifier="acidburn" strength="2" />
+                <Affliction identifier="acidburn" strength="3" />
                 <Affliction identifier="gunshotwound" strength="2" probability="0.15" />
                 <Affliction identifier="gunshotwound" strength="1" probability="0.3" />
                 <Affliction identifier="bleeding" strength="5" probability="0.15" />
@@ -571,7 +571,7 @@
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,150,150,175" scalemultiplier="1,0.6" />
             <Attack structuredamage="0.5" targetforce="3" itemdamage="7" severlimbsprobability="0.2">
                 <Affliction identifier="gunshotwound" strength="15" />
-                <Affliction identifier="burning" strength="2" />
+                <Affliction identifier="burning" strength="10" />
                 <Affliction identifier="gunshotwound" strength="3" probability="0.15" />
                 <Affliction identifier="gunshotwound" strength="2" probability="0.3" />
                 <Affliction identifier="bleeding" strength="5" probability="0.15" />
@@ -606,7 +606,7 @@
                 <Affliction identifier="gunshotwound" strength="13" />
                 <Affliction identifier="emp" strength="3" />
                 <Affliction identifier="gunshotwound" strength="6" probability="0.15" />
-                <Affliction identifier="electricshock" strength="3" />
+                <Affliction identifier="electricshock" strength="6" />
                 <Affliction identifier="electricshock" strength="3" probability="0.2"/>
                 <Affliction identifier="bleeding" strength="5" probability="0.1" />
                 <Affliction identifier="bleeding" strength="10" />
@@ -667,7 +667,7 @@
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
             <Attack structuredamage="0.5" targetforce="2" itemdamage="7" severlimbsprobability="0.3">
                 <Affliction identifier="gunshotwound" strength="13" />
-                <Affliction identifier="acidburn" strength="2" />
+                <Affliction identifier="acidburn" strength="3" />
                 <Affliction identifier="gunshotwound" strength="6" probability="0.15" />
                 <Affliction identifier="bleeding" strength="5" probability="0.1" />
                 <Affliction identifier="bleeding" strength="10" />
@@ -698,7 +698,7 @@
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
             <Attack structuredamage="0.5" targetforce="2" itemdamage="7" severlimbsprobability="0.3">
                 <Affliction identifier="gunshotwound" strength="13" />
-                <Affliction identifier="burning" strength="2" />
+                <Affliction identifier="burning" strength="8" />
                 <Affliction identifier="gunshotwound" strength="6" probability="0.15" />
                 <Affliction identifier="bleeding" strength="5" probability="0.1" />
                 <Affliction identifier="bleeding" strength="10" />
@@ -729,7 +729,7 @@
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
             <Attack structuredamage="0.6" targetforce="2" itemdamage="7" penetration="0.05" severlimbsprobability="0.5">
                 <Affliction identifier="gunshotwound" strength="13.5" />
-                <Affliction identifier="electricshock" strength="3" />
+                <Affliction identifier="electricshock" strength="6" />
                 <Affliction identifier="emp" strength="3" />
                 <Affliction identifier="electricshock" strength="3" probability="0.2"/>
                 <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
@@ -796,7 +796,7 @@
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
             <Attack structuredamage="0.6" targetforce="2" itemdamage="7" penetration="0.05" severlimbsprobability="0.5">
                 <Affliction identifier="gunshotwound" strength="13.5" />
-                <Affliction identifier="acidburn" strength="2" />
+                <Affliction identifier="acidburn" strength="3" />
                 <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
                 <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
                 <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
@@ -829,7 +829,7 @@
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
             <Attack structuredamage="0.6" targetforce="2" itemdamage="7" penetration="0.05" severlimbsprobability="0.5">
                 <Affliction identifier="gunshotwound" strength="13.5" />
-                <Affliction identifier="burning" strength="2" />
+                <Affliction identifier="burning" strength="8" />
                 <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
                 <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
                 <Affliction identifier="gunshotwound" strength="2" probability="0.1" />

@@ -120,11 +120,12 @@
     </Price>
     <Deconstruct time="5">
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" amount="5">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" amount="6">
       <RequiredSkill identifier="weapons" level="25" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="tsm_sulphur" />
       <RequiredItem identifier="tin" />
+      <RequiredItem identifier="uex" />
     </Fabricate>
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/奇迹之海/电磁穿透器.png" sourcerect="392,776,521,47" origin="0.5,0.5" />
@@ -234,7 +235,7 @@
           <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
           <Explosion range="300.0" ballastfloradamage="80" structuredamage="20" penetration="0.15" levelwalldamage="120" itemdamage="400" force="5.0" severlimbsprobability="0.4" decal="explosion" decalsize="0.3">
             <Affliction identifier="burn" strength="60" />
-            <Affliction identifier="explosiondamage" strength="40" />
+            <Affliction identifier="explosiondamage" strength="50" />
             <Affliction identifier="bleedingnonstop" strength="100" probability="0.05" />
             <Affliction identifier="stun" strength="1" />
           </Explosion>

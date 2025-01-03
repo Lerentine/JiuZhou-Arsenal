@@ -12,6 +12,7 @@
         <Item identifier="lm_fast_helmet_faceshield" equip="true"/>
         <Item identifier="headset" equip="true"/>
         <Item identifier="tsm_enhancement_ai"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_medicalkits">
         <Item identifier="tsm_enhancement_bing"/>
         </Item>
@@ -28,6 +29,7 @@
         <Item identifier="lm_vest_elite" equip="true"/>
         <Item identifier="lm_fast_helmet_faceshield" equip="true"/>
         <Item identifier="headset" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_enhancement_ai"/>
         <Item identifier="tsm_medicalkits">
         <Item identifier="tsm_enhancement_bing"/>
@@ -46,6 +48,7 @@
         <Item identifier="fkj_vest_elite" equip="true"/>
         <Item identifier="fkj_fast_helmet_reinforce" equip="true"/>
         <Item identifier="headset" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_enhancement_ai"/>
         <Item identifier="tsm_medicalkits">
         <Item identifier="tsm_enhancement_bing"/>
@@ -60,6 +63,7 @@
         <Item identifier="fkj_vest_elite" equip="true"/>
         <Item identifier="fkj_fast_helmet_reinforce" equip="true"/>
         <Item identifier="headset" equip="true"/>
+         <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_enhancement_ai"/>
         <Item identifier="tsm_medicalkits">
         <Item identifier="tsm_enhancement_bing"/>
@@ -77,6 +81,7 @@
         <Item identifier="fkj_vest_pt" equip="true"/>
         <Item identifier="fkj_fast_helmet" equip="true"/>
         <Item identifier="tsm_enhancement_bing"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="headset" equip="true">
           <Item identifier="tsm_enhancement_ai"/>
         </Item>
@@ -108,6 +113,7 @@
       <Item identifier="lm_beowulf_helmet" equip="true"/>
       <Item identifier="autoinjectorheadset" equip="true"/>
       <Item identifier="tsm_enhancement_ai"/>
+      <Item identifier="tsm_enhancement_cyborg"/>
       <Item identifier="tsm_medicalkits_s">
       <Item identifier="tsm_enhancement_jia"/>
       </Item>
@@ -128,6 +134,7 @@
         <Item identifier="lm_vest_elite" equip="true"/>
         <Item identifier="lm_fast_helmet_protectivejaw" equip="true"/>
         <Item identifier="tsm_enhancement_combatship"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="ceremonialsword">
           <Item identifier="tsm_medicalkits"/>
         </Item>
@@ -169,6 +176,7 @@
         <Item identifier="lm_rapidreaction_vest" equip="true"/>
         <Item identifier="lm_rapidreaction_helmet" equip="true"/>
         <Item identifier="tsm_enhancement_combatship"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="headset" equip="true">
         <Item identifier="tsm_medicalkits"/>
         </Item>
@@ -205,6 +213,7 @@
         <Item identifier="lm_vest_elite" equip="true"/>
         <Item identifier="lm_fast_helmet_faceshield" equip="true"/>
         <Item identifier="tsm_enhancement_ai"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="headset" equip="true">
         <Item identifier="tsm_enhancement_yi"/>
         </Item>
@@ -222,6 +231,7 @@
         <Item identifier="lm_vest_elite" equip="true"/>
         <Item identifier="lm_fast_helmet_faceshield" equip="true"/>
         <Item identifier="tsm_enhancement_ai"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="headset" equip="true">
         <Item identifier="tsm_enhancement_yi"/>
         </Item>
@@ -239,6 +249,7 @@
         <Item identifier="tsm_old_uniform" equip="true"/>
         <Item identifier="tsm_old_vest" equip="true"/>
         <Item identifier="tsm_helmet_respirator" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_pqc_melee">
         <Item identifier="headset" equip="true"/>
         </Item>
@@ -252,6 +263,7 @@
         <Item identifier="tsm_old_uniform" equip="true"/>
         <Item identifier="tsm_old_vest" equip="true"/>
         <Item identifier="tsm_helmet_respirator" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_pmf_melee">
         <Item identifier="headset" equip="true"/>
         </Item>
@@ -268,6 +280,7 @@
         <Item identifier="tsm_old_uniform" equip="true"/>
         <Item identifier="tsm_old_vest" equip="true"/>
         <Item identifier="tsm_helmet_respirator" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_pqc_melee">
         <Item identifier="headset" equip="true"/>
         </Item>
@@ -281,6 +294,7 @@
         <Item identifier="tsm_old_uniform" equip="true"/>
         <Item identifier="tsm_old_vest" equip="true"/>
         <Item identifier="tsm_helmet_respirator" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_pmf_melee">
         <Item identifier="headset" equip="true"/>
         </Item>
@@ -297,6 +311,7 @@
         <Item identifier="tsm_old_uniform" equip="true"/>
         <Item identifier="tsm_old_vest" equip="true"/>
         <Item identifier="tsm_helmet_respirator" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_pqc_melee">
           <Item identifier="tsm_enhancement_combatship"/>
         </Item>
@@ -317,6 +332,7 @@
         <Item identifier="tsm_old_uniform" equip="true"/>
         <Item identifier="tsm_old_vest" equip="true"/>
         <Item identifier="tsm_helmet_respirator" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_pmf_melee">
           <Item identifier="tsm_enhancement_combatship"/>
         </Item>
@@ -333,6 +349,7 @@
         <Item identifier="idcard" equip="true"/>
         <Item identifier="tsm_old_uniform" equip="true"/>
         <Item identifier="tsm_old_vest" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_helmet_respirator" equip="true"/>
         <Item identifier="tsm_pqc_melee">
           <Item identifier="tsm_enhancement_combatship"/>
@@ -353,6 +370,7 @@
         <Item identifier="idcard" equip="true"/>
         <Item identifier="tsm_old_uniform" equip="true"/>
         <Item identifier="tsm_old_vest" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_helmet_respirator" equip="true"/>
         <Item identifier="tsm_pmf_melee">
           <Item identifier="tsm_enhancement_combatship"/>
@@ -373,6 +391,7 @@
         <Item identifier="tsm_old_uniform" equip="true"/>
         <Item identifier="tsm_old_vest" equip="true"/>
         <Item identifier="tsm_helmet_respirator" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_enhancement_combatship"/>
         <Item identifier="tsm_pqc_melee">
         <Item identifier="headset" equip="true"/>
@@ -390,6 +409,7 @@
         <Item identifier="tsm_old_uniform" equip="true"/>
         <Item identifier="tsm_old_vest" equip="true"/>
         <Item identifier="tsm_helmet_respirator" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_enhancement_combatship"/>
         <Item identifier="tsm_pmf_melee">
         <Item identifier="headset" equip="true"/>
@@ -403,26 +423,12 @@
    <!--猫科增援-->
     <!--奈亚-->
     <npc identifier="tsm_outpost_combat_naiya" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule,banditleader" job="tsm_structuredefender" behavior="Active" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.2" aimspeed="30" aimaccuracy="0.8" reportrange="2000" skillmultiplier="4">
-      <ItemSet commonness="0.7">
-        <Item identifier="idcard" equip="true"/>
-        <Item identifier="tsm_nujiang_uniform" equip="true"/>
-        <Item identifier="tsm_heavy_vest" equip="true"/>
-        <Item identifier="tsm_helmet_outpost_combat" equip="true"/>
-        <Item identifier="tsm_medicalkits_s"/>
-        <Item identifier="tsm_pmf_melee"/>
-        <Item identifier="tsm_radiojammer"/>
-        <Item identifier="tsm_enhancement_combatship">
-          <Item identifier="batterycell"/>
-        </Item>
-        <Item identifier="tsm_p90" equip="true">
-          <Item identifier="tsm_57_smgmag" amount="5"/>
-        </Item>
-      </ItemSet>
       <ItemSet commonness="0.25">
         <Item identifier="idcard" equip="true"/>
         <Item identifier="tsm_nujiang_uniform" equip="true"/>
         <Item identifier="tsm_heavy_vest" equip="true"/>
         <Item identifier="tsm_helmet_outpost_combat" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_stunbaton_melee"/>
         <Item identifier="tsm_medicalkits_s"/>
         <Item identifier="tsm_radiojammer"/>
@@ -439,6 +445,7 @@
         <Item identifier="tsm_nujiang_uniform" equip="true"/>
         <Item identifier="tsm_heavy_vest" equip="true"/>
         <Item identifier="tsm_helmet_outpost_combat" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_pqc_melee"/>
         <Item identifier="tsm_medicalkits_s"/>
         <Item identifier="tsm_radiojammer"/>
@@ -450,15 +457,13 @@
           <Item identifier="tsm_45_smgmag" amount="6"/>
           <Item identifier="tsm_fire_gun" equip="true"/>
         </Item>
-        <Item identifier="tsm_1911_pistols" equip="true">
-          <Item identifier="tsm_127_mag" amount="4"/>
-        </Item>
       </ItemSet>
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true"/>
         <Item identifier="tsm_nujiang_uniform" equip="true"/>
         <Item identifier="tsm_heavy_vest" equip="true"/>
         <Item identifier="tsm_helmet_outpost_combat" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_pqc_melee"/>
         <Item identifier="tsm_medicalkits_s"/>
         <Item identifier="tsm_radiojammer"/>
@@ -470,9 +475,6 @@
           <Item identifier="tsm_45_smgmag" amount="6"/>
           <Item identifier="tsm_fire_gun" equip="true"/>
         </Item>
-        <Item identifier="tsm_1911_pistols" equip="true">
-          <Item identifier="tsm_127_mag" amount="4"/>
-        </Item>
       </ItemSet>
     </npc>
     <!--降临派-->
@@ -483,6 +485,7 @@
       <Item identifier="adventists_uniform" equip="true"/>
       <Item identifier="piratebodyarmor" equip="true"/>
       <Item identifier="piratecaptainhat" equip="true"/>
+      <Item identifier="tsm_enhancement_cyborg"/>
       <Item identifier="headset" equip="true"/>
       <Item identifier="tsm_enhancement_ai">
       <Item identifier="tsm_enhancement_bing"/>
@@ -512,6 +515,7 @@
         <Item identifier="idcard" equip="true"/>
         <Item identifier="lm_occupation_uniform" equip="true"/>
         <Item identifier="lm_vest_elite" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="lm_heavy_helmet" equip="true"/>
         <Item identifier="tsm_enhancement_combatship">
         <Item identifier="tsm_medicalkits"/>
@@ -529,6 +533,7 @@
           <Item identifier="lm_occupation_uniform" equip="true"/>
           <Item identifier="lm_vest_occupation" equip="true"/>
           <Item identifier="lm_heavy_helmet" equip="true"/>
+          <Item identifier="tsm_enhancement_cyborg"/>
           <Item identifier="tsm_enhancement_combatship">
           <Item identifier="tsm_medicalkits"/>
           </Item>
@@ -550,6 +555,7 @@
         <Item identifier="lm_occupation_uniform" equip="true"/>
         <Item identifier="lm_vest_elite" equip="true"/>
         <Item identifier="lm_heavy_helmet" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_thermal_knife"/>
         <Item identifier="tsm_enhancement_combatship">
           <Item identifier="tsm_medicalkits"/>
@@ -558,13 +564,11 @@
           <Item identifier="lm_762_51_ap_mag" amount="4"/>
           <Item identifier="lm_762_51_mag" amount="4"/>
         </Item>
-        <Item identifier="tsm_de_handgun">
-          <Item identifier="tsm_127_mag" amount="4"/>
-        </Item>
         <ItemSet commonness="0.3">
           <Item identifier="idcard" equip="true"/>
           <Item identifier="lm_occupation_uniform" equip="true"/>
           <Item identifier="lm_vest_occupation" equip="true"/>
+          <Item identifier="tsm_enhancement_cyborg"/>
           <Item identifier="lm_heavy_helmet" equip="true"/>
           <Item identifier="tsm_thermal_knife"/>
           <Item identifier="tsm_enhancement_combatship">
@@ -573,15 +577,12 @@
           <Item identifier="tsm_lm_cz806" equip="true">
             <Item identifier="tsm_flame_arrester" equip="true"/>
             <Item identifier="tsm_sight_double" equip="true"/>
+            <Item identifier="tsm_enhancement_cyborg"/>
             <Item identifier="40mmstungrenade" amount="1"/>
             <Item identifier="40mmgrenade" amount="1"/>
             <Item identifier="lm_556_physicorium_mag" amount="1"/>
             <Item identifier="40mmgrenade" amount="1"/>
-            <Item identifier="lm_556_fulgurium_mag" amount="1"/>
             <Item identifier="lm_556cj_mag" amount="4"/>
-          </Item>
-          <Item identifier="tsm_fn509_pistols">
-            <Item identifier="tsm_9_krmag" amount="4"/>
           </Item>
         </ItemSet>
         <ItemSet commonness="0.1">
@@ -609,6 +610,7 @@
         <Item identifier="idcard" equip="true"/>
         <Item identifier="fkj_yehuo_uniform" equip="true"/>
         <Item identifier="fkj_vest_yehuo" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="fkj_yehuo_helmet" equip="true"/>
         <Item identifier="tsm_steel_knife" equip="true"/>
         <Item identifier="tsm_enhancement_lightningwizard"/>
@@ -624,6 +626,5 @@
         </Item>
       </ItemSet>
     </npc>
-
   </npcset>
 </npcsets>

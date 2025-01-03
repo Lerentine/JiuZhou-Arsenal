@@ -2,12 +2,12 @@
 <Items>
     <Item name="操作者辅助系统(OAS)" subcategory="TSM" identifier="tsm_operatorassistancesystems" scale="0.25" category="Equipment" tags="smallitem,mobileradio" description="" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="crewcab" secondary="divingcab"/>
-        <Price baseprice="40">
-            <Price storeidentifier="merchantoutpost" minavailable="3" />
-            <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="10" />
-            <Price storeidentifier="merchantresearch" minavailable="4" />
-            <Price storeidentifier="merchantmilitary" minavailable="6" />
-            <Price storeidentifier="merchantmine" minavailable="6" />
+        <Price baseprice="40" buyingpricemultiplier="5">
+            <Price storeidentifier="merchantoutpost" maxavailable="0" />
+            <Price storeidentifier="merchantcity" maxavailable="0" />
+            <Price storeidentifier="merchantresearch" maxavailable="0" />
+            <Price storeidentifier="merchantmilitary" maxavailable="0" />
+            <Price storeidentifier="merchantmine" maxavailable="0" />
         </Price>
         <InventoryIcon texture="%ModDir%/Jobgear/操作者辅助系统.png" sourcerect="102,59,130,233" origin="0.5,0.5" />
         <Sprite name="OAS" texture="%ModDir%/Jobgear/操作者辅助系统.png" depth="0.55" sourcerect="102,59,130,233" origin="0.35,0.5" />

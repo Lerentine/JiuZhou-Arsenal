@@ -1051,7 +1051,7 @@
     <!--暗夜降临-->
     <ScriptedEvent identifier="tsm_darkstormynight">
       <TagAction criteria="player" tag="player" />
-      <ConversationAction text="tsm_darkstormynight.1！" targettag="player" fadetoblack="true" continueconversation="true" />
+      <ConversationAction text="tsm_darkstormynight.1" targettag="player" fadetoblack="true" continueconversation="true" />
       <ConversationAction text="tsm_darkstormynight.2" targettag="player" fadetoblack="true" continueconversation="true" />
       <ConversationAction text="tsm_darkstormynight.3" targettag="player" fadetoblack="true" />
       <AfflictionAction targettag="player" affliction="tsm_darknight" strength="1" multiplybymaxvitality="true" />

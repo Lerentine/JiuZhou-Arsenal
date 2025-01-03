@@ -57,7 +57,7 @@
     <aitarget sightrange="500" soundrange="500" fadeouttime="3" />
     <Quality>
       <QualityStat stattype="ExplosionRadius" value="0.1" />
-      <QualityStat stattype="ExplosionDamage" value="0.1" />
+      <QualityStat stattype="ExplosionDamage" value="0.05" />
     </Quality>
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
@@ -113,7 +113,7 @@
     </ItemContainer>
     <aitarget sightrange="500" soundrange="500" fadeouttime="3" />
     <Quality>
-      <QualityStat stattype="ExplosionRadius" value="0.1" />
+      <QualityStat stattype="ExplosionRadius" value="0.05" />
       <QualityStat stattype="ExplosionDamage" value="0.1" />
     </Quality>
     <SkillRequirementHint identifier="weapons" level="40" />
@@ -139,7 +139,7 @@
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="m32 bag" texture="%ModDir%/weapons/其他/重型武器.png" canbehiddenbyotherwearables="false" sourcerect="22,459,331,98" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.35" origin="0.45,0.8" />
     </Wearable>
-    <RangedWeapon barrelpos="80,11" spread="1.2" unskilledspread="10" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.6">
+    <RangedWeapon barrelpos="80,11" spread="1.2" unskilledspread="10" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.2" reload="1.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflashchaingun" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
@@ -199,7 +199,7 @@
         <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000"/>
 		<Spawnitem identifier="airconsume" spawnposition="this"/>
     <ParticleEmitter particle="tsm_thermobaric" AngleMax="360" ScaleMultiplier="3,3" ParticleAmount="1" ParticlesPerSecond="0.5" ColorMultiplier="255,255,255,255" LifeTimeMultiplier="1.5" />
-        <Explosion range="300.0" ballastfloradamage="500" structuredamage="15" levelwalldamage="120" itemdamage="400" force="15" stun="5" severlimbsprobability="0.4" debris="true" decal="explosion" decalsize="0.3" penetration="0.3">Concussion
+        <Explosion range="300.0" ballastfloradamage="500" structuredamage="15" levelwalldamage="120" itemdamage="400" force="15" stun="5" severlimbsprobability="0.4" debris="true" decal="explosion" decalsize="0.3" penetration="0.3">
           <Affliction identifier="burn" strength="200" dividebylimbcount="false"/>
           <Affliction identifier="oxygenlow" strength="80" dividebylimbcount="false"/>
           <Affliction identifier="bleeding" strength="30" dividebylimbcount="false"/>
@@ -359,6 +359,11 @@
       <RequiredItem identifier="tsm_hengberley_star" amount="1" />
       <RequiredItem identifier="tsm_hpc" amount="2" />
     </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="80" />
+      <RequiredItem identifier="tsm_mg42" amount="1" />
+      <Item identifier="tsm_hengberley_star" amount="1" />
+    </Fabricate>
     <Deconstruct time="10">
       <Item identifier="tsm_hpc" amount="1" />
     </Deconstruct>
@@ -375,8 +380,8 @@
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
     <RangedWeapon reload="0.08" weapondamagemodifier="1" holdtrigger="true" barrelpos="280,5" spread="8" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="613,255,195,195" />
+      <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="884,255,195,195" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="true">
         <Sound file="%ModDir%/weapons/反抗军/MG42.ogg" type="OnUse" range="3000" loop="true" />

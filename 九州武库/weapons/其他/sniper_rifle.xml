@@ -11,6 +11,11 @@
       <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
       <RequiredItem identifier="tsm_item_box" amount="2" />
     </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="tsm_88" amount="1" />
+      <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
+    </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="532,1803,165,167" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="10,1435,551,194" depth="0.55" origin="0.5,0.5" />
     <Body width="551" height="180" density="36" />
@@ -97,6 +102,11 @@
       <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
       <RequiredItem identifier="tsm_item_box" amount="2" />
     </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="tsm_cslr4" amount="1" />
+      <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
+    </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="1149,1834,130,149" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="9,1177,617,218" depth="0.55" origin="0.5,0.5" />
     <Body width="600" height="190" density="37" />
@@ -180,11 +190,16 @@
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredSkill identifier="weapons" level="65" />
       <RequiredItem identifier="tsm_cslr4" amount="1" />
       <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
       <RequiredItem identifier="tsm_plastic" amount="3" />
       <RequiredItem identifier="tsm_hpc" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem identifier="tsm_qbu202" amount="1" />
+      <Item identifier="tsm_hpc" amount="1" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="20,1748,203,224" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="779,1186,733,139" depth="0.55" origin="0.5,0.5" />
@@ -367,6 +382,12 @@
       <RequiredItem identifier="tsm_yx_crystallography" amount="2" />
       <RequiredItem identifier="tsm_item_box" amount="2" />
     </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem identifier="tsm_m99" amount="1" />
+      <Item identifier="tsm_hpc" amount="1" />
+      <Item identifier="tsm_yx_crystallography" amount="2" />
+    </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="755,1808,163,162" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="0,636,723,248" depth="0.55" origin="0.5,0.5" />
     <Body width="700" height="100" density="52" />
@@ -458,6 +479,11 @@
       <RequiredItem identifier="tsm_hengberley_star" amount="1" />
       <RequiredItem identifier="tsm_blueprint1" amount="1" />
       <RequiredItem identifier="tsm_plastic" amount="4" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem identifier="tsm_qbu10" amount="1" />
+      <Item identifier="tsm_hengberley_star" amount="1" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="620,1508,241,258" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="652,22,656,248" depth="0.55" origin="0.5,0.5" />
@@ -623,7 +649,7 @@
     <Deconstruct time="10">
       <Item identifier="tsm_blueprint1" />
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="30" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="30" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="80" />
       <RequiredItem identifier="tsm_gm6" amount="1" />
       <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
@@ -716,10 +742,15 @@
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="tsm_plastic" amount="2" />
       <RequiredItem identifier="titanium" amount="1" />
       <RequiredItem identifier="tsm_item_box" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="tsm_lm_spg1" amount="1" />
+      <Item identifier="tsm_item_box" amount="2" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1801,3065,167,184" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="16,2991,578,127" depth="0.55" origin="0.5,0.5" />
@@ -807,6 +838,11 @@
       <RequiredItem identifier="tsm_hpc" amount="1" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
       <RequiredItem identifier="tsm_plastic" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="tsm_lm_awm" amount="1" />
+      <Item identifier="tsm_lm_weaponbox" amount="2" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1782,3295,179,204" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="13,3129,630,128" depth="0.55" origin="0.5,0.5" />
@@ -903,6 +939,11 @@
       <RequiredItem identifier="tsm_yx_crystallography" amount="2" />
       <RequiredItem identifier="tsm_blueprint" amount="1" />
     </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="90" />
+      <RequiredItem identifier="tsm_lm_m82a1" amount="1" />
+      <Item identifier="tsm_blueprint" amount="1" />
+    </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1505,2923,254,267" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="14,3286,880,165" depth="0.55" origin="0.5,0.5" />
     <Body width="850" height="150" density="50" />
@@ -992,6 +1033,11 @@
       <RequiredItem identifier="tsm_lm_weaponbox" amount="2" />
       <RequiredItem identifier="tsm_plastic" amount="3" />
       <RequiredItem identifier="tsm_item_box" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredItem identifier="tsm_lm_m700" amount="1" />
+      <Item identifier="tsm_lm_weaponbox" amount="1" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="physicorium" />
@@ -1085,7 +1131,7 @@
       <Item identifier="physicorium" />
       <Item identifier="tsm_lm_weaponbox" />
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="70" />
       <RequiredItem identifier="tsm_lm_m700_r" amount="1" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />

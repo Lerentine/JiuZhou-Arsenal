@@ -6,9 +6,14 @@
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="0,270,147,109" depth="0.55" origin="0.5,0.5" />
       <Body width="147" height="109" density="12" />
       <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="20">
-        <RequiredSkill identifier="weapons" level="40" />
+        <RequiredSkill identifier="weapons" level="30" />
         <RequiredItem identifier="steel" />
         <RequiredItem identifier="tsm_item_box" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="30" />
+        <RequiredItem identifier="tsm_92_pistols" amount="1" />
+        <Item identifier="tsm_item_box" amount="1" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="steel" />
@@ -27,6 +32,9 @@
         </StatusEffect>
         <RequiredItems items="tsm_9_mag" type="Contained" msg="ItemMsgAmmoRequired" />
         <RequiredSkill identifier="weapons" level="20" />
+        <StatusEffect type="OnUse" target="This">
+          <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="1" scalemax="1" />
+        </StatusEffect>
       </RangedWeapon>
       <ItemContainer capacity="1" maxstacksize="1" containedstateindicatorstyle="bullet">
         <Containable items="tsm_9_mag" >
@@ -52,11 +60,16 @@
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="19,705,133,102" depth="0.55" origin="0.5,0.5" />
       <Body width="133" height="102" density="12" />
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20">
-        <RequiredSkill identifier="weapons" level="60" />
+        <RequiredSkill identifier="weapons" level="45" />
         <RequiredItem identifier="tsm_92_pistols" />
         <RequiredItem identifier="tsm_handgun_box" />
         <RequiredItem identifier="tsm_plastic" />
         <RequiredItem identifier="tsm_plastic" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="45" />
+        <RequiredItem identifier="tsm_fn509_pistols" amount="1" />
+        <Item identifier="tsm_handgun_box" amount="1" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="titanium" />
@@ -72,6 +85,9 @@
         </StatusEffect>
         <StatusEffect type="OnUse" target="Contained">
           <Use />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This">
+          <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="1" scalemax="1" />
         </StatusEffect>
         <RequiredItems items="tsm_9_mag" type="Contained" msg="ItemMsgAmmoRequired" />
         <RequiredSkill identifier="weapons" level="60" />
@@ -113,9 +129,14 @@
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="8,138,140,93" depth="0.55" origin="0.5,0.5" />
       <Body width="140" height="93" density="15" />
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20">
-        <RequiredSkill identifier="weapons" level="55" />
+        <RequiredSkill identifier="weapons" level="45" />
         <RequiredItem identifier="tsm_92_pistols" />
         <RequiredItem identifier="tsm_handgun_box" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="45" />
+        <RequiredItem identifier="tsm_1911_pistols" amount="1" />
+        <Item identifier="tsm_handgun_box" amount="1" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="titanium" />
@@ -131,6 +152,9 @@
         </StatusEffect>
         <StatusEffect type="OnUse" target="Contained">
           <Use />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This">
+          <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="1" scalemax="1" />
         </StatusEffect>
         <RequiredItems items="tsm_1143_mag" type="Contained" msg="ItemMsgAmmoRequired" />
         <RequiredSkill identifier="weapons" level="40" />
@@ -154,27 +178,28 @@
       </Quality>
       <SkillRequirementHint identifier="weapons" level="40" />
     </Item>
-    <Item name="glock 18" identifier="tsm_glock18_pistols" category="Weapon" subcategory="other" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,lm_gun,fkj_gun,pistolitem,provocativetohumanai,gunsmith,mountableweapon" Scale="0.24" impactsoundtag="impact_metal_light">
+    <Item name="glock 18" identifier="tsm_glock18_pistols" category="Weapon" subcategory="other" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,lm_gun,fkj_gun,pistolitem,provocativetohumanai,gunsmith,mountableweapon" Scale="0.24" HideConditionBar="true" impactsoundtag="impact_metal_light">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="455,915,58,85" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="6,436,149,112" depth="0.55" origin="0.5,0.5" />
-      <BrokenSprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="0,567,161,99" depth="0.55" origin="0.5,0.5" maxcondition="0" />
+      <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="6,436,161,112" depth="0.55" origin="0.5,0.5" />
+      <BrokenSprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="0,567,161,112" depth="0.55" origin="0.55,0.5" maxcondition="0" />
       <Body width="149" height="112" density="15" />
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20">
-        <RequiredSkill identifier="weapons" level="60" />
+        <RequiredSkill identifier="weapons" level="55" />
         <RequiredItem identifier="tsm_fn509_pistols" />
         <RequiredItem identifier="tsm_handgun_box" />
         <RequiredItem identifier="tsm_item_box" />
         <RequiredItem identifier="tsm_plastic" />
       </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="55" />
+        <RequiredItem identifier="tsm_glock18_pistols" amount="1" />
+        <Item identifier="tsm_handgun_box" amount="1" />
+      </Fabricate>
       <Deconstruct time="10">
         <Item identifier="titaniumaluminiumalloy" />
       </Deconstruct>
-      <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="150,0" holdangle="-45" aimpos="90,5" handle1="-50,-7" msg="ItemMsgPickUpSelect">
-        <StatusEffect type="OnActive" target="This">
-          <Conditional Condition="lte 0" />
-        </StatusEffect>
-      </Holdable>
-      <RangedWeapon weapondamagemodifier="1.1" barrelpos="35,30" spread="13" unskilledspread="35" combatPriority="45" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.13">
+      <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="150,0" holdangle="-45" aimpos="90,5" handle1="-50,-7" msg="ItemMsgPickUpSelect"/>
+      <RangedWeapon weapondamagemodifier="1.1" barrelpos="35,30" spread="13" unskilledspread="35" combatPriority="45" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.12">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -186,11 +211,27 @@
           <RequiredItem items="tsm_pistols_silencers" type="Contained" targetslot="4"/>
           <Sound file="%ModDir%/weapons/其他/xy2.ogg" type="OnUse" range="1000" />
         </StatusEffect>
+        <StatusEffect type="OnUse" target="This" condition="-100.0" disabledeltatime="true" />
+        <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+          <Conditional HasTag="tsm_9_mag_18" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" condition="100.0" delay="0.08" disabledeltatime="true">
+          <RequiredItem items="tsm_9_mag" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" condition="100.0" delay="0.08" disabledeltatime="true">
+          <RequiredItem items="tsm_9_krmag" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" condition="100.0" delay="0.08" disabledeltatime="true">
+          <RequiredItem items="tsm_9_drum" type="Contained" />
+        </StatusEffect>
         <StatusEffect type="OnUse" target="This">
           <Explosion range="150.0" force="0.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="Contained">
           <Use />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This">
+          <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="1" scalemax="1" />
         </StatusEffect>
         <RequiredItems items="tsm_9_mag_18" type="Contained" msg="ItemMsgAmmoRequired" />
         <RequiredSkill identifier="weapons" level="60" />
@@ -199,7 +240,7 @@
         <!-- 外观 itempos(x)-=26 -->
         <!--1.弹匣-->
         <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-        <Containable items="tsm_9_mag_18" hide="false" itempos="-13,-10.5" depth="0.56">
+        <Containable items="tsm_9_mag_18" hide="false" itempos="-15,-11.5" depth="0.56">
           <!--换弹-->
           <StatusEffect type="OnInserted" target="This" maxchargetime="999" setvalue="true"/>
           <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -242,10 +283,15 @@
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="4,12,162,87" depth="0.55" origin="0.5,0.5" />
       <Body width="162" height="87" density="20" />
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20">
-        <RequiredSkill identifier="weapons" level="70" />
+        <RequiredSkill identifier="weapons" level="60" />
         <RequiredItem identifier="tsm_1911_pistols" />
         <RequiredItem identifier="tsm_handgun_box" amount="2" />
         <RequiredItem identifier="plastic" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="60" />
+        <RequiredItem identifier="tsm_de_handgun" amount="1" />
+        <Item identifier="tsm_handgun_box" amount="1" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="titaniumaluminiumalloy" />
@@ -261,6 +307,9 @@
         </StatusEffect>
         <StatusEffect type="OnUse" target="Contained">
           <Use />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This">
+          <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="1" scalemax="1" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="Character,Limb" disabledeltatime="true" comparison="and" targetLimbs="LeftHand,RightHand">
           <Conditional skillrequirement="true" weapons="lt 70" />
@@ -295,6 +344,11 @@
       <Deconstruct time="10">
         <Item identifier="steel" />
       </Deconstruct>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="40" />
+        <RequiredItem identifier="tsm_05" amount="1" />
+        <Item identifier="tsm_item_box" amount="1" />
+      </Fabricate>
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="658,914,80,85" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="279,7,352,128" depth="0.55" origin="0.5,0.5" />
       <Body width="352" height="128" density="25" />
@@ -359,9 +413,14 @@
     </Item>
     <Item name="171" identifier="tsm_171" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" scale="0.265" impactsoundtag="impact_metal_light" description="">
       <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="15" requiresrecipe="false">
-        <RequiredSkill identifier="weapons" level="20" />
+        <RequiredSkill identifier="weapons" level="25" />
         <RequiredItem identifier="steel" amount="1" />
         <RequiredItem identifier="tsm_item_box" amount="1" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="25" />
+        <RequiredItem identifier="tsm_171" amount="1" />
+        <Item identifier="tsm_item_box" amount="1" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="steel" />
@@ -452,10 +511,15 @@
     </Item>
     <Item name="JS-9冲锋枪" identifier="tsm_js9" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" scale="0.265" impactsoundtag="impact_metal_light" description="">
       <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="15" requiresrecipe="false">
-        <RequiredSkill identifier="weapons" level="20" />
+        <RequiredSkill identifier="weapons" level="25" />
         <RequiredItem identifier="tsm_plastic" amount="2" />
         <RequiredItem identifier="tsm_item_box" amount="2" />
         <RequiredItem identifier="tsm_171" amount="1" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="25" />
+        <RequiredItem identifier="tsm_js9" amount="1" />
+        <Item identifier="tsm_item_box" amount="1" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="steel" />
@@ -549,10 +613,15 @@
     </Item>
     <Item name="P90冲锋枪" identifier="tsm_p90" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" scale="0.255" impactsoundtag="impact_metal_light" description="">
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="15" requiresrecipe="false">
-        <RequiredSkill identifier="weapons" level="50" />
+        <RequiredSkill identifier="weapons" level="45" />
         <RequiredItem identifier="tsm_js9" amount="1" />
         <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="3" />
         <RequiredItem identifier="tsm_item_box" amount="2" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="45" />
+        <RequiredItem identifier="tsm_p90" amount="1" />
+        <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="tsm_item_box" />
@@ -695,6 +764,11 @@
         <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
         <RequiredItem identifier="tsm_item_box" amount="1" />
         <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="50" />
+        <RequiredItem identifier="tsm_mp7" amount="1" />
+        <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="tsm_item_box" />
@@ -839,6 +913,11 @@
         <RequiredItem identifier="tsm_js9" amount="1" />
         <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
         <RequiredItem identifier="tsm_item_box" amount="1" />
+        <RequiredItem identifier="tsm_hpc" amount="1" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="50" />
+        <RequiredItem identifier="tsm_ump45" amount="1" />
         <RequiredItem identifier="tsm_hpc" amount="1" />
       </Fabricate>
       <Deconstruct time="10">
@@ -989,6 +1068,11 @@
         <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="2" />
         <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
         <RequiredItem identifier="tsm_hpc" amount="1" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="50" />
+        <RequiredItem identifier="tsm_vk" amount="1" />
+        <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="tsm_lm_weaponbox" />

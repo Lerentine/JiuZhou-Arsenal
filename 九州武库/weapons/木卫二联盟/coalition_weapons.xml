@@ -18,6 +18,11 @@
       <Item identifier="plastic" amount="2" />
       <Item identifier="iron" amount="2"/>
     </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="25" />
+      <RequiredItem identifier="tsm_lm_l85a2" amount="1" />
+      <Item identifier="tsm_item_box" amount="1" />
+    </Fabricate>
     <Deconstruct time="10">
       <Item identifier="iron" />
       <Item identifier="plastic" />
@@ -83,7 +88,7 @@
       <StatusEffect type="Always" target="This" spread="-6">
         <Conditional spread="gt 10" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+3" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 14" />
         <Conditional CanRun="true" />
       </StatusEffect>
@@ -134,10 +139,15 @@
       <Price locationtype="military" maxavailable="1"/>
     </Price>
     <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="25" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="25" />
+      <RequiredSkill identifier="weapons" level="30" />
       <Item identifier="tsm_lm_l85a2" amount="1" />
       <Item identifier="plastic" amount="2" />
       <Item identifier="tsm_item_box" amount="1"/>
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="tsm_lm_famas" amount="1" />
+      <Item identifier="tsm_item_box" amount="1" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="steel" />
@@ -226,11 +236,11 @@
       <StatusEffect type="Always" target="This" spread="-4">
         <Conditional spread="gt 7" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.4" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+3.08" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 14" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.4" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+3.52" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 10" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -270,7 +280,7 @@
       <!-- 外观 itempos(x)-=26 -->
       <!--1.弹匣-->
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="556mag" hide="false" itempos="-22,-8" depth="0.56" excludeditems="lm_556kr_drum">
+      <Containable items="556mag" hide="false" itempos="-22,-8" depth="0.56">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" holdpos="15,-20" holdangle="80" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -328,10 +338,15 @@
       <Price locationtype="military" maxavailable="1"/>
     </Price>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="25" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
       <RequiredItem identifier="tsm_item_box" amount="1" />
       <RequiredItem identifier="tsm_lm_famas" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="35" />
+      <RequiredItem identifier="tsm_lm_aug" amount="1" />
+      <Item identifier="tsm_lm_weaponbox" amount="1" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="steel" />
@@ -405,11 +420,11 @@
       <StatusEffect type="Always" target="This" spread="-6">
         <Conditional spread="gt 10" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+1.8" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.4" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 15" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.6" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+3.6" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 13" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -452,7 +467,7 @@
       <!-- 外观 itempos(x)-=26 -->
       <!--1.弹匣-->
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="556mag" hide="false" itempos="-17,-8" depth="0.56" excludeditems="lm_556kr_drum">
+      <Containable items="556mag" hide="false" itempos="-17,-8" depth="0.56">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" holdpos="10,-25" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -506,6 +521,11 @@
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
       <RequiredItem identifier="tsm_lm_aug" amount="1" />
       <RequiredItem identifier="tsm_plastic" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="45" />
+      <RequiredItem identifier="tsm_lm_tavor21" amount="1" />
+      <Item identifier="tsm_lm_weaponbox" amount="1" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="steel" />
@@ -582,11 +602,11 @@
       <StatusEffect type="Always" target="This" spread="-8">
         <Conditional spread="gt 9" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.2" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+3.3" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 15" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.2" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.7" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 12" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -608,12 +628,12 @@
         <Conditional spread="gt 6" />
         <Conditional HasStatusTag="tsm_sight_holographic" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="-0.2" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="-0.3" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 16" />
         <Conditional HasStatusTag="tsm_sight_reddot" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="-0.2" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="-0.3" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 11" />
         <Conditional HasStatusTag="tsm_sight_reddot" />
         <Conditional CanRun="false" />
@@ -626,7 +646,7 @@
       <!-- 外观 itempos(x)-=26 -->
       <!--1.弹匣-->
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="556mag" hide="false" itempos="-19,-8" depth="0.56" excludeditems="lm_556kr_drum">
+      <Containable items="556mag" hide="false" itempos="-19,-8" depth="0.56">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" holdpos="10,-20" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -681,6 +701,11 @@
       <RequiredItem identifier="tsm_lm_tavor21" amount="1" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
       <RequiredItem identifier="tsm_plastic" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="55" />
+      <RequiredItem identifier="tsm_lm_vsh2" amount="1" />
+      <Item identifier="tsm_hpc" amount="1" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="titaniumaluminiumalloy" />
@@ -753,11 +778,11 @@
       <StatusEffect type="Always" target="This" spread="-8">
         <Conditional spread="gt 9" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.5" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+3.4" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 15" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.5" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+3.5" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 13" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -779,12 +804,12 @@
         <Conditional spread="gt 6" />
         <Conditional HasStatusTag="tsm_sight_holographic" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="-0.3" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="-0.2" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 15" />
         <Conditional HasStatusTag="tsm_sight_reddot" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="-0.4" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="-0.6" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 13" />
         <Conditional HasStatusTag="tsm_sight_reddot" />
         <Conditional CanRun="false" />
@@ -851,6 +876,11 @@
       <RequiredItem identifier="tsm_hpc" amount="1" />
       <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
     </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="tsm_lm_mdr" amount="1" />
+      <Item identifier="tsm_hpc" amount="1" />
+    </Fabricate>
     <Deconstruct time="10">
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="steel" />
@@ -914,22 +944,22 @@
       <StatusEffect type="Always" target="This" unskilledspread="-20">
         <Conditional unskilledspread="gt 14" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" unskilledspread="+3.3" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" unskilledspread="+5.3" disabledeltatime="true" comparison="and">
         <Conditional unskilledspread="lt 30" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" unskilledspread="+2.7" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" unskilledspread="+4.5" disabledeltatime="true" comparison="and">
         <Conditional unskilledspread="lt 20" />
         <Conditional CanRun="false" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" spread="-10">
         <Conditional spread="gt 8" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+1.5" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.6" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 16" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.8" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+3.6" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 11" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -1005,10 +1035,10 @@
   </Item>
   <Item name="联盟MDR无托战斗步枪-渗透型" identifier="tsm_lm_mdr_c" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,rm277,provocativetohumanai,bulkyweapon" scale="0.21" impactsoundtag="impact_metal_light" >
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="40" />
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="tsm_lm_mdr_c" amount="1" />
-      <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
+      <Item identifier="tsm_hpc" amount="1" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="tsm_hpc" />
@@ -1118,6 +1148,11 @@
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
       <RequiredItem identifier="tsm_lm_tavor21" amount="1" />
     </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredItem identifier="tsm_lm_scarh" amount="1" />
+      <Item identifier="tsm_yx_crystallography" amount="1" />
+    </Fabricate>
     <!--分解-->
     <Deconstruct time="10">
       <Item identifier="tsm_hpc" />
@@ -1191,18 +1226,18 @@
         <Conditional unskilledspread="lt 22" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" unskilledspread="+2.2" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" unskilledspread="+3.4" disabledeltatime="true" comparison="and">
         <Conditional unskilledspread="lt 16" />
         <Conditional CanRun="false" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" spread="-7">
         <Conditional spread="gt 9" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.4" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+3" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 13" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.1" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.7" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 11" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -1224,7 +1259,7 @@
         <Conditional spread="gt 6" />
         <Conditional HasStatusTag="tsm_sight_holographic" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="-0.2" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="-0.4" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 13" />
         <Conditional HasStatusTag="tsm_sight_reddot" />
         <Conditional CanRun="true" />
@@ -1311,6 +1346,12 @@
       <RequiredItem identifier="tsm_plastic" amount="3" />
       <RequiredItem identifier="tsm_yx_crystallography" amount="2" />
     </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredItem identifier="tsm_lm_rm277" amount="1" />
+      <Item identifier="tsm_yx_crystallography" amount="1" />
+      <RequiredItem identifier="tsm_hpc" amount="1" />
+    </Fabricate>
     <Deconstruct time="10">
       <Item identifier="tsm_hpc" />
       <Item identifier="tsm_plastic" />
@@ -1323,7 +1364,7 @@
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.11" holdtrigger="true" weapondamagemodifier="1" penetration="0.15" barrelpos="175,15" spread="8" unskilledspread="30" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.11" holdtrigger="true" weapondamagemodifier="1.05" barrelpos="175,15" spread="8" unskilledspread="30" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4469,241,243" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="336,4520,176,175" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -1463,6 +1504,11 @@
       <Item identifier="plastic" amount="2" />
       <Item identifier="iron" amount="1"/>
     </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="tsm_lm_m16" amount="1" />
+      <Item identifier="tsm_item_box" amount="1" />
+    </Fabricate>
     <Deconstruct time="10">
       <Item identifier="iron" />
     </Deconstruct>
@@ -1525,11 +1571,11 @@
       <StatusEffect type="Always" target="This" spread="-8">
         <Conditional spread="gt 7" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.3" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+3.4" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 14" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+1.6" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.6" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 12" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -1576,6 +1622,11 @@
       <RequiredItem identifier="tsm_lm_m16" amount="1" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
       <RequiredItem identifier="tsm_item_box" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="tsm_lm_m16a4" amount="1" />
+      <Item identifier="tsm_lm_weaponbox" amount="1" />
     </Fabricate>
     <!--分解-->
     <Deconstruct time="10">
@@ -1671,7 +1722,7 @@
         <Conditional spread="lt 14" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+1.4" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.4" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 11" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -1764,10 +1815,15 @@
       <Price storeidentifier="merchantresearch" minamount="0" maxamount="0"/>
     </Price>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="35" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="tsm_lm_m16a4" amount="1" />
       <RequiredItem identifier="tsm_hpc" amount="1" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="tsm_lm_m110" amount="1" />
+      <Item identifier="tsm_hpc" amount="1" />
     </Fabricate>
     <!--分解-->
     <Deconstruct time="10">
@@ -1859,7 +1915,7 @@
       <StatusEffect type="Always" target="This" spread="-12">
         <Conditional spread="gt 1" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.3" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+3" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 8" />
         <Conditional CanRun="true" />
       </StatusEffect>
@@ -1915,6 +1971,11 @@
       <RequiredItem identifier="tsm_lm_m16" amount="1" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
       <RequiredItem identifier="tsm_item_box" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="tsm_lm_ar15" amount="1" />
+      <Item identifier="tsm_lm_weaponbox" amount="1" />
     </Fabricate>
     <!--分解-->
     <Deconstruct time="10">
@@ -1994,7 +2055,7 @@
         <Conditional spread="lt 15" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.5" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+3.5" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 12" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -2085,11 +2146,15 @@
       <Reputation faction="coalition" min="60" />
     </Price>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="45" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredSkill identifier="weapons" level="65" />
       <RequiredItem identifier="tsm_lm_ar15" amount="1" />
       <RequiredItem identifier="tsm_hpc" amount="1" />
-      <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
       <RequiredItem identifier="tsm_item_box" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem identifier="tsm_lm_m4" amount="1" />
+      <Item identifier="tsm_hpc" amount="1" />
     </Fabricate>
     <!--分解-->
     <Deconstruct time="10">
@@ -2294,6 +2359,11 @@
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
       <RequiredItem identifier="tsm_blueprint" amount="1" />
     </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredItem identifier="tsm_lm_hk416" amount="1" />
+      <Item identifier="tsm_blueprint" amount="1" />
+    </Fabricate>
     <!--分解-->
     <Deconstruct time="10">
       <Item identifier="tsm_lm_weaponbox" />
@@ -2387,11 +2457,11 @@
       <StatusEffect type="Always" target="This" spread="-10">
         <Conditional spread="gt 9" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.4" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.8" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 13" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.5" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.8" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 11" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -2413,12 +2483,12 @@
         <Conditional spread="gt 4" />
         <Conditional HasStatusTag="tsm_sight_holographic" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="-0.35" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="-0.3" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 13" />
         <Conditional HasStatusTag="tsm_sight_reddot" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="-0.35" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="-0.3" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 11" />
         <Conditional HasStatusTag="tsm_sight_reddot" />
         <Conditional CanRun="false" />
@@ -2481,11 +2551,16 @@
     </Price>
     <!--制作-->
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="45" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="tsm_plastic" amount="4" />
       <RequiredItem identifier="tsm_hpc" amount="1" />
-      <RequiredItem identifier="tsm_lm_weaponbox" amount="2" />
+      <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
       <RequiredItem identifier="tsm_lm_ar15" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="tsm_lm_mk18" amount="1" />
+      <Item identifier="tsm_lm_weaponbox" amount="1" />
     </Fabricate>
     <!--分解-->
     <Deconstruct time="10">
@@ -2593,11 +2668,11 @@
       <StatusEffect type="Always" target="This" spread="-6">
         <Conditional spread="gt 9" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+1.82" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.82" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 12" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.51" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+3.51" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 11" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -2688,13 +2763,19 @@
       <Price storeidentifier="merchantresearch" minamount="0" maxamount="0" />
     </Price>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="45" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredSkill identifier="weapons" level="75" />
       <RequiredItem identifier="tsm_blueprint" amount="1" />
       <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
       <RequiredItem identifier="tsm_plastic" amount="3" />
       <RequiredItem identifier="tsm_hpc" amount="2" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="2" />
       <RequiredItem tag="mcx" description="fabricationdescription.mcx" mincondition="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="75" />
+      <RequiredItem identifier="tsm_lm_mcx" amount="1" />
+      <Item identifier="tsm_hpc" amount="1" />
+      <Item identifier="tsm_yx_crystallography" amount="1" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="tsm_hpc" />
@@ -2709,7 +2790,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.11" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="190,30" spread="9" unskilledspread="30" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.105" weapondamagemodifier="1" holdtrigger="true" barrelpos="190,30" spread="9" unskilledspread="30" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="311,3750,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="35,3750,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -2773,11 +2854,11 @@
       <StatusEffect type="Always" target="This" spread="-10">
         <Conditional spread="gt 3" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.25" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.75" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 11" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.1" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.25" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 9" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -2839,6 +2920,12 @@
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
       <RequiredItem identifier="tsm_item_box" amount="1" />
       <RequiredItem identifier="tsm_blueprint" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredItem identifier="tsm_lm_hk417" amount="1" />
+      <Item identifier="tsm_hpc" amount="1" />
+      <Item identifier="tsm_blueprint" amount="1" />
     </Fabricate>
     <!--分解-->
     <Deconstruct time="10">
@@ -2927,11 +3014,11 @@
       <StatusEffect type="Always" target="This" spread="-20">
         <Conditional spread="gt 8" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.8" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+3.2" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 13" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.6" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+3" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 11" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -2948,9 +3035,9 @@
         <StatusEffect type="OnInserted" target="This" holdpos="10,-30" holdangle="80" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_3_0.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_8.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
-        <StatusEffect target="This" holdpos="63,-8" aimpos="70,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="3" maxchargetime="0" setvalue="true">
+        <StatusEffect target="This" holdpos="63,-8" aimpos="70,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.8" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
         </StatusEffect>
       </Containable>
@@ -3009,6 +3096,12 @@
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
       <RequiredItem identifier="tsm_plastic" amount="2" />
     </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredItem identifier="tsm_lm_mk14ebr" amount="1" />
+      <Item identifier="tsm_lm_weaponbox" amount="1" />
+      <Item identifier="tsm_blueprint" amount="1" />
+    </Fabricate>
     <!--分解-->
     <Deconstruct time="10">
       <Item identifier="tsm_lm_weaponbox" />
@@ -3025,7 +3118,7 @@
       </StatusEffect>
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.11" weapondamagemodifier="1.3" holdtrigger="true" barrelpos="250,20" spread="11" unskilledspread="40" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.12" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="250,20" spread="11" unskilledspread="40" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="307,3013,197,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="24,3083,222,136" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -3099,11 +3192,11 @@
       <StatusEffect type="Always" target="This" spread="-20">
         <Conditional spread="gt 4" />
       </StatusEffect>2
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.4" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+3.4" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 10" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.6" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.8" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 6" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -3120,9 +3213,9 @@
         <StatusEffect type="OnInserted" target="This" holdpos="0,-40" holdangle="80" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_85.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
         </StatusEffect>
-        <StatusEffect target="This" holdpos="68,-8" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.7" maxchargetime="0" setvalue="true">
+        <StatusEffect target="This" holdpos="68,-8" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.9" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999"/>
         </StatusEffect>
       </Containable>
@@ -3174,6 +3267,12 @@
       <RequiredItem identifier="tsm_blueprint" amount="1" />
       <RequiredItem identifier="tsm_hpc" amount="2" />
       <RequiredItem tag="hk433_item" description="fabricationdescription.hk433_item" mincondition="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredItem identifier="tsm_lm_hk433" amount="1" />
+      <Item identifier="tsm_hpc" amount="1" />
+      <Item identifier="tsm_blueprint" amount="1" />
     </Fabricate>
     <!--分解-->
     <Deconstruct time="10">
@@ -3263,7 +3362,7 @@
         <Conditional spread="lt 13" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+1" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.7" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 9" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -3365,7 +3464,7 @@
       <Price storeidentifier="merchantresearch" minamount="0" maxamount="1" />
       <Reputation faction="coalition" min="50" />
     </Price>
-    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="70" />
       <RequiredItem identifier="tsm_lm_drh" amount="1" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
@@ -3516,8 +3615,8 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="70" />
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="tsm_lm_97" amount="1" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
     </Fabricate>
@@ -3632,8 +3731,8 @@
       <Item identifier="tsm_hpc" />
       <Item identifier="tsm_lm_weaponbox" />
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="70" />
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="65" />
       <RequiredItem identifier="tsm_lm_mk18_c" amount="1" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
     </Fabricate>
@@ -3754,8 +3853,8 @@
       <Item identifier="iron" />
       <Item identifier="aluminium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="70" />
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="65" />
       <RequiredItem identifier="tsm_lm_m4_c" amount="1" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
     </Fabricate>
@@ -3961,11 +4060,11 @@
       <StatusEffect type="Always" target="This" spread="-8">
         <Conditional spread="gt 8" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.4" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.65" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 14" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.2" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.8" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 10" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -4163,7 +4262,7 @@
       <StatusEffect type="Always" target="This" spread="-5">
         <Conditional spread="gt 9" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+1" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+1.5" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 15" />
         <Conditional CanRun="true" />
       </StatusEffect>
@@ -4259,18 +4358,22 @@
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1393,2387,150,181" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1466,1166,335,124" depth="0.55" origin="0.5,0.5" />
-    <Price baseprice="433" displaynonempty="true" minleveldifficulty="40" buyingpricemultiplier="5">
-      <Price storeidentifier="merchantarmory" multiplier="1.1" minamount="0" maxamount="2" sold="false"/>
-      <Price storeidentifier="merchantcity" multiplier="1.5" minamount="0" maxamount="1" sold="false"/>
-      <Price storeidentifier="merchantresearch" multiplier="1.3" minamount="0" maxamount="1" sold="false"/>
-      <Reputation faction="coalition" min="60" />
+    <Price baseprice="433" displaynonempty="true" buyingpricemultiplier="5">
+      <Price storeidentifier="merchantarmory"  minamount="0" maxamount="0" />
+      <Price storeidentifier="merchantcity"  minamount="0" maxamount="0" />
+      <Price storeidentifier="merchantresearch"  minamount="0" maxamount="0" />
     </Price>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="45" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="tsm_lm_czbren3" amount="1" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
       <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
       <RequiredItem identifier="tsm_plastic" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="tsm_lm_mcxxws" amount="1" />
+      <Item identifier="tsm_yx_crystallography" amount="1" />
     </Fabricate>
     <!--分解-->
     <Deconstruct time="10">
@@ -4352,11 +4455,11 @@
       <StatusEffect type="Always" target="This" spread="-11">
         <Conditional spread="gt 10" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.8" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+3" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 15" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.3" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.8" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 12" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -4435,8 +4538,8 @@
     <Deconstruct time="10">
       <Item identifier="tsm_hpc" />
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="70" />
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="65" />
       <RequiredItem identifier="tsm_lm_mk18_l" amount="1" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
     </Fabricate>
@@ -4539,11 +4642,16 @@
     </Price>
     <!--制作-->
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="45" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredSkill identifier="weapons" level="65" />
       <RequiredItem tag="g36_item" description="fabricationdescription.g36_item" mincondition="1" />
       <RequiredItem identifier="tsm_plastic" amount="4" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
       <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem identifier="tsm_lm_g36c" amount="1" />
+      <Item identifier="tsm_yx_crystallography" amount="1" />
     </Fabricate>
     <!--分解-->
     <Deconstruct time="10">
@@ -4646,7 +4754,7 @@
       <StatusEffect type="Always" target="This" spread="-6">
         <Conditional spread="gt 8" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+1.66" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.66" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 13" />
         <Conditional CanRun="true" />
       </StatusEffect>
@@ -4691,7 +4799,7 @@
       <!-- 外观 itempos(x)-=26 -->
       <!--1.弹匣-->
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="556mag" hide="false" itempos="8,-8" depth="0.56" excludeditems="lm_556kr_drum">
+      <Containable items="556mag" hide="false" itempos="8,-8" depth="0.56" >
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" holdpos="10,-25" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -4748,6 +4856,11 @@
       <RequiredItem identifier="tsm_plastic" amount="4" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
       <RequiredItem identifier="tsm_blueprint" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredItem identifier="tsm_lm_g36ka4" amount="1" />
+      <Item identifier="tsm_blueprint" amount="1" />
     </Fabricate>
     <!--分解-->
     <Deconstruct time="10">
@@ -4892,7 +5005,7 @@
       <!-- 外观 itempos(x)-=26 -->
       <!--1.弹匣-->
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="556mag" hide="false" itempos="1,-8" depth="0.56" excludeditems="lm_556kr_drum">
+      <Containable items="556mag" hide="false" itempos="1,-8" depth="0.56">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" holdpos="10,-25" holdangle="70" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -4962,7 +5075,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/木卫二联盟/coalition.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="0,432,472,160" origin="0.45,0" scale="0.25" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon reload="0.11" weapondamagemodifier="1.3" holdtrigger="true" barrelpos="220,5" spread="13" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.11" weapondamagemodifier="1" holdtrigger="true" barrelpos="220,5" spread="13" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -5073,6 +5186,11 @@
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
       <RequiredItem identifier="tsm_item_box" amount="2" />
     </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem identifier="tsm_honeybadger" amount="1" />
+      <Item identifier="tsm_lm_weaponbox" amount="1" />
+    </Fabricate>
     <!--分解-->
     <Deconstruct time="10">
       <Item identifier="tsm_lm_weaponbox" />
@@ -5132,11 +5250,11 @@
       <StatusEffect type="Always" target="This" spread="-10">
         <Conditional spread="gt 6" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.1" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.6" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 15" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2.1" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.5" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 8" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -5233,6 +5351,11 @@
       <RequiredItem identifier="tsm_plastic" amount="1" />
       <RequiredItem identifier="tsm_blueprint" amount="1" />
     </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem identifier="tsm_lm_czbren3" amount="1" />
+      <Item identifier="tsm_lm_weaponbox" amount="1" />
+    </Fabricate>
     <!--分解-->
     <Deconstruct time="10">
       <Item identifier="tsm_hpc" />
@@ -5290,11 +5413,11 @@
       <StatusEffect type="Always" target="This" spread="-10">
         <Conditional spread="gt 6" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.5" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 10" />
         <Conditional CanRun="true" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="+2" disabledeltatime="true" comparison="and">
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.3" disabledeltatime="true" comparison="and">
         <Conditional spread="lt 8" />
         <Conditional CanRun="false" />
       </StatusEffect>
@@ -5403,6 +5526,11 @@
       <RequiredItem identifier="plastic" amount="1" />
       <RequiredItem identifier="tsm_item_box" amount="2" />
     </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="tsm_lm_m249" amount="1" />
+      <Item identifier="tsm_lm_weaponbox" amount="1" />
+    </Fabricate>
     <Deconstruct time="10">
       <Item identifier="plastic" amount="1" />
       <Item identifier="tsm_item_box" amount="1" />
@@ -5419,7 +5547,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/木卫二联盟/coalition.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="571,288,574,163" origin="0.45,0" scale="0.25" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon reload="0.11" weapondamagemodifier="0.8" holdtrigger="true" barrelpos="220,5" spread="15" unskilledspread="30" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.1" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="220,5" spread="15" unskilledspread="30" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,860,198,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="305,860,197,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -5532,6 +5660,11 @@
       <RequiredItem identifier="tsm_plastic" amount="3" />
       <RequiredItem identifier="tsm_grip_mounts" amount="1" />
     </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="55" />
+      <RequiredItem identifier="tsm_lm_mk48" amount="1" />
+      <Item identifier="tsm_lm_weaponbox" amount="1" />
+    </Fabricate>
     <Deconstruct time="10">
       <Item identifier="plastic" amount="1" />
       <Item identifier="titaniumaluminiumalloy" amount="1" />
@@ -5548,7 +5681,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/木卫二联盟/coalition.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="1225,284,518,202" origin="0.45,0" scale="0.25" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon reload="0.11" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="200,20" spread="30" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.1" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="200,20" spread="30" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -5597,14 +5730,14 @@
         <Conditional Condition="eq 0" targetcontaineditem="true" />
         <Sound file="%ModDir%/ogg/reload8.ogg" range="2000" loop="false" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" spread="-0.1" unskilledspread="-1" disabledeltatime="true">
-        <Conditional spread="gte 3" />
+      <StatusEffect type="OnUse" target="This" spread="-0.08" unskilledspread="-0.5" disabledeltatime="true">
+        <Conditional spread="gte 6" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="-0.1" unskilledspread="-1" disabledeltatime="true">
+      <StatusEffect type="OnUse" target="This,Character" spread="-0.08" unskilledspread="-0.5" disabledeltatime="true">
         <Conditional skillrequirement="true" weapons="gte 70" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" spread="3" unskilledspread="10" setvalue="true" disabledeltatime="true">
-        <Conditional spread="lt 3" />
+        <Conditional spread="lt 6" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" setvalue="true" spread="25" unskilledspread="50" delay="0.5" checkconditionalalways="true" disabledeltatime="true">
         <Conditional ReloadTimer="0" />
@@ -5655,10 +5788,15 @@
   <Item name="M240B" identifier="tsm_lm_m240b" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,m60_item,provocativetohumanai,bulkyweapon" Scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="43" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="steel" amount="2" />
       <RequiredItem identifier="tsm_lm_m249" amount="1" />
       <RequiredItem identifier="titaniumaluminiumalloy" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="tsm_lm_m240b" amount="1" />
+      <Item identifier="tsm_lm_weaponbox" amount="1" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="plastic" amount="1" />
@@ -5676,7 +5814,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/木卫二联盟/coalition.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="648,2016,636,145" origin="0.45,0" scale="0.25" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon reload="0.1" weapondamagemodifier="0.8" holdtrigger="true" barrelpos="200,20" spread="30" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="200,20" spread="30" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="307,3237,199,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="24,3230,220,219" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -5722,14 +5860,14 @@
         <Conditional Condition="eq 0" targetcontaineditem="true" />
         <Sound file="%ModDir%/ogg/reload8.ogg" range="2000" loop="false" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" spread="-0.1" unskilledspread="-1" disabledeltatime="true">
-        <Conditional spread="gte 3" />
+      <StatusEffect type="OnUse" target="This" spread="-0.09" unskilledspread="-1" disabledeltatime="true">
+        <Conditional spread="gte 6" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="-0.1" unskilledspread="-1" disabledeltatime="true">
+      <StatusEffect type="OnUse" target="This,Character" spread="-0.09" unskilledspread="-1" disabledeltatime="true">
         <Conditional skillrequirement="true" weapons="gte 75" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" spread="3" unskilledspread="10" setvalue="true" disabledeltatime="true">
-        <Conditional spread="lt 3" />
+      <StatusEffect type="OnUse" target="This" spread="0" unskilledspread="10" setvalue="true" disabledeltatime="true">
+        <Conditional spread="lt 6" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" setvalue="true" spread="30" unskilledspread="50" delay="0.5" checkconditionalalways="true" disabledeltatime="true">
         <Conditional ReloadTimer="0" />
@@ -5772,7 +5910,7 @@
       <!--4.护木-->
       <SubContainer capacity="1" maxstacksize="1">
         <SlotIcon slotindex="1" texture="%ModDir%/png/ui.png" sourcerect="1429,202,37,97" origin="0.45,0.5" />
-        <Containable items="tsm_grip_mounts" hide="false" itempos="43,-12" depth="0.56" setactive="true" />
+        <Containable items="tsm_grip_mech" hide="false" itempos="43,-12" depth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="3000" soundrange="3500" fadeouttime="5" />
@@ -5785,11 +5923,16 @@
   <Item name="M60E6" identifier="tsm_lm_m60e6" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" Scale="0.24" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="43" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredSkill identifier="weapons" level="65" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
       <RequiredItem tag="m60_item" description="fabricationdescription.m60_item" mincondition="1" />
       <RequiredItem identifier="tsm_plastic" amount="3" />
       <RequiredItem identifier="tsm_hpc" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem identifier="tsm_lm_m60e6" amount="1" />
+      <Item identifier="tsm_hpc" amount="1" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="plastic" amount="1" />
@@ -5853,14 +5996,14 @@
         <Conditional Condition="eq 0" targetcontaineditem="true" />
         <Sound file="%ModDir%/ogg/reload8.ogg" range="2000" loop="false" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" spread="-0.08" unskilledspread="-0.05" disabledeltatime="true">
-        <Conditional spread="gte 3" />
+      <StatusEffect type="OnUse" target="This" spread="-0.1" unskilledspread="-0.05" disabledeltatime="true">
+        <Conditional spread="gte 4" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="-0.08" unskilledspread="-0.05" disabledeltatime="true">
+      <StatusEffect type="OnUse" target="This,Character" spread="-0.1" unskilledspread="-0.05" disabledeltatime="true">
         <Conditional skillrequirement="true" weapons="gte 75" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" spread="3" unskilledspread="10" setvalue="true" disabledeltatime="true">
-        <Conditional spread="lt 3" />
+      <StatusEffect type="OnUse" target="This" spread="0" unskilledspread="10" setvalue="true" disabledeltatime="true">
+        <Conditional spread="lt 4" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" setvalue="true" spread="30" unskilledspread="50" delay="0.5" checkconditionalalways="true" disabledeltatime="true">
         <Conditional ReloadTimer="0" />
@@ -5921,12 +6064,18 @@
   <Item name="XM250" identifier="tsm_lm_xm250" subcategory="tsm_coalition" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" Scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="43" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredSkill identifier="weapons" level="70" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="2" />
       <RequiredItem identifier="tsm_lm_m60e6" amount="1" />
       <RequiredItem identifier="tsm_blueprint" amount="1" />
       <RequiredItem identifier="tsm_item_box" amount="2" />
       <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredItem identifier="tsm_lm_xm250" amount="1" />
+      <Item identifier="tsm_yx_crystallography" amount="1" />
+      <Item identifier="tsm_blueprint" amount="1" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="plastic" amount="1" />
@@ -5944,7 +6093,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/木卫二联盟/coalition.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="647,2424,669,125" origin="0.45,-0.2" scale="0.25" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon reload="0.098" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="200,20" spread="30" unskilledspread="100" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.098" weapondamagemodifier="1" holdtrigger="true" barrelpos="200,20" spread="30" unskilledspread="100" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -5990,14 +6139,14 @@
         <Conditional Condition="eq 0" targetcontaineditem="true" />
         <Sound file="%ModDir%/ogg/reload8.ogg" range="2000" loop="false" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" spread="-0.1" unskilledspread="-0.08" disabledeltatime="true">
-        <Conditional spread="gte 3" />
+      <StatusEffect type="OnUse" target="This" spread="-0.09" unskilledspread="-0.08" disabledeltatime="true">
+        <Conditional spread="gte 5" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" spread="-0.1" unskilledspread="-0.08" disabledeltatime="true">
+      <StatusEffect type="OnUse" target="This,Character" spread="-0.09" unskilledspread="-0.08" disabledeltatime="true">
         <Conditional skillrequirement="true" weapons="gte 75" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" spread="3" unskilledspread="10" setvalue="true" disabledeltatime="true">
-        <Conditional spread="lt 3" />
+      <StatusEffect type="OnUse" target="This" spread="0" unskilledspread="10" setvalue="true" disabledeltatime="true">
+        <Conditional spread="lt 5" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" setvalue="true" spread="28" unskilledspread="50" delay="0.5" checkconditionalalways="true" disabledeltatime="true">
         <Conditional ReloadTimer="0" />
@@ -6040,7 +6189,7 @@
       <!--4.护木-->
       <SubContainer capacity="1" maxstacksize="1">
         <SlotIcon slotindex="1" texture="%ModDir%/png/ui.png" sourcerect="1429,202,37,97" origin="0.45,0.5" />
-        <Containable items="tsm_grip_mounts" hide="false" itempos="40,-10" depth="0.56" setactive="true" />
+        <Containable items="tsm_grip_mech" hide="false" itempos="40,-10" depth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="3000" soundrange="3500" fadeouttime="5" />
@@ -6053,13 +6202,20 @@
   <Item name="Minigun" identifier="tsm_lm_minigun" subcategory="tsm_coalition"  category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="bigitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai" HideConditionBar="true" Scale="0.32" health="10" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="15" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredSkill identifier="weapons" level="75" />
       <RequiredSkill identifier="mechanical" level="40" />
       <RequiredItem identifier="tsm_lm_m60e6" amount="1" />
       <RequiredItem identifier="tsm_blueprint" amount="1" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="2" />
       <RequiredItem identifier="tsm_yx_crystallography" amount="2" />
       <RequiredItem identifier="tsm_item_box" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="75" />
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem identifier="tsm_lm_minigun" amount="1" />
+      <Item identifier="tsm_yx_crystallography" amount="1" />
+      <Item identifier="tsm_blueprint" amount="1" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="tsm_lm_weaponbox" />
@@ -6085,7 +6241,7 @@
         <sound file="%ModDir%/Weapons/木卫二联盟/minigun_reload.ogg" type="OnUse" range="500.0" volume="0.6" loop="true" />
       </StatusEffect>
     </Holdable>
-    <RangedWeapon reload="0.08" weapondamagemodifier="1" penetration="0.13" holdtrigger="true" barrelpos="270,-20" spread="30" unskilledspread="70" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.4">
+    <RangedWeapon reload="0.075" weapondamagemodifier="1" penetration="0.15" holdtrigger="true" barrelpos="270,-20" spread="30" unskilledspread="70" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.4">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -6134,7 +6290,7 @@
       <StatusEffect type="OnUse" target="This,Character" spread="-0.1" unskilledspread="-1" disabledeltatime="true">
         <Conditional skillrequirement="true" weapons="gte 75" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" spread="4" unskilledspread="10" setvalue="true" disabledeltatime="true">
+      <StatusEffect type="OnUse" target="This" spread="0" unskilledspread="10" setvalue="true" disabledeltatime="true">
         <Conditional spread="lt 4" />
       </StatusEffect>
       <StatusEffect type="OnSecondaryUse" target="This" spread="28" unskilledspread="50" setvalue="true" delay="0.2" stackable="false" checkconditionalalways="true" disabledeltatime="true">
@@ -6181,10 +6337,15 @@
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="2818" sold="true" canbespecial="false" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40">
-      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredSkill identifier="weapons" level="40" />
       <Item identifier="tsm_lm_weaponbox" amount="1" />
       <Item identifier="tsm_item_box" amount="1" />
       <Item identifier="shotgun" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="tsm_m1014" amount="1" />
+      <Item identifier="tsm_lm_weaponbox" amount="1" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="tsm_lm_weaponbox" amount="0.5" />
@@ -6245,6 +6406,11 @@
       <Item identifier="iron" />
       <Item identifier="tsm_item_box" amount="2" />
       <Item identifier="titanium" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="tsm_ksg" amount="1" />
+      <Item identifier="tsm_item_box" amount="2" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="titanium" amount="1" />
@@ -6332,10 +6498,15 @@
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" spawnprobability="0.1" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40">
-      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredSkill identifier="weapons" level="40" />
       <Item identifier="aluminium" amount="2" />
       <Item identifier="tsm_ksg" />
       <Item identifier="tsm_item_box" amount="2" />
+      <Item identifier="tsm_hpc" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="tsm_lm_dp12" amount="1" />
       <Item identifier="tsm_hpc" amount="1" />
     </Fabricate>
     <Deconstruct time="10">
@@ -6431,11 +6602,16 @@
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="2818" sold="true" canbespecial="false" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40">
-      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredSkill identifier="weapons" level="45" />
       <Item identifier="tsm_lm_weaponbox" amount="1" />
       <Item identifier="tsm_item_box" amount="1" />
       <Item identifier="tsm_hpc" amount="1" />
       <Item identifier="tsm_m1014" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="45" />
+      <RequiredItem identifier="tsm_lm_spas12" amount="1" />
+      <Item identifier="tsm_lm_weaponbox" amount="1" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="tsm_lm_weaponbox" amount="0.5" />
@@ -6599,10 +6775,10 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="1">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="1" targetforce="5" itemdamage="4" severlimbsprobability="0.5">
-        <Affliction identifier="gunshotwound" strength="18" />
+        <Affliction identifier="gunshotwound" strength="17" />
+        <Affliction identifier="blunttrauma" strength="2" />
         <Affliction identifier="gunshotwound" strength="2" probability="0.15" />
-        <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-        <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
+        <Affliction identifier="gunshotwound" strength="1" probability="0.1" />
         <Affliction identifier="bleeding" strength="10" />
         <Affliction identifier="bleedingnonstop" strength="5" probability="0.15" />
         <Affliction identifier="stun" strength="0.2" probability="0.15" />
@@ -6671,8 +6847,8 @@
       <Attack structuredamage="1" targetforce="2" itemdamage="9" penetration="0.1" severlimbsprobability="0.5">
         <Affliction identifier="gunshotwound" strength="17" />
         <Affliction identifier="explosiondamage" strength="3" probability="0.15" />
-        <Affliction identifier="gunshotwound" strength="3" probability="0.1" />
-        <Affliction identifier="gunshotwound" strength="4" probability="0.1" />
+        <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
+        <Affliction identifier="gunshotwound" strength="1" probability="0.1" />
         <Affliction identifier="bleeding" strength="20" />
         <Affliction identifier="bleedingnonstop" strength="10" probability="0.15" />
         <Affliction identifier="stun" strength="0.1" probability="0.25" />
@@ -6703,8 +6879,8 @@
       <Attack structuredamage="1" targetforce="2" itemdamage="9" penetration="0.3" severlimbsprobability="0.5">
         <Affliction identifier="gunshotwound" strength="17" />
         <Affliction identifier="explosiondamage" strength="3" probability="0.15" />
-        <Affliction identifier="gunshotwound" strength="3" probability="0.1" />
-        <Affliction identifier="gunshotwound" strength="4" probability="0.1" />
+        <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
+        <Affliction identifier="gunshotwound" strength="1" probability="0.1" />
         <Affliction identifier="tsm_armorbreak_jz" strength="6" />
         <Affliction identifier="bleeding" strength="20" />
         <Affliction identifier="bleedingnonstop" strength="10" probability="0.15" />
@@ -6736,7 +6912,7 @@
       <Attack structuredamage="0" targetforce="2" itemdamage="12" severlimbsprobability="1">
         <Affliction identifier="gunshotwound" strength="17" />
         <Affliction identifier="explosiondamage" strength="2" probability="0.15" />
-        <Affliction identifier="explosiondamage" strength="2" probability="0.15" />
+        <Affliction identifier="explosiondamage" strength="1" probability="0.15" />
         <Affliction identifier="bleedingnonstop" strength="20" />
         <Affliction identifier="bloodloss" strength="2" />
         <Affliction identifier="bloodloss" strength="1" probability="0.2"/>
@@ -6769,9 +6945,9 @@
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="1" targetforce="2" itemdamage="9" penetration="0.1" severlimbsprobability="0.5">
         <Affliction identifier="gunshotwound" strength="18" />
-        <Affliction identifier="explosiondamage" strength="5" probability="0.15" />
-        <Affliction identifier="explosiondamage" strength="5" probability="0.1" />
-        <Affliction identifier="explosiondamage" strength="5" probability="0.1" />
+        <Affliction identifier="explosiondamage" strength="3" probability="0.15" />
+        <Affliction identifier="explosiondamage" strength="3" probability="0.1" />
+        <Affliction identifier="explosiondamage" strength="3" probability="0.1" />
         <Affliction identifier="bleeding" strength="18" />
         <Affliction identifier="bleeding" strength="7" probability="0.15" />
         <Affliction identifier="stun" strength="0.2" probability="0.25" />
@@ -6923,7 +7099,7 @@
 <!--弹匣-->
   <Item name="联盟弹药箱" subcategory="tsm_coalition" identifier="lm_ammobox" health="700" category="Equipment" tags="mediumitem,ammobox,lm_ammobox,tsm_magbox" scale="0.5" pickdistance="150" impactsoundtag="impact_metal_heavy" maxstacksize="1">
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.54" sourcerect="2271,2376,219,105" origin="0.5,0.5" />
-    <Body width="219" height="105" density="50" />
+    <Body width="219" height="105" density="30" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer primary="wreckarmcab" minamount="0" maxamount="1" spawnprobability="0.03" />
     <PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.03" />
@@ -6942,6 +7118,7 @@
         <RequiredItems items="lm_zd" type="Contained" />
         <Conditional IsFullCondition="false" targetcontaineditem="true" />
         <sound file="%ModDir%/weapons/木卫二联盟/reload4.ogg" type="OnUse" range="300" loop="true" />
+        <!--sound file="%ModDir%/weapons/节日/bell.ogg" type="OnUse" range="300" loop="true" /-->
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" Condition="-25" comparison="and">
         <RequiredItems items="lm_cjzd" type="Contained" />
@@ -6980,7 +7157,7 @@
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2081,175,53,135" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.54" sourcerect="2081,175,53,135" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="53" height="135" density="50" />
+    <Body width="53" height="135" density="15" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt556*45" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="pt556*45" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -7018,7 +7195,7 @@
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2158,175,54,135" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.54" sourcerect="2158,175,54,135" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="54" height="135" density="50" />
+    <Body width="54" height="135" density="15" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="cj556*45" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="cj556*45" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -7061,7 +7238,7 @@
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2075,11,53,134" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2075,11,53,134" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="53" height="134" density="50" />
+    <Body width="53" height="134" density="15" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt762_51" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="pt762_51" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -7092,7 +7269,7 @@
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1998,13,53,134" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="1998,13,53,134" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="53" height="134" density="50" />
+    <Body width="53" height="134" density="15" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt762_51_ap" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="pt762_51_ap" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -7135,7 +7312,7 @@
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2303,0,49,93" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2303,0,49,93" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="49" height="93" density="50" />
+    <Body width="49" height="93" density="7" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt556*45" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="pt556*45" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -7172,7 +7349,7 @@
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2070,653,56,125" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2070,653,56,125" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="45" height="100" density="5" />
+    <Body width="45" height="100" density="9" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt556*45" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="pt556*45" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -7210,7 +7387,7 @@
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2155,669,70,102" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2155,638,74,133" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="45" height="100" density="5" />
+    <Body width="45" height="100" density="10" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt556*45" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="pt556*45" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -7249,7 +7426,7 @@
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2375,0,49,93" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2375,0,49,93" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="49" height="93" density="50" />
+    <Body width="49" height="93" density="7" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="cj556*45" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="cj556*45" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -7303,7 +7480,7 @@
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2157,1,86,94" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2446,0,49,93" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="49" height="93" density="50" />
+    <Body width="49" height="93" density="7" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="gb556*45" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="gb556*45" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -7336,7 +7513,7 @@
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2235,108,47,91" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2235,108,47,91" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="46" height="72" density="50" />
+    <Body width="46" height="72" density="7" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="762_35" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="762_35" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -7407,7 +7584,7 @@
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2008,229,44,78" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2008,229,44,78" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="46" height="72" density="50" />
+    <Body width="40" height="70" density="7" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="68_51_pt" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="68_51_pt" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -7425,7 +7602,7 @@
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem identifier="flashpowder" amount="3" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
-      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="4" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
       <RequiredItem tag="68_51mag" mincondition="0.0" maxcondition="0.0" />
@@ -7441,11 +7618,49 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <Item name="联盟6.8扩容弹匣" identifier="lm_68_51_mag_kr" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="lm_magazine,smallitem,lm_cjzd,68_51mag,magazine,handheldammo" impactsoundtag="impact_metal_light" health="45" >
+    <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1808,218,47,90" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="1808,218,47,90" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="40" height="75" density="9" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="68_51_pt" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="68_51_pt" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="68_51_pt" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Price baseprice="273" buyingpricemultiplier="1" minleveldifficulty="0">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="5" />
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="5" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="5" requiresrecipe="false" amount="1">
+      <RequiredItem identifier="plastic" amount="1" />
+      <RequiredItem identifier="flashpowder" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
+      <RequiredItem identifier="lm_68_51_mag_kr" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="flashpowder" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1"/>
+      <Item identifier="zinc" mincondition="0.9" />
+      <Item identifier="flashpowder" mincondition="0.9" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
   <Item name="联盟6.8穿甲弹弹匣" identifier="lm_68_51ap_magazine" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="6" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="lm_magazine,smallitem,lm_gjzd,68_51mag,magazine,handheldammo" impactsoundtag="impact_metal_light" health="30" >
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1944,229,46,78" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="1944,229,46,78" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="46" height="72" density="50" />
+    <Body width="40" height="70" density="7" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="68_51_ap" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="68_51_ap" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -7485,7 +7700,7 @@
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1878,230,44,78" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="1878,230,44,78" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="46" height="72" density="50" />
+    <Body width="40" height="70" density="7" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="68_51_kj" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="68_51_kj" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -7525,7 +7740,7 @@
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2391,643,84,105" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2391,643,84,105" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="46" height="72" density="50" />
+    <Body width="46" height="72" density="12" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="68_51_pt" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="68_51_pt" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -7563,7 +7778,7 @@
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2281,643,84,105" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2281,643,84,105" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="46" height="72" density="50" />
+    <Body width="46" height="72" density="12" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="68_51_ap" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="68_51_ap" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -7610,7 +7825,7 @@
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2301,322,50,92" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2301,322,50,92" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="50" height="92" density="50" />
+    <Body width="50" height="92" density="10" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt762_51" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="pt762_51" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -7640,7 +7855,7 @@
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2226,323,52,92" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2226,323,52,92" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="52" height="92" density="50" />
+    <Body width="52" height="92" density="10" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt762_51_ap" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="pt762_51_ap" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -7672,7 +7887,7 @@
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2365,431,125,193" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.545" sourcerect="2365,431,125,193" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="125" height="193" density="50" />
+    <Body width="125" height="193" density="17" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt556*45" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="pt556*45" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">

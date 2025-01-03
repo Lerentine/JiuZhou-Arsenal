@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="军用先进防护服" description="这种军用级防护服在奇迹之海分裂前由先进作战小组装备，能够适应很多较为恶劣的环境，最大可下潜6000米。搭配小型磁力鞋，可以在较小的水流中稳定身形。" subcategory="TSM" identifier="tsm_xjzz_suit" category="Diving" tags="diving,deepdiving,divinggear_wearableindoors,provocative,tsm_suit" allowasextracargo="true" scale="0.5" fireproof="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="2">
+  <Item name="军用先进防护服" subcategory="TSM" identifier="tsm_xjzz_suit" category="Diving" tags="diving,deepdiving,divinggear_wearableindoors,provocative,tsm_suit" allowasextracargo="true" scale="0.5" fireproof="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="2">
     <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.0" />
     <Deconstruct time="25">
       <Item identifier="titaniumaluminiumalloy" />
@@ -21,7 +21,7 @@
     <ContainedSprite name="xjzz In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/suit/xjzz_item.png" sourcerect="0,191,225,66" depth="0.55" origin="0.6,0.5" />
     <Body radius="45" width="34" density="20" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="xjzz Helmet Wearable" texture="%ModDir%/suit/xjzz.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hideotherwearables="true" hidelimb="true" sourcerect="421,83,91,91" origin="0.5,0.65">
+      <sprite name="xjzz Helmet Wearable" texture="%ModDir%/suit/xjzz.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.53" hideotherwearables="true" hidelimb="true" sourcerect="454,0,53,65" origin="0.5,0.65">
         <LightComponent range="350.0" lightcolor="70,0,0,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="0.1" setvalue="true">
             <Conditional IsDead="false" />
@@ -29,7 +29,7 @@
           <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="2.0,2.0" />
         </LightComponent>
       </sprite>
-      <sprite name="xjzz Torso" texture="%ModDir%/suit/xjzz.png" limb="Torso" hidelimb="true" depthlimb="Jaw" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="xjzz Torso" texture="%ModDir%/suit/xjzz.png" limb="Torso" hidelimb="true" depthlimb="Jaw" inherittexturescale="false" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" scale="0.52"/>
       <sprite name="xjzz Right Hand" texture="%ModDir%/suit/xjzz.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="xjzz Left Hand" texture="%ModDir%/suit/xjzz.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="xjzz Right Lower Arm" texture="%ModDir%/suit/xjzz.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
@@ -95,8 +95,9 @@
           <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" setvalue="true" />
         </TickBox>
       </CustomInterface>
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.45" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.55" damagesound="" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="triton_7L,tsm_bl,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.8" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.4" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="LimbArmor" />
@@ -145,7 +146,7 @@
     </ItemContainer>
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
   </Item>
-  <Item name="橙无常防护服" description="" subcategory="TSM" identifier="tsm_orangeconstant_suit" category="Diving" tags="diving,deepdiving,divinggear_wearableindoors,provocative,tsm_suit" allowasextracargo="true" scale="0.5" fireproof="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="2">
+  <Item name="橙无常防护服" subcategory="TSM" identifier="tsm_orangeconstant_suit" category="Diving" tags="diving,deepdiving,divinggear_wearableindoors,provocative,tsm_suit" allowasextracargo="true" scale="0.5" fireproof="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="2">
     <Deconstruct time="25">
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="ballisticfiber" amount="2" />
@@ -242,7 +243,7 @@
       </CustomInterface>
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.2" damagesound="" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="explosiondamage" damagemultiplier="0.25" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.25" damagesound="" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.4" damagesound="" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.2" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.2" damagesound="LimbArmor" />
@@ -293,7 +294,7 @@
     </ItemContainer>
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
   </Item>
-  <Item name="重力牵引防护服" description="" subcategory="TSM" identifier="tsm_gravitational_suit" category="Diving" tags="diving,deepdiving,divinggear_wearableindoors,provocative,tsm_suit" allowasextracargo="true" scale="0.5" fireproof="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="2">
+  <Item name="重力牵引防护服" subcategory="TSM" identifier="tsm_gravitational_suit" category="Diving" tags="diving,deepdiving,divinggear_wearableindoors,provocative,tsm_suit" allowasextracargo="true" scale="0.5" fireproof="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="2">
     <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.0" />
     <Deconstruct time="30">
       <Item identifier="titaniumaluminiumalloy" />
@@ -496,8 +497,9 @@
           <StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" HudTint="0,0,0,0" interval="0.1" />
         </TickBox>
       </CustomInterface>
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="explosiondamage" damagemultiplier="0.5" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.5" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.25" damagesound="" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="triton_7L,tsm_bl" armorsector="0.0,360.0" damagemultiplier="0.6" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.2" damagesound="LimbArmor" />
@@ -561,7 +563,7 @@
     <ContainedSprite name="bltj In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/suit/bltj_item.png" sourcerect="0,191,225,66" depth="0.55" origin="0.6,0.5" />
     <Body radius="45" width="34" density="20" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="bltj Helmet Wearable" texture="%ModDir%/Jobgear/heads.png" limb="Head" inheritlimbdepth="true" inheritscale="false" depthlimb="LeftArm" scale="0.285" hideotherwearables="true" hidelimb="true" sourcerect="434,13,103,115" origin="0.48,0.55">
+      <sprite name="bltj Helmet Wearable" texture="%ModDir%/Jobgear/heads.png" limb="Head" inheritlimbdepth="true" inheritscale="false" depthlimb="LeftArm" scale="0.3" hideotherwearables="true" hidelimb="true" sourcerect="434,13,103,115" origin="0.48,0.61">
         <LightComponent range="700.0" lightcolor="150,0,0,200" powerconsumption="10" IsOn="true" allowingameediting="false">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="0.1" setvalue="true">
             <Conditional IsDead="false" />
@@ -569,20 +571,20 @@
           <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.505" size="1.3,1.5" />
         </LightComponent>
       </sprite>
-      <sprite name="bltj Torso" texture="%ModDir%/suit/bltj.png" limb="Torso" hidelimb="true" depthlimb="Jaw" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" origin="0.52,0.45" sourcerect="160,0,112,192" />
-      <sprite name="bltj Right Hand" texture="%ModDir%/suit/bltj.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="297,168,27,39" origin="0.2,0.1" />
-      <sprite name="bltj Left Hand" texture="%ModDir%/suit/bltj.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="358,168,33,38" origin="0.2,0.1" />
-      <sprite name="bltj Right Arm" texture="%ModDir%/suit/bltj.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="276,0,59,86" origin="0.4,0.5" />
-      <sprite name="bltj Left Arm" texture="%ModDir%/suit/bltj.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="342,0,59,86" origin="0.4,0.5" />
-      <sprite name="bltj Right Forearm" texture="%ModDir%/suit/bltj.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="400,80,48,96" origin="0.4,0.4" />
-      <sprite name="bltj Left Forearm" texture="%ModDir%/suit/bltj.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="462,80,50,96" origin="0.4,0.4" />
-      <sprite name="bltj Waist" texture="%ModDir%/suit/bltj.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" origin="0.54293245,0.49012104" sourcerect="160,192,107,64" />
-      <sprite name="bltj Right Thigh" texture="%ModDir%/suit/bltj.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="13,5,67,123" origin="0.5,0.48" />
-      <sprite name="bltj Left Thigh" texture="%ModDir%/suit/bltj.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="89,5,71,123" origin="0.5,0.48" />
-      <sprite name="bltj Right Leg" texture="%ModDir%/suit/bltj.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="16,132,61,112" origin="0.5,0.5" />
-      <sprite name="bltj Left Leg" texture="%ModDir%/suit/bltj.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="95,132,61,112" origin="0.5,0.5" />
-      <sprite name="bltj Left Shoe" texture="%ModDir%/suit/bltj.png" limb="LeftFoot" depthlimb="LeftThigh" sound="tsm_footstep_III" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="267,208,74,48" origin="0.54,0.38" />
-      <sprite name="bltj Right Shoe" texture="%ModDir%/suit/bltj.png" limb="RightFoot" depthlimb="RightThigh" sound="tsm_footstep_III" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="362,208,74,48" origin="0.55,0.38" />
+      <sprite name="bltj Torso" texture="%ModDir%/suit/bltj.png" limb="Torso" hidelimb="true" depthlimb="Jaw" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" scale="0.52" origin="0.52,0.47" sourcerect="160,0,112,192" />
+      <sprite name="bltj Right Hand" texture="%ModDir%/suit/bltj.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="297,168,27,39" origin="0.2,0.13" />
+      <sprite name="bltj Left Hand" texture="%ModDir%/suit/bltj.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="358,168,33,38" origin="0.2,0.13" />
+      <sprite name="bltj Right Arm" texture="%ModDir%/suit/bltj.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="276,0,59,86" origin="0.4,0.53" />
+      <sprite name="bltj Left Arm" texture="%ModDir%/suit/bltj.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="342,0,59,86" origin="0.4,0.53" />
+      <sprite name="bltj Right Forearm" texture="%ModDir%/suit/bltj.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="400,80,48,96" origin="0.4,0.43" />
+      <sprite name="bltj Left Forearm" texture="%ModDir%/suit/bltj.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="462,80,50,96" origin="0.4,0.43" />
+      <sprite name="bltj Waist" texture="%ModDir%/suit/bltj.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" origin="0.54293245,0.52" sourcerect="160,192,107,64" />
+      <sprite name="bltj Right Thigh" texture="%ModDir%/suit/bltj.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="13,5,67,123" origin="0.5,0.51" />
+      <sprite name="bltj Left Thigh" texture="%ModDir%/suit/bltj.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="89,5,71,123" origin="0.5,0.51" />
+      <sprite name="bltj Right Leg" texture="%ModDir%/suit/bltj.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="16,132,61,112" origin="0.5,0.53" />
+      <sprite name="bltj Left Leg" texture="%ModDir%/suit/bltj.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="95,132,61,112" origin="0.5,0.53" />
+      <sprite name="bltj Left Shoe" texture="%ModDir%/suit/bltj.png" limb="LeftFoot" depthlimb="LeftThigh" sound="tsm_footstep_III" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="267,208,74,48" origin="0.54,0.41" />
+      <sprite name="bltj Right Shoe" texture="%ModDir%/suit/bltj.png" limb="RightFoot" depthlimb="RightThigh" sound="tsm_footstep_III" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="362,208,74,48" origin="0.55,0.41" />
       <sprite name="Hide Boobs" texture="%ModDir%/Jobgear/wu.png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <StatusEffect type="OnWearing" target="Character" UseHullOxygen="true" ObstructVisionAmount="0.2" PressureProtection="6000.0" SpeedMultiplier="0.8" PropulsionSpeedMultiplier="1" LowPassMultiplier="0.1" setvalue="true" disabledeltatime="true">
         <StatValue stattype="FlowResistance" value="0.8" />
@@ -636,12 +638,12 @@
         </TickBox>
       </CustomInterface>
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,bitewounds" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="explosiondamage" damagemultiplier="0.5" damagesound="" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="blunttrauma" damagemultiplier="0.2" damagesound="" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="lacerations" damagemultiplier="0.3" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.5" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.2" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.3" damagesound="" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="triton_7L,tsm_bl" armorsector="0.0,360.0" damagemultiplier="0.7" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.15" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.15" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.0" damagesound="LimbArmor" />
       <ItemComponent IsActiveConditionalComparison="Or">
         <IsActive HullOxygenPercentage="lt 50" />

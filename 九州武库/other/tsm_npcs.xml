@@ -119,7 +119,7 @@
       </ItemSet>
     </npc>
     <!--vip服务-->
-    <npc identifier="tsm_vip_bodyguard_1" tags="securitynpc" job="securityofficer" behavior="Active" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.2" aimspeed="30" aimaccuracy="1" reportrange="10000">
+    <npc identifier="tsm_vip_bodyguard_1" tags="securitynpc" job="tsm_outpostsecurityofficer" behavior="Active" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.2" aimspeed="30" aimaccuracy="1" reportrange="10000">
       <Character speciesname="human" gender="female" hairindex="12">
         <job name="tsm_outpostsecurityofficer" identifier="tsm_outpostsecurityofficer">
           <skill identifier="electrical" level="80" />
@@ -377,6 +377,7 @@
         <Item identifier="tsm_nujiang_uniform" equip="true"/>
         <Item identifier="tsm_heavy_vest" equip="true"/>
         <Item identifier="tsm_helmet_outpost_combat" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_ai_eyi_outpost_sundown"/>
         <Item identifier="tsm_pmf_melee">
         <Item identifier="fulguriumbatterycell"/>
@@ -390,6 +391,7 @@
         <Item identifier="tsm_advanced_uniform" equip="true"/>
         <Item identifier="tsm_heavy_vest" equip="true"/>
         <Item identifier="tsm_heavycombat_helmet" equip="true"/>
+        <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="tsm_ai_eyi_outpost_sundown"/>
         <Item identifier="tsm_pmf_melee">
         <Item identifier="fulguriumbatterycell"/>

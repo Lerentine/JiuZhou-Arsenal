@@ -5,6 +5,7 @@ JZ_Main.Path = table.pack(...)[1]  --获取路径
 
 if Game.IsSingleplayer or SERVER then
 	dofile(JZ_Main.Path.."/Lua/Server/tsmcombatship.lua")
+	dofile(JZ_Main.Path.."/Lua/Server/tsmenhancement_cyborg.lua")
 	dofile(JZ_Main.Path.."/Lua/Scripts/Shared/Firesupport.lua")
 	dofile(JZ_Main.Path.."/Lua/Scripts/Shared/Shared.lua")
 end

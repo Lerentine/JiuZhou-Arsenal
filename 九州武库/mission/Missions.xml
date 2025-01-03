@@ -573,7 +573,7 @@
     difficulty="6"
     commonness="60"
     allowretry="true"
-    minleveldifficulty="30"
+    minleveldifficulty="35"
     maxleveldifficulty="65"
     successmessage=""
     unhideentitysubcategories="abandonedhuman">
