@@ -131,6 +131,7 @@
       </Character>
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+        <!--Item identifier="tsm_pifu" equip="true"/-->
         <Item identifier="tsm_sundawn_uniform" equip="true"/>
         <Item identifier="tsm_heavy_vest" equip="true"/>
         <Item identifier="tsm_helmet_respirator" equip="true"/>

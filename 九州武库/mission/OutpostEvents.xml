@@ -228,6 +228,7 @@
           <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1" />
           <Affliction identifier="tsm_ai_tk" strength="50" />
         </StatusEffect>
+        <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
       <StatusEffectAction targettag="enemy_elite">
         <StatusEffect target="This">
@@ -252,6 +253,7 @@
           <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
           <Affliction identifier="tsm_ai_fire" strength="50" />
         </StatusEffect>
+        <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
     </ScriptedEvent>
     <!--占领军-->
@@ -291,6 +293,7 @@
           <Affliction identifier="tsm_ai_tk" strength="50" />
           <Affliction identifier="tsm_ai_stun_5" strength="50" />
         </StatusEffect>
+        <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
       <StatusEffectAction targettag="enemy_elite">
         <StatusEffect target="This">
@@ -298,6 +301,7 @@
           <Affliction identifier="tsm_ai_tk" strength="50" />
           <Affliction identifier="tsm_ai_stun_2" strength="50" />
         </StatusEffect>
+        <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
       <StatusEffectAction targettag="enemy_pt">
         <StatusEffect target="This">
@@ -432,6 +436,7 @@
           <Affliction identifier="tsm_ai_stun_5" strength="50" />
           <Affliction identifier="tsm_ai_tk" strength="50" />
         </StatusEffect>
+        <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
       <StatusEffectAction targettag="enemy_elite">
         <StatusEffect target="This">
@@ -439,6 +444,7 @@
           <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1" />
           <Affliction identifier="tsm_ai_tk" strength="50" />
         </StatusEffect>
+        <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
       <StatusEffectAction targettag="enemy_pt">
         <StatusEffect target="This">
@@ -542,6 +548,7 @@
           <Affliction identifier="tsm_ai_stun_2" strength="50" />
           <Affliction identifier="tsm_ai_tk" strength="50" />
         </StatusEffect>
+        <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
     </ScriptedEvent>
     <!--普通-->
@@ -600,6 +607,7 @@
           <Affliction identifier="tsm_ai_stun_5" strength="50" />
           <Affliction identifier="tsm_ai_tk" strength="50" />
         </StatusEffect>
+        <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
       <StatusEffectAction targettag="enemy_elite">
         <StatusEffect target="This">
@@ -607,6 +615,7 @@
           <Affliction identifier="tsm_ai_stun_2" strength="50" />
           <Affliction identifier="tsm_ai_tk" strength="50" />
         </StatusEffect>
+        <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
       <StatusEffectAction targettag="enemy_pt">
         <StatusEffect target="This">
@@ -704,6 +713,7 @@
         <Affliction identifier="tsm_ai_tk" strength="50" />
         <Affliction identifier="tsm_ai_fire" strength="50" />
         </StatusEffect>
+        <StatusEffect target="This" UseHealthWindow="false" />
     </StatusEffectAction>
     </ScriptedEvent>
     <!--突袭者-->
@@ -734,6 +744,7 @@
           <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1" />
           <Affliction identifier="tsm_ai_stun_2" strength="50" />
         </StatusEffect>
+        <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
       <StatusEffectAction targettag="enemy_elite">
         <StatusEffect target="This">
@@ -785,6 +796,7 @@
           <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1" />
           <Affliction identifier="tsm_ai_stun_5" strength="50" />
         </StatusEffect>
+        <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
       <StatusEffectAction targettag="enemy_advanced">
         <StatusEffect target="This">
@@ -792,6 +804,7 @@
           <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1" />
           <Affliction identifier="tsm_ai_stun_2" strength="50" />
         </StatusEffect>
+        <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
       <StatusEffectAction targettag="enemy_pt">
         <StatusEffect target="This">
@@ -829,6 +842,7 @@
           <Affliction identifier="tsm_ai_stun_5" strength="50" />
           <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1,specops" />
         </StatusEffect>
+        <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
       <StatusEffectAction targettag="enemy_soldier">
         <StatusEffect target="This">
@@ -923,6 +937,7 @@
           <Affliction identifier="tsm_ai_fire" strength="50" />
           <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1" />
           </StatusEffect>
+            <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
     </ScriptedEvent>
     <!--无限增援-->

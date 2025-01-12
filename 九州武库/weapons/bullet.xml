@@ -35,7 +35,7 @@
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="手炮铜制子弹" identifier="tsm_handcannonround_easy" subcategory="other" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" allowasextracargo="true" Scale="0.5" tags="smallitem,handcannonammo,handheldammo,pistolammoitem,handcannonround" impactsoundtag="impact_metal_light">
+  <Item name="铜制手炮子弹" identifier="tsm_handcannonround_copper" subcategory="other" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" allowasextracargo="true" Scale="0.5" tags="smallitem,handcannonammo,handheldammo,pistolammoitem,handcannonround" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab"/>
     <PreferredContainer primary="handcannon" amount="6" spawnprobability="1.0"/>
     <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="6" spawnprobability="0.02"/>    
@@ -47,7 +47,7 @@
       <RequiredItem identifier="copper" mincondition="3" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="468,297,28,20" />
-    <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="31,373,35,9" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="31,373,37,9" origin="0.5,0.5" />
     <Body width="35" height="9" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
@@ -211,7 +211,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--变革弹-->
-  <Item name="贫化变革弹" identifier="tsm_12_bg" subcategory="TSM" category="Weapon" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="贫化变革弹" identifier="tsm_12_bg" subcategory="TSM" category="Weapon" maxstacksize="24" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="8">
       <RequiredItem identifier="uranium" amount="2" />
@@ -241,7 +241,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--平息弹-->
-  <Item name="平息弹" identifier="tsm_12_slience" category="Weapon" subcategory="other" maxstacksize="32" maxstacksizecharacterinventory="16" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="平息弹" identifier="tsm_12_slience" category="Weapon" subcategory="other" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="shotgun,autoshotgun,shotgununique" />
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <PreferredContainer primary="armcab" minamount="8" maxamount="16" spawnprobability="1" notcampaign="true" />

@@ -571,8 +571,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="消音器" identifier="tsm_gun_silencers" subcategory="accessories" category="Equipment" Tags="smallitem,barrel" cargocontaineridentifier="tsm_metalcrate" Scale="0.08" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%//weapons/配件/accessories.png" sourcerect="82,344,176,47" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%//weapons/配件/accessories.png" sourcerect="82,344,176,47" depth="0.53" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%//weapons/配件/accessories.png" sourcerect="82,345,174,46" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%//weapons/配件/accessories.png" sourcerect="82,345,174,46" depth="0.53" origin="0.5,0.5" />
     <Body width="150" height="35" density="3" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">

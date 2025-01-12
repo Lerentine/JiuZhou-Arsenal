@@ -16,7 +16,7 @@
  <talentdescription.tsm_lightningwizard>受到远程伤害时，会击晕攻击你的人</talentdescription.tsm_lightningwizard>
  <talentname.tsm_ai_stun>强力反应</talentname.tsm_ai_stun>
  <talentname.tsm_operator_revolt>暴乱挺进</talentname.tsm_operator_revolt>
- <talentdescription.tsm_operator_revolt>当你身着暴乱挺进者防护服，手持电棍和圆形防爆盾时，增加‖color:0,150,0,255‖40%眩晕和物理伤害抗性、20%移速、200%近战攻击速度‖color:end‖以及减少‖color:150,0,0,255‖30%攻击伤害‖color:end‖</talentdescription.tsm_operator_revolt>
+ <talentdescription.tsm_operator_revolt>当你身着暴乱挺进者防护服，手持电棍和圆形防爆盾时，增加‖color:0,150,0,255‖40%眩晕和物理伤害抗性、20%移速、200%近战攻击速度‖color:end‖以及减少‖color:0,200,0,255‖30%攻击伤害‖color:end‖</talentdescription.tsm_operator_revolt>
 <!--伤害类型-->
 
  <afflictionname.triton_7L>变革</afflictionname.triton_7L>
@@ -103,7 +103,7 @@
  <afflictionname.tsm_anger>嗔</afflictionname.tsm_anger>
  <afflictiondescription.tsm_anger>实验性针剂\n\n研发地：九州研究所\n\n强化类型：\n陆地/水里移动速度20%\n最大生命值20%\n近战攻速20%\n近战伤害15%\n\n使用权限：Ⅱ</afflictiondescription.tsm_anger>
 
- <afflictionname.tsm_68_51>6.8*51EX</afflictionname.tsm_68_51>
+ <afflictionname.tsm_68_51>6.8*51标记</afflictionname.tsm_68_51>
  <afflictiondescription.tsm_68_51></afflictiondescription.tsm_68_51>
 
 <!--标识-->
@@ -145,6 +145,23 @@
 
  <entityname.tsm_anger>增强针剂</entityname.tsm_anger>
  <entitydescription.tsm_anger>搭配操作者辅助系统使用，可以增强人的作战能力。</entitydescription.tsm_anger>
+ <!--涂装-->
+ <entityname.tsm_zc_skins_o>战车涂装：九州</entityname.tsm_zc_skins_o>
+ <entitydescription.tsm_zc_skins_o>九州作战部常见的涂装</entitydescription.tsm_zc_skins_o>
+ <entityname.tsm_fy_skins_o>飞鸦涂装：九州</entityname.tsm_fy_skins_o>
+ <entitydescription.tsm_fy_skins_o>九州作战部常见的涂装</entitydescription.tsm_fy_skins_o>
+ <entityname.tsm_m2_skins_9eagle>M2涂装：白鹰</entityname.tsm_m2_skins_9eagle>
+ <entitydescription.tsm_m2_skins_9eagle>致同舟共寄的兄弟们</entitydescription.tsm_m2_skins_9eagle>
+ <entityname.tsm_sks_skins_zjgz>SKS涂装：精金光泽</entityname.tsm_sks_skins_zjgz>
+ <entitydescription.tsm_sks_skins_zjgz>感谢CosmoChromE对本模组的帮助，发放定制涂装</entitydescription.tsm_sks_skins_zjgz>
+ <entityname.tsm_rpk16_skins_zy>rpk16涂装：折翼</entityname.tsm_rpk16_skins_zy>
+ <entitydescription.tsm_rpk16_skins_zy>完美男人定制</entitydescription.tsm_rpk16_skins_zy>
+ <entityname.tsm_vhs2_skins_t037y>VHS2涂装：雷龙</entityname.tsm_vhs2_skins_t037y>
+ <entitydescription.tsm_vhs2_skins_t037y>献给最强大的战士\n击败本模组最强大的生物；雷龙，获取材料制作</entitydescription.tsm_vhs2_skins_t037y>
+ <entityname.tsm_hk433_skins_t037y>HK433涂装：雷龙</entityname.tsm_hk433_skins_t037y>
+ <entitydescription.tsm_hk433_skins_t037y>献给最强大的战士\n击败本模组最强大的生物；雷龙，获取材料制作</entitydescription.tsm_hk433_skins_t037y>
+ <entityname.tsm_dp12_skins_t037y>DP12涂装：雷龙</entityname.tsm_dp12_skins_t037y>
+ <entitydescription.tsm_dp12_skins_t037y>献给最强大的战士\n击败本模组最强大的生物；雷龙，获取材料制作</entitydescription.tsm_dp12_skins_t037y>
 
 <!--矿物/金属/物品-->
  <entityname.tsm_tungstenore>钨矿</entityname.tsm_tungstenore>
@@ -266,6 +283,14 @@
 
  <entityname.tsm_fabricator_quality>武器改造升级台</entityname.tsm_fabricator_quality>
  <entitydescription.tsm_fabricator_quality>专用于升级枪械品质或者改造枪械的加工台\n安装方式：拿在手上，右键对准然后按使用键（默认E键）即可安装.</entitydescription.tsm_fabricator_quality>
+
+ <!--炮塔-->
+ <entityname.tsm_sniper_turret>奇迹之海狙击炮</entityname.tsm_sniper_turret>
+ <entitydescription.tsm_sniper_turret>采用高密度能量聚合核心，通过微型化的粒子加速器发射高能光束，具有惊人的射程与精确度，同时具备极高的抗干扰能力，使其在各种复杂战场环境中都能精准锁定目标。</entitydescription.tsm_sniper_turret>
+ <entityname.tsm_sniper_turretloader>奇迹之海狙击炮装弹器</entityname.tsm_sniper_turretloader>
+ <entitydescription.tsm_sniper_turretloader></entitydescription.tsm_sniper_turretloader>
+ <entityname.tsm_sniper_ammobox>奇迹之海狙击炮能量箱</entityname.tsm_sniper_ammobox>
+ <entitydescription.tsm_sniper_ammobox>内部能量足够支持狙击炮连续射击50发，其能量束在接触目标时能够瞬间引发物质结构的崩解，轻松穿透重型装甲</entitydescription.tsm_sniper_ammobox>
 
 
 
@@ -528,7 +553,7 @@
  <entityname.rz_prototype>“戎装”原型机</entityname.rz_prototype>
  <entitydescription.rz_prototype>因为种种原因与越来越严峻的局势，奇迹之海本部急需一种可以进入潜艇内部的重型火力支援平台。名为“戎装”的重型火力平台原型机就此诞生。</entitydescription.rz_prototype>
  <entityname.tsm_rz_2b>“戎装”原型机2号B型</entityname.tsm_rz_2b>
- <entitydescription.tsm_rz_2b>这是一台搭载了重型火力的战斗平台。操作者能更迅速的进入与脱离机体，搭载在手臂上的重火力可以轻松应对潜艇内的各种局势，但是仍然是用来进行技术验证的平台。使用‖color:150,0,0,255‖戎装弹匣‖color:end‖进行供弹</entitydescription.tsm_rz_2b>
+ <entitydescription.tsm_rz_2b>这是一台搭载了重型火力的战斗平台。操作者能更迅速的进入与脱离机体，搭载在手臂上的重火力可以轻松应对潜艇内的各种局势，但是仍然是用来进行技术验证的平台。使用‖color:0,200,0,255‖戎装弹匣‖color:end‖进行供弹</entitydescription.tsm_rz_2b>
  <entityname.rz_mag>戎装弹匣</entityname.rz_mag>
  <entitydescription.rz_mag></entitydescription.rz_mag>
  <entityname.tsm_rz_pirent>戎装盗窃者型</entityname.tsm_rz_pirent>
@@ -629,8 +654,6 @@
   <entitydescription.tsm_gun_grenade_lm>M4系列以及M16系列下挂套件，安装后可发射榴弹</entitydescription.tsm_gun_grenade_lm>
 
 
-  
-  
  <!--近战-->
   <entityname.tsm_round_riotshields>圆形防暴盾</entityname.tsm_round_riotshields>
   <entitydescription.tsm_round_riotshields>小型盾牌，可以只能提供有限范围的保护，搭配近战武器使用</entitydescription.tsm_round_riotshields>
@@ -640,10 +663,6 @@
   <entitydescription.tsm_stunbaton_melee>安装雷素电池以提供更强大的控制</entitydescription.tsm_stunbaton_melee>
   <entityname.tsm_moonlight_sword>月华</entityname.tsm_moonlight_sword>
   <entitydescription.tsm_moonlight_sword>‖color:255,144,48,255‖荣誉近战武器，通过异星材料复刻的环首刀‖color:end‖</entitydescription.tsm_moonlight_sword>
-  <entityname.tsm_lerentine_zhong>‖color:221,106,29,255‖冢‖color:end‖</entityname.tsm_lerentine_zhong>
-  <entitydescription.tsm_lerentine_zhong>‖color:221,106,29,255‖生而影不与吾形相依，死而魂不与吾梦相接‖color:end‖</entitydescription.tsm_lerentine_zhong>
-  <entityname.tsm_zhong_handgun>‖color:221,106,29,255‖灰瞳‖color:end‖</entityname.tsm_zhong_handgun>
-  <entitydescription.tsm_zhong_handgun>‖color:221,106,29,255‖莱伦汀的配枪,使用手炮子弹\n据说是当初她还在先进作战部中的一个小队队长的配枪，当时他们在受到伏击后，队长为了救她自己中弹身亡。之后她捡起了这把枪，戴上队长的头盔，发号施令。\n"噩兆天子"，大家这么叫他，她是奇迹之海的孩子，是你被死亡笼罩时的最后救星。‖color:end‖</entitydescription.tsm_zhong_handgun>
   <entityname.tsm_pmf_melee>破门斧</entityname.tsm_pmf_melee>
   <entitydescription.tsm_pmf_melee>破门利器，奇迹之海常备的破门工具</entitydescription.tsm_pmf_melee>
   <entityname.tsm_pqc_melee>破墙锤</entityname.tsm_pqc_melee>
@@ -652,6 +671,26 @@
   <entitydescription.tsm_thermal_knife>这种刀的制作工艺不对外公开，重量较轻，刀刃能在极短的时间内达到高温状态,切割效率高</entitydescription.tsm_thermal_knife>
   <entityname.tsm_steel_knife>"丝缇尔"指挥刀</entityname.tsm_steel_knife>
   <entitydescription.tsm_steel_knife>身份的象征，由昂贵的异星金属打造，在地球未失联之前，奖励给那些勇于开拓的船长们</entitydescription.tsm_steel_knife>
+  <entityname.tsm_kaishan_knife>开山刀</entityname.tsm_kaishan_knife>
+  <entitydescription.tsm_kaishan_knife>赴汤蹈火啊，琛哥！</entitydescription.tsm_kaishan_knife>
+  <entityname.tsm_beowulf_melee>行刑锤</entityname.tsm_beowulf_melee>
+  <entitydescription.tsm_beowulf_melee>沾满鲜血的战锤，象征着贝奥武夫中队对极端主义者的无情镇压。任何敌人一旦落入他们手中，都将被毫不留情地执行锤刑，以最直接的方式展现联盟的铁血威严。\n叛国者、组织暴乱者、恐怖宣传者......都将处以锤刑</entitydescription.tsm_beowulf_melee>
+
+ <!--npc-->
+ <entityname.tsm_lerentine_zhong>‖color:221,106,29,255‖冢‖color:end‖</entityname.tsm_lerentine_zhong>
+ <entitydescription.tsm_lerentine_zhong>‖color:221,106,29,255‖生而影不与吾形相依，死而魂不与吾梦相接‖color:end‖</entitydescription.tsm_lerentine_zhong>
+ <entityname.tsm_zhong_handgun>‖color:221,106,29,255‖灰瞳‖color:end‖</entityname.tsm_zhong_handgun>
+ <entitydescription.tsm_zhong_handgun>‖color:221,106,29,255‖莱伦汀的配枪,使用手炮子弹\n据说是当初她还在先进作战部中的一个小队队长的配枪，当时他们在受到伏击后，队长为了救她自己中弹身亡。之后她捡起了这把枪，戴上队长的头盔，发号施令。\n"噩兆天子"，大家这么叫他，她是奇迹之海的孩子，是你被死亡笼罩时的最后救星。‖color:end‖</entitydescription.tsm_zhong_handgun>
+ <entityname.tsm_scarl>SCAR- L CQC轻型突击步枪</entityname.tsm_scarl>
+ <entitydescription.tsm_scarl>使用联盟‖color:0,200,0,255‖5.56‖color:end‖弹匣，无法装配弹鼓，燕舒婷的定制配枪之一，下挂FN40GL榴弹发射器，并更换了更短的枪管方便携带，能够更好的在顾问团队遇到危险时及时提供火力支持</entitydescription.tsm_scarl>
+ <entityname.tsm_usp45_pistols>USP45消音手枪</entityname.tsm_usp45_pistols>
+ <entitydescription.tsm_usp45_pistols>使用‖color:0,200,0,255‖.45ACP‖color:end‖手枪弹匣，燕舒婷的配枪之一，下挂装有一个小型战术手电，之前猫科动物顾问团队列装过此类手枪，但因为威力不足并没有得到青睐，但燕将其改装为了.45口径用于狭窄环境对无甲目标自卫</entitydescription.tsm_usp45_pistols>
+ <entityname.tsm_m200>M200“干预者”原型高精狙击步枪</entityname.tsm_m200>
+ <entitydescription.tsm_m200>使用‖color:0,200,0,255‖10.36*77‖color:end‖狙击枪弹匣，燕的主要配枪，燕入职猫科动物顾问的一位朋友所赠，据说欧罗巴仅此一把，其精密的加工技术，是主要难点之一，但更主要的是在欧罗巴的战斗中很少出现能够用上高精度，超远射程狙击枪，但除了猫科动物顾问团队。这把传说中能在千米外命中一瓶氧气罐的狙击枪，在悄无声息中夺走了不知多少妄自菲薄家伙的小命</entitydescription.tsm_m200>
+ <entityname.tsm_1036_77ammo>狙击枪弹匣（10.36*77）</entityname.tsm_1036_77ammo>
+ <entitydescription.tsm_1036_77ammo>装有7发10.3*77口径标准狙击枪子弹</entitydescription.tsm_1036_77ammo>
+ <entityname.tsm_m7>联盟M7战斗步枪</entityname.tsm_m7>
+ <entitydescription.tsm_m7>使用联盟‖color:0,200,0,255‖6.8*51‖color:end‖弹匣，MCXspear的正式列装版本，但只派发给了部分精英部队的高级职员，克里斯就是其中之一。枪托上面的划痕记录着倒在贝奥武夫中队的一个个猎物，让人不寒而栗</entitydescription.tsm_m7>
 <!--弹药-->
   <entityname.tsm_12_ld>12号鹿弹</entityname.tsm_12_ld>
   <entitydescription.tsm_12_ld>更少的弹丸数量，但是拥有更大的威力。</entitydescription.tsm_12_ld>
@@ -667,8 +706,17 @@
   <entitydescription.tsm_12_slience>提供强有力的控制</entitydescription.tsm_12_slience>
   <entityname.tsm_handcannonround>手炮尖晶弹</entityname.tsm_handcannonround>
   <entitydescription.tsm_handcannonround>奇迹之海研发的大口径穿甲子弹</entitydescription.tsm_handcannonround>
-  <entityname.tsm_handcannonround_easy>铜制手炮子弹</entityname.tsm_handcannonround_easy>
-  <entitydescription.tsm_handcannonround_easy>一种便宜的手炮子弹，你不要看他伤害不高，但是人家便宜。</entitydescription.tsm_handcannonround_easy>
+  <entityname.tsm_handcannonround_copper>铜制手炮子弹</entityname.tsm_handcannonround_copper>
+  <entitydescription.tsm_handcannonround_copper>一种便宜的手炮子弹，你不要看他伤害不高，但是人家便宜。</entitydescription.tsm_handcannonround_copper>
+
+ <entityname.tsm_handcannonround_50>手炮子弹（冠军）</entityname.tsm_handcannonround_50>
+ <entitydescription.tsm_handcannonround_50>'枪火'赛事冠军配发的子弹</entitydescription.tsm_handcannonround_50>
+
+ <entityname.tsm_handcannonround_44>手炮子弹（亚军）</entityname.tsm_handcannonround_44>
+ <entitydescription.tsm_handcannonround_44>'枪火'赛事亚军配发的子弹</entitydescription.tsm_handcannonround_44>
+
+ <entityname.tsm_handcannonround_357>手炮子弹（季军）</entityname.tsm_handcannonround_357>
+ <entitydescription.tsm_handcannonround_357>'枪火'赛事季军配发的子弹</entitydescription.tsm_handcannonround_357>
 
  <entityname.tsm_58_fulgurium_mag>雷素弹匣(5.8mm)</entityname.tsm_58_fulgurium_mag>
  <entitydescription.tsm_58_fulgurium_mag>装填30发5.8口径雷素子弹，这种子弹可以让敌人体会到被电击到的感觉</entitydescription.tsm_58_fulgurium_mag>
@@ -713,18 +761,25 @@
  <!--节日-->
  <entityname.tsm_holiday_g11>G11无壳突击步枪·2024圣诞限定</entityname.tsm_holiday_g11>
  <entitydescription.tsm_holiday_g11>2024年圣诞节社区限定投票活动\n一种实验性的无壳突击步枪，发射特制无壳弹，使用发射药代替传统的弹壳，弹匣容量50发，需要放进弹药装填器进行重新装填。内部结构如同钟表一般复杂，因而连续射击可能会有故障发生，所以往往收藏价值大于战斗需求\n子弹打完可放入弹药箱进行装弹</entitydescription.tsm_holiday_g11>
+ <!--枪火-->
+ <entityname.tsm_m500>'枪火'赛事亚军手炮</entityname.tsm_m500>
+ <entitydescription.tsm_m500>使用‖color:0,200,0,255‖手炮子弹‖color:end‖，大得可怕的口径使得弹巢内只能装填5发子弹，如果不想把手腕崩断，还是不要轻易尝试才好</entitydescription.tsm_m500>
+ <entityname.tsm_jm>“枪火”赛事冠军手炮</entityname.tsm_jm>
+ <entitydescription.tsm_jm>使用‖color:0,200,0,255‖手炮子弹‖color:end‖，手枪中的奢侈品，做工精良，彰显身份，据说最骄傲的船长就是使用它来进行决斗</entitydescription.tsm_jm>
+ <entityname.tsm_mr74>“枪火”赛事季军手炮</entityname.tsm_mr74>
+ <entitydescription.tsm_mr74>使用‖color:0,200,0,255‖手炮子弹‖color:end‖，最入门也是最广泛轻型手炮，无论是联盟船长还是地痞海盗都乐意收藏一把</entitydescription.tsm_mr74>
  <!--奇迹之海-->
   <entityname.tsm_zc>战车突击步枪</entityname.tsm_zc>
-  <entitydescription.tsm_zc>再好的设计也无力应对磕了药的子弹，想打准，就去练。但是它的消音器确实不错。使用‖color:150,0,0,255‖奇迹之海弹药‖color:end‖。</entitydescription.tsm_zc>
+  <entitydescription.tsm_zc>再好的设计也无力应对磕了药的子弹，想打准，就去练。但是它的消音器确实不错。使用‖color:0,200,0,255‖奇迹之海弹药‖color:end‖。</entitydescription.tsm_zc>
 
   <entityname.tsm_zc_c>战车突击步枪</entityname.tsm_zc_c>
-  <entitydescription.tsm_zc_c>九州涂装，使用‖color:150,0,0,255‖奇迹之海弹药‖color:end‖。</entitydescription.tsm_zc_c>
+  <entitydescription.tsm_zc_c>九州涂装，使用‖color:0,200,0,255‖奇迹之海弹药‖color:end‖。</entitydescription.tsm_zc_c>
 
   <entityname.tsm_fy>飞鸦突击步枪</entityname.tsm_fy>
-  <entitydescription.tsm_fy>使用‖color:150,0,0,255‖奇迹之海弹药‖color:end‖</entitydescription.tsm_fy>
+  <entitydescription.tsm_fy>使用‖color:0,200,0,255‖奇迹之海弹药‖color:end‖</entitydescription.tsm_fy>
 
   <entityname.tsm_fy_c>飞鸦突击步枪</entityname.tsm_fy_c>
-  <entitydescription.tsm_fy_c>九州涂装，使用‖color:150,0,0,255‖奇迹之海弹药‖color:end‖</entitydescription.tsm_fy_c>
+  <entitydescription.tsm_fy_c>九州涂装，使用‖color:0,200,0,255‖奇迹之海弹药‖color:end‖</entitydescription.tsm_fy_c>
 
   <entityname.tsm_rsmagazine>奇迹之海燃烧弹匣</entityname.tsm_rsmagazine>
   <entitydescription.tsm_rsmagazine>专供战车以及飞鸦两把步枪的特殊弹匣</entitydescription.tsm_rsmagazine>
@@ -742,37 +797,37 @@
   <entitydescription.tsm_fire_gun>次抛发射器&#xD;&#xA;一次性轰击发射器，能够打乱敌方阵型</entitydescription.tsm_fire_gun>
 
   <entityname.tsm_thbq>同昏</entityname.tsm_thbq>
-  <entitydescription.tsm_thbq>奇迹之海为与外部对抗而自研的制式突击步枪，高射速带来绝佳的压制效果，让普通士兵拥有班级的火力密度，而特制的穿甲弹药更是锦上添花。在装配特制部件后，更加强悍，更加致命，也更加昂贵……使用‖color:150,0,0,255‖奇迹之海弹药‖color:end‖\n"伯伦希尔，他们告诉过你,木卫二这片海太深太黑，'干净'的人很难走得远..."</entitydescription.tsm_thbq>
+  <entitydescription.tsm_thbq>奇迹之海为与外部对抗而自研的制式突击步枪，高射速带来绝佳的压制效果，让普通士兵拥有班级的火力密度，而特制的穿甲弹药更是锦上添花。在装配特制部件后，更加强悍，更加致命，也更加昂贵……使用‖color:0,200,0,255‖奇迹之海弹药‖color:end‖\n"伯伦希尔，他们告诉过你,木卫二这片海太深太黑，'干净'的人很难走得远..."</entitydescription.tsm_thbq>
 
   <entityname.tsm_gybq>共影</entityname.tsm_gybq>
-  <entitydescription.tsm_gybq>奇迹之海在研发同昏时的另一项成果:一种只可进行半自动射击的射手步枪，特殊的结构不仅让它射出的子弹威力十足，也让其后坐力更加可怕，以及增加了耗弹量，纵使降低射速与装配特殊枪托也没有多少改善，使用不当甚至会伤害到射手，只有老练的士兵才能灵活且高效的用它射杀敌人。使用‖color:150,0,0,255‖奇迹之海弹药‖color:end‖</entitydescription.tsm_gybq>
+  <entitydescription.tsm_gybq>奇迹之海在研发同昏时的另一项成果:一种只可进行半自动射击的射手步枪，特殊的结构不仅让它射出的子弹威力十足，也让其后坐力更加可怕，以及增加了耗弹量，纵使降低射速与装配特殊枪托也没有多少改善，使用不当甚至会伤害到射手，只有老练的士兵才能灵活且高效的用它射杀敌人。使用‖color:0,200,0,255‖奇迹之海弹药‖color:end‖</entitydescription.tsm_gybq>
 
   <entityname.tsm_xylz>新月轮转</entityname.tsm_xylz>
   <entitydescription.tsm_xylz>奇迹之海不计代价开发的一款大口径反器材武器。它使用的弹药杀伤力巨大，射手不经过长时间的专门训练都无力驾驭这把武器。这致使得该武器数量极少，造价也居高不下。</entitydescription.tsm_xylz>
 
   <entityname.tsm_gravitythrower>重力投掷器</entityname.tsm_gravitythrower>
-  <entitydescription.tsm_gravitythrower>我们为这个世界带来变革，于诸神之地实行制裁\n奇迹之海最新研制的制裁者重力武器\n每次使用，需要穿戴特定的防护服，否则会有很严重的后果\n弹药‖color:150,0,0,255‖失重牵引激光束‖color:end‖只能在站点购买</entitydescription.tsm_gravitythrower>
+  <entitydescription.tsm_gravitythrower>我们为这个世界带来变革，于诸神之地实行制裁\n奇迹之海最新研制的制裁者重力武器\n每次使用，需要穿戴特定的防护服，否则会有很严重的后果\n弹药‖color:0,200,0,255‖失重牵引激光束‖color:end‖只能在站点购买</entitydescription.tsm_gravitythrower>
 
-  <entityname.tsm_201>201式通用机枪</entityname.tsm_201>
-  <entitydescription.tsm_201>采用了现代化的设计理念，注重人机工效和实战性能。其枪身长度适中，便于携带和操作，同时空枪重量也得到了有效控制，减轻了士兵的负担。同时采用帆布弹链供弹方式，能够快速补充弹药，保证火力持续性,提高作战效率。既可以使用使用‖color:150,0,0,255‖帆布弹袋‖color:end‖，也可以使用‖color:150,0,0,255‖5.8mm步枪弹匣‖color:end‖，进一步拓宽了战场应对能力。</entitydescription.tsm_201>
+  <entityname.tsm_201>201式班用机枪</entityname.tsm_201>
+  <entitydescription.tsm_201>采用了现代化的设计理念，注重人机工效和实战性能。其枪身长度适中，便于携带和操作，同时空枪重量也得到了有效控制，减轻了士兵的负担。同时采用帆布弹链供弹方式，能够快速补充弹药，保证火力持续性,提高作战效率。既可以使用使用‖color:0,200,0,255‖帆布弹袋‖color:end‖，也可以使用‖color:0,200,0,255‖5.8mm步枪弹匣‖color:end‖，进一步拓宽了战场应对能力。</entitydescription.tsm_201>
 
   <entityname.tsm_advanced_95>95式突击步枪</entityname.tsm_advanced_95>
-  <entitydescription.tsm_advanced_95>总体性能达到同类武器先进水平的目标，使步兵班具有点、面杀伤和打击轻型装甲的能力，可安装扩展照明装置或者长弓套件下挂榴弹，使用‖color:150,0,0,255‖5.8mm子弹‖color:end‖</entitydescription.tsm_advanced_95>
+  <entitydescription.tsm_advanced_95>总体性能达到同类武器先进水平的目标，使步兵班具有点、面杀伤和打击轻型装甲的能力，可安装扩展照明装置或者长弓套件下挂榴弹，使用‖color:0,200,0,255‖5.8mm子弹‖color:end‖</entitydescription.tsm_advanced_95>
 
   <entityname.tsm_advanced_03>03式自动步枪</entityname.tsm_advanced_03>
-  <entitydescription.tsm_advanced_03>该枪自动步枪机匣内装有较长的自动机导轨，增加了自动机后坐缓冲器，采用了恒温模锻的上下铝制机匣，上机匣可直接安装03式专用瞄具。下机匣及后罩等零件采用了钛铝合金材料。左、右护板，握把及枪托采用了强度高、耐高温的工程塑料，中空部分装附件筒，使用‖color:150,0,0,255‖5.8mm子弹‖color:end‖。</entitydescription.tsm_advanced_03>
+  <entitydescription.tsm_advanced_03>该枪自动步枪机匣内装有较长的自动机导轨，增加了自动机后坐缓冲器，采用了恒温模锻的上下铝制机匣，上机匣可直接安装03式专用瞄具。下机匣及后罩等零件采用了钛铝合金材料。左、右护板，握把及枪托采用了强度高、耐高温的工程塑料，中空部分装附件筒，使用‖color:0,200,0,255‖5.8mm子弹‖color:end‖。</entitydescription.tsm_advanced_03>
 
   <entityname.tsm_qbz_191>QBZ-191制式步枪</entityname.tsm_qbz_191>
-  <entitydescription.tsm_qbz_191>在历尽大大小小不同场景的战斗后，性能优异，模块化全面，使用‖color:150,0,0,255‖5.8mm‖color:end‖弹匣的191步枪就此诞生，极高的泛用性和均衡的造价完全符合列装标准，全新材料工艺与战斗经验铸就了它的辉煌</entitydescription.tsm_qbz_191>
+  <entitydescription.tsm_qbz_191>在历尽大大小小不同场景的战斗后，性能优异，模块化全面，使用‖color:0,200,0,255‖5.8mm‖color:end‖弹匣的191步枪就此诞生，极高的泛用性和均衡的造价完全符合列装标准，全新材料工艺与战斗经验铸就了它的辉煌</entitydescription.tsm_qbz_191>
 
   <entityname.tsm_advanced_191>QBU-191精准射手步枪</entityname.tsm_advanced_191>
-  <entitydescription.tsm_advanced_191>基于QBZ191衍生的射手步枪，使用‖color:150,0,0,255‖5.8mm‖color:end‖子弹。更长的枪管带来枪膛更高的后座空间，不仅可控性更好，精度更是达到了狙击枪水准，可以很好的搭载特制枪管与瞄准镜</entitydescription.tsm_advanced_191>
+  <entitydescription.tsm_advanced_191>基于QBZ191衍生的射手步枪，使用‖color:0,200,0,255‖5.8mm‖color:end‖子弹。更长的枪管带来枪膛更高的后座空间，不仅可控性更好，精度更是达到了狙击枪水准，可以很好的搭载特制枪管与瞄准镜</entitydescription.tsm_advanced_191>
 
   <entityname.tsm_ots11>QTS11式战略突击步枪</entityname.tsm_ots11>
-  <entitydescription.tsm_ots11>诞生于“理想单兵作战武器”计划的武器，重量轻巧的同时，采用了全一体式设计，包含了榴弹发射器，先进光电热成像瞄准镜，采用现有的‖color:150,0,0,255‖5.8mm‖color:end‖突击步枪弹匣。但最终因为造价过于昂贵没有列装，只有部分原型枪流传。</entitydescription.tsm_ots11>
+  <entitydescription.tsm_ots11>诞生于“理想单兵作战武器”计划的武器，重量轻巧的同时，采用了全一体式设计，包含了榴弹发射器，先进光电热成像瞄准镜，采用现有的‖color:0,200,0,255‖5.8mm‖color:end‖突击步枪弹匣。但最终因为造价过于昂贵没有列装，只有部分原型枪流传。</entitydescription.tsm_ots11>
   
   <entityname.tsm_gm6>GM6“山猫”无托反器材狙击步枪</entityname.tsm_gm6>
-  <entitydescription.tsm_gm6>一把结构高精且紧凑的大口径狙击枪，浮动式枪管与无托结构即使是是在室内作战也非常趁手。其制造图纸更是高度机密，就是落入敌手反向拆解也无法将其仿制，能列装的部队都是精英中的精英，使用‖color:150,0,0,255‖12.7*99‖color:end‖口径狙击枪子弹。</entitydescription.tsm_gm6>
+  <entitydescription.tsm_gm6>一把结构高精且紧凑的大口径狙击枪，浮动式枪管与无托结构即使是是在室内作战也非常趁手。其制造图纸更是高度机密，就是落入敌手反向拆解也无法将其仿制，能列装的部队都是精英中的精英，可以使用‖color:0,200,0,255‖12.7*108‖color:end‖和‖color:0,200,0,255‖12.7*99‖color:end‖口径狙击枪子弹。</entitydescription.tsm_gm6>
 
   <entityname.tsm_qbs>QBS-09 式半自动霰弹枪</entityname.tsm_qbs>
   <entitydescription.tsm_qbs>一把可靠性和环境适应能力极佳的半自动霰弹，无论是充满泥沙的海底，还是狭窄的站点，尽管枪身较短但带动的膛压足以荡平敌人</entitydescription.tsm_qbs>
@@ -815,140 +870,143 @@
  <!--联盟-->
   <!--无托线-->
   <entityname.tsm_lm_l85a2>联盟L85A2无托步枪</entityname.tsm_lm_l85a2>
-  <entitydescription.tsm_lm_l85a2>曾作为世界上最烂的突击步枪不论是插不进去的弹匣井，频繁的卡壳，“世界上最棒的长矛，偶尔可以打出子弹”但经过改进后的版本还是可以接受，作为无托步枪的奠基产品。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_l85a2>
+  <entitydescription.tsm_lm_l85a2>曾作为世界上最烂的突击步枪不论是插不进去的弹匣井，频繁的卡壳，“世界上最棒的长矛，偶尔可以打出子弹”但经过改进后的版本还是可以接受，作为无托步枪的奠基产品。使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_l85a2>
 
   <entityname.tsm_lm_famas>联盟FAMAS无托自动步枪</entityname.tsm_lm_famas>
-  <entitydescription.tsm_lm_famas>闭锁杠杆延迟枪机的高效运动使得法马斯拥有步枪中最暴力的射击速度，但缺点也非常明显，过高的射速导致续航能力极其差劲，所以拥有了三连发快慢机。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_famas>
+  <entitydescription.tsm_lm_famas>闭锁杠杆延迟枪机的高效运动使得法马斯拥有步枪中最暴力的射击速度，但缺点也非常明显，过高的射速导致续航能力极其差劲，所以拥有了三连发快慢机。使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_famas>
 
   <entityname.tsm_lm_aug>联盟AUG突击步枪</entityname.tsm_lm_aug>
-  <entitydescription.tsm_lm_aug>联盟制式突击步枪，经过现代化改装，可以适配多种战术配件。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_aug>
+  <entitydescription.tsm_lm_aug>联盟制式突击步枪，经过现代化改装，可以适配多种战术配件。使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_aug>
 
   <entityname.tsm_lm_tavor21>联盟Tavor-21无托突击步枪</entityname.tsm_lm_tavor21>
-  <entitydescription.tsm_lm_tavor21>稳定可靠的无托步枪，且模块化更加全面，但其造价偏高优点不突出的尴尬境地，并没有被联盟列装，而是作为了先进无托步枪的过渡产品。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_tavor21>
+  <entitydescription.tsm_lm_tavor21>稳定可靠的无托步枪，且模块化更加全面，但其造价偏高优点不突出的尴尬境地，并没有被联盟列装，而是作为了先进无托步枪的过渡产品。使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_tavor21>
 
   <entityname.tsm_lm_mdr>联盟MDR无托战斗步枪</entityname.tsm_lm_mdr>
-  <entitydescription.tsm_lm_mdr>联盟在日益恶化的作战中，发现自己的小口径弹药越来越乏力。于是为了打破这一窘境，研发的新型大口径无托步枪，全枪采用异星材质加工制造，顶部直接加工出导轨，保证瞄准镜的安装精度和可靠性。使用‖color:150,0,0,255‖7.62*51mm‖color:end‖的子弹。</entitydescription.tsm_lm_mdr>
+  <entitydescription.tsm_lm_mdr>联盟在日益恶化的作战中，发现自己的小口径弹药越来越乏力。于是为了打破这一窘境，研发的新型大口径无托步枪，全枪采用异星材质加工制造，顶部直接加工出导轨，保证瞄准镜的安装精度和可靠性。使用‖color:0,200,0,255‖7.62*51mm‖color:end‖的子弹。</entitydescription.tsm_lm_mdr>
 
   <entityname.tsm_lm_mdr_c>联盟MDR无托战斗步枪-渗透型</entityname.tsm_lm_mdr_c>
-  <entitydescription.tsm_lm_mdr_c>该枪是联盟为了斩首行动而特殊改装后的产品，加装的特制消音器是为了更好的进行渗透行动，使用‖color:150,0,0,255‖7.62*51mm‖color:end‖的子弹。</entitydescription.tsm_lm_mdr_c>
+  <entitydescription.tsm_lm_mdr_c>该枪是联盟为了斩首行动而特殊改装后的产品，加装的特制消音器是为了更好的进行渗透行动，使用‖color:0,200,0,255‖7.62*51mm‖color:end‖的子弹。</entitydescription.tsm_lm_mdr_c>
 
-  <entityname.tsm_lm_vsh2>联盟VSH—2“恶棍”先进无托战斗步枪</entityname.tsm_lm_vsh2>
-  <entitydescription.tsm_lm_vsh2>最为理想的无托步枪，集成一系列前辈的优点，高射速与高精度使得“恶棍”名声大噪，全面现代化的模块与大量工程塑料的运用使得不仅重量轻，泛用性高，还非常美观，赢得各个前线部队的高度赞誉。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_vsh2>
+  <entityname.tsm_lm_vsh2>联盟VHS—2“恶棍”先进无托战斗步枪</entityname.tsm_lm_vsh2>
+  <entitydescription.tsm_lm_vsh2>最为理想的无托步枪，集成一系列前辈的优点，高射速与高精度使得“恶棍”名声大噪，全面现代化的模块与大量工程塑料的运用使得不仅重量轻，泛用性高，还非常美观，赢得各个前线部队的高度赞誉。使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_vsh2>
 
   <entityname.tsm_lm_rm277>联盟RM277原型无托步枪</entityname.tsm_lm_rm277>
-  <entitydescription.tsm_lm_rm277>无疑是一款颠覆性产品。它集结了通用动力学、未来武器系统的尖端技术，在火力与精度上具有双重优势。这款步枪使用独特的‖color:150,0,0,255‖6.8*51‖color:end‖口径的弹匣，在战场上展现了真实而惊人的精度与护甲穿透能力。特制抑制器不仅延长了枪管的使用寿命，还将闪光和声级降到了极低水平</entitydescription.tsm_lm_rm277>
+  <entitydescription.tsm_lm_rm277>无疑是一款颠覆性产品。它集结了通用动力学、未来武器系统的尖端技术，在火力与精度上具有双重优势。这款步枪使用独特的‖color:0,200,0,255‖6.8*51‖color:end‖口径的弹匣，在战场上展现了真实而惊人的精度与护甲穿透能力。特制抑制器不仅延长了枪管的使用寿命，还将闪光和声级降到了极低水平</entitydescription.tsm_lm_rm277>
 
   <!--ar线-->
   <entityname.tsm_lm_m16>联盟M16A1自动步枪</entityname.tsm_lm_m16>
-  <entitydescription.tsm_lm_m16>一把好用的突击步枪，就算你没学过如何使用武器也能用它打倒冲向你的敌人。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_m16>
+  <entitydescription.tsm_lm_m16>一把好用的突击步枪，就算你没学过如何使用武器也能用它打倒冲向你的敌人。使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_m16>
 
   <entityname.tsm_lm_m16a4>联盟M16A4自动步枪</entityname.tsm_lm_m16a4>
-  <entitydescription.tsm_lm_m16a4>基于m16A1的全面改进型，成为一个完全模块化平台，更长的枪管让其穿透力在步枪中数一数二，但还是保留了A1版本的三连发开火模式，压制力的欠缺很快被M4卡宾枪取代。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_m16a4>
+  <entitydescription.tsm_lm_m16a4>基于m16A1的全面改进型，成为一个完全模块化平台，更长的枪管让其穿透力在步枪中数一数二，但还是保留了A1版本的三连发开火模式，压制力的欠缺很快被M4卡宾枪取代。使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_m16a4>
 
   <entityname.tsm_lm_m110>联盟M110精准射手步枪</entityname.tsm_lm_m110>
-  <entitydescription.tsm_lm_m110>采用气吹式半自动发射，比使用手动枪机系统的拴动狙击步枪的射速更高，枪口安装有长150毫米的消音枪管附件以减少噪声和枪口焰。成为联盟反恐行动首选，可安装脚架提供更好的稳定性。使用联盟发行‖color:150,0,0,255‖7.62*51‖color:end‖口径弹匣</entitydescription.tsm_lm_m110>
+  <entitydescription.tsm_lm_m110>采用气吹式半自动发射，比使用手动枪机系统的拴动狙击步枪的射速更高，枪口安装有长150毫米的消音枪管附件以减少噪声和枪口焰。成为联盟反恐行动首选，可安装脚架提供更好的稳定性。使用联盟发行‖color:0,200,0,255‖7.62*51‖color:end‖口径弹匣</entitydescription.tsm_lm_m110>
 
   <entityname.tsm_lm_ar15>联盟AR15-Taran步枪</entityname.tsm_lm_ar15>
-  <entitydescription.tsm_lm_ar15>曾最为地球上销售量最大的步枪，稳定精准加之亲民的造价和高度可改装模块深受大众喜欢，用它来捍卫自己的权利。其列装联盟的军用版本已经具有全自动开火能力。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_ar15>
+  <entitydescription.tsm_lm_ar15>曾最为地球上销售量最大的步枪，稳定精准加之亲民的造价和高度可改装模块深受大众喜欢，用它来捍卫自己的权利。其列装联盟的军用版本已经具有全自动开火能力。使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_ar15>
 
   <entityname.tsm_lm_M4>联盟M4突击步枪</entityname.tsm_lm_M4>
-  <entitydescription.tsm_lm_M4>古老的卡宾枪，使用的也不是被联盟禁止的6.8mm弹药，但是优秀的设计让它在如今也依旧是联盟里保有量最高的武器，使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_M4>
+  <entitydescription.tsm_lm_M4>古老的卡宾枪，使用的也不是被联盟禁止的6.8mm弹药，但是优秀的设计让它在如今也依旧是联盟里保有量最高的武器，使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_M4>
 
   <entityname.tsm_lm_hk416>联盟HK416突击步枪</entityname.tsm_lm_hk416>
-  <entitydescription.tsm_lm_hk416>使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣，HK416突击步枪作为一件高性能战术装备，成为潜艇船员在危机四伏的深渊环境中不可或缺的武器。它不仅以卓越的可靠性和多功能性适应了深海殖民地的战斗需求，还在黑暗与恐惧交织的环境中，成为船员们对抗未知威胁的中流砥柱。</entitydescription.tsm_lm_hk416>
+  <entitydescription.tsm_lm_hk416>使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣，HK416突击步枪作为一件高性能战术装备，成为潜艇船员在危机四伏的深渊环境中不可或缺的武器。它不仅以卓越的可靠性和多功能性适应了深海殖民地的战斗需求，还在黑暗与恐惧交织的环境中，成为船员们对抗未知威胁的中流砥柱。</entitydescription.tsm_lm_hk416>
 
   <entityname.tsm_lm_mk18>联盟MK18突击步枪</entityname.tsm_lm_mk18>
-  <entitydescription.tsm_lm_mk18>比联盟卡宾枪更短的枪身带给它更高的机动性，强大的爆发力让它一度成为联盟的制式突击步枪，使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_mk18>
+  <entitydescription.tsm_lm_mk18>比联盟卡宾枪更短的枪身带给它更高的机动性，强大的爆发力让它一度成为联盟的制式突击步枪，使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_mk18>
 
-  <entityname.tsm_lm_scarh>联盟MK17重型战斗步枪</entityname.tsm_lm_scarh>
-  <entitydescription.tsm_lm_scarh>联盟常规的5.56*45口径子弹在面对防护级别不断提高的防弹衣，穿透力明显不足，同时为了完成复杂多变的作战任务，联盟的特种部队对于远距离穿透力指标提出更高要求，所以这款重型战斗步枪应运而生。使用行‖color:150,0,0,255‖7.62*51mm‖color:end‖子弹。</entitydescription.tsm_lm_scarh>
+  <entityname.tsm_lm_scarh>联盟SCAR—H重型战斗步枪</entityname.tsm_lm_scarh>
+  <entitydescription.tsm_lm_scarh>联盟常规的5.56*45口径子弹在面对防护级别不断提高的防弹衣，穿透力明显不足，同时为了完成复杂多变的作战任务，联盟的特种部队对于远距离穿透力指标提出更高要求，所以这款重型战斗步枪应运而生。使用行‖color:0,200,0,255‖7.62*51mm‖color:end‖子弹。</entitydescription.tsm_lm_scarh>
 
   <entityname.tsm_lm_mcx>联盟MCX·spear原型步枪</entityname.tsm_lm_mcx>
-  <entitydescription.tsm_lm_mcx>联盟计划列装特种部队的实验性先进武器，被誉为AR系步枪的巅峰之作，使用实验性的‖color:150,0,0,255‖6.8*51‖color:end‖弹匣具有可观的杀伤力，搭载完全现代化的模块平台。</entitydescription.tsm_lm_mcx>
+  <entitydescription.tsm_lm_mcx>联盟计划列装特种部队的实验性先进武器，被誉为AR系步枪的巅峰之作，使用实验性的‖color:0,200,0,255‖6.8*51‖color:end‖弹匣具有可观的杀伤力，搭载完全现代化的模块平台。</entitydescription.tsm_lm_mcx>
 
   <entityname.tsm_lm_hk417>联盟HK417精确射手步枪</entityname.tsm_lm_hk417>
-  <entitydescription.tsm_lm_hk417>使用‖color:150,0,0,255‖7.62*51‖color:end‖口径弹匣，不论是单发狙杀，还是火力压制都不在话下，AR结构的模块化平台让它能够适应各种任务，但只有最老练的射手才能驾驭它的全自动后坐力</entitydescription.tsm_lm_hk417>
+  <entitydescription.tsm_lm_hk417>使用‖color:0,200,0,255‖7.62*51‖color:end‖口径弹匣，不论是单发狙杀，还是火力压制都不在话下，AR结构的模块化平台让它能够适应各种任务，但只有最老练的射手才能驾驭它的全自动后坐力</entitydescription.tsm_lm_hk417>
 
   <entityname.tsm_lm_mk14ebr>联盟MK14 EBR战斗射手步枪</entityname.tsm_lm_mk14ebr>
-  <entitydescription.tsm_lm_mk14ebr>使用‖color:150,0,0,255‖7.62*51‖color:end‖口径弹匣，当栓动狙击枪缺乏压制力，精准步枪威力不足，这时候一杆既精准而又极具压制力的战斗射手步枪或许能为小队扫清阻碍</entitydescription.tsm_lm_mk14ebr>
+  <entitydescription.tsm_lm_mk14ebr>使用‖color:0,200,0,255‖7.62*51‖color:end‖口径弹匣，当栓动狙击枪缺乏压制力，精准步枪威力不足，这时候一杆既精准而又极具压制力的战斗射手步枪或许能为小队扫清阻碍</entitydescription.tsm_lm_mk14ebr>
   <!--狙击枪-->
-  <entityname.tsm_lm_spg1>联盟SPG-1狙击步枪</entityname.tsm_lm_spg1>
-  <entitydescription.tsm_lm_spg1>使用‖color:150,0,0,255‖联盟弹匣(7.62*51)‖color:end‖，有着极其优秀的精度和中规中矩杀伤力，极其适合在镇压恐怖行动中使用</entitydescription.tsm_lm_spg1>
+  <entityname.tsm_lm_spg1>联盟PSG-1狙击步枪</entityname.tsm_lm_spg1>
+  <entitydescription.tsm_lm_spg1>使用‖color:0,200,0,255‖联盟弹匣(7.62*51)‖color:end‖，有着极其优秀的精度和中规中矩杀伤力，极其适合在镇压恐怖行动中使用</entitydescription.tsm_lm_spg1>
 
   <entityname.tsm_lm_awm>联盟AWM狙击枪</entityname.tsm_lm_awm>
-  <entitydescription.tsm_lm_awm>使用‖color:150,0,0,255‖狙击步枪弹匣(8.6*70)‖color:end‖，联盟最常见的狙击枪，常见在站点反恐行动中，简单的构造和舒适的手感使得略有心得的狙击手也能完成任务</entitydescription.tsm_lm_awm>
+  <entitydescription.tsm_lm_awm>使用‖color:0,200,0,255‖狙击步枪弹匣(8.6*70)‖color:end‖，联盟最常见的狙击枪，常见在站点反恐行动中，简单的构造和舒适的手感使得略有心得的狙击手也能完成任务</entitydescription.tsm_lm_awm>
 
   <entityname.tsm_lm_m82a1>联盟巴雷特M82A1反器材狙击枪</entityname.tsm_lm_m82a1>
-  <entitydescription.tsm_lm_m82a1>使用‖color:150,0,0,255‖狙击步枪弹匣(12.7*99)‖color:end‖，在联盟服役多年的反器材狙击枪，为在能够穿透潜艇外壳精准斩首潜艇内部的高价值目标，但要足够强壮才能够驾驭这个坏小子</entitydescription.tsm_lm_m82a1>
+  <entitydescription.tsm_lm_m82a1>使用‖color:0,200,0,255‖狙击步枪弹匣(12.7*99)‖color:end‖，在联盟服役多年的反器材狙击枪，为在能够穿透潜艇外壳精准斩首潜艇内部的高价值目标，但要足够强壮才能够驾驭这个坏小子</entitydescription.tsm_lm_m82a1>
 
  <!--其他-->
   <entityname.tsm_honeybadger>联盟蜜獾短突击步枪</entityname.tsm_honeybadger>
-  <entitydescription.tsm_honeybadger>事实证明冲锋枪在防弹衣普及的潜艇近距离作战中虽然拥有良好机动性，但杀伤力明显力不从心，在考虑弹匣通用性后，改造出了使用‖color:150,0,0,255‖.300BLK弹匣‖color:end‖的蜜獾短突击步枪到由此诞生出了，一体式消音器，短小枪身，大口径，集冲锋枪和步枪的长处为一体</entitydescription.tsm_honeybadger>
+  <entitydescription.tsm_honeybadger>事实证明冲锋枪在防弹衣普及的潜艇近距离作战中虽然拥有良好机动性，但杀伤力明显力不从心，在考虑弹匣通用性后，改造出了使用‖color:0,200,0,255‖.300BLK弹匣‖color:end‖的蜜獾短突击步枪到由此诞生出了，一体式消音器，短小枪身，大口径，集冲锋枪和步枪的长处为一体</entitydescription.tsm_honeybadger>
 
   <entityname.tsm_lm_czbren3>联盟CZ BREN3特种短突步枪</entityname.tsm_lm_czbren3>
-  <entitydescription.tsm_lm_czbren3>使用‖color:150,0,0,255‖.300BLK弹匣‖color:end‖，集成式消音和全新材料让它更加优雅而又致命，出现在各种见不得光的任务中，即比冲锋枪致命，又比步枪灵活</entitydescription.tsm_lm_czbren3>
+  <entitydescription.tsm_lm_czbren3>使用‖color:0,200,0,255‖.300BLK弹匣‖color:end‖，集成式消音和全新材料让它更加优雅而又致命，出现在各种见不得光的任务中，即比冲锋枪致命，又比步枪灵活</entitydescription.tsm_lm_czbren3>
 
   <entityname.tsm_lm_mcxxws>联盟MCX“响尾蛇”短突击步枪</entityname.tsm_lm_mcxxws>
-  <entitydescription.tsm_lm_mcxxws>使用‖color:150,0,0,255‖.300BLK弹匣‖color:end‖，目前最紧凑的突击步枪，当它收起枪托和护木时，体积小巧到能够放进衣服口袋里，比步枪灵活，比冲锋枪更致命，就像是一只埋伏在暗处的响尾蛇。</entitydescription.tsm_lm_mcxxws>
+  <entitydescription.tsm_lm_mcxxws>使用‖color:0,200,0,255‖.300BLK弹匣‖color:end‖，目前最紧凑的突击步枪，当它收起枪托和护木时，体积小巧到能够放进衣服口袋里，比步枪灵活，比冲锋枪更致命，就像是一只埋伏在暗处的响尾蛇。</entitydescription.tsm_lm_mcxxws>
 
   <!--特殊-->
   <entityname.tsm_lm_mk18_l>MK18 CQB</entityname.tsm_lm_mk18_l>
-  <entitydescription.tsm_lm_mk18_l>一把经过改装的MK18，更适合快反部队在室内作战。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣。</entitydescription.tsm_lm_mk18_l>
+  <entitydescription.tsm_lm_mk18_l>一把经过改装的MK18，更适合快反部队在室内作战。使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣。</entitydescription.tsm_lm_mk18_l>
 
   <entityname.tsm_lm_g36c>联盟G36C突击步枪</entityname.tsm_lm_g36c>
-  <entitydescription.tsm_lm_g36c>作为联盟突击行动中使用的突入武器，因此“短”和“轻”就是它的最大特点，但后坐力并没有因此增加，而是人机功效的作用让它更加稳定，受到了不少站点安全官的好评.使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_g36c>
+  <entitydescription.tsm_lm_g36c>作为联盟突击行动中使用的突入武器，因此“短”和“轻”就是它的最大特点，但后坐力并没有因此增加，而是人机功效的作用让它更加稳定，受到了不少站点安全官的好评.使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_g36c>
 
   <entityname.tsm_lm_mk18_c>联盟MK18突击步枪(战术型)</entityname.tsm_lm_mk18_c>
-  <entitydescription.tsm_lm_mk18_c>一把使用了迷彩的MK18，瞄准镜与握把给予了这把枪更好的操控性，让射手不必再去捏着手感奇差的护木开火。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_mk18_c>
+  <entitydescription.tsm_lm_mk18_c>一把使用了迷彩的MK18，瞄准镜与握把给予了这把枪更好的操控性，让射手不必再去捏着手感奇差的护木开火。使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_mk18_c>
 
   <entityname.tsm_lm_g36ka4>联盟G36KA4突击步枪</entityname.tsm_lm_g36ka4>
-  <entitydescription.tsm_lm_g36ka4>短款的标准改进型号，虽然长度更笨重了一点，但得到的是更强大的火力。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_g36ka4>
+  <entitydescription.tsm_lm_g36ka4>短款的标准改进型号，虽然长度更笨重了一点，但得到的是更强大的火力。使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_g36ka4>
 
-  <entityname.tsm_lm_hk433>联盟HK433/G39突击步枪</entityname.tsm_lm_hk433>
-  <entitydescription.tsm_lm_hk433>使用‖color:150,0,0,255‖5.56‖color:end‖口径子弹或‖color:150,0,0,255‖.300blk弹匣‖color:end‖，基于一个全新的、独特的、可扩展的、高效的武器平台，未来供军队和安全官使用的制式武器，但由于材料苛刻并没有列装，部分军官就算自费也想搞到一把如此精美的武器</entitydescription.tsm_lm_hk433>
+  <entityname.tsm_lm_hk433>联盟HK433突击步枪</entityname.tsm_lm_hk433>
+  <entitydescription.tsm_lm_hk433>使用‖color:0,200,0,255‖5.56‖color:end‖口径子弹或‖color:0,200,0,255‖.300blk弹匣‖color:end‖，基于一个全新的、独特的、可扩展的、高效的武器平台，未来供军队和安全官使用的制式武器，但由于材料苛刻并没有列装，部分军官就算自费也想搞到一把如此精美的武器</entitydescription.tsm_lm_hk433>
 
   <entityname.tsm_lm_97>联盟97式快速镇暴步枪</entityname.tsm_lm_97>
-  <entitydescription.tsm_lm_97>应联盟一些部队的要求改造的一款新式无托步枪，改造后适应‖color:150,0,0,255‖5.56mm‖color:end‖子弹，并采用短连发机制，来获得快的压制力以及精准度。</entitydescription.tsm_lm_97>
+  <entitydescription.tsm_lm_97>应联盟一些部队的要求改造的一款新式无托步枪，改造后适应‖color:0,200,0,255‖5.56mm‖color:end‖子弹，并采用短连发机制，来获得快的压制力以及精准度。</entitydescription.tsm_lm_97>
 
-  <entityname.tsm_lm_drh>联盟ACR突击步枪</entityname.tsm_lm_drh>
-  <entitydescription.tsm_lm_drh>使用‖color:150,0,0,255‖6.8mm‖color:end‖军用弹药的突击步枪，射速高威力可观，但是6.8mm弹药带来的巨大后坐力需要长期训练才能驾驭，可以安置瞄具。</entitydescription.tsm_lm_drh>
+  <entityname.tsm_lm_drh>联盟ACR“大毒蛇”自适应战斗步枪</entityname.tsm_lm_drh>
+  <entitydescription.tsm_lm_drh>使用‖color:0,200,0,255‖6.8mm‖color:end‖军用弹药的突击步枪，射速高威力可观，但是6.8mm弹药带来的巨大后坐力需要长期训练才能驾驭。</entitydescription.tsm_lm_drh>
 
   <entityname.tsm_lm_m4_c>联盟M4突击步枪（万能钥匙）</entityname.tsm_lm_m4_c>
-  <entitydescription.tsm_lm_m4_c>把经过特殊改造的突击步枪，装备了瞄准镜与下挂霰弹枪的迷彩M4。虽然使用简单，但是不能同时发射5.56子弹与霰弹，过大的后坐力会伤害射手。使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_m4_c>
+  <entitydescription.tsm_lm_m4_c>把经过特殊改造的突击步枪，装备了瞄准镜与下挂霰弹枪的迷彩M4。使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣</entitydescription.tsm_lm_m4_c>
 
-  <entityname.tsm_lm_cz805a1>联盟CZ 805A1 bren突击步枪</entityname.tsm_lm_cz805a1>
-  <entitydescription.tsm_lm_cz805a1>一把联盟落选的制式武器，但绝对不失为一把优秀之做，且布局更加优美，折叠枪托和工程塑料的应用让重量更加舒适，使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣。</entitydescription.tsm_lm_cz805a1>
+  <entityname.tsm_lm_cz805a1>CZ 805A1 bren突击步枪</entityname.tsm_lm_cz805a1>
+  <entitydescription.tsm_lm_cz805a1>一把联盟落选的制式武器，但绝对不失为一把优秀之做，且布局更加优美，折叠枪托和工程塑料的应用让重量更加舒适，使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣。</entitydescription.tsm_lm_cz805a1>
 
   <entityname.tsm_lm_cz806>CZ806 bren2突击步枪</entityname.tsm_lm_cz806>
-  <entitydescription.tsm_lm_cz806>操作更加简洁，配备榴弹下挂，不少雇佣兵要是预算足够肯定会想办法搞到一把，使用联盟发行‖color:150,0,0,255‖5.56mm‖color:end‖弹匣。</entitydescription.tsm_lm_cz806>
+  <entitydescription.tsm_lm_cz806>操作更加简洁，配备榴弹下挂，不少雇佣兵要是预算足够肯定会想办法搞到一把，使用联盟发行‖color:0,200,0,255‖5.56mm‖color:end‖弹匣。</entitydescription.tsm_lm_cz806>
 
   <entityname.tsm_lm_dp12>DP-12 泵动压制霰弹枪</entityname.tsm_lm_dp12>
   <entitydescription.tsm_lm_dp12>一把恐怖的双管猛兽，当敌人见到它的第一眼已经被双发喷飞在了墙壁上，能为队伍的先手提供绝对的压制优势，为后续队友创造足够的作战空间，因为拦路的敌人已经被喷飞了出去，是小队尖兵和攻破手的最爱。</entitydescription.tsm_lm_dp12>
 
   <entityname.tsm_lm_ks23>KS-23泵动压制霰弹</entityname.tsm_lm_ks23>
-  <entitydescription.tsm_lm_ks23>使用已被欧罗巴公约禁止的‖color:150,0,0,255‖4号霰弹‖color:end‖，其实枪本体也在禁止范围内，拥有恐怖的23mm口径，但你只要把加农炮的炮管想办法锯下来，再把3枚12号霰弹的弹药倒在一起就能搞到它。记住，没有任何战争是因为某个人道主义契约而发生改变</entitydescription.tsm_lm_ks23>
+  <entitydescription.tsm_lm_ks23>使用已被欧罗巴公约禁止的‖color:0,200,0,255‖4号霰弹‖color:end‖，其实枪本体也在禁止范围内，拥有恐怖的23mm口径，但你只要把加农炮的炮管想办法锯下来，再把3枚12号霰弹的弹药倒在一起就能搞到它。记住，没有任何战争是因为某个人道主义契约而发生改变</entitydescription.tsm_lm_ks23>
 
   <entityname.tsm_lm_spas12>弗兰奇SPAS-12霰弹枪</entityname.tsm_lm_spas12>
   <entitydescription.tsm_lm_spas12>古老的多功能霰弹枪，既可以泵动也能半自动发射，因此射击速度普遍高于普通霰弹枪，很多困难其实没有它来几发不能够解决的</entitydescription.tsm_lm_spas12>
 
+ <entityname.tsm_lm_ash12>联盟ASH-12反恐突击步枪</entityname.tsm_lm_ash12>
+ <entitydescription.tsm_lm_ash12>联盟贝奥武夫中队多次反应，有分离分子在常规口径下身中数枪后依然能进行反击，直到彻底流血死亡，这一情况虽然没有真正证实，但联盟还是同意为贝奥武夫中队列装了部分使用联盟‖color:0,200,0,255‖12.7*55‖color:end‖步枪弹匣的大口径反恐步枪，当然其全自动带来的巨大后坐力只有真正的男子汉才能够驾驭</entitydescription.tsm_lm_ash12>
+
  <!--机枪-->
   <entityname.tsm_lm_mk46>联盟通用轻机枪（MK46）</entityname.tsm_lm_mk46>
-  <entitydescription.tsm_lm_mk46>地球上的一种班用轻机枪，更短的枪管让它更适合在渊洋下狭窄的站点空间内，或是潜艇通道中辗转腾挪，使用‖color:150,0,0,255‖联盟轻机枪弹匣（5.56*45）‖color:end‖。</entitydescription.tsm_lm_mk46>
+  <entitydescription.tsm_lm_mk46>地球上的一种班用轻机枪，更短的枪管让它更适合在渊洋下狭窄的站点空间内，或是潜艇通道中辗转腾挪，使用‖color:0,200,0,255‖联盟轻机枪弹匣（5.56*45）‖color:end‖。</entitydescription.tsm_lm_mk46>
 
   <entityname.tsm_lm_mk48>联盟班用机枪（MK48）</entityname.tsm_lm_mk48>
-  <entitydescription.tsm_lm_mk48>使用‖color:150,0,0,255‖联盟机枪弹匣（7.62*51）‖color:end‖。</entitydescription.tsm_lm_mk48>
+  <entitydescription.tsm_lm_mk48>使用‖color:0,200,0,255‖联盟机枪弹匣（7.62*51）‖color:end‖。</entitydescription.tsm_lm_mk48>
 
   <entityname.tsm_lm_m249>联盟轻机枪（M249）</entityname.tsm_lm_m249>
-  <entitydescription.tsm_lm_m249>杀伤力虽然差强人意但使用装有200发弹链供弹具有可靠性和强大的火力，亦是步兵班中最具持久连射火力的武器。可安装脚架来提供一定的稳定性，使用‖color:150,0,0,255‖联盟轻机枪弹匣（5.56*45）‖color:end‖。</entitydescription.tsm_lm_m249>
+  <entitydescription.tsm_lm_m249>杀伤力虽然差强人意但使用装有200发弹链供弹具有可靠性和强大的火力，亦是步兵班中最具持久连射火力的武器。可安装脚架来提供一定的稳定性，使用‖color:0,200,0,255‖联盟轻机枪弹匣（5.56*45）‖color:end‖。</entitydescription.tsm_lm_m249>
 
   <entityname.tsm_lm_m240b>联盟通用机枪(M240B)</entityname.tsm_lm_m240b>
-  <entitydescription.tsm_lm_m240b>整体由坚硬钢铁打造使得其十分笨重，但换来的是恐怖的压制力，使用‖color:150,0,0,255‖联盟机枪弹匣（7.62*51）‖color:end‖。</entitydescription.tsm_lm_m240b>
+  <entitydescription.tsm_lm_m240b>整体由坚硬钢铁打造使得其十分笨重，但换来的是恐怖的压制力，使用‖color:0,200,0,255‖联盟机枪弹匣（7.62*51）‖color:end‖。</entitydescription.tsm_lm_m240b>
 
   <entityname.tsm_lm_m60e6>联盟通用机枪(MM60 E6)</entityname.tsm_lm_m60e6>
-  <entitydescription.tsm_lm_m60e6>使用‖color:150,0,0,255‖联盟机枪弹匣（7.62*51）‖color:end‖，由于之前的通用机枪太过笨重和在狭窄潜艇中难以施展，联盟急需一款更短，人机功效更好也更模块化的通用机枪，而这就是一张最完美的答卷</entitydescription.tsm_lm_m60e6>
+  <entitydescription.tsm_lm_m60e6>使用‖color:0,200,0,255‖联盟机枪弹匣（7.62*51）‖color:end‖，由于之前的通用机枪太过笨重和在狭窄潜艇中难以施展，联盟急需一款更短，人机功效更好也更模块化的通用机枪，而这就是一张最完美的答卷</entitydescription.tsm_lm_m60e6>
 
   <entityname.tsm_lm_xm250>联盟XM250原型班用机枪</entityname.tsm_lm_xm250>
-  <entitydescription.tsm_lm_xm250>使用150发‖color:150,0,0,255‖联盟机枪弹袋(6.8*51)‖color:end‖，新弹药和新材料的加持下，枪口动能几乎是联盟现役机枪的两倍，能够轻易穿透当今任何防弹衣与头盔，更小的弹药体积能让弹药袋装下更多的弹药，浮动枪管与良好的人机功效带来更优秀的后座力</entitydescription.tsm_lm_xm250>
+  <entitydescription.tsm_lm_xm250>使用150发‖color:0,200,0,255‖联盟机枪弹袋(6.8*51)‖color:end‖，新弹药和新材料的加持下，枪口动能几乎是联盟现役机枪的两倍，能够轻易穿透当今任何防弹衣与头盔，更小的弹药体积能让弹药袋装下更多的弹药，浮动枪管与良好的人机功效带来更优秀的后座力</entitydescription.tsm_lm_xm250>
 
   <entityname.tsm_m1014>伯奈利M1014霰弹枪</entityname.tsm_m1014>
   <entitydescription.tsm_m1014>几个世纪前的战斗霰弹枪，经过设计优化后，在欧罗巴的渊洋里仍是安保与自卫的不二之选</entitydescription.tsm_m1014>
@@ -960,10 +1018,10 @@
   <entitydescription.tsm_ksg>短小却拥有装填9发子弹的能力，这在木卫二狭小的船舱里是一个巨大的优势，这代表你能在怪物冲到面前时可以继续开火——以及不会这么轻易被敌人夺走武器。而双发扳机的优势，能够让你在极短时间内打出强力的爆发。</entitydescription.tsm_ksg>
 
   <entityname.tsm_lm_m700>联盟M700狙击步枪</entityname.tsm_lm_m700>
-  <entitydescription.tsm_lm_m700>联盟针对老旧的栓动步枪进行了改造，使其可以发射更高威力的弹药。不过相应的，如果想要肩膀还在身上，就练熟了再来使用。使用联盟发行‖color:150,0,0,255‖8.6*70‖color:end‖口径弹药</entitydescription.tsm_lm_m700>
+  <entitydescription.tsm_lm_m700>联盟针对老旧的栓动步枪进行了改造，使其可以发射更高威力的弹药。不过相应的，如果想要肩膀还在身上，就练熟了再来使用。使用联盟发行‖color:0,200,0,255‖8.6*70‖color:end‖口径弹药</entitydescription.tsm_lm_m700>
 
   <entityname.tsm_lm_m700_r>M700（Redfield 3X-9XACCU-Range）</entityname.tsm_lm_m700_r>
-  <entitydescription.tsm_lm_m700_r>拥有更长的枪管和更高的精度，因为过长所以只能放在武器架上。联盟的狙击手都以自己能驾驭这么一把M700而自豪。使用‖color:150,0,0,255‖8.6*70‖color:end‖口径弹药</entitydescription.tsm_lm_m700_r>
+  <entitydescription.tsm_lm_m700_r>拥有更长的枪管和更高的精度，因为过长所以只能放在武器架上。联盟的狙击手都以自己能驾驭这么一把M700而自豪。使用‖color:0,200,0,255‖8.6*70‖color:end‖口径弹药</entitydescription.tsm_lm_m700_r>
 
   <entityname.lm_ammobox>联盟弹药箱</entityname.lm_ammobox>
   <entitydescription.lm_ammobox>联盟发售弹药箱，可以给联盟常见的弹匣压弹&#xD;&#xA;[放入弹匣,右键+左键压弹.]</entitydescription.lm_ammobox>
@@ -973,7 +1031,6 @@
 
   <entityname.tsm_556_45_mgmag_cj>联盟机枪穿甲弹匣（5.56*45）</entityname.tsm_556_45_mgmag_cj>
   <entitydescription.tsm_556_45_mgmag_cj>装有200发5.56*45mm穿甲子弹。</entitydescription.tsm_556_45_mgmag_cj>
-
 
   <entityname.lm_762_51_mgmag>联盟机枪弹匣（7.62*51）</entityname.lm_762_51_mgmag>
   <entitydescription.lm_762_51_mgmag>装有200发7.62*51mm子弹。</entitydescription.lm_762_51_mgmag>
@@ -1034,102 +1091,117 @@
 
   <entityname.tsm_miniammo>Minigun弹匣</entityname.tsm_miniammo>
   <entitydescription.tsm_miniammo>200发556口径子弹，尽情挥霍。</entitydescription.tsm_miniammo>
+
+ <entityname.lm_127_55_mag>联盟普通弹匣(12.7*55)</entityname.lm_127_55_mag>
+ <entitydescription.lm_127_55_mag>装填20发12.7*55mm步枪弹</entitydescription.lm_127_55_mag>
  <!--反抗军-->
   <entityname.tsm_fkj_tac9>反抗军TAC-9自动手枪</entityname.tsm_fkj_tac9>
-  <entitydescription.tsm_fkj_tac9>使用‖color:150,0,0,255‖9mm‖color:end‖手枪弹匣，使用机床简单冲压加工就能制造，造价低廉，携带隐藏，全自动的致命威胁是不少小混混和帮派分子的最爱，但在军事冲突中就有点上不了台面了</entitydescription.tsm_fkj_tac9>
+  <entitydescription.tsm_fkj_tac9>使用‖color:0,200,0,255‖9mm‖color:end‖手枪弹匣，使用机床简单冲压加工就能制造，造价低廉，携带隐藏，全自动的致命威胁是不少小混混和帮派分子的最爱，但在军事冲突中就有点上不了台面了</entitydescription.tsm_fkj_tac9>
 
   <entityname.tsm_fkj_uzi>反抗军UZI伍兹冲锋枪</entityname.tsm_fkj_uzi>
-  <entitydescription.tsm_fkj_uzi>使用‖color:150,0,0,255‖9mm‖color:end‖手枪弹匣，射速贯彻最极致的火力，但对于防弹衣却无可奈何，散布也不太理想，但对于运输人员和盾牌手，另一只手也可以具有攻击性</entitydescription.tsm_fkj_uzi>
+  <entitydescription.tsm_fkj_uzi>使用‖color:0,200,0,255‖9mm‖color:end‖手枪弹匣，射速贯彻最极致的火力，但对于防弹衣却无可奈何，散布也不太理想，但对于运输人员和盾牌手，另一只手也可以具有攻击性</entitydescription.tsm_fkj_uzi>
 
   <entityname.tsm_fkj_ppk20>反抗军ppk-20冲锋枪</entityname.tsm_fkj_ppk20>
-  <entitydescription.tsm_fkj_ppk20>使用‖color:150,0,0,255‖冲锋枪弹匣（9mm）‖color:end‖，反抗军后勤人员对于老式冲锋枪的弃用，而列装为了这款新式冲锋枪，让他们即使没有经过专业武器培训也能够在危险时刻威胁敌人，枪口位置只能装消音器。</entitydescription.tsm_fkj_ppk20>
+  <entitydescription.tsm_fkj_ppk20>使用‖color:0,200,0,255‖冲锋枪弹匣（9mm）‖color:end‖，反抗军后勤人员对于老式冲锋枪的弃用，而列装为了这款新式冲锋枪，让他们即使没有经过专业武器培训也能够在危险时刻威胁敌人，枪口位置只能装消音器。</entitydescription.tsm_fkj_ppk20>
 
   <entityname.tsm_fkj_evo3>反抗军蝎式EVO3冲锋枪</entityname.tsm_fkj_evo3>
-  <entitydescription.tsm_fkj_evo3>使用‖color:150,0,0,255‖冲锋枪弹匣（9mm）‖color:end‖，当它折起枪托的时候就像一只蓄势待发的蝎子，致命而又优雅，全面的模块化并兼容手枪消音器，是反抗军军官爱不释手的身份象征，枪口位置只能装消音器。</entitydescription.tsm_fkj_evo3>
+  <entitydescription.tsm_fkj_evo3>使用‖color:0,200,0,255‖冲锋枪弹匣（9mm）‖color:end‖，当它折起枪托的时候就像一只蓄势待发的蝎子，致命而又优雅，全面的模块化并兼容手枪消音器，是反抗军军官爱不释手的身份象征，枪口位置只能装消音器。</entitydescription.tsm_fkj_evo3>
 
   <entityname.tsm_fkj_an94>反抗军AN94突击步枪</entityname.tsm_fkj_an94>
-  <entitydescription.tsm_fkj_an94>曾经出现过的国家的遗产，反抗军继承了它并让它发扬光大。反抗军不仅将口径扩大到‖color:150,0,0,255‖7.62*39‖color:end‖，还保留了它的精度。但是需要长时间训练才能规范使用它。（开火后武器耐久卡在50%是正常现象，这是为了让枪管前后复进的必要牺牲）</entitydescription.tsm_fkj_an94>
+  <entitydescription.tsm_fkj_an94>曾经出现过的国家的遗产，反抗军继承了它并让它发扬光大。反抗军不仅将口径扩大到‖color:0,200,0,255‖7.62*39‖color:end‖，还保留了它的精度。但是需要长时间训练才能规范使用它。（开火后武器耐久卡在50%是正常现象，这是为了让枪管前后复进的必要牺牲）</entitydescription.tsm_fkj_an94>
 
   <entityname.tsm_fkj_ak74>反抗军AK74自动步枪</entityname.tsm_fkj_ak74>
-  <entitydescription.tsm_fkj_ak74>仅仅只需要半个钟的学习就能正确使用，最适合七岁儿童的武器。发射‖color:150,0,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak74>
+  <entitydescription.tsm_fkj_ak74>仅仅只需要半个钟的学习就能正确使用，最适合七岁儿童的武器。发射‖color:0,200,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak74>
 
-  <entityname.tsm_fkj_ak74u>反抗军AK74u短突击步枪</entityname.tsm_fkj_ak74u>
-  <entitydescription.tsm_fkj_ak74u>发射‖color:150,0,0,255‖5.45*39‖color:end‖弹药，折叠枪托让他携带更加方便，枪也更加靠后，造价低廉，棕色工程塑料也有满满的地球情怀，是后勤人员理想的自卫武器</entitydescription.tsm_fkj_ak74u>
+  <entityname.tsm_fkj_ak74u>反抗军AKS-74u短突击步枪</entityname.tsm_fkj_ak74u>
+  <entitydescription.tsm_fkj_ak74u>发射‖color:0,200,0,255‖5.45*39‖color:end‖弹药，折叠枪托让他携带更加方便，枪也更加靠后，造价低廉，棕色工程塑料也有满满的地球情怀，是后勤人员理想的自卫武器</entitydescription.tsm_fkj_ak74u>
 
   <entityname.tsm_fkj_groza>反抗军OTS Groza-1“闪电”无托突击步枪</entityname.tsm_fkj_groza>
-  <entitydescription.tsm_fkj_groza>一把根据ak74u改造的短小无托步枪，使用‖color:150,0,0,255‖7.62*39‖color:end‖口径的弹匣，虽然大口径威力强悍，射速惊人，但差劲的人机功效和难以控制的后座力使得“狗杂”很快就被在潜艇战无托武器淘汰，但造价低廉易于携带，受到了不少海盗和反抗军喜爱。</entitydescription.tsm_fkj_groza>
+  <entitydescription.tsm_fkj_groza>一把根据ak74u改造的短小无托步枪，使用‖color:0,200,0,255‖9*39‖color:end‖口径的弹匣，虽然大口径威力强悍，射速惊人，但差劲的人机功效和难以控制的后座力使得“狗杂”很快就被在潜艇战无托武器淘汰，但造价低廉易于携带，受到了不少海盗和反抗军喜爱。</entitydescription.tsm_fkj_groza>
 
   <entityname.tsm_fkj_ak103>反抗军AK103突击步枪</entityname.tsm_fkj_ak103>
-  <entitydescription.tsm_fkj_ak103>一把优秀的武器，非常适合用来反抗联盟的暴政。很多时候你要做的就只有接过枪，然后向联盟倾泻子弹。发射‖color:150,0,0,255‖7.62*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak103>
+  <entitydescription.tsm_fkj_ak103>一把优秀的武器，非常适合用来反抗联盟的暴政。很多时候你要做的就只有接过枪，然后向联盟倾泻子弹。发射‖color:0,200,0,255‖7.62*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak103>
 
   <entityname.tsm_fkj_ak103_l>AK103突击步枪（轻量化枪托）</entityname.tsm_fkj_ak103_l>
-  <entitydescription.tsm_fkj_ak103_l>在原有基础上进行了轻量化改造与加快射速，使其更适合用于在潜艇内战斗。发射‖color:150,0,0,255‖7.62*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak103_l>
+  <entitydescription.tsm_fkj_ak103_l>在原有基础上进行了轻量化改造与加快射速，使其更适合用于在潜艇内战斗。发射‖color:0,200,0,255‖7.62*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak103_l>
 
   <entityname.tsm_fkj_ak105>反抗军AK105突击步枪</entityname.tsm_fkj_ak105>
-  <entitydescription.tsm_fkj_ak105>短枪管更适合在狭小空间内使用，非常适合潜艇艇员进行舱内反击与突袭船坞。发射‖color:150,0,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak105>
+  <entitydescription.tsm_fkj_ak105>短枪管更适合在狭小空间内使用，非常适合潜艇艇员进行舱内反击与突袭船坞。发射‖color:0,200,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak105>
 
   <entityname.tsm_fkj_ak105_l>AK105突击步枪(轻量化枪托)</entityname.tsm_fkj_ak105_l>
-  <entitydescription.tsm_fkj_ak105_l>更轻的AK-105，并无其他改进。因为更换了枪托，记得携带枪械清洁工具。发射‖color:150,0,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak105_l>
+  <entitydescription.tsm_fkj_ak105_l>更轻的AK-105，并无其他改进。因为更换了枪托，记得携带枪械清洁工具。发射‖color:0,200,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak105_l>
 
   <entityname.tsm_fkj_am17>反抗军AM-17突击步枪</entityname.tsm_fkj_am17>
-  <entitydescription.tsm_fkj_am17>为了满足反抗军更加安静的执行某些任务而诞生，搭载了特制消音器，但口径问题只列装在了小部分部队。发射‖color:150,0,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_am17>
+  <entitydescription.tsm_fkj_am17>为了满足反抗军更加安静的执行某些任务而诞生，搭载了特制消音器，但口径问题只列装在了小部分部队。发射‖color:0,200,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_am17>
 
   <entityname.tsm_fkj_sks>反抗军SKS西蒙诺夫步枪</entityname.tsm_fkj_sks>
-  <entitydescription.tsm_fkj_sks>曾经的社会主义阵营武器，但是被小布尔乔亚进行了改装。虽然更好用，但是总感觉哪里怪怪的？使用‖color:150,0,0,255‖7.62*39‖color:end‖弹匣</entitydescription.tsm_fkj_sks>
+  <entitydescription.tsm_fkj_sks>曾经的社会主义阵营武器，但是被小布尔乔亚进行了改装。虽然更好用，但是总感觉哪里怪怪的？使用‖color:0,200,0,255‖7.62*39‖color:end‖弹匣</entitydescription.tsm_fkj_sks>
 
   <entityname.tsm_fkj_ak12>反抗军AK12突击步枪</entityname.tsm_fkj_ak12>
-  <entitydescription.tsm_fkj_ak12>百年历史的“新锐”武器，被反抗军改装了自适应枪管与枪膛，使其可以正常发射‖color:150,0,0,255‖5.45*39‖color:end‖与‖color:150,0,0,255‖7.62*39‖color:end‖两种口径的弹药。</entitydescription.tsm_fkj_ak12>
+  <entitydescription.tsm_fkj_ak12>百年历史的“新锐”武器，被反抗军改装了自适应枪管与枪膛，使其可以正常发射‖color:0,200,0,255‖5.45*39‖color:end‖与‖color:0,200,0,255‖7.62*39‖color:end‖两种口径的弹药。</entitydescription.tsm_fkj_ak12>
 
   <entityname.tsm_fkj_aa12>反抗军AA12自动霰弹枪</entityname.tsm_fkj_aa12>
-  <entitydescription.tsm_fkj_aa12>船舱中的推进利器、巷战的绞肉机。只需要按住扳机，挡在前面的任何人与生物都不能幸免于难。使用‖color:150,0,0,255‖反抗军霰弹弹鼓‖color:end‖供弹</entitydescription.tsm_fkj_aa12>
+  <entitydescription.tsm_fkj_aa12>船舱中的推进利器、巷战的绞肉机。只需要按住扳机，挡在前面的任何人与生物都不能幸免于难。使用‖color:0,200,0,255‖反抗军霰弹弹鼓‖color:end‖供弹</entitydescription.tsm_fkj_aa12>
 
   <entityname.tsm_fkj_svd>反抗军SVD狙击步枪</entityname.tsm_fkj_svd>
   <entitydescription.tsm_fkj_svd>半自动精确步枪，可以让训练有素的狙击手在高处快速狙杀固守街垒的敌人。</entitydescription.tsm_fkj_svd>
 
   <entityname.tsm_fkj_jts>反抗军通用轻机枪（RPL-20）</entityname.tsm_fkj_jts>
-  <entitydescription.tsm_fkj_jts>火力强悍的武器，可以让反抗军的战士将联盟的走狗压制地抬不起头，然后将他们绝望地与掩体一起被撕成碎片。连续开火的后坐力甚至可以将射手向后推，因此建议经过训练再使用该武器。使用‖color:150,0,0,255‖反抗军通用机枪弹匣（5.45*39）‖color:end‖</entitydescription.tsm_fkj_jts>
+  <entitydescription.tsm_fkj_jts>火力强悍的武器，可以让反抗军的战士将联盟的走狗压制地抬不起头，然后将他们绝望地与掩体一起被撕成碎片。连续开火的后坐力甚至可以将射手向后推，因此建议经过训练再使用该武器。使用‖color:0,200,0,255‖反抗军通用机枪弹匣（5.45*39）‖color:end‖</entitydescription.tsm_fkj_jts>
 
   <entityname.tsm_fkj_pkp>反抗军通用机枪（PKP）</entityname.tsm_fkj_pkp>
-  <entitydescription.tsm_fkj_pkp>由号称世界上最好的通用机枪现代化改进而来，即使是到了木卫二世界也毫不逊色。此枪之名「Pecheneg」是来自佩切涅格人，一个起源于地球的草原的一个好战的西突厥分支部落。有效射程内对轻型结构物和简易覆盖物有良好的杀伤力。现在经过反抗军的改造使用‖color:150,0,0,255‖反抗军机枪弹匣（7.62*51）‖color:end‖。</entitydescription.tsm_fkj_pkp>
+  <entitydescription.tsm_fkj_pkp>由号称世界上最好的通用机枪现代化改进而来，即使是到了木卫二世界也毫不逊色。此枪之名「Pecheneg」是来自佩切涅格人，一个起源于地球的草原的一个好战的西突厥分支部落。有效射程内对轻型结构物和简易覆盖物有良好的杀伤力。现在经过反抗军的改造使用‖color:0,200,0,255‖反抗军机枪弹匣（7.62*51）‖color:end‖。</entitydescription.tsm_fkj_pkp>
 
   <entityname.tsm_fkj_saw>Chain- SAW“锯式”机枪</entityname.tsm_fkj_saw>
-  <entitydescription.tsm_fkj_saw>看上去是将一把电锯拆解掉后组装上去，外观极其可怕，急促的开火声也像极了一把索命的电锯。使用‖color:150,0,0,255‖反抗军通用机枪弹匣（5.45*39）‖color:end‖</entitydescription.tsm_fkj_saw>
+  <entitydescription.tsm_fkj_saw>看上去是将一把电锯拆解掉后组装上去，外观极其可怕，急促的开火声也像极了一把索命的电锯。使用‖color:0,200,0,255‖反抗军通用机枪弹匣（5.45*39）‖color:end‖</entitydescription.tsm_fkj_saw>
 
   <entityname.tsm_fkj_jq430>反抗军JQ430突击步枪</entityname.tsm_fkj_jq430>
-  <entitydescription.tsm_fkj_jq430>使用了类实木的枪托与护木，让使用者能感受到地球的气息，榴弹发射器也能给敌人来一点木卫二的震撼。不过枪口的刺刀因为使用难度过大，几乎无人能用。发射‖color:150,0,0,255‖7.62*39‖color:end‖弹药。</entitydescription.tsm_fkj_jq430>
+  <entitydescription.tsm_fkj_jq430>使用了类实木的枪托与护木，让使用者能感受到地球的气息，榴弹发射器也能给敌人来一点木卫二的震撼。不过枪口的刺刀因为使用难度过大，几乎无人能用。发射‖color:0,200,0,255‖7.62*39‖color:end‖弹药。</entitydescription.tsm_fkj_jq430>
 
   <entityname.tsm_fkj_ak12_c>AK12突击步枪（战术型）</entityname.tsm_fkj_ak12_c>
-  <entitydescription.tsm_fkj_ak12_c>加装了三角前握，拥有更好的操控性。同样可以发射‖color:150,0,0,255‖5.45*39‖color:end‖与‖color:150,0,0,255‖7.62*39‖color:end‖两种弹药。</entitydescription.tsm_fkj_ak12_c>
+  <entitydescription.tsm_fkj_ak12_c>加装了三角前握，拥有更好的操控性。同样可以发射‖color:0,200,0,255‖5.45*39‖color:end‖与‖color:0,200,0,255‖7.62*39‖color:end‖两种弹药。</entitydescription.tsm_fkj_ak12_c>
 
   <entityname.tsm_fkj_561a>反抗军Type 56-1A突击步枪</entityname.tsm_fkj_561a>
-  <entitydescription.tsm_fkj_561a>经过现代化改造的传奇旧式武器，某个神秘势力通过黑市出口到了反抗军的手里，成为反抗军手中为数不多的先进武器。同样可以发射‖color:150,0,0,255‖5.45*39‖color:end‖与‖color:150,0,0,255‖7.62*39‖color:end‖两种弹药。</entitydescription.tsm_fkj_561a>
+  <entitydescription.tsm_fkj_561a>经过现代化改造的传奇旧式武器，某个神秘势力通过黑市出口到了反抗军的手里，成为反抗军手中为数不多的先进武器。同样可以发射‖color:0,200,0,255‖5.45*39‖color:end‖与‖color:0,200,0,255‖7.62*39‖color:end‖两种弹药。</entitydescription.tsm_fkj_561a>
 
   <entityname.tsm_fkj_ak105_c>AK105突击步枪（战术型）</entityname.tsm_fkj_ak105_c>
-  <entitydescription.tsm_fkj_ak105_c>下挂了一具单兵榴弹发射器，可以发射各种榴弹而无需额外携带发射器，比普通的AK-105射速更快。发射‖color:150,0,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak105_c>
+  <entitydescription.tsm_fkj_ak105_c>下挂了一具单兵榴弹发射器，可以发射各种榴弹而无需额外携带发射器，比普通的AK-105射速更快。发射‖color:0,200,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak105_c>
 
   <entityname.tsm_fkj_a545>反抗军A-545突击步枪</entityname.tsm_fkj_a545>
-  <entitydescription.tsm_fkj_a545>反抗军基于AK系列改进的新武器，采用了更加泛用的材料，和更短的枪托，搭载GP25榴弹发射器，尽管口碑不如传统ak，但它确实是把好枪。发射‖color:150,0,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_a545>
+  <entitydescription.tsm_fkj_a545>反抗军基于AK系列改进的新武器，采用了更加泛用的材料，和更短的枪托，搭载GP25榴弹发射器，尽管口碑不如传统ak，但它确实是把好枪。发射‖color:0,200,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_a545>
 
   <entityname.tsm_fkj_m2>M2勃朗宁重机枪（手提型）</entityname.tsm_fkj_m2>
-  <entitydescription.tsm_fkj_m2>Hey!it's a machinegun!\n使用‖color:150,0,0,255‖反抗军重型机枪弹匣‖color:end‖</entitydescription.tsm_fkj_m2>
+  <entitydescription.tsm_fkj_m2>Hey!it's a machinegun!\n使用‖color:0,200,0,255‖反抗军重型机枪弹匣‖color:end‖</entitydescription.tsm_fkj_m2>
 
   <entityname.tsm_fkj_m2_eagle>M2勃朗宁重机枪(白鹰涂装)</entityname.tsm_fkj_m2_eagle>
   <entitydescription.tsm_fkj_m2_eagle>致同舟共寄的兄弟们</entitydescription.tsm_fkj_m2_eagle>
 
   <entityname.tsm_fkj_rpk16>反抗军RPK—16轻机枪</entityname.tsm_fkj_rpk16>
-  <entitydescription.tsm_fkj_rpk16>不但延续了AK家族的优良传统，而且还对其进行了全方位的现代化改进，轻量化和高火力使其在潜艇战中发挥了巨大的作用，使用‖color:150,0,0,255‖5.45*39‖color:end‖反抗军弹匣或‖color:150,0,0,255‖RPK弹鼓‖color:end‖</entitydescription.tsm_fkj_rpk16>
+  <entitydescription.tsm_fkj_rpk16>不但延续了AK家族的优良传统，而且还对其进行了全方位的现代化改进，轻量化和高火力使其在潜艇战中发挥了巨大的作用，使用‖color:0,200,0,255‖5.45*39‖color:end‖反抗军弹匣或‖color:0,200,0,255‖RPK弹鼓‖color:end‖</entitydescription.tsm_fkj_rpk16>
 
   <entityname.tsm_fkj_ace52>反抗军加利尔ACE52战斗步枪</entityname.tsm_fkj_ace52>
-  <entitydescription.tsm_fkj_ace52>随着反抗军中间威力弹步枪逐渐被ak系列普及，但使用‖color:150,0,0,255‖7.62*51‖color:end‖全威力的加利尔仍然有一席之地，但ak打不穿敌人的装甲时，ACE52或许是更好的选择</entitydescription.tsm_fkj_ace52>
+  <entitydescription.tsm_fkj_ace52>随着反抗军中间威力弹步枪逐渐被ak系列普及，但使用‖color:0,200,0,255‖7.62*51‖color:end‖全威力的加利尔仍然有一席之地，但ak打不穿敌人的装甲时，ACE52或许是更好的选择</entitydescription.tsm_fkj_ace52>
 
-  <entityname.tsm_fkj_g3a4>反抗军G3A4战斗步枪</entityname.tsm_fkj_g3a4>
-  <entitydescription.tsm_fkj_g3a4>使用‖color:150,0,0,255‖7.62*51‖color:end‖口径弹匣，伸缩枪托减轻了枪身重量，虽然射速较慢，但有那个战斗份子能拒绝超帅的拍拉机柄上膛呢？</entitydescription.tsm_fkj_g3a4>
+  <entityname.tsm_fkj_g3a4>反抗军G3A3战斗步枪</entityname.tsm_fkj_g3a4>
+  <entitydescription.tsm_fkj_g3a4>使用‖color:0,200,0,255‖7.62*51‖color:end‖口径弹匣，伸缩枪托减轻了枪身重量，虽然射速较慢，但有那个战斗份子能拒绝超帅的拍拉机柄上膛呢？</entitydescription.tsm_fkj_g3a4>
 
   <entityname.tsm_fkj_fal>反抗军FAL“法老”战斗步枪</entityname.tsm_fkj_fal>
-  <entitydescription.tsm_fkj_fal>使用‖color:150,0,0,255‖7.62*51‖color:end‖口径弹匣，号称“自由世界的右手”，被誉为最好的全威力弹发射平台，造价低，爆发高，深受江湖各路豪杰喜爱</entitydescription.tsm_fkj_fal>
+  <entitydescription.tsm_fkj_fal>使用‖color:0,200,0,255‖7.62*51‖color:end‖口径弹匣，号称“自由世界的右手”，被誉为最好的全威力弹发射平台，造价低，爆发高，深受江湖各路豪杰喜爱</entitydescription.tsm_fkj_fal>
 
-  <entityname.tsm_fkj_sg553>反抗军SG553-R“突击者”步枪</entityname.tsm_fkj_sg553>
-  <entitydescription.tsm_fkj_sg553>使用‖color:150,0,0,255‖7.62x39‖color:end‖口径弹匣，由已经淘汰的小口径sg550改装而来，更适合攻城掠地</entitydescription.tsm_fkj_sg553>
+  <entityname.tsm_fkj_sg553>反抗军SG542“突击者”步枪</entityname.tsm_fkj_sg553>
+  <entitydescription.tsm_fkj_sg553>使用‖color:0,200,0,255‖7.62*51‖color:end‖口径弹匣，由已经淘汰的小口径sg550改装而来，更适合攻城掠地</entitydescription.tsm_fkj_sg553>
+
+ <entityname.tsm_fkj_sr3m>反抗军SR-3M“旋风”短突击步枪</entityname.tsm_fkj_sr3m>
+ <entitydescription.tsm_fkj_sr3m>反抗军专为政要保卫小组或需要隐蔽携带突击武器的特种部队设计，在尺寸、重量和战斗中担任的角色而言，它与大多数的冲锋枪类似，但由于它使用反抗军‖color:0,200,0,255‖9*39‖color:end‖重型特种弹匣，因此反抗军将其定义为突击步枪而非冲锋枪</entitydescription.tsm_fkj_sr3m>
+
+ <entityname.tsm_fkj_9a91>反抗军9A91“袖剑”短突击步枪</entityname.tsm_fkj_9a91>
+ <entitydescription.tsm_fkj_9a91>最小的步枪之一，使用反抗军‖color:0,200,0,255‖9*39‖color:end‖重型特种弹匣，能够适应更高节奏的突击战斗。短小精悍的枪体具有很高的稳定性和机动性，自带OPK-7瞄具</entitydescription.tsm_fkj_9a91>
+
+ <entityname.tsm_fkj_vss>反抗军VSS特种狙击步枪</entityname.tsm_fkj_vss>
+ <entitydescription.tsm_fkj_vss>反抗军精锐进行摸哨和暗杀的首选，使用反抗军‖color:0,200,0,255‖9*39‖color:end‖重型特种弹匣，降低初速之后仍然保有击穿凯夫拉防弹背心的能力。一体式消声器是枪管的一部分而非枪支的配件</entitydescription.tsm_fkj_vss>
+
+ <entityname.tsm_fkj_asval>反抗军AS Val“巨浪”特种突击步枪</entityname.tsm_fkj_asval>
+ <entitydescription.tsm_fkj_asval>使用反抗军‖color:0,200,0,255‖9*39‖color:end‖重型特种弹匣，更高的射速弥补了该系列武器在近距离的压制力不足，主要用来对付人员和部分软目标，据说可以击穿5毫米厚的钢板。</entitydescription.tsm_fkj_asval>
 
   <entityname.fkj_ammobox>反抗军弹药箱</entityname.fkj_ammobox>
   <entitydescription.fkj_ammobox>带有半自动装填机构的弹药箱，里面是反抗军制式武器所使用的弹药&#xD;&#xA;「放入空弹匣，鼠标左键+右键装填弹匣」</entitydescription.fkj_ammobox>
@@ -1188,6 +1260,18 @@
   <entityname.fkj_rpk_mag>RPK弹鼓</entityname.fkj_rpk_mag>
   <entitydescription.fkj_rpk_mag>装有95发5.45*39口径子弹的弹鼓，给RPK提供更为长久的续航。</entitydescription.fkj_rpk_mag>
 
+ <entityname.fkj_9_39_mag>反抗军重型特种弹匣（9*39）</entityname.fkj_9_39_mag>
+ <entitydescription.fkj_9_39_mag>装有20发9*39mm普通子弹</entitydescription.fkj_9_39_mag>
+
+ <entityname.fkj_9_39_ap_mage>反抗军重型特种穿甲弹匣（9*39）</entityname.fkj_9_39_ap_mage>
+ <entitydescription.fkj_9_39_ap_mage>装有20发9*39mm穿甲弹</entitydescription.fkj_9_39_ap_mage>
+
+ <entityname.fkj_9_39_kr_mag>反抗军重型特种扩容弹匣（9*39）</entityname.fkj_9_39_kr_mag>
+ <entitydescription.fkj_9_39_kr_mag>装有30发9*39mm普通弹</entitydescription.fkj_9_39_kr_mag>
+
+ <entityname.fkj_9_39_krap_mag>反抗军重型特种扩容穿甲弹匣（9*39）</entityname.fkj_9_39_krap_mag>
+ <entitydescription.fkj_9_39_krap_mag>装有30发9*39mm穿甲弹</entitydescription.fkj_9_39_krap_mag>
+
  <!--通用-->
   <entityname.tsm_m32_launcher>转轮式榴弹发射器</entityname.tsm_m32_launcher>
   <entitydescription.tsm_m32_launcher>转轮式榴弹发射器，能发射多种弹药，不管是镇压暴动与叛乱，还是抵抗泥偶迅猛龙群时，都是一把好手，高效，凶悍</entitydescription.tsm_m32_launcher>
@@ -1217,73 +1301,76 @@
   <entitydescription.tsm_grenade_fire>爆炸后可以提供一片稳定的高温火焰，持续消耗氧气与生物的性命，同时点燃附近的易燃物。</entitydescription.tsm_grenade_fire>
 
   <entityname.tsm_171>QCQ-171冲锋枪</entityname.tsm_171>
-  <entitydescription.tsm_171>使用‖color:150,0,0,255‖9mm冲锋枪弹匣‖color:end‖</entitydescription.tsm_171>
+  <entitydescription.tsm_171>使用‖color:0,200,0,255‖9mm冲锋枪弹匣‖color:end‖</entitydescription.tsm_171>
   
   <entityname.tsm_05>05式微声冲锋枪</entityname.tsm_05>
-  <entitydescription.tsm_05>使用‖color:150,0,0,255‖5.8mm冲锋枪弹匣‖color:end‖</entitydescription.tsm_05>
+  <entitydescription.tsm_05>使用‖color:0,200,0,255‖5.8mm冲锋枪弹匣‖color:end‖</entitydescription.tsm_05>
 
   <entityname.tsm_p90>P90冲锋枪</entityname.tsm_p90>
-  <entitydescription.tsm_p90>该枪作为冲锋枪却有着优秀的穿透能力，有效射程内对高级防弹衣依然有不俗的穿透能力，被誉为“防弹衣打孔机”并且采用简单可靠的运作方式，同时拥有良好射击精准度，在潜艇狭窄环境下，短小的无托结构和穿透力立刻赢得了木卫二各势力的欢迎,使用‖color:150,0,0,255‖5.7*28mm子弹‖color:end‖</entitydescription.tsm_p90>
+  <entitydescription.tsm_p90>该枪作为冲锋枪却有着优秀的穿透能力，有效射程内对高级防弹衣依然有不俗的穿透能力，被誉为“防弹衣打孔机”并且采用简单可靠的运作方式，同时拥有良好射击精准度，在潜艇狭窄环境下，短小的无托结构和穿透力立刻赢得了木卫二各势力的欢迎,使用‖color:0,200,0,255‖5.7*28mm子弹‖color:end‖</entitydescription.tsm_p90>
 
   <entityname.tsm_mp7>MP7冲锋枪</entityname.tsm_mp7>
-  <entitydescription.tsm_mp7>MP7采用‖color:150,0,0,255‖4.6×30‖color:end‖口径子弹,随着全面战争的开启，后勤人员、维修人员及各种服务保障人员越来越多，要求这些非战斗人员的武器质量轻，操作简单，便于随身携带，在遇到敌人突然袭击时可以快速还击，而随着防弹衣防穿透能力的增强，则要求用威力较大的单兵自卫武器替代冲锋枪和手枪，因此MP7再次搬上了舞台，枪口位置只能装消音器。</entitydescription.tsm_mp7>
+  <entitydescription.tsm_mp7>MP7采用‖color:0,200,0,255‖4.6×30‖color:end‖口径子弹,随着全面战争的开启，后勤人员、维修人员及各种服务保障人员越来越多，要求这些非战斗人员的武器质量轻，操作简单，便于随身携带，在遇到敌人突然袭击时可以快速还击，而随着防弹衣防穿透能力的增强，则要求用威力较大的单兵自卫武器替代冲锋枪和手枪，因此MP7再次搬上了舞台，枪口位置只能装消音器。</entitydescription.tsm_mp7>
 
   <entityname.tsm_ump45>UMP45冲锋枪</entityname.tsm_ump45>
-  <entitydescription.tsm_ump45>使用‖color:150,0,0,255‖.45‖color:end‖冲锋枪子弹,UMP45采用自由式枪机，为了保证射击精度采用闭枪待击。枪机处在前方位置和枪管闭膛的状态下等待击发和发射。与大部分冲锋枪采用的枪机停在后方位置和开膛待击的结构相比，这种结构可提高命中精度，并且扳机的操作非常轻巧灵活，枪口位置只能装消音器。</entitydescription.tsm_ump45>
+  <entitydescription.tsm_ump45>使用‖color:0,200,0,255‖.45‖color:end‖冲锋枪子弹,UMP45采用自由式枪机，为了保证射击精度采用闭枪待击。枪机处在前方位置和枪管闭膛的状态下等待击发和发射。与大部分冲锋枪采用的枪机停在后方位置和开膛待击的结构相比，这种结构可提高命中精度，并且扳机的操作非常轻巧灵活，枪口位置只能装消音器。</entitydescription.tsm_ump45>
 
   <entityname.tsm_92_pistols>92式轻型制式自动手枪</entityname.tsm_92_pistols>
-  <entitydescription.tsm_92_pistols>性能优秀的单兵防卫武器，维护成本低廉，适合应对无甲或轻甲步兵目标，使用‖color:150,0,0,255‖9mm手枪弹匣‖color:end‖</entitydescription.tsm_92_pistols>
+  <entitydescription.tsm_92_pistols>性能优秀的单兵防卫武器，维护成本低廉，适合应对无甲或轻甲步兵目标，使用‖color:0,200,0,255‖9mm手枪弹匣‖color:end‖</entitydescription.tsm_92_pistols>
 
   <entityname.tsm_fn509_pistols>FN 509 战术手枪</entityname.tsm_fn509_pistols>
-  <entitydescription.tsm_fn509_pistols>FN 509 Tactical采用了现代化的外观和设计，有着清晰的线条和光滑的表面。它的握把上覆盖有特殊的纹理，使枪手在使用时更加稳固。使用‖color:150,0,0,255‖9mm手枪弹匣‖color:end‖</entitydescription.tsm_fn509_pistols>
+  <entitydescription.tsm_fn509_pistols>FN 509 Tactical采用了现代化的外观和设计，有着清晰的线条和光滑的表面。它的握把上覆盖有特殊的纹理，使枪手在使用时更加稳固。使用‖color:0,200,0,255‖9mm手枪弹匣‖color:end‖</entitydescription.tsm_fn509_pistols>
 
   <entityname.tsm_1911_pistols>勃朗宁半自动手枪</entityname.tsm_1911_pistols>
-  <entitydescription.tsm_1911_pistols>经典的武器也需要针对性的改装，这把适应了欧罗巴环境的武器很快受到了执法者与民间私刑审判者钟爱。使用‖color:150,0,0,255‖.45口径‖color:end‖子弹</entitydescription.tsm_1911_pistols>
+  <entitydescription.tsm_1911_pistols>经典的武器也需要针对性的改装，这把适应了欧罗巴环境的武器很快受到了执法者与民间私刑审判者钟爱。使用‖color:0,200,0,255‖.45口径‖color:end‖子弹</entitydescription.tsm_1911_pistols>
 
   <entityname.tsm_glock18_pistols>Glock 18自动手枪</entityname.tsm_glock18_pistols>
-  <entitydescription.tsm_glock18_pistols>格洛克18手枪为9毫米口径，该枪可靠性强，射速很快。由于威力较大，限制制造，只提供给特种部队使用。使用‖color:150,0,0,255‖9mm手枪弹匣‖color:end‖</entitydescription.tsm_glock18_pistols>
+  <entitydescription.tsm_glock18_pistols>格洛克18手枪为9毫米口径，该枪可靠性强，射速很快。由于威力较大，限制制造，只提供给特种部队使用。使用‖color:0,200,0,255‖9mm手枪弹匣‖color:end‖</entitydescription.tsm_glock18_pistols>
 
   <entityname.tsm_de_handgun>沙漠之鹰手枪</entityname.tsm_de_handgun>
-  <entitydescription.tsm_de_handgun>曾经地球上的大口径狩猎用手枪，外形帅气威力巨大，就算来到了木卫二也是一把强力武器。只不过射手需要专门的训练才能正常使用它——你也不想开枪时没拿稳，枪飞到你脸上吧？使用‖color:150,0,0,255‖.50口径‖color:end‖子弹</entitydescription.tsm_de_handgun>
+  <entitydescription.tsm_de_handgun>曾经地球上的大口径狩猎用手枪，外形帅气威力巨大，就算来到了木卫二也是一把强力武器。只不过射手需要专门的训练才能正常使用它——你也不想开枪时没拿稳，枪飞到你脸上吧？使用‖color:0,200,0,255‖.50口径‖color:end‖子弹</entitydescription.tsm_de_handgun>
 
   <entityname.tsm_88>88式狙击步枪</entityname.tsm_88>
-  <entitydescription.tsm_88>该枪采用4倍或6倍光学瞄准镜，以增强目标的识别打击能力。但配备的是‖color:150,0,0,255‖5.8mm‖color:end‖子弹，该子弹重量比较大，这就会对狙击步枪的精度有着较大的影响，而且枪管和两脚架的连接方式也和一般的狙击步枪不同，同样也影响着步枪射击的精度。使用‖color:150,0,0,255‖5.8mm狙击枪弹匣‖color:end‖</entitydescription.tsm_88>
+  <entitydescription.tsm_88>该枪采用4倍或6倍光学瞄准镜，以增强目标的识别打击能力。但配备的是‖color:0,200,0,255‖5.8mm‖color:end‖子弹，该子弹重量比较大，这就会对狙击步枪的精度有着较大的影响，而且枪管和两脚架的连接方式也和一般的狙击步枪不同，同样也影响着步枪射击的精度。使用‖color:0,200,0,255‖5.8mm狙击枪弹匣‖color:end‖</entitydescription.tsm_88>
 
   <entityname.tsm_cslr4>CS LR4狙击步枪</entityname.tsm_cslr4>
-  <entitydescription.tsm_cslr4>CS/LR4型‖color:150,0,0,255‖7.62mm‖color:end‖高精度狙击步枪采用有托结构，枪管浮置式设计，旋转后拉式枪机，弹匣供弹。全枪由枪身、枪托/护手、枪机、供弹具及两脚架构成。还包括8～32倍白光瞄准镜、微光像增强仪、激光测距/弹道解算计算机，还有维护工具、备用弹匣等配套附件。26万是不包括弹在内的一整套系统。使用‖color:150,0,0,255‖7.62mm狙击枪弹匣‖color:end‖</entitydescription.tsm_cslr4>
+  <entitydescription.tsm_cslr4>CS/LR4型‖color:0,200,0,255‖7.62mm‖color:end‖高精度狙击步枪采用有托结构，枪管浮置式设计，旋转后拉式枪机，弹匣供弹。全枪由枪身、枪托/护手、枪机、供弹具及两脚架构成。还包括8～32倍白光瞄准镜、微光像增强仪、激光测距/弹道解算计算机，还有维护工具、备用弹匣等配套附件。26万是不包括弹在内的一整套系统。使用‖color:0,200,0,255‖7.62mm狙击枪弹匣‖color:end‖</entitydescription.tsm_cslr4>
 
   <entityname.tsm_qbu202>QBU-202高精度狙击步枪</entityname.tsm_qbu202>
-  <entitydescription.tsm_qbu202>QBU202型8.6毫米高精度狙击步枪的枪管是通过冷锤锻造方式进行制造而成，枪管精度寿命非常高。供弹方式采用弹匣供弹，使用‖color:150,0,0,255‖8.6*70mm‖color:end‖狙击步枪弹匣</entitydescription.tsm_qbu202>
+  <entitydescription.tsm_qbu202>QBU202型8.6毫米高精度狙击步枪的枪管是通过冷锤锻造方式进行制造而成，枪管精度寿命非常高。供弹方式采用弹匣供弹，使用‖color:0,200,0,255‖8.6*70mm‖color:end‖狙击步枪弹匣</entitydescription.tsm_qbu202>
 
   <entityname.tsm_amr2>AMR-2重型狙击步枪</entityname.tsm_amr2>
-  <entitydescription.tsm_amr2>AMR-2式‖color:150,0,0,255‖12.7*99‖color:end‖非自动狙击步枪是步兵狙击手使用的反器材武器，用以对付远距离的单个有生和重要器材等高价值目标，可实现精确打击和高效毁伤。该型枪使用重型枪管，非自动结构则保证步枪在击发的瞬间可能发生震动的部件数量降为最低，从而保证了射击精度。使用‖color:150,0,0,255‖12.7mm狙击枪弹匣‖color:end‖</entitydescription.tsm_amr2>
+  <entitydescription.tsm_amr2>AMR-2式‖color:0,200,0,255‖12.7*108‖color:end‖非自动狙击步枪是步兵狙击手使用的反器材武器，用以对付远距离的单个有生和重要器材等高价值目标，可实现精确打击和高效毁伤。该型枪使用重型枪管，非自动结构则保证步枪在击发的瞬间可能发生震动的部件数量降为最低，从而保证了射击精度。使用‖color:0,200,0,255‖12.7mm狙击枪弹匣‖color:end‖</entitydescription.tsm_amr2>
 
   <entityname.tsm_m99>M99反器材狙击步枪</entityname.tsm_m99>
-  <entitydescription.tsm_m99>随着战争的愈演愈烈，士兵的防护水平越来越高，现有的狙击步枪在射程和威力方面已显弱势。积极发展新型‖color:150,0,0,255‖12.7*99‖color:end‖大口径狙击步枪成为各军事势力的新战场。为此，各地的轻武器研究者积极展开了半自动大口径狙击步枪的研制工作，M99应运而生，并承载着设计工作者的心血和荣耀迈向木卫二。</entitydescription.tsm_m99>
+  <entitydescription.tsm_m99>随着战争的愈演愈烈，士兵的防护水平越来越高，现有的狙击步枪在射程和威力方面已显弱势。积极发展新型‖color:0,200,0,255‖12.7*99‖color:end‖大口径狙击步枪成为各军事势力的新战场。为此，各地的轻武器研究者积极展开了半自动大口径狙击步枪的研制工作，M99应运而生，并承载着设计工作者的心血和荣耀迈向木卫二。</entitydescription.tsm_m99>
 
   <entityname.tsm_qbu10>原型QBU-10式反器材狙击枪</entityname.tsm_qbu10>
-  <entitydescription.tsm_qbu10>搭载热成像智能瞄具，对于躲藏在潜艇内的目标也将无处遁形，由于其保密性只会在最为艰巨的任务出现暗中一击必杀斩首目标,使用‖color:150,0,0,255‖12.7*99‖color:end‖口径狙击枪子弹</entitydescription.tsm_qbu10>
+  <entitydescription.tsm_qbu10>搭载热成像智能瞄具，对于躲藏在潜艇内的目标也将无处遁形，由于其保密性只会在最为艰巨的任务出现暗中一击必杀斩首目标,使用‖color:0,200,0,255‖12.7*108‖color:end‖口径狙击枪子弹</entitydescription.tsm_qbu10>
 
   <entityname.tsm_qlu11>原型QLU-11狙击榴弹发射器</entityname.tsm_qlu11>
-  <entitydescription.tsm_qlu11>使用‖color:150,0,0,255‖狙击榴弹弹鼓‖color:end‖的原型武器，目前口径最大的“枪”，不同与普通榴弹发射器，经过狙击枪更高的膛压和特质穿甲榴弹，甚至能够穿透潜艇外壳轰碎目标，搭载集成式热成像火控系统让射手更能看清目标</entitydescription.tsm_qlu11>
+  <entitydescription.tsm_qlu11>使用‖color:0,200,0,255‖狙击榴弹弹鼓‖color:end‖的原型武器，目前口径最大的“枪”，不同与普通榴弹发射器，经过狙击枪更高的膛压和特质穿甲榴弹，甚至能够穿透潜艇外壳轰碎目标，搭载集成式热成像火控系统让射手更能看清目标</entitydescription.tsm_qlu11>
 
   <entityname.tsm_mg42>MG42通用机枪</entityname.tsm_mg42>
-  <entitydescription.tsm_mg42>已被欧罗巴公约禁止生产的重机枪，其恐怖的射速发出的声音早在地球时期就被誉为独裁者电锯，使用‖color:150,0,0,255‖7.92 MG42弹鼓‖color:end‖，疯狂的初速与穿透力使得敌人的任何掩体都变得可笑，唯一不足在于续航能力差</entitydescription.tsm_mg42>
+  <entitydescription.tsm_mg42>已被欧罗巴公约禁止生产的重机枪，其恐怖的射速发出的声音早在地球时期就被誉为独裁者电锯，使用‖color:0,200,0,255‖7.92 MG42弹鼓‖color:end‖，疯狂的初速与穿透力使得敌人的任何掩体都变得可笑，唯一不足在于续航能力差</entitydescription.tsm_mg42>
 
   <entityname.tsm_56>56式冲锋枪</entityname.tsm_56>
-  <entitydescription.tsm_56>重量较轻、射击精度好、机构动作可靠。它采用导气式自动方式，可以实施单发射击，使用‖color:150,0,0,255‖7.62mm‖color:end‖子弹\n埋骨何须柔梓地，人生无处不青山</entitydescription.tsm_56>
+  <entitydescription.tsm_56>重量较轻、射击精度好、机构动作可靠。它采用导气式自动方式，可以实施单发射击，使用‖color:0,200,0,255‖7.62mm‖color:end‖子弹\n埋骨何须柔梓地，人生无处不青山</entitydescription.tsm_56>
 
   <entityname.tsm_81>81-1式自动步枪</entityname.tsm_81>
-  <entitydescription.tsm_81>一款性能优良的武器，精度好、动作可靠、操作维护简便，在实战中表现良好的遗古枪械，使用‖color:150,0,0,255‖7.62mm‖color:end‖子弹</entitydescription.tsm_81>
+  <entitydescription.tsm_81>一款性能优良的武器，精度好、动作可靠、操作维护简便，在实战中表现良好的遗古枪械，使用‖color:0,200,0,255‖7.62mm‖color:end‖子弹</entitydescription.tsm_81>
 
   <entityname.tsm_vk>维克托</entityname.tsm_vk>
-  <entitydescription.tsm_vk>一把外形优美的白色改装冲锋枪，可以安装手枪瞄具以及消音器。使用‖color:150,0,0,255‖冲锋枪弹匣（.45）‖color:end‖，有着令人瞠目结舌的射速和几乎没有的后坐力，但由于并不适宜潜艇战的环境而没有被军方采用，只在奇迹之海内部作为收藏品少量发售。</entitydescription.tsm_vk>
+  <entitydescription.tsm_vk>一把外形优美的白色改装冲锋枪，可以安装手枪瞄具以及消音器。使用‖color:0,200,0,255‖冲锋枪弹匣（.45）‖color:end‖，有着令人瞠目结舌的射速和几乎没有的后坐力，但由于并不适宜潜艇战的环境而没有被军方采用，只在奇迹之海内部作为收藏品少量发售。</entitydescription.tsm_vk>
 
   <entityname.tsm_js9>JS-9冲锋枪</entityname.tsm_js9>
-  <entitydescription.tsm_js9>一款‖color:150,0,0,255‖9mm‖color:end‖口径微声冲锋枪，该枪采用无枪托设计，弹匣位于手枪握把后面以缩短武器的长度，通常还安装消声器；它采用枪机后坐式自动方式。</entitydescription.tsm_js9>
+  <entitydescription.tsm_js9>一款‖color:0,200,0,255‖9mm‖color:end‖口径微声冲锋枪，该枪采用无枪托设计，弹匣位于手枪握把后面以缩短武器的长度，通常还安装消声器；它采用枪机后坐式自动方式。</entitydescription.tsm_js9>
+
+ <entityname.tsm_mp5sd>MP5 SD微声冲锋枪</entityname.tsm_mp5sd>
+ <entitydescription.tsm_mp5sd>使用‖color:0,200,0,255‖9mm‖color:end‖冲锋枪弹匣，从联盟列装的制式冲锋枪改进为了微声版本，更受各地安全官欢迎，射击精度高，结构紧凑，经典的闭锁机构使得它额外可靠</entitydescription.tsm_mp5sd>
 
   <entityname.tsm_79_smg>奇迹之海79式冲锋枪</entityname.tsm_79_smg>
-  <entitydescription.tsm_79_smg>使用‖color:150,0,0,255‖.45口径‖color:end‖冲锋枪弹匣</entitydescription.tsm_79_smg>
+  <entitydescription.tsm_79_smg>使用‖color:0,200,0,255‖.45口径‖color:end‖冲锋枪弹匣</entitydescription.tsm_79_smg>
 
   <entityname.tsm_9_smgmag>冲锋枪弹匣（9mm）</entityname.tsm_9_smgmag>
   <entitydescription.tsm_9_smgmag>装填30发9mm弹药</entitydescription.tsm_9_smgmag>
@@ -1339,6 +1426,9 @@
   <entityname.tsm_127ammo_mag>狙击步枪弹匣（12.7*99）</entityname.tsm_127ammo_mag>
   <entitydescription.tsm_127ammo_mag>内装5发12.7*99mm子弹</entitydescription.tsm_127ammo_mag>
 
+ <entityname.tsm_127_108_mag>狙击步枪弹匣（12.7*108）</entityname.tsm_127_108_mag>
+ <entitydescription.tsm_127_108_mag>内装4发12.7*108mm子弹</entitydescription.tsm_127_108_mag>
+
   <entityname.tsm_grenade_mag>狙击榴弹弹鼓</entityname.tsm_grenade_mag>
   <entitydescription.tsm_grenade_mag>内装5发榴弹</entitydescription.tsm_grenade_mag>
 
@@ -1377,7 +1467,7 @@
  <entitydescription.tsm_kep_battery>给予‖color:255,100,100,255‖'三神丘'‖color:end‖强大的动力，提高射速以及射击动能。</entitydescription.tsm_kep_battery>
 <!--救赎-->
  <entityname.tsm_redemption>‖color:30,0,180,255‖救赎‖color:end‖</entityname.tsm_redemption>
- <entitydescription.tsm_redemption>能量发射器\n\n用能量拘束盒作为弹药\n\n拥有两种模式可根据环境随意切换。\n由疯狂星期四投稿提供</entitydescription.tsm_redemption>
+ <entitydescription.tsm_redemption>能量发射器\n\n用能量拘束盒作为弹药\n\n拥有两种模式可根据环境随意切换。\n由疯狂星期四投稿提a供</entitydescription.tsm_redemption>
 
  <entityname.tsm_redemption_RestraintBox>救赎能量拘束盒</entityname.tsm_redemption_RestraintBox>
  <entitydescription.tsm_redemption_RestraintBox>用[机密]方法把能量拘束在这个一个小盒子里，搭配特定发射器可以很好的发挥这种能量的功效。</entitydescription.tsm_redemption_RestraintBox>
@@ -1748,5 +1838,8 @@
   <loadingscreentip>反抗军是从分离组织脱离出来的，他们更具有威胁，也更强大，意图推翻联盟的铁腕统治--------奇迹之海</loadingscreentip>
   <loadingscreentip>现在通讯得到了大力发展，但是仍有限制--------奇迹之海</loadingscreentip>
   <loadingscreentip>无论是联盟、反抗军还是奇迹之海的部队，他们在见到第一个敌人之后都会呼叫增援，请务必小心。--------奇迹之海</loadingscreentip>
+  <loadingscreentip>贝奥武夫中队是联盟最为精锐的镇暴与反恐部队。随着战争的持续升级，这支部队的职责已远超传统防暴任务，逐步被赋予了更高的权限。如今，他们不仅是战场上的平乱者，更肩负起法官、警察与行刑者的多重角色，成为联盟手中真正集审判与执行于一体的权威力量。--------奇迹之海</loadingscreentip>
+  <loadingscreentip>占领军是联盟的王牌部队，以强大的重火力、全面的支援能力和厚重的装甲闻名于世。他们是正面战场上最难对付的劲旅，无论攻防都展现出压倒性的战斗力。--------奇迹之海</loadingscreentip>
+  <loadingscreentip>EMBI公司全称木卫二魔法生物科技公司，主要研制生物兵器--------奇迹之海</loadingscreentip>
 
 </infotexts>

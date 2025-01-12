@@ -57,7 +57,7 @@
       <Sprite name="pgc uniform" texture="%ModDir%/Jobgear/icon.png" sourcerect="143,427,117,53" depth="0.55" origin="0.5,0.5" />
       <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
       <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-        <sprite name="pgc uniform Torso" texture="%ModDir%/Jobgear/pgc_[gender].png" limb="Torso" depthlimb="Jaw" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="182,17,75,173" origin="0.465,0.45" />
+        <sprite name="pgc uniform Torso" texture="%ModDir%/Jobgear/pgc_[gender].png" limb="Torso" depthlimb="Jaw" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="174,22,90,158" origin="0.465,0.45" />
         <sprite name="pgc uniform Right Hand" texture="%ModDir%/Jobgear/pgc_[gender].png" limb="RightHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="pgc uniform Left Hand" texture="%ModDir%/Jobgear/pgc_[gender].png" limb="LeftHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="pgc uniform Left Lower Arm" texture="%ModDir%/Jobgear/pgc_[gender].png" limb="LeftForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -421,8 +421,8 @@
         <sprite name="stormy seas Left Hand" texture="%ModDir%/Jobgear/stormyseas_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="stormy seas Right Lower Arm" texture="%ModDir%/Jobgear/stormyseas_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="stormy seas Left Lower Arm" texture="%ModDir%/Jobgear/stormyseas_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="stormy seas Right Upper Arm" texture="%ModDir%/Jobgear/stormyseas_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
-        <sprite name="stormy seas Left Upper Arm" texture="%ModDir%/Jobgear/stormyseas_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+        <sprite name="stormy seas Right Upper Arm" texture="%ModDir%/Jobgear/stormyseas_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="stormy seas Left Upper Arm" texture="%ModDir%/Jobgear/stormyseas_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="stormy seas Waist" texture="%ModDir%/Jobgear/stormyseas_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="stormy seas Right Thigh" texture="%ModDir%/Jobgear/stormyseas_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="stormy seas Left Thigh" texture="%ModDir%/Jobgear/stormyseas_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />

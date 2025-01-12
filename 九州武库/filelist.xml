@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="九州武库" modversion="1.0.113" corepackage="False" steamworkshopid="2953749635" gameversion="1.7.7.0">
+<contentpackage name="九州武库" modversion="1.0.117" corepackage="False" steamworkshopid="2953749635" gameversion="1.7.7.0">
   <Item file="%ModDir%/weapons/bullet.xml" />
   <Item file="%ModDir%/Jobgear/uniform.xml" />
   <Item file="%ModDir%/Jobgear/armor.xml" />
@@ -21,11 +21,14 @@
   <Item file="%ModDir%/weapons/节日/holiday_weapons.xml" />
   <Item file="%ModDir%/weapons/配件/accessories.xml" />
   <Item file="%ModDir%/weapons/配件/war_preparation.xml" />
+  <Item file="%ModDir%/weapons/皮肤/skins.xml" />
   <Item file="%ModDir%/mission/Combat NPC Enhancement.xml" />
   <Item file="%ModDir%/other/OSA.xml" />
   <Item file="%ModDir%/other/monster_ai_items.xml" />
   <Item file="%ModDir%/other/item_over.xml" />
   <Item file="%ModDir%/Fabricators/fabricators.xml" />
+  <Item file="%ModDir%/turrets/turrets.xml" />
+  <Item file="%ModDir%/npc/npc_items.xml" />
   <Afflictions file="%ModDir%/other/Afflictions.xml" />
   <Afflictions file="%ModDir%/other/Afflictions_ai.xml" />
   <Text file="%ModDir%/text/chinese.xml" />
@@ -47,7 +50,7 @@
   <Character file="%ModDir%/character/sight5/sight5.xml" />
   <Other file="%ModDir%/Lua/Autorun/init.lua" />
   <Other file="%ModDir%/Lua/Scripts/Client/weapon_zoom.lua" />
-  <Submarine file="%ModDir%/九州武库：现版本武器全览.sub" />
   <EnemySubmarine file="%ModDir%/ship/ARS-运输.sub" />
   <EnemySubmarine file="%ModDir%/ship/pirates_tsm_1.sub" />
+  <Submarine file="%ModDir%/九州武库：现版本武器全览 （suger更新版）.sub" />
 </contentpackage>

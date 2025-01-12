@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--普通-->
+  <Item name="战车九州涂装" identifier="tsm_zc_skins_o" subcategory="tsm_skins" category="Equipment" scale="0.24" tags="smallitem,tsm_gun_skins,tsm_zc_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1">
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="redpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" />
+    <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="585,434,446,126" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
+  </Item>
+  <Item name="飞鸦九州涂装" identifier="tsm_fy_skins_o" subcategory="tsm_skins" category="Equipment" scale="0.25" tags="smallitem,tsm_gun_skins,tsm_fy_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1">
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="redpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" />
+    <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="579,139,458,131" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
+  </Item>
+  <Item name="M2白鹰涂装" identifier="tsm_m2_skins_9eagle" subcategory="tsm_skins" category="Equipment" scale="0.27" tags="smallitem,tsm_gun_skins,tsm_m2_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1">
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="greenpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" />
+    <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="5,1313,763,163" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
+  </Item>
+  <!--定制-->
+  <Item name="sks精金光泽涂装" identifier="tsm_sks_skins_zjgz" subcategory="tsm_skins" category="Equipment" scale="0.25" tags="smallitem,tsm_gun_skins,tsm_sks_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1">
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="redpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="0,0,496,109" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
+  </Item>
+  <Item name="rpk16折翼涂装" identifier="tsm_rpk16_skins_zy" subcategory="tsm_skins" category="Equipment" scale="0.27" tags="smallitem,tsm_gun_skins,tsm_rpk16_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1">
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="redpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="0,134,468,138" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
+  </Item>
+  <!--boss专属-->
+  <Item name="VHS2雷龙涂装" identifier="tsm_vhs2_skins_t037y" subcategory="tsm_skins" category="Equipment" scale="0.25" tags="smallitem,tsm_gun_skins,tsm_vhs2_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1">
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="lldyj" mincondition="0.5"/>
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="0,299,397,139" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect">
+    <StatusEffect type="OnActive" target="This">
+      <ParticleEmitter particle="faradayfx" scalemultiplier="2,2" anglemax="360" emitinterval="2" particleamount="1" particlespersecond="1" />
+    </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="HK433雷龙涂装" identifier="tsm_hk433_skins_t037y" subcategory="tsm_skins" category="Equipment" scale="0.24" tags="smallitem,tsm_gun_skins,tsm_hk433_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1">
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="lldyj" mincondition="0.5"/>
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="4,445,476,136" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect">
+    <StatusEffect type="OnActive" target="This">
+      <ParticleEmitter particle="faradayfx" scalemultiplier="2,2" anglemax="360" emitinterval="2" particleamount="1" particlespersecond="1" />
+    </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="DP12雷龙涂装" identifier="tsm_dp12_skins_t037y" subcategory="tsm_skins" category="Equipment" scale="0.22" tags="smallitem,tsm_gun_skins,tsm_dp12_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1">
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="lldyj" mincondition="0.5"/>
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="0,598,472,153" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="faradayfx" scalemultiplier="2,2" anglemax="360" emitinterval="2" particleamount="1" particlespersecond="1" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+</Items>

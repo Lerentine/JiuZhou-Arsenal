@@ -612,7 +612,7 @@
         <Item identifier="fkj_vest_yehuo" equip="true"/>
         <Item identifier="tsm_enhancement_cyborg"/>
         <Item identifier="fkj_yehuo_helmet" equip="true"/>
-        <Item identifier="tsm_steel_knife" equip="true"/>
+        <Item identifier="tsm_kaishan_knife" equip="true"/>
         <Item identifier="tsm_enhancement_lightningwizard"/>
         <Item identifier="tsm_enhancement_combatship">
           <Item identifier="tsm_medicalkits_s"/>

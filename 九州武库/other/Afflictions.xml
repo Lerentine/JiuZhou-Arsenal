@@ -432,13 +432,15 @@
   <tsm_68_51
     identifier="tsm_68_51"
     type="tsm_68_51"
-    limbspecific="false"
+    limbspecific="true"
     maxstrength="4"
     showiconthreshold="infinity">
-    <Effect minstrength="0" maxstrength="3" strengthchange="0" />
-    <Effect minstrength="3" maxstrength="4" strengthchange="0" minvitalitydecrease="0.1" maxvitalitydecrease="0.2">
-      <Affliction identifier="explosiondamage" amount="3" />
-      <ReduceAffliction identifier="tsm_68_51" strength="4" />
+    <Effect minstrength="0" maxstrength="3" strengthchange="-0.1" />
+    <Effect minstrength="3" maxstrength="4" strengthchange="0" >
+     <StatusEffect target="Limb" disabledeltatime="true">
+       <Affliction identifier="explosiondamage" amount="4" />
+       <ReduceAffliction identifier="tsm_68_51" strength="4" />
+     </StatusEffect>
     </Effect>
     </tsm_68_51>
   <Affliction

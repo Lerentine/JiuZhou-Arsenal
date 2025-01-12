@@ -431,7 +431,7 @@
     </Propulsion>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="mg42mag" hide="false" itempos="-13,-9" depth="0.54">
+      <Containable items="mg42mag" hide="false" itempos="-13,-3" depth="0.54">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" holdpos="10,-40" holdangle="80" maxchargetime="999" setvalue="true"/>
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -455,7 +455,7 @@
   </Item>
   <Item name="弹鼓（7.92*57）" identifier="tsm_mg42_mag" subcategory="other" scale="0.27" category="weapon" maxstacksize="1" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="smallitem,mg42mag,magazine,handheldammo" impactsoundtag="impact_metal_light" health="75" description="">
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2318,738,58,111" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.56" sourcerect="2318,738,58,111" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.54" sourcerect="2318,738,58,111" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="58" height="111" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt7.92*57" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
