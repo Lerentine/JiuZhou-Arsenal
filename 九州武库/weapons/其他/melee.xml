@@ -560,7 +560,7 @@
       </Fabricate>
       <Body width="420" height="45" density="22" />
       <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-30,0" handle2="-48,6" holdangle="40" reload="0.9" aimangle="-10" range="50" combatPriority="25" msg="ItemMsgPickUpSelect">
-        <Attack targetimpulse="5" severlimbsprobability="0.1" itemdamage="5" penetration="0.5" structuredamage="20" structuresoundtype="StructureSlash">
+        <Attack targetimpulse="5" severlimbsprobability="0.1" itemdamage="5" penetration="0.3" structuredamage="20" structuresoundtype="StructureSlash">
           <Affliction identifier="lacerations" strength="40" />
           <Affliction identifier="bleedingnonstop" strength="40" />
           <Affliction identifier="stun" strength="0.5" />

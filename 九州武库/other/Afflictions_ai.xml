@@ -320,7 +320,7 @@
   </Affliction>
   <!--任务相关-->
   <Affliction name="Dark Night" identifier="tsm_darknight" limbspecific="false" showiconthreshold="100" maxstrength="10" resetbetweenrounds="true">
-    <Effect minstrength="0" maxstrength="10" strengthchange="1" minafflictionoverlayalphamultiplier="0" maxafflictionoverlayalphamultiplier="0.9"></Effect>
+    <Effect minstrength="0" maxstrength="10" strengthchange="1" minafflictionoverlayalphamultiplier="0" maxafflictionoverlayalphamultiplier="0.9"/>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0" />
     <AfflictionOverlay texture="%ModDir%/png/screenblack.png" />
   </Affliction>
@@ -343,6 +343,21 @@
       <StatValue stattype="MovementSpeed" value="0.2" />
       <StatValue stattype="AttackMultiplier" value="-0.3" />
       <StatValue stattype="MeleeAttackSpeed" value="2.0" />
+    </Effect>
+  </Affliction>
+  <!--克里斯-->
+  <Affliction name="chris" hideiconafterdelay="true" identifier="tsm_chris_ondead" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="2">
+    <Effect minstrength="0" maxstrength="2" strengthchange="0" resistancefor="damage,burn,stun,bleeding,acidburn" minresistance="0.2" maxresistance="0.2" minspeedmultiplier="1.0" maxspeedmultiplier="1.0">
+      <StatusEffect type="OnDeath" target="Character" disabledeltatime="true">
+        <SpawnItem identifier="tsm_rp" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction hideiconafterdelay="true" identifier="tsm_beowulf_complete" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="2">
+    <Effect minstrength="0" maxstrength="2" strengthchange="0" resistancefor="damage,burn,stun,bleeding,acidburn" minresistance="0.1" maxresistance="0.1" minspeedmultiplier="1.0" maxspeedmultiplier="1.0">
+      <StatusEffect type="OnDeath" target="Character" disabledeltatime="true">
+        <TriggerEvent identifier="tsm_beowulf_complete_2" />
+      </StatusEffect>
     </Effect>
   </Affliction>
 </Afflictions>

@@ -3,7 +3,7 @@
   <Items>
     <!--枪械-->
     <!--同昏-->
-    <Item name="同昏" identifier="tsm_thbq" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon" scale="0.265" impactsoundtag="impact_metal_light" >
+    <Item name="同昏" identifier="tsm_thbq" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon,tsm_short_farsight" scale="0.265" impactsoundtag="impact_metal_light" >
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="40" requiresrecipe="false">
         <RequiredSkill identifier="weapons" level="50" />
@@ -30,7 +30,7 @@
         <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.38" setvalue="true" />
         <StatusEffect  type="OnUse" target="Character" SpeedMultiplier="0.3" setvalue="true" />
       </Holdable>
-      <RangedWeapon reload="0.11" weapondamagemodifier="1" penetration="0.1" holdtrigger="true" barrelpos="205,35" spread="8" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
+      <RangedWeapon reload="0.11" weapondamagemodifier="1" penetration="0.1" holdtrigger="true" barrelpos="205,40" spread="8" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4216,203,201" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,4243,174,170" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -98,7 +98,6 @@
             <conditional maxchargetime="eq 999"/>
           </StatusEffect>
         </Containable>
-        <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
         <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
         <SubContainer capacity="1" maxstacksize="1">
           <Containable items="flashlight" hide="false" itempos="33,2" setactive="true" />
@@ -111,7 +110,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
       <SkillRequirementHint identifier="weapons" level="60" />
     </Item>
-    <Item name="共影" identifier="tsm_gybq" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon" scale="0.265" impactsoundtag="impact_metal_light" description="">
+    <Item name="共影" identifier="tsm_gybq" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon,tsm_short_farsight" scale="0.265" impactsoundtag="impact_metal_light" description="">
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40" requiresrecipe="false">
         <RequiredSkill identifier="weapons" level="60" />
@@ -142,7 +141,7 @@
           <Conditional hasstatustag="tsm_wait_trigger" />
         </StatusEffect>
       </Holdable>
-      <RangedWeapon reload="0.01" weapondamagemodifier="1.9" holdtrigger="true" barrelpos="205,35" spread="4" unskilledspread="25" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.25">
+      <RangedWeapon reload="0.01" weapondamagemodifier="1.9" holdtrigger="true" barrelpos="200,30" spread="4" unskilledspread="25" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.25">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4216,203,201" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,4243,174,170" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -234,7 +233,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
       <SkillRequirementHint identifier="weapons" level="80" />
     </Item>
-    <Item name="新月轮转" identifier="tsm_xylz" subcategory="TSM" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,tsm_farsight,provocativetohumanai,bulkyweapon" Scale="0.265" impactsoundtag="impact_metal_light">
+    <Item name="新月轮转" identifier="tsm_xylz" subcategory="TSM" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,tsm_mid_farsight,provocativetohumanai,bulkyweapon" Scale="0.265" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40" requiresrecipe="false">
         <RequiredSkill identifier="weapons" level="70" />
@@ -264,7 +263,7 @@
         <sprite name="Backpack Wearable" texture="%ModDir%/weapons/奇迹之海/tsm.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="594,610,497,113" origin="0.45,-0.2" scale="0.265" />
         <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.82" setvalue="true" disabledeltatime="true" />
       </Wearable>
-      <RangedWeapon reload="2" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="205,35" spread="0" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.2">
+      <RangedWeapon reload="2" weapondamagemodifier="1" holdtrigger="true" barrelpos="230,35" spread="0" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.2">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4216,203,201" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,4243,174,170" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -308,26 +307,18 @@
           <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="3" scalemax="3" />
         </StatusEffect>
         <!-- 动态散布 -->
-        <StatusEffect type="Always" target="This" unskilledspread="-15">
+        <StatusEffect type="OnSecondaryUse" target="This" unskilledspread="-10">
           <Conditional unskilledspread="gt 6" />
         </StatusEffect>
-        <StatusEffect type="OnUse" target="This,Character" unskilledspread="+20" disabledeltatime="true" comparison="and">
-          <Conditional unskilledspread="lt 10" />
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="+40" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 20" />
           <Conditional CanRun="true" />
         </StatusEffect>
-        <StatusEffect type="OnUse" target="This,Character" unskilledspread="+20" disabledeltatime="true" comparison="and">
-          <Conditional unskilledspread="lt 5" />
-          <Conditional CanRun="false" />
-        </StatusEffect>
-        <StatusEffect type="Always" target="This" spread="-10">
+        <StatusEffect type="OnSecondaryUse" target="This" spread="-10">
           <Conditional spread="gt 0" />
-        </StatusEffect>
-        <StatusEffect type="OnUse" target="This,Character" spread="+5" disabledeltatime="true" comparison="and">
-          <Conditional spread="lt 4" />
-          <Conditional CanRun="true" />
-        </StatusEffect>
-        <StatusEffect type="OnUse" target="This,Character" spread="+5" disabledeltatime="true" comparison="and">
-          <Conditional spread="lt 2" />
+        </StatusEffect>2
+        <StatusEffect type="OnUse" target="This,Character" spread="+30" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 10" />
           <Conditional CanRun="false" />
         </StatusEffect>
         <RequiredItems items="tsm_xymagazine" type="Contained" msg="ItemMsgAmmoRequired" />
@@ -353,7 +344,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
       <SkillRequirementHint identifier="weapons" level="95" />
     </Item>
-    <Item name="战车" identifier="tsm_zc" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon" scale="0.24" impactsoundtag="impact_metal_light" description="">
+    <Item name="战车" identifier="tsm_zc" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon,tsm_short_farsight" scale="0.24" impactsoundtag="impact_metal_light" description="">
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="1353,2130,130,143" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="592,299,444,117" depth="0.55" origin="0.5,0.5" />
@@ -381,7 +372,7 @@
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.45" setvalue="true">
         </StatusEffect>
       </Holdable>
-      <RangedWeapon reload="0.1" weapondamagemodifier="1.25" holdtrigger="true" barrelpos="240,25" spread="7" unskilledspread="65" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.25">
+      <RangedWeapon reload="0.1" weapondamagemodifier="1.25" holdtrigger="true" barrelpos="220,15" spread="7" unskilledspread="65" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.25">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4216,203,201" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,4243,174,170" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -466,6 +457,7 @@
         </Containable>
         <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
         <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+        <SlotIcon slotindex="2" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
         <SubContainer capacity="1" maxstacksize="1">
           <Containable items="flashlight" hide="false" itempos="29,-0.5" containedspritedepth="0.54" setactive="true" />
         </SubContainer>
@@ -480,7 +472,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
       <SkillRequirementHint identifier="weapons" level="60" />
     </Item>
-    <Item name="战车(九州涂装)" identifier="tsm_zc_c" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon" scale="0.24" impactsoundtag="impact_metal_light" hideinmenus="true" >
+    <Item name="战车(九州涂装)" identifier="tsm_zc_c" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon,tsm_short_farsight" scale="0.24" impactsoundtag="impact_metal_light" hideinmenus="true" >
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2161,1840,165,151" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="585,434,446,126" depth="0.55" origin="0.5,0.5" />
@@ -596,7 +588,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
       <SkillRequirementHint identifier="weapons" level="60" />
     </Item>
-    <Item name="飞鸦" identifier="tsm_fy" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light">
+    <Item name="飞鸦" identifier="tsm_fy" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon,tsm_short_farsight" scale="0.25" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="1" maxamount="1" spawnprobability="0.01" />
       <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="1529,2121,134,148" origin="0.5,0.5" />
@@ -622,7 +614,7 @@
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true">
         </StatusEffect>
       </Holdable>
-      <RangedWeapon reload="0.25" weapondamagemodifier="1.6" penetration="0.1" holdtrigger="true" barrelpos="170,25" spread="5" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
+      <RangedWeapon reload="0.25" weapondamagemodifier="1.6" penetration="0.1" holdtrigger="true" barrelpos="220,22" spread="5" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4216,203,201" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,4243,174,170" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -702,6 +694,7 @@
         </Containable>
         <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
         <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+        <SlotIcon slotindex="2" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
         <SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.54">
           <Containable items="flashlight" hide="false" itempos="29,0" containedspritedepth="0.54" setactive="true" />
         </SubContainer>
@@ -729,7 +722,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
       <SkillRequirementHint identifier="weapons" level="70" />
     </Item>
-    <Item name="飞鸦(九州涂装)" identifier="tsm_fy_c" subcategory="TSM" hideinmenus="true" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon" scale="0.25"  impactsoundtag="impact_metal_light">
+    <Item name="飞鸦(九州涂装)" identifier="tsm_fy_c" subcategory="TSM" hideinmenus="true" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon,tsm_short_farsight" scale="0.25"  impactsoundtag="impact_metal_light">
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2337,1832,168,168" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="579,139,458,131" depth="0.55" origin="0.5,0.5" />
@@ -867,7 +860,7 @@
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="1691,1553,167,188" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="1190,257,453,108" depth="0.55" origin="0.5,0.5" />
-      <Body width="400" height="100" density="23" />
+      <Body width="420" height="100" density="23" />
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
       <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="65,-3" aimpos="65,3" handle1="-82,-18" handle2="42,10" holdangle="-35" msg="ItemMsgPickUpSelect">
         <!--降低移动速度-->
@@ -879,7 +872,7 @@
         </StatusEffect>
       </Holdable>
       <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
-      <RangedWeapon reload="0.085" weapondamagemodifier="1.25" penetration="0.1" holdtrigger="true" barrelpos="205,35" spread="7" unskilledspread="20" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.3">
+      <RangedWeapon reload="0.085" weapondamagemodifier="1.25" penetration="0.1" holdtrigger="true" barrelpos="210,18" spread="7" unskilledspread="20" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4216,203,201" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,4243,174,170" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -1028,7 +1021,7 @@
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
       </Holdable>
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-      <RangedWeapon reload="0.11" weapondamagemodifier="1" holdtrigger="true" barrelpos="180,20" spread="9" unskilledspread="60" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
+      <RangedWeapon reload="0.11" weapondamagemodifier="1" holdtrigger="true" barrelpos="190,7" spread="9" unskilledspread="60" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
         <!--准星图标-->
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,2594,195,195" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="309,2594,195,195" />
@@ -1105,7 +1098,7 @@
         </SubContainer>
         <!--.瞄具-->
         <SubContainer capacity="1" maxstacksize="1">
-          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
+          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
           <Containable items="tsm_95_sight" hide="false" itempos="-3,17" depth="0.56" setactive="true" />
         </SubContainer>
       </ItemContainer>
@@ -1146,7 +1139,7 @@
         <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.38" setvalue="true" />
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.3" setvalue="true" />
       </Holdable>
-      <RangedWeapon reload="0.11" penetration="0.1" holdtrigger="true" barrelpos="205,35" spread="8" unskilledspread="25" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
+      <RangedWeapon reload="0.11" penetration="0.1" holdtrigger="true" barrelpos="245,20" spread="8" unskilledspread="25" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,2804,195,195" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="309,2804,195,195" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -1219,7 +1212,7 @@
           <Containable items="flashlight" hide="false" itempos="30,1" setactive="true" />
         </SubContainer>
         <SubContainer capacity="1" maxstacksize="1">
-          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
+          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
           <Containable items="tsm_03_sight" hide="false" itempos="-18,16" containedspritedepth="0.56" setactive="true" />
         </SubContainer>
         <SubContainer capacity="1" maxstacksize="1">
@@ -1254,7 +1247,7 @@
       </Fabricate>
       <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
         <RequiredSkill identifier="weapons" level="70" />
-        <RequiredItem identifier="tsm_advanced_03" amount="1" />
+        <RequiredItem identifier="tsm_qbz_191" amount="1" />
         <RequiredItem identifier="tsm_hpc" amount="1" />
       </Fabricate>
       <!--分解-->
@@ -1270,7 +1263,7 @@
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
       </Holdable>
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-      <RangedWeapon reload="0.11" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="200,30" spread="10" unskilledspread="60" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.2">
+      <RangedWeapon reload="0.11" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="205,16" spread="10" unskilledspread="60" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.2">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="305,654,194,195" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="34,654,195,195" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -1352,6 +1345,7 @@
           <Conditional spread="lt 10" />
           <Conditional CanRun="false" />
         </StatusEffect>
+
         <StatusEffect type="Always" target="This" unskilledspread="-10">
           <Conditional unskilledspread="gt 15" />
           <Conditional HasStatusTag="tsm_sight_holographic" />
@@ -1378,6 +1372,35 @@
         <StatusEffect type="OnUse" target="This,Character" spread="-0.23" disabledeltatime="true" comparison="and">
           <Conditional spread="lt 10" />
           <Conditional HasStatusTag="tsm_sight_reddot" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
+
+        <StatusEffect type="Always" target="This" unskilledspread="-10">
+          <Conditional unskilledspread="gt 15" />
+          <Conditional HasStatusTag="tsm_sight_qmk152" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="-1" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 30" />
+          <Conditional HasStatusTag="tsm_sight_qmk152" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" unskilledspread="-1" disabledeltatime="true" comparison="and">
+          <Conditional unskilledspread="lt 20" />
+          <Conditional HasStatusTag="tsm_sight_qmk152" />
+          <Conditional CanRun="false" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" spread="-8">
+          <Conditional spread="gt 5" />
+          <Conditional HasStatusTag="tsm_sight_qmk152" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="-0.37" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 13" />
+          <Conditional HasStatusTag="tsm_sight_qmk152" />
+          <Conditional CanRun="true" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This,Character" spread="-0.23" disabledeltatime="true" comparison="and">
+          <Conditional spread="lt 10" />
+          <Conditional HasStatusTag="tsm_sight_qmk152" />
           <Conditional CanRun="false" />
         </StatusEffect>
         <RequiredItems items="tsm_58_mag" type="Contained" msg="ItemMsgAmmoRequired" />
@@ -1409,15 +1432,10 @@
         <SubContainer capacity="1" maxstacksize="1">
           <Containable items="flashlight" hide="false" itempos="18,4" depth="0.56" setactive="true" />
         </SubContainer>
-        <!--4.高倍瞄具-->
+        <!--4.瞄具-->
         <SubContainer capacity="1" maxstacksize="1">
-          <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
-          <Containable items="qmk152" hide="false" itempos="-10,13" depth="0.56" setactive="true" />
-        </SubContainer>
-        <!--5.瞄具-->
-        <SubContainer capacity="1" maxstacksize="1">
-          <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="1173,411,67,40" origin="0.45,0.5" />
-          <Containable items="tsm_sight_low" hide="false" itempos="5,12" depth="0.56" setactive="true" />
+          <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
+          <Containable items="qmk152,sighting" hide="false" itempos="-8,13" depth="0.56" setactive="true" />
         </SubContainer>
         <SubContainer capacity="1" maxstacksize="1">
           <SlotIcon slotindex="5" texture="%ModDir%/png/ui.png" sourcerect="517,220,82,22" origin="0.45,0.5" />
@@ -1461,7 +1479,7 @@
         <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.38" setvalue="true" />
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.3" setvalue="true" />
       </Holdable>
-      <RangedWeapon reload="0.13" weapondamagemodifier="1.4" penetration="0.2" holdtrigger="true" barrelpos="220,20" spread="5" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
+      <RangedWeapon reload="0.13" weapondamagemodifier="1.3" penetration="0.2" holdtrigger="true" barrelpos="210,7" spread="5" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -1582,7 +1600,7 @@
         <sprite name="Backpack Wearable" texture="%ModDir%/weapons/奇迹之海/tsm.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="559,1310,590,147" origin="0.45,0" scale="0.24" />
         <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.9" setvalue="true" disabledeltatime="true" />
       </Wearable>
-      <RangedWeapon reload="0.11" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="245,12" spread="25" unskilledspread="55" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
+      <RangedWeapon reload="0.11" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="280,15" spread="25" unskilledspread="55" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -1713,7 +1731,7 @@
         <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.7" setvalue="true"/>
       </Holdable>
-      <RangedWeapon barrelpos="180,25" spread="4" weapondamagemodifier="1.1" unskilledspread="10" combatPriority="85" reload="0.5" drawhudwhenequipped="true" crosshairscale="0.2">
+      <RangedWeapon barrelpos="250,35" spread="4" weapondamagemodifier="1.1" unskilledspread="10" combatPriority="85" reload="0.5" drawhudwhenequipped="true" crosshairscale="0.2">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -1784,7 +1802,7 @@
         <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
       </Wearable>
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-      <RangedWeapon singlechargedshot="true" weapondamagemodifier="2" minchargetime="1.0" maxchargetime="1.5" barrelpos="320,-5" spread="0" unskilledspread="40" combatPriority="10" drawhudwhenequipped="true" crosshairscale="0.4">
+      <RangedWeapon singlechargedshot="true" weapondamagemodifier="2" minchargetime="1.0" maxchargetime="1.5" barrelpos="320,0" spread="0" unskilledspread="40" combatPriority="10" drawhudwhenequipped="true" crosshairscale="0.4">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4216,203,201" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="322,4243,174,170" />
         <Sound file="%ModDir%/weapons/奇迹之海/zltzq1.ogg" type="OnUse" range="3000" selectionmode="Random" />
@@ -1824,7 +1842,7 @@
    <Item name="醒狮" identifier="tsm_fire_gun" subcategory="TSM" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai,bulkyweapon" scale="0.28" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="1935,1563,153,167" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="1173,52,403,129" depth="0.55" origin="0.5,0.5" />
-    <Body width="500" height="95" density="60" />
+    <Body width="400" height="95" density="60" />
     <Deconstruct time="16">
       <Item identifier="plastic" amount="2" />
     </Deconstruct>
@@ -1845,7 +1863,7 @@
         <Dropitem />
       </StatusEffect>
     </Holdable>
-    <RangedWeapon reload="0.2" weapondamagemodifier="1.0" holdtrigger="false" barrelpos="200,-10" spread="2" unskilledspread="25" combatPriority="100" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.2" weapondamagemodifier="1.0" holdtrigger="false" barrelpos="200,25" spread="2" unskilledspread="25" combatPriority="100" drawhudwhenequipped="true" crosshairscale="0.2">
       <RequiredSkill identifier="weapons" level="50" />
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -1867,19 +1885,22 @@
     <Body width="100" height="35" density="10"/>
     <LightComponent AllowInGameEditing="false" lightcolor="255,0,0,255" canbeselected="false" flicker="1.0" flickerspeed="0.3" range="50.0" IsOn="true" castshadows="false" />
     <Projectile characterusable="false" launchimpulse="25" DoesStick="true" sticktocharacters="true" >
-      <Attack structuredamage="30" force="10" severlimbsprobability="1">
+      <Attack structuredamage="30" force="10" severlimbsprobability="1" penetration="0.5">
         <Affliction identifier="blunttrauma" strength="10" />
         <Affliction identifier="tsm_stun" strength="1.5" />
+        <Affliction identifier="stun" strength="1" />
       </Attack>
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
       <sound file="%ModDir%/weapons/奇迹之海/didi.ogg" range="2000"/>
       </StatusEffect>
+      <LightComponent AllowInGameEditing="false" lightcolor="255,0,0,255" canbeselected="false" range="50.0" IsOn="true" castshadows="false" />
       <StatusEffect type="OnImpact" target="This" disabledeltatime="true" delay="1">
         <sound file="%ModDir%/weapons/奇迹之海/boom.ogg" range="2000"/>
-        <Explosion range="600.0" ballastfloradamage="200" structuredamage="10" levelwalldamage="400" itemdamage="1000" force="40.0" tsm_stun="3" severlimbsprobability="0.4" debris="true" decal="explosion" decalsize="0.5" >
-        <Affliction identifier="explosiondamage" strength="15" />
-        <Affliction identifier="burn" strength="20" dividebylimbcount="true"/>
-        <Affliction identifier="tsm_armorbreak_jz" strength="50" dividebylimbcount="true"/>
+        <Explosion range="600.0" ballastfloradamage="200" structuredamage="10" levelwalldamage="400" itemdamage="1000" force="40.0" tsm_stun="3" severlimbsprobability="0.4" debris="true" decal="explosion" decalsize="0.5" penetration="0.5">
+        <Affliction identifier="explosiondamage" strength="50" />
+        <Affliction identifier="burn" strength="20" />
+        <Affliction identifier="tsm_armorbreak_jz" strength="50" />
+        <Affliction identifier="stun" strength="1.5" />
         </Explosion>
         </StatusEffect>
         <StatusEffect type="OnImpact" target="This" delay="2">
@@ -2369,13 +2390,13 @@
       <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
         <RequiredItem identifier="plastic" amount="2" />
         <RequiredItem identifier="tsm_tungsten" amount="3" />
-        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
-        <RequiredItem identifier="titanium" amount="2" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="3" />
+        <RequiredItem identifier="titanium" amount="3" />
       </Fabricate>
       <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
         <RequiredItem tag="tsm_xymagazine" mincondition="0.0" maxcondition="0.0" />
-        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
-        <RequiredItem identifier="titanium" amount="1" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="3" />
+        <RequiredItem identifier="titanium" amount="3" />
         <RequiredItem identifier="tsm_tungsten" amount="3" />
       </Fabricate>
       <Deconstruct time="5">
@@ -2402,18 +2423,12 @@
     <Item name="新月变革弹弹匣" identifier="tsm_xymagazine_bg" subcategory="TSM" scale="0.2" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="tsm_xymagazine,smallitem,tsm_mag,magazine" impactsoundtag="impact_metal_light" health="4" description="">
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
-        <RequiredItem identifier="plastic" amount="2" />
-        <RequiredItem identifier="depletedfuel" amount="2" />
+        <RequiredItem identifier="tsm_xymagazine" amount="1" />
         <RequiredItem identifier="tsm_triton_bag" mincondition="0.5" uescondition="ture" />
-        <RequiredItem identifier="titanium" amount="2" />
-        <RequiredItem identifier="tsm_pyrotechnic" amount="1" />
       </Fabricate>
       <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
-        <RequiredItem identifier="tsm_xymagazine_bg" mincondition="0.0" maxcondition="0.0" />
-        <RequiredItem identifier="depletedfuel" amount="1" />
-        <RequiredItem identifier="tsm_triton_bag" mincondition="0.25" />
-        <RequiredItem identifier="titanium" amount="2" />
-        <RequiredItem identifier="tsm_pyrotechnic" amount="1" />
+        <RequiredItem tag="tsm_xymagazine" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem identifier="tsm_triton_bag" mincondition="0.5" />
       </Fabricate>
       <Deconstruct time="5">
         <Item identifier="plastic" outcondition="1" />

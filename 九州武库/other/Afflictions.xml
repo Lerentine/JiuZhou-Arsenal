@@ -771,5 +771,13 @@
     </Effect>
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,128" color="143,111,160,255" origin="0,0" />
   </Affliction>
+    <Affliction identifier="tsm_beowulf_bb" type="tsm_bb" showiconthreshold="999" showinhealthscannerthreshold="999" limbspecific="false" maxstrength="5" affectmachines="false">
+        <Effect minstrength="0" maxstrength="5" strengthchange="-5">
+            <StatusEffect target="Character">
+                <Conditional IsLocalPlayer="True" />
+                <Sound file="%ModDir%/mission/beowulf.ogg" loop="false"/>
+            </StatusEffect>
+        </Effect>
+    </Affliction>
 </Afflictions>
 </Override>

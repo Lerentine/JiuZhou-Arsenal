@@ -108,7 +108,7 @@
   <Item name="4号霰弹" identifier="tsm_shotgunammo_4" subcategory="tsm_separatists" category="Weapon" maxstacksize="16" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsm_shotgunammo_4,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="2">
-      <RequiredItem tag="shotgunammo" description="fabricationdescription.shotgunammo" amount="6"/>
+      <RequiredItem tag="shotgunammo" description="fabricationdescription.shotgunammo" amount="4"/>
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1"/>
       <RequiredItem identifier="aluminium" amount="1" />
     </Fabricate>

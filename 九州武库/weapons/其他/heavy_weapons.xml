@@ -6,7 +6,7 @@
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="1539,1799,189,189" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="22,201,504,177" depth="0.55" origin="0.5,0.5" />
-    <Body width="504" height="177" density="60" />
+    <Body width="504" height="170" density="60" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="30" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="70" />
       <RequiredSkill identifier="mechanical" level="50" />
@@ -29,7 +29,7 @@
       <sprite name="RPG-7 bag" texture="%ModDir%/weapons/其他/重型武器.png" canbehiddenbyotherwearables="false" sourcerect="22,201,504,177" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.3" origin="0.45,0.8" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon barrelpos="80,11" spread="1" unskilledspread="10" reload="2.5" combatPriority="91" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon barrelpos="250,15" spread="1" unskilledspread="10" reload="2.5" combatPriority="91" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflashchaingun" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
@@ -66,7 +66,7 @@
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="1768,1786,214,214" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="22,46,551,124" depth="0.55" origin="0.5023961,0.5019316" />
-    <Body width="551" height="124" density="60" />
+    <Body width="551" height="120" density="60" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="40,6" aimpos="35,4" handle1="15,-22" handle2="150,-20" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.65" setvalue="true" />
         <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />
@@ -87,7 +87,7 @@
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="bazooka bag" texture="%ModDir%/weapons/其他/重型武器.png" canbehiddenbyotherwearables="false" sourcerect="22,46,551,124" rotation="270" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.3" origin="0.6,-0.3" />
     </Wearable>
-    <RangedWeapon barrelpos="80,11" spread="1" unskilledspread="10" reload="2" combatPriority="91" drawhudwhenequipped="true" crosshairscale="0.2" >
+    <RangedWeapon barrelpos="270,35" spread="1" unskilledspread="10" reload="2" combatPriority="91" drawhudwhenequipped="true" crosshairscale="0.2" >
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflashchaingun" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
@@ -139,7 +139,7 @@
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="m32 bag" texture="%ModDir%/weapons/其他/重型武器.png" canbehiddenbyotherwearables="false" sourcerect="22,459,331,98" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.35" origin="0.45,0.8" />
     </Wearable>
-    <RangedWeapon barrelpos="80,11" spread="1.2" unskilledspread="10" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.2" reload="1.2">
+    <RangedWeapon barrelpos="160,17" spread="1.2" unskilledspread="10" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.2" reload="1.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflashchaingun" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
@@ -379,7 +379,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/反抗军/separatists.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="828,1449,577,111" origin="0.45,-0.3" scale="0.27" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon reload="0.08" weapondamagemodifier="1" holdtrigger="true" barrelpos="280,5" spread="8" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.08" weapondamagemodifier="1" holdtrigger="true" barrelpos="280,20" spread="8" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="613,255,195,195" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="884,255,195,195" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />

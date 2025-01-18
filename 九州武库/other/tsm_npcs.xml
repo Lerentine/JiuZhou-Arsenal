@@ -131,7 +131,7 @@
       </Character>
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <!--Item identifier="tsm_pifu" equip="true"/-->
+        <Item identifier="tsm_pifu" equip="true"/>
         <Item identifier="tsm_sundawn_uniform" equip="true"/>
         <Item identifier="tsm_heavy_vest" equip="true"/>
         <Item identifier="tsm_helmet_respirator" equip="true"/>
@@ -193,7 +193,7 @@
     </npc>
   </npcset>
   <npcset identifier="tsmnpc">
-    <npc identifier="tsmnpc_1" spawnpointtags="admin" behavior="Patrol" healthmultiplier="2" aimspeed="50" aimaccuracy="1" >
+    <npc identifier="tsmnpc_1" spawnpointtags="admin" behavior="Patrol" healthmultiplier="2.5" aimspeed="50" aimaccuracy="1" >
       <Character speciesname="human" gender="female" headspriteid="8" hairindex="12" moustacheindex="0" faceattachmentindex="0" personality="professional">
         <job name="tsm_outpostsecurityofficer" identifier="tsm_outpostsecurityofficer">
           <skill identifier="electrical" level="100" />
@@ -204,16 +204,15 @@
         </job>
       </Character>
       <ItemSet commonness="1">
+        <Item identifier="tsm_hxl" equip="true" />
         <Item identifier="idcard" equip="true" />
         <Item identifier="tsm_hxl_unform_ai" equip="true" />
-        <Item identifier="tsmmissions_px18_pistols"/>
-        <Item identifier="tsm_9_mag" amount="4" />
-        <Item identifier="tsm_ai_eyi_outpost_sundown">
+        <Item identifier="tsm_ai_eyi_outpost_sundown"/>
+        <Item identifier="tsm_eyi_instability">
         <Item identifier="hxl_knife" />
         </Item>
-        <Item identifier="tsmmissions_hx870" equip="true">
-        <Item identifier="shotgunslugexplosive" amount="9"/>
-        <Item identifier="shotgunshell" amount="9"/>
+        <Item identifier="tsmmissions_hxl_ju" equip="true">
+        <Item identifier="tsm_12_bg" amount="30"/>
         </Item>
       </ItemSet>
     </npc>

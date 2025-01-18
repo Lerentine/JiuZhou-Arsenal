@@ -14,13 +14,13 @@
     </Deconstruct>>
     <InventoryIcon texture="%ModDir%/weapons/节日/weapons.png" sourcerect="2361,0,139,144" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/节日/weapons.png" sourcerect="41,17,346,162" depth="0.55" origin="0.5,0.5" />
-    <Body width="300" height="140" density="24" />
+    <Body width="346" height="155" density="33" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="40,0" handle1="-8,-30" handle2="50,0" holdangle="-40" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.67" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.13" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="200,20" spread="10" unskilledspread="10" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.13" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="170,20" spread="10" unskilledspread="10" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="911,510,140,138" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="613,478,195,197" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -78,7 +78,7 @@
       <Containable items="tsm_46_ammo" hide="true" />
     </ItemContainer>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
-      <GuiFrame relativesize="0.08,0.1" anchor="BottomLeft" relativeoffset="0,0.31" style="ItemUI" />
+      <GuiFrame relativesize="0.08,0.12" anchor="BottomLeft" relativeoffset="0,0.31" style="ItemUI" />
       <Button text="tsm_mode">
         <StatusEffect type="OnUse" target="This" Tags="" unskilledspread="10" setvalue="true" delay="0.01" disabledeltatime="true">
           <Sound file="%ModDir%/weapons/木卫二联盟/aad.ogg" type="OnUse" range="500" />

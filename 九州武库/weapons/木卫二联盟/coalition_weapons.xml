@@ -29,14 +29,14 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1621,2354,132,137" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="997,1558,440,136" depth="0.55" origin="0.5,0.5" />
-    <Body width="378" height="113" density="31" />
+    <Body width="440" height="113" density="31" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-10" aimpos="60,0" handle1="-25,-20" handle2="60,20" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.85" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.13" holdtrigger="true" weapondamagemodifier="1" barrelpos="190,5" spread="12" unskilledspread="30" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.13" holdtrigger="true" weapondamagemodifier="1" barrelpos="210,10" spread="12" unskilledspread="30" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="307,3013,197,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="24,3083,222,136" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -154,7 +154,7 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1846,1287,110,116" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="0,294,364,116" depth="0.55" origin="0.5,0.5" />
-    <Body width="378" height="113" density="28" />
+    <Body width="364" height="113" density="28" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-10" aimpos="50,0" handle1="-25,-20" handle2="60,20" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.9" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
@@ -165,7 +165,7 @@
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.09" holdtrigger="true" weapondamagemodifier="0.8" barrelpos="180,5" spread="10" unskilledspread="30" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.09" holdtrigger="true" weapondamagemodifier="0.8" barrelpos="180,10" spread="10" unskilledspread="30" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="311,3508,198,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="26,3483,218,237" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -298,7 +298,7 @@
       </SubContainer>
       <!--3.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="0,18" depth="0.56" setactive="true" />
       </SubContainer>
       <!--4.枪口/枪管-->
@@ -354,7 +354,7 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2026,1281,118,116" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="0,154,369,113" depth="0.55" origin="0.5,0.5" />
-    <Body width="378" height="105" density="30" />
+    <Body width="369" height="105" density="30" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-10" aimpos="50,0" handle1="-25,-20" handle2="60,20" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.85" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
@@ -365,7 +365,7 @@
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.12" holdtrigger="true" weapondamagemodifier="1" penetration="0.1" barrelpos="190,5" spread="13" unskilledspread="30" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.12" holdtrigger="true" weapondamagemodifier="1" penetration="0.1" barrelpos="180,18" spread="13" unskilledspread="30" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1276,198,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1276,198,198" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -490,7 +490,7 @@
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="0,15.5" depth="0.56" setactive="true" />
       </SubContainer>
       <!--5.枪口/枪管-->
@@ -533,7 +533,7 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1846,978,108,110" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1055,676,354,101" depth="0.55" origin="0.5,0.5" />
-    <Body width="378" height="113" density="33" />
+    <Body width="354" height="113" density="33" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-10" aimpos="50,0" handle1="-25,-20" handle2="60,20" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.85" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
@@ -544,7 +544,7 @@
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.115" holdtrigger="true" weapondamagemodifier="1" penetration="0.1" barrelpos="170,10" spread="12" unskilledspread="30" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.115" holdtrigger="true" weapondamagemodifier="1" penetration="0.1" barrelpos="170,17" spread="12" unskilledspread="30" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="34,2379,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="310,2379,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -669,7 +669,7 @@
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-7,15" depth="0.56" setactive="true" />
       </SubContainer>
       <!--5.枪口/枪管-->
@@ -686,7 +686,7 @@
     <SkillRequirementHint identifier="weapons" level="55" />
   </Item>
   <!--VSH—2“恶棍”先进无托战斗步枪-->
-  <Item name="VSH—2“恶棍”先进无托战斗步枪" identifier="tsm_lm_vsh2" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,rm277,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" >
+  <Item name="VHS—2“恶棍”先进无托战斗步枪" identifier="tsm_lm_vsh2" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,rm277,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" >
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
     <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.1" />
@@ -713,14 +713,14 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1841,829,121,124" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="15,1557,397,139" depth="0.55" origin="0.5,0.5" />
-    <Body width="378" height="113" density="35" />
+    <Body width="397" height="113" density="35" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-10" aimpos="50,0" handle1="-20,-20" handle2="60,20" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.9" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.09" holdtrigger="true" weapondamagemodifier="1.1" barrelpos="170,10" spread="13" unskilledspread="30" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.09" holdtrigger="true" weapondamagemodifier="1.1" barrelpos="190,10" spread="13" unskilledspread="30" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="309,2164,198,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="27,2154,212,215" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -863,13 +863,8 @@
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
-        <Containable items="tsm_sight_high" hide="false" itempos="-3,17" depth="0.56" setactive="true" />
-      </SubContainer>
-      <!--5.瞄具-->
-      <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="1173,411,67,40" origin="0.45,0.5" />
-        <Containable items="tsm_sight_low" hide="false" itempos="12.5,16" depth="0.56" setactive="true" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
+        <Containable items="sighting" hide="false" itempos="-3,17" depth="0.56" setactive="true" />
       </SubContainer>
       <!--5.枪口/枪管-->
       <SubContainer capacity="1" maxstacksize="1">
@@ -877,7 +872,7 @@
         <Containable items="barrel" hide="false" itempos="51,3" containedspritedepth="0.51" Scale="0.15" setactive="true" />
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="6" texture="%ModDir%/weapons/皮肤/skins_icon.png" sourcerect="0,1517,120,83" origin="0.5,0.5" />
+        <SlotIcon slotindex="6" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
         <Containable items="tsm_vhs2_skins" hide="false" setactive="true" />
       </SubContainer>
     </ItemContainer>
@@ -920,7 +915,7 @@
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.12" holdtrigger="true" weapondamagemodifier="1" barrelpos="190,20" spread="11" unskilledspread="35" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.12" holdtrigger="true" weapondamagemodifier="1" barrelpos="195,25" spread="11" unskilledspread="35" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="309,1936,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="27,1926,212,215" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -1062,7 +1057,7 @@
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="0,15" depth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
@@ -1092,7 +1087,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.3" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.12" holdtrigger="true" weapondamagemodifier="1.25" barrelpos="200,20" spread="5" unskilledspread="35" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.12" holdtrigger="true" weapondamagemodifier="1.25" barrelpos="240,20" spread="5" unskilledspread="35" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="309,1936,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="27,1926,212,215" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -1219,7 +1214,7 @@
     <!--图标以及局内贴图-->
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1587,1910,188,206" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="473,1593,404,121" depth="0.55" origin="0.5,0.5" />
-    <Body width="377" height="110" density="37" />
+    <Body width="404" height="110" density="37" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="67,3" aimpos="68,3" handle1="-60,-30" handle2="40,12" holdangle="-50" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
@@ -1228,7 +1223,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.3" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.11" penetration="0.1" holdtrigger="true" barrelpos="175,10" spread="11" unskilledspread="30" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.11" penetration="0.1" holdtrigger="true" barrelpos="195,14" spread="11" unskilledspread="30" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
       <!--准星图标-->
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,860,198,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="305,860,197,199" />
@@ -1376,7 +1371,7 @@
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-5,16" depth="0.56" setactive="true" />
       </SubContainer>
       <!--5.枪口/枪管-->
@@ -1416,13 +1411,13 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1846,1127,125,133" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1161,161,410,113" depth="0.55" origin="0.5,0.5" />
-    <Body width="378" height="113" density="33" />
+    <Body width="410" height="113" density="33" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="55,-10" aimpos="55,0" handle1="-35,-20" handle2="60,20" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.75" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.11" holdtrigger="true" weapondamagemodifier="1.05" barrelpos="175,15" spread="8" unskilledspread="30" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.11" holdtrigger="true" weapondamagemodifier="1.05" barrelpos="190,20" spread="8" unskilledspread="30" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4469,241,243" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="336,4520,176,175" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -1550,13 +1545,8 @@
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
-        <Containable items="tsm_sight_high" hide="false" itempos="-3,16" depth="0.56" setactive="true" />
-      </SubContainer>
-      <!--5.瞄具-->
-      <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="1173,411,67,40" origin="0.45,0.5" />
-        <Containable items="tsm_sight_low" hide="false" itempos="14,16" depth="0.56" setactive="true" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
+        <Containable items="sighting" hide="false" itempos="-3,16" depth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2200" soundrange="3800" fadeouttime="6" />
@@ -1594,7 +1584,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="220,30" spread="12" unskilledspread="20" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="240,20" spread="12" unskilledspread="20" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="35,3750,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="311,3750,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -1688,7 +1678,7 @@
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1831,1569,127,136" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="15,1405,582,104" depth="0.535" origin="0.5,0.5" />
-    <Price baseprice="407" displaynonempty="true" buyingpricemultiplier="5">
+    <Price baseprice="582" displaynonempty="true" buyingpricemultiplier="5">
       <Price storeidentifier="merchantarmory" multiplier="1.1" minamount="0" maxamount="2" sold="false"/>
       <Price storeidentifier="merchantcity" multiplier="1.5" minamount="0" maxamount="1" sold="false"/>
       <Price storeidentifier="merchantresearch" multiplier="1.3" minamount="0" maxamount="1" sold="false"/>
@@ -1709,7 +1699,7 @@
       <Item identifier="steel" />
       <Item identifier="aluminium" />
     </Deconstruct>
-    <Body width="475" height="121" density="37" />
+    <Body width="582" height="121" density="37" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="70,-5" aimpos="75,0" handle1="-140,-13" handle2="50,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
@@ -1723,7 +1713,7 @@
       </StatusEffect>
     </ItemComponent>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.1" weapondamagemodifier="1" penetration="0.15" holdtrigger="true" barrelpos="230,27" spread="11" unskilledspread="60" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.35">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1" penetration="0.15" holdtrigger="true" barrelpos="280,20" spread="11" unskilledspread="60" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.35">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="311,3750,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="35,3750,198,199" />
       <StatusEffect type="OnUse" target="This" reload="0.28" setvalue="true" delay="0.08" />
@@ -1862,15 +1852,10 @@
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="flashlight" hide="false" itempos="22,5" depth="0.56" setactive="true" />
       </SubContainer>
-      <!--4.高倍瞄具-->
+      <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
-        <Containable items="tsm_sight_high" hide="false" itempos="-27,13" depth="0.56" setactive="true" />
-      </SubContainer>
-      <!--5.瞄具-->
-      <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="1173,411,67,40" origin="0.45,0.5" />
-        <Containable items="tsm_sight_low" hide="false" itempos="-10,12" depth="0.56" setactive="true" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
+        <Containable items="sighting" hide="false" itempos="-20,13" depth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2500" soundrange="4500" fadeouttime="6" />
@@ -1907,7 +1892,7 @@
       <Item identifier="iron" />
       <Item identifier="aluminium" />
     </Deconstruct>
-    <Body width="475" height="121" density="28" />
+    <Body width="586" height="121" density="31" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="10,-40" aimpos="78,5" handle1="-135,-20" handle2="50,5" holdangle="70" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.7" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.55" setvalue="true" />
@@ -1917,11 +1902,9 @@
       </StatusEffect>
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon weapondamagemodifier="1" holdtrigger="true" barrelpos="250,25" spread="2" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.35">
+    <RangedWeapon weapondamagemodifier="1" holdtrigger="true" barrelpos="280,10" spread="2" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.35">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4469,241,243" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="336,4520,176,175" />
-      <StatusEffect type="OnUse" target="This" reload="0.28" setvalue="true" delay="0.08" />
-      <StatusEffect type="OnUse" target="This" reload="0.05" setvalue="true" delay="0.28" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="True">
         <Sound file="%ModDir%/weapons/木卫二联盟/M110.ogg" type="OnUse" range="3000" />
@@ -2058,7 +2041,7 @@
       <Item identifier="iron" />
       <Item identifier="aluminium" />
     </Deconstruct>
-    <Body width="475" height="121" density="24" />
+    <Body width="484" height="121" density="24" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-8" aimpos="63,-2" handle1="-80,-15" handle2="30,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.85" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.65" setvalue="true" />
@@ -2069,7 +2052,7 @@
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.12" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="210,30" spread="12" unskilledspread="60" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.12" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="240,25" spread="12" unskilledspread="60" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4469,241,243" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="336,4520,176,175" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -2194,7 +2177,7 @@
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-8,14" depth="0.56" setactive="true" />
       </SubContainer>
       <!--5.枪口/枪管-->
@@ -2249,7 +2232,7 @@
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.11" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="200,30" spread="12" unskilledspread="60" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.11" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="230,20" spread="12" unskilledspread="60" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="311,3750,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="35,3750,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -2401,7 +2384,7 @@
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-9,14" depth="0.56" setactive="true" />
       </SubContainer>
       <!--5.枪口/枪管-->
@@ -2446,7 +2429,7 @@
       <Item identifier="iron" />
       <Item identifier="aluminium" />
     </Deconstruct>
-    <Body width="475" height="121" density="28" />
+    <Body width="405" height="121" density="28" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="55,-8" aimpos="58,0" handle1="-55,-15" handle2="30,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.82" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.57" setvalue="true" />
@@ -2457,7 +2440,7 @@
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.105" weapondamagemodifier="1.3" holdtrigger="true" barrelpos="200,30" spread="11" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.105" weapondamagemodifier="1.3" holdtrigger="true" barrelpos="200,25" spread="11" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4469,241,243" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="336,4520,176,175" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -2600,7 +2583,7 @@
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="1,16" depth="0.56" setactive="true" />
       </SubContainer>
       <!--5.枪口/枪管-->
@@ -2659,7 +2642,7 @@
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.1" penetration="0.1" holdtrigger="true" barrelpos="190,30" spread="11" unskilledspread="30" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.1" penetration="0.1" holdtrigger="true" barrelpos="185,31" spread="11" unskilledspread="30" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
       <!--准星图标-->
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="311,3750,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="35,3750,198,199" />
@@ -2806,8 +2789,8 @@
         <Containable items="grip" hide="false" itempos="19,-1" depth="0.56" setactive="true" />
       </SubContainer>
       <!--3.灯-->
-      <SlotIcon slotindex="2" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
+        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="flashlight" hide="false" itempos="30,7" setactive="true" />
       </SubContainer>
       <!--4.瞄具-->
@@ -2859,14 +2842,14 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2336,2214,130,140" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="7,1742,442,127" depth="0.55" origin="0.5,0.5" />
-    <Body width="377" height="110" density="26" />
+    <Body width="442" height="110" density="26" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,0" aimpos="63,0" handle1="-90,-15" handle2="23,12" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.105" weapondamagemodifier="1" holdtrigger="true" barrelpos="190,30" spread="9" unskilledspread="30" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.105" weapondamagemodifier="1" holdtrigger="true" barrelpos="220,15" spread="9" unskilledspread="30" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="311,3750,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="35,3750,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -3009,7 +2992,7 @@
       <Item identifier="iron" />
       <Item identifier="aluminium" />
     </Deconstruct>
-    <Body width="500" height="145" density="37" />
+    <Body width="512" height="145" density="37" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="63,-8" aimpos="70,5" handle1="-105,-30" handle2="30,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.72" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.63" setvalue="true" />
@@ -3019,7 +3002,7 @@
       </StatusEffect>
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.13" weapondamagemodifier="1.1" penetration="0.1" holdtrigger="true" barrelpos="200,20" spread="11" unskilledspread="40" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.13" weapondamagemodifier="1.1" penetration="0.1" holdtrigger="true" barrelpos="250,12" spread="11" unskilledspread="40" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4469,241,243" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="336,4520,176,175" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -3184,7 +3167,7 @@
       <Item identifier="iron" />
       <Item identifier="aluminium" />
     </Deconstruct>
-    <Body width="590" height="155" density="31" />
+    <Body width="604" height="155" density="31" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="68,-8" aimpos="73,8" handle1="-105,-30" handle2="30,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.72" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.63" setvalue="true" />
@@ -3194,7 +3177,7 @@
       </StatusEffect>
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.12" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="250,20" spread="11" unskilledspread="40" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.12" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="295,20" spread="11" unskilledspread="40" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="307,3013,197,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="24,3083,222,136" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -3357,7 +3340,7 @@
     <!--图标以及局内贴图-->
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2086,2555,177,188" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="980,3156,476,129" depth="0.55" origin="0.5,0.5" />
-    <Body width="460" height="115" density="36" />
+    <Body width="476" height="115" density="36" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-3" aimpos="65,0" handle1="-70,-20" handle2="23,12" holdangle="-40" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
@@ -3368,7 +3351,7 @@
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
      
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.1" weapondamagemodifier="1.2" penetration="0.15" holdtrigger="true" barrelpos="190,30" spread="9" unskilledspread="30" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1.2" penetration="0.15" holdtrigger="true" barrelpos="230,22" spread="9" unskilledspread="30" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
       <!--准星图标-->
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4469,241,243" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="336,4520,176,175" />
@@ -3502,16 +3485,11 @@
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
-        <Containable items="tsm_sight_high" hide="false" itempos="-13,17" depth="0.56" setactive="true" />
-      </SubContainer>
-      <!--5.瞄具-->
-      <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="1173,411,67,40" origin="0.45,0.5" />
-        <Containable items="tsm_sight_low" hide="false" itempos="4,16" depth="0.56" setactive="true" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
+        <Containable items="sighting" hide="false" itempos="-10,16.5" depth="0.56" setactive="true" />
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="5" texture="%ModDir%/weapons/皮肤/skins_icon.png" sourcerect="0,1517,120,83" origin="0.5,0.5" />
+        <SlotIcon slotindex="5" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
         <Containable items="tsm_hk433_skins" hide="false" itempos="0,0.5" setactive="true" />
       </SubContainer>
     </ItemContainer>
@@ -3562,7 +3540,7 @@
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.12" weapondamagemodifier="1" holdtrigger="true" barrelpos="215,15" spread="12" unskilledspread="30" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.25">
+    <RangedWeapon reload="0.12" weapondamagemodifier="1" holdtrigger="true" barrelpos="230,22" spread="12" unskilledspread="30" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.25">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4469,241,243" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="336,4520,176,175" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -3672,7 +3650,7 @@
       </SubContainer>
       <!--3.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-11,14.5" depth="0.56" setactive="true" />
       </SubContainer>
       <!--4.枪口/枪管-->
@@ -3709,7 +3687,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.11" holdtrigger="true" barrelpos="190,5" spread="5" unskilledspread="30" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.11" holdtrigger="true" barrelpos="205,15" spread="5" unskilledspread="30" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
       <StatusEffect type="OnUse" target="This" reload="0.3" setvalue="true" delay="0.07" />
       <StatusEffect type="OnUse" target="This" reload="0.03" setvalue="true" delay="0.3" />
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4469,241,243" />
@@ -3798,7 +3776,7 @@
         <Containable items="barrel" hide="false" itempos="50,4" containedspritedepth="0.51" Scale="0.15" setactive="true" />
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
+        <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-3,14" containedspritedepth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
@@ -3832,7 +3810,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.65" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.1" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="200,30" spread="7" unskilledspread="40" combatPriority="89" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="210,30" spread="7" unskilledspread="40" combatPriority="89" drawhudwhenequipped="true" crosshairscale="0.2">
       <!--准星图标-->
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4469,241,243" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="336,4520,176,175" />
@@ -3952,7 +3930,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.11" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="200,30" spread="8" unskilledspread="65" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.2" targetslot="0">
+    <RangedWeapon reload="0.11" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="230,17" spread="8" unskilledspread="65" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.2" targetslot="0">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4469,241,243" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="336,4520,176,175" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -4063,7 +4041,7 @@
       <Item identifier="iron" />
       <Item identifier="aluminium" />
     </Deconstruct>
-    <Body width="500" height="120" density="24" />
+    <Body width="538" height="120" density="24" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos=" 60,-8" aimpos="65,4" handle1="-85,-23" handle2="30,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
@@ -4074,7 +4052,7 @@
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.11" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="200,30" spread="10" unskilledspread="60" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.11" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="250,25" spread="10" unskilledspread="60" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4469,241,243" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="336,4520,176,175" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -4217,7 +4195,7 @@
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-9,15" depth="0.56" setactive="true" />
       </SubContainer>
       <!--5.枪口/枪管-->
@@ -4255,7 +4233,7 @@
       <Item identifier="iron" />
       <Item identifier="aluminium" />
     </Deconstruct>
-    <Body width="500" height="120" density="31" />
+    <Body width="516" height="120" density="31" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos=" 60,-8" aimpos="65,4" handle1="-85,-23" handle2="30,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.7" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
@@ -4269,7 +4247,7 @@
       </StatusEffect>
     </ItemComponent>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.11" weapondamagemodifier="1.15" holdtrigger="true" barrelpos="200,30" spread="11" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.11" weapondamagemodifier="1.15" holdtrigger="true" barrelpos="250,18" spread="11" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4469,241,243" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="336,4520,176,175" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -4425,15 +4403,10 @@
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="flashlight" hide="false" itempos="18,3" depth="0.56" setactive="true" />
       </SubContainer>
-      <!--4.高倍瞄具-->
+      <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
-        <Containable items="tsm_sight_high" hide="false" itempos="-15,15" depth="0.56" setactive="true" />
-      </SubContainer>
-      <!--5.瞄具-->
-      <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="5" texture="%ModDir%/png/ui.png" sourcerect="1173,411,67,40" origin="0.45,0.5" />
-        <Containable items="tsm_sight_low" hide="false" itempos="0,14" depth="0.56" setactive="true" />
+        <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
+        <Containable items="sighting" hide="false" itempos="-12,14" depth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2500" soundrange="4500" fadeouttime="6" />
@@ -4471,7 +4444,7 @@
       <Item identifier="iron" />
       <Item identifier="aluminium" />
     </Deconstruct>
-    <Body width="320" height="110" density="20" />
+    <Body width="335" height="115" density="20" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="55,-8" aimpos="60,-2" handle1="-105,-23" handle2="30,20" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.85" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
@@ -4482,7 +4455,7 @@
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.1" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="150,40" spread="13" unskilledspread="60" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="160,37" spread="13" unskilledspread="60" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="311,3750,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="35,3750,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -4610,9 +4583,9 @@
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="flashlight" hide="false" itempos="18,3" depth="0.56" setactive="true" />
       </SubContainer>
-      <!--5.瞄具-->
+      <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1173,411,67,40" origin="0.45,0.5" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-13,17" depth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
@@ -4645,7 +4618,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.65" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.1" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="200,30" spread="6" unskilledspread="50" combatPriority="89" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="200,24" spread="6" unskilledspread="50" combatPriority="89" drawhudwhenequipped="true" crosshairscale="0.2">
       <!--准星图标-->
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="336,4520,176,175" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,4469,241,243" />
@@ -4722,7 +4695,7 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <!--G36C-->
-  <Item name="G36C" identifier="tsm_lm_g36c" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" >
+  <Item name="G36C" identifier="tsm_lm_g36c" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,hk433_item,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" >
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--售价-->
     <Price baseprice="401" displaynonempty="true">
@@ -4750,7 +4723,7 @@
     <!--图标以及局内贴图-->
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2057,3065,166,168" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="734,2787,398,130" depth="0.55" origin="0.5,0.5" />
-    <Body width="385" height="120" density="34" />
+    <Body width="398" height="130" density="34" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-3" aimpos="55,0" handle1="-45,-20" handle2="23,12" holdangle="-35" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
@@ -4763,7 +4736,7 @@
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.1" penetration="0.15" holdtrigger="true" barrelpos="190,30" spread="10" unskilledspread="30" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.1" penetration="0.15" holdtrigger="true" barrelpos="195,18" spread="10" unskilledspread="30" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
       <!--准星图标-->
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1069,198,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1069,198,198" />
@@ -4912,7 +4885,7 @@
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="2,17.5" depth="0.56" setactive="true" />
       </SubContainer>
       <!--5.枪口/枪管-->
@@ -4959,7 +4932,7 @@
     <!--图标以及局内贴图-->
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2316,2988,176,193" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="733,2959,478,125" depth="0.55" origin="0.5,0.5" />
-    <Body width="460" height="115" density="37" />
+    <Body width="478" height="125" density="37" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-3" aimpos="65,0" handle1="-70,-20" handle2="23,12" holdangle="-40" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
@@ -4969,7 +4942,7 @@
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.11" penetration="0.2" holdtrigger="true" barrelpos="190,30" spread="11" unskilledspread="30" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.11" penetration="0.2" holdtrigger="true" barrelpos="230,23" spread="11" unskilledspread="30" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
       <!--准星图标-->
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1069,198,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1069,198,198" />
@@ -5118,13 +5091,8 @@
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
-        <Containable items="tsm_sight_high" hide="false" itempos="-14,20" depth="0.56" setactive="true" />
-      </SubContainer>
-      <!--6.瞄具-->
-      <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="5" texture="%ModDir%/png/ui.png" sourcerect="1173,411,67,40" origin="0.45,0.5" />
-        <Containable items="tsm_sight_low" hide="false" itempos="5,19" depth="0.56" setactive="true" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
+        <Containable items="sighting" hide="false" itempos="-10,19.5" depth="0.56" setactive="true" />
       </SubContainer>
       <!--5.枪口/枪管-->
       <SubContainer capacity="1" maxstacksize="1">
@@ -5165,7 +5133,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/木卫二联盟/coalition.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="0,432,472,160" origin="0.45,0" scale="0.25" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon reload="0.11" weapondamagemodifier="1" holdtrigger="true" barrelpos="220,5" spread="13" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.11" weapondamagemodifier="1" holdtrigger="true" barrelpos="220,17" spread="13" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -5251,7 +5219,7 @@
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="529,286,55,27" origin="0.45,0.5" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="tsm_sight_mach" hide="false" itempos="-12,14.5" depth="0.56" setactive="true" />
       </SubContainer>
       <!--5.枪口/枪管>
@@ -5288,7 +5256,7 @@
     <!--图标以及局内贴图-->
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1584,1422,181,202" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="638,1873,349,119" depth="0.55" origin="0.5,0.5" />
-    <Body width="363" height="93" density="21" />
+    <Body width="349" height="119" density="21" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-5" aimpos="50,-5" handle1="-65,-15" handle2="50,15" holdangle="-35" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
@@ -5301,7 +5269,7 @@
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="165,25" spread="8" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="170,30" spread="8" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
       <!--准星图标-->
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="311,3750,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="35,3750,198,199" />
@@ -5416,7 +5384,7 @@
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-3,16" depth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
@@ -5452,7 +5420,7 @@
     <!--图标以及局内贴图-->
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2051,3339,164,161" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="701,2627,437,116" depth="0.55" origin="0.5,0.5" />
-    <Body width="420" height="100" density="23" />
+    <Body width="437" height="116" density="23" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-5" aimpos="53,0" handle1="-65,-15" handle2="50,15" holdangle="-35" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
@@ -5461,7 +5429,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.09" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="165,25" spread="8" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.09" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="215,25" spread="8" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
       <!--准星图标-->
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -5576,15 +5544,10 @@
         <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="638,214,18,36" origin="0.45,0.5" />
         <Containable items="grip" hide="false" itempos="24,-4" depth="0.56" setactive="true" />
       </SubContainer>
-      <!--4.高倍瞄具-->
+      <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
-        <Containable items="tsm_sight_high" hide="false" itempos="-7,16" depth="0.56" setactive="true" />
-      </SubContainer>
-      <!--5.瞄具-->
-      <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="1173,411,67,40" origin="0.45,0.5" />
-        <Containable items="tsm_sight_low" hide="false" itempos="9,15" depth="0.56" setactive="true" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
+        <Containable items="sighting" hide="false" itempos="-3,15" depth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2100" soundrange="3500" fadeouttime="6" />
@@ -5617,14 +5580,14 @@
       <Item identifier="tsm_lm_weaponbox" />
       <Item identifier="tsm_hpc" />
     </Deconstruct>
-    <Body width="590" height="155" density="31" />
+    <Body width="493" height="124" density="31" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="68,-8" aimpos="65,3" handle1="-65,-30" handle2="30,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.75" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.48" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.14" weapondamagemodifier="1" holdtrigger="true" barrelpos="250,20" spread="11" unskilledspread="40" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.14" weapondamagemodifier="1" holdtrigger="true" barrelpos="230,10" spread="11" unskilledspread="40" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="310,407,197,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="41,471,211,141" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -5753,7 +5716,7 @@
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-13,16" depth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
@@ -5804,7 +5767,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/木卫二联盟/coalition.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="571,288,574,163" origin="0.45,0" scale="0.25" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon reload="0.1" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="220,5" spread="15" unskilledspread="30" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.1" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="280,10" spread="15" unskilledspread="30" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,860,198,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="305,860,197,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -5938,7 +5901,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/木卫二联盟/coalition.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="1225,284,518,202" origin="0.45,0" scale="0.25" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon reload="0.1" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="200,20" spread="30" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="250,35" spread="30" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -6031,7 +5994,7 @@
       </SubContainer>
       <!--3.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-16,21" depth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
@@ -6071,7 +6034,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/木卫二联盟/coalition.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="648,2016,636,145" origin="0.45,0" scale="0.25" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="200,20" spread="30" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="300,10" spread="30" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="307,3237,199,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="24,3230,220,219" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -6161,7 +6124,7 @@
       </SubContainer>
       <!--3.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="529,286,55,27" origin="0.45,0.5" />
+        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-25,13" depth="0.56" setactive="true" />
       </SubContainer>
       <!--4.护木-->
@@ -6207,7 +6170,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/木卫二联盟/coalition.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="647,2186,614,172" origin="0.45,0" scale="0.25" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="200,20" spread="30" unskilledspread="100" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="280,25" spread="30" unskilledspread="100" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -6297,7 +6260,7 @@
       </SubContainer>
       <!--3.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="529,286,55,27" origin="0.45,0.5" />
+        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-25,18" depth="0.56" setactive="true" />
       </SubContainer>
       <!--4.护木-->
@@ -6350,7 +6313,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/木卫二联盟/coalition.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="647,2424,669,125" origin="0.45,-0.2" scale="0.25" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon reload="0.098" weapondamagemodifier="1" holdtrigger="true" barrelpos="200,20" spread="30" unskilledspread="100" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.098" weapondamagemodifier="1" holdtrigger="true" barrelpos="320,25" spread="30" unskilledspread="100" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -6440,7 +6403,7 @@
       </SubContainer>
       <!--3.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="529,286,55,27" origin="0.45,0.5" />
+        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-28,17.5" depth="0.56" setactive="true" />
       </SubContainer>
       <!--4.护木-->
@@ -6498,7 +6461,7 @@
         <sound file="%ModDir%/Weapons/木卫二联盟/minigun_reload.ogg" type="OnUse" range="500.0" volume="0.6" loop="true" />
       </StatusEffect>
     </Holdable>
-    <RangedWeapon reload="0.075" weapondamagemodifier="1" penetration="0.15" holdtrigger="true" barrelpos="270,-20" spread="30" unskilledspread="70" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.4">
+    <RangedWeapon reload="0.08" weapondamagemodifier="1.1" penetration="0.15" holdtrigger="true" barrelpos="270,-20" spread="30" unskilledspread="70" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.4">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -6614,7 +6577,7 @@
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true"/>
     </Holdable>
-    <RangedWeapon barrelpos="150,10" spread="2.5" unskilledspread="10" combatPriority="85" reload="0.55" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon barrelpos="230,35" spread="2.5" unskilledspread="10" combatPriority="85" reload="0.55" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -6680,7 +6643,7 @@
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true"/>
     </Holdable>
-    <RangedWeapon weapondamagemodifier="1.1" barrelpos="135,8" spread="2.5" unskilledspread="10" combatPriority="86" reload="0.6" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon weapondamagemodifier="1.1" barrelpos="180,15" spread="2.5" unskilledspread="10" combatPriority="86" reload="0.6" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -6778,7 +6741,7 @@
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true"/>
     </Holdable>
-    <RangedWeapon weapondamagemodifier="1.2" barrelpos="170,35" spread="2.5" unskilledspread="10" combatPriority="86" reload="0.4" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon weapondamagemodifier="1.2" barrelpos="210,40" spread="2.5" unskilledspread="10" combatPriority="86" reload="0.4" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -6847,7 +6810,7 @@
         <Containable items="flashlight" hide="false" itempos="30,8" setactive="true" />
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/weapons/皮肤/skins_icon.png" sourcerect="0,1517,120,83" origin="0.5,0.5" />
+        <SlotIcon slotindex="3" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
         <Containable items="tsm_dp12_skins" hide="false" itempos="3,2" setactive="true" />
       </SubContainer>
     </ItemContainer>
@@ -6885,7 +6848,7 @@
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true"/>
     </Holdable>
-    <RangedWeapon barrelpos="250,20" penetration="0.12" spread="1" unskilledspread="10" combatPriority="85" reload="0.45" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon barrelpos="300,35" penetration="0.12" spread="1" unskilledspread="10" combatPriority="85" reload="0.45" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -8229,13 +8192,13 @@
       <RequiredItem identifier="plastic" amount="1" />
       <RequiredItem identifier="tsm_oilshale" amount="2" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
-      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="2" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
       <RequiredItem tag="127_55mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_oilshale" mincondition="2" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
-      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="2" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" outcondition="1" />

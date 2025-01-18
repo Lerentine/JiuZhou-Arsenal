@@ -329,7 +329,7 @@
   </npcset>
  <!--贝奥武夫中队-->
    <npcset identifier="beowulf_npcs">
-    <npc identifier="beowulf_leader" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.3" aimspeed="30" aimaccuracy="0.9" reportrange="2000" skillmultiplier="5">
+    <npc identifier="beowulf_leader" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="30" aimaccuracy="0.9" reportrange="2000" skillmultiplier="5">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true"/>
         <Item identifier="lm_beowulf_uniform" equip="true"/>
@@ -363,7 +363,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="beowulf_elite" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.25" aimspeed="25" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
+    <npc identifier="beowulf_elite" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="25" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.7">
         <Item identifier="idcard" equip="true"/>
         <Item identifier="lm_beowulf_uniform" equip="true"/>
@@ -414,7 +414,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="beowulf_elite_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.25" aimspeed="25" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
+    <npc identifier="beowulf_elite_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="25" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
         <ItemSet commonness="0.3">
           <Item identifier="idcard" equip="true"/>
           <Item identifier="lm_beowulf_uniform" equip="true"/>
@@ -450,7 +450,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="beowulf_breaker" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Active" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.2" aimspeed="20" aimaccuracy="0.75" reportrange="2000" skillmultiplier="3">
+    <npc identifier="beowulf_breaker" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Active" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="20" aimaccuracy="0.75" reportrange="2000" skillmultiplier="3">
           <ItemSet commonness="0.5">
           <Item identifier="idcard" equip="true"/>
           <Item identifier="lm_beowulf_uniform" equip="true"/>
@@ -483,7 +483,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="beowulf_fire" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.2" aimspeed="20" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
+    <npc identifier="beowulf_fire" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="20" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
         <ItemSet commonness="0.5">
           <Item identifier="idcard" equip="true"/>
           <Item identifier="lm_beowulf_uniform" equip="true"/>
@@ -500,7 +500,7 @@
           </Item>
           </ItemSet>
     </npc>
-    <npc identifier="beowulf_ex" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.2" aimspeed="10" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
+    <npc identifier="beowulf_ex" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="10" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
         <ItemSet commonness="0.5">
           <Item identifier="idcard" equip="true"/>
           <Item identifier="lm_beowulf_uniform" equip="true"/>
@@ -534,7 +534,7 @@
             </Item>
             </ItemSet>
     </npc>
-    <npc identifier="beowulf_ex_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.2" aimspeed="10" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
+    <npc identifier="beowulf_ex_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="10" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
         <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true"/>
         <Item identifier="lm_beowulf_uniform" equip="true"/>
@@ -568,7 +568,7 @@
           </Item>
           </ItemSet>
     </npc>
-    <npc identifier="beowulf" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.2" aimspeed="20" aimaccuracy="0.75" reportrange="2000" skillmultiplier="3">
+    <npc identifier="beowulf" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="20" aimaccuracy="0.75" reportrange="2000" skillmultiplier="3">
         <ItemSet commonness="0.5">
           <Item identifier="idcard" equip="true"/>
           <Item identifier="lm_vest_elite" equip="true"/>
@@ -597,7 +597,7 @@
             </Item>
         </ItemSet>
     </npc>
-    <npc identifier="beowulf_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.2" aimspeed="20" aimaccuracy="0.75" reportrange="2000" skillmultiplier="3">
+    <npc identifier="beowulf_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="20" aimaccuracy="0.75" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true"/>
         <Item identifier="lm_vest_elite" equip="true"/>

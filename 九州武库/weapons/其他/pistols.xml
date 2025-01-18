@@ -5,7 +5,7 @@
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="770,915,58,84" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="0,270,147,109" depth="0.55" origin="0.5,0.5" />
       <BrokenSprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="500,685,146,113" depth="0.55" origin="0.55,0.5" maxcondition="0" />
-      <Body width="147" height="109" density="12" />
+      <Body width="146" height="105" density="12" />
       <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="20">
         <RequiredSkill identifier="weapons" level="30" />
         <RequiredItem identifier="steel" />
@@ -20,7 +20,7 @@
         <Item identifier="steel" />
       </Deconstruct>
       <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="150,0" holdangle="-45" aimpos="90,5" handle1="-50,-7" msg="ItemMsgPickUpSelect" />
-      <RangedWeapon barrelpos="35,15" spread="10" unskilledspread="35" combatPriority="30" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.35">
+      <RangedWeapon barrelpos="70,36" spread="10" unskilledspread="35" combatPriority="30" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.35">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="918,1318,195,101" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="608,1317,205,106" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -70,7 +70,7 @@
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="367,916,54,79" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="19,705,133,102" depth="0.55" origin="0.5,0.5" />
       <BrokenSprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="753,356,143,103" depth="0.55" origin="0.55,0.5" maxcondition="0" />
-      <Body width="133" height="102" density="12" />
+      <Body width="143" height="100" density="12" />
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20">
         <RequiredSkill identifier="weapons" level="45" />
         <RequiredItem identifier="tsm_92_pistols" />
@@ -87,7 +87,7 @@
         <Item identifier="titanium" />
       </Deconstruct>
       <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="150,0" holdangle="-45" aimpos="90,5" handle1="-50,-7" msg="ItemMsgPickUpSelect" />
-      <RangedWeapon weapondamagemodifier="1" barrelpos="35,30" spread="10" unskilledspread="35" combatPriority="35" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.3">
+      <RangedWeapon weapondamagemodifier="1" barrelpos="60,35" spread="10" unskilledspread="35" combatPriority="35" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.3">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="918,1318,195,101" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="608,1317,205,106" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -168,7 +168,7 @@
         <Item identifier="titanium" />
       </Deconstruct>
       <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="150,0" holdangle="-45" aimpos="90,5" handle1="-50,-7" msg="ItemMsgPickUpSelect" />
-      <RangedWeapon barrelpos="33,13" spread="8" unskilledspread="35" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.35">
+      <RangedWeapon barrelpos="65,35" spread="8" unskilledspread="35" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.35">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="918,1318,195,101" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="608,1317,205,106" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -215,7 +215,7 @@
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="455,915,58,85" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="6,436,161,112" depth="0.55" origin="0.5,0.5" />
       <BrokenSprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="0,567,161,112" depth="0.55" origin="0.55,0.5" maxcondition="0" />
-      <Body width="149" height="112" density="15" />
+      <Body width="161" height="110" density="15" />
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20">
         <RequiredSkill identifier="weapons" level="55" />
         <RequiredItem identifier="tsm_fn509_pistols" />
@@ -232,7 +232,7 @@
         <Item identifier="titaniumaluminiumalloy" />
       </Deconstruct>
       <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="150,0" holdangle="-45" aimpos="90,5" handle1="-50,-7" msg="ItemMsgPickUpSelect" />
-      <RangedWeapon weapondamagemodifier="1.1" barrelpos="35,30" spread="13" unskilledspread="35" combatPriority="45" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.12">
+      <RangedWeapon weapondamagemodifier="1.1" barrelpos="60,40" spread="13" unskilledspread="35" combatPriority="45" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.12">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="918,1187,195,101" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="607,1178,213,118" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -331,7 +331,7 @@
         <Item identifier="titaniumaluminiumalloy" />
       </Deconstruct>
       <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="25,-20" holdangle="60" aimpos="90,5" handle1="-50,-7" handle2="-50,-7" msg="ItemMsgPickUpSelect" />
-      <RangedWeapon barrelpos="29,11" spread="10" unskilledspread="45" combatPriority="45" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.5">
+      <RangedWeapon barrelpos="70,32" spread="10" unskilledspread="45" combatPriority="45" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.5" DualWieldReloadTimePenaltyMultiplier="1.1" DualWieldAccuracyPenalty="6">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="918,1318,195,101" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="608,1317,205,106" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -384,7 +384,7 @@
     <Item name="m500" identifier="tsm_m500" description="" category="Weapon" subcategory="tsmmissions" tags="smallitem,weapon,gun,pistolitem,gunsmith,lm_gun,fkj_gun,tsm_gun,gunsmith,mountableweapon" hideinmenus="true" scale="0.23" impactsoundtag="weaponheavydrop">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="64,912,80,89" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="297,7,233,120" depth="0.55" origin="0.5,0.5" />
-      <Body width="220" height="100" density="25" />
+      <Body width="233" height="110" density="25" />
       <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
         <RequiredSkill identifier="weapons" level="70" />
         <RequiredItem identifier="tsm_m500" amount="1" />
@@ -397,7 +397,7 @@
         <Item identifier="fulgurium" commonness="0.1" />
       </Deconstruct>
       <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="25,-20" aimpos="130,10" handle1="-75,-10" handle2="-90,-15" holdangle="60" msg="ItemMsgPickUpSelect" />
-      <RangedWeapon weapondamagemodifier="1" penetration="0.1" reload="1.5" barrelpos="72,10" spread="6" unskilledspread="25" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.3" holdtrigger="true" DualWieldReloadTimePenaltyMultiplier="1.35" DualWieldAccuracyPenalty="10">
+      <RangedWeapon weapondamagemodifier="1" penetration="0.1" reload="1.5" barrelpos="105,40" spread="6" unskilledspread="25" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.3" holdtrigger="true" DualWieldReloadTimePenaltyMultiplier="1.35" DualWieldAccuracyPenalty="10">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <Sound file="%ModDir%/ogg/handcannon.ogg" type="OnUse" range="3000" volume="1.5" />
@@ -446,7 +446,7 @@
     <Item name="巨蟒" identifier="tsm_jm" description="" category="Weapon" subcategory="tsmmissions" tags="smallitem,weapon,gun,pistolitem,gunsmith,gunsmith,lm_gun,fkj_gun,tsm_gun,mountableweapon" hideinmenus="true" scale="0.23" impactsoundtag="weaponheavydrop">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="144,912,80,89" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="308,142,202,102" depth="0.55" origin="0.5,0.5" />
-      <Body width="220" height="100" density="25" />
+      <Body width="202" height="100" density="25" />
       <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
         <RequiredSkill identifier="weapons" level="80" />
         <RequiredItem identifier="tsm_jm" amount="1" />
@@ -459,7 +459,7 @@
         <Item identifier="fulgurium" commonness="0.1" />
       </Deconstruct>
       <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="25,-20" aimpos="130,10" handle1="-60,-10" handle2="-90,-15" holdangle="60" msg="ItemMsgPickUpSelect" />
-      <RangedWeapon weapondamagemodifier="1.1" penetration="0.1" reload="1.8" barrelpos="72,10" spread="6" unskilledspread="25" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2" holdtrigger="true" DualWieldReloadTimePenaltyMultiplier="1.35" DualWieldAccuracyPenalty="10">
+      <RangedWeapon weapondamagemodifier="1.1" penetration="0.1" reload="1.8" barrelpos="100,39" spread="6" unskilledspread="25" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2" holdtrigger="true" DualWieldReloadTimePenaltyMultiplier="1.35" DualWieldAccuracyPenalty="10">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <Sound file="%ModDir%/ogg/handcannon.ogg" type="OnUse" range="3000" volume="1.5" />
@@ -506,7 +506,7 @@
     <Item name="mr74" identifier="tsm_mr74" description="" category="Weapon" subcategory="tsmmissions" tags="smallitem,weapon,gun,pistolitem,gunsmith,gunsmith,lm_gun,fkj_gun,tsm_gun,mountableweapon" hideinmenus="true" scale="0.23" impactsoundtag="weaponheavydrop">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="232,910,88,90" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="303,273,264,104" depth="0.55" origin="0.5,0.5" />
-      <Body width="220" height="100" density="25" />
+      <Body width="264" height="100" density="25" />
       <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
         <RequiredSkill identifier="weapons" level="70" />
         <RequiredItem identifier="tsm_mr74" amount="1" />
@@ -519,7 +519,7 @@
         <Item identifier="fulgurium" commonness="0.1" />
       </Deconstruct>
       <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="25,-20" aimpos="130,10" handle1="-90,-4" handle2="-90,-15" holdangle="60" msg="ItemMsgPickUpSelect" />
-      <RangedWeapon weapondamagemodifier="1.1" reload="1.5" barrelpos="72,10" spread="6" unskilledspread="25" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.25" holdtrigger="true" DualWieldReloadTimePenaltyMultiplier="1.35" DualWieldAccuracyPenalty="8">
+      <RangedWeapon weapondamagemodifier="1.1" reload="1.5" barrelpos="125,36" spread="6" unskilledspread="25" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.25" holdtrigger="true" DualWieldReloadTimePenaltyMultiplier="1.35" DualWieldAccuracyPenalty="8">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <Sound file="%ModDir%/ogg/handcannon.ogg" type="OnUse" range="3000" volume="1.5" />
@@ -574,7 +574,7 @@
       </Fabricate>
       <InventoryIcon texture="%ModDir%/weapons/其他/smg.png" sourcerect="956,1364,131,136" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/smg.png" sourcerect="25,0,352,128" depth="0.55" origin="0.5,0.5" />
-      <Body width="352" height="128" density="25" />
+      <Body width="352" height="120" density="25" />
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
       <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-10,-18" handle2="42,10" holdangle="-35" msg="ItemMsgPickUpSelect">
         <!--降低移动速度-->
@@ -582,7 +582,7 @@
         <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
       </Holdable>
-      <RangedWeapon reload="0.08" weapondamagemodifier="0.75" holdtrigger="true" barrelpos="170,30" spread="10" unskilledspread="20" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.3">
+      <RangedWeapon reload="0.08" weapondamagemodifier="0.75" holdtrigger="true" barrelpos="170,15" spread="10" unskilledspread="20" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -650,7 +650,7 @@
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/weapons/其他/smg.png" sourcerect="0,1353,135,147" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/smg.png" sourcerect="27,186,368,112" depth="0.55" origin="0.5,0.5" />
-      <Body width="368" height="112" density="23" />
+      <Body width="368" height="110" density="23" />
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
       <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="55,-3" aimpos="55,-3" handle1="-82,-18" handle2="42,10" holdangle="-35" msg="ItemMsgPickUpSelect">
         <!--降低移动速度-->
@@ -658,7 +658,7 @@
         <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
       </Holdable>
-      <RangedWeapon reload="0.09" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="180,30" spread="11" unskilledspread="20" combatPriority="45" drawhudwhenequipped="true" crosshairscale="0.3">
+      <RangedWeapon reload="0.09" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="180,15" spread="11" unskilledspread="20" combatPriority="45" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -752,7 +752,7 @@
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <InventoryIcon texture="%ModDir%/weapons/其他/smg.png" sourcerect="156,1366,132,134" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/smg.png" sourcerect="28,313,350,115" depth="0.55" origin="0.5,0.5" />
-      <Body width="350" height="115" density="23" />
+      <Body width="350" height="110" density="23" />
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
       <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="48,0" aimpos="48,0" handle1="-25,-18" handle2="42,10" holdangle="-35" msg="ItemMsgPickUpSelect">
         <!--降低移动速度-->
@@ -760,7 +760,7 @@
         <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
       </Holdable>
-      <RangedWeapon reload="0.08" weapondamagemodifier="1" holdtrigger="true" barrelpos="170,30" spread="7" unskilledspread="20" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
+      <RangedWeapon reload="0.08" weapondamagemodifier="1" holdtrigger="true" barrelpos="170,15" spread="7" unskilledspread="20" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -851,7 +851,7 @@
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/weapons/其他/smg.png" sourcerect="437,1366,122,134" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/smg.png" sourcerect="11,574,313,114" depth="0.56" origin="0.5,0.5" />
-      <Body width="313" height="114" density="25" />
+      <Body width="313" height="110" density="25" />
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
       <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="43,3" aimpos="43,3" handle1="10,-18" handle2="50,10" holdangle="-35" msg="ItemMsgPickUpSelect">
         <!--降低移动速度-->
@@ -863,7 +863,7 @@
         </StatusEffect>
       </Holdable>
       <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
-      <RangedWeapon reload="0.08" weapondamagemodifier="1" holdtrigger="true" barrelpos="150,20" spread="8" unskilledspread="20" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
+      <RangedWeapon reload="0.08" weapondamagemodifier="1" holdtrigger="true" barrelpos="150,5" spread="8" unskilledspread="20" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="307,3237,199,198" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="24,3230,220,219" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -998,7 +998,7 @@
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/weapons/其他/smg.png" sourcerect="580,1392,96,98" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/smg.png" sourcerect="21,730,229,105" depth="0.56" origin="0.5,0.5" />
-      <Body width="210" height="90" density="25" />
+      <Body width="229" height="100" density="25" />
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
       <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,0" aimpos="40,-5" handle1="-15,-18" handle2="50,0" holdangle="-35" msg="ItemMsgPickUpSelect">
         <!--降低移动速度-->
@@ -1010,7 +1010,7 @@
         </StatusEffect>
       </Holdable>
       <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
-      <RangedWeapon reload="0.08" weapondamagemodifier="1" holdtrigger="true" barrelpos="120,20" spread="9" unskilledspread="20" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
+      <RangedWeapon reload="0.08" weapondamagemodifier="1" holdtrigger="true" barrelpos="110,15" spread="9" unskilledspread="20" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -1147,7 +1147,7 @@
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/weapons/其他/smg.png" sourcerect="309,1381,107,119" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/smg.png" sourcerect="14,447,288,91" depth="0.55" origin="0.5,0.5" />
-      <Body width="210" height="90" density="27" />
+      <Body width="288" height="90" density="27" />
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
       <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,0" aimpos="40,-5" handle1="-15,-18" handle2="50,0" holdangle="-35" msg="ItemMsgPickUpSelect">
         <!--降低移动速度-->
@@ -1159,7 +1159,7 @@
         </StatusEffect>
       </Holdable>
       <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
-      <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="140,20" spread="10" unskilledspread="20" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
+      <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="140,15" spread="10" unskilledspread="20" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="310,407,197,199" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="41,471,211,141" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -1294,7 +1294,7 @@
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/weapons/其他/smg.png" sourcerect="705,1382,106,118" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/smg.png" sourcerect="11,864,290,102" depth="0.55" origin="0.5,0.5" />
-      <Body width="210" height="90" density="27" />
+      <Body width="290" height="95" density="27" />
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
       <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-55,-18" handle2="50,0" holdangle="-35" msg="ItemMsgPickUpSelect">
         <!--降低移动速度-->
@@ -1443,7 +1443,7 @@
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/weapons/其他/smg.png" sourcerect="832,1392,91,108" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/smg.png" sourcerect="0,997,252,88" depth="0.55" origin="0.5,0.5" />
-      <Body width="240" height="75" density="20" />
+      <Body width="252" height="80" density="20" />
       <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
       <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-20,-12" handle2="42,10" holdangle="-35" msg="ItemMsgPickUpSelect">
         <!--降低移动速度-->
@@ -1451,7 +1451,7 @@
         <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
       </Holdable>
-      <RangedWeapon reload="0.05" weapondamagemodifier="1" holdtrigger="true" barrelpos="120,20" spread="9" unskilledspread="20" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.3">
+      <RangedWeapon reload="0.05" weapondamagemodifier="1" holdtrigger="true" barrelpos="125,7" spread="9" unskilledspread="20" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="309,1936,198,199" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="27,1926,212,215" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />

@@ -460,6 +460,7 @@
     </ScriptedEvent>
     <ScriptedEvent identifier="tsm_combat_beowulf_event">
       <TagAction criteria="crew" tag="crew" />
+      <TagAction criteria="player" tag="crew" />
       <TagAction criteria="bot" tag="bot" />
       <Label name="waitforspotting" />
       <WaitAction time="1" />
@@ -469,7 +470,11 @@
         </Failure>
       </CheckVisibilityAction>
       <WaitAction time="3" />
-      <ConversationAction text="tsm_combat_beowulf_event.1" dialogtype="Small" />
+      <StatusEffectAction targettag="crew">
+        <StatusEffect target="This" enabledespawn="true">
+          <Sound file="%ModDir%/mission/beowulf_reinforcement.ogg" range="10000" />
+        </StatusEffect>
+      </StatusEffectAction>
       <Label name="delay" />
       <RNGAction chance="0.5">
         <Success>
@@ -486,10 +491,15 @@
           </RNGAction>
         </Failure>
       </RNGAction>
-      <GoTo name="delay" maxtimes="390" />
+      <GoTo name="delay" maxtimes="20" />
           <SpawnAction npcsetidentifier="beowulf_npcs" npcidentifier="beowulf_leader" lootingisstealing="false" targettag="beowulf" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+          <StatusEffectAction targettag="crew">
+           <StatusEffect target="This" enabledespawn="true">
+          <Sound file="%ModDir%/mission/beowulf_reinforcement_arrived.ogg" range="10000" />
+        </StatusEffect>
+      </StatusEffectAction>
           <StatusEffectAction targettag="beowulf">
-            <StatusEffect target="This" enabledespawn="true">
+            <StatusEffect target="This" enabledespawn="true" delay="2">
               <Sound file="%ModDir%/ogg/phonkghost.ogg" range="10000" />
             </StatusEffect>
           </StatusEffectAction>
@@ -519,6 +529,16 @@
           <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
           <Affliction identifier="tsm_ai_fire" strength="50" />
           <Affliction identifier="tsm_ai_tk" strength="50" />
+        </StatusEffect>
+      </StatusEffectAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_beowulf_bb">
+      <TagAction criteria="crew" tag="player" continueifnotargetsfound="true"/>
+      <TagAction criteria="bot" tag="player" continueifnotargetsfound="true"/>
+      <TagAction criteria="player" tag="player" continueifnotargetsfound="true"/>
+      <StatusEffectAction targettag="player">
+        <StatusEffect target="This">
+          <Affliction identifier="tsm_beowulf_bb" strength="10" />
         </StatusEffect>
       </StatusEffectAction>
     </ScriptedEvent>
@@ -1151,15 +1171,86 @@
       <Goto name="eventloop" maxtimes="4" />
     </ScriptedEvent>
     <!--站点突袭-->
+    <!--克里斯入组-->
+    <ScriptedEvent identifier="tsm_chris_join">
+     <CheckDataAction identifier="tsm_chris_join_complete" condition="eq true">
+     <Failure>
+       <CheckDataAction identifier="tsm_beowulf_complete" condition="eq true">
+        <Success>
+          <TagAction criteria="player" tag="player" />
+          <SpawnAction npcsetidentifier="tsm_npcs_jz" npcidentifier="tsm_chris" targettag="tsm_chris" spawnlocation="Outpost" targetmoduletags="airlock" />
+          <StatusEffectAction targettag="tsm_chris">
+            <StatusEffect target="This" enabledespawn="true">
+              <Affliction identifier="tsm_chris_ondead" strength="50" />
+            </StatusEffect>
+          </StatusEffectAction>
+          <Label name="tsm_check_beowulf" />
+          <TriggerAction target1tag="tsm_chris" target2tag="player" applytotarget1="tsm_chris" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
+          <ConversationAction targettag="triggerer_player" text="tsm_chris_c1" >
+            <Option text="tsm_chris_p1">
+              <ConversationAction targettag="triggerer_player" text="tsm_chris_c2" >
+                <Option text="tsm_chris_p2">
+                  <ConversationAction targettag="triggerer_player" text="tsm_chris_c3" >
+                    <Option text="tsm_chris_p3">
+                      <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_beowulf">
+                        <Success>
+                          <RemoveItemAction targettag="triggerer_player" itemidentifier="tsm_beowulf" />
+                          <ConversationAction targettag="triggerer_player" text="tsm_chris_c_e1" >
+                            <Option text="tsm_chris_p_e">
+                              <ConversationAction targettag="triggerer_player" text="tsm_chris_c_e2"  />
+                              <NPCChangeTeamAction npctag="tsm_chris" teamid="Team1" addtocrew="true" />
+                              <SetDataAction identifier="tsm_chris_join_complete" value="true" />
+                            </Option>
+                          </ConversationAction>
+                        </Success>
+                        <Failure>
+                          <ConversationAction targettag="triggerer_player" text="tsm_chris_c_n"/>
+                          <GoTo name="tsm_check_beowulf" />
+                        </Failure>
+                      </CheckItemAction>
+                    </Option>
+                  </ConversationAction>
+                </Option>
+              </ConversationAction>
+            </Option>
+          </ConversationAction>
+        </Success>
+       <Failure>
+       </Failure>
+     </CheckDataAction>
+     </Failure>
+     <Success></Success>
+     </CheckDataAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_beowulf_complete_1">
+      <TagAction criteria="humanprefabidentifier:beowulf_sl" tag="mission_target" continueifnotargetsfound="true" />
+      <StatusEffectAction targettag="mission_target" >
+        <StatusEffect target="This" >
+          <Affliction identifier="tsm_beowulf_complete" strength="50" />
+        </StatusEffect>
+      </StatusEffectAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_beowulf_complete_2" >
+      <SetDataAction value="true" identifier="tsm_beowulf_complete" />
+      <ConversationAction text="完成" dialogtype="Small" />
+    </ScriptedEvent>
   </EventPrefabs>
-  <EventSet identifier="outposteventsTsm_ars" leveltype="outpost" locationtype="city,military,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true" additive="true" commonness="85">
-    <EventSet identifier="outposteventsTSM.ALL.generic.missionevents.ars" minleveldifficulty="15" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true">
+  <EventSet identifier="tsm_ars" leveltype="outpost"
+            locationtype="city,military,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true" additive="true" commonness="85">
+    <EventSet identifier="tsm_outpostevents_ars" minleveldifficulty="15" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true">
       <ScriptedEvent identifier="TSM_convertible_npc" commonness="100" />
     </EventSet>
   </EventSet>
-  <EventSet identifier="outposteventsTsm_blackship" leveltype="outpost" locationtype="outpost,city,research,military,mine,colony,settlement,construction,camp,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory,shipyard,fusion" allowatstart="true" minleveldifficulty="25" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true" additive="true" commonness="50">
-    <EventSet identifier="outposteventsTSM.ALL.generic.missionevents.blackship" minleveldifficulty="20" maxleveldifficulty="50" allowatstart="true" chooserandom="true" onceperoutpost="true">
+  <EventSet identifier="tsm_blackship" leveltype="outpost"
+            locationtype="outpost,city,research,military,mine,colony,settlement,construction,camp,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory,shipyard,fusion" allowatstart="true" minleveldifficulty="25" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true" additive="true" commonness="50">
+    <EventSet identifier="tsm_outpostevents_blackship" minleveldifficulty="20" maxleveldifficulty="50" allowatstart="true" chooserandom="true" onceperoutpost="true">
       <ScriptedEvent identifier="tsm_opdeco_hrflyers_1" commonness="10" />
+    </EventSet>
+  </EventSet>
+  <EventSet identifier="chris_join" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" additive="true" selectalways="true" commonness="100">
+    <EventSet identifier="chris_join" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1" additive="true" selectalways="true"
+              locationtype="outpost,city,research,military,mine,colony,settlement,construction,camp,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory,shipyard,fusion">
+      <ScriptedEvent identifier="tsm_chris_join" commonness="100"/>
     </EventSet>
   </EventSet>
 </Randomevents>

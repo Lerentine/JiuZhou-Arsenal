@@ -131,6 +131,8 @@
  <subcategory.tsm_separatists>反抗军</subcategory.tsm_separatists>
  <subcategory.tsm_coalition>联盟</subcategory.tsm_coalition>
  <displayname.防护服改造>[itemname] (防护服改造)</displayname.防护服改造>
+ <tos>关闭传感器</tos>
+ <dm>拆除地雷</dm>
 
  <entityname.tsm_collider_head>未穿透</entityname.tsm_collider_head>
 <!--药品-->
@@ -162,6 +164,20 @@
  <entitydescription.tsm_hk433_skins_t037y>献给最强大的战士\n击败本模组最强大的生物；雷龙，获取材料制作</entitydescription.tsm_hk433_skins_t037y>
  <entityname.tsm_dp12_skins_t037y>DP12涂装：雷龙</entityname.tsm_dp12_skins_t037y>
  <entitydescription.tsm_dp12_skins_t037y>献给最强大的战士\n击败本模组最强大的生物；雷龙，获取材料制作</entitydescription.tsm_dp12_skins_t037y>
+ <entityname.tsm_ak74_skins_qxz>AK74涂装：潜行者</entityname.tsm_ak74_skins_qxz>
+ <entitydescription.tsm_ak74_skins_qxz>潜行者系列</entitydescription.tsm_ak74_skins_qxz>
+ <entityname.tsm_groza_skins_qxz>OTS Groza-1涂装：潜行者</entityname.tsm_groza_skins_qxz>
+ <entitydescription.tsm_groza_skins_qxz>潜行者系列</entitydescription.tsm_groza_skins_qxz>
+ <entityname.tsm_vss_skins_qxz>VSS涂装：潜行者</entityname.tsm_vss_skins_qxz>
+ <entitydescription.tsm_vss_skins_qxz>潜行者系列</entitydescription.tsm_vss_skins_qxz>
+ <entityname.tsm_asval_skins_qxz>Asval涂装：潜行者</entityname.tsm_asval_skins_qxz>
+ <entitydescription.tsm_asval_skins_qxz>潜行者系列</entitydescription.tsm_asval_skins_qxz>
+ <entityname.tsm_a545_skins_qxz>A545涂装：潜行者</entityname.tsm_a545_skins_qxz>
+ <entitydescription.tsm_a545_skins_qxz>潜行者系列</entitydescription.tsm_a545_skins_qxz>
+ <entityname.tsm_ks23_skins_qxz>KS23涂装：潜行者</entityname.tsm_ks23_skins_qxz>
+ <entitydescription.tsm_ks23_skins_qxz>潜行者系列</entitydescription.tsm_ks23_skins_qxz>
+ <entityname.tsm_svd_skins_qxz>SVD涂装：潜行者</entityname.tsm_svd_skins_qxz>
+ <entitydescription.tsm_svd_skins_qxz>潜行者系列</entitydescription.tsm_svd_skins_qxz>
 
 <!--矿物/金属/物品-->
  <entityname.tsm_tungstenore>钨矿</entityname.tsm_tungstenore>
@@ -291,6 +307,8 @@
  <entitydescription.tsm_sniper_turretloader></entitydescription.tsm_sniper_turretloader>
  <entityname.tsm_sniper_ammobox>奇迹之海狙击炮能量箱</entityname.tsm_sniper_ammobox>
  <entitydescription.tsm_sniper_ammobox>内部能量足够支持狙击炮连续射击50发，其能量束在接触目标时能够瞬间引发物质结构的崩解，轻松穿透重型装甲</entitydescription.tsm_sniper_ammobox>
+ <entityname.tsm_sniper_ammobox_sj>奇迹之海狙击炮碎甲能量箱</entityname.tsm_sniper_ammobox_sj>
+ <entitydescription.tsm_sniper_ammobox_sj>内部能量足够支持狙击炮连续射击40发，碎甲能量束能够在接触到目标后迅速腐蚀目标的防御力</entitydescription.tsm_sniper_ammobox_sj>
 
 
 
@@ -312,6 +330,11 @@
 
   <entityname.tsm_firesupportbinocle>手持支援指示器</entityname.tsm_firesupportbinocle>
   <entitydescription.tsm_firesupportbinocle>用于标记打击区域\n和手持支援指示器搭配使用，一人背背包，一人手持指示器进行标记</entitydescription.tsm_firesupportbinocle>
+
+ <entityname.tsm_claymore_mine>阔刀地雷</entityname.tsm_claymore_mine>
+ <entitydescription.tsm_claymore_mine>经过重重考验的反步兵地雷，在目标移动触发运动传感器后引爆\n建议部署在敌人必经之路的隐蔽处，或者安置于无人防守的入口处来打造警戒圈\n开启或关闭反应器都有三秒延迟</entitydescription.tsm_claymore_mine>
+
+ <entityname.tsm_claymore_mine_active>阔刀地雷</entityname.tsm_claymore_mine_active>
 
   <entityname.tsm_lm_lockbox>联盟武器盲盒</entityname.tsm_lm_lockbox>
   <entitydescription.tsm_lm_lockbox>优秀抽奖机制，毫无保底的池子，这就是潜渊症\n使用友军识别码开启\n耐久为0后再使用右键+左键进行打开</entitydescription.tsm_lm_lockbox>
@@ -418,7 +441,7 @@
   <entityname.lm_beowulf_helmet>联盟贝奥武夫头盔</entityname.lm_beowulf_helmet>
   <entitydescription.lm_beowulf_helmet>贝奥武夫中队所配备的制式头盔，优越的性能让优秀的士兵可以更加从容地执行战术与命令，可以放入一块大型防弹面罩，以获得更好的防护</entitydescription.lm_beowulf_helmet>
 
-  <entityname.lm_beowulf_uniform>联盟贝奥武夫作战服服</entityname.lm_beowulf_uniform>
+  <entityname.lm_beowulf_uniform>联盟贝奥武夫作战服</entityname.lm_beowulf_uniform>
   <entitydescription.lm_beowulf_uniform>贝奥武夫中队所配备的制式作战服</entitydescription.lm_beowulf_uniform>
 
   <entityname.lm_occupation_helmet>联盟占领军作战头盔</entityname.lm_occupation_helmet>
@@ -689,8 +712,37 @@
  <entitydescription.tsm_m200>使用‖color:0,200,0,255‖10.36*77‖color:end‖狙击枪弹匣，燕的主要配枪，燕入职猫科动物顾问的一位朋友所赠，据说欧罗巴仅此一把，其精密的加工技术，是主要难点之一，但更主要的是在欧罗巴的战斗中很少出现能够用上高精度，超远射程狙击枪，但除了猫科动物顾问团队。这把传说中能在千米外命中一瓶氧气罐的狙击枪，在悄无声息中夺走了不知多少妄自菲薄家伙的小命</entitydescription.tsm_m200>
  <entityname.tsm_1036_77ammo>狙击枪弹匣（10.36*77）</entityname.tsm_1036_77ammo>
  <entitydescription.tsm_1036_77ammo>装有7发10.3*77口径标准狙击枪子弹</entitydescription.tsm_1036_77ammo>
+
+ <charactername.tsm_chris>克里斯 埃文斯</charactername.tsm_chris>
+ <npctitle.tsm_chris>贝奥武夫中队前队长</npctitle.tsm_chris>
+ <entityname.tsm_beowulf>贝奥武夫勋章</entityname.tsm_beowulf>
+ <entitydescription.tsm_beowulf>联盟为贝奥武夫中队特制的勋章，以嘉奖这些年来贝奥武夫中队在镇暴和反恐事业上做出的杰出贡献</entitydescription.tsm_beowulf>
  <entityname.tsm_m7>联盟M7战斗步枪</entityname.tsm_m7>
  <entitydescription.tsm_m7>使用联盟‖color:0,200,0,255‖6.8*51‖color:end‖弹匣，MCXspear的正式列装版本，但只派发给了部分精英部队的高级职员，克里斯就是其中之一。枪托上面的划痕记录着倒在贝奥武夫中队的一个个猎物，让人不寒而栗</entitydescription.tsm_m7>
+ <entityname.tsm_chris_jl>克里斯简历</entityname.tsm_chris_jl>
+ <entitydescription.tsm_chris_jl></entitydescription.tsm_chris_jl>
+ <entityname.tsm_rp>录音笔</entityname.tsm_rp>
+ <entitydescription.tsm_rp>克里斯 埃文斯\n比眼泪更璀璨的瞬间</entitydescription.tsm_rp>
+
+ <tsm_chris_c1>在人群中你看到一个很眼熟的人，为了验证你的猜想你跑上去叫住了他。
+  “我们是不是在哪见过？”
+  他刚一转身，你的目光立刻捕捉到他脸上一道狰狞而深邃的疤痕——果然，不出所料，他正是曾经被联盟通缉的贝奥武夫中队前队长-克里斯·埃文斯。</tsm_chris_c1>
+ <tsm_chris_p1>尽管他的神情如冰般冷漠，但那一刹那，仍有一丝难以察觉的波动从他眼中掠过。</tsm_chris_p1>
+ <tsm_chris_c2>他的手缓缓地伸向腰间，仿佛下一秒空气就会被引燃般窒息。你们的目光在此刻交汇，气氛骤然凝固，降至冰点。
+  "嘿！别紧张，我想我们是一路人"你举起双手，掌心朝外，缓缓摆动着，试图用平和的语气打破眼前的紧张气氛。你的动作幅度不大，生怕稍有不慎便会引发一场无法挽回的冲突。
+  克里斯盯着你，手停在腰间，似乎在权衡你话中的真伪。片刻后，他终于放松了一些，但仍未完全卸下防备。</tsm_chris_c2>
+ <tsm_chris_p2>"跟我来" 你低声说道，向他点了点头，随即转身，向一个小通道走去。</tsm_chris_p2>
+ <tsm_chris_c3>你带着他穿过几条昏暗的通道，直到来到一处偏僻的角落——这里无人打扰，也没有监控的眼线。
+  "这里安全了，我们可以好好谈谈。"你靠着墙站定.“滥用武力、暴力私刑、谋杀、违抗命令……这些罪名，一个个都写在了你的名字下。”你的声音低沉，每一个字都像是在刺入空气，直逼他的内心，“现在，木卫二的人谈起你，都像谈起死神的使者。见到你，仿佛下一秒生命就会从他们手中被夺走。”
+  克里斯沉默地听着，低下头，从衣兜里拿出一只皱巴巴的香烟，缓慢地放到嘴边，用打火机点燃。火光在昏暗的角落中一闪，将他的脸映得愈发阴沉，那道深邃的疤痕在光影交错中显得格外狰狞，仿佛是某种不可磨灭的印记。他深吸了一口烟，烟雾从鼻孔间缓缓吐出，笼罩在他周围，带着一种沉重而冰冷的压迫感。他抬起头，目光穿过缭绕的烟雾直视着你，眼神中夹杂着某种复杂的情绪，似嘲讽，又似无言的警告。
+  "加入我吧！"你的语气坚定，“在我这里，你绝对是安全的。联盟的通缉令、那些追捕你的猎犬，都无法威胁到你。在我这里，可以免于被他们的阴谋和枷锁吞噬。”你稍稍向前一步，压低声音，“而不仅仅是保护——我还能给你机会，去清算那些罪恶之人。那些引发混乱、挑起暴乱的分子，不该逃脱应有的审判！”
+  克里斯听到“清算那些罪恶之人”这几个字时，原本冷漠的眼神中闪过一丝光亮，仿佛点燃了他内心深处某种埋藏已久的情绪。他吐出一口烟，眯起眼，缓缓开口：“我不在乎联盟的通缉，他们想抓我不是一天两天了。”他顿了顿，语气中带着几分试探和不屑：“倒是你提到的审判，的确让我有点兴趣。但空口无凭，拿出点实际的东西，你怎么证明你有能让我加入的实力。”
+  “在这个世界上，只有真正强大的人，才有资格谈什么审判和秩序。你呢？你凭什么？”</tsm_chris_c3>
+ <tsm_chris_p3>这就是我的证明（掏出贝奥武夫勋章）</tsm_chris_p3>
+ <tsm_chris_c_e1>你怎么会有？</tsm_chris_c_e1>
+ <tsm_chris_p_e>我从不在意过程，我只关心结果</tsm_chris_p_e>
+ <tsm_chris_c_e2>看来，你的船上得准备更多的打火机了。来吧，船长，让我们开始去清算那些有罪之人吧！</tsm_chris_c_e2>
+ <tsm_chris_c_n>证明不了你的实力，就别打扰我！</tsm_chris_c_n>
 <!--弹药-->
   <entityname.tsm_12_ld>12号鹿弹</entityname.tsm_12_ld>
   <entitydescription.tsm_12_ld>更少的弹丸数量，但是拥有更大的威力。</entitydescription.tsm_12_ld>
@@ -1150,7 +1202,7 @@
   <entitydescription.tsm_fkj_jts>火力强悍的武器，可以让反抗军的战士将联盟的走狗压制地抬不起头，然后将他们绝望地与掩体一起被撕成碎片。连续开火的后坐力甚至可以将射手向后推，因此建议经过训练再使用该武器。使用‖color:0,200,0,255‖反抗军通用机枪弹匣（5.45*39）‖color:end‖</entitydescription.tsm_fkj_jts>
 
   <entityname.tsm_fkj_pkp>反抗军通用机枪（PKP）</entityname.tsm_fkj_pkp>
-  <entitydescription.tsm_fkj_pkp>由号称世界上最好的通用机枪现代化改进而来，即使是到了木卫二世界也毫不逊色。此枪之名「Pecheneg」是来自佩切涅格人，一个起源于地球的草原的一个好战的西突厥分支部落。有效射程内对轻型结构物和简易覆盖物有良好的杀伤力。现在经过反抗军的改造使用‖color:0,200,0,255‖反抗军机枪弹匣（7.62*51）‖color:end‖。</entitydescription.tsm_fkj_pkp>
+  <entitydescription.tsm_fkj_pkp>由号称世界上最好的通用机枪现代化改进而来，即使是到了木卫二世界也毫不逊色。此枪之名「Pecheneg」是来自佩切涅格人，一个起源于地球的草原的一个好战的西突厥分支部落。有效射程内对轻型结构物和简易覆盖物有良好的杀伤力。现在经过反抗军的改造使用‖color:0,200,0,255‖反抗军机枪弹匣（7.62*54）‖color:end‖。</entitydescription.tsm_fkj_pkp>
 
   <entityname.tsm_fkj_saw>Chain- SAW“锯式”机枪</entityname.tsm_fkj_saw>
   <entitydescription.tsm_fkj_saw>看上去是将一把电锯拆解掉后组装上去，外观极其可怕，急促的开火声也像极了一把索命的电锯。使用‖color:0,200,0,255‖反抗军通用机枪弹匣（5.45*39）‖color:end‖</entitydescription.tsm_fkj_saw>
@@ -1242,10 +1294,10 @@
   <entityname.fkj_jts_cjmag>反抗军通用机枪穿甲弹匣（5.45*39）</entityname.fkj_jts_cjmag>
   <entitydescription.fkj_jts_cjmag>储存了一条200发5.45*39mm弹链的穿甲弹弹盒</entitydescription.fkj_jts_cjmag>
 
-  <entityname.fkj_pkp_mag>反抗军通用机枪弹匣（7.62*51）</entityname.fkj_pkp_mag>
+  <entityname.fkj_pkp_mag>反抗军通用机枪弹匣（7.62*54）</entityname.fkj_pkp_mag>
   <entitydescription.fkj_pkp_mag>储存了一条100发弹链的弹盒</entitydescription.fkj_pkp_mag>
 
-  <entityname.fkj_pkp_mag_cj>反抗军通用机枪穿甲弹匣（7.62*51）</entityname.fkj_pkp_mag_cj>
+  <entityname.fkj_pkp_mag_cj>反抗军通用机枪穿甲弹匣（7.62*54）</entityname.fkj_pkp_mag_cj>
   <entitydescription.fkj_pkp_mag_cj>储存了一条100发弹链的穿甲弹弹盒</entitydescription.fkj_pkp_mag_cj>
 
   <entityname.fkj_m2_mag>反抗军重型机枪弹匣</entityname.fkj_m2_mag>
@@ -1255,7 +1307,7 @@
   <entitydescription.fkj_svd_mag>填了15发步枪弹的弹匣。因为体积原因射手不会选择一次性携带过多。</entitydescription.fkj_svd_mag>
 
   <entityname.fkj_aa12_mag>反抗军霰弹弹鼓</entityname.fkj_aa12_mag>
-  <entitydescription.fkj_aa12_mag>装有15发霰弹的弹鼓，可以为AA-12提供一段时间的续航。</entitydescription.fkj_aa12_mag>
+  <entitydescription.fkj_aa12_mag>装有18发霰弹的弹鼓，可以为AA-12提供一段时间的续航。</entitydescription.fkj_aa12_mag>
 
   <entityname.fkj_rpk_mag>RPK弹鼓</entityname.fkj_rpk_mag>
   <entitydescription.fkj_rpk_mag>装有95发5.45*39口径子弹的弹鼓，给RPK提供更为长久的续航。</entitydescription.fkj_rpk_mag>
@@ -1340,7 +1392,7 @@
   <entitydescription.tsm_qbu202>QBU202型8.6毫米高精度狙击步枪的枪管是通过冷锤锻造方式进行制造而成，枪管精度寿命非常高。供弹方式采用弹匣供弹，使用‖color:0,200,0,255‖8.6*70mm‖color:end‖狙击步枪弹匣</entitydescription.tsm_qbu202>
 
   <entityname.tsm_amr2>AMR-2重型狙击步枪</entityname.tsm_amr2>
-  <entitydescription.tsm_amr2>AMR-2式‖color:0,200,0,255‖12.7*108‖color:end‖非自动狙击步枪是步兵狙击手使用的反器材武器，用以对付远距离的单个有生和重要器材等高价值目标，可实现精确打击和高效毁伤。该型枪使用重型枪管，非自动结构则保证步枪在击发的瞬间可能发生震动的部件数量降为最低，从而保证了射击精度。使用‖color:0,200,0,255‖12.7mm狙击枪弹匣‖color:end‖</entitydescription.tsm_amr2>
+  <entitydescription.tsm_amr2>AMR-2式‖color:0,200,0,255‖12.7*108‖color:end‖非自动狙击步枪是步兵狙击手使用的反器材武器，用以对付远距离的单个有生和重要器材等高价值目标，可实现精确打击和高效毁伤。该型枪使用重型枪管，非自动结构则保证步枪在击发的瞬间可能发生震动的部件数量降为最低，从而保证了射击精度。</entitydescription.tsm_amr2>
 
   <entityname.tsm_m99>M99反器材狙击步枪</entityname.tsm_m99>
   <entitydescription.tsm_m99>随着战争的愈演愈烈，士兵的防护水平越来越高，现有的狙击步枪在射程和威力方面已显弱势。积极发展新型‖color:0,200,0,255‖12.7*99‖color:end‖大口径狙击步枪成为各军事势力的新战场。为此，各地的轻武器研究者积极展开了半自动大口径狙击步枪的研制工作，M99应运而生，并承载着设计工作者的心血和荣耀迈向木卫二。</entitydescription.tsm_m99>
@@ -1712,7 +1764,7 @@
   </Override>
 
   <missionname.tsm_combat_beowulf>贝奥武夫的蛮人</missionname.tsm_combat_beowulf>
-  <missiondescription.tsm_combat_beowulf>联盟的贝奥武夫中队是出了名的蛮横，不讲理，但也是真正的硬茬！在装备和作战素养的加持下，他们是块很难啃的骨头。但是反抗军不想听到这些，向他们证明你和你团队的实力。打下这个站点并炸掉反应堆，勇气和荣耀都将属于你！</missiondescription.tsm_combat_beowulf>
+  <missiondescription.tsm_combat_beowulf>贝奥武夫最初是由联盟和奇迹之海联合创立的一支镇暴与反恐部队，随着反抗军开战以来，这支部队的职责已远超传统防暴任务，逐步被赋予了更高的权限。但在一次事件中，他们的行动失控，做得太过火，直接导致大量人质丧生。这场惨剧不仅让公众的怒火席卷而来，也彻底将他们的队长推上了联盟的通缉名单。而此时正是他们最虚弱的时刻，船长！打下这个站点并炸掉反应堆，勇气和荣耀都将属于你！</missiondescription.tsm_combat_beowulf>
   <missionsuccess.tsm_combat_beowulf>坟丘</missionsuccess.tsm_combat_beowulf>
   <missionfailure.tsm_combat_beowulf>这个结局如你所愿吗？</missionfailure.tsm_combat_beowulf>
   <missionheader0.tsm_combat_beowulf>岬角</missionheader0.tsm_combat_beowulf>

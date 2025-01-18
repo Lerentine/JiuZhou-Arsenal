@@ -100,6 +100,8 @@
     <subcategory.tsm_coalition>Coalition</subcategory.tsm_coalition>
     <displayname.防护服改造>[itemname] (Protective Suit Modification)</displayname.防护服改造>
     <entityname.tsm_collider_head>non-penetration</entityname.tsm_collider_head>
+    <tos>Turning off the sensor</tos>
+    <dm>Demolition of mines</dm>
     <!--药品-->
     <entityname.triton_9C_antidote>Special Damage Neutralizer</entityname.triton_9C_antidote>
     <entitydescription.triton_9C_antidote>A medicine used to treat Tritium poisoning, Triton injuries, and blast wounds.</entitydescription.triton_9C_antidote>
@@ -126,6 +128,20 @@
     <entitydescription.tsm_hk433_skins_t037y>Dedicated to the most powerful warrior\nDefeat the most powerful creature in the mod:T037Y，Getting materials to make</entitydescription.tsm_hk433_skins_t037y>
     <entityname.tsm_dp12_skins_t037y>DP12 Camo：T037Y</entityname.tsm_dp12_skins_t037y>
     <entitydescription.tsm_dp12_skins_t037y>Dedicated to the most powerful warrior\nDefeat the most powerful creature in the mod:T037Y，Getting materials to make</entitydescription.tsm_dp12_skins_t037y>
+    <entityname.tsm_ak74_skins_qxz>AK74 Camo：S.T.A.L.K.E.R</entityname.tsm_ak74_skins_qxz>
+    <entitydescription.tsm_ak74_skins_qxz>S.T.A.L.K.E.R Series</entitydescription.tsm_ak74_skins_qxz>
+    <entityname.tsm_groza_skins_qxz>OTS Groza-1 Camo：S.T.A.L.K.E.R</entityname.tsm_groza_skins_qxz>
+    <entitydescription.tsm_groza_skins_qxz>S.T.A.L.K.E.R Series</entitydescription.tsm_groza_skins_qxz>
+    <entityname.tsm_vss_skins_qxz>VSS Camo：S.T.A.L.K.E.R</entityname.tsm_vss_skins_qxz>
+    <entitydescription.tsm_vss_skins_qxz>S.T.A.L.K.E.R Series</entitydescription.tsm_vss_skins_qxz>
+    <entityname.tsm_asval_skins_qxz>Asval Camo：S.T.A.L.K.E.R</entityname.tsm_asval_skins_qxz>
+    <entitydescription.tsm_asval_skins_qxz>S.T.A.L.K.E.R Series</entitydescription.tsm_asval_skins_qxz>
+    <entityname.tsm_a545_skins_qxz>A545 Camo：S.T.A.L.K.E.R</entityname.tsm_a545_skins_qxz>
+    <entitydescription.tsm_a545_skins_qxz>S.T.A.L.K.E.R Series</entitydescription.tsm_a545_skins_qxz>
+    <entityname.tsm_ks23_skins_qxz>KS23 Camo：S.T.A.L.K.E.R</entityname.tsm_ks23_skins_qxz>
+    <entitydescription.tsm_ks23_skins_qxz>S.T.A.L.K.E.R Series</entitydescription.tsm_ks23_skins_qxz>
+    <entityname.tsm_svd_skins_qxz>SVD Camo：S.T.A.L.K.E.R</entityname.tsm_svd_skins_qxz>
+    <entitydescription.tsm_svd_skins_qxz>S.T.A.L.K.E.R Series</entitydescription.tsm_svd_skins_qxz>
     <!--矿物/金属/物品-->
     <entityname.tsm_tungstenore>Tungsten Ore</entityname.tsm_tungstenore>
     <entitydescription.tsm_tungstenore></entitydescription.tsm_tungstenore>
@@ -188,6 +204,8 @@
     <entitydescription.tsm_sniper_turretloader></entitydescription.tsm_sniper_turretloader>
     <entityname.tsm_sniper_ammobox>T.S.M Sniper Turret Fuel Box</entityname.tsm_sniper_ammobox>
     <entitydescription.tsm_sniper_ammobox>Contains enough energy for 50 shots of the sniper turret,  its energy beams could instantly collapse structures on impact, easily penetrating heavy armor.</entitydescription.tsm_sniper_ammobox>
+    <entityname.tsm_sniper_ammobox_sj>T.S.M Sniper Turret Armor-Piercing Fuel Box</entityname.tsm_sniper_ammobox_sj>
+    <entitydescription.tsm_sniper_ammobox_sj>The internal energy supply is sufficient to support 40 consecutive shots from the sniper cannon. The armor-piercing energy beam can rapidly corrode the target's defenses upon impact.</entitydescription.tsm_sniper_ammobox_sj>
     <!--战备-->
     <entityname.tsm_suecide_vest>Suicide Vest</entityname.tsm_suecide_vest>
     <entitydescription.tsm_suecide_vest>Spread terror to the world, 10-second countdown begins after activation</entitydescription.tsm_suecide_vest>
@@ -213,6 +231,9 @@
     <entitydescription.tsm_tsm_lockbox>Fantastic Gacha Mechanics, no guarantee at all, Barotrauma in a nutshell\nOpen using an ally identification code\Open with Left click+Right click after the condition reaches zero</entitydescription.tsm_tsm_lockbox>
     <entityname.tsm_tsm_lockbox>T.S.M Weapon Lootbox</entityname.tsm_tsm_lockbox>
     <entitydescription.tsm_tsm_lockbox>Time for a 10 pull\nOpen using an ally identification code\Open with Left click+Right click after the condition reaches zero</entitydescription.tsm_tsm_lockbox>
+    <entityname.tsm_claymore_mine>claymore mine</entityname.tsm_claymore_mine>
+    <entitydescription.tsm_claymore_mine>Tested and refined anti-infantry mine, detonates ofter the target triggers the motion sensor\nIt is advisable to deploy this on enemies' path, or at undefended entrances. to create a security perimeter\nTurning it on or off has a three second delay.</entitydescription.tsm_claymore_mine>
+    <entityname.tsm_claymore_mine_active>claymore mine</entityname.tsm_claymore_mine_active>
     <!--装备-->
     <entityname.tsm_bulletproof>Chest Rig</entityname.tsm_bulletproof>
     <entitydescription.tsm_bulletproof>Perhaps those soldiers who like to carry large amounts of ammunition couldn't bear it anymore; this chest rig appeared on Europa. By sacrificing some protection, it provides more carry pouches for storing additional items.</entitydescription.tsm_bulletproof>
@@ -479,6 +500,33 @@
     <entitydescription.tsm_1036_77ammo>Holds 7 rounds of 10.36*77mm ammunition</entitydescription.tsm_1036_77ammo>
     <entityname.tsm_m7>Coalition M7 Battle Rifle</entityname.tsm_m7>
     <entitydescription.tsm_m7>Uses Coalition ‖color:0,200,0,255‖6.8*51‖color:end‖ Magazine, the equipped version of the MCX spear, but it is only given to the elite among the elite, including Chris. The scratch marks on the gun stock records the prey that have fallen to the Beowulf squadron, giving anyone a chill down the spine.</entitydescription.tsm_m7>
+    <charactername.tsm_chris>Chris Evans</charactername.tsm_chris>
+    <npctitle.tsm_chris>Former Captain of Beowulf Squadron</npctitle.tsm_chris>
+    <entityname.tsm_beowulf>Beowulf Medal of Honor</entityname.tsm_beowulf>
+    <entitydescription.tsm_beowulf>The Coalition awarded a special medal to the Beowulf Squadron in recognition of their outstanding contributions to riot control and counter-terrorism efforts over the years.</entitydescription.tsm_beowulf>
+    <entityname.tsm_chris_jl>Chris's Resume</entityname.tsm_chris_jl>
+    <entitydescription.tsm_chris_jl></entitydescription.tsm_chris_jl>
+    <entityname.tsm_rp>recording pen</entityname.tsm_rp>
+    <entitydescription.tsm_rp>Chris Evans\nA Moment More Brilliant Than Tears</entitydescription.tsm_rp>
+    <tsm_chris_c1>In the crowd you see someone who looks familiar, and to verify your suspicions you run up and call out to him.
+      “Haven't we met somewhere before?”
+       He just turned around, and your eyes immediately caught a hideous, deep scar on his face - sure enough, unsurprisingly, he was none other than the former leader of Beowulf Squadron, who was once wanted by the Alliance - Chris Evans.</tsm_chris_c1>
+    <tsm_chris_p1>Even though his expression was as cold as ice, there was still a trace of imperceptible fluctuation that swept through his eyes in that moment.</tsm_chris_p1>
+    <tsm_chris_c2>His hand slowly reached for his waist, his movements seemingly calm but full of oppression, as if the air would be suffocated by ignition in the next second. Your gazes met at this moment, as sharp as blades meeting, and the atmosphere suddenly froze, dropping to freezing point.
+      “Hey! Take it easy, I think we're on the same page” You raise your hands, palms facing outwards, and swing them slowly, trying to break the tension in front of you with a calm tone. You don't move very much, fearing that the slightest mistake could lead to an irreversible confrontation.
+      Chris stares at you, his hand stopping at his waist as if weighing the truth of your words. After a moment, he finally relaxes a bit, but still hasn't completely removed his defenses.</tsm_chris_c2>
+    <tsm_chris_p2>“Follow me.”
+      You whisper, nodding to him, and then slowly turn around, moving carefully for fear of arousing his suspicions.</tsm_chris_p2>
+    <tsm_chris_c3>You lead him through several dimly lit passages until you come to a remote corner - undisturbed and free of surveillance eyes.
+      “It's safe here, so we can talk.” You settle against the wall, your eyes looking straight at him, your tone calm but not careless . “Abuse of force, violent lynching, murder, insubordination ...... each of these charges is written under your name.” Your voice is low, yet sharp as a blade, each word seems to pierce the air and drive right into his heart, “Now, the people of Europa talk about you like you're the messenger of death. Seeing you, it's as if life will be taken from them in the next second.”
+      “Join me!” Your tone is firm with a sincerity that can't be ignored, and your gaze is like a razor's edge as you look straight at Chris, “With me, you're absolutely safe. The Coalition's most wanted, those hounds hunting you, none of them can threaten you. I have the power to protect you from being consumed by their schemes and shackles.” You take a slight step forward, lowering your voice but making each word as clear as thunder, “And not just protection - I can give you the chance to liquidate those who are guilty. Those elements that started the chaos and provoked the riots should not escape the judgment they deserve!”
+      When Chris heard the words “liquidate those who are guilty”, a light flashed in his originally cold eyes, as if it had ignited some long-buried emotions deep inside him. He exhaled a mouthful of smoke, narrowed his eyes, and slowly spoke, “I don't care about the Coalition's wanted, they've been trying to catch me for more than a day or two.” He paused, with a few hints of testing and disdain in his tone, “On the contrary, it's the trial you mentioned that does make me a bit interested. But empty words are no proof, come up with something tangible, how do you prove that you have the strength that can make me join.
+      “On Europa, only the truly powerful are qualified to talk about judgment and order. What about you? What are you entitled to?”</tsm_chris_c3>
+    <tsm_chris_p3>Here's my proof. (pulls out Beowulf Medal of Honor)</tsm_chris_p3>
+    <tsm_chris_c_e1>How did you get it?</tsm_chris_c_e1>
+    <tsm_chris_p_e>I never cared about the process, I only cared about the result</tsm_chris_p_e>
+    <tsm_chris_c_e2>Looks like you'll have to have more lighters on board. Come on, Captain, let's get ready to liquidate the guilty!</tsm_chris_c_e2>
+    <tsm_chris_c_n>Don't bother me if you can't prove your strength!</tsm_chris_c_n>
     <!--弹药-->
     <entityname.tsm_12_ld>Buckshot</entityname.tsm_12_ld>
     <entitydescription.tsm_12_ld>Fewer rounds but with greater power.</entitydescription.tsm_12_ld>
@@ -563,11 +611,9 @@
     <entityname.tsm_snoar_shell>T.S.M Railgun Decoy Shell</entityname.tsm_snoar_shell>
     <entitydescription.tsm_snoar_shell>Railgun Shell\nDecoy-type artillery missile that stops around 150m after launch and continuously emits a sonar pulse to attract creatures. Please note the strong EMP effects within the explosion radius.</entitydescription.tsm_snoar_shell>
     <entityname.tsm_embi_shell>Fist of Fate</entityname.tsm_embi_shell>
-    <entitydescription.tsm_embi_shell>Railgun Shell
-  Special ballistic correction artillery nuclear bomb developed and manufactured by EMBI. This ammunition can correct its trajectory within a certain range.</entitydescription.tsm_embi_shell>
+    <entitydescription.tsm_embi_shell>Railgun Shell Special ballistic correction artillery nuclear bomb developed and manufactured by EMBI. This ammunition can correct its trajectory within a certain range.</entitydescription.tsm_embi_shell>
     <entityname.tsm_fire_gun>Awakening Lion</entityname.tsm_fire_gun>
-    <entitydescription.tsm_fire_gun>Sub-throw Launcher
-  Single-use bombardment launcher capable of disrupting enemy formations.</entitydescription.tsm_fire_gun>
+    <entitydescription.tsm_fire_gun>Sub-throw Launcher Single-use bombardment launcher capable of disrupting enemy formations.</entitydescription.tsm_fire_gun>
     <entityname.tsm_thbq>Same Twilight</entityname.tsm_thbq>
     <entitydescription.tsm_thbq>Sea of Miracles's standard assault rifle, developed for external combat, offers exceptional suppression due to its high rate of fire, allowing ordinary soldiers to achieve squad-level fire density. The specialized armor-piercing ammunition is an added bonus. After installing specialized components, it becomes even more formidable, deadlier, and pricier... Using ‖color:150,0,0,255‖Sea of Miracles ammunition‖color:end‖ "Burlinghill, they told you, Europa's sea is too deep and dark, and 'clean' people find it hard to go far..."</entitydescription.tsm_thbq>
     <entityname.tsm_gybq>Shared Shadow</entityname.tsm_gybq>
@@ -601,8 +647,7 @@
     <entityname.tsm_magazinecj>T.S.M Armor-Piercing Magazine</entityname.tsm_magazinecj>
     <entitydescription.tsm_magazinecj>Contains 30 rounds of standard armor-piercing ammunition, effectively countering the swift onslaught of mud golems in the ship's cabin. The magazine is marked for armor-piercing rounds for easy identification.</entitydescription.tsm_magazinecj>
     <entityname.tsm_ammobox>T.S.M Ammunition Box</entityname.tsm_ammobox>
-    <entitydescription.tsm_ammobox>Sea of Miracles Ammunition Box
-[Insert magazine, right-click + left-click to load.]</entitydescription.tsm_ammobox>
+    <entitydescription.tsm_ammobox>Sea of Miracles Ammunition Box [Insert magazine, right-click + left-click to load.]</entitydescription.tsm_ammobox>
     <entityname.tsm_weightless_traction_laser_beam>Zero Gravity Traction Laser Beam</entityname.tsm_weightless_traction_laser_beam>
     <entitydescription.tsm_weightless_traction_laser_beam>Expensive custom shell containing gravity fluid undergoing intense reactions; each use creates a gravity field.</entitydescription.tsm_weightless_traction_laser_beam>
     <entityname.tsm_xymagazine>New Moon Magazine</entityname.tsm_xymagazine>
@@ -812,7 +857,7 @@
     <entityname.tsm_fkj_jts>Rebel General-Purpose Light Machine Gun</entityname.tsm_fkj_jts>
     <entitydescription.tsm_fkj_jts>A powerful weapon that allows rebel fighters to suppress Union dogs, pinning them down, before ripping them and their cover to shreds. The recoil from continuous fire can even push the shooter backward, so it's advised to be trained before using this weapon. Uses ‖color:150,0,0,255‖Rebel General-Purpose Machine Gun Magazine (5.45x39mm)‖color:end‖. </entitydescription.tsm_fkj_jts>
     <entityname.tsm_fkj_pkp>Rebel General-Purpose Machine Gun (PKP)</entityname.tsm_fkj_pkp>
-    <entitydescription.tsm_fkj_pkp>A modernized improvement of what's considered the world's best general-purpose machine gun, still formidable even on Europa. The name "Pecheneg" comes from the Pechenegs, a belligerent Western Turkic branch from Earth's steppes. Effective within range against light structures and basic cover. Now modified by the Separatists to use ‖color:150,0,0,255‖Rebel Machine Gun Magazine (7.62x51mm)‖color:end‖. </entitydescription.tsm_fkj_pkp>
+    <entitydescription.tsm_fkj_pkp>A modernized improvement of what's considered the world's best general-purpose machine gun, still formidable even on Europa. The name "Pecheneg" comes from the Pechenegs, a belligerent Western Turkic branch from Earth's steppes. Effective within range against light structures and basic cover. Now modified by the Separatists to use ‖color:150,0,0,255‖Rebel Machine Gun Magazine (7.62x54)‖color:end‖. </entitydescription.tsm_fkj_pkp>
     <entityname.tsm_fkj_saw>Chain-SAW Machine Gun</entityname.tsm_fkj_saw>
     <entitydescription.tsm_fkj_saw>Looks like a chainsaw broken down and then assembled together, a terrifying appearance, its rapid firing sounds also resemble a lethal chainsaw. Uses‖color:150,0,0,255‖Rebel General Purpose Machine Gun Magazine(5.45*39)‖color:end‖.</entitydescription.tsm_fkj_saw>
     <entityname.tsm_fkj_jq430>Rebel JQ430 Assault Rifle</entityname.tsm_fkj_jq430>
@@ -871,16 +916,16 @@
     <entitydescription.fkj_jts_mag>A box holding a 200-round belt of 5.45x39mm ammo, allowing the shooter to waste as much ammo as they like.</entitydescription.fkj_jts_mag>
     <entityname.fkj_jts_cjmag>Rebel General-Purpose Machine Gun Armor-Piercing Magazine (5.45*39mm)</entityname.fkj_jts_cjmag>
     <entitydescription.fkj_jts_cjmag>A box holding a 200-round belt of 5.45x39mm armor-piercing rounds.</entitydescription.fkj_jts_cjmag>
-    <entityname.fkj_pkp_mag>Rebel General-Purpose Machine Gun Magazine (7.62*51mm)</entityname.fkj_pkp_mag>
-    <entitydescription.fkj_pkp_mag>A box holding a 100-round belt of 7.62 ammo.</entitydescription.fkj_pkp_mag>
-    <entityname.fkj_pkp_mag_cj>Rebel General-Purpose Machine Gun Armor-Piercing Magazine (7.62*51mm)</entityname.fkj_pkp_mag_cj>
-    <entitydescription.fkj_pkp_mag_cj>A box holding a 100-round belt of 7.62 armor-piercing rounds.</entitydescription.fkj_pkp_mag_cj>
+    <entityname.fkj_pkp_mag>Rebel General-Purpose Machine Gun Magazine (7.62*54)</entityname.fkj_pkp_mag>
+    <entitydescription.fkj_pkp_mag>A box holding a 100-round belt.</entitydescription.fkj_pkp_mag>
+    <entityname.fkj_pkp_mag_cj>Rebel General-Purpose Machine Gun Armor-Piercing Magazine (7.62*54)</entityname.fkj_pkp_mag_cj>
+    <entitydescription.fkj_pkp_mag_cj>A box holding a 100-round belt armor-piercing rounds.</entitydescription.fkj_pkp_mag_cj>
     <entityname.fkj_m2_mag>Rebel Heavy Machine Gun Magazine</entityname.fkj_m2_mag>
     <entitydescription.fkj_m2_mag>A box of 150 rounds mounted on a heavy machine gun, providing prolonged fire. Too large to be portable, it's recommended to have an assistant gunner carry it.</entitydescription.fkj_m2_mag>
     <entityname.fkj_svd_mag>SVD Magazine</entityname.fkj_svd_mag>
     <entitydescription.fkj_svd_mag>A magazine holding 20 rifle rounds. Due to its size, shooters tend not to carry too many at once.</entitydescription.fkj_svd_mag>
     <entityname.fkj_aa12_mag>Rebel Shotgun Drum</entityname.fkj_aa12_mag>
-    <entitydescription.fkj_aa12_mag>A drum holding 15 shotgun shells, providing the AA-12 with extended sustainability.</entitydescription.fkj_aa12_mag>
+    <entitydescription.fkj_aa12_mag>A drum holding 18 shotgun shells, providing the AA-12 with extended sustainability.</entitydescription.fkj_aa12_mag>
     <entityname.fkj_rpk_mag>RPK Drum</entityname.fkj_rpk_mag>
     <entitydescription.fkj_rpk_mag>A drum holding 95 rounds of 5.45x39mm caliber ammo, offering the RPK long-term sustainability.</entitydescription.fkj_rpk_mag>
     <entityname.fkj_9_39_mag>Rebel Standard Magazine(9*39)</entityname.fkj_9_39_mag>
@@ -937,7 +982,7 @@
     <entityname.tsm_qbu202>QBU-202 High-Precision Sniper Rifle</entityname.tsm_qbu202>
     <entitydescription.tsm_qbu202>The QBU202 model 8.6mm high-precision sniper rifle's barrel is manufactured through cold hammer forging, giving it a very high accuracy lifespan. It employs magazine feeding and uses ‖color:150,0,0,255‖8.6x70mm‖color:end‖ sniper rifle magazine.</entitydescription.tsm_qbu202>
     <entityname.tsm_amr2>AMR-2 Heavy Sniper Rifle</entityname.tsm_amr2>
-    <entitydescription.tsm_amr2>The AMR-2 ‖color:150,0,0,255‖12.7*108mm‖color:end‖ non-automatic sniper rifle is an anti-material weapon used by infantry snipers to engage high-value targets at long distances, including individual personnel and important equipment. It allows for precise strikes and effective destruction. This model features a heavy barrel, and its non-automatic structure minimizes the number of components that may vibrate at the moment of firing, ensuring shooting accuracy. Uses ‖color:150,0,0,255‖12.7mm Sniper Rifle Magazine‖color:end‖</entitydescription.tsm_amr2>
+    <entitydescription.tsm_amr2>The AMR-2 ‖color:150,0,0,255‖12.7*108mm‖color:end‖ non-automatic sniper rifle is an anti-material weapon used by infantry snipers to engage high-value targets at long distances, including individual personnel and important equipment. It allows for precise strikes and effective destruction. This model features a heavy barrel, and its non-automatic structure minimizes the number of components that may vibrate at the moment of firing, ensuring shooting accuracy.</entitydescription.tsm_amr2>
     <entityname.tsm_m99>M99 Anti-Material Sniper Rifle</entityname.tsm_m99>
     <entitydescription.tsm_m99>As the war intensifies, soldiers' protection levels have been rising, making existing sniper rifles seem less effective in range and power. The active development of new ‖color:150,0,0,255‖12.7*99mm‖color:end‖ large-caliber sniper rifles has become a new battlefield for military forces. Consequently, light weapons researchers have vigorously pursued the development of semi-automatic large-caliber sniper rifles, leading to the emergence of the M99, which carries the designers' efforts and pride into Europa.</entitydescription.tsm_m99>
     <entityname.tsm_qbu10>Prototype QBU-10 Anti-Material Sniper Rifle</entityname.tsm_qbu10>

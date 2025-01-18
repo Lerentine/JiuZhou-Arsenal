@@ -182,7 +182,7 @@
       <Sprite name="advanced uniform" texture="%ModDir%/Jobgear/advanced_uniform_male.png" sourcerect="423,200,89,56" depth="0.55" origin="0.5,0.5" />
       <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
       <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-        <sprite name="advanced Torso" texture="%ModDir%/Jobgear/advanced_uniform_[GENDER].png" limb="Torso" hidelimb="false" depthlimb="Jaw" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" origin="0.45,0.47" sourcerect="176,0,96,192" />
+        <sprite name="advanced Torso" texture="%ModDir%/Jobgear/advanced_uniform_[GENDER].png" limb="Torso" hidelimb="false" depthlimb="Jaw" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" origin="0.41,0.47" sourcerect="176,0,96,192" />
         <sprite name="advanced Right Hand" texture="%ModDir%/Jobgear/advanced_uniform_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="advanced Left Hand" texture="%ModDir%/Jobgear/advanced_uniform_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="advanced Right Lower Arm" texture="%ModDir%/Jobgear/advanced_uniform_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />

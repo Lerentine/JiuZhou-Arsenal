@@ -15,7 +15,7 @@
     <!--图标以及局内贴图-->
     <InventoryIcon texture="%ModDir%/weapons/其他/legacy_weapons.png" sourcerect="1875,4,123,153" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/legacy_weapons.png" sourcerect="28,16,417,103" depth="0.55" origin="0.5,0.5" />
-    <Body width="417" height="103" density="52" />
+    <Body width="417" height="100" density="52" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,0" aimpos="60,0" handle1="-85,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
@@ -27,7 +27,7 @@
       </StatusEffect>
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.09" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="210,30" spread="8" unskilledspread="40" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.25">
+    <RangedWeapon reload="0.09" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="210,22" spread="8" unskilledspread="40" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.25">
       <!--准星图标-->
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -131,7 +131,7 @@
     <!--图标以及局内贴图-->
     <InventoryIcon texture="%ModDir%/weapons/其他/legacy_weapons.png" sourcerect="1815,205,185,200" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/legacy_weapons.png" sourcerect="16,190,620,103" depth="0.55" origin="0.5,0.5" />
-    <Body width="620" height="103" density="52" />
+    <Body width="620" height="100" density="48" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="75,0" aimpos="80,0" handle1="-170,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
@@ -140,7 +140,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.11" weapondamagemodifier="1.35" penetration="0.1" holdtrigger="true" barrelpos="200,20" spread="6" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.25">
+    <RangedWeapon reload="0.11" weapondamagemodifier="1.35" penetration="0.1" holdtrigger="true" barrelpos="190,17" spread="6" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.25">
       <!--准星图标-->
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -222,7 +222,7 @@
     <!--图标以及局内贴图-->
     <InventoryIcon texture="%ModDir%/weapons/其他/legacy_weapons.png" sourcerect="1806,611,194,194" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/legacy_weapons.png" sourcerect="40,474,508,172" depth="0.55" origin="0.5,0.5" />
-    <Body width="508" height="172" density="52" />
+    <Body width="508" height="170" density="52" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="70,-5" aimpos="70,0" handle1="-110,-13" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
@@ -242,7 +242,7 @@
       <StatusEffect type="Always" targettype="Contained" targets="mobilebattery" TargetSlot="1" Condition="-0.5" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.11" weapondamagemodifier="1.0" holdtrigger="true" barrelpos="230,10" spread="7" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.11" weapondamagemodifier="1.0" holdtrigger="true" barrelpos="250,1" spread="7" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <!--准星图标-->
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />

@@ -221,6 +221,9 @@
         <RequiredItem identifier="plastic" amount="1" />
         <RequiredItem identifier="headset" amount="1" />
       </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredItem identifier="lm_fast_helmet_headset" amount="1" />
+      </Fabricate>
       <Sprite name="fast Helmet icon" texture="%ModDir%/Jobgear/helmet.png" sourcerect="16,285,214,188" depth="0.58" origin="0.5,0.5" />
       <Body radius="70" density="50" />
       <Wearable slots="Any,Head" armorvalue="25.0" msg="ItemMsgPickUpSelect">
@@ -230,7 +233,7 @@
         <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="" deflectprojectiles="true" />
-        <sprite name="fast Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.26" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="16,285,214,188" origin="0.58,0.68"></sprite>
+        <sprite name="fast Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.26" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="16,285,214,188" origin="0.58,0.68"/>
       </Wearable>
       <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
         <StatusEffect type="OnActive" targettype="This">
@@ -254,6 +257,9 @@
         <RequiredItem identifier="tsm_ballistic_faceshield_big" amount="1" />
         <RequiredItem identifier="plastic" amount="2" />
         <RequiredItem identifier="aluminium" amount="2" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredItem identifier="lm_fast_helmet_faceshield" amount="1" />
       </Fabricate>
       <Sprite name="fast Helmet icon" texture="%ModDir%/Jobgear/helmet.png" sourcerect="17,828,264,208" depth="0.58" origin="0.5,0.5" />
       <Body radius="70" density="20" />
@@ -301,6 +307,9 @@
         <RequiredItem identifier="tsm_helmet_thermalgoggles" amount="1" />
         <RequiredItem identifier="plastic" amount="1" />
         <RequiredItem identifier="aluminium" amount="3" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredItem identifier="lm_fast_helmet_thermalgoggles" amount="1" />
       </Fabricate>
       <Sprite name="fast Helmet icon" texture="%ModDir%/Jobgear/helmet.png" sourcerect="16,552,281,188" depth="0.58" origin="0.5,0.5" />
       <Body radius="70" density="50" />
@@ -361,6 +370,9 @@
         <RequiredItem identifier="plastic" amount="2" />
         <RequiredItem identifier="steel" amount="3" />
       </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredItem identifier="lm_fast_helmet_protectivejaw" amount="1" />
+      </Fabricate>
       <Sprite name="fast Helmet icon" texture="%ModDir%/Jobgear/helmet.png" sourcerect="38,1641,214,227" depth="0.58" origin="0.5,0.5" />
       <Body radius="70" density="50" />
       <Wearable slots="Any,Head" armorvalue="30.0" msg="ItemMsgPickUpSelect">
@@ -372,7 +384,7 @@
         <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
         <sprite name="fast Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.25" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="38,1641,214,227" origin="0.54,0.55">
-          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"></StatusEffect>
+          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"/>
         </sprite>
       </Wearable>
       <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
@@ -452,6 +464,9 @@
         <RequiredItem identifier="lm_fast_helmet_protectivejaw" amount="1" />
         <RequiredItem identifier="tsm_ballistic_faceshield_big" amount="1" />
         <RequiredItem identifier="tsm_item_box" amount="2" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredItem identifier="lm_heavy_helmet" amount="1" />
       </Fabricate>
       <Sprite name="occupation Helmet icon" texture="%ModDir%/Jobgear/helmet.png" sourcerect="12,1084,264,227" depth="0.58" origin="0.5,0.5" />
       <Body radius="70" density="50" />
@@ -1160,6 +1175,9 @@
         <RequiredItem identifier="plastic" amount="2" />
         <RequiredItem identifier="aluminium" amount="2" />
       </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredItem identifier="tsm_riotcontrol_helmet" amount="1" />
+      </Fabricate>
       <Sprite name="fast Helmet icon" texture="%ModDir%/Jobgear/helmet.png" sourcerect="863,552,260,218" depth="0.58" origin="0.5,0.5" />
       <Body radius="70" density="50" />
       <Wearable slots="Any,Head" armorvalue="30.0" msg="ItemMsgPickUpSelect">
@@ -1208,6 +1226,9 @@
         <RequiredItem identifier="tsm_protective_jaw" amount="1" />
         <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
         <RequiredItem identifier="rubber" amount="4" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredItem identifier="tsm_heavycombat_helmet" amount="1" />
       </Fabricate>
       <Sprite name="heavycombat Helmet icon" texture="%ModDir%/Jobgear/helmet.png" sourcerect="870,833,260,239" depth="0.58" origin="0.5,0.5" />
       <Body radius="70" density="50" />

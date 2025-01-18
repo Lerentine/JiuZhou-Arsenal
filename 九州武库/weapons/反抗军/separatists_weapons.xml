@@ -24,13 +24,13 @@
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1056,2321,161,179" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="0,1675,597,137" depth="0.55" origin="0.5,0.5" />
     <BrokenSprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="4,1521,592,134" maxcondition="0" depth="0.55" origin="0.5,0.5" />
-    <Body width="597" height="137" density="37" />
+    <Body width="592" height="134" density="37" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="70,-1" aimpos="70,-1" handle1="-140,-20" handle2="70,12" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.7" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.11" weapondamagemodifier="1.25" holdtrigger="true" barrelpos="230,20" spread="15" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.15">
+    <RangedWeapon reload="0.11" weapondamagemodifier="1.25" holdtrigger="true" barrelpos="250,30" spread="15" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.15">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1498,198,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1497,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -184,12 +184,12 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="811,1865,98,117" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1207,654,229,108" depth="0.55" origin="0.5,0.5" />
-    <Body width="250" height="95" density="22" />
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-5" aimpos="45,-5" handle1="-70,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
+    <Body width="229" height="100" density="22" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-5" aimpos="45,-5" handle1="-70,-10" handle2="45,20" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.12" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="130,30" spread="13" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
+    <RangedWeapon reload="0.12" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="115,20" spread="13" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1498,198,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1497,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -308,7 +308,7 @@
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.115" weapondamagemodifier="1" holdtrigger="true" barrelpos="230,20" spread="11" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
+    <RangedWeapon reload="0.115" weapondamagemodifier="1" holdtrigger="true" barrelpos="255,15" spread="11" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1498,198,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1497,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -381,6 +381,10 @@
         <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="411,271,88,45" origin="0.45,0.5" />
         <Containable items="tsm_sight_pso" hide="false" itempos="-11,11" depth="0.56" setactive="true" />
       </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <SlotIcon slotindex="3" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
+        <Containable items="tsm_ak74_skins" hide="false" setactive="true" />
+      </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="3000" fadeouttime="6" />
     <Quality>
@@ -415,14 +419,14 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1413,2103,138,131" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="849,1650,271,114" depth="0.55" origin="0.5,0.5" />
-    <Body width="378" height="113" density="25" />
+    <Body width="271" height="113" density="25" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="40,-5" handle1="15,-20" handle2="80,20" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.9" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.09" holdtrigger="true" weapondamagemodifier="1" barrelpos="140,10" spread="12" unskilledspread="30" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.09" holdtrigger="true" weapondamagemodifier="1" barrelpos="130,11" spread="12" unskilledspread="30" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,3979,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -494,6 +498,10 @@
       <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="flashlight" hide="false" itempos="25,3" depth="0.56" setactive="true" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <SlotIcon slotindex="2" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
+        <Containable items="tsm_groza_skins" hide="false" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2200" soundrange="3800" fadeouttime="6" />
@@ -812,7 +820,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.45" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.105" weapondamagemodifier="1.1" penetration="0.1" holdtrigger="true" barrelpos="230,20" spread="8" unskilledspread="85" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.25">
+    <RangedWeapon reload="0.105" weapondamagemodifier="1.1" penetration="0.1" holdtrigger="true" barrelpos="225,22" spread="8" unskilledspread="85" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.25">
       <!--准星图标-->
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1498,198,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1497,198,199" />
@@ -929,7 +937,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.65" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.1" weapondamagemodifier="1.1" penetration="0.1" holdtrigger="true" barrelpos="230,20" spread="9" unskilledspread="80" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1.1" penetration="0.1" holdtrigger="true" barrelpos="225,22" spread="9" unskilledspread="80" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
       <!--准星图标-->
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1498,198,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1497,198,199" />
@@ -1038,7 +1046,7 @@
     <!--图标以及局内贴图-->
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1138,1827,171,177" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1207,895,453,114" depth="0.55" origin="0.5,0.5" />
-    <Body width="440" height="100" density="30" />
+    <Body width="453" height="110" density="30" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-5" aimpos="63,0" handle1="-80,-15" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
@@ -1047,7 +1055,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.1" weapondamagemodifier="1.15" penetration="0.1" holdtrigger="true" barrelpos="210,20" spread="8" unskilledspread="80" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1.15" penetration="0.1" holdtrigger="true" barrelpos="225,17" spread="8" unskilledspread="80" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
       <!--准星图标-->
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,3979,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
@@ -1153,15 +1161,10 @@
         <Containable items="flashlight" hide="false" itempos="18,-1" setactive="true" />
         <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
       </SubContainer>
-      <!--4.高倍瞄具-->
+      <!--3.高倍瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
-        <Containable items="tsm_sight_high" hide="false" itempos="-17,15" depth="0.56" setactive="true" />
-      </SubContainer>
-      <!--5.瞄具-->
-      <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="632,289,24,21" origin="0.45,0.5" />
-        <Containable items="tsm_sight_low" hide="false" itempos="0,14" depth="0.56" setactive="true" />
+        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
+        <Containable items="sighting" hide="false" itempos="-10,13.5" depth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2150" soundrange="3500" fadeouttime="6" />
@@ -1205,7 +1208,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.11" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="230,20" spread="8" unskilledspread="50" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.11" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="215,23" spread="8" unskilledspread="50" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
       <!--准星图标-->
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,3979,198,199" />
@@ -1320,7 +1323,7 @@
         <Containable items="grip" hide="false" itempos="12,-3" depth="0.56" setactive="true" />
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-12,16" depth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
@@ -1356,7 +1359,7 @@
     <!--图标以及局内贴图-->
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1173,2067,175,192" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="845,1209,468,138" depth="0.55" origin="0.5,0.5" />
-    <Body width="484" height="150" density="35" />
+    <Body width="468" height="120" density="35" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-20" aimpos="72,-3" handle1="-120,0" handle2="50,25" holdangle="-30" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
@@ -1365,7 +1368,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.35" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.1" weapondamagemodifier="1.35" penetration="0.1" holdtrigger="true" barrelpos="200,40" spread="8" unskilledspread="50" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.4">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1.35" penetration="0.1" holdtrigger="true" barrelpos="230,30" spread="8" unskilledspread="50" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.4">
       <!--准星图标-->
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,3979,198,199" />
@@ -1507,7 +1510,7 @@
       </SubContainer>
       <!--3.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-19,19" depth="0.56" setactive="true" />
       </SubContainer>
       <!--4.枪口/枪管-->
@@ -1518,7 +1521,7 @@
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="tsm_rpk16_skins" itempos="0,0" hide="false" setactive="true" />
       </SubContainer>
-      <SlotIcon slotindex="4" texture="%ModDir%/weapons/皮肤/skins_icon.png" sourcerect="0,1517,120,83" origin="0.5,0.5" />
+      <SlotIcon slotindex="4" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
     </ItemContainer>
     <aitarget sightrange="2200" soundrange="3800" fadeouttime="6" />
     <!--品质-->
@@ -1570,7 +1573,7 @@
       </StatusEffect>
       <!--半自动模式-->
     </Holdable>
-    <RangedWeapon reload="0.14" weapondamagemodifier="1.4" holdtrigger="true" barrelpos="200,30" spread="5" unskilledspread="50" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.14" weapondamagemodifier="1.4" holdtrigger="true" barrelpos="240,35" spread="5" unskilledspread="50" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1498,198,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1497,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -1624,7 +1627,7 @@
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
       <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
       <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="411,271,88,45" origin="0.45,0.5" />
-      <SlotIcon slotindex="3" texture="%ModDir%/weapons/皮肤/skins_icon.png" sourcerect="0,1517,120,83" origin="0.5,0.5" />
+      <SlotIcon slotindex="3" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="flashlight" hide="false" itempos="22,1" setactive="true" />
       </SubContainer>
@@ -1680,7 +1683,7 @@
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
     </Holdable>
-    <RangedWeapon barrelpos="160,8" spread="5" unskilledspread="18" combatPriority="86" reload="0.4" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon barrelpos="200,15" spread="5" unskilledspread="18" combatPriority="86" reload="0.4" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -1749,13 +1752,13 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2355,1499,144,180" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1836,1459,436,89" depth="0.56" origin="0.5,0.5" />
-    <Body width="420" height="75" density="35" />
+    <Body width="436" height="79" density="35" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="25,-20" aimpos="70,0" handle1="-140,-10" handle2="50,5" holdangle="40" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.86" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.83" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />
     </Holdable>
-    <RangedWeapon weapondamagemodifier="1" barrelpos="150,20" spread="1" unskilledspread="10" combatPriority="85" reload="0.75" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon weapondamagemodifier="1" barrelpos="200,25" spread="1" unskilledspread="10" combatPriority="85" reload="0.75" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -1775,7 +1778,7 @@
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    <ItemContainer capacity="1" maxstacksize="4" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0" containedspritedepth="0.56">
+    <ItemContainer capacity="1" maxstacksize="4" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <Containable items="tsm_shotgunammo_4" hide="true">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" holdpos="0,-30" holdangle="60" maxchargetime="999" setvalue="true" />
@@ -1788,6 +1791,10 @@
         </StatusEffect>
       </Containable>
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <SlotIcon slotindex="1" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
+        <Containable items="tsm_ks23_skins" hide="false" setactive="true" />
+      </SubContainer>
     </ItemContainer>
     <SkillRequirementHint identifier="weapons" level="40" />
   </Item>
@@ -1820,7 +1827,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/反抗军/separatists.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="0,1825,702,132" origin="0.45,0" scale="0.23" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon reload="0.5" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="300,15" spread="3" unskilledspread="70" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.5" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="340,12" spread="3" unskilledspread="70" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1498,198,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1497,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -1908,6 +1915,10 @@
           <conditional maxchargetime="eq 999" />
         </StatusEffect>
       </Containable>
+      <SubContainer capacity="1" maxstacksize="1">
+        <SlotIcon slotindex="1" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
+        <Containable items="tsm_svd_skins" hide="false" setactive="true" />
+      </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2700" soundrange="4500" fadeouttime="6" />
     <Quality>
@@ -1946,7 +1957,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/反抗军/separatists.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="90" inherittexturescale="false" hideotherwearables="false" sourcerect="5,1094,761,166" origin="0.3,1.2" scale="0.23" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.75" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon reload="0.1" weapondamagemodifier="1.15" holdtrigger="true" barrelpos="335,-30" spread="15" unskilledspread="50" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.35">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1.25" holdtrigger="true" barrelpos="370,-45" spread="15" unskilledspread="50" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.35">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -2023,7 +2034,7 @@
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="tsm_m2_skins" hide="false" setactive="true" />
       </SubContainer>
-      <SlotIcon slotindex="1" texture="%ModDir%/weapons/皮肤/skins_icon.png" sourcerect="0,1517,120,83" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
     </ItemContainer>
     <aitarget sightrange="2700" soundrange="5000" fadeouttime="5" />
@@ -2174,7 +2185,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/反抗军/separatists.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="12,904,575,159" origin="0.45,0" scale="0.24" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon reload="0.11" weapondamagemodifier="1" holdtrigger="true" barrelpos="280,5" spread="25" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.11" weapondamagemodifier="1" holdtrigger="true" barrelpos="280,-5" spread="25" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -2255,8 +2266,8 @@
       </Containable>
       <!--2.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="1" texture="%ModDir%/png/ui.png" sourcerect="529,286,55,27" origin="0.45,0.5" />
-        <Containable items="tsm_sight_mach" hide="false" itempos="-21,9" setactive="true" />
+        <SlotIcon slotindex="1" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
+        <Containable items="sighting" hide="false" itempos="-21,9" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2400" soundrange="4500" fadeouttime="5" />
@@ -2296,7 +2307,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/反抗军/separatists.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="764,1028,599,111" origin="0.45,-0.3" scale="0.27" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="280,5" spread="23" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="290,22" spread="23" unskilledspread="100" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -2381,8 +2392,8 @@
       </SubContainer>
       <!--2.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="1" texture="%ModDir%/png/ui.png" sourcerect="529,286,55,27" origin="0.45,0.5" />
-        <Containable items="tsm_sight_mach" hide="false" itempos="-22,17" setactive="true" />
+        <SlotIcon slotindex="1" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
+        <Containable items="sighting" hide="false" itempos="-22,17" setactive="true" />
       </SubContainer>
       <!--3.护木-->
       <SubContainer capacity="1" maxstacksize="1">
@@ -2417,7 +2428,7 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2123,1746,241,267" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1807,1169,679,193" depth="0.55" origin="0.5,0.5" />
-    <Body width="660" height="180" density="50" />
+    <Body width="679" height="180" density="50" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="30,-40" aimpos="28,-50" handle1="-220,20" handle2="200,-50" holdangle="10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.4" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.2" setvalue="true" />
@@ -2433,7 +2444,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/反抗军/separatists.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="90" inherittexturescale="false" hideotherwearables="false" sourcerect="1807,1169,679,193" origin="0.5,1.0" scale="0.25" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true" />
     </Wearable>
-    <RangedWeapon reload="0.1" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="270,0" spread="15" unskilledspread="50" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.35">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="325,25" spread="15" unskilledspread="50" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.35">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -2553,13 +2564,13 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1616,2099,142,157" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1039,1,492,126" depth="0.55" origin="0.5,0.5" />
-    <Body width="447" height="108" density="32" />
+    <Body width="492" height="116" density="32" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="63,-5" aimpos="65,-5" handle1="-100,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.155" penetration="0.25" holdtrigger="true" barrelpos="230,20" spread="15" unskilledspread="50" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.155" penetration="0.25" holdtrigger="true" barrelpos="235,22" spread="15" unskilledspread="50" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="307,3013,197,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="24,3083,222,136" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -2659,7 +2670,7 @@
         <Containable items="barrel" hide="false" itempos="65,6.5" containedspritedepth="0.51" Scale="0.20" setactive="true" />
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
+        <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-15,17.5" containedspritedepth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
@@ -2691,7 +2702,7 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1814,2108,137,142" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1081,152,468,107" depth="0.55" origin="0.5,0.5" />
-    <Body width="447" height="108" density="29" />
+    <Body width="468" height="100" density="29" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="63,-5" aimpos="65,-5" handle1="-80,-15" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.75" setvalue="true" />
@@ -2701,7 +2712,7 @@
       </StatusEffect>
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
-    <RangedWeapon reload="0.155" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="215,20" spread="7" unskilledspread="50" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.155" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="230,20" spread="7" unskilledspread="50" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="310,407,197,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="41,471,211,141" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -2826,7 +2837,7 @@
       </SubContainer>
       <!--5.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
+        <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-13,14.5" depth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
@@ -2857,13 +2868,13 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2023,2098,151,166" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1062,301,531,107" depth="0.55" origin="0.5,0.5" />
-    <Body width="447" height="108" density="26" />
+    <Body width="531" height="100" density="28" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="68,0" aimpos="72,3" handle1="-110,-15" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.13" penetration="0.15" holdtrigger="true" barrelpos="230,20" spread="10" unskilledspread="50" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.13" penetration="0.15" holdtrigger="true" barrelpos="250,10" spread="10" unskilledspread="50" combatPriority="87" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="311,3750,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="35,3750,198,199" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -2991,7 +3002,7 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2244,2119,133,152" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1074,471,460,115" depth="0.55" origin="0.5,0.5" />
-    <Body width="518" height="98" density="31" />
+    <Body width="460" height="105" density="31" />
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="65,2" aimpos="65,2" handle1="-88,-18" handle2="42,10" holdangle="-35" msg="ItemMsgPickUpSelect">
       <!--降低移动速度-->
@@ -3003,7 +3014,7 @@
       </StatusEffect>
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
-    <RangedWeapon reload="0.11" penetration="0.13" holdtrigger="true" barrelpos="205,35" spread="10" unskilledspread="25" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
+    <RangedWeapon reload="0.11" penetration="0.13" holdtrigger="true" barrelpos="220,15" spread="10" unskilledspread="25" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="884,0,197,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="580,55,254,156" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -3128,7 +3139,7 @@
         <Containable items="flashlight" hide="false" itempos="30,0" setactive="true" />
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="695,219,47,27" origin="0.45,0.5" />
+        <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="-3,14" containedspritedepth="0.56" setactive="true" />
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
@@ -3189,7 +3200,7 @@
       </StatusEffect>
     </ItemComponent>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.12" weapondamagemodifier="1.3" holdtrigger="true" barrelpos="230,5" spread="8" unskilledspread="50" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.25">
+    <RangedWeapon reload="0.12" weapondamagemodifier="1.3" holdtrigger="true" barrelpos="210,25" spread="8" unskilledspread="50" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.25">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,3979,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -3316,7 +3327,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.45" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.11" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="230,20" spread="6" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.11" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="220,20" spread="6" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <!--准星图标-->
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,3979,198,199" />
@@ -3405,7 +3416,7 @@
     <!--图标以及局内贴图-->
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1347,1818,173,198" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1423,1041,483,113" depth="0.55" origin="0.5,0.5" />
-    <Body width="451" height="108" density="30" />
+    <Body width="483" height="105" density="30" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="63,-5" aimpos="70,0" handle1="-100,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
@@ -3414,7 +3425,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.45" setvalue="true" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.105" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="230,20" spread="6" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.105" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="240,25" spread="6" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <!--准星图标-->
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,1498,198,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="302,1497,198,199" />
@@ -3590,7 +3601,7 @@
       </StatusEffect>
     </ItemComponent>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.11" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="220,20" spread="7" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.25">
+    <RangedWeapon reload="0.11" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="210,23" spread="7" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.25">
       <!--准星图标-->
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="32,3979,198,199" />
@@ -3688,7 +3699,7 @@
     <!--图标以及局内贴图-->
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="953,1828,159,168" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1209,772,434,103" depth="0.55" origin="0.5,0.5" />
-    <Body width="410" height="90" density="33" />
+    <Body width="434" height="95" density="33" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-5" aimpos="65,-2" handle1="-90,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
@@ -3704,7 +3715,7 @@
       </StatusEffect>
     </ItemComponent>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.1" penetration="0.2" holdtrigger="true" barrelpos="220,20" spread="7" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.25">
+    <RangedWeapon reload="0.1" penetration="0.2" holdtrigger="true" barrelpos="210,18" spread="7" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.25">
       <!--准星图标-->
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,3979,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="320,3993,178,185" />
@@ -3771,7 +3782,7 @@
       <RequiredSkill identifier="weapons" level="40" />
     </RangedWeapon>
     <!--里容器-->
-    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="1" containedspritedepth="0.56">
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="1">
       <Containable items="grenade" hide="true">
         <StatusEffect type="OnContaining" target="This" tags="grenade_reload" duration="0.05" stackable="false">
           <RequiredItem items="grenade" type="Contained" />
@@ -3796,10 +3807,14 @@
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="flashlight" hide="false" itempos="18,8" setactive="true" />
       </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="tsm_a545_skins" hide="false" setactive="true" />
+      </SubContainer>
       <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="4,216,75,35" origin="0.5,0.5" />
       <SlotIcon slotindex="1" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
       <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="411,271,88,45" origin="0.45,0.5" />
       <SlotIcon slotindex="3" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+      <SlotIcon slotindex="4" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
     </ItemContainer>
     <aitarget sightrange="2500" soundrange="5000" fadeouttime="6" />
     <!--品质-->
@@ -3852,12 +3867,12 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1555,1891,69,93" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1421,1178,184,98" depth="0.55" origin="0.5,0.5" />
-    <Body width="170" height="80" density="12" />
+    <Body width="184" height="88" density="12" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="50,-20" aimpos="70,0" handle1="-50,-5" handle2="-50,-5" holdangle="40" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.11" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="90,40" spread="10" unskilledspread="20" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
+    <RangedWeapon reload="0.11" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="90,30" spread="10" unskilledspread="20" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="375,4050,70,71" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="84,4031,94,94" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -3964,12 +3979,12 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1668,1913,57,61" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1421,1300,126,108" depth="0.55" origin="0.5,0.5" />
-    <Body width="110" height="95" density="12" />
+    <Body width="126" height="98" density="12" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="30,-20" aimpos="70,0" handle1="-20,-10" handle2="-30,-10" holdangle="60" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.92" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.09" weapondamagemodifier="1" holdtrigger="true" barrelpos="60,40" spread="12" unskilledspread="20" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
+    <RangedWeapon reload="0.09" weapondamagemodifier="1" holdtrigger="true" barrelpos="60,25" spread="12" unskilledspread="20" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="307,3013,197,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="24,3083,222,136" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -4089,13 +4104,13 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1780,1865,107,125" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1423,1422,299,103" depth="0.55" origin="0.5,0.5" />
-    <Body width="280" height="90" density="28" />
+    <Body width="299" height="95" density="28" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-5" aimpos="45,-2" handle1="-40,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.9" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="180,25" spread="12" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1" holdtrigger="true" barrelpos="145,22" spread="12" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,3979,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="375,4050,70,71" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -4215,7 +4230,7 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1934,1853,127,143" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1420,1531,344,123" depth="0.55" origin="0.5,0.5" />
-    <Body width="335" height="110" density="27" />
+    <Body width="344" height="113" density="27" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-5" aimpos="45,-2" handle1="-40,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.85" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
@@ -4225,7 +4240,7 @@
       </StatusEffect>
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
-    <RangedWeapon reload="0.1" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="160,30" spread="11" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="170,20" spread="11" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,3979,198,199" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="375,4050,70,71" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -4335,7 +4350,7 @@
       </SubContainer>
       <!--4.瞄具-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
         <Containable items="sighting" hide="false" itempos="3,16" depth="0.56" setactive="true" />
       </SubContainer>
       <!--5.护木-->
@@ -4374,13 +4389,13 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1585,1698,124,133" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1578,18,320,86" depth="0.55" origin="0.5,0.5" />
-    <Body width="120" height="100" density="24" />
+    <Body width="320" height="80" density="24" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-5" aimpos="45,-5" handle1="-15,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.95" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.115" weapondamagemodifier="1" holdtrigger="true" barrelpos="130,30" spread="13" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
+    <RangedWeapon reload="0.115" weapondamagemodifier="1" holdtrigger="true" barrelpos="153,21" spread="13" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="618,914,195,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="889,914,189,196" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -4502,13 +4517,13 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1752,1706,111,141" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1589,116,330,123" depth="0.55" origin="0.5,0.5" />
-    <Body width="120" height="110" density="24" />
+    <Body width="330" height="113" density="24" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,0" aimpos="45,10" handle1="-10,-15" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.95" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.105" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="130,20" spread="11" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
+    <RangedWeapon reload="0.105" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="165,7" spread="11" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="618,914,195,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="889,914,189,196" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -4627,7 +4642,7 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1166,1598,185,211" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1506,634,515,100" depth="0.55" origin="0.5,0.5" />
-    <Body width="120" height="110" density="24" />
+    <Body width="515" height="95" density="30" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="65,0" aimpos="68,5" handle1="-70,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.75" setvalue="true" />
@@ -4636,7 +4651,7 @@
         <Conditional HasTag="eq tsm_bzd1" />
       </StatusEffect>
     </Holdable>
-    <RangedWeapon reload="0.155" weapondamagemodifier="1" penetration="0.15" holdtrigger="true" barrelpos="235,30" spread="7" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
+    <RangedWeapon reload="0.15" weapondamagemodifier="1" penetration="0.15" holdtrigger="true" barrelpos="245,27" spread="7" unskilledspread="80" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="618,914,195,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="889,914,189,196" />
       <ParticleEmitter particle="steamspray" particleamount="1" velocitymin="0" velocitymax="0" scalemin="1" scalemax="1.25" />
@@ -4748,6 +4763,10 @@
         <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="411,271,88,45" origin="0.45,0.5" />
         <Containable items="tsm_sight_pso" hide="false" itempos="-10,11" depth="0.56" setactive="true" />
       </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <SlotIcon slotindex="3" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
+        <Containable items="tsm_vss_skins" hide="false" setactive="true" />
+      </SubContainer>
     </ItemContainer>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.08,0.1" anchor="BottomLeft" relativeoffset="0,0.31" style="ItemUI" />
@@ -4794,13 +4813,13 @@
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1888,1608,192,216" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1551,507,510,95" depth="0.55" origin="0.5,0.5" />
-    <Body width="120" height="110" density="24" />
+    <Body width="510" height="90" density="33" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="65,0" aimpos="68,5" handle1="-70,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.70" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.70" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.115" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="230,30" spread="9" unskilledspread="80" combatPriority="82" drawhudwhenequipped="true" crosshairscale="0.25">
+    <RangedWeapon reload="0.115" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="245,25" spread="9" unskilledspread="80" combatPriority="82" drawhudwhenequipped="true" crosshairscale="0.25">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="618,914,195,198" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="889,914,189,196" />
       <ParticleEmitter particle="steamspray" particleamount="1" velocitymin="0" velocitymax="0" scalemin="1" scalemax="1.25" />
@@ -4900,6 +4919,10 @@
       <SubContainer capacity="1" maxstacksize="1">
         <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="411,271,88,45" origin="0.45,0.5" />
         <Containable items="tsm_sight_pso" hide="false" itempos="-10,11" depth="0.56" setactive="true" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <SlotIcon slotindex="3" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
+        <Containable items="tsm_asval_skins" hide="false" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="800" soundrange="1000" fadeouttime="4" />
@@ -5609,15 +5632,15 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="反抗军通用机枪弹匣（7.62*51）" identifier="fkj_pkp_mag" subcategory="tsm_separatists" scale="0.36" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="fkj_mag,smallitem,fkj_pkp_mag,fkj_zd,magazine,gpmgammo,handheldammo" impactsoundtag="impact_metal_light" health="100" description="">
+  <Item name="反抗军通用机枪弹匣（7.62*54）" identifier="fkj_pkp_mag" subcategory="tsm_separatists" scale="0.36" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="fkj_mag,smallitem,fkj_pkp_mag,fkj_zd,magazine,gpmgammo,handheldammo" impactsoundtag="impact_metal_light" health="100" description="">
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="1934,221,48,109" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.54" sourcerect="1934,221,48,109" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="48" height="109" density="50" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt762_51" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-      <Containable items="pt762_51" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt762_54" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="pt762_54" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-        <SpawnItem identifiers="pt762_51" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="pt762_54" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
     <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="6" requiresrecipe="false">
@@ -5639,15 +5662,15 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="反抗军通用机枪穿甲弹匣（7.62*51）" identifier="fkj_pkp_mag_cj" subcategory="tsm_separatists" scale="0.36" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="fkj_mag,smallitem,fkj_pkp_mag,magazine,gpmgammo,handheldammo" impactsoundtag="impact_metal_light" health="100" description="">
+  <Item name="反抗军通用机枪穿甲弹匣（7.62*54）" identifier="fkj_pkp_mag_cj" subcategory="tsm_separatists" scale="0.36" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="fkj_mag,smallitem,fkj_pkp_mag,magazine,gpmgammo,handheldammo" impactsoundtag="impact_metal_light" health="100" description="">
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2003,69,51,109" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.54" sourcerect="2003,69,51,109" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="51" height="109" density="50" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt762_51_ap" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-      <Containable items="pt762_51_ap" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="762_54_ap" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="762_54_ap" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-        <SpawnItem identifiers="pt762_51_ap" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="762_54_ap" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
     <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="6" requiresrecipe="false">
@@ -5799,7 +5822,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--AA12弹匣-->
-  <Item name="反抗军霰弹弹鼓" identifier="fkj_aa12_mag" subcategory="tsm_separatists" scale="0.33" category="weapon" health="15" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" tags="fkj_aa12_mag,fkj_hzzd,smallitem,fkj_mag,magazine,handheldammo" impactsoundtag="impact_metal_light">
+  <Item name="反抗军霰弹弹鼓" identifier="fkj_aa12_mag" subcategory="tsm_separatists" scale="0.33" category="weapon" health="18" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" tags="fkj_aa12_mag,fkj_hzzd,smallitem,fkj_mag,magazine,handheldammo" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2453,231,36,99" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.56" sourcerect="2453,231,36,99" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -6086,7 +6109,7 @@
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
         <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,175,115,175" />
       </StatusEffect>
-      <Explosion range="10.0" strength="10" force="3.0"></Explosion>
+      <Explosion range="10.0" strength="10" force="3.0"/>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />
@@ -6119,6 +6142,69 @@
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
         <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,175,115,175" />
       </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="7.62*54r" identifier="pt762_54" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
+      <Attack structuredamage="1.5" targetforce="5" itemdamage="14" penetration="0.15" severlimbsprobability="0.3">
+        <Affliction identifier="gunshotwound" strength="20" />
+        <Affliction identifier="gunshotwound" strength="18" probability="0.5" />
+        <Affliction identifier="bleeding" strength="20" />
+        <Affliction identifier="bleedingnonstop" strength="15" probability="0.15" />
+        <Affliction identifier="stun" strength="0.25" probability="0.4" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,175,115,175" />
+      </StatusEffect>
+      <Explosion range="10.0" strength="10" force="3.0">
+      </Explosion>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="7.62*54ap" identifier="762_54_ap" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
+      <Attack structuredamage="2" targetforce="5" itemdamage="16" penetration="0.35" severlimbsprobability="0.3">
+        <Affliction identifier="gunshotwound" strength="20" />
+        <Affliction identifier="gunshotwound" strength="18" probability="0.55" />
+        <Affliction identifier="tsm_armorbreak_jz" strength="8" />
+        <Affliction identifier="bleeding" strength="20" />
+        <Affliction identifier="bleedingnonstop" strength="15" probability="0.15" />
+        <Affliction identifier="stun" strength="0.2" probability="0.3" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,175,115,175" />
+      </StatusEffect>
+      <Explosion range="10.0" strength="10" force="3.0">
+      </Explosion>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />

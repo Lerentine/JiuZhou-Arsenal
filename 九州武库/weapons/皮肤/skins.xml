@@ -12,7 +12,7 @@
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" />
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
     <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="585,434,446,126" depth="0.549" origin="0.5,0.5" />
     <Body width="110" height="70" density="0" />
     <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
@@ -28,7 +28,7 @@
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" />
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
     <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="579,139,458,131" depth="0.549" origin="0.5,0.5" />
     <Body width="110" height="70" density="0" />
     <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
@@ -44,7 +44,7 @@
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="greenpaint" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" />
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="5,1313,763,163" depth="0.549" origin="0.5,0.5" />
     <Body width="110" height="70" density="0" />
     <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
@@ -61,7 +61,7 @@
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" />
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
     <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="0,0,496,109" depth="0.549" origin="0.5,0.5" />
     <Body width="110" height="70" density="0" />
     <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
@@ -77,7 +77,7 @@
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" />
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
     <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="0,134,468,138" depth="0.549" origin="0.5,0.5" />
     <Body width="110" height="70" density="0" />
     <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
@@ -94,7 +94,7 @@
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="lldyj" mincondition="0.5"/>
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" />
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
     <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="0,299,397,139" depth="0.549" origin="0.5,0.5" />
     <Body width="110" height="70" density="0" />
     <Holdable slots="Any" msg="ItemMsgPickUpSelect">
@@ -114,7 +114,7 @@
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="lldyj" mincondition="0.5"/>
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" />
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
     <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="4,445,476,136" depth="0.549" origin="0.5,0.5" />
     <Body width="110" height="70" density="0" />
     <Holdable slots="Any" msg="ItemMsgPickUpSelect">
@@ -134,7 +134,7 @@
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="lldyj" mincondition="0.5"/>
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" />
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
     <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="0,598,472,153" depth="0.549" origin="0.5,0.5" />
     <Body width="110" height="70" density="0" />
     <Holdable slots="Any" msg="ItemMsgPickUpSelect">
@@ -142,5 +142,118 @@
         <ParticleEmitter particle="faradayfx" scalemultiplier="2,2" anglemax="360" emitinterval="2" particleamount="1" particlespersecond="1" />
       </StatusEffect>
     </Holdable>
+  </Item>
+  <!--潜行者系列-->
+  <Item name="AK74潜行者涂装" identifier="tsm_ak74_skins_qxz" subcategory="tsm_skins" category="Equipment" scale="0.25" tags="smallitem,tsm_gun_skins,tsm_ak74_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1">
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="greenpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="0,797,528,105" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
+  </Item>
+  <Item name="groza潜行者涂装" identifier="tsm_groza_skins_qxz" subcategory="tsm_skins" category="Equipment" scale="0.3" tags="smallitem,tsm_gun_skins,tsm_groza_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1">
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="greenpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="0,938,271,114" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
+  </Item>
+  <Item name="VSS潜行者涂装" identifier="tsm_vss_skins_qxz" subcategory="tsm_skins" category="Equipment" scale="0.24" tags="smallitem,tsm_gun_skins,tsm_vss_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1">
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="greenpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="0,1215,515,100" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
+  </Item>
+  <Item name="Asval潜行者涂装" identifier="tsm_asval_skins_qxz" subcategory="tsm_skins" category="Equipment" scale="0.24" tags="smallitem,tsm_gun_skins,tsm_asval_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1">
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="greenpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="0,1086,508,95" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
+  </Item>
+  <Item name="A545潜行者涂装" identifier="tsm_a545_skins_qxz" subcategory="tsm_skins" category="Equipment" scale="0.25" tags="smallitem,tsm_gun_skins,tsm_a545_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1">
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="greenpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="0,1348,434,103" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
+  </Item>
+  <Item name="KS23潜行者涂装" identifier="tsm_ks23_skins_qxz" subcategory="tsm_skins" category="Equipment" scale="0.22" tags="smallitem,tsm_gun_skins,tsm_ks23_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1">
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="greenpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="0,1468,436,89" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
+  </Item>
+  <Item name="SVD潜行者涂装" identifier="tsm_svd_skins_qxz" subcategory="tsm_skins" category="Equipment" scale="0.23" tags="smallitem,tsm_gun_skins,tsm_svd_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1">
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="greenpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="0,2368,702,132" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
   </Item>
 </Items>

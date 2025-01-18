@@ -11,7 +11,7 @@
     commonness="60"
     allowretry="true"
     targetitem="reactor"
-    minleveldifficulty="25"
+    minleveldifficulty="20"
     maxleveldifficulty="60"
     unhideentitysubcategories="abandonedhuman">
     <Icon texture="%ModDir%/png/ui.png" sourcerect="16,750,345,344" color="255,255,255" />
@@ -62,7 +62,7 @@
     commonness="65"
     allowretry="true"
     targetitem="reactor"
-    minleveldifficulty="33"
+    minleveldifficulty="25"
     maxleveldifficulty="60"
     unhideentitysubcategories="abandonedhuman">
     <Icon texture="%ModDir%/png/ui.png" sourcerect="16,750,345,344" color="255,255,255,255" />
@@ -92,7 +92,7 @@
       <Character requirekill="true" moduleflags="securitymodule" identifier="beowulf_p" from="beowulf_npcs" asfaraspossible="true" multiplayeronly="true" />
       <Character requirekill="true" moduleflags="securitymodule" identifier="beowulf_fire" from="beowulf_npcs" />
       <Character requirekill="true" moduleflags="banditleader" identifier="beowulf_elite_p" from="beowulf_npcs" />
-      <Character requirekill="true" moduleflags="banditleader" identifier="beowulf_leader" from="beowulf_npcs" multiplayeronly="true"/>
+      <Character requirekill="true" moduleflags="banditleader" identifier="beowulf_leader" from="beowulf_npcs" />
       <Character requirekill="true" moduleflags="banditleader" identifier="beowulf_sl" from="Combat_Npc_Customisation" />
       <Character requirekill="true" moduleflags="banditleader" identifier="beowulf_elite_p" from="beowulf_npcs" asfaraspossible="true" multiplayeronly="true" />
     </Characters>
@@ -102,6 +102,8 @@
     <TriggerEvent state="0" delay="1" eventidentifier="tsm_beowulf_buff_other" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_remove_husk" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_beowulf_bb" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_beowulf_complete_1" campaignonly="true" />
     <message header="" text="" />
   </AbandonedOutpostMission>
   <AbandonedOutpostMission identifier="tsm_combat_occupation"
@@ -328,7 +330,7 @@
       <Character requirekill="true" identifier="yehuo_p" from="yehuo_npcs" moduleflags="engineeringmodule" />
       <Character requirekill="true" identifier="yehuo" from="yehuo_npcs" moduleflags="engineeringmodule" multiplayeronly="true"/>
       <Character requirekill="true" identifier="yehuo" from="yehuo_npcs" moduleflags="engineeringmodule" />
-      <Character requirekill="true" identifier="yehuo_leader_cce" from="Combat_Npc_Customisation" moduleflags="engineeringmodule" asfaraspossible="true"/>
+      <Character requirekill="true" identifier="yehuo_cce" from="Combat_Npc_Customisation" moduleflags="engineeringmodule" asfaraspossible="true"/>
       <Character requirekill="true" identifier="yehuo_elite_p" from="yehuo_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
       <Character requirekill="true" identifier="yehuo_p" from="yehuo_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
       <Character requirekill="true" identifier="yehuo" from="yehuo_npcs" moduleflags="securitymodule" />
@@ -548,7 +550,7 @@
         <Character identifier="tsm_soldier" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" multiplayeronly="true"/>
         <Character identifier="tsm_soldier_csms" from="Combat_Npc_Customisation" moduleflags="securitymodule" requirekill="true" />
         <Character identifier="tsm_soldier" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" />
-        <Character identifier="tsm_advanced" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" multiplayeronly="true" />
+        <Character identifier="tsm_advanced" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" />
         <Character identifier="tsm_soldier_elite" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" />
         <Character identifier="tsm_soldier_p" from="tsm_npcs" moduleflags="securitymodule" asfaraspossible="true" requirekill="true" />
         <Character identifier="tsm_pgc" from="tsm_npcs" spawnpointtags="banditleader" requirekill="true"/>

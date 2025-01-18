@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="军用先进防护服" subcategory="TSM" identifier="tsm_xjzz_suit" category="Diving" tags="diving,deepdiving,divinggear_wearableindoors,provocative,tsm_suit" allowasextracargo="true" scale="0.5" fireproof="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="2">
+  <Item name="军用先进防护服" subcategory="TSM" identifier="tsm_xjzz_suit" category="Diving" tags="diving,deepdiving,divinggear_wearableindoors,provocative,tsm_suit,tsm_touhou_diving" allowasextracargo="true" scale="0.5" fireproof="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="2">
     <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.0" />
     <Deconstruct time="25">
       <Item identifier="titaniumaluminiumalloy" />

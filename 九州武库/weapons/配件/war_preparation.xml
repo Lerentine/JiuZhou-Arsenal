@@ -103,18 +103,18 @@
         <Sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="5000" frequency="2.0" />
         <Sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="5000" frequency="2.0" />
         <ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" distancemax="500" particleamount="270" velocitymin="1500" velocitymax="2000" scalemin="0.7" scalemax="1.2" />
-        <Explosion range="300.0" ballastfloradamage="100" structuredamage="20" levelwalldamage="140" itemdamage="350" force="5" debris="false" decal="explosion" decalsize="0.5">
+        <Explosion range="300.0" ballastfloradamage="100" structuredamage="20" levelwalldamage="140" itemdamage="350" force="5" debris="false" decal="explosion" decalsize="0.5" penetration="0.8">
           <Affliction identifier="explosiondamage" strength="150" />
           <Affliction identifier="stun" strength="4.0" />
         </Explosion>
-        <Explosion range="500.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="5">
+        <Explosion range="500.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="5" penetration="0.5">
           <Affliction identifier="explosiondamage" strength="10" dividebylimbcount="false" />
-          <Affliction identifier="bleedingnonstop" probability="0.3" strength="10" dividebylimbcount="false" />
+          <Affliction identifier="bleedingnonstop" probability="0.5" strength="10" dividebylimbcount="false" />
           <Affliction identifier="stun" strength="0.5" />
         </Explosion>
-        <Explosion range="900.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="4">
-          <Affliction identifier="gunshotwound" probability="0.3" strength="15" dividebylimbcount="false" />
-          <Affliction identifier="bleedingnonstop" probability="0.3" strength="15" dividebylimbcount="false" />
+        <Explosion range="900.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="4" penetration="0.3">
+          <Affliction identifier="gunshotwound" probability="0.8" strength="15" dividebylimbcount="false" />
+          <Affliction identifier="bleedingnonstop" probability="0.5" strength="15" dividebylimbcount="false" />
           <Affliction identifier="stun" strength="0.5" />
         </Explosion>
         <Explosion range="1000.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="3">
@@ -192,7 +192,7 @@
       <QualityStat stattype="ExplosionDamage" value="0.1" />
     </Quality>
   </Item>
-  <Item name="" identifier="tsm_Pullsafetypin" subcategory="war preparation" noninteractable="true" hiddeningame="true" hideinmenus="true">
+  <Item identifier="tsm_Pullsafetypin" subcategory="war preparation" noninteractable="true" hiddeningame="true" hideinmenus="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <ItemComponent>
       <StatusEffect type="OnBroken" target="This">
@@ -202,7 +202,7 @@
       </StatusEffect>
     </ItemComponent>
   </Item>
-  <Item name="" identifier="tsm_fraggrenadespoon" subcategory="war preparation" noninteractable="true" hiddeningame="true" hideinmenus="true">
+  <Item identifier="tsm_fraggrenadespoon" subcategory="war preparation" noninteractable="true" hiddeningame="true" hideinmenus="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <ItemComponent>
       <StatusEffect type="OnBroken" target="This">
@@ -334,7 +334,7 @@
     </Holdable>
     <ItemComponent characterusable="false">
       <StatusEffect type="OnBroken" target="This">
-        <Explosion range="200.0" force="10" ignoreCover="true" severlimbsprobability="8" penetration="1" ballastfloradamage="300" structuredamage="800" itemdamage="3000" debris="true">
+        <Explosion range="200.0" force="10" ignoreCover="true" severlimbsprobability="8" penetration="1" ballastfloradamage="500" structuredamage="800" itemdamage="3000" debris="true">
           <Affliction identifier="explosiondamage" strength="20"/>
           <Affliction identifier="bleeding" strength="5"/>
           <Affliction identifier="burn" strength="5" />
@@ -424,5 +424,73 @@
         </Explosion>
       </StatusEffect>
     </Projectile>
+  </Item>
+  <!--阔剑-->
+  <Item name="阔刀" Tags="smallitem,explosive,tsm_claymore" identifier="tsm_claymore_mine" category="Equipment" maxstacksize="2" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" isshootable="true">
+    <Sprite texture="%ModDir%/weapons/配件/war_preparation.png" depth="0.8" sourcerect="0,1,87,108" origin="0.5,0.5" />
+    <Body width="80" height="90" density="6" />
+    <!--部署-->
+    <Throwable slots="Any,RightHand,LeftHand" aimpos="-15,-35" handle1="0,0" holdangle="90" throwforce="0.3" msg="ItemMsgPickUpSelect">
+      <!--倒计时部署-->
+      <StatusEffect type="OnSecondaryUse" target="This" delay="0.5" disabledeltatime="true">
+        <!--生成阔剑-->
+        <SpawnItem identifier="tsm_claymore_mine_active" spawnposition="This" />
+        <Remove />
+      </StatusEffect>
+    </Throwable>
+    <PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
+    <PreferredContainer primary="armcab" secondary="locker" />
+    <Price baseprice="333" buyingpricemultiplier="2" canbespecial="true" minleveldifficulty="0" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="1" />
+      <Price locationtype="city" multiplier="1.35" minavailable="0" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" minavailable="0" maxavailable="1" />
+      <Price locationtype="military" multiplier="1.10" minavailable="1" maxavailable="4" />
+      <Price locationtype="mine" multiplier="1.25" minavailable="0" maxavailable="3" />
+    </Price>
+  </Item>
+  <Item name="阔刀地雷" Tags="smallitem,explosive,tsm_claymore" identifier="tsm_claymore_mine_active" category="Equipment" scale="0.35" impactsoundtag="impact_metal_light" isshootable="true" hideinmenus="true">
+    <Sprite texture="%ModDir%/weapons/配件/war_preparation.png" depth="0.55" sourcerect="101,6,52,99" origin="0.5,0.5" />
+    <Body width="45" height="85" density="6" />
+    <!--运动传感器-->
+    <MotionSensor canbeselected="true" target="Any" ignoredead="True" rangex="20" rangey="60" detectoffset="0,60" updateinterval="0.1" maxoutputlength="200" output="" falseoutput="" minimumvelocity="2" pickingtime="0" canbepicked="False" allowingameediting="True" msg="" />
+    <!--物品组件-->
+    <ItemComponent characterusable="false">
+      <!--感应引爆-->
+      <StatusEffect type="OnNotContained" target="This" Condition="-100.0" disabledeltatime="true" comparison="And">
+        <Conditional MotionDetected="true" targetitemcomponent="MotionSensor" />
+        <Conditional HasTag="eq tsm_claymore_on" />
+      </StatusEffect>
+      <!--引爆-->
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" type="OnUse" range="10000" selectionmode="All" />
+        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" type="OnUse" range="10000" />
+        <Explosion range="500" structuredamage="40" ballastfloradamage="200" itemdamage="500" force="10" severlimbsprobability="5" decal="explosion" decalsize="0.7" screencolor="0,0,0,255" screencolorrange="500" screencolorduration="10" penetration="0.5">
+          <Affliction identifier="explosiondamage" strength="50" />
+          <Affliction identifier="bleeding" strength="20" />
+          <Affliction identifier="internaldamage" strength="10" />
+          <Affliction identifier="stun" strength="2" />
+          <Affliction identifier="concussion" strength="1" />
+        </Explosion>
+        <ParticleEmitter particle="shrapnel" particleamount="300" copyentityangle="true" anglemin="0" anglemax="360" velocitymin="500" velocitymax="1000" scalemin="1" scalemax="0.55" distancemin="150" distancemax="500" drawontop="true" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+    <LightComponent AllowInGameEditing="false" lightcolor="255,0,0,255" canbeselected="false" range="10.0" IsOn="true" castshadows="false" />
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.1,0.1" anchor="BottomCenter" absoluteoffset="30,100" style="ItemUI" />
+      <TickBox text="tos">
+        <!--延迟3秒关闭运动传感器-->
+        <StatusEffect type="OnUse" target="This" Tags="tsm_claymore_off" setvalue="true" />
+        <StatusEffect type="OnSecondaryUse" target="This" Tags="tsm_claymore_on" setvalue="true" delay="3" />
+      </TickBox>
+      <Button text="dm">
+        <StatusEffect type="OnUse" target="This">
+          <Remove />
+          <SpawnItem identifier="tsm_claymore_mine" spawnposition="This" />
+        </StatusEffect>
+      </Button>
+    </CustomInterface>
   </Item>
 </Items>
