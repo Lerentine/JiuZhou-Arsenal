@@ -346,14 +346,14 @@
     <Holdable slots="LeftHand" controlpose="true" holdpos="2,25" handle1="48,28" handle2="48,28" aimable="false" holdangle="-15" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.2" setvalue="true" />
       <StatusEffect type="OnUse" target="This" EventUserTag="itemusingplayer" condition="-15" oneshot="true" disabledeltatime="true">
-        <Conditional Condition="lte 1"/>
+        <Conditional Condition="lte 1" />
         <TriggerEvent identifier="tsm_openblindbox_lm" />
         <particleemitter particle="tsm_confettifall" particleamount="20" emitinterval="1000" velocitymin="0" velocitymax="50" anglemin="0" anglemax="180" scalemin="2" scalemax="3" />
         <particleemitter particle="tsm_confettifall" particleamount="20" emitinterval="1000" velocitymin="0" velocitymax="50" anglemin="0" anglemax="180" scalemin="2" scalemax="3" />
         <Explosion range="500.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="true" underwaterbubble="true" camerashake="50" />
         <Sound file="%ModDir%/bags/Box_drop_lv1.ogg" range="5000" />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="This" >
+      <StatusEffect type="OnBroken" target="This">
         <Remove />
       </StatusEffect>
     </Holdable>
@@ -364,7 +364,7 @@
       <!--权限卡解锁-->
       <Containable items="tsm_identifier" excludeditems="none">
         <StatusEffect type="OnContaining" targettype="This" condition="-15" drawinventory="false">
-          <Conditional Condition="gt 1"/>
+          <Conditional Condition="gt 1" />
           <Sound file="%ModDir%/bags/Box_Rollx.ogg" range="5000" loop="false" />
           <Explosion range="200.0" force="0.3" shockwave="false" smoke="false" flames="false" flash="false" sparks="true" underwaterbubble="true" camerashake="5" />
         </StatusEffect>
@@ -384,14 +384,14 @@
     <Holdable slots="LeftHand" controlpose="true" holdpos="2,25" handle1="48,28" handle2="48,28" aimable="false" holdangle="-15" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.2" setvalue="true" />
       <StatusEffect type="OnUse" target="This" EventUserTag="itemusingplayer" condition="-15" oneshot="true" disabledeltatime="true">
-        <Conditional Condition="lte 1"/>
+        <Conditional Condition="lte 1" />
         <TriggerEvent identifier="tsm_openblindbox_fkj" />
         <particleemitter particle="tsm_confettifall" particleamount="20" emitinterval="1000" velocitymin="0" velocitymax="50" anglemin="0" anglemax="180" scalemin="2" scalemax="3" />
         <particleemitter particle="tsm_confettifall" particleamount="20" emitinterval="1000" velocitymin="0" velocitymax="50" anglemin="0" anglemax="180" scalemin="2" scalemax="3" />
         <Explosion range="500.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="true" underwaterbubble="true" camerashake="50" />
         <Sound file="%ModDir%/bags/Box_drop_lv1.ogg" range="5000" />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="This" >
+      <StatusEffect type="OnBroken" target="This">
         <Remove />
       </StatusEffect>
     </Holdable>
@@ -402,7 +402,7 @@
       <!--权限卡解锁-->
       <Containable items="tsm_identifier" excludeditems="none">
         <StatusEffect type="OnContaining" targettype="This" condition="-15" drawinventory="false">
-          <Conditional Condition="gt 1"/>
+          <Conditional Condition="gt 1" />
           <Sound file="%ModDir%/bags/Box_Rollx.ogg" range="5000" loop="false" />
           <Explosion range="200.0" force="0.3" shockwave="false" smoke="false" flames="false" flash="false" sparks="true" underwaterbubble="true" camerashake="5" />
         </StatusEffect>
@@ -422,14 +422,14 @@
     <Holdable slots="LeftHand" controlpose="true" holdpos="2,25" handle1="48,28" handle2="48,28" aimable="false" holdangle="-15" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.2" setvalue="true" />
       <StatusEffect type="OnUse" target="This" EventUserTag="itemusingplayer" condition="-15" oneshot="true" disabledeltatime="true">
-        <Conditional Condition="lte 1"/>
+        <Conditional Condition="lte 1" />
         <TriggerEvent identifier="tsm_openblindbox_tsm" />
         <particleemitter particle="tsm_confettifall" particleamount="20" emitinterval="1000" velocitymin="0" velocitymax="50" anglemin="0" anglemax="180" scalemin="2" scalemax="3" />
         <particleemitter particle="tsm_confettifall" particleamount="20" emitinterval="1000" velocitymin="0" velocitymax="50" anglemin="0" anglemax="180" scalemin="2" scalemax="3" />
         <Explosion range="500.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="true" underwaterbubble="true" camerashake="50" />
         <Sound file="%ModDir%/bags/Box_drop_lv1.ogg" range="5000" />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="This" >
+      <StatusEffect type="OnBroken" target="This">
         <Remove />
       </StatusEffect>
     </Holdable>
@@ -440,7 +440,7 @@
       <!--权限卡解锁-->
       <Containable items="tsm_identifier" excludeditems="none">
         <StatusEffect type="OnContaining" targettype="This" condition="-15" drawinventory="false">
-          <Conditional Condition="gt 1"/>
+          <Conditional Condition="gt 1" />
           <Sound file="%ModDir%/bags/Box_Rollx.ogg" range="5000" loop="false" />
           <Explosion range="200.0" force="0.3" shockwave="false" smoke="false" flames="false" flash="false" sparks="true" underwaterbubble="true" camerashake="5" />
         </StatusEffect>

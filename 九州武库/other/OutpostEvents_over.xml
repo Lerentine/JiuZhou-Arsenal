@@ -1,290 +1,297 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Override>
-<Randomevents>
-  <EventPrefabs>
-  <!--站点-->
-  <ScriptedEvent identifier="tsm_wz_ff_event" commonness="100">
-    <TagAction criteria="player" tag="player" />
-    <SpawnAction npcsetidentifier="tsm_city_npcs" npcidentifier="tsm_wz_ff" targettag="tsm_wz_ff" spawnlocation="Outpost" targetmoduletags="airlock" />
-    <StatusEffectAction targettag="tsm_wz_ff">
-      <StatusEffect target="This" UseHealthWindow="false" />
-    </StatusEffectAction>
-    <Label name="beginningofthejourney" />
-    <NPCWaitAction npctag="tsm_wz_ff" wait="false" />
-    <TriggerAction target1tag="tsm_wz_ff" target2tag="player" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
-    <ConversationAction targettag="triggerer_player" text="tsm.jxg.help">
-      <Option text="tsm.dh.yjsbm">
-        <ConversationAction targettag="triggerer_player" text="tsm.dh.xh1" >
-          <Option text="tsm.dh.kw">
-            <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
-              <Success>
-                <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1"/>
-                <ConversationAction targettag="triggerer_player" text="tsm.over" />
-                <SpawnAction itemidentifier="tsm_wz_cl_flare" targetinventory="triggerer_player" />
-                <ClearTagAction tag="triggerer_player"/>
+  <Randomevents>
+    <EventPrefabs>
+      <!--站点-->
+      <ScriptedEvent identifier="tsm_wz_ff_event" commonness="100">
+        <TagAction criteria="player" tag="player" />
+        <SpawnAction npcsetidentifier="tsm_city_npcs" npcidentifier="tsm_wz_ff" targettag="tsm_wz_ff" spawnlocation="Outpost" targetmoduletags="airlock" />
+        <StatusEffectAction targettag="tsm_wz_ff">
+          <StatusEffect target="This" UseHealthWindow="false" />
+        </StatusEffectAction>
+        <Label name="beginningofthejourney" />
+        <NPCWaitAction npctag="tsm_wz_ff" wait="false" />
+        <TriggerAction target1tag="tsm_wz_ff" target2tag="player" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
+        <ConversationAction targettag="triggerer_player" text="tsm.jxg.help">
+          <Option text="tsm.dh.yjsbm">
+            <ConversationAction targettag="triggerer_player" text="tsm.dh.xh1">
+              <Option text="tsm.dh.kw">
+                <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
+                  <Success>
+                    <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
+                    <ConversationAction targettag="triggerer_player" text="tsm.over" />
+                    <SpawnAction itemidentifier="tsm_wz_cl_flare" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.no.id" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckItemAction>
+              </Option>
+              <Option text="tsm.dh.yl">
+                <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
+                  <Success>
+                    <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
+                    <ConversationAction targettag="triggerer_player" text="tsm.over" />
+                    <SpawnAction itemidentifier="tsm_wz_yl_flare" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.no.id" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckItemAction>
+              </Option>
+              <Option text="tsm.dh.dy">
+                <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
+                  <Success>
+                    <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
+                    <ConversationAction targettag="triggerer_player" text="tsm.over" />
+                    <SpawnAction itemidentifier="tsm_ammunition_resupply" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.no.id" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckItemAction>
+              </Option>
+              <Option text="tsm.dh.hw">
+                <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
+                  <Success>
+                    <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
+                    <ConversationAction targettag="triggerer_player" text="tsm.over" />
+                    <SpawnAction itemidentifier="tsm_pgcflare" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.no.id" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckItemAction>
+              </Option>
+              <Option text="tsm.dh.bg">
+                <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
+                  <Success>
+                    <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
+                    <ConversationAction targettag="triggerer_player" text="tsm.over" />
+                    <SpawnAction itemidentifier="tsm_triton_bag" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.no.id" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckItemAction>
+              </Option>
+              <Option text="tsm.wait">
+                <ConversationAction text="tsm.npc.wait" dialogtype="Small" targettag="triggerer_player" />
+                <ClearTagAction tag="triggerer_player" />
                 <GoTo name="beginningofthejourney" />
-              </Success>
+              </Option>
+            </ConversationAction>
+          </Option>
+          <Option text="tsm.dh.faction">
+            <ConversationAction targettag="triggerer_player" text="tsm.dh.faction.25">
+              <Option text="tsm.dh.kw">
+                <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
+                  <Success>
+                    <ReputationAction targettype="Faction" identifier="tsm" increase="-3" />
+                    <ConversationAction targettag="triggerer_player" text="tsm.over" />
+                    <SpawnAction itemidentifier="tsm_wz_cl_flare" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.no.faction" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckReputationAction>
+              </Option>
+              <Option text="tsm.dh.yl">
+                <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
+                  <Success>
+                    <ReputationAction targettype="Faction" identifier="tsm" increase="-3" />
+                    <ConversationAction targettag="triggerer_player" text="tsm.over" />
+                    <SpawnAction itemidentifier="tsm_wz_yl_flare" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.no.faction" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckReputationAction>
+              </Option>
+              <Option text="tsm.dh.dy">
+                <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
+                  <Success>
+                    <ReputationAction targettype="Faction" identifier="tsm" increase="-3" />
+                    <ConversationAction targettag="triggerer_player" text="tsm.over" />
+                    <SpawnAction itemidentifier="tsm_ammunition_resupply" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.no.faction" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckReputationAction>
+              </Option>
+              <Option text="tsm.dh.hw">
+                <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
+                  <Success>
+                    <ReputationAction targettype="Faction" identifier="tsm" increase="-2" />
+                    <ConversationAction targettag="triggerer_player" text="tsm.over" />
+                    <SpawnAction itemidentifier="tsm_pgcflare" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.no.faction" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckReputationAction>
+              </Option>
+              <Option text="tsm.dh.bg">
+                <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
+                  <Success>
+                    <ReputationAction targettype="Faction" identifier="tsm" increase="-2" />
+                    <ConversationAction targettag="triggerer_player" text="tsm.over" />
+                    <SpawnAction itemidentifier="tsm_triton_bag" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.no.faction" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckReputationAction>
+              </Option>
+              <Option text="tsm.wait">
+                <ConversationAction text="tsm.npc.wait" dialogtype="Small" targettag="triggerer_player" />
+                <ClearTagAction tag="triggerer_player" />
+                <GoTo name="beginningofthejourney" />
+              </Option>
+            </ConversationAction>
+          </Option>
+          <Option text="tsm.bg_licences">
+            <ConversationAction targettag="triggerer_player" text="tsm.d1">
+              <Option text="tsm.dh.bg">
+                <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_bg_licences" amount="1">
+                  <Success>
+                    <RemoveItemAction targettag="triggerer_player" identifier="tsm_bg_licences" amount="1" />
+                    <ConversationAction targettag="triggerer_player" text="tsm.bg1" />
+                    <SpawnAction itemidentifier="tsm_triton_bag" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.d2" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckItemAction>
+              </Option>
+              <Option text="tsm.dh.id">
+                <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_bg_licences" amount="1">
+                  <Success>
+                    <RemoveItemAction targettag="triggerer_player" identifier="tsm_bg_licences" amount="1" />
+                    <ConversationAction targettag="triggerer_player" text="tsm.over" />
+                    <SpawnAction itemidentifier="tsm_identifier" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.d2" />
+                    <ClearTagAction tag="triggerer_player" />
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckItemAction>
+              </Option>
+              <Option text="tsm.wait">
+                <ConversationAction text="tsm.npc.wait" dialogtype="Small" targettag="triggerer_player" />
+                <ClearTagAction tag="triggerer_player" />
+                <GoTo name="beginningofthejourney" />
+              </Option>
+            </ConversationAction>
+          </Option>
+          <Option text="tsm.dh.vip">
+            <CheckReputationAction targettype="Faction" identifier="tsm" condition="gt 59">
+              <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.js" />
               <Failure>
-                <ConversationAction targettag="triggerer_player" text="tsm.no.id" />
-                <ClearTagAction tag="triggerer_player"/>
+                <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.60.failure" />
                 <GoTo name="beginningofthejourney" />
               </Failure>
-            </CheckItemAction>
-          </Option>
-          <Option text="tsm.dh.yl">
-            <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
               <Success>
-                <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1"/>
-                <ConversationAction targettag="triggerer_player" text="tsm.over" />
-                <SpawnAction itemidentifier="tsm_wz_yl_flare" targetinventory="triggerer_player" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
+                <CheckDataAction identifier="tsm_vip_save_1" condition="eq true">
+                  <Success>
+                    <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.success" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.60.success" />
+                    <SpawnAction npcsetidentifier="tsm_outpost_combat_npcs" npcidentifier="tsm_vip_bodyguard_1" targettag="tsm_vip_bodyguard_1" teamid="FriendlyNPC" spawnpointtag="admin" spawnlocation="Outpost" />
+                    <NPCChangeTeamAction npctag="tsm_vip_bodyguard_1" teamid="Team1" addtocrew="true" />
+                    <SetDataAction identifier="tsm_vip_save_1" value="true" />
+                    <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.rd.success" />
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckDataAction>
               </Success>
-              <Failure>
-                <ConversationAction targettag="triggerer_player" text="tsm.no.id" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Failure>
-            </CheckItemAction>
-          </Option>
-          <Option text="tsm.dh.dy">
-            <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
-              <Success>
-                <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1"/>
-                <ConversationAction targettag="triggerer_player" text="tsm.over" />
-                <SpawnAction itemidentifier="tsm_ammunition_resupply" targetinventory="triggerer_player" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Success>
-              <Failure>
-                <ConversationAction targettag="triggerer_player" text="tsm.no.id" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Failure>
-            </CheckItemAction>
-          </Option>
-          <Option text="tsm.dh.hw">
-            <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
-              <Success>
-                <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
-                <ConversationAction targettag="triggerer_player" text="tsm.over" />
-                <SpawnAction itemidentifier="tsm_pgcflare" targetinventory="triggerer_player" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Success>
-              <Failure>
-                <ConversationAction targettag="triggerer_player" text="tsm.no.id" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Failure>
-            </CheckItemAction>
-          </Option>
-          <Option text="tsm.dh.bg">
-            <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
-              <Success>
-                <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
-                <ConversationAction targettag="triggerer_player" text="tsm.over" />
-                <SpawnAction itemidentifier="tsm_triton_bag" targetinventory="triggerer_player" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Success>
-              <Failure>
-                <ConversationAction targettag="triggerer_player" text="tsm.no.id" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Failure>
-            </CheckItemAction>
-          </Option>
-          <Option text="tsm.wait">
-            <ConversationAction text="tsm.npc.wait" dialogtype="Small" targettag="triggerer_player" />
-            <ClearTagAction tag="triggerer_player"/>
-            <GoTo name="beginningofthejourney" />
-          </Option>
-        </ConversationAction>
-      </Option>
-      <Option text="tsm.dh.faction">
-        <ConversationAction targettag="triggerer_player" text="tsm.dh.faction.25">
-          <Option text="tsm.dh.kw">
-            <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
-              <Success>
-                <ReputationAction targettype="Faction" identifier="tsm" increase="-3" />
-                <ConversationAction targettag="triggerer_player" text="tsm.over" />
-                <SpawnAction itemidentifier="tsm_wz_cl_flare" targetinventory="triggerer_player" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Success>
-              <Failure>
-                <ConversationAction targettag="triggerer_player" text="tsm.no.faction" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Failure>
             </CheckReputationAction>
           </Option>
-          <Option text="tsm.dh.yl">
-            <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
-              <Success>
-                <ReputationAction targettype="Faction" identifier="tsm" increase="-3" />
-                <ConversationAction targettag="triggerer_player" text="tsm.over" />
-                <SpawnAction itemidentifier="tsm_wz_yl_flare" targetinventory="triggerer_player" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Success>
-              <Failure>
-                <ConversationAction targettag="triggerer_player" text="tsm.no.faction" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Failure>
-            </CheckReputationAction>
-          </Option>
-          <Option text="tsm.dh.dy">
-            <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
-              <Success>
-                <ReputationAction targettype="Faction" identifier="tsm" increase="-3" />
-                <ConversationAction targettag="triggerer_player" text="tsm.over" />
-                <SpawnAction itemidentifier="tsm_ammunition_resupply" targetinventory="triggerer_player" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Success>
-              <Failure>
-                <ConversationAction targettag="triggerer_player" text="tsm.no.faction" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Failure>
-            </CheckReputationAction>
-          </Option>
-          <Option text="tsm.dh.hw">
-            <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
-              <Success>
-                <ReputationAction targettype="Faction" identifier="tsm" increase="-2" />
-                <ConversationAction targettag="triggerer_player" text="tsm.over" />
-                <SpawnAction itemidentifier="tsm_pgcflare" targetinventory="triggerer_player" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Success>
-              <Failure>
-                <ConversationAction targettag="triggerer_player" text="tsm.no.faction" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Failure>
-            </CheckReputationAction>
-          </Option>
-          <Option text="tsm.dh.bg">
-            <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
-              <Success>
-                <ReputationAction targettype="Faction" identifier="tsm" increase="-2" />
-                <ConversationAction targettag="triggerer_player" text="tsm.over" />
-                <SpawnAction itemidentifier="tsm_triton_bag" targetinventory="triggerer_player" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Success>
-              <Failure>
-                <ConversationAction targettag="triggerer_player" text="tsm.no.faction" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Failure>
-            </CheckReputationAction>
-          </Option>
-          <Option text="tsm.wait">
-            <ConversationAction text="tsm.npc.wait" dialogtype="Small" targettag="triggerer_player" />
-            <ClearTagAction tag="triggerer_player"/>
-            <GoTo name="beginningofthejourney" />
-          </Option>
-        </ConversationAction>
-      </Option>
-      <Option text="tsm.bg_licences">
-        <ConversationAction targettag="triggerer_player" text="tsm.d1" >
-          <Option text="tsm.dh.bg">
-            <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_bg_licences" amount="1">
-              <Success>
-                <RemoveItemAction targettag="triggerer_player" identifier="tsm_bg_licences" amount="1"/>
-                <ConversationAction targettag="triggerer_player" text="tsm.bg1" />
-                <SpawnAction itemidentifier="tsm_triton_bag" targetinventory="triggerer_player" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Success>
-              <Failure>
-                <ConversationAction targettag="triggerer_player" text="tsm.d2" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Failure>
-            </CheckItemAction>
-          </Option>
-          <Option text="tsm.dh.id">
-            <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_bg_licences" amount="1">
-              <Success>
-                <RemoveItemAction targettag="triggerer_player" identifier="tsm_bg_licences" amount="1"/>
-                <ConversationAction targettag="triggerer_player" text="tsm.over" />
-                <SpawnAction itemidentifier="tsm_identifier" targetinventory="triggerer_player" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Success>
-              <Failure>
-                <ConversationAction targettag="triggerer_player" text="tsm.d2" />
-                <ClearTagAction tag="triggerer_player"/>
-                <GoTo name="beginningofthejourney" />
-              </Failure>
-            </CheckItemAction>
-          </Option>
-          <Option text="tsm.wait">
-            <ConversationAction text="tsm.npc.wait" dialogtype="Small" targettag="triggerer_player" />
-            <ClearTagAction tag="triggerer_player"/>
-            <GoTo name="beginningofthejourney" />
-          </Option>
-        </ConversationAction>
-      </Option>
-      <Option text="tsm.dh.vip">
-      <CheckReputationAction targettype="Faction" identifier="tsm" condition="gt 59">
-        <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.js"/>
-        <Failure>
-          <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.60.failure"/>
-          <GoTo name="beginningofthejourney" />
-        </Failure>
-        <Success>
-          <CheckDataAction identifier="tsm_vip_save_1" condition="eq true">
-          <Success>
-            <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.success"/>
-          </Success>
-          <Failure>
-          <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.60.success"/>
-          <SpawnAction npcsetidentifier="tsm_outpost_combat_npcs" npcidentifier="tsm_vip_bodyguard_1" targettag="tsm_vip_bodyguard_1" teamid="FriendlyNPC" spawnpointtag="admin" spawnlocation="Outpost" />
-          <NPCChangeTeamAction npctag="tsm_vip_bodyguard_1" teamid="Team1" addtocrew="true" />
-          <SetDataAction identifier="tsm_vip_save_1" value="true" />
-          <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.rd.success"/>
-          <GoTo name="beginningofthejourney" />
-          </Failure>
-          </CheckDataAction>
-        </Success>
-      </CheckReputationAction>
-      </Option>
-      <!--Option text="tsm.hd.mc">
+          <!--Option text="tsm.hd.mc">
             <ConversationAction targettag="triggerer_player" text="tsm.hd.mc1" />
             <SpawnAction itemidentifier="tsm_holiday_g11" targetinventory="triggerer_player" />
             <ClearTagAction tag="triggerer_player"/>
             <GoTo name="beginningofthejourney" />
       </Option-->
-      <Option text="tsm.wait">
-        <ConversationAction text="tsm.npc.wait" dialogtype="Small" targettag="triggerer_player" />
-        <ClearTagAction tag="triggerer_player"/>
-        <GoTo name="beginningofthejourney" />
-      </Option>
-    </ConversationAction>
-    <NPCWaitAction npctag="tsm_wz_ff" wait="false" />
-  </ScriptedEvent>
-  <!--运输任务锁装备-->
-  <ScriptedEvent identifier="tsm_lockgear_mission">
-      <TagAction criteria="itemidentifier:tsm_helmet_outpost_combat" tag="locked" continueifnotargetsfound="true" />
-      <TagAction criteria="itemidentifier:tsm_nujiang_uniform" tag="locked" continueifnotargetsfound="true" />
-      <TagAction criteria="itemidentifier:tsm_heavycombat_helmet" tag="locked" continueifnotargetsfound="true" />
-      <TagAction criteria="itemidentifier:tsm_heavy_vest" tag="locked" continueifnotargetsfound="true" />
-      <TagAction criteria="itemidentifier:tsm_advanced_uniform" tag="locked" continueifnotargetsfound="true" />
-      <TagAction criteria="itemidentifier:tsm_qbz_191" tag="locked" continueifnotargetsfound="true" />
-      <TagAction criteria="itemidentifier:tsm_advanced_191" tag="locked" continueifnotargetsfound="true" />
-      <StatusEffectAction targettag="locked">
-        <StatusEffect target="This" nonplayerteaminteractable="true">
-          <Conditional targetcontainer="true" teamid="FriendlyNPC" />
-        </StatusEffect>
-      </StatusEffectAction>
-    </ScriptedEvent>
-  </EventPrefabs>
-</Randomevents>
+          <Option text="新年快乐，愿你的戎装依旧笔挺，心中有火，眼中有光">
+            <ConversationAction targettag="triggerer_player" text="同乐，共勉" />
+            <SpawnAction itemidentifier="tsm_jz_newyear" targetinventory="triggerer_player" />
+            <SpawnAction itemidentifier="tsm_holiday_192" targetinventory="triggerer_player" />
+            <ClearTagAction tag="triggerer_player" />
+            <GoTo name="beginningofthejourney" />
+          </Option>
+          <Option text="tsm.wait">
+            <ConversationAction text="tsm.npc.wait" dialogtype="Small" targettag="triggerer_player" />
+            <ClearTagAction tag="triggerer_player" />
+            <GoTo name="beginningofthejourney" />
+          </Option>
+        </ConversationAction>
+        <NPCWaitAction npctag="tsm_wz_ff" wait="false" />
+      </ScriptedEvent>
+      <!--运输任务锁装备-->
+      <ScriptedEvent identifier="tsm_lockgear_mission">
+        <TagAction criteria="itemidentifier:tsm_helmet_outpost_combat" tag="locked" continueifnotargetsfound="true" />
+        <TagAction criteria="itemidentifier:tsm_nujiang_uniform" tag="locked" continueifnotargetsfound="true" />
+        <TagAction criteria="itemidentifier:tsm_heavycombat_helmet" tag="locked" continueifnotargetsfound="true" />
+        <TagAction criteria="itemidentifier:tsm_heavy_vest" tag="locked" continueifnotargetsfound="true" />
+        <TagAction criteria="itemidentifier:tsm_advanced_uniform" tag="locked" continueifnotargetsfound="true" />
+        <TagAction criteria="itemidentifier:tsm_qbz_191" tag="locked" continueifnotargetsfound="true" />
+        <TagAction criteria="itemidentifier:tsm_advanced_191" tag="locked" continueifnotargetsfound="true" />
+        <StatusEffectAction targettag="locked">
+          <StatusEffect target="This" nonplayerteaminteractable="true">
+            <Conditional targetcontainer="true" teamid="FriendlyNPC" />
+          </StatusEffect>
+        </StatusEffectAction>
+      </ScriptedEvent>
+    </EventPrefabs>
+  </Randomevents>
 </Override>

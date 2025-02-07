@@ -1,16 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <locationtypes>
-  <tsm_abandoned
-    identifier="tsm_abandoned"
-    nameidentifiers="alien"
-    commonnessperzone="1: 0.4, 2: 0.5, 3: 0.6, 4: 0.7, 5: 0.8"
-    missiontags="tsm_abandonedoutpost"
-    hideentitysubcategories="tsm_abandonedhuman,tsm_abandonedmonster"
-    forceoutpostgenerationparams="tsm_abandoned"
-    outpostteam="None"
-    AllowAsBiomeGate="false">
-
-    <Symbol texture="%ModDir%/png/ui.png" sourcerect="1280,191,103,102" color="255,255,255,255"/>
-    <Portrait texture="%ModDir:2852411866%/Texture/制裁行动.png" sourcerect="0,0,0,0" premultiplyalpha="false"/>
+  <tsm_abandoned identifier="tsm_abandoned" nameidentifiers="alien" commonnessperzone="1: 0.4, 2: 0.5, 3: 0.6, 4: 0.7, 5: 0.8" missiontags="tsm_abandonedoutpost" hideentitysubcategories="tsm_abandonedhuman,tsm_abandonedmonster" forceoutpostgenerationparams="tsm_abandoned" outpostteam="None" AllowAsBiomeGate="false">
+    <Symbol texture="%ModDir%/png/ui.png" sourcerect="1280,191,103,102" color="255,255,255,255" />
+    <Portrait texture="%ModDir:2852411866%/Texture/制裁行动.png" sourcerect="0,0,0,0" premultiplyalpha="false" />
   </tsm_abandoned>
-
 </locationtypes>

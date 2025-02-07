@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!--握把类-->
-  <Item name="直握把" identifier="tsm_grip_straight" subcategory="accessories" category="weapon" Tags="smallitem,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="直握把" identifier="tsm_grip_straight" subcategory="accessories" category="Equipment" Tags="smallitem,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="798,9,31,48" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="798,9,31,48" depth="0.56" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -29,7 +29,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="cqr阻手握把" identifier="tsm_grip_cqr" subcategory="accessories" category="weapon" Tags="smallitem,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="cqr阻手握把" identifier="tsm_grip_cqr" subcategory="accessories" category="Equipment" Tags="smallitem,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="399,6,94,51" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="399,6,94,51" depth="0.56" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -57,7 +57,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="三角握把" identifier="tsm_grip_triangle" subcategory="accessories" category="weapon" Tags="smallitem,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="三角握把" identifier="tsm_grip_triangle" subcategory="accessories" category="Equipment" Tags="smallitem,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="509,8,90,51" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="509,8,90,51" depth="0.56" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -85,7 +85,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="拇指握把" identifier="tsm_grip_thumb" subcategory="accessories" category="weapon" Tags="smallitem,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="拇指握把" identifier="tsm_grip_thumb" subcategory="accessories" category="Equipment" Tags="smallitem,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="633,3,83,58" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="633,3,83,58" depth="0.56" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -112,7 +112,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="轻型握把" identifier="tsm_grip_light" subcategory="accessories" category="weapon" Tags="smallitem,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="轻型握把" identifier="tsm_grip_light" subcategory="accessories" category="Equipment" Tags="smallitem,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1040,420,58,52" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1040,420,58,52" depth="0.56" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -139,7 +139,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="脚架" identifier="tsm_grip_mounts" subcategory="accessories" category="weapon" Tags="smallitem,tsm_grip_mounts,tsm_grip_mech" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="脚架" identifier="tsm_grip_mounts" subcategory="accessories" category="Equipment" Tags="smallitem,tsm_grip_mounts,tsm_grip_mech" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2255,609,37,97" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2255,609,37,97" depth="0.56" origin="0.5,0.5" />
@@ -163,7 +163,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--瞄具类-->
-  <Item name="红点瞄具" identifier="tsm_sight_reddot" subcategory="accessories" category="weapon" Tags="smallitem,sighting,tsm_sight_low,tsm_sight_reddot" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="红点瞄具" identifier="tsm_sight_reddot" subcategory="accessories" category="Equipment" Tags="smallitem,sighting,tsm_sight_low,tsm_sight_reddot" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1058,206,67,40" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1058,206,67,40" depth="0.536" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -191,7 +191,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="全息瞄具" identifier="tsm_sight_holographic" subcategory="accessories" category="weapon" Tags="smallitem,sighting,tsm_sight_low,tsm_sight_holographic" cargocontaineridentifier="tsm_metalcrate" Scale="0.23" impactsoundtag="impact_metal_light">
+  <Item name="全息瞄具" identifier="tsm_sight_holographic" subcategory="accessories" category="Equipment" Tags="smallitem,sighting,tsm_sight_low,tsm_sight_holographic" cargocontaineridentifier="tsm_metalcrate" Scale="0.23" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1440,280,54,44" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1440,280,54,44" depth="0.536" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -219,7 +219,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="2倍瞄具" identifier="tsm_sight_double" subcategory="accessories" category="weapon" Tags="smallitem,sighting,tsm_sight_high,qmk152" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
+  <Item name="2倍瞄具" identifier="tsm_sight_double" subcategory="accessories" category="Equipment" Tags="smallitem,sighting,tsm_sight_high,qmk152" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1425,210,78,44" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1425,210,78,44" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -251,7 +251,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="PSO AK瞄具" identifier="tsm_sight_pso" subcategory="accessories" category="weapon" Tags="smallitem,tsm_sight_ak" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
+  <Item name="PSO AK瞄具" identifier="tsm_sight_pso" subcategory="accessories" category="Equipment" Tags="smallitem,tsm_sight_ak" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="33,86,173,88" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="33,86,173,88" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -278,7 +278,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="C79 6倍机枪瞄具" identifier="tsm_sight_c79" subcategory="accessories" category="weapon" Tags="smallitem,sighting,tsm_sight_mach" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
+  <Item name="C79 6倍机枪瞄具" identifier="tsm_sight_c79" subcategory="accessories" category="Equipment" Tags="smallitem,sighting,tsm_sight_mach" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="327,92,109,47" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="327,92,109,47" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -306,14 +306,14 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="HAMR 医疗监控瞄具" identifier="tsm_sight_hamr" subcategory="accessories" category="weapon" Tags="smallitem,sighting" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
+  <Item name="HAMR 医疗监控瞄具" identifier="tsm_sight_hamr" subcategory="accessories" category="Equipment" Tags="smallitem,sighting" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="455,91,89,48" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="455,91,89,48" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="78" height="44" density="11" />
-    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect"/>
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect" />
     <StatusHUD range="150" overlaycolor="0,50,25,30">
-      <StatusEffect type="OnActive" target="This,Character" drawhudwhenequipped="true" setvalue="true" comparison="And"/>
+      <StatusEffect type="OnActive" target="This,Character" drawhudwhenequipped="true" setvalue="true" comparison="And" />
     </StatusHUD>
     <Price baseprice="501" buyingpricemultiplier="1.2" minleveldifficulty="0">
       <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
@@ -340,7 +340,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="ACOG 4倍瞄具" identifier="tsm_sight_acog" subcategory="accessories" category="weapon" Tags="smallitem,sighting,tsm_sight_high,qmk152" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
+  <Item name="ACOG 4倍瞄具" identifier="tsm_sight_acog" subcategory="accessories" category="Equipment" Tags="smallitem,sighting,tsm_sight_high,qmk152" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="641,83,88,54" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="641,83,88,54" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -362,7 +362,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="热成像瞄具" identifier="tsm_sight_thermal" subcategory="accessories" category="weapon" Tags="smallitem,sighting" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
+  <Item name="热成像瞄具" identifier="tsm_sight_thermal" subcategory="accessories" category="Equipment" Tags="smallitem,sighting" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="762,90,134,47" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="762,90,134,47" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -395,7 +395,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="95式步枪瞄具" identifier="tsm_95_sight" subcategory="accessories" category="weapon" Tags="smallitem,tsm_sight" cargocontaineridentifier="tsm_metalcrate" Scale="0.28" impactsoundtag="impact_metal_light">
+  <Item name="95式步枪瞄具" identifier="tsm_95_sight" subcategory="accessories" category="Equipment" Tags="smallitem,tsm_sight" cargocontaineridentifier="tsm_metalcrate" Scale="0.28" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2355,654,130,44" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2355,654,130,44" depth="0.54" origin="0.5,0.5" />
@@ -418,7 +418,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="03步枪瞄具" identifier="tsm_03_sight" subcategory="accessories" category="weapon" Tags="smallitem,tsm_03_sight,tsm_sight" cargocontaineridentifier="tsm_metalcrate" Scale="0.28" impactsoundtag="impact_metal_light">
+  <Item name="03步枪瞄具" identifier="tsm_03_sight" subcategory="accessories" category="Equipment" Tags="smallitem,tsm_03_sight,tsm_sight" cargocontaineridentifier="tsm_metalcrate" Scale="0.28" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2346,836,134,44" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2346,836,134,44" depth="0.54" origin="0.5,0.5" />
@@ -441,7 +441,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="QMK152" identifier="tsm_sight_qmk152" subcategory="accessories" category="weapon" Tags="smallitem,tsm_sight_high,qmk152" cargocontaineridentifier="tsm_metalcrate" Scale="0.21" impactsoundtag="impact_metal_light">
+  <Item name="QMK152" identifier="tsm_sight_qmk152" subcategory="accessories" category="Equipment" Tags="smallitem,tsm_sight_high,qmk152" cargocontaineridentifier="tsm_metalcrate" Scale="0.21" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1050,338,93,63" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1050,338,93,63" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -464,7 +464,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--枪口配件-->
-  <Item name="qbu191特制枪管" identifier="tsm_advanced_barrel" subcategory="accessories" category="weapon" Tags="smallitem" cargocontaineridentifier="tsm_metalcrate" Scale="0.22" impactsoundtag="impact_metal_light">
+  <Item name="qbu191特制枪管" identifier="tsm_advanced_barrel" subcategory="accessories" category="Equipment" Tags="smallitem" cargocontaineridentifier="tsm_metalcrate" Scale="0.22" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2335,605,150,24" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2335,605,150,24" depth="0.56" origin="0.5,0.5" />
@@ -487,7 +487,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="消焰器" identifier="tsm_flame_arrester" subcategory="accessories" category="weapon" Tags="smallitem,barrel" cargocontaineridentifier="tsm_metalcrate" Scale="0.07" impactsoundtag="impact_metal_light">
+  <Item name="消焰器" identifier="tsm_flame_arrester" subcategory="accessories" category="Equipment" Tags="smallitem,barrel" cargocontaineridentifier="tsm_metalcrate" Scale="0.07" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1227,78,175,57" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1227,78,175,57" depth="0.53" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -515,7 +515,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="制退器" identifier="tsm_recoil" subcategory="accessories" category="weapon" Tags="smallitem,barrel" cargocontaineridentifier="tsm_metalcrate" Scale="0.07" impactsoundtag="impact_metal_light">
+  <Item name="制退器" identifier="tsm_recoil" subcategory="accessories" category="Equipment" Tags="smallitem,barrel" cargocontaineridentifier="tsm_metalcrate" Scale="0.07" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1224,8,174,49" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1224,8,174,49" depth="0.53" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -544,8 +544,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="消音器" identifier="tsm_pistols_silencers" subcategory="accessories" category="Equipment" Tags="smallitem,barrel_pistols" cargocontaineridentifier="tsm_metalcrate" Scale="0.1" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%//weapons/配件/accessories.png" sourcerect="85,426,178,46" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%//weapons/配件/accessories.png" sourcerect="85,426,178,46" depth="0.53" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="85,426,178,46" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="85,426,178,46" depth="0.53" origin="0.5,0.5" />
     <Body width="96" height="28" density="3" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
@@ -571,8 +571,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="消音器" identifier="tsm_gun_silencers" subcategory="accessories" category="Equipment" Tags="smallitem,barrel" cargocontaineridentifier="tsm_metalcrate" Scale="0.08" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%//weapons/配件/accessories.png" sourcerect="82,345,174,46" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%//weapons/配件/accessories.png" sourcerect="82,345,174,46" depth="0.53" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="82,345,174,46" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="82,345,174,46" depth="0.53" origin="0.5,0.5" />
     <Body width="150" height="35" density="3" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
@@ -651,7 +651,7 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="95榴弹下挂" identifier="tsm_gun_grenade" category="weapon" subcategory="accessories" Tags="smallitem,tsm_gun_grenade,grip_and_grenade" cargocontaineridentifier="metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="95榴弹下挂" identifier="tsm_gun_grenade" category="Equipment" subcategory="accessories" Tags="smallitem,tsm_gun_grenade,grip_and_grenade" cargocontaineridentifier="metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Deconstruct time="5">
       <Item identifier="titanium" />
@@ -681,5 +681,4 @@
       </StatusEffect>
     </Holdable>
   </Item>
-
 </Items>

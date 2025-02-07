@@ -1,247 +1,247 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Override>
-<Items>
-  <!--手炮子弹-->
-  <Item name="手炮尖晶弹" identifier="tsm_handcannonround" category="Weapon" subcategory="TSM" maxstacksize="12" maxstacksizecharacterinventory="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,handcannonammo,pistolammoitem,handcannonround,tsmrifleammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="458,213,39,27" />
-    <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="122,71,42,11" origin="0.5,0.5" />
-    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="5" amount="3">
-      <RequiredSkill identifier="weapons" level="50" />
-      <RequiredSkill identifier="helm" level="90" />
-      <RequiredItem identifier="handcannonround" amount="3" />
-      <RequiredItem identifier="tsm_yx_crystallography" mincondition="0.5" />
-    </Fabricate>
-    <Body width="42" height="11" density="50" />
-    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" hitscan="true" maxtargetstohit="2" removeonhit="true">
-      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,115,200" scalemultiplier="1,1" />
-      <Attack structuredamage="10" targetforce="23" itemdamage="30" severlimbsprobability="1.0" penetration="0.5">
-        <Affliction identifier="bleedingnonstop" strength="90" />
-        <Affliction identifier="bleedingnonstop" strength="55" probability="0.75" />
-        <Affliction identifier="gunshotwound" strength="85" />
-        <Affliction identifier="tsm_armorbreak_jz" strength="50" />
-        <Affliction identifier="explosiondamage" strength="35" probability="0.5" />
-        <Affliction identifier="stun" strength="1" />
-      </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6,6" colormultiplier="255,200,115,200" />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <Conditional entitytype="eq Structure" />
-        <Conditional hastag="eq door" />
-        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.75" scalemax="1" />
-      </StatusEffect>
-    </Projectile>
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
-  </Item>
-  <Item name="铜制手炮子弹" identifier="tsm_handcannonround_copper" subcategory="other" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" allowasextracargo="true" Scale="0.5" tags="smallitem,handcannonammo,handheldammo,pistolammoitem,handcannonround" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" secondary="armcab"/>
-    <PreferredContainer primary="handcannon" amount="6" spawnprobability="1.0"/>
-    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="6" spawnprobability="0.02"/>    
-    <Price baseprice="50" sold="false" />
-    <Fabricate suitablefabricators="fabricator,tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="6">
-      <RequiredSkill identifier="weapons" level="45" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" />
-      <RequiredItem identifier="copper" mincondition="3" />
-    </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="468,297,28,20" />
-    <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="31,373,37,9" origin="0.5,0.5" />
-    <Body width="35" height="9" density="30" />
-    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" hitscan="true" removeonhit="true">
-      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,115,200" scalemultiplier="1,1" />
-      <Attack structuredamage="2" targetforce="20" itemdamage="20" severlimbsprobability="1.0" penetration="0.2">
-        <Affliction identifier="gunshotwound" strength="55" />
-        <Affliction identifier="bleedingnonstop" strength="30" />
-        <Affliction identifier="stun" strength="0.6" />
-      </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6,6" colormultiplier="255,200,115,200" />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <Conditional entitytype="eq Structure" />
-        <Conditional hastag="eq door" />
-        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.75" scalemax="1" />
-      </StatusEffect>
-    </Projectile>
-  </Item>
-  <!--普通鹿弹-->
-  <Item name="普通鹿弹" identifier="tsm_12_ld" subcategory="other" category="Weapon" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Price baseprice="45">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" sold="true"/>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="12" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="12" />
-    </Price>
-    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="8">
-      <RequiredItem identifier="magnesium" amount="1" />
-      <RequiredItem identifier="aluminium" amount="1" />
-    </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="459,131,38,29" />
-    <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="126,155,37,15" origin="0.5,0.5" />
-    <Body width="37" height="15" density="40" />
-    <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-    <Projectile characterusable="false" hitscan="true" hitscancount="7" removeonhit="true" spread="10">
-      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="252,218,94,100" scalemultiplier="1,0.5"/>
-      <Attack structuredamage="0" targetforce="4" itemdamage="15" penetration="0.1" severlimbsprobability="0.5">
-        <Affliction identifier="gunshotwound" strength="9" />
-        <Affliction identifier="bleedingnonstop" strength="10" />
-        <Affliction identifier="stun" strength="0.05" probability="0.2"/>
-        <Affliction identifier="stun" strength="0.05" probability="0.2"/>
-      </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <Conditional entitytype="eq Structure"/>
-        <Conditional hastag="eq door"/>
-        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-    </Projectile>
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
-  </Item>
-  <Item name="4号霰弹" identifier="tsm_shotgunammo_4" subcategory="tsm_separatists" category="Weapon" maxstacksize="16" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsm_shotgunammo_4,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="2">
-      <RequiredItem tag="shotgunammo" description="fabricationdescription.shotgunammo" amount="4"/>
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1"/>
-      <RequiredItem identifier="aluminium" amount="1" />
-    </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="377,129,46,35" />
-    <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="129,243,45,15" origin="0.5,0.5" />
-    <Body width="37" height="15" density="40" />
-    <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-    <Projectile characterusable="false" hitscan="true" hitscancount="7" removeonhit="true" spread="11">
-      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="252,218,94,100" scalemultiplier="1,0.5"/>
-      <Attack structuredamage="0" targetforce="6" itemdamage="20" penetration="0.15" severlimbsprobability="0.5">
-        <Affliction identifier="gunshotwound" strength="12" />
-        <Affliction identifier="explosiondamage" strength="2" />
-        <Affliction identifier="explosiondamage" strength="2" probability="0.3"/>
-        <Affliction identifier="bleedingnonstop" strength="5" />
-        <Affliction identifier="stun" strength="0.03" probability="0.3"/>
-        <Affliction identifier="stun" strength="0.03" probability="0.3"/>
-        <Affliction identifier="stun" strength="0.03" probability="0.3"/>
-      </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <Conditional entitytype="eq Structure"/>
-        <Conditional hastag="eq door"/>
-        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-    </Projectile>
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
-  </Item>
-  <Item name="4号龙息霰弹" identifier="tsm_shotgunammo_4_db" subcategory="tsm_separatists" category="Weapon" maxstacksize="16" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsm_shotgunammo_4,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
-        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="8">
-            <RequiredItem identifier="tsm_shotgunammo_4" amount="8" />
-            <RequiredItem identifier="incendium" amount="1" />
-        </Fabricate>
-        <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="1051,522,81,85" />
-        <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="129,243,45,15" origin="0.5,0.5" />
-        <Body width="37" height="15" density="40" />
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Projectile characterusable="false" hitscan="true" hitscancount="7" removeonhit="true" spread="11">
-            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="252,218,94,100" scalemultiplier="1,0.5"/>
-            <ParticleEmitter particle="spark" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="252,218,94,100" scalemultiplier="1,1"/>
-            <Attack structuredamage="0" targetforce="6" itemdamage="20" severlimbsprobability="0.5">
-                <Affliction identifier="gunshotwound" strength="12" />
-                <Affliction identifier="burning" strength="8" />
-                <Affliction identifier="burning" strength="4" probability="0.3"/>
-                <Affliction identifier="bleedingnonstop" strength="5" />
-                <Affliction identifier="stun" strength="0.03" probability="0.3"/>
-                <Affliction identifier="stun" strength="0.03" probability="0.3"/>
-                <Affliction identifier="stun" strength="0.03" probability="0.3"/>
-            </Attack>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-            </StatusEffect>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <Conditional entitytype="eq Structure"/>
-                <Conditional hastag="eq door"/>
-                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="3" scalemax="6" />
-            </StatusEffect>
-        </Projectile>
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  <Items>
+    <!--手炮子弹-->
+    <Item name="手炮尖晶弹" identifier="tsm_handcannonround" category="Weapon" subcategory="TSM" maxstacksize="12" maxstacksizecharacterinventory="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,handcannonammo,pistolammoitem,handcannonround,tsmrifleammo" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="458,213,39,27" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="122,71,42,11" origin="0.5,0.5" />
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="5" amount="3">
+        <RequiredSkill identifier="weapons" level="50" />
+        <RequiredSkill identifier="helm" level="90" />
+        <RequiredItem identifier="handcannonround" amount="3" />
+        <RequiredItem identifier="tsm_yx_crystallography" mincondition="0.5" />
+      </Fabricate>
+      <Body width="42" height="11" density="50" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" maxtargetstohit="2" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,115,200" scalemultiplier="1,1" />
+        <Attack structuredamage="10" targetforce="23" itemdamage="30" severlimbsprobability="1.0" penetration="0.5">
+          <Affliction identifier="bleedingnonstop" strength="90" />
+          <Affliction identifier="bleedingnonstop" strength="55" probability="0.75" />
+          <Affliction identifier="gunshotwound" strength="85" />
+          <Affliction identifier="tsm_armorbreak_jz" strength="50" />
+          <Affliction identifier="explosiondamage" strength="35" probability="0.5" />
+          <Affliction identifier="stun" strength="1" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6,6" colormultiplier="255,200,115,200" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.75" scalemax="1" />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-  <!--双弹托独头弹-->
-  <Item name="双弹托独头弹" identifier="tsm_sabot" subcategory="other" category="Weapon" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Price baseprice="53">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" sold="true"/>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="12" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="12" />
-    </Price>
-    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="8">
-      <RequiredItem identifier="magnesium" amount="2" />
-      <RequiredItem identifier="lead" amount="2" />
-    </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="459,171,32,25" />
-    <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="130,200,32,12" origin="0.5,0.5" />
-    <Body width="32" height="12" density="40" />
-    <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-    <Projectile characterusable="false" hitscan="true" hitscancount="1" removeonhit="true" spread="0">
-      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="0,47,167,100" scalemultiplier="1,0.5"/>
-      <Attack structuredamage="2" targetforce="4" itemdamage="15" penetration="0.28" severlimbsprobability="0.5">
-        <Affliction identifier="explosiondamage" strength="20" />
-        <Affliction identifier="gunshotwound" strength="30" />
-        <Affliction identifier="bleedingnonstop" strength="20" />
-        <Affliction identifier="stun" strength="0.2" />
-      </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,225,180" />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <Conditional entitytype="eq Structure"/>
-        <Conditional hastag="eq door"/>
-        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-    </Projectile>
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
-  </Item>
-  <!--变革弹-->
-  <Item name="贫化变革弹" identifier="tsm_12_bg" subcategory="TSM" category="Weapon" maxstacksize="24" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="8">
-      <RequiredItem identifier="uranium" amount="2" />
-      <RequiredItem identifier="lead" amount="2" />
-      <RequiredItem identifier="tsm_triton_bag" mincondition="0.25" uescondition="ture" />
-    </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="456,90,38,29" />
-    <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="126,135,37,15" origin="0.5,0.5" />
-    <Body width="37" height="15" density="40" />
-    <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-    <Projectile characterusable="false" hitscan="true" hitscancount="6" removeonhit="true" spread="8">
-      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="217,2,18,255" scalemultiplier="1,0.6"/>
-      <Attack structuredamage="1" targetforce="4" itemdamage="15" penetration="0.1" severlimbsprobability="0.5">
-        <Affliction identifier="triton_7L" strength="4" />
-        <Affliction identifier="gunshotwound" strength="6" />
-        <Affliction identifier="stun" strength="0.1" />
-      </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <Conditional entitytype="eq Structure"/>
-        <Conditional hastag="eq door"/>
-        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-    </Projectile>
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
-  </Item>
-  <!--平息弹-->
-  <Item name="平息弹" identifier="tsm_12_slience" category="Weapon" subcategory="other" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Item name="铜制手炮子弹" identifier="tsm_handcannonround_copper" subcategory="other" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" allowasextracargo="true" Scale="0.5" tags="smallitem,handcannonammo,handheldammo,pistolammoitem,handcannonround" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab" />
+      <PreferredContainer primary="handcannon" amount="6" spawnprobability="1.0" />
+      <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="6" spawnprobability="0.02" />
+      <Price baseprice="50" sold="false" />
+      <Fabricate suitablefabricators="fabricator,tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="6">
+        <RequiredSkill identifier="weapons" level="45" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+        <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" />
+        <RequiredItem identifier="copper" mincondition="3" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="468,297,28,20" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="31,373,37,9" origin="0.5,0.5" />
+      <Body width="35" height="9" density="30" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,115,200" scalemultiplier="1,1" />
+        <Attack structuredamage="2" targetforce="20" itemdamage="20" severlimbsprobability="1.0" penetration="0.2">
+          <Affliction identifier="gunshotwound" strength="55" />
+          <Affliction identifier="bleedingnonstop" strength="30" />
+          <Affliction identifier="stun" strength="0.6" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6,6" colormultiplier="255,200,115,200" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.75" scalemax="1" />
+        </StatusEffect>
+      </Projectile>
+    </Item>
+    <!--普通鹿弹-->
+    <Item name="普通鹿弹" identifier="tsm_12_ld" subcategory="other" category="Weapon" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <Price baseprice="45">
+        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" sold="true" />
+        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="12" />
+        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="12" />
+      </Price>
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="8">
+        <RequiredItem identifier="magnesium" amount="1" />
+        <RequiredItem identifier="aluminium" amount="1" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="459,131,38,29" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="126,155,37,15" origin="0.5,0.5" />
+      <Body width="37" height="15" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" hitscancount="7" removeonhit="true" spread="10">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="252,218,94,100" scalemultiplier="1,0.5" />
+        <Attack structuredamage="0" targetforce="4" itemdamage="15" penetration="0.1" severlimbsprobability="0.5">
+          <Affliction identifier="gunshotwound" strength="9" />
+          <Affliction identifier="bleedingnonstop" strength="10" />
+          <Affliction identifier="stun" strength="0.05" probability="0.2" />
+          <Affliction identifier="stun" strength="0.05" probability="0.2" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="4号霰弹" identifier="tsm_shotgunammo_4" subcategory="tsm_separatists" category="Weapon" maxstacksize="16" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsm_shotgunammo_4,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="2">
+        <RequiredItem tag="shotgunammo" description="fabricationdescription.shotgunammo" amount="4" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
+        <RequiredItem identifier="aluminium" amount="1" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="377,129,46,35" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="129,243,45,15" origin="0.5,0.5" />
+      <Body width="37" height="15" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" hitscancount="7" removeonhit="true" spread="11">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="252,218,94,100" scalemultiplier="1,0.5" />
+        <Attack structuredamage="0" targetforce="6" itemdamage="20" penetration="0.15" severlimbsprobability="0.5">
+          <Affliction identifier="gunshotwound" strength="12" />
+          <Affliction identifier="explosiondamage" strength="2" />
+          <Affliction identifier="explosiondamage" strength="2" probability="0.3" />
+          <Affliction identifier="bleedingnonstop" strength="5" />
+          <Affliction identifier="stun" strength="0.03" probability="0.3" />
+          <Affliction identifier="stun" strength="0.03" probability="0.3" />
+          <Affliction identifier="stun" strength="0.03" probability="0.3" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="4号龙息霰弹" identifier="tsm_shotgunammo_4_db" subcategory="tsm_separatists" category="Weapon" maxstacksize="16" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsm_shotgunammo_4,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="8">
+        <RequiredItem identifier="tsm_shotgunammo_4" amount="8" />
+        <RequiredItem identifier="incendium" amount="1" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="1051,522,81,85" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="129,243,45,15" origin="0.5,0.5" />
+      <Body width="37" height="15" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" hitscancount="7" removeonhit="true" spread="11">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="252,218,94,100" scalemultiplier="1,0.5" />
+        <ParticleEmitter particle="spark" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="252,218,94,100" scalemultiplier="1,1" />
+        <Attack structuredamage="0" targetforce="6" itemdamage="20" severlimbsprobability="0.5">
+          <Affliction identifier="gunshotwound" strength="12" />
+          <Affliction identifier="burning" strength="8" />
+          <Affliction identifier="burning" strength="4" probability="0.3" />
+          <Affliction identifier="bleedingnonstop" strength="5" />
+          <Affliction identifier="stun" strength="0.03" probability="0.3" />
+          <Affliction identifier="stun" strength="0.03" probability="0.3" />
+          <Affliction identifier="stun" strength="0.03" probability="0.3" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="3" scalemax="6" />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <!--双弹托独头弹-->
+    <Item name="双弹托独头弹" identifier="tsm_sabot" subcategory="other" category="Weapon" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <Price baseprice="53">
+        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" sold="true" />
+        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="12" />
+        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="12" />
+      </Price>
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="8">
+        <RequiredItem identifier="magnesium" amount="2" />
+        <RequiredItem identifier="lead" amount="2" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="459,171,32,25" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="130,200,32,12" origin="0.5,0.5" />
+      <Body width="32" height="12" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" hitscancount="1" removeonhit="true" spread="0">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="0,47,167,100" scalemultiplier="1,0.5" />
+        <Attack structuredamage="2" targetforce="4" itemdamage="15" penetration="0.28" severlimbsprobability="0.5">
+          <Affliction identifier="explosiondamage" strength="20" />
+          <Affliction identifier="gunshotwound" strength="30" />
+          <Affliction identifier="bleedingnonstop" strength="20" />
+          <Affliction identifier="stun" strength="0.2" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+          <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,225,180" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <!--变革弹-->
+    <Item name="贫化变革弹" identifier="tsm_12_bg" subcategory="TSM" category="Weapon" maxstacksize="24" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="8">
+        <RequiredItem identifier="uranium" amount="2" />
+        <RequiredItem identifier="lead" amount="2" />
+        <RequiredItem identifier="tsm_triton_bag" mincondition="0.25" uescondition="ture" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="456,90,38,29" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="126,135,37,15" origin="0.5,0.5" />
+      <Body width="37" height="15" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" hitscancount="6" removeonhit="true" spread="8">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="217,2,18,255" scalemultiplier="1,0.6" />
+        <Attack structuredamage="1" targetforce="4" itemdamage="15" penetration="0.1" severlimbsprobability="0.5">
+          <Affliction identifier="triton_7L" strength="4" />
+          <Affliction identifier="gunshotwound" strength="6" />
+          <Affliction identifier="stun" strength="0.1" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <!--平息弹-->
+    <Item name="平息弹" identifier="tsm_12_slience" category="Weapon" subcategory="other" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="shotgun,autoshotgun,shotgununique" />
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <PreferredContainer primary="armcab" minamount="8" maxamount="16" spawnprobability="1" notcampaign="true" />
@@ -279,933 +279,1046 @@
         </StatusEffect>
       </Projectile>
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
-  </Item>
-  <!--轨道炮-->
-  <Item name="奇迹之海诱饵型炮射导弹" subcategory="other" identifier="tsm_snoar_shell" tags="railgunequipment,railgunammo,decoy" category="Weapon" sonarsize="7" scale="0.5" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="railgunammocontainer" />
-    <Price baseprice="358" soldeverywhere="false">
-      <Price storeidentifier="merchantoutpost" multiplier="1.5" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" />
-      <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
-    </Price>
-    <Deconstruct time="10">
-      <RequiredItem identifier="steel" />
-      <RequiredItem identifier="iron" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator,tsm_fabricator,tsm_fabricator_ammo" requiredtime="8">
-      <RequiredItem identifier="steel" />
-      <RequiredItem identifier="c4block" />
-      <RequiredItem identifier="fpgacircuit" />
-      <RequiredItem identifier="aluminium" />
-    </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/ammo.png" sourcerect="7,173,204,29" />
-    <Sprite texture="%ModDir%/weapons/ammo.png" sourcerect="7,173,204,29" depth="0.55" origin="0.5,0.5" />
-    <Body width="215" height="30" density="10" />
-    <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
-    <aitarget sightrange="800" soundrange="7500" fadeouttime="20" sonarlabel="绽放的红花" />
-    <Projectile characterusable="false" launchimpulse="95">
-      <Attack structuredamage="100" severlimbsprobability="0.3" damagetype="Blunt" penetration="0.6">
-        <Affliction identifier="lacerations" strength="250" />
-        <Affliction identifier="bleedingnonstop" strength="50" />
-        <Affliction identifier="stun" strength="15" />
-      </Attack>
-      <StatusEffect type="OnActive" target="This">
-        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="2" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
-      </StatusEffect>
-      <StatusEffect type="onActive" target="This" targetitemcomponent="LightComponent" IsOn="true" />
-      <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" type="OnUse" selectionmode="Random" range="10000" />
-      <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" type="OnUse" selectionmode="Random" range="10000" />
-      <StatusEffect type="OnImpact" target="This" condition="-100" />
-      <StatusEffect type="OnBroken" target="Contained">
-        <Explosion range="3000.0" structuredamage="200" itemdamage="300" force="50.0" severlimbsprobability="5.0" decal="explosion" decalsize="1.0" camerashake="500" camerashakerange="50000" flashrange="10000" flashduration="5.0" screencolor="200,0,0,180" screencolorrange="5000" screencolorduration="5.0">
-          <Affliction identifier="burn" strength="350" />
-          <Affliction identifier="radiationsickness" strength="100" />
-          <Affliction identifier="explosiondamage" strength="300" />
-          <Affliction identifier="stun" strength="20" />
-        </Explosion>
-        <Explosion range="3000" force="0.0" smoke="false" sparks="false" empstrength="1" applyfireeffects="false">
-        </Explosion>
-        <SpawnItem identifier="nuclearaftereffectemitter" spawnposition="This" />
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
-        <Remove />
-      </StatusEffect>
-    </Projectile>
-    <LightComponent characterusable="false" LightColor="125,255,160,30" range="100" blinkfrequency="1.5" IsOn="false">
-      <sound file="%ModDir%/ogg/SonarPing.ogg" type="OnActive" range="7500.0" loop="true" />
-      <StatusEffect type="OnActive" target="This" condition="-2" />
-    </LightComponent>
-  </Item>
-  <!-- 命运之拳：拐弯核弹，取消近炸效果 -->
-  <Item name="命运之拳" identifier="tsm_embi_shell" subcategory="other" tags="railgunequipment,railgunammo,myzqshell" category="Weapon" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="railgunammocontainer" minamount="1" maxamount="2" spawnprobability="0.1" />
-    <PreferredContainer primary="wreckrailgun" minamount="0" maxamount="2" spawnprobability="0.1" />
-    <Price baseprice="550" sold="false">
+    </Item>
+    <!--轨道炮-->
+    <Item name="奇迹之海诱饵型炮射导弹" subcategory="other" identifier="tsm_snoar_shell" tags="railgunequipment,railgunammo,decoy" category="Weapon" sonarsize="7" scale="0.5" impactsoundtag="impact_metal_heavy">
+      <PreferredContainer primary="railgunammocontainer" />
+      <Price baseprice="358" soldeverywhere="false">
+        <Price storeidentifier="merchantoutpost" multiplier="1.5" sold="false" />
+        <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+        <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
+        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" />
+        <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
+      </Price>
+      <Deconstruct time="10">
+        <RequiredItem identifier="steel" />
+        <RequiredItem identifier="iron" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator,tsm_fabricator,tsm_fabricator_ammo" requiredtime="8">
+        <RequiredItem identifier="steel" />
+        <RequiredItem identifier="c4block" />
+        <RequiredItem identifier="fpgacircuit" />
+        <RequiredItem identifier="aluminium" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/weapons/ammo.png" sourcerect="7,173,204,29" />
+      <Sprite texture="%ModDir%/weapons/ammo.png" sourcerect="7,173,204,29" depth="0.55" origin="0.5,0.5" />
+      <Body width="215" height="30" density="10" />
+      <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+      <aitarget sightrange="800" soundrange="7500" fadeouttime="20" sonarlabel="绽放的红花" />
+      <Projectile characterusable="false" launchimpulse="95">
+        <Attack structuredamage="100" severlimbsprobability="0.3" damagetype="Blunt" penetration="0.6">
+          <Affliction identifier="lacerations" strength="250" />
+          <Affliction identifier="bleedingnonstop" strength="50" />
+          <Affliction identifier="stun" strength="15" />
+        </Attack>
+        <StatusEffect type="OnActive" target="This">
+          <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="2" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+        </StatusEffect>
+        <StatusEffect type="onActive" target="This" targetitemcomponent="LightComponent" IsOn="true" />
+        <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" type="OnUse" selectionmode="Random" range="10000" />
+        <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" type="OnUse" selectionmode="Random" range="10000" />
+        <StatusEffect type="OnImpact" target="This" condition="-100" />
+        <StatusEffect type="OnBroken" target="Contained">
+          <Explosion range="3000.0" structuredamage="200" itemdamage="300" force="50.0" severlimbsprobability="5.0" decal="explosion" decalsize="1.0" camerashake="500" camerashakerange="50000" flashrange="10000" flashduration="5.0" screencolor="200,0,0,180" screencolorrange="5000" screencolorduration="5.0">
+            <Affliction identifier="burn" strength="350" />
+            <Affliction identifier="radiationsickness" strength="100" />
+            <Affliction identifier="explosiondamage" strength="300" />
+            <Affliction identifier="stun" strength="20" />
+          </Explosion>
+          <Explosion range="3000" force="0.0" smoke="false" sparks="false" empstrength="1" applyfireeffects="false"></Explosion>
+          <SpawnItem identifier="nuclearaftereffectemitter" spawnposition="This" />
+          <Use />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
+      <LightComponent characterusable="false" LightColor="125,255,160,30" range="100" blinkfrequency="1.5" IsOn="false">
+        <sound file="%ModDir%/ogg/SonarPing.ogg" type="OnActive" range="7500.0" loop="true" />
+        <StatusEffect type="OnActive" target="This" condition="-2" />
+      </LightComponent>
+    </Item>
+    <!-- 命运之拳：拐弯核弹，取消近炸效果 -->
+    <Item name="命运之拳" identifier="tsm_embi_shell" subcategory="other" tags="railgunequipment,railgunammo,myzqshell" category="Weapon" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
+      <PreferredContainer primary="railgunammocontainer" minamount="1" maxamount="2" spawnprobability="0.1" />
+      <PreferredContainer primary="wreckrailgun" minamount="0" maxamount="2" spawnprobability="0.1" />
+      <Price baseprice="550" sold="false">
         <Price storeidentifier="merchantoutpost" multiplier="1.35" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" sold="false"/>
-        <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false"/>
+        <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+        <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
         <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="1" minleveldifficulty="35" />
-        <Price storeidentifier="merchantmine" multiplier="1.25" sold="false"/>
+        <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
         <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="1" minleveldifficulty="35" />
-    </Price>
-    <!--Deconstruct time="10">
+      </Price>
+      <!--Deconstruct time="10">
         <Item identifier="steel" />
         <Item identifier="incendium" />
     </Deconstruct-->
-    <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="10">
+      <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="10">
         <RequiredSkill identifier="weapons" level="40" />
-        <RequiredItem identifier="incendium" mincondition="0.5" uescondition="ture"/>
+        <RequiredItem identifier="incendium" mincondition="0.5" uescondition="ture" />
         <RequiredItem identifier="fpgacircuit" />
         <RequiredItem identifier="uranium" />
         <RequiredItem identifier="ic4block" />
-    </Fabricate>
-    <PreferredContainer primary="railgunammocontainer" />
-    <InventoryIcon texture="%ModDir%/weapons/ammo.png" sourcerect="8,89,204,29" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/ammo.png" sourcerect="8,89,204,29" depth="0.55" origin="0.5,0.5" />
-    <Body width="215" height="30" density="35" />
-    <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
-    <ItemContainer hideitems="true" capacity="2" drawinventory="false" canbeselected="false" spawnwithid="tsm_embi_shell_left,tsm_embi_shell_right">
+      </Fabricate>
+      <PreferredContainer primary="railgunammocontainer" />
+      <InventoryIcon texture="%ModDir%/weapons/ammo.png" sourcerect="8,89,204,29" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/ammo.png" sourcerect="8,89,204,29" depth="0.55" origin="0.5,0.5" />
+      <Body width="215" height="30" density="35" />
+      <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+      <ItemContainer hideitems="true" capacity="2" drawinventory="false" canbeselected="false" spawnwithid="tsm_embi_shell_left,tsm_embi_shell_right">
         <Containable items="tsm_embi_shell_left,tsm_embi_shell_right" />
-    </ItemContainer>
-    <Projectile characterusable="false" launchimpulse="100.0" maxtargetstohit="1" damagedoors="true">
+      </ItemContainer>
+      <Projectile characterusable="false" launchimpulse="100.0" maxtargetstohit="1" damagedoors="true">
         <Attack structuredamage="100" itemdamage="50" severlimbsprobability="5" penetration="0.5" targetforce="1000">
-            <Affliction identifier="explosiondamage" strength="250" />
-            <Addliction identifier="bleedingnonstop" strength="50" />
-            <Affliction identifier="stun" strength="15" />
-            <Affliction identifier="lacerations" strength="80" />
+          <Affliction identifier="explosiondamage" strength="250" />
+          <Addliction identifier="bleedingnonstop" strength="50" />
+          <Affliction identifier="stun" strength="15" />
+          <Affliction identifier="lacerations" strength="80" />
         </Attack>
         <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" type="OnImpact" selectionmode="Random" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" type="OnImpact" selectionmode="Random" range="50000" />
         <StatusEffect type="Always" target="This" condition="-20.0">
-            <Conditional condition="lt 100.0" />
+          <Conditional condition="lt 100.0" />
         </StatusEffect>
         <StatusEffect type="OnActive" target="This" condition="95.0" setvalue="true">
-            <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+          <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
         </StatusEffect>
         <StatusEffect type="OnActive" target="Contained" Tags="fireon" setvalue="true" />
         <StatusEffect type="OnImpact" target="UseTarget" Condition="-100.0" disabledeltatime="true">
-            <Explosion range="1500.0" structuredamage="600" itemdamage="1000" ballastfloradamage="1000" force="50.0" severlimbsprobability="2" decal="explosion" decalsize="1.0" camerashake="1000" camerashakerange="50000" flashrange="10000" flashduration="5.0" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="5.0" penetration="0.5">
-                <Affliction identifier="explosiondamage" strength="600" />
-                <Affliction identifier="burn" strength="600" />
-                <Affliction identifier="radiationsickness" strength="100" />
-                <Affliction identifier="bleedingnonstop" strength="40" probability="0.05" dividebylimbcount="false"/>
-                <Affliction identifier="stun" strength="30" />
-            </Explosion>
-            <Explosion range="2000" force="0.0" smoke="false" sparks="false" empstrength="2.5" applyfireeffects="false"/>
-            <ParticleEmitter particle="underwaterexplosion" anglemin="0" anglemax="360" particleamount="3" velocitymin="0" velocitymax="0" scalemin="15" scalemax="15" />
-            <SpawnItem identifier="nuclearaftereffectemitter" spawnposition="This"/>
+          <Explosion range="1500.0" structuredamage="600" itemdamage="1000" ballastfloradamage="1000" force="50.0" severlimbsprobability="2" decal="explosion" decalsize="1.0" camerashake="1000" camerashakerange="50000" flashrange="10000" flashduration="5.0" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="5.0" penetration="0.5">
+            <Affliction identifier="explosiondamage" strength="600" />
+            <Affliction identifier="burn" strength="600" />
+            <Affliction identifier="radiationsickness" strength="100" />
+            <Affliction identifier="bleedingnonstop" strength="40" probability="0.05" dividebylimbcount="false" />
+            <Affliction identifier="stun" strength="30" />
+          </Explosion>
+          <Explosion range="2000" force="0.0" smoke="false" sparks="false" empstrength="2.5" applyfireeffects="false" />
+          <ParticleEmitter particle="underwaterexplosion" anglemin="0" anglemax="360" particleamount="3" velocitymin="0" velocitymax="0" scalemin="15" scalemax="15" />
+          <SpawnItem identifier="nuclearaftereffectemitter" spawnposition="This" />
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This">
-            <Remove />
+          <Remove />
         </StatusEffect>
-    </Projectile>
-  </Item>
-  <Item name="命运之拳_拐弯左感" identifier="tsm_embi_shell_left" subcategory="other" category="Misc" cargocontaineridentifier="metalcrate" scale="0.5" spritecolor="255,255,255,0" hideinmenus="true">
-    <Sprite texture="%ModDir%/weapons/ammo.png" sourcerect="8,89,204,29" depth="0.55" origin="0.5,0.5" />
-    <Body width="20" height="20" density="0" />
-    <MotionSensor canbeselected="true" target="Monster" ignoredead="True" rangex="1000" rangey="15" detectoffset="-1000,0" updateinterval="0.1" maxoutputlength="200" output="" falseoutput="" minimumvelocity="0" pickingtime="0" canbepicked="False" allowingameediting="True" msg="" DetectOwnMotion="false">
+      </Projectile>
+    </Item>
+    <Item name="命运之拳_拐弯左感" identifier="tsm_embi_shell_left" subcategory="other" category="Misc" cargocontaineridentifier="metalcrate" scale="0.5" spritecolor="255,255,255,0" hideinmenus="true">
+      <Sprite texture="%ModDir%/weapons/ammo.png" sourcerect="8,89,204,29" depth="0.55" origin="0.5,0.5" />
+      <Body width="20" height="20" density="0" />
+      <MotionSensor canbeselected="true" target="Monster" ignoredead="True" rangex="1000" rangey="15" detectoffset="-1000,0" updateinterval="0.1" maxoutputlength="200" output="" falseoutput="" minimumvelocity="0" pickingtime="0" canbepicked="False" allowingameediting="True" msg="" DetectOwnMotion="false">
         <StatusEffect type="Always" target="This" disabledeltatime="true" comparison="And">
-            <Conditional MotionDetected="true" targetitemcomponent="MotionSensor" />
-            <Conditional HasTag="eq fireon" />
-            <Explosion range="50.0" structuredamage="0" itemdamage="0" ballastfloradamage="0" force="0.0" />
-            <Use />
+          <Conditional MotionDetected="true" targetitemcomponent="MotionSensor" />
+          <Conditional HasTag="eq fireon" />
+          <Explosion range="50.0" structuredamage="0" itemdamage="0" ballastfloradamage="0" force="0.0" />
+          <Use />
         </StatusEffect>
-    </MotionSensor>
-    <Turret canbeselected="false" characterusable="false" linkable="false" rotationlimits="180,180" powerconsumption="0">
+      </MotionSensor>
+      <Turret canbeselected="false" characterusable="false" linkable="false" rotationlimits="180,180" powerconsumption="0">
         <StatusEffect type="OnUse" target="NearbyItems" targetTags="myzqshell" setvalue="true" range="50">
-            <Remove />
+          <Remove />
         </StatusEffect>
-    </Turret>
-    <ItemContainer hideitems="true" capacity="1" maxstacksize="1" canbeselected="false" spawnwithid="tsm_embi_myzq">
+      </Turret>
+      <ItemContainer hideitems="true" capacity="1" maxstacksize="1" canbeselected="false" spawnwithid="tsm_embi_myzq">
         <Containable items="tsm_embi_myzq" />
-    </ItemContainer>
-  </Item>
-  <Item name="命运之拳_拐弯右感" identifier="tsm_embi_shell_right" subcategory="other" variantof="tsm_embi_shell_left">
-    <MotionSensor detectoffset="1000,0" />
-    <Turret rotationlimits="0,0" />
-  </Item>
-  <Item name="命运之拳_拐弯炮弹" identifier="tsm_embi_myzq" subcategory="other" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy" hideinmenus="true">
-    <InventoryIcon texture="%ModDir%/weapons/ammo.png" sourcerect="8,89,204,29" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/ammo.png" sourcerect="8,89,204,29" depth="0.55" origin="0.5,0.5" />
-    <Body width="215" height="30" density="35" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" launchimpulse="100.0" maxtargetstohit="1" damagedoors="true">
+      </ItemContainer>
+    </Item>
+    <Item name="命运之拳_拐弯右感" identifier="tsm_embi_shell_right" subcategory="other" variantof="tsm_embi_shell_left">
+      <MotionSensor detectoffset="1000,0" />
+      <Turret rotationlimits="0,0" />
+    </Item>
+    <Item name="命运之拳_拐弯炮弹" identifier="tsm_embi_myzq" subcategory="other" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy" hideinmenus="true">
+      <InventoryIcon texture="%ModDir%/weapons/ammo.png" sourcerect="8,89,204,29" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/ammo.png" sourcerect="8,89,204,29" depth="0.55" origin="0.5,0.5" />
+      <Body width="215" height="30" density="35" />
+      <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" launchimpulse="100.0" maxtargetstohit="1" damagedoors="true">
         <Attack structuredamage="100" itemdamage="50" severlimbsprobability="5" penetration="0.5" targetforce="1000">
-            <Affliction identifier="explosiondamage" strength="200" />
-            <Addliction identifier="bleedingnonstop" strength="50" />
-            <Affliction identifier="stun" strength="15" />
-            <Affliction identifier="lacerations" strength="80" />
+          <Affliction identifier="explosiondamage" strength="200" />
+          <Addliction identifier="bleedingnonstop" strength="50" />
+          <Affliction identifier="stun" strength="15" />
+          <Affliction identifier="lacerations" strength="80" />
         </Attack>
         <StatusEffect type="OnActive" target="This" condition="-20.0">
-            <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+          <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
         </StatusEffect>
         <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" type="OnImpact" selectionmode="Random" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" type="OnImpact" selectionmode="Random" range="50000" />
         <StatusEffect type="OnImpact" target="UseTarget" Condition="-100.0" disabledeltatime="true">
-            <Explosion range="1500.0" structuredamage="600" itemdamage="1000" ballastfloradamage="1000" force="50.0" severlimbsprobability="2" decal="explosion" decalsize="1.0" camerashake="1000" camerashakerange="50000" flashrange="10000" flashduration="5.0" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="5.0" penetration="0.5">
-                <Affliction identifier="explosiondamage" strength="1000" />
-                <Affliction identifier="burn" strength="1000" />
-                <Affliction identifier="radiationsickness" strength="100" />
-                <Affliction identifier="bleedingnonstop" strength="40" probability="0.05" dividebylimbcount="false"/>
-                <Affliction identifier="stun" strength="30" />
-            </Explosion>
-            <Explosion range="2000" force="0.0" smoke="false" sparks="false" empstrength="2.5" applyfireeffects="false"/>
-            <ParticleEmitter particle="underwaterexplosion" anglemin="0" anglemax="360" particleamount="3" velocitymin="0" velocitymax="0" scalemin="15" scalemax="15" />
-            <SpawnItem identifier="nuclearaftereffectemitter" spawnposition="This"/>
+          <Explosion range="1500.0" structuredamage="600" itemdamage="1000" ballastfloradamage="1000" force="50.0" severlimbsprobability="2" decal="explosion" decalsize="1.0" camerashake="1000" camerashakerange="50000" flashrange="10000" flashduration="5.0" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="5.0" penetration="0.5">
+            <Affliction identifier="explosiondamage" strength="1000" />
+            <Affliction identifier="burn" strength="1000" />
+            <Affliction identifier="radiationsickness" strength="100" />
+            <Affliction identifier="bleedingnonstop" strength="40" probability="0.05" dividebylimbcount="false" />
+            <Affliction identifier="stun" strength="30" />
+          </Explosion>
+          <Explosion range="2000" force="0.0" smoke="false" sparks="false" empstrength="2.5" applyfireeffects="false" />
+          <ParticleEmitter particle="underwaterexplosion" anglemin="0" anglemax="360" particleamount="3" velocitymin="0" velocitymax="0" scalemin="15" scalemax="15" />
+          <SpawnItem identifier="nuclearaftereffectemitter" spawnposition="This" />
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This">
-            <Remove />
+          <Remove />
         </StatusEffect>
-    </Projectile>
-  </Item>
-  <!--特殊子弹-->
-   <Item name="5.8mm雷素弹" identifier="tsm_58_fulgurium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
-        <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
-        <Body width="40" height="14" density="40" />
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-        <Projectile characterusable="false" hitscan="true" launchimpulse="30.0" removeonhit="true">
-            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,150,150,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="0.5" targetforce="3" itemdamage="7" severlimbsprobability="0.2">
-                <Affliction identifier="gunshotwound" strength="15" />
-                <Affliction identifier="electricshock" strength="6" />
-                <Affliction identifier="emp" strength="6" />
-                <Affliction identifier="electricshock" strength="3" probability="0.2"/>
-                <Affliction identifier="gunshotwound" strength="3" probability="0.15" />
-                <Affliction identifier="gunshotwound" strength="2" probability="0.3" />
-                <Affliction identifier="bleeding" strength="5" probability="0.15" />
-                <Affliction identifier="bleeding" strength="10" probability="0.15" />
-                <Affliction identifier="bleeding" strength="5" />
-                <Affliction identifier="stun" strength="0.1" probability="0.2" />
-                <Affliction identifier="stun" strength="0.2" probability="0.15" />
-            </Attack>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-                <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,150,150,175" />
-            </StatusEffect>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <Conditional entitytype="eq Structure" />
-                <Conditional hastag="eq door" />
-                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-            </StatusEffect>
-            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
-                <Remove />
-            </StatusEffect>
-        </Projectile>
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+      </Projectile>
     </Item>
-   <Item name="5.8mm钢素弹" identifier="tsm_58_physicorium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
-        <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
-        <Body width="40" height="14" density="40" />
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-        <Projectile characterusable="false" hitscan="true" launchimpulse="30.0" removeonhit="true">
-            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,150,150,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="0.5" targetforce="3" itemdamage="7" penetration="0.3" severlimbsprobability="0.2">
-                <Affliction identifier="gunshotwound" strength="20" />
-                <Affliction identifier="gunshotwound" strength="3" probability="0.15" />
-                <Affliction identifier="gunshotwound" strength="3" probability="0.3" />
-                <Affliction identifier="bleeding" strength="5" probability="0.15" />
-                <Affliction identifier="bleeding" strength="10" probability="0.15" />
-                <Affliction identifier="bleeding" strength="15" />
-                <Affliction identifier="stun" strength="0.15" probability="0.25" />
-                <Affliction identifier="stun" strength="0.2" probability="0.15" />
-            </Attack>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-                <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,150,150,175" />
-            </StatusEffect>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <Conditional entitytype="eq Structure" />
-                <Conditional hastag="eq door" />
-                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-            </StatusEffect>
-            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
-                <Remove />
-            </StatusEffect>
-        </Projectile>
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <!--特殊子弹-->
+    <Item name="5.8mm雷素弹" identifier="tsm_58_fulgurium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
+      <Body width="40" height="14" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" launchimpulse="30.0" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,150,150,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="0.5" targetforce="3" itemdamage="7" severlimbsprobability="0.2">
+          <Affliction identifier="gunshotwound" strength="15" />
+          <Affliction identifier="electricshock" strength="6" />
+          <Affliction identifier="emp" strength="6" />
+          <Affliction identifier="electricshock" strength="3" probability="0.2" />
+          <Affliction identifier="gunshotwound" strength="3" probability="0.15" />
+          <Affliction identifier="gunshotwound" strength="2" probability="0.3" />
+          <Affliction identifier="bleeding" strength="5" probability="0.15" />
+          <Affliction identifier="bleeding" strength="10" probability="0.15" />
+          <Affliction identifier="bleeding" strength="5" />
+          <Affliction identifier="stun" strength="0.1" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+          <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,150,150,175" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.8mm酸液弹" identifier="tsm_58_sulphuriteshard" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
-        <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
-        <Body width="40" height="14" density="40" />
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-        <Projectile characterusable="false" hitscan="true" launchimpulse="30.0" removeonhit="true">
-            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,150,150,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="0.5" targetforce="3" itemdamage="7" severlimbsprobability="0.2">
-                <Affliction identifier="gunshotwound" strength="15" />
-                <Affliction identifier="acidburn" strength="3" />
-                <Affliction identifier="gunshotwound" strength="2" probability="0.15" />
-                <Affliction identifier="gunshotwound" strength="1" probability="0.3" />
-                <Affliction identifier="bleeding" strength="5" probability="0.15" />
-                <Affliction identifier="bleeding" strength="10" probability="0.15" />
-                <Affliction identifier="bleeding" strength="5" />
-                <Affliction identifier="stun" strength="0.1" probability="0.2" />
-                <Affliction identifier="stun" strength="0.2" probability="0.15" />
-            </Attack>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-                <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,150,150,175" />
-            </StatusEffect>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <Conditional entitytype="eq Structure" />
-                <Conditional hastag="eq door" />
-                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-            </StatusEffect>
-            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
-                <Remove />
-            </StatusEffect>
-        </Projectile>
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="5.8mm钢素弹" identifier="tsm_58_physicorium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
+      <Body width="40" height="14" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" launchimpulse="30.0" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,150,150,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="0.5" targetforce="3" itemdamage="7" penetration="0.35" severlimbsprobability="0.2">
+          <Affliction identifier="gunshotwound" strength="20" />
+          <Affliction identifier="gunshotwound" strength="3" probability="0.15" />
+          <Affliction identifier="gunshotwound" strength="3" probability="0.3" />
+          <Affliction identifier="bleeding" strength="5" probability="0.15" />
+          <Affliction identifier="bleeding" strength="10" probability="0.15" />
+          <Affliction identifier="bleeding" strength="15" />
+          <Affliction identifier="stun" strength="0.15" probability="0.25" />
+          <Affliction identifier="stun" strength="0.2" probability="0.15" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+          <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,150,150,175" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.8mm燃素弹" identifier="tsm_58_incendium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
-        <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
-        <Body width="40" height="14" density="40" />
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-        <Projectile characterusable="false" hitscan="true" launchimpulse="30.0" removeonhit="true">
-            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,150,150,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="0.5" targetforce="3" itemdamage="7" severlimbsprobability="0.2">
-                <Affliction identifier="gunshotwound" strength="15" />
-                <Affliction identifier="burning" strength="10" />
-                <Affliction identifier="gunshotwound" strength="3" probability="0.15" />
-                <Affliction identifier="gunshotwound" strength="2" probability="0.3" />
-                <Affliction identifier="bleeding" strength="5" probability="0.15" />
-                <Affliction identifier="bleeding" strength="10" probability="0.15" />
-                <Affliction identifier="bleeding" strength="5" />
-                <Affliction identifier="stun" strength="0.1" probability="0.2" />
-                <Affliction identifier="stun" strength="0.2" probability="0.15" />
-            </Attack>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-                <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,150,150,175" />
-            </StatusEffect>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <Conditional entitytype="eq Structure" />
-                <Conditional hastag="eq door" />
-                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-            </StatusEffect>
-            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
-                <Remove />
-            </StatusEffect>
-        </Projectile>
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="5.8mm酸液弹" identifier="tsm_58_sulphuriteshard" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
+      <Body width="40" height="14" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" launchimpulse="30.0" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,150,150,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="0.5" targetforce="3" itemdamage="7" severlimbsprobability="0.2">
+          <Affliction identifier="gunshotwound" strength="15" />
+          <Affliction identifier="acidburn" strength="3" />
+          <Affliction identifier="gunshotwound" strength="2" probability="0.15" />
+          <Affliction identifier="gunshotwound" strength="1" probability="0.3" />
+          <Affliction identifier="acidburn" strength="2" probability="0.3" />
+          <Affliction identifier="bleeding" strength="5" probability="0.15" />
+          <Affliction identifier="bleeding" strength="10" probability="0.15" />
+          <Affliction identifier="bleeding" strength="5" />
+          <Affliction identifier="stun" strength="0.1" probability="0.2" />
+          <Affliction identifier="stun" strength="0.2" probability="0.15" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+          <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,150,150,175" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.45雷素弹" identifier="tsm_545_fulgurium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-        <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
-        <Body width="40" height="14" density="40" />
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-        <Projectile characterusable="false" hitscan="true" removeonhit="true">
-            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="0.5" targetforce="2" itemdamage="7" severlimbsprobability="0.3">
-                <Affliction identifier="gunshotwound" strength="13" />
-                <Affliction identifier="emp" strength="3" />
-                <Affliction identifier="gunshotwound" strength="6" probability="0.15" />
-                <Affliction identifier="electricshock" strength="6" />
-                <Affliction identifier="electricshock" strength="3" probability="0.2"/>
-                <Affliction identifier="bleeding" strength="5" probability="0.1" />
-                <Affliction identifier="bleeding" strength="10" />
-                <Affliction identifier="stun" strength="0.1" probability="0.1" />
-                <Affliction identifier="stun" strength="0.2" probability="0.05" />
-            </Attack>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-                <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,175,115,175" />
-            </StatusEffect>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <Conditional entitytype="eq Structure" />
-                <Conditional hastag="eq door" />
-                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-            </StatusEffect>
-            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
-                <Remove />
-            </StatusEffect>
-        </Projectile>
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="5.8mm燃素弹" identifier="tsm_58_incendium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,tsmrifleammo" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
+      <Body width="40" height="14" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" launchimpulse="30.0" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,150,150,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="0.5" targetforce="3" itemdamage="7" severlimbsprobability="0.2">
+          <Affliction identifier="gunshotwound" strength="15" />
+          <Affliction identifier="burning" strength="10" />
+          <Affliction identifier="burn" strength="2" />
+          <Affliction identifier="gunshotwound" strength="3" probability="0.15" />
+          <Affliction identifier="gunshotwound" strength="2" probability="0.3" />
+          <Affliction identifier="bleeding" strength="5" probability="0.15" />
+          <Affliction identifier="bleeding" strength="10" probability="0.15" />
+          <Affliction identifier="bleeding" strength="5" />
+          <Affliction identifier="stun" strength="0.1" probability="0.2" />
+          <Affliction identifier="stun" strength="0.2" probability="0.15" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+          <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,150,150,175" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.45钢素弹" identifier="tsm_545_physicorium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-        <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
-        <Body width="40" height="14" density="40" />
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-        <Projectile characterusable="false" hitscan="true" removeonhit="true">
-            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="0.5" targetforce="2" itemdamage="7" penetration="0.35" severlimbsprobability="0.3">
-                <Affliction identifier="gunshotwound" strength="18" />
-                <Affliction identifier="gunshotwound" strength="6" probability="0.15" />
-                <Affliction identifier="bleeding" strength="5" probability="0.1" />
-                <Affliction identifier="bleeding" strength="10" />
-                <Affliction identifier="stun" strength="0.1" probability="0.1" />
-                <Affliction identifier="stun" strength="0.2" probability="0.25" />
-            </Attack>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-                <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,175,115,175" />
-            </StatusEffect>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <Conditional entitytype="eq Structure" />
-                <Conditional hastag="eq door" />
-                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-            </StatusEffect>
-            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
-                <Remove />
-            </StatusEffect>
-        </Projectile>
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="5.45雷素弹" identifier="tsm_545_fulgurium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
+      <Body width="40" height="14" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="0.5" targetforce="2" itemdamage="7" severlimbsprobability="0.3">
+          <Affliction identifier="gunshotwound" strength="13" />
+          <Affliction identifier="emp" strength="3" />
+          <Affliction identifier="gunshotwound" strength="6" probability="0.15" />
+          <Affliction identifier="electricshock" strength="6" />
+          <Affliction identifier="electricshock" strength="3" probability="0.2" />
+          <Affliction identifier="bleeding" strength="5" probability="0.1" />
+          <Affliction identifier="bleeding" strength="10" />
+          <Affliction identifier="stun" strength="0.15" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+          <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,175,115,175" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.45酸液弹" identifier="tsm_545_sulphuriteshard" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-        <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
-        <Body width="40" height="14" density="40" />
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-        <Projectile characterusable="false" hitscan="true" removeonhit="true">
-            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="0.5" targetforce="2" itemdamage="7" severlimbsprobability="0.3">
-                <Affliction identifier="gunshotwound" strength="13" />
-                <Affliction identifier="acidburn" strength="3" />
-                <Affliction identifier="gunshotwound" strength="6" probability="0.15" />
-                <Affliction identifier="bleeding" strength="5" probability="0.1" />
-                <Affliction identifier="bleeding" strength="10" />
-                <Affliction identifier="stun" strength="0.1" probability="0.1" />
-                <Affliction identifier="stun" strength="0.2" probability="0.05" />
-            </Attack>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-                <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,175,115,175" />
-            </StatusEffect>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <Conditional entitytype="eq Structure" />
-                <Conditional hastag="eq door" />
-                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-            </StatusEffect>
-            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
-                <Remove />
-            </StatusEffect>
-        </Projectile>
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="5.45钢素弹" identifier="tsm_545_physicorium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
+      <Body width="40" height="14" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="0.5" targetforce="2" itemdamage="7" penetration="0.30" severlimbsprobability="0.3">
+          <Affliction identifier="gunshotwound" strength="18" />
+          <Affliction identifier="gunshotwound" strength="6" probability="0.4" />
+          <Affliction identifier="bleeding" strength="5" probability="0.1" />
+          <Affliction identifier="bleeding" strength="10" />
+          <Affliction identifier="stun" strength="0.1" probability="0.1" />
+          <Affliction identifier="stun" strength="0.2" probability="0.25" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+          <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,175,115,175" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.45燃素弹" identifier="tsm_545_incendium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-        <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
-        <Body width="40" height="14" density="40" />
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-        <Projectile characterusable="false" hitscan="true" removeonhit="true">
-            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="0.5" targetforce="2" itemdamage="7" severlimbsprobability="0.3">
-                <Affliction identifier="gunshotwound" strength="13" />
-                <Affliction identifier="burning" strength="8" />
-                <Affliction identifier="gunshotwound" strength="6" probability="0.15" />
-                <Affliction identifier="bleeding" strength="5" probability="0.1" />
-                <Affliction identifier="bleeding" strength="10" />
-                <Affliction identifier="stun" strength="0.1" probability="0.1" />
-                <Affliction identifier="stun" strength="0.2" probability="0.05" />
-            </Attack>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-                <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,175,115,175" />
-            </StatusEffect>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <Conditional entitytype="eq Structure" />
-                <Conditional hastag="eq door" />
-                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-            </StatusEffect>
-            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
-                <Remove />
-            </StatusEffect>
-        </Projectile>
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="5.45酸液弹" identifier="tsm_545_sulphuriteshard" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
+      <Body width="40" height="14" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="0.5" targetforce="2" itemdamage="7" severlimbsprobability="0.3">
+          <Affliction identifier="gunshotwound" strength="13" />
+          <Affliction identifier="acidburn" strength="3" />
+          <Affliction identifier="gunshotwound" strength="6" probability="0.15" />
+          <Affliction identifier="acidburn" strength="2" probability="0.2" />
+          <Affliction identifier="bleeding" strength="5" probability="0.1" />
+          <Affliction identifier="bleeding" strength="10" />
+          <Affliction identifier="stun" strength="0.1" probability="0.1" />
+          <Affliction identifier="stun" strength="0.2" probability="0.05" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+          <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,175,115,175" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.56雷素弹" identifier="tsm_556_fulgurium" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-        <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" depth="0.55" origin="0.5,0.5" />
-        <Body width="40" height="14" density="40" />
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-        <Projectile characterusable="false" hitscan="true" removeonhit="true">
-            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="0.6" targetforce="2" itemdamage="7" penetration="0.05" severlimbsprobability="0.5">
-                <Affliction identifier="gunshotwound" strength="13.5" />
-                <Affliction identifier="electricshock" strength="6" />
-                <Affliction identifier="emp" strength="3" />
-                <Affliction identifier="electricshock" strength="3" probability="0.2"/>
-                <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-                <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-                <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-                <Affliction identifier="bleeding" strength="12" />
-                <Affliction identifier="bleeding" strength="5" probability="0.3" />
-                <Affliction identifier="stun" strength="0.15" probability="0.2" />
-                <Affliction identifier="stun" strength="0.1" probability="0.1" />
-            </Attack>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-                <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,100,100,175" />
-            </StatusEffect>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <Conditional entitytype="eq Structure" />
-                <Conditional hastag="eq door" />
-                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-            </StatusEffect>
-            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
-                <Remove />
-            </StatusEffect>
-        </Projectile>
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="5.45燃素弹" identifier="tsm_545_incendium" subcategory="bullet" category="weapon" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
+      <Body width="40" height="14" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="0.5" targetforce="2" itemdamage="7" severlimbsprobability="0.3">
+          <Affliction identifier="gunshotwound" strength="13" />
+          <Affliction identifier="burning" strength="8" />
+          <Affliction identifier="burn" strength="2" />
+          <Affliction identifier="gunshotwound" strength="6" probability="0.15" />
+          <Affliction identifier="bleeding" strength="5" probability="0.1" />
+          <Affliction identifier="bleeding" strength="10" />
+          <Affliction identifier="stun" strength="0.1" probability="0.1" />
+          <Affliction identifier="stun" strength="0.2" probability="0.05" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+          <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,175,115,175" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.56钢素弹" identifier="tsm_556_physicorium" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-        <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" depth="0.55" origin="0.5,0.5" />
-        <Body width="40" height="14" density="40" />
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-        <Projectile characterusable="false" hitscan="true" removeonhit="true">
-            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="0.6" targetforce="2" itemdamage="7" penetration="0.3" severlimbsprobability="0.5">
-                <Affliction identifier="gunshotwound" strength="19" />
-                <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-                <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-                <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-                <Affliction identifier="bleeding" strength="12" />
-                <Affliction identifier="bleeding" strength="5" probability="0.3" />
-                <Affliction identifier="stun" strength="0.2" probability="0.2" />
-                <Affliction identifier="stun" strength="0.1" probability="0.15" />
-            </Attack>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-                <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,100,100,175" />
-            </StatusEffect>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <Conditional entitytype="eq Structure" />
-                <Conditional hastag="eq door" />
-                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-            </StatusEffect>
-            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
-                <Remove />
-            </StatusEffect>
-        </Projectile>
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="5.56雷素弹" identifier="tsm_556_fulgurium" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" depth="0.55" origin="0.5,0.5" />
+      <Body width="40" height="14" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="0.6" targetforce="2" itemdamage="7" penetration="0.05" severlimbsprobability="0.5">
+          <Affliction identifier="gunshotwound" strength="13.5" />
+          <Affliction identifier="electricshock" strength="6" />
+          <Affliction identifier="emp" strength="3" />
+          <Affliction identifier="electricshock" strength="3" probability="0.2" />
+          <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
+          <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
+          <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
+          <Affliction identifier="bleeding" strength="12" />
+          <Affliction identifier="bleeding" strength="5" probability="0.3" />
+          <Affliction identifier="stun" strength="0.1" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+          <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,100,100,175" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.56酸液弹" identifier="tsm_556_sulphuriteshard" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-        <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" depth="0.55" origin="0.5,0.5" />
-        <Body width="40" height="14" density="40" />
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-        <Projectile characterusable="false" hitscan="true" removeonhit="true">
-            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="0.6" targetforce="2" itemdamage="7" penetration="0.05" severlimbsprobability="0.5">
-                <Affliction identifier="gunshotwound" strength="13.5" />
-                <Affliction identifier="acidburn" strength="3" />
-                <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-                <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-                <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-                <Affliction identifier="bleeding" strength="12" />
-                <Affliction identifier="bleeding" strength="5" probability="0.3" />
-                <Affliction identifier="stun" strength="0.15" probability="0.2" />
-                <Affliction identifier="stun" strength="0.1" probability="0.1" />
-            </Attack>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-                <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,100,100,175" />
-            </StatusEffect>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <Conditional entitytype="eq Structure" />
-                <Conditional hastag="eq door" />
-                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-            </StatusEffect>
-            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
-                <Remove />
-            </StatusEffect>
-        </Projectile>
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="5.56钢素弹" identifier="tsm_556_physicorium" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" depth="0.55" origin="0.5,0.5" />
+      <Body width="40" height="14" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="0.6" targetforce="2" itemdamage="7" penetration="0.3" severlimbsprobability="0.5">
+          <Affliction identifier="gunshotwound" strength="19" />
+          <Affliction identifier="gunshotwound" strength="2" probability="0.2" />
+          <Affliction identifier="gunshotwound" strength="2" probability="0.2" />
+          <Affliction identifier="gunshotwound" strength="2" probability="0.2" />
+          <Affliction identifier="bleeding" strength="12" />
+          <Affliction identifier="bleeding" strength="5" probability="0.3" />
+          <Affliction identifier="stun" strength="0.2" probability="0.2" />
+          <Affliction identifier="stun" strength="0.1" probability="0.15" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+          <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,100,100,175" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="5.56燃素弹" identifier="tsm_556_incendium" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-        <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" depth="0.55" origin="0.5,0.5" />
-        <Body width="40" height="14" density="40" />
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-        <Projectile characterusable="false" hitscan="true" removeonhit="true">
-            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="0.6" targetforce="2" itemdamage="7" penetration="0.05" severlimbsprobability="0.5">
-                <Affliction identifier="gunshotwound" strength="13.5" />
-                <Affliction identifier="burning" strength="8" />
-                <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-                <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-                <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-                <Affliction identifier="bleeding" strength="12" />
-                <Affliction identifier="bleeding" strength="5" probability="0.3" />
-                <Affliction identifier="stun" strength="0.15" probability="0.2" />
-                <Affliction identifier="stun" strength="0.1" probability="0.1" />
-            </Attack>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-                <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,100,100,175" />
-            </StatusEffect>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <Conditional entitytype="eq Structure" />
-                <Conditional hastag="eq door" />
-                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-            </StatusEffect>
-            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
-                <Remove />
-            </StatusEffect>
-        </Projectile>
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="5.56酸液弹" identifier="tsm_556_sulphuriteshard" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" depth="0.55" origin="0.5,0.5" />
+      <Body width="40" height="14" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="0.6" targetforce="2" itemdamage="7" penetration="0.05" severlimbsprobability="0.5">
+          <Affliction identifier="gunshotwound" strength="13.5" />
+          <Affliction identifier="acidburn" strength="3" />
+          <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
+          <Affliction identifier="acidburn" strength="2" probability="0.3" />
+          <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
+          <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
+          <Affliction identifier="bleeding" strength="12" />
+          <Affliction identifier="bleeding" strength="5" probability="0.3" />
+          <Affliction identifier="stun" strength="0.15" probability="0.2" />
+          <Affliction identifier="stun" strength="0.1" probability="0.1" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+          <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,100,100,175" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-  <!--特殊弹匣-->
-   <Item name="雷素弹匣(5.8mm)" identifier="tsm_58_fulgurium_mag" subcategory="TSM" scale="0.23" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="tsm_magazine,smallitem,tsm_58_mag,tsm_58_mgmag,magazine,handheldammo" impactsoundtag="impact_metal_light">
-        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-        <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="160,100,72,95" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" depth="0.56" sourcerect="2047,102,73,112" origin="0.5,0.5" />
-        <Body width="66" height="95" density="10" />
-        <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_fulgurium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <Containable items="tsm_58_fulgurium" />
-            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-                <SpawnItem identifiers="tsm_58_fulgurium" spawnposition="ThisInventory" />
-            </StatusEffect>
-        </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
-            <RequiredItem identifier="tsm_58_mag" amount="1" />
-            <RequiredItem identifier="fulgurium" mincondition="0.25" />
-        </Fabricate>
-        <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.25" />
-            <Item identifier="fulgurium" outcondition="0.25" mincondition="0.9" />
-        </Deconstruct>
-        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="5.56燃素弹" identifier="tsm_556_incendium" subcategory="bullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+      <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="34,21,59,10" depth="0.55" origin="0.5,0.5" />
+      <Body width="40" height="14" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="0.6" targetforce="2" itemdamage="7" penetration="0.05" severlimbsprobability="0.5">
+          <Affliction identifier="gunshotwound" strength="13.5" />
+          <Affliction identifier="burning" strength="8" />
+          <Affliction identifier="burn" strength="2" />
+          <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
+          <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
+          <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
+          <Affliction identifier="bleeding" strength="12" />
+          <Affliction identifier="bleeding" strength="5" probability="0.3" />
+          <Affliction identifier="stun" strength="0.15" probability="0.2" />
+          <Affliction identifier="stun" strength="0.1" probability="0.1" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+          <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,100,100,175" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="钢素弹匣(5.8mm)" identifier="tsm_58_physicorium_mag" subcategory="TSM" scale="0.23" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="tsm_magazine,smallitem,tsm_58_mag,tsm_58_mgmag,magazine,handheldammo" impactsoundtag="impact_metal_light">
-        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-        <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="163,204,85,95" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" depth="0.56" sourcerect="2047,102,73,112" origin="0.5,0.5" />
-        <Body width="66" height="95" density="50" />
-        <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_physicorium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <Containable items="tsm_58_physicorium" />
-            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-                <SpawnItem identifiers="tsm_58_physicorium" spawnposition="ThisInventory" />
-            </StatusEffect>
-        </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
-        <RequiredItem identifier="tsm_58_mag" amount="1" />
-        <RequiredItem identifier="physicorium" mincondition="0.25" />
-        </Fabricate>
-        <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.25" />
-            <Item identifier="physicorium" outcondition="0.25" mincondition="0.9" />
-        </Deconstruct>
-        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
-   <Item name="酸液弹匣(5.8mm)" identifier="tsm_58_sulphuriteshard_mag" subcategory="TSM" scale="0.23" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="tsm_magazine,smallitem,tsm_58_mag,tsm_58_mgmag,magazine,handheldammo" impactsoundtag="impact_metal_light">
-        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-        <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="164,332,73,95" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" depth="0.56" sourcerect="2047,102,73,112" origin="0.5,0.5" />
-        <Body width="66" height="95" density="50" />
-        <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_sulphuriteshard" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <Containable items="tsm_58_sulphuriteshard" />
-            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-                <SpawnItem identifiers="tsm_58_sulphuriteshard" spawnposition="ThisInventory" />
-            </StatusEffect>
-        </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
-        <RequiredItem identifier="tsm_58_mag" amount="1" />
-        <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
-        </Fabricate>
-        <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.25" />
-            <Item identifier="sulphuriteshard" outcondition="0.25" mincondition="0.9" />
-        </Deconstruct>
-        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
-   <Item name="燃素弹匣(5.8mm)" identifier="tsm_58_incendium_mag" subcategory="TSM" scale="0.23" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="tsm_magazine,smallitem,tsm_58_mag,tsm_58_mgmag,magazine,handheldammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="170,451,84,95" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" depth="0.56" sourcerect="2047,102,73,112" origin="0.5,0.5" />
-    <Body width="66" height="95" density="50" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_incendium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-        <Containable items="tsm_58_incendium" />
+    <!--特殊弹匣-->
+    <Item name="雷素弹匣(5.8mm)" identifier="tsm_58_fulgurium_mag" subcategory="TSM" scale="0.23" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="tsm_magazine,smallitem,tsm_58_mag,tsm_58_mgmag,magazine,handheldammo" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="160,100,72,95" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" depth="0.56" sourcerect="2047,102,73,112" origin="0.5,0.5" />
+      <Body width="66" height="95" density="10" />
+      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_fulgurium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_58_fulgurium" />
         <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-            <SpawnItem identifiers="tsm_58_incendium" spawnposition="ThisInventory" />
+          <SpawnItem identifiers="tsm_58_fulgurium" spawnposition="ThisInventory" />
         </StatusEffect>
-    </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
-    <RequiredItem identifier="tsm_58_mag" amount="1" />
-    <RequiredItem identifier="incendium" mincondition="0.25" />
-    </Fabricate>
-    <Deconstruct time="5">
+      </ItemContainer>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
+        <RequiredItem identifier="tsm_58_mag" amount="1" />
+        <RequiredItem identifier="fulgurium" mincondition="0.25" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6" amount="1">
+        <RequiredItem identifier="tsm_58_fulgurium_mag" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
+        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="0.5" />
+        <RequiredItem identifier="fulgurium" mincondition="0.25" />
+      </Fabricate>
+      <Deconstruct time="5">
         <Item identifier="plastic" outcondition="0.25" />
-        <Item identifier="incendium" outcondition="0.25" mincondition="0.9" />
-    </Deconstruct>
-    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
-</Item>
-   <Item name="奇迹之海雷素弹匣" identifier="tsm_magazine_fulgurium" subcategory="TSM" scale="0.23" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="tsm_magazine,smallitem,tsm_jz_magazine,tsm_mag,magazine,handheldammo" impactsoundtag="impact_metal_light">
-        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-        <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="276,105,75,92" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" depth="0.56" sourcerect="2269,315,49,92" origin="0.5,0.5" />
-        <Body width="49" height="92" density="10" />
-        <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_fulgurium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <Containable items="tsm_58_fulgurium" />
-            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-                <SpawnItem identifiers="tsm_58_fulgurium" spawnposition="ThisInventory" />
-            </StatusEffect>
-        </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
-            <RequiredItem identifier="tsm_magazine" amount="1" />
-            <RequiredItem identifier="fulgurium" mincondition="0.25" />
-        </Fabricate>
-        <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.25" />
-            <Item identifier="fulgurium" outcondition="0.25" mincondition="0.9" />
-        </Deconstruct>
-        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+        <Item identifier="fulgurium" outcondition="0.25" mincondition="0.9" />
+      </Deconstruct>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="奇迹之海钢素弹匣" identifier="tsm_magazine_physicorium" subcategory="TSM" scale="0.23" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="tsm_magazine,smallitem,tsm_jz_magazine,tsm_mag,magazine,handheldammo" impactsoundtag="impact_metal_light">
-        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-        <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="284,209,78,92" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" depth="0.56" sourcerect="2269,315,49,92" origin="0.5,0.5" />
-        <Body width="49" height="92" density="10" />
-        <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_physicorium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <Containable items="tsm_58_physicorium" />
-            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-                <SpawnItem identifiers="tsm_58_physicorium" spawnposition="ThisInventory" />
-            </StatusEffect>
-        </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
-        <RequiredItem identifier="tsm_magazine" amount="1" />
+    <Item name="钢素弹匣(5.8mm)" identifier="tsm_58_physicorium_mag" subcategory="TSM" scale="0.23" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="tsm_magazine,smallitem,tsm_58_mag,tsm_58_mgmag,magazine,handheldammo" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="163,204,85,95" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" depth="0.56" sourcerect="2047,102,73,112" origin="0.5,0.5" />
+      <Body width="66" height="95" density="50" />
+      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_physicorium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_58_physicorium" />
+        <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_58_physicorium" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
+        <RequiredItem identifier="tsm_58_mag" amount="1" />
         <RequiredItem identifier="physicorium" mincondition="0.25" />
-        </Fabricate>
-        <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.25" />
-            <Item identifier="physicorium" outcondition="0.25" mincondition="0.9" />
-        </Deconstruct>
-        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6" amount="1">
+        <RequiredItem identifier="tsm_58_physicorium_mag" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
+        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="0.5" />
+        <RequiredItem identifier="physicorium" mincondition="0.25" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="physicorium" outcondition="0.25" mincondition="0.9" />
+      </Deconstruct>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="奇迹之海酸液弹匣" identifier="tsm_magazine_sulphuriteshard" subcategory="TSM" scale="0.23" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="tsm_magazine,smallitem,tsm_jz_magazine,tsm_mag,magazine,handheldammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="285,337,68,92" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" depth="0.56" sourcerect="2269,315,49,92" origin="0.5,0.5" />
-    <Body width="49" height="92" density="10" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_sulphuriteshard" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+    <Item name="酸液弹匣(5.8mm)" identifier="tsm_58_sulphuriteshard_mag" subcategory="TSM" scale="0.23" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="tsm_magazine,smallitem,tsm_58_mag,tsm_58_mgmag,magazine,handheldammo" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="164,332,73,95" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" depth="0.56" sourcerect="2047,102,73,112" origin="0.5,0.5" />
+      <Body width="66" height="95" density="50" />
+      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_sulphuriteshard" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
         <Containable items="tsm_58_sulphuriteshard" />
         <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-            <SpawnItem identifiers="tsm_58_sulphuriteshard" spawnposition="ThisInventory" />
+          <SpawnItem identifiers="tsm_58_sulphuriteshard" spawnposition="ThisInventory" />
         </StatusEffect>
-    </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
-    <RequiredItem identifier="tsm_magazine" amount="1" />
-    <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
-    </Fabricate>
-    <Deconstruct time="5">
+      </ItemContainer>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
+        <RequiredItem identifier="tsm_58_mag" amount="1" />
+        <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6" amount="1">
+        <RequiredItem identifier="tsm_58_sulphuriteshard_mag" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
+        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="0.5" />
+        <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="sulphuriteshard" outcondition="0.25" mincondition="0.9" />
+      </Deconstruct>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="燃素弹匣(5.8mm)" identifier="tsm_58_incendium_mag" subcategory="TSM" scale="0.23" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="tsm_magazine,smallitem,tsm_58_mag,tsm_58_mgmag,magazine,handheldammo" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="170,451,84,95" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" depth="0.56" sourcerect="2047,102,73,112" origin="0.5,0.5" />
+      <Body width="66" height="95" density="50" />
+      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_incendium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_58_incendium" />
+        <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_58_incendium" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
+        <RequiredItem identifier="tsm_58_mag" amount="1" />
+        <RequiredItem identifier="incendium" mincondition="0.25" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6" amount="1">
+        <RequiredItem identifier="tsm_58_incendium_mag" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
+        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="0.5" />
+        <RequiredItem identifier="incendium" mincondition="0.25" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="incendium" outcondition="0.25" mincondition="0.9" />
+      </Deconstruct>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="奇迹之海雷素弹匣" identifier="tsm_magazine_fulgurium" subcategory="TSM" scale="0.23" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="tsm_magazine,smallitem,tsm_jz_magazine,tsm_mag,magazine,handheldammo" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="276,105,75,92" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" depth="0.56" sourcerect="2269,315,49,92" origin="0.5,0.5" />
+      <Body width="49" height="92" density="10" />
+      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_fulgurium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_58_fulgurium" />
+        <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_58_fulgurium" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
+        <RequiredItem identifier="tsm_magazine" amount="1" />
+        <RequiredItem identifier="fulgurium" mincondition="0.25" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6" amount="1">
+        <RequiredItem identifier="tsm_magazine_fulgurium" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
+        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="0.5" />
+        <RequiredItem identifier="fulgurium" mincondition="0.25" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="fulgurium" outcondition="0.25" mincondition="0.9" />
+      </Deconstruct>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="奇迹之海钢素弹匣" identifier="tsm_magazine_physicorium" subcategory="TSM" scale="0.23" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="tsm_magazine,smallitem,tsm_jz_magazine,tsm_mag,magazine,handheldammo" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="284,209,78,92" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" depth="0.56" sourcerect="2269,315,49,92" origin="0.5,0.5" />
+      <Body width="49" height="92" density="10" />
+      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_physicorium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_58_physicorium" />
+        <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_58_physicorium" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
+        <RequiredItem identifier="tsm_magazine" amount="1" />
+        <RequiredItem identifier="physicorium" mincondition="0.25" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6" amount="1">
+        <RequiredItem identifier="tsm_magazine_physicorium" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
+        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="0.5" />
+        <RequiredItem identifier="physicorium" mincondition="0.25" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="physicorium" outcondition="0.25" mincondition="0.9" />
+      </Deconstruct>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="奇迹之海酸液弹匣" identifier="tsm_magazine_sulphuriteshard" subcategory="TSM" scale="0.23" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="tsm_magazine,smallitem,tsm_jz_magazine,tsm_mag,magazine,handheldammo" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="285,337,68,92" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" depth="0.56" sourcerect="2269,315,49,92" origin="0.5,0.5" />
+      <Body width="49" height="92" density="10" />
+      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_sulphuriteshard" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_58_sulphuriteshard" />
+        <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_58_sulphuriteshard" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
+        <RequiredItem identifier="tsm_magazine" amount="1" />
+        <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6" amount="1">
+        <RequiredItem identifier="tsm_magazine_sulphuriteshard" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
+        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="0.5" />
+        <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
+      </Fabricate>
+      <Deconstruct time="5">
         <Item identifier="plastic" outcondition="0.25" />
         <Item identifier="tsm_58_sulphuriteshard" outcondition="0.25" mincondition="0.9" />
-    </Deconstruct>
-    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
-</Item>
-   <Item name="奇迹之海燃素弹匣" identifier="tsm_magazine_incendium" subcategory="TSM" scale="0.23" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="tsm_magazine,smallitem,tsm_jz_magazine,tsm_mag,magazine,handheldammo" impactsoundtag="impact_metal_light">
-        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-        <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="291,456,72,92" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" depth="0.56" sourcerect="2269,315,49,92" origin="0.5,0.5" />
-        <Body width="49" height="92" density="10" />
-        <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_incendium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <Containable items="tsm_58_incendium" />
-            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-                <SpawnItem identifiers="tsm_58_incendium" spawnposition="ThisInventory" />
-            </StatusEffect>
-        </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
+      </Deconstruct>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="奇迹之海燃素弹匣" identifier="tsm_magazine_incendium" subcategory="TSM" scale="0.23" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="tsm_magazine,smallitem,tsm_jz_magazine,tsm_mag,magazine,handheldammo" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="291,456,72,92" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" depth="0.56" sourcerect="2269,315,49,92" origin="0.5,0.5" />
+      <Body width="49" height="92" density="10" />
+      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_incendium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_58_incendium" />
+        <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_58_incendium" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="1">
         <RequiredItem identifier="tsm_magazine" amount="1" />
         <RequiredItem identifier="incendium" mincondition="0.25" />
-        </Fabricate>
-        <Deconstruct time="5">
-            <Item identifier="plastic"  outcondition="0.25" />
-            <Item identifier="incendium" outcondition="0.25" mincondition="0.9" />
-        </Deconstruct>
-        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6" amount="1">
+        <RequiredItem identifier="tsm_magazine_incendium" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
+        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="0.5" />
+        <RequiredItem identifier="incendium" mincondition="0.25" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="incendium" outcondition="0.25" mincondition="0.9" />
+      </Deconstruct>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="雷素弹匣（5.45*39）" identifier="fkj_545_fulgurium_mag" subcategory="tsm_separatists" scale="0.29" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,545mag,12mag,fkj_mag,magazine,rpkmag,ak74ammo,handheldammo" impactsoundtag="impact_metal_light" >
-        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-        <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="446,115,86,107" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.56" sourcerect="2314,33,80,107" origin="0.5,0.5" />
-        <Body width="80" height="107" density="10" />
-        <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_545_fulgurium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <Containable items="tsm_545_fulgurium" />
-            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-                <SpawnItem identifiers="tsm_545_fulgurium" spawnposition="ThisInventory" />
-            </StatusEffect>
-        </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
-            <RequiredItem identifier="fkj_545_mag" amount="1" />
-            <RequiredItem identifier="fulgurium" mincondition="0.25" />
-        </Fabricate>
-        <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.25" />
-            <Item identifier="fulgurium" outcondition="0.25" mincondition="0.9" />
-        </Deconstruct>
-        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="雷素弹匣（5.45*39）" identifier="fkj_545_fulgurium_mag" subcategory="tsm_separatists" scale="0.29" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,545mag,12mag,fkj_mag,magazine,rpkmag,ak74ammo,handheldammo" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="446,115,86,107" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.56" sourcerect="2314,33,80,107" origin="0.5,0.5" />
+      <Body width="80" height="107" density="10" />
+      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_545_fulgurium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_545_fulgurium" />
+        <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_545_fulgurium" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
+        <RequiredItem identifier="fkj_545_mag" amount="1" />
+        <RequiredItem identifier="fulgurium" mincondition="0.25" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6" amount="1">
+        <RequiredItem identifier="fkj_545_fulgurium_mag" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
+        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="0.5" />
+        <RequiredItem identifier="fulgurium" mincondition="0.25" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="fulgurium" outcondition="0.25" mincondition="0.9" />
+      </Deconstruct>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="钢素弹匣（5.45*39）" identifier="fkj_545_physicorium_mag" subcategory="tsm_separatists" scale="0.29" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,545mag,12mag,fkj_mag,magazine,rpkmag,ak74ammo,handheldammo" impactsoundtag="impact_metal_light" >
-        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-        <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="449,237,101,107" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.56" sourcerect="2314,33,80,107" origin="0.5,0.5" />
-        <Body width="80" height="107" density="10" />
-        <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_545_physicorium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <Containable items="tsm_545_physicorium" />
-            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-                <SpawnItem identifiers="tsm_545_physicorium" spawnposition="ThisInventory" />
-            </StatusEffect>
-        </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
-            <RequiredItem identifier="fkj_545_mag" amount="1" />
-            <RequiredItem identifier="physicorium" mincondition="0.25" />
-        </Fabricate>
-        <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.25" />
-            <Item identifier="physicorium" outcondition="0.25" mincondition="0.9" />
-        </Deconstruct>
-        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="钢素弹匣（5.45*39）" identifier="fkj_545_physicorium_mag" subcategory="tsm_separatists" scale="0.29" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,545mag,12mag,fkj_mag,magazine,rpkmag,ak74ammo,handheldammo" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="449,237,101,107" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.56" sourcerect="2314,33,80,107" origin="0.5,0.5" />
+      <Body width="80" height="107" density="10" />
+      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_545_physicorium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_545_physicorium" />
+        <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_545_physicorium" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
+        <RequiredItem identifier="fkj_545_mag" amount="1" />
+        <RequiredItem identifier="physicorium" mincondition="0.25" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6" amount="1">
+        <RequiredItem identifier="fkj_545_physicorium_mag" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
+        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="0.5" />
+        <RequiredItem identifier="physicorium" mincondition="0.25" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="physicorium" outcondition="0.25" mincondition="0.9" />
+      </Deconstruct>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="酸液弹匣（5.45*39）" identifier="fkj_545_sulphuriteshard_mag" subcategory="tsm_separatists" scale="0.29" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,545mag,12mag,fkj_mag,magazine,rpkmag,ak74ammo,handheldammo" impactsoundtag="impact_metal_light" >
-        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-        <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="450,368,88,107" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.56" sourcerect="2314,33,80,107" origin="0.5,0.5" />
-        <Body width="80" height="107" density="10" />
-        <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_545_sulphuriteshard" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <Containable items="tsm_545_sulphuriteshard" />
-            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-                <SpawnItem identifiers="tsm_545_sulphuriteshard" spawnposition="ThisInventory" />
-            </StatusEffect>
-        </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="4" amount="1">
-            <RequiredItem identifier="fkj_545_mag" amount="1" />
-            <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
-        </Fabricate>
-        <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.25" />
-            <Item identifier="sulphuriteshard" outcondition="0.25" mincondition="0.9" />
-        </Deconstruct>
-        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="酸液弹匣（5.45*39）" identifier="fkj_545_sulphuriteshard_mag" subcategory="tsm_separatists" scale="0.29" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,545mag,12mag,fkj_mag,magazine,rpkmag,ak74ammo,handheldammo" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="450,368,88,107" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.56" sourcerect="2314,33,80,107" origin="0.5,0.5" />
+      <Body width="80" height="107" density="10" />
+      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_545_sulphuriteshard" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_545_sulphuriteshard" />
+        <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_545_sulphuriteshard" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="4" amount="1">
+        <RequiredItem identifier="fkj_545_mag" amount="1" />
+        <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6" amount="1">
+        <RequiredItem identifier="fkj_545_sulphuriteshard_mag" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
+        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="0.5" />
+        <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="sulphuriteshard" outcondition="0.25" mincondition="0.9" />
+      </Deconstruct>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="燃素弹匣（5.45*39）" identifier="fkj_545_incendium_mag" subcategory="tsm_separatists" scale="0.29" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,545mag,12mag,fkj_mag,magazine,rpkmag,ak74ammo,handheldammo" impactsoundtag="impact_metal_light" >
-        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-        <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="462,496,95,115" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.56" sourcerect="2314,33,80,107" origin="0.5,0.5" />
-        <Body width="80" height="107" density="10" />
-        <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_545_incendium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <Containable items="tsm_545_incendium" />
-            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-                <SpawnItem identifiers="tsm_545_incendium" spawnposition="ThisInventory" />
-            </StatusEffect>
-        </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
-            <RequiredItem identifier="fkj_545_mag" amount="1" />
-            <RequiredItem identifier="incendium" mincondition="0.25" />
-        </Fabricate>
-        <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.25" />
-            <Item identifier="incendium" outcondition="0.25" mincondition="0.9" />
-        </Deconstruct>
-        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="燃素弹匣（5.45*39）" identifier="fkj_545_incendium_mag" subcategory="tsm_separatists" scale="0.29" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,545mag,12mag,fkj_mag,magazine,rpkmag,ak74ammo,handheldammo" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="462,496,95,115" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.56" sourcerect="2314,33,80,107" origin="0.5,0.5" />
+      <Body width="80" height="107" density="10" />
+      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_545_incendium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_545_incendium" />
+        <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_545_incendium" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
+        <RequiredItem identifier="fkj_545_mag" amount="1" />
+        <RequiredItem identifier="incendium" mincondition="0.25" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6" amount="1">
+        <RequiredItem identifier="fkj_545_incendium_mag" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
+        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="0.5" />
+        <RequiredItem identifier="incendium" mincondition="0.25" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="incendium" outcondition="0.25" mincondition="0.9" />
+      </Deconstruct>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="雷素弹匣(5.56*45)" identifier="lm_556_fulgurium_mag" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="4" health="30" cargocontaineridentifier="tsm_metalcrate" tags="lm_magazine,smallitem,556mag,lm_mag,magazine,556ammo,556_300mag,handheldammo" impactsoundtag="impact_metal_light" >
-        <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="842,115,79,93" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2303,0,49,93" origin="0.5,0.5" />
-        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-        <Body width="49" height="93" density="10" />
-        <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_556_fulgurium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <Containable items="tsm_556_fulgurium" />
-            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-                <SpawnItem identifiers="tsm_556_fulgurium" spawnposition="ThisInventory" />
-            </StatusEffect>
-        </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
-            <RequiredItem identifier="lm_556_mag" amount="1" />
-            <RequiredItem identifier="fulgurium" mincondition="0.25" />
-        </Fabricate>
-        <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.25" />
-            <Item identifier="fulgurium" outcondition="0.25" mincondition="0.9" />
-        </Deconstruct>
-        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="雷素弹匣(5.56*45)" identifier="lm_556_fulgurium_mag" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="4" health="30" cargocontaineridentifier="tsm_metalcrate" tags="lm_magazine,smallitem,556mag,lm_mag,magazine,556ammo,556_300mag,handheldammo" impactsoundtag="impact_metal_light">
+      <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="842,115,79,93" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2303,0,49,93" origin="0.5,0.5" />
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <Body width="49" height="93" density="10" />
+      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_556_fulgurium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_556_fulgurium" />
+        <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_556_fulgurium" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
+        <RequiredItem identifier="lm_556_mag" amount="1" />
+        <RequiredItem identifier="fulgurium" mincondition="0.25" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6" amount="1">
+        <RequiredItem identifier="lm_556_fulgurium_mag" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
+        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="0.5" />
+        <RequiredItem identifier="fulgurium" mincondition="0.25" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="fulgurium" outcondition="0.25" mincondition="0.9" />
+      </Deconstruct>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="钢素弹匣(5.56*45)" identifier="lm_556_physicorium_mag" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="4" health="30" cargocontaineridentifier="tsm_metalcrate" tags="lm_magazine,smallitem,556mag,lm_mag,magazine,556ammo,556_300mag,handheldammo" impactsoundtag="impact_metal_light" >
-        <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="847,237,88,93" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2303,0,49,93" origin="0.5,0.5" />
-        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-        <Body width="49" height="93" density="10" />
-        <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_physicorium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <Containable items="tsm_58_physicorium" />
-            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-                <SpawnItem identifiers="tsm_58_physicorium" spawnposition="ThisInventory" />
-            </StatusEffect>
-        </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
-            <RequiredItem identifier="lm_556_mag" amount="1" />
-            <RequiredItem identifier="physicorium" mincondition="0.25" />
-        </Fabricate>
-        <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.25" />
-            <Item identifier="physicorium" outcondition="0.25" mincondition="0.9" />
-        </Deconstruct>
-        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="钢素弹匣(5.56*45)" identifier="lm_556_physicorium_mag" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="4" health="30" cargocontaineridentifier="tsm_metalcrate" tags="lm_magazine,smallitem,556mag,lm_mag,magazine,556ammo,556_300mag,handheldammo" impactsoundtag="impact_metal_light">
+      <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="847,237,88,93" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2303,0,49,93" origin="0.5,0.5" />
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <Body width="49" height="93" density="10" />
+      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_physicorium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_58_physicorium" />
+        <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_58_physicorium" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
+        <RequiredItem identifier="lm_556_mag" amount="1" />
+        <RequiredItem identifier="physicorium" mincondition="0.25" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6" amount="1">
+        <RequiredItem identifier="lm_556_physicorium_mag" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
+        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="0.5" />
+        <RequiredItem identifier="physicorium" mincondition="0.25" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="physicorium" outcondition="0.25" mincondition="0.9" />
+      </Deconstruct>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="酸液弹匣(5.56*45)" identifier="lm_556_sulphuriteshard_mag" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="4" health="30" cargocontaineridentifier="tsm_metalcrate" tags="lm_magazine,smallitem,556mag,lm_mag,magazine,556ammo,556_300mag,handheldammo" impactsoundtag="impact_metal_light" >
-        <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="845,368,80,93" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2303,0,49,93" origin="0.5,0.5" />
-        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-        <Body width="49" height="93" density="10" />
-        <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_sulphuriteshard" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <Containable items="tsm_58_sulphuriteshard" />
-            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-                <SpawnItem identifiers="tsm_58_sulphuriteshard" spawnposition="ThisInventory" />
-            </StatusEffect>
-        </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
-            <RequiredItem identifier="lm_556_mag" amount="1" />
-            <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
-        </Fabricate>
-        <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.25" />
-            <Item identifier="sulphuriteshard" outcondition="0.25" mincondition="0.9" />
-        </Deconstruct>
-        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="酸液弹匣(5.56*45)" identifier="lm_556_sulphuriteshard_mag" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="4" health="30" cargocontaineridentifier="tsm_metalcrate" tags="lm_magazine,smallitem,556mag,lm_mag,magazine,556ammo,556_300mag,handheldammo" impactsoundtag="impact_metal_light">
+      <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="845,368,80,93" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2303,0,49,93" origin="0.5,0.5" />
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <Body width="49" height="93" density="10" />
+      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_sulphuriteshard" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_58_sulphuriteshard" />
+        <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_58_sulphuriteshard" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
+        <RequiredItem identifier="lm_556_mag" amount="1" />
+        <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6" amount="1">
+        <RequiredItem identifier="lm_556_sulphuriteshard_mag" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
+        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="0.5" />
+        <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="sulphuriteshard" outcondition="0.25" mincondition="0.9" />
+      </Deconstruct>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-   <Item name="燃素弹匣(5.56*45)" identifier="lm_556_incendium_mag" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="4" health="30" cargocontaineridentifier="tsm_metalcrate" tags="lm_magazine,smallitem,lm_zd,556mag,lm_mag,magazine,556ammo,556_300mag,handheldammo" impactsoundtag="impact_metal_light" >
-        <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="863,496,78,93" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2303,0,49,93" origin="0.5,0.5" />
-        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-        <Body width="49" height="93" density="10" />
-        <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_556_incendium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <Containable items="tsm_556_incendium" />
-            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-                <SpawnItem identifiers="tsm_556_incendium" spawnposition="ThisInventory" />
-            </StatusEffect>
-        </ItemContainer>
-        <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
-            <RequiredItem identifier="lm_556_mag" amount="1" />
-            <RequiredItem identifier="incendium" mincondition="0.25" />
-        </Fabricate>
-        <Deconstruct time="5">
-            <Item identifier="plastic" outcondition="0.25" />
-            <Item identifier="incendium" outcondition="0.25" mincondition="0.9" />
-        </Deconstruct>
-        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Item name="燃素弹匣(5.56*45)" identifier="lm_556_incendium_mag" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="4" health="30" cargocontaineridentifier="tsm_metalcrate" tags="lm_magazine,smallitem,556mag,lm_mag,magazine,556ammo,556_300mag,handheldammo" impactsoundtag="impact_metal_light">
+      <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="863,496,78,93" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2303,0,49,93" origin="0.5,0.5" />
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <Body width="49" height="93" density="10" />
+      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_556_incendium" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_556_incendium" />
+        <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+          <SpawnItem identifiers="tsm_556_incendium" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </ItemContainer>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
+        <RequiredItem identifier="lm_556_mag" amount="1" />
+        <RequiredItem identifier="incendium" mincondition="0.25" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6" amount="1">
+        <RequiredItem identifier="lm_556_incendium_mag" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
+        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
+        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="0.5" />
+        <RequiredItem identifier="incendium" mincondition="0.25" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="incendium" outcondition="0.25" mincondition="0.9" />
+      </Deconstruct>
+      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-
-</Items>
+  </Items>
 </Override>

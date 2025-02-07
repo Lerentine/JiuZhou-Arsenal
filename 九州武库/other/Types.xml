@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Override>
   <style>
- <!--MainMenuBackground color="255,255,255,255">
+    <!--MainMenuBackground color="255,255,255,255">
   <Sprite texture="%ModDir%/png/Barotrauma_Wallpaper_08.png" sourcerect="0,0,1600,1080" premultiplyalpha="false" />
   </MainMenuBackground-->
-   <!--MainMenuVignette color="255,255,255,255">
+    <!--MainMenuVignette color="255,255,255,255">
     <Sprite name="MainMenuVignette" texture="%ModDir%/png/莱伦汀.png" sourcerect="0,0,1,1" origin="0.5,0.5"/>
-  </MainMenuVignette-->  
-  <tsm_mission1 color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="tsm_mission1" texture="%ModDir%/png/实验日志.png" size="0.0, 0.0" sourcerect="0,0,574,870" origin="0.5,0.5" compress="false" tile="false" />
-  </tsm_mission1>
-  <tsm_chris color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="tsm_chris" texture="%ModDir%/npc/chris_jl.png" size="0.0, 0.0" sourcerect="0,0,1978,1088" origin="0.5,0.5" compress="false" tile="false" />
-  </tsm_chris>
-  <tsm_beowulf color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="tsm_beowulf" texture="%ModDir%/npc/beowulf.png" size="0.0, 0.0" sourcerect="0,0,2028,1082" origin="0.5,0.5" compress="false" tile="false" />
-  </tsm_beowulf>
-  <tsm_chris_end color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="tsm_chris_end" texture="%ModDir%/npc/chris_dead.png" size="0.0, 0.0" sourcerect="0,0,1941,1080" origin="0.5,0.5" compress="false" tile="false" />
-  </tsm_chris_end>
+  </MainMenuVignette-->
+    <tsm_mission1 color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_mission1" texture="%ModDir%/png/实验日志.png" size="0.0, 0.0" sourcerect="0,0,574,870" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_mission1>
+    <tsm_chris color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_chris" texture="%ModDir%/npc/chris_jl.png" size="0.0, 0.0" sourcerect="0,0,1978,1088" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_chris>
+    <tsm_beowulf color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_beowulf" texture="%ModDir%/npc/beowulf.png" size="0.0, 0.0" sourcerect="0,0,2028,1082" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_beowulf>
+    <tsm_chris_end color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_chris_end" texture="%ModDir%/npc/chris_dead.png" size="0.0, 0.0" sourcerect="0,0,1941,1080" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_chris_end>
   </style>
 </Override>

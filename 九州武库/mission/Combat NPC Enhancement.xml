@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-  <Items>
+<Items>
   <Item name="丙级作战增强针剂" identifier="tsm_enhancement_bing" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
@@ -140,4 +140,4 @@
       </StatusEffect>
     </Holdable>
   </Item>
-  </Items>
+</Items>

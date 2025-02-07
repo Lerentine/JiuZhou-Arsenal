@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <npcsets>
   <npcset identifier="tsm_npcs_jz">
-    <npc identifier="tsm_chris" behavior="StayInHull" healthmultiplier="2" aimspeed="50" aimaccuracy="1" >
+    <npc identifier="tsm_chris" behavior="StayInHull" healthmultiplier="2" aimspeed="50" aimaccuracy="1">
       <Character speciesname="human" gender="male" hairindex="1" moustacheindex="0" faceattachmentindex="0" personality="professional">
         <job name="securityofficer" identifier="securityofficer">
           <skill identifier="electrical" level="100" />
@@ -14,15 +14,15 @@
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" />
         <Item identifier="tsm_chris" equip="true" />
-        <Item identifier="lm_stormyseas_uniform" equip="true"/>
+        <Item identifier="lm_stormyseas_uniform" equip="true" />
         <Item identifier="lm_vest_beowulf" equip="true" />
         <Item identifier="tsm_enhancement_yi">
-        <Item identifier="tsm_marlboro_box" />
+          <Item identifier="tsm_marlboro_box" />
         </Item>
         <Item identifier="tsm_m7" equip="true">
-        <Item identifier="lm_68_51_magazine" amount="7"/>
-        <Item identifier="tsm_1911_pistols"/>
-        <Item identifier="tsm_1143_mag" amount="3"/>
+          <Item identifier="lm_68_51_magazine" amount="7" />
+          <Item identifier="tsm_1911_pistols" />
+          <Item identifier="tsm_1143_mag" amount="3" />
         </Item>
       </ItemSet>
     </npc>

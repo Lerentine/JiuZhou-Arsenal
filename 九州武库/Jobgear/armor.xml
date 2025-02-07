@@ -207,7 +207,7 @@
         <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="" deflectprojectiles="true" />
-        <sprite name="fast Helmet headset" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.25" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="16,21,214,163" origin="0.56,0.78"/>
+        <sprite name="fast Helmet headset" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.25" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="16,21,214,163" origin="0.56,0.78" />
       </Wearable>
     </Item>
     <Item name="联盟突击通讯头盔" identifier="lm_fast_helmet_headset" subcategory="tsm_coalition" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.15">
@@ -233,7 +233,7 @@
         <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="" deflectprojectiles="true" />
-        <sprite name="fast Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.26" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="16,285,214,188" origin="0.58,0.68"/>
+        <sprite name="fast Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.26" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="16,285,214,188" origin="0.58,0.68" />
       </Wearable>
       <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
         <StatusEffect type="OnActive" targettype="This">
@@ -270,7 +270,7 @@
         <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
-        <sprite name="fast Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.26" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="17,828,264,208" origin="0.47,0.59"/>
+        <sprite name="fast Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.26" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="17,828,264,208" origin="0.47,0.59" />
         <!--StatusEffect type="OnWearing" target="This" comparison="And" setvalue="true">
           <RequiredItem items="tsm_ballistic_faceshield_big" type="Contained" />
           <Conditional Condition="gt 0" />
@@ -321,7 +321,7 @@
         <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="" deflectprojectiles="true" />
         <sprite name="fast Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.25" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="16,552,281,188" origin="0.4,0.73">
-          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"/>
+          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
         </sprite>
       </Wearable>
       <StatusHUD range="3000" showdeadcharacters="false">
@@ -384,7 +384,7 @@
         <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
         <sprite name="fast Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.25" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="38,1641,214,227" origin="0.54,0.55">
-          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"/>
+          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
         </sprite>
       </Wearable>
       <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
@@ -414,7 +414,7 @@
         <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
         <sprite name="beowulf Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.25" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="23,1359,214,227" origin="0.56,0.55">
-          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"/>
+          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
         </sprite>
         <!--StatusEffect type="OnWearing" target="This" comparison="And" setvalue="true">
           <RequiredItem items="tsm_ballistic_faceshield_big" type="Contained" />
@@ -446,7 +446,7 @@
         <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
         <sprite name="occupation Helmet" texture="%ModDir%/Jobgear/heads.png" limb="Head" inheritlimbdepth="true" inheritscale="false" scale="0.28" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="427,581,110,106" origin="0.54,0.56">
-          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"/>
+          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
         </sprite>
       </Wearable>
     </Item>
@@ -479,7 +479,7 @@
         <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
         <sprite name="occupation Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.25" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="12,1084,264,227" origin="0.45,0.55">
-          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"/>
+          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
         </sprite>
         <!--StatusEffect type="OnWearing" target="This" comparison="And" setvalue="true">
           <RequiredItem items="tsm_ballistic_faceshield_big" type="Contained" />
@@ -522,7 +522,7 @@
         <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
         <sprite name="crosstalk Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.25" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="1595,219,262,373" origin="0.53,0.4">
-          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"/>
+          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
         </sprite>
       </Wearable>
     </Item>
@@ -640,7 +640,7 @@
         <SkillModifier skillidentifier="weapons" skillvalue="-15" />
         <SkillModifier skillidentifier="mechanical" skillvalue="-10" />
         <SkillModifier skillidentifier="electrical" skillvalue="-10" />
-        <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true"/>
+        <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         <sprite name="occupation Torso" texture="%ModDir%/Jobgear/lm_occupation_vest.png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="6,10,109,173" origin="0.49,0.42" scale="0.43" />
         <sprite name="occupation Right Lower Arm" texture="%ModDir%/Jobgear/lm_occupation_vest.png" limb="RightArm" depthlimb="RightForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="197,30,51,40" origin="0.5,1.35" scale="0.4" />
         <sprite name="occupation Left Lower Arm" texture="%ModDir%/Jobgear/lm_occupation_vest.png" limb="LeftArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="284,29,47,45" origin="0.5,1.35" scale="0.4" />
@@ -803,7 +803,7 @@
         <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="tsm_bl" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
-        <sprite name="Anonymous Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.26" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="439,833,223,167" origin="0.52,0.75"/>
+        <sprite name="Anonymous Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.26" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="439,833,223,167" origin="0.52,0.75" />
         <!--StatusEffect type="OnWearing" target="This" comparison="And" setvalue="true">
           <RequiredItem items="tsm_ballistic_faceshield_small" type="Contained" />
           <Conditional Condition="gt 0" />
@@ -836,7 +836,7 @@
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
         <sprite name="respirator Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.26" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="469,1398,238,240" origin="0.50,0.55">
-          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"/>
+          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
         </sprite>
         <!--StatusEffect type="OnWearing" target="This" comparison="And" setvalue="true">
           <RequiredItem items="tsm_ballistic_faceshield_small" type="Contained" />
@@ -876,7 +876,7 @@
         <damagemodifier afflictionidentifiers="tsm_bl" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
         <sprite name="yehuo Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.25" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="462,1103,223,237" origin="0.51,0.56">
-          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"/>
+          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
         </sprite>
         <!--StatusEffect type="OnWearing" target="This" comparison="And" setvalue="true">
           <RequiredItem items="tsm_ballistic_faceshield_small" type="Contained" />
@@ -1002,7 +1002,7 @@
         <SkillModifier skillidentifier="medical" skillvalue="-5" />
         <SkillModifier skillidentifier="mechanical" skillvalue="-10" />
         <SkillModifier skillidentifier="electrical" skillvalue="-10" />
-        <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.8" setvalue="true"></StatusEffect>
+        <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.8" setvalue="true" />
         <sprite name="yehuo Torso" texture="%ModDir%/Jobgear/fkj_yehuo_vest.png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="1,10,107,150" origin="0.52,0.48" scale="0.5" />
         <sprite name="yehuo Right Lower Arm" texture="%ModDir%/Jobgear/fkj_yehuo_vest.png" limb="RightArm" depthlimb="RightForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="206,29,37,102" origin="0.5,0.55" scale="0.45" />
         <sprite name="yehuo Left Lower Arm" texture="%ModDir%/Jobgear/fkj_yehuo_vest.png" limb="LeftArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="293,25,38,107" origin="0.5,0.55" scale="0.45" />
@@ -1188,7 +1188,7 @@
         <damagemodifier afflictionidentifiers="triton_7L" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
-        <sprite name="fast Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.25" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="863,552,260,218" origin="0.48,0.6"/>
+        <sprite name="fast Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.25" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="863,552,260,218" origin="0.48,0.6" />
         <!--StatusEffect type="OnWearing" target="This" comparison="And" setvalue="true">
           <RequiredItem items="tsm_ballistic_faceshield_big" type="Contained" />
           <Conditional Condition="gt 0" />
@@ -1242,7 +1242,7 @@
         <damagemodifier afflictionidentifiers="triton_7L" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
         <sprite name="heavycombat Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.25" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="870,833,260,239" origin="0.45,0.57">
-          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"/>
+          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
         </sprite>
         <!--StatusEffect type="OnWearing" target="This" comparison="And" setvalue="true">
           <RequiredItem items="tsm_ballistic_faceshield_big" type="Contained" />
@@ -1288,7 +1288,7 @@
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
         <sprite name="respirator Helmet" texture="%ModDir%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.26" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="871,1138,235,246" origin="0.45,0.55">
-          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"/>
+          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
         </sprite>
       </Wearable>
     </Item>
@@ -1349,7 +1349,7 @@
         <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.8" deflectprojectiles="true" />
         <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
-        <sprite name="advisers_mask" texture="%ModDir%/Jobgear/advisers_uniform_male.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.47" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="418,109,65,65" origin="0.43,0.62"/>
+        <sprite name="advisers_mask" texture="%ModDir%/Jobgear/advisers_uniform_male.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.47" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="418,109,65,65" origin="0.43,0.62" />
       </Wearable>
     </Item>
     <!--防弹衣-->
@@ -1604,7 +1604,7 @@
         <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="802,46,56,56" />
         <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="802,46,56,56" />
         <SubContainer capacity="4" maxstacksize="1">
-          <Containable items="tsm_armor" excludeditems="无"/>
+          <Containable items="tsm_armor" excludeditems="无" />
         </SubContainer>
       </ItemContainer>
     </Item>

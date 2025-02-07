@@ -116,32 +116,68 @@
     <entitydescription.tsm_zc_skins_o></entitydescription.tsm_zc_skins_o>
     <entityname.tsm_fy_skins_o>Flying Raven Camo: JiuZhou</entityname.tsm_fy_skins_o>
     <entitydescription.tsm_fy_skins_o></entitydescription.tsm_fy_skins_o>
-    <entityname.tsm_m2_skins_9eagle>M2 Camo：White Eagle</entityname.tsm_m2_skins_9eagle>
+    <entityname.tsm_m2_skins_9eagle>M2 Camo:White Eagle</entityname.tsm_m2_skins_9eagle>
     <entitydescription.tsm_m2_skins_9eagle></entitydescription.tsm_m2_skins_9eagle>
-    <entityname.tsm_sks_skins_zjgz>SKS Camo：Adamantite Chrome</entityname.tsm_sks_skins_zjgz>
-    <entitydescription.tsm_sks_skins_zjgz>Thanks for CosmoChromE’s assistance to this mod, awarded with custom camo</entitydescription.tsm_sks_skins_zjgz>
-    <entityname.tsm_rpk16_skins_zy>rpk16 Camo：Zhe Yi</entityname.tsm_rpk16_skins_zy>
+    <entityname.tsm_sks_skins_zjgz>SKS Camo:Adamantite Chrome</entityname.tsm_sks_skins_zjgz>
+    <entitydescription.tsm_sks_skins_zjgz>Thanks for CosmoChromE's assistance to this mod, awarded with custom camo</entitydescription.tsm_sks_skins_zjgz>
+    <entityname.tsm_rpk16_skins_zy>rpk16 Camo:Zhe Yi</entityname.tsm_rpk16_skins_zy>
     <entitydescription.tsm_rpk16_skins_zy>完美男人 custom</entitydescription.tsm_rpk16_skins_zy>
-    <entityname.tsm_vhs2_skins_t037y>VHS2 Camo：T037Y</entityname.tsm_vhs2_skins_t037y>
-    <entitydescription.tsm_vhs2_skins_t037y>Dedicated to the most powerful warrior\nDefeat the most powerful creature in the mod:T037Y，Getting materials to make</entitydescription.tsm_vhs2_skins_t037y>
-    <entityname.tsm_hk433_skins_t037y>HK433 Camo：T037Y</entityname.tsm_hk433_skins_t037y>
-    <entitydescription.tsm_hk433_skins_t037y>Dedicated to the most powerful warrior\nDefeat the most powerful creature in the mod:T037Y，Getting materials to make</entitydescription.tsm_hk433_skins_t037y>
-    <entityname.tsm_dp12_skins_t037y>DP12 Camo：T037Y</entityname.tsm_dp12_skins_t037y>
-    <entitydescription.tsm_dp12_skins_t037y>Dedicated to the most powerful warrior\nDefeat the most powerful creature in the mod:T037Y，Getting materials to make</entitydescription.tsm_dp12_skins_t037y>
-    <entityname.tsm_ak74_skins_qxz>AK74 Camo：S.T.A.L.K.E.R</entityname.tsm_ak74_skins_qxz>
+    <entityname.tsm_vhs2_skins_t037y>VHS2 Camo:T037Y</entityname.tsm_vhs2_skins_t037y>
+    <entitydescription.tsm_vhs2_skins_t037y>Dedicated to the most powerful warrior\nDefeat the most powerful creature in the mod:T037Y,Getting materials to make</entitydescription.tsm_vhs2_skins_t037y>
+    <entityname.tsm_hk433_skins_t037y>HK433 Camo:T037Y</entityname.tsm_hk433_skins_t037y>
+    <entitydescription.tsm_hk433_skins_t037y>Dedicated to the most powerful warrior\nDefeat the most powerful creature in the mod:T037Y,Getting materials to make</entitydescription.tsm_hk433_skins_t037y>
+    <entityname.tsm_dp12_skins_t037y>DP12 Camo:T037Y</entityname.tsm_dp12_skins_t037y>
+    <entitydescription.tsm_dp12_skins_t037y>Dedicated to the most powerful warrior\nDefeat the most powerful creature in the mod:T037Y,Getting materials to make</entitydescription.tsm_dp12_skins_t037y>
+    <entityname.tsm_ak74_skins_qxz>AK74 Camo:S.T.A.L.K.E.R</entityname.tsm_ak74_skins_qxz>
     <entitydescription.tsm_ak74_skins_qxz>S.T.A.L.K.E.R Series</entitydescription.tsm_ak74_skins_qxz>
-    <entityname.tsm_groza_skins_qxz>OTS Groza-1 Camo：S.T.A.L.K.E.R</entityname.tsm_groza_skins_qxz>
+    <entityname.tsm_groza_skins_qxz>OTS Groza-1 Camo:S.T.A.L.K.E.R</entityname.tsm_groza_skins_qxz>
     <entitydescription.tsm_groza_skins_qxz>S.T.A.L.K.E.R Series</entitydescription.tsm_groza_skins_qxz>
-    <entityname.tsm_vss_skins_qxz>VSS Camo：S.T.A.L.K.E.R</entityname.tsm_vss_skins_qxz>
+    <entityname.tsm_vss_skins_qxz>VSS Camo:S.T.A.L.K.E.R</entityname.tsm_vss_skins_qxz>
     <entitydescription.tsm_vss_skins_qxz>S.T.A.L.K.E.R Series</entitydescription.tsm_vss_skins_qxz>
-    <entityname.tsm_asval_skins_qxz>Asval Camo：S.T.A.L.K.E.R</entityname.tsm_asval_skins_qxz>
+    <entityname.tsm_asval_skins_qxz>Asval Camo:S.T.A.L.K.E.R</entityname.tsm_asval_skins_qxz>
     <entitydescription.tsm_asval_skins_qxz>S.T.A.L.K.E.R Series</entitydescription.tsm_asval_skins_qxz>
-    <entityname.tsm_a545_skins_qxz>A545 Camo：S.T.A.L.K.E.R</entityname.tsm_a545_skins_qxz>
+    <entityname.tsm_a545_skins_qxz>A545 Camo:S.T.A.L.K.E.R</entityname.tsm_a545_skins_qxz>
     <entitydescription.tsm_a545_skins_qxz>S.T.A.L.K.E.R Series</entitydescription.tsm_a545_skins_qxz>
-    <entityname.tsm_ks23_skins_qxz>KS23 Camo：S.T.A.L.K.E.R</entityname.tsm_ks23_skins_qxz>
+    <entityname.tsm_ks23_skins_qxz>KS23 Camo:S.T.A.L.K.E.R</entityname.tsm_ks23_skins_qxz>
     <entitydescription.tsm_ks23_skins_qxz>S.T.A.L.K.E.R Series</entitydescription.tsm_ks23_skins_qxz>
-    <entityname.tsm_svd_skins_qxz>SVD Camo：S.T.A.L.K.E.R</entityname.tsm_svd_skins_qxz>
+    <entityname.tsm_svd_skins_qxz>SVD Camo:S.T.A.L.K.E.R</entityname.tsm_svd_skins_qxz>
     <entitydescription.tsm_svd_skins_qxz>S.T.A.L.K.E.R Series</entitydescription.tsm_svd_skins_qxz>
+    <entityname.tsm_g3_skins_xs>G3A4 Camo:Corrode</entityname.tsm_g3_skins_xs>
+    <entitydescription.tsm_g3_skins_xs>Corrode Series</entitydescription.tsm_g3_skins_xs>
+    <entityname.tsm_fal_skins_xs>Fal Camo:Corrode</entityname.tsm_fal_skins_xs>
+    <entitydescription.tsm_fal_skins_xs>Corrode Series</entitydescription.tsm_fal_skins_xs>
+    <entityname.tsm_sks_skins_xs>SKS Camo:Corrode</entityname.tsm_sks_skins_xs>
+    <entitydescription.tsm_sks_skins_xs>Corrode Series</entitydescription.tsm_sks_skins_xs>
+    <entityname.tsm_mg42_skins_xs>MG42 Camo:Corrode</entityname.tsm_mg42_skins_xs>
+    <entitydescription.tsm_mg42_skins_xs>Corrode Series</entitydescription.tsm_mg42_skins_xs>
+    <entityname.tsm_ks23_skins_xs>KS23 Camo:Corrode</entityname.tsm_ks23_skins_xs>
+    <entitydescription.tsm_ks23_skins_xs>Corrode Series</entitydescription.tsm_ks23_skins_xs>
+    <entityname.tsm_svd_skins_xs>SVD Camo:Corrode</entityname.tsm_svd_skins_xs>
+    <entitydescription.tsm_svd_skins_xs>Corrode Series</entitydescription.tsm_svd_skins_xs>
+    <entityname.tsm_m16a4_skins_xs>M16A4 Camo:Corrode</entityname.tsm_m16a4_skins_xs>
+    <entitydescription.tsm_m16a4_skins_xs>Corrode Series</entitydescription.tsm_m16a4_skins_xs>
+    <entityname.tsm_m240b_skins_xs>M240B Camo:Corrode</entityname.tsm_m240b_skins_xs>
+    <entitydescription.tsm_m240b_skins_xs>Corrode Series</entitydescription.tsm_m240b_skins_xs>
+    <entityname.tsm_evo3_skins_eva>EVO3 Camo:EVA</entityname.tsm_evo3_skins_eva>
+    <entitydescription.tsm_evo3_skins_eva>EVA Series</entitydescription.tsm_evo3_skins_eva>
+    <entityname.tsm_79_skins_eva>Type 79 SMG Camo:EVA</entityname.tsm_79_skins_eva>
+    <entitydescription.tsm_79_skins_eva>EVA Series</entitydescription.tsm_79_skins_eva>
+    <entityname.tsm_xy_skins_eva>New Moon Revolution Camo:EVA</entityname.tsm_xy_skins_eva>
+    <entitydescription.tsm_xy_skins_eva>EVA Series</entitydescription.tsm_xy_skins_eva>
+    <entityname.tsm_95_skins_eva>Type 95 Longbow Kit Scope Camo:EVA</entityname.tsm_95_skins_eva>
+    <entitydescription.tsm_95_skins_eva>EVA Series</entitydescription.tsm_95_skins_eva>
+    <entityname.tsm_201_skins_eva>Model 201 General Machine Gun Camo:EVA</entityname.tsm_201_skins_eva>
+    <entitydescription.tsm_201_skins_eva>EVA Series</entitydescription.tsm_201_skins_eva>
+    <entityname.tsm_ump5_skins_eva>ump45 Camo:EVA</entityname.tsm_ump5_skins_eva>
+    <entitydescription.tsm_ump5_skins_eva>EVA Series</entitydescription.tsm_ump5_skins_eva>
+    <entityname.tsm_vk_skins_eva>Vector Camo:EVA</entityname.tsm_vk_skins_eva>
+    <entitydescription.tsm_vk_skins_eva>EVA Series</entitydescription.tsm_vk_skins_eva>
+    <entityname.tsm_191_skins_eva>QBZ191 Camo:EVA</entityname.tsm_191_skins_eva>
+    <entitydescription.tsm_191_skins_eva>EVA Series</entitydescription.tsm_191_skins_eva>
+    <entityname.tsm_ar15_skins_eva>AR15 Camo:EVA</entityname.tsm_ar15_skins_eva>
+    <entitydescription.tsm_ar15_skins_eva>EVA Series</entitydescription.tsm_ar15_skins_eva>
+    <entityname.tsm_m110_skins_eva>M110 Camo:EVA</entityname.tsm_m110_skins_eva>
+    <entitydescription.tsm_m110_skins_eva>EVA Series</entitydescription.tsm_m110_skins_eva>
     <!--矿物/金属/物品-->
     <entityname.tsm_tungstenore>Tungsten Ore</entityname.tsm_tungstenore>
     <entitydescription.tsm_tungstenore></entitydescription.tsm_tungstenore>
@@ -484,7 +520,6 @@
     <entitydescription.tsm_kaishan_knife>Go through fire, Brother Sam!</entitydescription.tsm_kaishan_knife>
     <entityname.tsm_beowulf_melee>Execution Hammer</entityname.tsm_beowulf_melee>
     <entitydescription.tsm_beowulf_melee>A bloodstained warhammer, symbolizing the Beowulf Squadron's relentless suppression of extremists. Any enemy who falls into their hands faces execution by hammer without mercy, a brutal display of the alliance's iron will and unyielding authority. \nuTraitors, riot organizers, and propagators of terror... all are sentenced to death by the hammer.</entitydescription.tsm_beowulf_melee>
-
     <!--npc-->
     <entityname.tsm_lerentine_zhong>‖color:221,106,29,255‖Tomb‖color:end‖</entityname.tsm_lerentine_zhong>
     <entitydescription.tsm_lerentine_zhong>‖color:221,106,29,255‖Born in shadow, not bound by form in life; dead, the soul does not connect with my dreams‖color:end‖</entitydescription.tsm_lerentine_zhong>
@@ -586,8 +621,12 @@
     <entitydescription.tsm_fragmentation_grenade>A common type of grenade using a delayed fuse, with a fragmentation kill radius of 6-10. When held, right-click then press 'E' to sequentially pull the safety pin and release the firing pin spoon.</entitydescription.tsm_fragmentation_grenade>
     <!--武器-->
     <!--节日-->
-    <entityname.tsm_holiday_g11>G11 Caseless Assault Rifle·2024 Christmas Special</entityname.tsm_holiday_g11>
+    <entityname.tsm_holiday_g11>G11 Caseless Assault Rifle-2024 Christmas Special</entityname.tsm_holiday_g11>
     <entitydescription.tsm_holiday_g11>2024 Christmas Special Voting Event\nAn experimental caseless assault rifle, fires custom caseless rounds, uses propellant to replace traditional shells, 50 round magazine, needs to be placed in an ammo loader to reload. Its internal structure is as complex as clockwork, so continued firing could lead to malfunction, it is way more valuable as a collection item than a weapon.\nCould be reloaded when placed in an ammo box</entitydescription.tsm_holiday_g11>
+    <entityname.tsm_jz_newyear>Jiu Zhou Combat Armor(red)</entityname.tsm_jz_newyear>
+    <entitydescription.tsm_jz_newyear>2025 New Year Armor</entitydescription.tsm_jz_newyear>
+    <entityname.tsm_holiday_192>Short Barrel Assault Rifle - 2025 New Year's Special</entityname.tsm_holiday_192>
+    <entitydescription.tsm_holiday_192>New Year's 2025 Community Limited Voting Event\nIt is a derivative of the QBZ-191. It has a modular design with a shortened barrel and the addition of a lower grenade, along with a "The Wandering Earth" paint job, and uses‖color:0,200,0,255‖5.8mm‖color:end‖magazine</entitydescription.tsm_holiday_192>
     <!--枪火-->
     <entityname.tsm_m500>'Gunfire' Tournament Runner-Up Hand Cannon</entityname.tsm_m500>
     <entitydescription.tsm_m500>Uses‖color:0,200,0,255‖Handcannon Round‖color:end‖，he large caliber causes it to only load 5 rounds, if you’re not looking for a broken wrist, it’s best not to try it.</entitydescription.tsm_m500>
@@ -614,11 +653,11 @@
     <entitydescription.tsm_embi_shell>Railgun Shell Special ballistic correction artillery nuclear bomb developed and manufactured by EMBI. This ammunition can correct its trajectory within a certain range.</entitydescription.tsm_embi_shell>
     <entityname.tsm_fire_gun>Awakening Lion</entityname.tsm_fire_gun>
     <entitydescription.tsm_fire_gun>Sub-throw Launcher Single-use bombardment launcher capable of disrupting enemy formations.</entitydescription.tsm_fire_gun>
-    <entityname.tsm_thbq>Same Twilight</entityname.tsm_thbq>
+    <entityname.tsm_thbq>Tong Hun</entityname.tsm_thbq>
     <entitydescription.tsm_thbq>Sea of Miracles's standard assault rifle, developed for external combat, offers exceptional suppression due to its high rate of fire, allowing ordinary soldiers to achieve squad-level fire density. The specialized armor-piercing ammunition is an added bonus. After installing specialized components, it becomes even more formidable, deadlier, and pricier... Using ‖color:150,0,0,255‖Sea of Miracles ammunition‖color:end‖ "Burlinghill, they told you, Europa's sea is too deep and dark, and 'clean' people find it hard to go far..."</entitydescription.tsm_thbq>
-    <entityname.tsm_gybq>Shared Shadow</entityname.tsm_gybq>
+    <entityname.tsm_gybq>Gong Ying</entityname.tsm_gybq>
     <entitydescription.tsm_gybq>Another outcome of Sea of Miracles's development of Same Twilight: a designated marksman rifle that can only fire in semi-automatic mode. Its unique structure not only delivers powerful rounds but also increases recoil and ammunition consumption, reducing rate of fire, and special stocks offer little improvement. If misused, it could even harm the shooter; only experienced soldiers can use it flexibly and efficiently to eliminate enemies. Using ‖color:150,0,0,255‖Sea of Miracles ammunition‖color:end‖</entitydescription.tsm_gybq>
-    <entityname.tsm_xylz>New Moon Revolution</entityname.tsm_xylz>
+    <entityname.tsm_xylz>Crescent Revolution</entityname.tsm_xylz>
     <entitydescription.tsm_xylz>A large-caliber anti-material weapon developed by Sea of Miracles at any cost. The ammunition used possesses tremendous lethality, making it unmanageable for shooters without extensive specialized training. As a result, this weapon is in very limited supply and costly to produce.</entitydescription.tsm_xylz>
     <entityname.tsm_gravitythrower>Gravity Launcher</entityname.tsm_gravitythrower>
     <entitydescription.tsm_gravitythrower>We bring change to this world, executing judgment in the land of the gods\n Sea of Miracles's latest developed gravity weapon, the Judgment-Bringer\n Each use requires wearing specific protective gear; otherwise, there will be severe consequences.\n Ammunition ‖color:150,0,0,255‖Zero Gravity Traction Laser Beam‖color:end‖ can only be purchased at designated sites.</entitydescription.tsm_gravitythrower>
@@ -671,9 +710,9 @@
     <entityname.tsm_lm_aug>Coalition AUG Assault Rifle</entityname.tsm_lm_aug>
     <entitydescription.tsm_lm_aug>Coalition standard assault rifle, modernized to adapt to various tactical accessories. Uses Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazines.</entitydescription.tsm_lm_aug>
     <entityname.tsm_lm_tavor21>Coalition Tavor-21 Bullpup Assault Rifle</entityname.tsm_lm_tavor21>
-    <entitydescription.tsm_lm_tavor21>A stable and reliable bullpup rifle, featuring comprehensive modularity. However, its high cost and lack of outstanding advantages prevented its adoption by the Coalition, instead serving as a transitional product for advanced bullpup rifles. Uses Coalition-issued ‖color:150,0,0,255‖5.56mm‖color:end‖ magazines.</entitydescription.tsm_lm_tavor21>
+    <entitydescription.tsm_lm_tavor21>A stable and reliable bullpup rifle, featuring comprehensive modularity. However, its high cost and lack of outstanding advantages prevented its adoption by the Coalition, instead serving as a transitional product for advanced bullpup rifles. Uses Coalition-issued ‖color:150,0,0,255‖7.62*51‖color:end‖ magazines.</entitydescription.tsm_lm_tavor21>
     <entityname.tsm_lm_mdr>Coalition MDR Bullpup Combat Rifle</entityname.tsm_lm_mdr>
-    <entitydescription.tsm_lm_mdr>In increasingly harsh combat scenarios, the Coalition found its small-caliber ammunition increasingly inadequate. The MDR was introduced as a response, maintaining a length of 79cm while using a 5.56mm configuration; it can switch to a 7.62mm configuration, allowing for quick conversion to engage targets while maintaining stability and versatility. Using ‖color:150,0,0,255‖5.56mm‖color:end‖ or ‖color:150,0,0,255‖7.62mm‖color:end‖ magazines.</entitydescription.tsm_lm_mdr>
+    <entitydescription.tsm_lm_mdr>In increasingly harsh combat scenarios, the Coalition found its small-caliber ammunition increasingly inadequate. The MDR was introduced as a response, maintaining a length of 79cm while using a 7.62*51 configuration; it can switch to a 7.62mm configuration, allowing for quick conversion to engage targets while maintaining stability and versatility. Using ‖color:150,0,0,255‖5.56mm‖color:end‖ or ‖color:150,0,0,255‖7.62mm‖color:end‖ magazines.</entitydescription.tsm_lm_mdr>
     <entityname.tsm_lm_mdr_c>Coalition MDR Bullpup Combat Rifle - Infiltration Type</entityname.tsm_lm_mdr_c>
     <entitydescription.tsm_lm_mdr_c>This rifle is a special modification for the Coalition's decapitation operations, equipped with a custom suppressor for better infiltration. It uses ‖color:150,0,0,255‖7.62x51mm‖color:end‖ ammunition.</entitydescription.tsm_lm_mdr_c>
     <entityname.tsm_lm_vsh2>Coalition VHS-2 "Rogue" Advanced Bullpup Combat Rifle</entityname.tsm_lm_vsh2>
@@ -793,7 +832,8 @@
     <entityname.lm_556kr_mag>Coalition Extended Magazine (5.56*45mm)</entityname.lm_556kr_mag>
     <entitydescription.lm_556kr_mag>Loaded with 45 rounds of standard ammo</entitydescription.lm_556kr_mag>
     <entityname.lm_556kr_drum>Coalition Extended Magazine (5.56*45mm)</entityname.lm_556kr_drum>
-    <entitydescription.lm_556kr_drum>Loaded with 60 rounds of standard ammo</entitydescription.lm_556kr_drum><entityname.lm_65_magazine>Coalition Standard Magazine (6.5mm)</entityname.lm_65_magazine>
+    <entitydescription.lm_556kr_drum>Loaded with 60 rounds of standard ammo</entitydescription.lm_556kr_drum>
+    <entityname.lm_65_magazine>Coalition Standard Magazine (6.5mm)</entityname.lm_65_magazine>
     <entitydescription.lm_65_magazine>Holds 30 rounds of standard 6.5x55mm ammunition with some armor-piercing capability for dealing with armored targets.</entitydescription.lm_65_magazine>
     <entityname.lm_762_35_mag>Coalition Standard Magazine (.300blk)</entityname.lm_762_35_mag>
     <entitydescription.lm_762_35_mag>Contains 30 round of .300 caliber ammo, a type of silent yet deadly subsonic ammo, different from standard supersonic ammo, its slower speed makes it lodge into the target's body and not pass through, resulting in higher stopping power, at the expense of lower penetration against armored targets, its advantages are fully utilized in riot control or hunting missions.</entitydescription.lm_762_35_mag>
@@ -1010,7 +1050,8 @@
     <entityname.tsm_9_smgmag_kr>Submachine Gun Extended Magazine (9mm)</entityname.tsm_9_smgmag_kr>
     <entitydescription.tsm_9_smgmag_kr>Holds 45 rounds of 9mm ammunition.</entitydescription.tsm_9_smgmag_kr>
     <entityname.tsm_9_smgmag_drum>Submachine Gun Drum (9mm)</entityname.tsm_9_smgmag_drum>
-    <entitydescription.tsm_9_smgmag_drum>Holds 72 rounds of 9mm ammunition.</entitydescription.tsm_9_smgmag_drum><entityname.tsm_58_smgmag>Submachine Gun Magazine (5.8mm)</entityname.tsm_58_smgmag>
+    <entitydescription.tsm_9_smgmag_drum>Holds 72 rounds of 9mm ammunition.</entitydescription.tsm_9_smgmag_drum>
+    <entityname.tsm_58_smgmag>Submachine Gun Magazine (5.8mm)</entityname.tsm_58_smgmag>
     <entitydescription.tsm_58_smgmag>Holds 50 rounds of 5.8mm ammunition.</entitydescription.tsm_58_smgmag>
     <entityname.tsm_57_smgmag>Submachine Gun Magazine (5.7*28mm)</entityname.tsm_57_smgmag>
     <entitydescription.tsm_57_smgmag>A heavy magazine capable of holding 50 rounds, 5.7x28mm ammunition can easily penetrate level three, four, and even five protective vests.</entitydescription.tsm_57_smgmag>

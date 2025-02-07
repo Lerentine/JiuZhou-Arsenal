@@ -63,33 +63,45 @@
     </ScriptedEvent>
     <!--任务中刷出邱小姐-->
     <ScriptedEvent identifier="tsm_srm_onactive">
-      <CheckDataAction identifier="tsm_save_missqiu_outpost" condition="eq active" forcestring="true"><!--检查存档标记-->
-      <Success>
-        <TagAction criteria="tsm_restarget" tag="TSM_customisation_qiuwu" ignoreincapacitatedcharacters="false"/><!--标记目标-->
-        <TagAction criteria="player" tag="player" ignoreincapacitatedcharacters="false"  /><!--标记玩家-->
-        <NPCWaitAction npctag="TSM_customisation_qiuwu" wait="true" /><!--让AI站着-->
-        <TriggerAction target1tag="TSM_customisation_qiuwu" target2tag="player" applytotarget1="TSM_customisation_qiuwu" applytotarget2="trigger_player" type="Inside" radius="250" disableincombat="true" disableiftargetincapacitated="true" waitforinteraction="true"/><!--触发对话-->
-        <ConversationAction text="tsm_srm_text.rescuetargetmessage1" speakertag="TSM_customisation_qiuwu" targettag="trigger_player" fadetoblack="true" endeventifinterrupted="true" dialogtype="Mission" continueconversation="false" continueautomatically="true" ><!--对话体-->
-        <Option text="tsm_srm_text.arrested">
-          <NPCChangeTeamAction npctag="TSM_customisation_qiuwu" teamid="Team1" /><!--设置AI为己方-->
-          <NPCFollowAction npctag="TSM_customisation_qiuwu" targettag="trigger_player" follow="true" maxtargets="1" /><!--强制AI跟随-->
-          <SetDataAction operation="Set" value="accomplished" identifier="tsm_save_missqiu_outpost"/><!--设置存档标记-->
-          <TriggerEventAction identifier="tsm_spawnrescuednpc" nextround="true" /><!--触发站点生成-->
-        </Option>
-        </ConversationAction>
-      </Success>
+      <CheckDataAction identifier="tsm_save_missqiu_outpost" condition="eq active" forcestring="true">
+        <!--检查存档标记-->
+        <Success>
+          <TagAction criteria="tsm_restarget" tag="TSM_customisation_qiuwu" ignoreincapacitatedcharacters="false" />
+          <!--标记目标-->
+          <TagAction criteria="player" tag="player" ignoreincapacitatedcharacters="false" />
+          <!--标记玩家-->
+          <NPCWaitAction npctag="TSM_customisation_qiuwu" wait="true" />
+          <!--让AI站着-->
+          <TriggerAction target1tag="TSM_customisation_qiuwu" target2tag="player" applytotarget1="TSM_customisation_qiuwu" applytotarget2="trigger_player" type="Inside" radius="250" disableincombat="true" disableiftargetincapacitated="true" waitforinteraction="true" />
+          <!--触发对话-->
+          <ConversationAction text="tsm_srm_text.rescuetargetmessage1" speakertag="TSM_customisation_qiuwu" targettag="trigger_player" fadetoblack="true" endeventifinterrupted="true" dialogtype="Mission" continueconversation="false" continueautomatically="true">
+            <!--对话体-->
+            <Option text="tsm_srm_text.arrested">
+              <NPCChangeTeamAction npctag="TSM_customisation_qiuwu" teamid="Team1" />
+              <!--设置AI为己方-->
+              <NPCFollowAction npctag="TSM_customisation_qiuwu" targettag="trigger_player" follow="true" maxtargets="1" />
+              <!--强制AI跟随-->
+              <SetDataAction operation="Set" value="accomplished" identifier="tsm_save_missqiu_outpost" />
+              <!--设置存档标记-->
+              <TriggerEventAction identifier="tsm_spawnrescuednpc" nextround="true" />
+              <!--触发站点生成-->
+            </Option>
+          </ConversationAction>
+        </Success>
       </CheckDataAction>
     </ScriptedEvent>
     <ScriptedEvent identifier="tsm_spawnrescuednpc">
-      <CheckDataAction identifier="tsm_save_missqiu_outpost" condition="eq accomplished" forcestring="true" ><!--验证存档标记-->
-      <Success>
-        <SpawnAction npcsetidentifier="TSM_mission_npc" npcidentifier="TSM_customisation_qiuwu" lootingisstealing="false" targettag="TSM_customisation_qiuwu" spawnlocation="Outpost" teamid="FriendlyNPC" allowduplicates="false" amount="1" /><!--触发站点生成-->
-        <SetDataAction operation="Set" value="end" identifier="tsm_save_missqiu_outpost" /><!--设置存档标记-->
-        <ConversationAction text="tsm_srm_text.thanks1" speakertag="TSM_customisation_qiuwu" invokertag="trigger_player" fadetoblack="false" >
-          <Option text="tsm_srm_text.answer1">
-          </Option>
-        </ConversationAction>
-      </Success>
+      <CheckDataAction identifier="tsm_save_missqiu_outpost" condition="eq accomplished" forcestring="true">
+        <!--验证存档标记-->
+        <Success>
+          <SpawnAction npcsetidentifier="TSM_mission_npc" npcidentifier="TSM_customisation_qiuwu" lootingisstealing="false" targettag="TSM_customisation_qiuwu" spawnlocation="Outpost" teamid="FriendlyNPC" allowduplicates="false" amount="1" />
+          <!--触发站点生成-->
+          <SetDataAction operation="Set" value="end" identifier="tsm_save_missqiu_outpost" />
+          <!--设置存档标记-->
+          <ConversationAction text="tsm_srm_text.thanks1" speakertag="TSM_customisation_qiuwu" invokertag="trigger_player" fadetoblack="false">
+            <Option text="tsm_srm_text.answer1"></Option>
+          </ConversationAction>
+        </Success>
       </CheckDataAction>
     </ScriptedEvent>
     <!--ars探员-->
@@ -267,7 +279,7 @@
       <TagAction criteria="humanprefabidentifier:occupation_fire" tag="enemy" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:occupation_qiuwu" tag="enemy" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:occupation_tarler" tag="enemy" continueifnotargetsfound="true" />
-      <StatusEffectAction targettag="enemy" >
+      <StatusEffectAction targettag="enemy">
         <StatusEffect target="This">
           <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
           <Affliction identifier="tsm_ai_bleeding" strength="50" />
@@ -344,46 +356,46 @@
         </Failure>
       </RNGAction>
       <GoTo name="delay" maxtimes="400" />
-          <SpawnAction npcsetidentifier="occupation_npcs" npcidentifier="occupation_leader" lootingisstealing="false" targettag="occupation" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <StatusEffectAction targettag="occupation"  enabledespawn="true">
-            <StatusEffect target="This">
-              <Sound file="%ModDir%/ogg/Blood for the Blood.ogg" range="10000" />
-            </StatusEffect>
-          </StatusEffectAction>
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="occupation_npcs" npcidentifier="occupation_leader" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="occupation_npcs" npcidentifier="occupation_leader" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="occupation_npcs" npcidentifier="occupation_leader" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="occupation_npcs" npcidentifier="occupation_leader" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <TagAction criteria="humanprefabidentifier:rapidreaction_reinforcement" tag="enemy_reinforcement" continueifnotargetsfound="true" />
-          <TagAction criteria="humanprefabidentifier:occupation_leader" tag="enemy_reinforcement" continueifnotargetsfound="true" />
-          <StatusEffectAction targettag="enemy_reinforcement">
-          <StatusEffect target="This" enabledespawn="true">
+      <SpawnAction npcsetidentifier="occupation_npcs" npcidentifier="occupation_leader" lootingisstealing="false" targettag="occupation" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <StatusEffectAction targettag="occupation" enabledespawn="true">
+        <StatusEffect target="This">
+          <Sound file="%ModDir%/ogg/Blood for the Blood.ogg" range="10000" />
+        </StatusEffect>
+      </StatusEffectAction>
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="occupation_npcs" npcidentifier="occupation_leader" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="occupation_npcs" npcidentifier="occupation_leader" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="occupation_npcs" npcidentifier="occupation_leader" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="occupation_npcs" npcidentifier="occupation_leader" targettag="occupation" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <TagAction criteria="humanprefabidentifier:rapidreaction_reinforcement" tag="enemy_reinforcement" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:occupation_leader" tag="enemy_reinforcement" continueifnotargetsfound="true" />
+      <StatusEffectAction targettag="enemy_reinforcement">
+        <StatusEffect target="This" enabledespawn="true">
           <Affliction identifier="tsm_qrf_jia_buff" strength="50" />
           <Affliction identifier="tsm_ai_stun" strength="50" />
           <Affliction identifier="tsm_qrf_stun" strength="50" />
@@ -483,46 +495,46 @@
         <Failure>
           <RNGAction chance="0.5">
             <Success>
-              <WaitAction time="0.5" />
+              <WaitAction time="1.5" />
             </Success>
             <Failure>
-              <WaitAction time="1.5" />
+              <WaitAction time="1" />
             </Failure>
           </RNGAction>
         </Failure>
       </RNGAction>
-      <GoTo name="delay" maxtimes="20" />
-          <SpawnAction npcsetidentifier="beowulf_npcs" npcidentifier="beowulf_leader" lootingisstealing="false" targettag="beowulf" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <StatusEffectAction targettag="crew">
-           <StatusEffect target="This" enabledespawn="true">
+      <GoTo name="delay" maxtimes="350" />
+      <SpawnAction npcsetidentifier="beowulf_npcs" npcidentifier="beowulf_leader" lootingisstealing="false" targettag="beowulf" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <StatusEffectAction targettag="crew">
+        <StatusEffect target="This" enabledespawn="true">
           <Sound file="%ModDir%/mission/beowulf_reinforcement_arrived.ogg" range="10000" />
         </StatusEffect>
       </StatusEffectAction>
-          <StatusEffectAction targettag="beowulf">
-            <StatusEffect target="This" enabledespawn="true" delay="2">
-              <Sound file="%ModDir%/ogg/phonkghost.ogg" range="10000" />
-            </StatusEffect>
-          </StatusEffectAction>
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="beowulf" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="beowulf" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="beowulf" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="beowulf" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="beowulf" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="beowulf" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="beowulf" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="beowulf_npcs" npcidentifier="beowulf_leader" lootingisstealing="false" targettag="beowulf" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <TagAction criteria="humanprefabidentifier:rapidreaction_reinforcement" tag="enemy_reinforcement" continueifnotargetsfound="true" />
-          <TagAction criteria="humanprefabidentifier:beowulf_leader" tag="enemy_reinforcement" continueifnotargetsfound="true" />
-          <StatusEffectAction targettag="enemy_reinforcement">
-          <StatusEffect target="This" enabledespawn="true">
+      <StatusEffectAction targettag="beowulf">
+        <StatusEffect target="This" enabledespawn="true" delay="2">
+          <Sound file="%ModDir%/ogg/phonkghost.ogg" range="10000" />
+        </StatusEffect>
+      </StatusEffectAction>
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="beowulf" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="beowulf" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="beowulf" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="beowulf" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="beowulf" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="beowulf" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="rapidreaction_npcs" npcidentifier="rapidreaction_reinforcement" targettag="beowulf" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="beowulf_npcs" npcidentifier="beowulf_leader" lootingisstealing="false" targettag="beowulf" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <TagAction criteria="humanprefabidentifier:rapidreaction_reinforcement" tag="enemy_reinforcement" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:beowulf_leader" tag="enemy_reinforcement" continueifnotargetsfound="true" />
+      <StatusEffectAction targettag="enemy_reinforcement">
+        <StatusEffect target="This" enabledespawn="true">
           <Affliction identifier="tsm_qrf_jia_buff" strength="50" />
           <Affliction identifier="tsm_ai_stun" strength="50" />
           <Affliction identifier="tsm_qrf_stun" strength="50" />
@@ -533,9 +545,9 @@
       </StatusEffectAction>
     </ScriptedEvent>
     <ScriptedEvent identifier="tsm_beowulf_bb">
-      <TagAction criteria="crew" tag="player" continueifnotargetsfound="true"/>
-      <TagAction criteria="bot" tag="player" continueifnotargetsfound="true"/>
-      <TagAction criteria="player" tag="player" continueifnotargetsfound="true"/>
+      <TagAction criteria="crew" tag="player" continueifnotargetsfound="true" />
+      <TagAction criteria="bot" tag="player" continueifnotargetsfound="true" />
+      <TagAction criteria="player" tag="player" continueifnotargetsfound="true" />
       <StatusEffectAction targettag="player">
         <StatusEffect target="This">
           <Affliction identifier="tsm_beowulf_bb" strength="10" />
@@ -603,7 +615,7 @@
       <TagAction criteria="humanprefabidentifier:yehuo_ex" tag="enemy" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:yehuo_reinforcement" tag="enemy" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:yehuo_leader_cce" tag="enemy" continueifnotargetsfound="true" />
-      <StatusEffectAction targettag="enemy" >
+      <StatusEffectAction targettag="enemy">
         <StatusEffect target="This" enabledespawn="true">
           <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
           <Affliction identifier="tsm_ai_bleeding" strength="50" />
@@ -678,63 +690,63 @@
         </Failure>
       </RNGAction>
       <GoTo name="delay" maxtimes="400" />
-          <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_leader" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <StatusEffectAction targettag="yehuo" enabledespawn="true">
-            <StatusEffect target="This">
-              <Sound file="%ModDir%/ogg/red rock for mother Russia.ogg" range="10000" />
-            </StatusEffect>
-          </StatusEffectAction>
-          <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_leader" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_leader" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_leader" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <TagAction criteria="humanprefabidentifier:yehuo_reinforcement" tag="enemy_reinforcement" continueifnotargetsfound="true" />
-          <TagAction criteria="humanprefabidentifier:yehuo_leader" tag="enemy_reinforcement_jia" continueifnotargetsfound="true" />
-          <StatusEffectAction targettag="enemy_reinforcement" >
-          <StatusEffect target="This" enabledespawn="true">
+      <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_leader" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <StatusEffectAction targettag="yehuo" enabledespawn="true">
+        <StatusEffect target="This">
+          <Sound file="%ModDir%/ogg/red rock for mother Russia.ogg" range="10000" />
+        </StatusEffect>
+      </StatusEffectAction>
+      <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_reinforcement" lootingisstealing="false" targettag="separatists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_leader" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_leader" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="yehuo_npcs" npcidentifier="yehuo_leader" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <TagAction criteria="humanprefabidentifier:yehuo_reinforcement" tag="enemy_reinforcement" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:yehuo_leader" tag="enemy_reinforcement_jia" continueifnotargetsfound="true" />
+      <StatusEffectAction targettag="enemy_reinforcement">
+        <StatusEffect target="This" enabledespawn="true">
           <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
           <Affliction identifier="tsm_ai_stun_2" strength="50" />
           <Affliction identifier="tsm_ai_bleeding" strength="50" />
           <Affliction identifier="tsm_yehuo_yi_buff" strength="50" />
           <Affliction identifier="tsm_ai_tk" strength="50" />
           <Affliction identifier="tsm_ai_fire" strength="50" />
-          </StatusEffect>
-         </StatusEffectAction>
-      <StatusEffectAction targettag="enemy_reinforcement_jia" >
+        </StatusEffect>
+      </StatusEffectAction>
+      <StatusEffectAction targettag="enemy_reinforcement_jia">
         <StatusEffect target="This" enabledespawn="true">
-        <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
-        <Affliction identifier="tsm_ai_bleeding" strength="50" />
-        <Affliction identifier="tsm_ai_stun_5" strength="50" />
-        <Affliction identifier="tsm_yehuo_jia_buff" strength="50" />
-        <Affliction identifier="tsm_ai_tk" strength="50" />
-        <Affliction identifier="tsm_ai_fire" strength="50" />
+          <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
+          <Affliction identifier="tsm_ai_bleeding" strength="50" />
+          <Affliction identifier="tsm_ai_stun_5" strength="50" />
+          <Affliction identifier="tsm_yehuo_jia_buff" strength="50" />
+          <Affliction identifier="tsm_ai_tk" strength="50" />
+          <Affliction identifier="tsm_ai_fire" strength="50" />
         </StatusEffect>
         <StatusEffect target="This" UseHealthWindow="false" />
-    </StatusEffectAction>
+      </StatusEffectAction>
     </ScriptedEvent>
     <!--突袭者-->
     <ScriptedEvent identifier="tsm_anonymous_buff">
@@ -908,58 +920,44 @@
         </Failure>
       </RNGAction>
       <GoTo name="delay" maxtimes="300" />
-          <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <StatusEffectAction targettag="TSM" enabledespawn="true">
-            <StatusEffect target="This">
-              <Sound file="%ModDir%/ogg/四面楚歌.ogg" range="10000" />
-            </StatusEffect>
-          </StatusEffectAction>
-          <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="Combat_Npc_Customisation" npcidentifier="tsm_outpost_combat_naiya" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_3" tag="enemy_outpost_combat" continueifnotargetsfound="true" />.
-          <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_naiya" tag="enemy_outpost_combat" continueifnotargetsfound="true" />
-          <StatusEffectAction targettag="enemy_outpost_combat">
-          <StatusEffect target="This" enabledespawn="true">
-          <Affliction identifier="tsm_ai_stun" strength="50" />
-          <Affliction identifier="tsm_eyi_combat" strength="50" />
-          <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
-          <Affliction identifier="tsm_ai_tk" strength="50" />
-          <Affliction identifier="tsm_eyi_rev" strength="50" />
-          <Affliction identifier="tsm_eyi_defend" strength="50" />
-          <Affliction identifier="tsm_ai_fire" strength="50" />
-          <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1" />
-          </StatusEffect>
-            <StatusEffect target="This" UseHealthWindow="false" />
+      <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <StatusEffectAction targettag="TSM" enabledespawn="true">
+        <StatusEffect target="This">
+          <Sound file="%ModDir%/ogg/四面楚歌.ogg" range="10000" />
+        </StatusEffect>
       </StatusEffectAction>
-    </ScriptedEvent>
+      <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_3" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="Combat_Npc_Customisation" npcidentifier="tsm_outpost_combat_naiya" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_3" tag="enemy_outpost_combat" continueifnotargetsfound="true" />.
+          <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_naiya" tag="enemy_outpost_combat" continueifnotargetsfound="true" /><StatusEffectAction targettag="enemy_outpost_combat"><StatusEffect target="This" enabledespawn="true"><Affliction identifier="tsm_ai_stun" strength="50" /><Affliction identifier="tsm_eyi_combat" strength="50" /><Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" /><Affliction identifier="tsm_ai_tk" strength="50" /><Affliction identifier="tsm_eyi_rev" strength="50" /><Affliction identifier="tsm_eyi_defend" strength="50" /><Affliction identifier="tsm_ai_fire" strength="50" /><GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1" /></StatusEffect><StatusEffect target="This" UseHealthWindow="false" /></StatusEffectAction></ScriptedEvent>
     <!--无限增援-->
     <ScriptedEvent identifier="lm_reinforcement_event">
       <TagAction criteria="crew" tag="crew" />
@@ -1021,16 +1019,16 @@
         </Failure>
       </RNGAction>
       <GoTo name="delay" maxtimes="5" />
-          <SpawnAction npcsetidentifier="tsm_adventists_npcs" npcidentifier="adventists_elite" lootingisstealing="false" targettag="adventists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="tsm_adventists_npcs" npcidentifier="adventists_elite" lootingisstealing="false" targettag="adventists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="tsm_adventists_npcs" npcidentifier="adventists_elite" lootingisstealing="false" targettag="adventists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="tsm_adventists_npcs" npcidentifier="adventists_elite" lootingisstealing="false" targettag="adventists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
-          <SpawnAction npcsetidentifier="tsm_adventists_npcs" npcidentifier="adventists_elite" lootingisstealing="false" targettag="adventists"  spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-          <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_adventists_npcs" npcidentifier="adventists_elite" lootingisstealing="false" targettag="adventists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_adventists_npcs" npcidentifier="adventists_elite" lootingisstealing="false" targettag="adventists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_adventists_npcs" npcidentifier="adventists_elite" lootingisstealing="false" targettag="adventists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_adventists_npcs" npcidentifier="adventists_elite" lootingisstealing="false" targettag="adventists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
+      <SpawnAction npcsetidentifier="tsm_adventists_npcs" npcidentifier="adventists_elite" lootingisstealing="false" targettag="adventists" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+      <WaitAction time="0.1" />
     </ScriptedEvent>
     <ScriptedEvent identifier="tsm_combat_adventists_event_tsm">
       <TagAction criteria="crew" tag="crew" />
@@ -1066,7 +1064,7 @@
       <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_2" lootingisstealing="true" targettag="TSM" spawnpointtag="banditleader" spawnlocation="outpost" TeamID="Team1" allowinplayerview="false" CanInventoryBeAccessed="false" />
       <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_2" lootingisstealing="true" targettag="TSM" spawnpointtag="banditleader" spawnlocation="outpost" TeamID="Team1" allowinplayerview="false" CanInventoryBeAccessed="false" />
       <SpawnAction npcsetidentifier="tsm_npcs" npcidentifier="tsm_outpost_combat_2" lootingisstealing="true" targettag="TSM" spawnpointtag="banditleader" spawnlocation="outpost" TeamID="Team1" allowinplayerview="false" CanInventoryBeAccessed="false" />
-          <CombatAction combatmode="Offensive" npctag="TSM" enemytag="adventists" isinstigator="false" guardreaction="arrest" witnessreaction="retreat" />
+      <CombatAction combatmode="Offensive" npctag="TSM" enemytag="adventists" isinstigator="false" guardreaction="arrest" witnessreaction="retreat" />
     </ScriptedEvent>
     <!--牛仔对决-->
     <ScriptedEvent identifier="tsm_nz_combat">
@@ -1173,84 +1171,79 @@
     <!--站点突袭-->
     <!--克里斯入组-->
     <ScriptedEvent identifier="tsm_chris_join">
-     <CheckDataAction identifier="tsm_chris_join_complete" condition="eq true">
-     <Failure>
-       <CheckDataAction identifier="tsm_beowulf_complete" condition="eq true">
-        <Success>
-          <TagAction criteria="player" tag="player" />
-          <SpawnAction npcsetidentifier="tsm_npcs_jz" npcidentifier="tsm_chris" targettag="tsm_chris" spawnlocation="Outpost" targetmoduletags="airlock" />
-          <StatusEffectAction targettag="tsm_chris">
-            <StatusEffect target="This" enabledespawn="true">
-              <Affliction identifier="tsm_chris_ondead" strength="50" />
-            </StatusEffect>
-          </StatusEffectAction>
-          <Label name="tsm_check_beowulf" />
-          <TriggerAction target1tag="tsm_chris" target2tag="player" applytotarget1="tsm_chris" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
-          <ConversationAction targettag="triggerer_player" text="tsm_chris_c1" >
-            <Option text="tsm_chris_p1">
-              <ConversationAction targettag="triggerer_player" text="tsm_chris_c2" >
-                <Option text="tsm_chris_p2">
-                  <ConversationAction targettag="triggerer_player" text="tsm_chris_c3" >
-                    <Option text="tsm_chris_p3">
-                      <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_beowulf">
-                        <Success>
-                          <RemoveItemAction targettag="triggerer_player" itemidentifier="tsm_beowulf" />
-                          <ConversationAction targettag="triggerer_player" text="tsm_chris_c_e1" >
-                            <Option text="tsm_chris_p_e">
-                              <ConversationAction targettag="triggerer_player" text="tsm_chris_c_e2"  />
-                              <NPCChangeTeamAction npctag="tsm_chris" teamid="Team1" addtocrew="true" />
-                              <SetDataAction identifier="tsm_chris_join_complete" value="true" />
-                            </Option>
-                          </ConversationAction>
-                        </Success>
-                        <Failure>
-                          <ConversationAction targettag="triggerer_player" text="tsm_chris_c_n"/>
-                          <GoTo name="tsm_check_beowulf" />
-                        </Failure>
-                      </CheckItemAction>
+      <CheckDataAction identifier="tsm_chris_join_complete" condition="eq true">
+        <Failure>
+          <CheckDataAction identifier="tsm_beowulf_complete" condition="eq true">
+            <Success>
+              <TagAction criteria="player" tag="player" />
+              <SpawnAction npcsetidentifier="tsm_npcs_jz" npcidentifier="tsm_chris" targettag="tsm_chris" spawnlocation="Outpost" targetmoduletags="airlock" />
+              <StatusEffectAction targettag="tsm_chris">
+                <StatusEffect target="This" enabledespawn="true">
+                  <Affliction identifier="tsm_chris_ondead" strength="50" />
+                </StatusEffect>
+              </StatusEffectAction>
+              <Label name="tsm_check_beowulf" />
+              <TriggerAction target1tag="tsm_chris" target2tag="player" applytotarget1="tsm_chris" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
+              <ConversationAction targettag="triggerer_player" text="tsm_chris_c1">
+                <Option text="tsm_chris_p1">
+                  <ConversationAction targettag="triggerer_player" text="tsm_chris_c2">
+                    <Option text="tsm_chris_p2">
+                      <ConversationAction targettag="triggerer_player" text="tsm_chris_c3">
+                        <Option text="tsm_chris_p3">
+                          <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_beowulf">
+                            <Success>
+                              <RemoveItemAction targettag="triggerer_player" itemidentifier="tsm_beowulf" />
+                              <ConversationAction targettag="triggerer_player" text="tsm_chris_c_e1">
+                                <Option text="tsm_chris_p_e">
+                                  <ConversationAction targettag="triggerer_player" text="tsm_chris_c_e2" />
+                                  <NPCChangeTeamAction npctag="tsm_chris" teamid="Team1" addtocrew="true" />
+                                  <SetDataAction identifier="tsm_chris_join_complete" value="true" />
+                                </Option>
+                              </ConversationAction>
+                            </Success>
+                            <Failure>
+                              <ConversationAction targettag="triggerer_player" text="tsm_chris_c_n" />
+                              <GoTo name="tsm_check_beowulf" />
+                            </Failure>
+                          </CheckItemAction>
+                        </Option>
+                      </ConversationAction>
                     </Option>
                   </ConversationAction>
                 </Option>
               </ConversationAction>
-            </Option>
-          </ConversationAction>
-        </Success>
-       <Failure>
-       </Failure>
-     </CheckDataAction>
-     </Failure>
-     <Success></Success>
-     </CheckDataAction>
+            </Success>
+            <Failure></Failure>
+          </CheckDataAction>
+        </Failure>
+        <Success></Success>
+      </CheckDataAction>
     </ScriptedEvent>
     <ScriptedEvent identifier="tsm_beowulf_complete_1">
       <TagAction criteria="humanprefabidentifier:beowulf_sl" tag="mission_target" continueifnotargetsfound="true" />
-      <StatusEffectAction targettag="mission_target" >
-        <StatusEffect target="This" >
+      <StatusEffectAction targettag="mission_target">
+        <StatusEffect target="This">
           <Affliction identifier="tsm_beowulf_complete" strength="50" />
         </StatusEffect>
       </StatusEffectAction>
     </ScriptedEvent>
-    <ScriptedEvent identifier="tsm_beowulf_complete_2" >
+    <ScriptedEvent identifier="tsm_beowulf_complete_2">
       <SetDataAction value="true" identifier="tsm_beowulf_complete" />
-      <ConversationAction text="完成" dialogtype="Small" />
     </ScriptedEvent>
   </EventPrefabs>
-  <EventSet identifier="tsm_ars" leveltype="outpost"
-            locationtype="city,military,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true" additive="true" commonness="85">
+  <EventSet identifier="tsm_ars" leveltype="outpost" locationtype="city,military,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true" additive="true" commonness="85">
     <EventSet identifier="tsm_outpostevents_ars" minleveldifficulty="15" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true">
       <ScriptedEvent identifier="TSM_convertible_npc" commonness="100" />
     </EventSet>
   </EventSet>
-  <EventSet identifier="tsm_blackship" leveltype="outpost"
-            locationtype="outpost,city,research,military,mine,colony,settlement,construction,camp,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory,shipyard,fusion" allowatstart="true" minleveldifficulty="25" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true" additive="true" commonness="50">
+  <EventSet identifier="tsm_blackship" leveltype="outpost" locationtype="outpost,city,research,military,mine,colony,settlement,construction,camp,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory,shipyard,fusion" allowatstart="true" minleveldifficulty="25" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true" additive="true" commonness="50">
     <EventSet identifier="tsm_outpostevents_blackship" minleveldifficulty="20" maxleveldifficulty="50" allowatstart="true" chooserandom="true" onceperoutpost="true">
       <ScriptedEvent identifier="tsm_opdeco_hrflyers_1" commonness="10" />
     </EventSet>
   </EventSet>
   <EventSet identifier="chris_join" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" additive="true" selectalways="true" commonness="100">
-    <EventSet identifier="chris_join" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1" additive="true" selectalways="true"
-              locationtype="outpost,city,research,military,mine,colony,settlement,construction,camp,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory,shipyard,fusion">
-      <ScriptedEvent identifier="tsm_chris_join" commonness="100"/>
+    <EventSet identifier="chris_join" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1" additive="true" selectalways="true" locationtype="outpost,city,research,military,mine,colony,settlement,construction,camp,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory,shipyard,fusion">
+      <ScriptedEvent identifier="tsm_chris_join" commonness="100" />
     </EventSet>
   </EventSet>
 </Randomevents>

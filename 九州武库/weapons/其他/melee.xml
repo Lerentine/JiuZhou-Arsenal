@@ -382,7 +382,7 @@
         <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
       </Quality>
     </Item>
-    <Item name="小型圆盾" identifier="tsm_round_riotshields" subcategory="tsm_melee" category="Equipment" scale="0.25" tags="weapon,mediumitem,tsm_riotshields_round" impactsoundtag="impact_metal_light" health="900" damagedbyprojectiles="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbymeleeweapons="false" explosiondamagemultiplier="0.2">
+    <Item name="小型圆盾" identifier="tsm_round_riotshields" subcategory="tsm_melee" category="Weapon" scale="0.25" tags="weapon,mediumitem,tsm_riotshields_round" impactsoundtag="impact_metal_light" health="900" damagedbyprojectiles="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbymeleeweapons="false" explosiondamagemultiplier="0.2">
       <Price baseprice="385" soldeverywhere="false">
         <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="1" />
         <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" />
@@ -430,7 +430,7 @@
         <QualityStat stattype="Condition" value="0.1" />
       </Quality>
     </Item>
-    <Item name="大型方盾" identifier="tsm_square_riotshields" subcategory="tsm_melee" category="Equipment" scale="0.25" tags="weapon,mediumitem" impactsoundtag="impact_metal_light" health="1200" damagedbyprojectiles="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" explosiondamagemultiplier="0.2">
+    <Item name="大型方盾" identifier="tsm_square_riotshields" subcategory="tsm_melee" category="Weapon" scale="0.25" tags="weapon,mediumitem" impactsoundtag="impact_metal_light" health="1200" damagedbyprojectiles="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" explosiondamagemultiplier="0.2">
       <Price baseprice="456" soldeverywhere="false">
         <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="1" />
         <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" />
@@ -522,7 +522,7 @@
         <Item identifier="titanium" amount="2" />
       </Fabricate>
       <Body width="400" height="50" density="25" />
-      <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="0,10" holdangle="20" reload="0.8" aimangle="-10" range="50" combatPriority="25" msg="ItemMsgPickUpSelect" >
+      <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="0,10" holdangle="20" reload="0.8" aimangle="-10" range="50" combatPriority="25" msg="ItemMsgPickUpSelect">
         <Attack targetimpulse="5" severlimbsprobability="0.1" itemdamage="20" penetration="0.5" structuredamage="2" structuresoundtype="StructureSlash">
           <Affliction identifier="lacerations" strength="25" />
           <Affliction identifier="bleedingnonstop" strength="20" />
@@ -581,7 +581,7 @@
       </Quality>
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="钢刀" identifier="tsm_steel_knife" subcategory="tsm_melee" scale="0.27" category="weapon" tags="mediumitem,weapon,tsmweapon,gunsmith,provocativetohumanai" description="" hideinmenus="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy">
+    <Item name="钢刀" identifier="tsm_steel_knife" subcategory="tsm_melee" scale="0.27" category="Weapon" tags="mediumitem,weapon,tsmweapon,gunsmith,provocativetohumanai" description="" hideinmenus="false" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy">
       <InventoryIcon texture="%ModDir%/weapons/其他/近战.png" sourcerect="1806,7,194,202" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/近战.png" sourcerect="1171,65,493,81" depth="0.55" origin="0.5,0.5" />
       <Body width="493" height="40" density="45" />
@@ -639,7 +639,7 @@
           <Sound file="%ModDir%/ogg/hammer.ogg" range="500" />
         </Attack>
         <StatusEffect type="OnImpact" target="This" Condition="-10.0" disabledeltatime="true">
-          <Explosion range="100.0" ballastfloradamage="100" levelwalldamage="120" itemdamage="100" force="5.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.1"/>
+          <Explosion range="100.0" ballastfloradamage="100" levelwalldamage="120" itemdamage="100" force="5.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.1" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="Character,Contained" disabledeltatime="true" comparison="and">
           <Conditional skillrequirement="true" weapons="lt 60" />

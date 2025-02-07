@@ -1,174 +1,174 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Override>
-<Items>
-  <!--希洛克-->
-  <Item identifier="tsm_mcrate_shillok" category="Equipment" tags="crate,mediumitem" fireproof="true" impactsoundtag="impact_soft" hideinmenus="true" scale="0.4">
-    <PreferredContainer secondary="ruintreasure,pirateengcab,wreckmedcab,beaconengcab" minamount="1" maxamount="1" spawnprobability="0.1" />
-    <Deconstruct time="10" chooserandom="true" amount="1">
-      <Item identifier="endocrinebooster" commonness="0.1" />
-      <Item identifier="tsm_eyi_relics" commonness="0.1" />
-      <Item identifier="tsm_eyi_stabilise_reagent" commonness="0.08" />
-      <Item identifier="tsm_virusstage_inhibitory" commonness="0.3" />
-      <Item identifier="tsm_virusstage_clear" commonness="0.3" />
-      <Item identifier="tsm_virusstage_deep_inhibitory" commonness="0.3" />
-      <Item identifier="tsm_eyi_embryo" commonness="0.4" />
-      <Item identifier="tsm_lighter" commonness="0.3" />
-      <Item identifier="tsm_marlboro_box" commonness="0.5" />
-      <Item identifier="tsm_Chinesecigar_box" commonness="0.5" />
-      <Item identifier="tsm_universe_box" commonness="0.5" />
-      <Item identifier="tsm_suit_O5" commonness="0.6" />
-      <Item identifier="tsm_shipammo_shell" commonness="0.5" />
-      <Item identifier="AlbinismSpineling_shell" commonness="0.5" />
-      <Item identifier="lldyj" commonness="0.1" />
-      <Item identifier="mvdxe" commonness="0.1" />
-      <Item identifier="hyddx" commonness="0.1" />
-      <Item identifier="ddbm" commonness="0.1" />
-      <Item identifier="tsm_identifier" commonness="0.1" />
-      <Item identifier="titaniumaluminiumalloy" commonness="0.3" />
-      <Item identifier="physicorium" commonness="0.2" />
-      <Item identifier="dementonite" commonness="0.2" />
-      <Item identifier="incendium" commonness="0.2" />
-      <Item identifier="fulgurium" commonness="0.2" />
-      <Item identifier="nuclearshell" commonness="0.3" />
-      <Item identifier="cigar" commonness="0.3" />
-      <Item identifier="unidentifiedgeneticmaterial" commonness="0.1" />
-      <Item identifier="flamerunique" commonness="0.2" />
-      <Item identifier="clownmaskunique" commonness="0.3" />
-      <Item identifier="clownsuitunique" commonness="0.3" />
-      <Item identifier="safetyharness" commonness="0.5" />
-      <Item identifier="tsm_wz_cl_flare" commonness="0.15" />
-      <Item identifier="tsm_wz_yl_flare" commonness="0.15" />
-      <Item identifier="tsm_ammunition_resupply" commonness="0.15" />
-      <Item identifier="tsm_yx_crystallography" commonness="0.15" />
-      <Item identifier="tsm_hengberley_star" commonness="0.1" />
-      <Item identifier="tsm_blueprint" commonness="0.1" />
-      <Item identifier="tsm_blueprint1" commonness="0.1" />
-      <Item identifier="tsm_bg_licences" commonness="0.1" />
-      <Item identifier="tsm_danger_box" commonness="0.1" />
-      <Item identifier="lm_beowulf_helmet" commonness="0.25" />
-      <Item identifier="lm_occupation_helmet" commonness="0.1" />
-      <Item identifier="fkj_vest_yehuo" commonness="0.1" />
-      <Item identifier="fkj_yehuo_helmet" commonness="0.1" />
-      <Item identifier="fkj_yehuo_uniform" commonness="0.1" />
-      <Item identifier="tsm_jz_uniform" commonness="0.25" />
-      <Item identifier="tsm_jz_vest" commonness="0.1" />
-      <Item identifier="tsm_helmet_outpost_combat" commonness="0.1" />
-      <Item identifier="tsm_nujiang_uniform" commonness="0.1" />
-      <Item identifier="lm_rapidreaction_helmet" commonness="0.25" />
-      <Item identifier="lm_rapidreaction_vest" commonness="0.1" />
-      <Item identifier="lm_rapidreaction_uniform" commonness="0.1" />
-      <Item identifier="lm_crosstalk_helmet" commonness="0.1" />
-      <Item identifier="tsm_armor_allbuff" commonness="0.1" />
-      <Item identifier="tsm_armor_bleeding" commonness="0.2" />
-      <Item identifier="tsm_armor_lacerations" commonness="0.2" />
-      <Item identifier="tsm_armor_stun" commonness="0.2" />
-      <Item identifier="tsm_armor_blunttrauma" commonness="0.2" />
-      <Item identifier="tsm_armor_huskinfection" commonness="0.2" />
-      <Item identifier="tsm_armor_paralysis" commonness="0.2" />
-      <Item identifier="tsm_armor_triton" commonness="0.2" />
-      <Item identifier="tsm_armor_bitewounds" commonness="0.2" />
-      <Item identifier="tsm_armor_explosiondamage" commonness="0.2" />
-      <Item identifier="tsm_armor_gunshotwound" commonness="0.2" />
-      <Item identifier="tsm_advisers_vest" commonness="0.25" />
-      <Item identifier="tsm_advisers_mask" commonness="0.25" />
-      <Item identifier="tsm_advisers_uniform" commonness="0.25" />
-      <Item identifier="tsm_65_uniform" commonness="0.25" />
-      <Item identifier="tsm_65_hat" commonness="0.25" />
-      <Item identifier="tsm_63_gear" commonness="0.25" />
-      <Item identifier="tsm_thermal_knife" commonness="0.25" />
-      <Item identifier="tsm_steel_knife" commonness="0.25" />
-      <Item identifier="tsm_zc" commonness="0.15" />
-      <Item identifier="tsm_fy" commonness="0.15" />
-      <Item identifier="tsm_xylz" commonness="0.15" />
-      <Item identifier="tsm_gravitythrower" commonness="0.15" />
-      <Item identifier="tsm_advanced_191" commonness="0.15" />
-      <Item identifier="tsm_ots11" commonness="0.15" />
-      <Item identifier="tsm_gm6" commonness="0.15" />
-      <Item identifier="tsm_lm_rm277" commonness="0.15" />
-      <Item identifier="tsm_lm_mcx" commonness="0.15" />
-      <Item identifier="tsm_lm_drh" commonness="0.15" />
-      <Item identifier="tsm_lm_minigun" commonness="0.15" />
-      <Item identifier="tsm_fkj_an94" commonness="0.15" />
-      <Item identifier="tsm_fkj_groza" commonness="0.15" />
-      <Item identifier="tsm_fkj_ak12" commonness="0.15" />
-      <Item identifier="tsm_fkj_pkp" commonness="0.15" />
-      <Item identifier="tsm_fkj_jq430" commonness="0.15" />
-      <Item identifier="tsm_fkj_rpk16" commonness="0.15" />
-      <Item identifier="tsm_fkj_g3a4" commonness="0.15" />
-      <Item identifier="tsm_m99" commonness="0.15" />
-      <Item identifier="tsm_js9" commonness="0.15" />
-    </Deconstruct>
-    <Sprite texture="%ModDir:2852411866%/mission/tsm_mission_item.png" depth="0.54" sourcerect="820,911,204,109" origin="0.5,0.5" />
-    <Body width="120" radius="45" density="20" friction="1.0" restitution="0.01" />
-    <Holdable slots="RightHand,LeftHand" holdpos="0,-80" handle1="0,50" handle2="0,50" aimable="false" msg="ItemMsgPickUpSelect"/>
-  </Item>
-  <!--材料补给-->
-  <Item identifier="tsm_mcrate_replenishment1" tags="crate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" impacttolerance="2.9">
-    <Sprite texture="%ModDir:2852411866%/mission/tsm_mission_item.png" depth="0.54" sourcerect="10,671,150,80" origin="0.5,0.5" />
-    <Body width="150" height="70" density="50" />
-    <Holdable slots="RightHand,LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect"/>
-    <Deconstruct time="8" chooserandom="true" amount="5">
-      <Item identifier="titanite" commonness="0.1" />
-      <Item identifier="brockite" commonness="0.1" />
-      <Item identifier="thorianite" commonness="0.1" />
-      <Item identifier="amblygonite" commonness="0.1" />
-      <Item identifier="sphalerite" commonness="0.1" />
-      <Item identifier="pyromorphite" commonness="0.1" />
-      <Item identifier="quartz" commonness="0.1" />
-      <Item identifier="diamond" commonness="0.1" />
-      <Item identifier="hydroxyapatite" commonness="0.1" />
-      <Item identifier="uraniumore" commonness="0.1" />
-      <Item identifier="ilmenite" commonness="0.1" />
-      <Item identifier="stannite" commonness="0.1" />
-      <Item identifier="chalcopyrite" commonness="0.1" />
-      <Item identifier="esperite" commonness="0.1" />
-      <Item identifier="galena" commonness="0.1" />
-      <Item identifier="triphylite" commonness="0.1" />
-      <Item identifier="langbeinite" commonness="0.1" />
-      <Item identifier="chamosite" commonness="0.1" />
-      <Item identifier="ironore" commonness="0.1" />
-      <Item identifier="polyhalite" commonness="0.1" />
-      <Item identifier="graphite" commonness="0.1" />
-      <Item identifier="sylvite" commonness="0.1" />
-      <Item identifier="lazulite" commonness="0.1" />
-      <Item identifier="bornite" commonness="0.1" />
-      <Item identifier="cassiterite" commonness="0.1" />
-      <Item identifier="cryolite" commonness="0.1" />
-      <Item identifier="aragonite" commonness="0.1" />
-      <Item identifier="chrysoprase" commonness="0.1" />
-      <Item identifier="tsm_tungstenore" commonness="0.1" />
-      <Item identifier="tsm_sulphurore" commonness="0.1" />
-      <Item identifier="tsm_kore" commonness="0.1" />
-      <Item identifier="tsm_oilshaleore" commonness="0.1" />
-    </Deconstruct>
-  </Item>
-  <Item identifier="tsm_mcrate_replenishment_med" tags="crate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" impacttolerance="2.9">
-    <Sprite texture="%ModDir:2852411866%/mission/tsm_mission_item.png" depth="0.54" sourcerect="10,585,150,80" origin="0.5,0.5" />
-    <Body width="150" height="70" density="40" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect"/>
-    <Deconstruct time="8" amount="3">
-      <Item identifier="antibleeding2" amount="8"/>
-      <Item identifier="antibleeding3" amount="5"/>
-      <Item identifier="antibiotics" amount="8"/>
-      <Item identifier="stabilozine" amount="8"/>
-      <Item identifier="antidama2" amount="8"/>
-      <Item identifier="antibloodloss2" amount="8"/>
-      <Item identifier="tsm_medicalkits" amount="4"/>
-      <Item identifier="tsm_medicalkits" amount="2"/>
-    </Deconstruct>
-  </Item>
-  <Item name="奇迹之海VIP随行安保恶疫注射器" identifier="tsm_vip_bodyguard" subcategory="tsmmissions" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
-    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
-    <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
-        <GiveTalentInfo giverandom="false" talentidentifiers="tsm_vip_bodyguard,bigguns,lightningwizard,tsm_olympian,quickdraw,tsm_lightningwizard" />
-      </StatusEffect>
-      <StatusEffect type="OnContained" target="This" delay="1">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-</Items>
+  <Items>
+    <!--希洛克-->
+    <Item identifier="tsm_mcrate_shillok" category="Equipment" tags="crate,mediumitem" fireproof="true" impactsoundtag="impact_soft" hideinmenus="true" scale="0.4">
+      <PreferredContainer secondary="ruintreasure,pirateengcab,wreckmedcab,beaconengcab" minamount="1" maxamount="1" spawnprobability="0.1" />
+      <Deconstruct time="10" chooserandom="true" amount="1">
+        <Item identifier="endocrinebooster" commonness="0.1" />
+        <Item identifier="tsm_eyi_relics" commonness="0.1" />
+        <Item identifier="tsm_eyi_stabilise_reagent" commonness="0.08" />
+        <Item identifier="tsm_virusstage_inhibitory" commonness="0.3" />
+        <Item identifier="tsm_virusstage_clear" commonness="0.3" />
+        <Item identifier="tsm_virusstage_deep_inhibitory" commonness="0.3" />
+        <Item identifier="tsm_eyi_embryo" commonness="0.4" />
+        <Item identifier="tsm_lighter" commonness="0.3" />
+        <Item identifier="tsm_marlboro_box" commonness="0.5" />
+        <Item identifier="tsm_Chinesecigar_box" commonness="0.5" />
+        <Item identifier="tsm_universe_box" commonness="0.5" />
+        <Item identifier="tsm_suit_O5" commonness="0.6" />
+        <Item identifier="tsm_shipammo_shell" commonness="0.5" />
+        <Item identifier="AlbinismSpineling_shell" commonness="0.5" />
+        <Item identifier="lldyj" commonness="0.1" />
+        <Item identifier="mvdxe" commonness="0.1" />
+        <Item identifier="hyddx" commonness="0.1" />
+        <Item identifier="ddbm" commonness="0.1" />
+        <Item identifier="tsm_identifier" commonness="0.1" />
+        <Item identifier="titaniumaluminiumalloy" commonness="0.3" />
+        <Item identifier="physicorium" commonness="0.2" />
+        <Item identifier="dementonite" commonness="0.2" />
+        <Item identifier="incendium" commonness="0.2" />
+        <Item identifier="fulgurium" commonness="0.2" />
+        <Item identifier="nuclearshell" commonness="0.3" />
+        <Item identifier="cigar" commonness="0.3" />
+        <Item identifier="unidentifiedgeneticmaterial" commonness="0.1" />
+        <Item identifier="flamerunique" commonness="0.2" />
+        <Item identifier="clownmaskunique" commonness="0.3" />
+        <Item identifier="clownsuitunique" commonness="0.3" />
+        <Item identifier="safetyharness" commonness="0.5" />
+        <Item identifier="tsm_wz_cl_flare" commonness="0.15" />
+        <Item identifier="tsm_wz_yl_flare" commonness="0.15" />
+        <Item identifier="tsm_ammunition_resupply" commonness="0.15" />
+        <Item identifier="tsm_yx_crystallography" commonness="0.15" />
+        <Item identifier="tsm_hengberley_star" commonness="0.1" />
+        <Item identifier="tsm_blueprint" commonness="0.1" />
+        <Item identifier="tsm_blueprint1" commonness="0.1" />
+        <Item identifier="tsm_bg_licences" commonness="0.1" />
+        <Item identifier="tsm_danger_box" commonness="0.1" />
+        <Item identifier="lm_beowulf_helmet" commonness="0.25" />
+        <Item identifier="lm_occupation_helmet" commonness="0.1" />
+        <Item identifier="fkj_vest_yehuo" commonness="0.1" />
+        <Item identifier="fkj_yehuo_helmet" commonness="0.1" />
+        <Item identifier="fkj_yehuo_uniform" commonness="0.1" />
+        <Item identifier="tsm_jz_uniform" commonness="0.25" />
+        <Item identifier="tsm_jz_vest" commonness="0.1" />
+        <Item identifier="tsm_helmet_outpost_combat" commonness="0.1" />
+        <Item identifier="tsm_nujiang_uniform" commonness="0.1" />
+        <Item identifier="lm_rapidreaction_helmet" commonness="0.25" />
+        <Item identifier="lm_rapidreaction_vest" commonness="0.1" />
+        <Item identifier="lm_rapidreaction_uniform" commonness="0.1" />
+        <Item identifier="lm_crosstalk_helmet" commonness="0.1" />
+        <Item identifier="tsm_armor_allbuff" commonness="0.1" />
+        <Item identifier="tsm_armor_bleeding" commonness="0.2" />
+        <Item identifier="tsm_armor_lacerations" commonness="0.2" />
+        <Item identifier="tsm_armor_stun" commonness="0.2" />
+        <Item identifier="tsm_armor_blunttrauma" commonness="0.2" />
+        <Item identifier="tsm_armor_huskinfection" commonness="0.2" />
+        <Item identifier="tsm_armor_paralysis" commonness="0.2" />
+        <Item identifier="tsm_armor_triton" commonness="0.2" />
+        <Item identifier="tsm_armor_bitewounds" commonness="0.2" />
+        <Item identifier="tsm_armor_explosiondamage" commonness="0.2" />
+        <Item identifier="tsm_armor_gunshotwound" commonness="0.2" />
+        <Item identifier="tsm_advisers_vest" commonness="0.25" />
+        <Item identifier="tsm_advisers_mask" commonness="0.25" />
+        <Item identifier="tsm_advisers_uniform" commonness="0.25" />
+        <Item identifier="tsm_65_uniform" commonness="0.25" />
+        <Item identifier="tsm_65_hat" commonness="0.25" />
+        <Item identifier="tsm_63_gear" commonness="0.25" />
+        <Item identifier="tsm_thermal_knife" commonness="0.25" />
+        <Item identifier="tsm_steel_knife" commonness="0.25" />
+        <Item identifier="tsm_zc" commonness="0.15" />
+        <Item identifier="tsm_fy" commonness="0.15" />
+        <Item identifier="tsm_xylz" commonness="0.15" />
+        <Item identifier="tsm_gravitythrower" commonness="0.15" />
+        <Item identifier="tsm_advanced_191" commonness="0.15" />
+        <Item identifier="tsm_ots11" commonness="0.15" />
+        <Item identifier="tsm_gm6" commonness="0.15" />
+        <Item identifier="tsm_lm_rm277" commonness="0.15" />
+        <Item identifier="tsm_lm_mcx" commonness="0.15" />
+        <Item identifier="tsm_lm_drh" commonness="0.15" />
+        <Item identifier="tsm_lm_minigun" commonness="0.15" />
+        <Item identifier="tsm_fkj_an94" commonness="0.15" />
+        <Item identifier="tsm_fkj_groza" commonness="0.15" />
+        <Item identifier="tsm_fkj_ak12" commonness="0.15" />
+        <Item identifier="tsm_fkj_pkp" commonness="0.15" />
+        <Item identifier="tsm_fkj_jq430" commonness="0.15" />
+        <Item identifier="tsm_fkj_rpk16" commonness="0.15" />
+        <Item identifier="tsm_fkj_g3a4" commonness="0.15" />
+        <Item identifier="tsm_m99" commonness="0.15" />
+        <Item identifier="tsm_js9" commonness="0.15" />
+      </Deconstruct>
+      <Sprite texture="%ModDir:2852411866%/mission/tsm_mission_item.png" depth="0.54" sourcerect="820,911,204,109" origin="0.5,0.5" />
+      <Body width="120" radius="45" density="20" friction="1.0" restitution="0.01" />
+      <Holdable slots="RightHand,LeftHand" holdpos="0,-80" handle1="0,50" handle2="0,50" aimable="false" msg="ItemMsgPickUpSelect" />
+    </Item>
+    <!--材料补给-->
+    <Item identifier="tsm_mcrate_replenishment1" tags="crate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" impacttolerance="2.9">
+      <Sprite texture="%ModDir:2852411866%/mission/tsm_mission_item.png" depth="0.54" sourcerect="10,671,150,80" origin="0.5,0.5" />
+      <Body width="150" height="70" density="50" />
+      <Holdable slots="RightHand,LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
+      <Deconstruct time="8" chooserandom="true" amount="5">
+        <Item identifier="titanite" commonness="0.1" />
+        <Item identifier="brockite" commonness="0.1" />
+        <Item identifier="thorianite" commonness="0.1" />
+        <Item identifier="amblygonite" commonness="0.1" />
+        <Item identifier="sphalerite" commonness="0.1" />
+        <Item identifier="pyromorphite" commonness="0.1" />
+        <Item identifier="quartz" commonness="0.1" />
+        <Item identifier="diamond" commonness="0.1" />
+        <Item identifier="hydroxyapatite" commonness="0.1" />
+        <Item identifier="uraniumore" commonness="0.1" />
+        <Item identifier="ilmenite" commonness="0.1" />
+        <Item identifier="stannite" commonness="0.1" />
+        <Item identifier="chalcopyrite" commonness="0.1" />
+        <Item identifier="esperite" commonness="0.1" />
+        <Item identifier="galena" commonness="0.1" />
+        <Item identifier="triphylite" commonness="0.1" />
+        <Item identifier="langbeinite" commonness="0.1" />
+        <Item identifier="chamosite" commonness="0.1" />
+        <Item identifier="ironore" commonness="0.1" />
+        <Item identifier="polyhalite" commonness="0.1" />
+        <Item identifier="graphite" commonness="0.1" />
+        <Item identifier="sylvite" commonness="0.1" />
+        <Item identifier="lazulite" commonness="0.1" />
+        <Item identifier="bornite" commonness="0.1" />
+        <Item identifier="cassiterite" commonness="0.1" />
+        <Item identifier="cryolite" commonness="0.1" />
+        <Item identifier="aragonite" commonness="0.1" />
+        <Item identifier="chrysoprase" commonness="0.1" />
+        <Item identifier="tsm_tungstenore" commonness="0.1" />
+        <Item identifier="tsm_sulphurore" commonness="0.1" />
+        <Item identifier="tsm_kore" commonness="0.1" />
+        <Item identifier="tsm_oilshaleore" commonness="0.1" />
+      </Deconstruct>
+    </Item>
+    <Item identifier="tsm_mcrate_replenishment_med" tags="crate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" impacttolerance="2.9">
+      <Sprite texture="%ModDir:2852411866%/mission/tsm_mission_item.png" depth="0.54" sourcerect="10,585,150,80" origin="0.5,0.5" />
+      <Body width="150" height="70" density="40" />
+      <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
+      <Deconstruct time="8" amount="3">
+        <Item identifier="antibleeding2" amount="8" />
+        <Item identifier="antibleeding3" amount="5" />
+        <Item identifier="antibiotics" amount="8" />
+        <Item identifier="stabilozine" amount="8" />
+        <Item identifier="antidama2" amount="8" />
+        <Item identifier="antibloodloss2" amount="8" />
+        <Item identifier="tsm_medicalkits" amount="4" />
+        <Item identifier="tsm_medicalkits" amount="2" />
+      </Deconstruct>
+    </Item>
+    <Item name="奇迹之海VIP随行安保恶疫注射器" identifier="tsm_vip_bodyguard" subcategory="tsmmissions" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+      <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+      <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+      <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
+          <GiveTalentInfo giverandom="false" talentidentifiers="tsm_vip_bodyguard,bigguns,lightningwizard,tsm_olympian,quickdraw,tsm_lightningwizard" />
+        </StatusEffect>
+        <StatusEffect type="OnContained" target="This" delay="1">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+    </Item>
+  </Items>
 </Override>

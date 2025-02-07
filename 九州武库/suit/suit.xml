@@ -29,7 +29,7 @@
           <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="2.0,2.0" />
         </LightComponent>
       </sprite>
-      <sprite name="xjzz Torso" texture="%ModDir%/suit/xjzz.png" limb="Torso" hidelimb="true" depthlimb="Jaw" inherittexturescale="false" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" scale="0.52"/>
+      <sprite name="xjzz Torso" texture="%ModDir%/suit/xjzz.png" limb="Torso" hidelimb="true" depthlimb="Jaw" inherittexturescale="false" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" scale="0.52" />
       <sprite name="xjzz Right Hand" texture="%ModDir%/suit/xjzz.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="xjzz Left Hand" texture="%ModDir%/suit/xjzz.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="xjzz Right Lower Arm" texture="%ModDir%/suit/xjzz.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
@@ -314,7 +314,7 @@
     <ContainedSprite name="zlqy suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/suit/gravity_traction_suit.png" sourcerect="413,499,179,101" depth="0.55" origin="0.6,0.5" />
     <Body radius="45" width="34" density="20" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="zlqy Helmet Wearable" texture="%ModDir%/suit/gravity_traction_suit.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="false" depthlimb="LeftArm" scale="0.6" hideotherwearables="true" hidelimb="true" sourcerect="350,220,57,71" origin="0.45,0.7"/>
+      <sprite name="zlqy Helmet Wearable" texture="%ModDir%/suit/gravity_traction_suit.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="false" depthlimb="LeftArm" scale="0.6" hideotherwearables="true" hidelimb="true" sourcerect="350,220,57,71" origin="0.45,0.7" />
       <sprite name="zlqy suit Torso" texture="%ModDir%/suit/gravity_traction_suit.png" limb="Torso" hidelimb="true" depthlimb="Jaw" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="48,7,131,268" scale="0.55" origin="0.57,0.48" />
       <sprite name="zlqy suit Right Hand" texture="%ModDir%/suit/gravity_traction_suit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="460,41,31,31" origin="0.1,0.55" />
       <sprite name="zlqy suit Left Hand" texture="%ModDir%/suit/gravity_traction_suit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="460,129,31,31" origin="0.1,0.55" />
@@ -551,7 +551,7 @@
       <RequiredSkill identifier="electrical" level="25" />
       <RequiredItem identifier="tsm_xjzz_suit" />
       <RequiredItem identifier="physicorium" amount="2" />
-      <RequiredItem identifier="tsm_hpc" amount="2"/>
+      <RequiredItem identifier="tsm_hpc" amount="2" />
       <RequiredItem identifier="tsm_ic" />
       <RequiredItem identifier="tsm_plastic" amount="2" />
       <RequiredItem identifier="tsm_hengberley_star" />

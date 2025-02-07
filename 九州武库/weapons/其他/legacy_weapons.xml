@@ -62,7 +62,7 @@
       </StatusEffect>
       <!--子弹落地音效（延迟0.5s）-->
       <StatusEffect type="OnUse" delay="0.5" target="This" forceplaysounds="true">
-        <Conditional InWater="false"/>
+        <Conditional InWater="false" />
         <Sound file="%ModDir%/weapons/反抗军/bullet_concerete1.ogg" type="OnUse" range="1500" selectionmode="Random" />
         <Sound file="%ModDir%/weapons/反抗军/bullet_concerete2.ogg" type="OnUse" range="1500" />
         <Sound file="%ModDir%/weapons/反抗军/bullet_concerete3.ogg" type="OnUse" range="1500" />
@@ -82,13 +82,13 @@
       <!--1.弹匣-->
       <Containable items="762mag" hide="false" itempos="3,-8" depth="0.56" setactive="true">
         <!--换弹-->
-        <StatusEffect type="OnInserted" target="This" holdpos="10,-30" holdangle="70" maxchargetime="999" setvalue="true"/>
+        <StatusEffect type="OnInserted" target="This" holdpos="10,-30" holdangle="70" maxchargetime="999" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_1.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_1.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7" />
         </StatusEffect>
         <StatusEffect target="This" holdpos="60,0" aimpos="60,0" handle1="-85,-10" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.1" maxchargetime="0" setvalue="true">
-          <conditional maxchargetime="eq 999"/>
+          <conditional maxchargetime="eq 999" />
         </StatusEffect>
       </Containable>
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
@@ -161,7 +161,7 @@
       </StatusEffect>
       <!--子弹落地音效（延迟0.5s）-->
       <StatusEffect type="OnUse" delay="0.5" target="This" forceplaysounds="true">
-        <Conditional InWater="false"/>
+        <Conditional InWater="false" />
         <Sound file="%ModDir%/weapons/反抗军/bullet_concerete1.ogg" type="OnUse" range="1500" selectionmode="Random" />
         <Sound file="%ModDir%/weapons/反抗军/bullet_concerete2.ogg" type="OnUse" range="1500" />
         <Sound file="%ModDir%/weapons/反抗军/bullet_concerete3.ogg" type="OnUse" range="1500" />
@@ -181,13 +181,13 @@
       <!--1.弹匣-->
       <Containable items="762mag" hide="false" itempos="-18,-10" depth="0.56" setactive="true">
         <!--换弹-->
-        <StatusEffect type="OnInserted" target="This" holdpos="10,-30" holdangle="70" maxchargetime="999" setvalue="true"/>
+        <StatusEffect type="OnInserted" target="This" holdpos="10,-30" holdangle="70" maxchargetime="999" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7" />
         </StatusEffect>
         <StatusEffect target="This" holdpos="75,0" aimpos="80,0" handle1="-170,-10" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.7" maxchargetime="0" setvalue="true">
-          <conditional maxchargetime="eq 999"/>
+          <conditional maxchargetime="eq 999" />
         </StatusEffect>
       </Containable>
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
@@ -229,16 +229,19 @@
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.85" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.75" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.45" setvalue="true" />
-      <StatusHUD overlaycolor="176,0,0,120" range="3000" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true"/>
-      <StatusEffect type="NotInWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="true" showtexts="false" setvalue="true" >
+      <StatusHUD overlaycolor="176,0,0,120" range="3000" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
+      <StatusEffect type="NotInWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="true" showtexts="false" setvalue="true">
         <RequiredItem items="mobilebattery" type="Contained" />
-      </StatusEffect><!--不在水中-热成像-->
-      <StatusEffect type="InWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="true" showtexts="false" setvalue="true" >
+      </StatusEffect>
+      <!--不在水中-热成像-->
+      <StatusEffect type="InWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="true" showtexts="false" setvalue="true">
         <RequiredItem items="mobilebattery" type="Contained" />
-      </StatusEffect><!--在水中-热成像-->
+      </StatusEffect>
+      <!--在水中-热成像-->
       <StatusEffect type="Always" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="false" setvalue="true">
         <RequiredItem items="mobilebattery" type="Contained" MatchOnEmpty="true" />
-      </StatusEffect><!--空-->
+      </StatusEffect>
+      <!--空-->
       <StatusEffect type="Always" targettype="Contained" targets="mobilebattery" TargetSlot="1" Condition="-0.5" />
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
@@ -250,8 +253,8 @@
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <!--枪声-->
       <StatusEffect type="OnUse" target="This" forceplaysounds="true">
-        <Conditional InWater="false"/>
-        <Sound file="%ModDir%/weapons/其他/QTS11.ogg" type="OnUse" range="3000"/>
+        <Conditional InWater="false" />
+        <Sound file="%ModDir%/weapons/其他/QTS11.ogg" type="OnUse" range="3000" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="Contained">
         <Use />
@@ -266,7 +269,7 @@
       </StatusEffect>
       <!--子弹落地音效（延迟0.5s）-->
       <StatusEffect type="OnUse" target="This" delay="0.5" forceplaysounds="true">
-        <Conditional InWater="false"/>
+        <Conditional InWater="false" />
         <Sound file="%ModDir%/weapons/反抗军/bullet_concerete1.ogg" type="OnUse" range="1500" selectionmode="Random" />
         <Sound file="%ModDir%/weapons/反抗军/bullet_concerete2.ogg" type="OnUse" range="1500" />
         <Sound file="%ModDir%/weapons/反抗军/bullet_concerete3.ogg" type="OnUse" range="1500" />
@@ -286,20 +289,19 @@
       <!--1.弹匣-->
       <Containable items="tsm_58_mag" hide="false" itempos="-8,-12" depth="0.56" setactive="true">
         <!--换弹-->
-        <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="10,-30" holdangle="70" setvalue="true"/>
+        <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="10,-30" holdangle="70" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
-          <sound file="%ModDir%/weapons/reload_ogg/reload_2_4.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7"/>
+          <sound file="%ModDir%/weapons/reload_ogg/reload_2_4.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7" />
         </StatusEffect>
         <StatusEffect target="This" disabledeltatime="true" holdpos="70,-5" aimpos="70,0" handle1="-110,-13" handle2="45,5" holdangle="-35" checkconditionalalways="true" delay="2.4" maxchargetime="0" setvalue="true">
-          <conditional maxchargetime="eq 999"/>
+          <conditional maxchargetime="eq 999" />
         </StatusEffect>
       </Containable>
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
       <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1" showdeadcharacters="false" showtexts="false">
-        <Containable items="mobilebattery" hide="true" excludebroken="false" >
-        </Containable>
+        <Containable items="mobilebattery" hide="true" excludebroken="false"></Containable>
       </SubContainer>
       <SlotIcon slotindex="2" texture="Content/UI/ContainerIndicators.png" sourcerect="4,216,75,35" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1" hide="true">

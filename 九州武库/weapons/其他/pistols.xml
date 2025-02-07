@@ -965,7 +965,7 @@
           <Containable items="flashlight" hide="false" itempos="20,10" setactive="true" containedspritedepth="0.54" />
         </SubContainer>
         <SubContainer capacity="1" maxstacksize="1">
-          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
           <Containable items="sighting" hide="false" itempos="18,18" depth="0.56" setactive="true" />
         </SubContainer>
         <SubContainer capacity="1" maxstacksize="1">
@@ -1114,7 +1114,7 @@
           <Containable items="flashlight" hide="false" itempos="12,5" setactive="true" containedspritedepth="0.54" />
         </SubContainer>
         <SubContainer capacity="1" maxstacksize="1">
-          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
           <Containable items="sighting" hide="false" itempos="-8,15" depth="0.56" setactive="true" />
         </SubContainer>
         <SubContainer capacity="1" maxstacksize="1">
@@ -1165,11 +1165,11 @@
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
         <StatusEffect type="OnUse" target="This" forceplaysounds="true">
           <RequiredItem items="1" matchonempty="true" type="Contained" targetslot="3" />
-          <Sound file="%ModDir%/weapons/其他/silence_ump45.ogg" type="OnUse" range="3000" />
+          <Sound file="%ModDir%/weapons/其他/ump45.ogg" type="OnUse" range="3000" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This" forceplaysounds="true">
           <RequiredItem items="tsm_pistols_silencers" type="Contained" targetslot="3" />
-          <Sound file="%ModDir%/weapons/其他/xy3.ogg" type="OnUse" range="1000" />
+          <Sound file="%ModDir%/weapons/其他/silence_ump45.ogg" type="OnUse" range="1000" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This">
           <!--后坐力,屏幕抖动-->
@@ -1258,15 +1258,19 @@
         <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
         <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
         <SubContainer capacity="1" maxstacksize="1">
-          <Containable items="flashlight" hide="false" itempos="16,5" setactive="true" containedspritedepth="0.54" />
+          <Containable items="flashlight" hide="false" itempos="20,5" setactive="true" containedspritedepth="0.54" />
         </SubContainer>
         <SubContainer capacity="1" maxstacksize="1">
-          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
           <Containable items="sighting" hide="false" itempos="6,13.5" depth="0.56" setactive="true" />
         </SubContainer>
         <SubContainer capacity="1" maxstacksize="1">
           <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="517,220,82,22" origin="0.45,0.5" />
           <Containable items="barrel_pistols" hide="false" itempos="42,4" containedspritedepth="0.51" Scale="0.20" setactive="true" />
+        </SubContainer>
+        <SubContainer capacity="1" maxstacksize="1">
+          <SlotIcon slotindex="4" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
+          <Containable items="tsm_ump45_skins" hide="false" setactive="true" />
         </SubContainer>
       </ItemContainer>
       <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
@@ -1403,7 +1407,7 @@
           <Containable items="flashlight" hide="false" itempos="15,6" setactive="true" containedspritedepth="0.54" />
         </SubContainer>
         <SubContainer capacity="1" maxstacksize="1">
-          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="706,272,89,89" origin="0.45,0.5" />
+          <SlotIcon slotindex="2" texture="%ModDir%/png/ui.png" sourcerect="1363,852,97,99" origin="0.5,0.5" />
           <Containable items="sighting" hide="false" itempos="-6,14" depth="0.56" setactive="true" />
         </SubContainer>
         <SubContainer capacity="1" maxstacksize="1">
@@ -1505,8 +1509,8 @@
         <RequiredItems items="tsm_45_smgmag" type="Contained" msg="ItemMsgAmmoRequired" />
         <RequiredSkill identifier="weapons" level="40" />
       </RangedWeapon>
-      <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="40,-40" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
-        <Containable items="tsm_45_smgmag" setactive="true" rotation="-35">
+      <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
+        <Containable items="tsm_45_smgmag" setactive="true" rotation="-35" itempos="14,-13">
           <!--换弹-->
           <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="10,-40" holdangle="70" setvalue="true" />
           <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -1529,6 +1533,10 @@
         <SubContainer capacity="1" maxstacksize="1">
           <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="517,220,82,22" origin="0.45,0.5" />
           <Containable items="barrel_pistols" hide="false" itempos="45,2" containedspritedepth="0.51" Scale="0.20" setactive="true" />
+        </SubContainer>
+        <SubContainer capacity="1" maxstacksize="1">
+          <SlotIcon slotindex="4" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
+          <Containable items="tsm_vk_skins" hide="false" setactive="true" />
         </SubContainer>
       </ItemContainer>
       <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
@@ -1746,10 +1754,10 @@
         <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="copper" mincondition="0.9" />
       </Deconstruct>
-      <ItemContainer maxstacksize="1" hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_57_ammo" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-        <Containable items="tsm_57_ammo" />
+      <ItemContainer maxstacksize="1" hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_45_ammo" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_45_ammo" />
         <StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true">
-          <SpawnItem identifiers="tsm_57_ammo" spawnposition="ThisInventory" />
+          <SpawnItem identifiers="tsm_45_ammo" spawnposition="ThisInventory" />
         </StatusEffect>
       </ItemContainer>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -1774,10 +1782,10 @@
         <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="copper" mincondition="0.9" />
       </Deconstruct>
-      <ItemContainer maxstacksize="1" hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_57_ammo" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-        <Containable items="tsm_57_ammo" />
+      <ItemContainer maxstacksize="1" hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_45_ammo" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_45_ammo" />
         <StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true">
-          <SpawnItem identifiers="tsm_57_ammo" spawnposition="ThisInventory" />
+          <SpawnItem identifiers="tsm_45_ammo" spawnposition="ThisInventory" />
         </StatusEffect>
       </ItemContainer>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -1788,7 +1796,7 @@
       <Body width="46" height="76" density="40" />
       <Price baseprice="112" displaynonempty="true">
         <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="0" />
-        <Price storeidentifier="merchantcity"  minavailable="0" maxavailable="0" />
+        <Price storeidentifier="merchantcity" minavailable="0" maxavailable="0" />
         <Price storeidentifier="merchantresearch" minavailable="0" maxavailable="0" />
         <Price storeidentifier="merchantmilitary" minavailable="0" maxavailable="0" />
         <Price storeidentifier="merchantmine" minavailable="0" maxavailable="0" />
@@ -1947,7 +1955,7 @@
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="771,157,96,30" depth="0.55" origin="0.5,0.5" />
       <Price baseprice="112" displaynonempty="true">
         <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="0" />
-        <Price storeidentifier="merchantcity"  minavailable="0" maxavailable="0" />
+        <Price storeidentifier="merchantcity" minavailable="0" maxavailable="0" />
         <Price storeidentifier="merchantresearch" minavailable="0" maxavailable="0" />
         <Price storeidentifier="merchantmilitary" minavailable="0" maxavailable="0" />
         <Price storeidentifier="merchantmine" minavailable="0" maxavailable="0" />
@@ -1988,7 +1996,7 @@
       <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="6" spawnprobability="0.02" />
       <Price baseprice="112" displaynonempty="true">
         <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="0" />
-        <Price storeidentifier="merchantcity"  minavailable="0" maxavailable="0" />
+        <Price storeidentifier="merchantcity" minavailable="0" maxavailable="0" />
         <Price storeidentifier="merchantresearch" minavailable="0" maxavailable="0" />
         <Price storeidentifier="merchantmilitary" minavailable="0" maxavailable="0" />
         <Price storeidentifier="merchantmine" minavailable="0" maxavailable="0" />
@@ -2026,7 +2034,7 @@
       <PreferredContainer primary="secarmcab" secondary="armcab" />
       <Price baseprice="112" displaynonempty="true">
         <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="0" />
-        <Price storeidentifier="merchantcity"  minavailable="0" maxavailable="0" />
+        <Price storeidentifier="merchantcity" minavailable="0" maxavailable="0" />
         <Price storeidentifier="merchantresearch" minavailable="0" maxavailable="0" />
         <Price storeidentifier="merchantmilitary" minavailable="0" maxavailable="0" />
         <Price storeidentifier="merchantmine" minavailable="0" maxavailable="0" />
@@ -2210,7 +2218,7 @@
           <Affliction identifier="bleeding" strength="10" probability="0.3" />
           <Affliction identifier="gunshotwound" strength="20" />
           <Affliction identifier="tsm_armorbreak_50" strength="1" />
-          <Affliction identifier="gunshotwound" strength="5" probability="0.3" />
+          <Affliction identifier="gunshotwound" strength="5" probability="0.25" />
           <Affliction identifier="stun" strength="0.25" probability="0.15" />
           <Affliction identifier="stun" strength="0.15" probability="0.25" />
           <Affliction identifier="stun" strength="0.15" probability="0.25" />

@@ -39,7 +39,7 @@
         <SpawnItem identifier="tsm_miniammo_ai" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnUse" delay="0.3" target="This" forceplaysounds="true">
-        <Conditional InWater="false"/>
+        <Conditional InWater="false" />
         <Sound file="%ModDir%/weapons/木卫二联盟/bullet_general1.ogg" type="OnUse" range="1500" selectionmode="Random" />
         <Sound file="%ModDir%/weapons/木卫二联盟/bullet_general2.ogg" type="OnUse" range="1500" />
         <Sound file="%ModDir%/weapons/木卫二联盟/bullet_general3.ogg" type="OnUse" range="1500" />
@@ -130,11 +130,11 @@
       </StatusEffect>
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="6" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0" containedspritedepth="0.56">
-      <Containable items="tsm_handgun_mg_jj" hide="true"/>
+      <Containable items="tsm_handgun_mg_jj" hide="true" />
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
       <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="flashlight" hide="false" itempos="17,4" setactive="true"/>
+        <Containable items="flashlight" hide="false" itempos="17,4" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
@@ -175,11 +175,11 @@
       </StatusEffect>
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="6" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0" containedspritedepth="0.56">
-      <Containable items="tsm_handgun_mg" hide="true"/>
+      <Containable items="tsm_handgun_mg" hide="true" />
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
       <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="flashlight" hide="false" itempos="17,4" setactive="true"/>
+        <Containable items="flashlight" hide="false" itempos="17,4" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />

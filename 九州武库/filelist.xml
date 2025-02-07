@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="九州武库" modversion="1.0.119" corepackage="False" steamworkshopid="2953749635" gameversion="1.7.7.0">
+<contentpackage name="九州武库" modversion="1.0.125" corepackage="False" steamworkshopid="2953749635" gameversion="1.7.7.0">
   <Item file="%ModDir%/weapons/bullet.xml" />
   <Item file="%ModDir%/Jobgear/uniform.xml" />
   <Item file="%ModDir%/Jobgear/armor.xml" />
@@ -18,7 +18,7 @@
   <Item file="%ModDir%/weapons/其他/pistols.xml" />
   <Item file="%ModDir%/weapons/其他/melee.xml" />
   <Item file="%ModDir%/weapons/其他/legacy_weapons.xml" />
-  <Item file="%ModDir%/weapons/节日/holiday_weapons.xml" />
+  <Item file="%ModDir%/weapons/节日/holiday.xml" />
   <Item file="%ModDir%/weapons/配件/accessories.xml" />
   <Item file="%ModDir%/weapons/配件/war_preparation.xml" />
   <Item file="%ModDir%/weapons/皮肤/skins.xml" />
