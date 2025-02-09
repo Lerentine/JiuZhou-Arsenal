@@ -19,7 +19,7 @@
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="532,1803,165,167" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="10,1435,551,194" depth="0.55" origin="0.5,0.5" />
     <Body width="551" height="180" density="36" />
-    <Holdable slots="Any,LeftHand+RightHand" controlpose="true" holdpos="70,0" aimpos="70,0" handle1="-70,-10" handle2="60,20" holdangle="-45" msg="ItemMsgPickUpSelect">
+    <Holdable slots="Any,LeftHand+RightHand" controlpose="true" holdpos="70,0" aimpos="73,5" handle1="-70,-10" handle2="60,20" holdangle="-45" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.6" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.2" setvalue="true" />
     </Holdable>
@@ -79,7 +79,7 @@
           <Conditional isActive="eq true" />
           <sound file="%ModDir%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7" />
         </StatusEffect>
-        <StatusEffect target="This" disabledeltatime="true" holdpos="70,0" aimpos="70,0" handle1="-70,-10" handle2="60,20" holdangle="-45" checkconditionalalways="true" delay="2.75" maxchargetime="0" setvalue="true">
+        <StatusEffect target="This" disabledeltatime="true" holdpos="70,0" holdangle="-45" checkconditionalalways="true" delay="2.75" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999" />
         </StatusEffect>
       </Containable>

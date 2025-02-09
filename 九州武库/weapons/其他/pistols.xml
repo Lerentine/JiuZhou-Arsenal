@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Override>
   <Items>
-    <Item name="92" identifier="tsm_92_pistols" category="Weapon" subcategory="other" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,lm_gun,fkj_gun,pistolitem,provocativetohumanai,gunsmith,mountableweapon" Scale="0.24" impactsoundtag="impact_metal_light">
+    <Item name="92" identifier="tsm_92_pistols" category="Weapon" subcategory="other" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,lm_gun,fkj_gun,pistolitem,provocativetohumanai,gunsmith,mountableweapon" Scale="0.23" impactsoundtag="impact_metal_light">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="770,915,58,84" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="0,270,147,109" depth="0.55" origin="0.5,0.5" />
       <BrokenSprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="500,685,146,113" depth="0.55" origin="0.55,0.5" maxcondition="0" />
@@ -20,7 +20,7 @@
         <Item identifier="steel" />
       </Deconstruct>
       <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="150,0" holdangle="-45" aimpos="90,5" handle1="-50,-7" msg="ItemMsgPickUpSelect" />
-      <RangedWeapon barrelpos="70,36" spread="10" unskilledspread="35" combatPriority="30" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.35">
+      <RangedWeapon barrelpos="70,36" spread="10" unskilledspread="35" combatPriority="30" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.25">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="918,1318,195,101" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="608,1317,205,106" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -47,8 +47,8 @@
           <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="1" scalemax="1" />
         </StatusEffect>
       </RangedWeapon>
-      <ItemContainer capacity="1" maxstacksize="1" containedstateindicatorstyle="bullet">
-        <Containable items="tsm_9_mag">
+      <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet">
+        <Containable items="tsm_9_mag" rotation="10" itempos="-10,-6.5">
           <!--换弹-->
           <StatusEffect type="OnInserted" target="This" maxchargetime="999" setvalue="true" />
           <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -66,7 +66,7 @@
       </Quality>
       <SkillRequirementHint identifier="weapons" level="20" />
     </Item>
-    <Item name="FN 509 Tactical" identifier="tsm_fn509_pistols" category="Weapon" subcategory="other" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,lm_gun,fkj_gun,pistolitem,provocativetohumanai,gunsmith,mountableweapon" Scale="0.24" impactsoundtag="impact_metal_light">
+    <Item name="FN 509 Tactical" identifier="tsm_fn509_pistols" category="Weapon" subcategory="other" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,lm_gun,fkj_gun,pistolitem,provocativetohumanai,gunsmith,mountableweapon" Scale="0.23" impactsoundtag="impact_metal_light">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="367,916,54,79" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="19,705,133,102" depth="0.55" origin="0.5,0.5" />
       <BrokenSprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="753,356,143,103" depth="0.55" origin="0.55,0.5" maxcondition="0" />
@@ -87,7 +87,7 @@
         <Item identifier="titanium" />
       </Deconstruct>
       <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="150,0" holdangle="-45" aimpos="90,5" handle1="-50,-7" msg="ItemMsgPickUpSelect" />
-      <RangedWeapon weapondamagemodifier="1" barrelpos="60,35" spread="10" unskilledspread="35" combatPriority="35" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.3">
+      <RangedWeapon weapondamagemodifier="1" barrelpos="60,35" spread="10" unskilledspread="35" combatPriority="35" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.2">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="918,1318,195,101" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="608,1317,205,106" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -121,7 +121,7 @@
         <!-- 外观 itempos(x)-=26 -->
         <!--1.弹匣-->
         <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-        <Containable items="tsm_9_mag" hide="false" itempos="-11,-10.5" depth="0.56">
+        <Containable items="tsm_9_mag" hide="false" rotation="5" itempos="-10.5,-6.8" depth="0.56">
           <!--换弹-->
           <StatusEffect type="OnInserted" target="This" maxchargetime="999" setvalue="true" />
           <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -168,7 +168,7 @@
         <Item identifier="titanium" />
       </Deconstruct>
       <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="150,0" holdangle="-45" aimpos="90,5" handle1="-50,-7" msg="ItemMsgPickUpSelect" />
-      <RangedWeapon barrelpos="65,35" spread="8" unskilledspread="35" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.35">
+      <RangedWeapon barrelpos="65,35" spread="8" unskilledspread="35" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.2">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="918,1318,195,101" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="608,1317,205,106" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -211,7 +211,7 @@
       </Quality>
       <SkillRequirementHint identifier="weapons" level="40" />
     </Item>
-    <Item name="glock 18" identifier="tsm_glock18_pistols" category="Weapon" subcategory="other" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,lm_gun,fkj_gun,pistolitem,provocativetohumanai,gunsmith,mountableweapon" Scale="0.24" HideConditionBar="true" impactsoundtag="impact_metal_light">
+    <Item name="glock 18" identifier="tsm_glock18_pistols" category="Weapon" subcategory="other" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,lm_gun,fkj_gun,pistolitem,provocativetohumanai,gunsmith,mountableweapon" Scale="0.23" HideConditionBar="true" impactsoundtag="impact_metal_light">
       <InventoryIcon texture="%ModDir%/weapons/其他/pistols.png" sourcerect="455,915,58,85" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="6,436,161,112" depth="0.55" origin="0.5,0.5" />
       <BrokenSprite texture="%ModDir%/weapons/其他/pistols.png" sourcerect="0,567,161,112" depth="0.55" origin="0.55,0.5" maxcondition="0" />
@@ -331,7 +331,7 @@
         <Item identifier="titaniumaluminiumalloy" />
       </Deconstruct>
       <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="25,-20" holdangle="60" aimpos="90,5" handle1="-50,-7" handle2="-50,-7" msg="ItemMsgPickUpSelect" />
-      <RangedWeapon barrelpos="70,32" spread="10" unskilledspread="45" combatPriority="45" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.5" DualWieldReloadTimePenaltyMultiplier="1.1" DualWieldAccuracyPenalty="6">
+      <RangedWeapon barrelpos="70,32" spread="10" unskilledspread="45" combatPriority="45" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.3" DualWieldReloadTimePenaltyMultiplier="1.4" DualWieldAccuracyPenalty="6">
         <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="918,1318,195,101" />
         <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="608,1317,205,106" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />

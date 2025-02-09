@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <infotexts language="English" nowhitespace="false" translatedname="English">
-  <Override>
     <firemode.laser>Laser Mode</firemode.laser>
     <firemode.charge>Charge Mode</firemode.charge>
     <locationname.none></locationname.none>
@@ -1511,5 +1510,4 @@
     <entityname.pt762_51>7.62*51mm</entityname.pt762_51>
     <entityname.pt762_51_ap>7.62*51mm AP</entityname.pt762_51_ap>
     <entityname.338magnum>.338 Magnum</entityname.338magnum>
-  </Override>
 </infotexts>

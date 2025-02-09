@@ -681,8 +681,9 @@
         </Item>
         <Item identifier="tsm_lm_mcx" equip="true">
           <Item identifier="tsm_grip_straight" equip="true" />
-          <Item identifier="lm_762_51_ap_mag" amount="4" />
-          <Item identifier="lm_762_51_mag" amount="4" />
+          <Item identifier="lm_68_51kj_magazine" amount="2" />
+          <Item identifier="lm_68_51ap_magazine" amount="2" />
+          <Item identifier="lm_68_51_mag_kr" amount="2" />
         </Item>
         <Item identifier="tsm_glock18_pistols">
           <Item identifier="tsm_9_drum" amount="3" />
@@ -1989,7 +1990,7 @@
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_abyssrambler_uniform" equip="true" />
         <Item identifier="fkj_vest_elite" equip="true" />
-        <Item identifier="fkj_762_51_mag">
+        <Item identifier="fkj_9_39_mag">
           <Item identifier="fkj_fast_helmet_reinforce" equip="true" />
         </Item>
         <Item identifier="tsm_fkj_sr3m" equip="true">

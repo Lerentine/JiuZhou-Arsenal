@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="56冲" identifier="tsm_56" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.26" impactsoundtag="impact_metal_light" description="">
+  <Item name="56冲" identifier="tsm_56" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,riflemanbonus" scale="0.26" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
     <PreferredContainer secondary="wreckarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
@@ -17,7 +17,7 @@
     <Sprite texture="%ModDir%/weapons/其他/legacy_weapons.png" sourcerect="28,16,417,103" depth="0.55" origin="0.5,0.5" />
     <Body width="417" height="100" density="52" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,0" aimpos="60,0" handle1="-85,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,0" aimpos="60,5" handle1="-80,-15" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.9" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.75" setvalue="true" />
@@ -87,7 +87,7 @@
           <Conditional isActive="eq true" />
           <sound file="%ModDir%/weapons/reload_ogg/reload_2_1.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7" />
         </StatusEffect>
-        <StatusEffect target="This" holdpos="60,0" aimpos="60,0" handle1="-85,-10" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.1" maxchargetime="0" setvalue="true">
+        <StatusEffect target="This" holdpos="60,0" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.1" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999" />
         </StatusEffect>
       </Containable>
@@ -116,7 +116,7 @@
     <!--等级提示-->
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
-  <Item name="81杠" identifier="tsm_81" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.24" impactsoundtag="impact_metal_light" description="">
+  <Item name="81杠" identifier="tsm_81" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,riflemanbonus" scale="0.26" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
     <PreferredContainer secondary="wreckarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -206,7 +206,7 @@
     <!--等级提示-->
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
-  <Item name="QTS11式战略突击步枪" identifier="tsm_ots11" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,tsm_gun,gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.26" impactsoundtag="impact_metal_light" description="">
+  <Item name="QTS11式战略突击步枪" identifier="tsm_ots11" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,tsm_gun,gun,gunsmith,mountableweapon,provocativetohumanai,riflemanbonus" scale="0.26" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
     <PreferredContainer secondary="wreckarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />

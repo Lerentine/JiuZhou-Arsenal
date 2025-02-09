@@ -3,7 +3,7 @@
   <!--武器-->
   <!--无托线-->
   <!--L85A2无托步枪-->
-  <Item name="L85A2无托步枪" identifier="tsm_lm_l85a2" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" HideConditionBar="true" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="L85A2无托步枪" identifier="tsm_lm_l85a2" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,riflemanbonus" HideConditionBar="true" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
     <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.1" />
@@ -129,7 +129,7 @@
     <SkillRequirementHint identifier="weapons" level="20" />
   </Item>
   <!--FAMAS法马斯无托自动步枪-->
-  <Item name="FAMAS无托自动步枪" identifier="tsm_lm_famas" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="FAMAS无托自动步枪" identifier="tsm_lm_famas" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
     <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.1" />
@@ -328,7 +328,7 @@
     <SkillRequirementHint identifier="weapons" level="35" />
   </Item>
   <!--AUG突击步枪-->
-  <Item name="联盟AUG突击步枪" identifier="tsm_lm_aug" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="联盟AUG突击步枪" identifier="tsm_lm_aug" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
     <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.1" />
@@ -507,7 +507,7 @@
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
   <!--Tavor-21无托步枪-->
-  <Item name="Tavor-21无托步枪" identifier="tsm_lm_tavor21" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="Tavor-21无托步枪" identifier="tsm_lm_tavor21" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
     <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.1" />
@@ -686,7 +686,7 @@
     <SkillRequirementHint identifier="weapons" level="55" />
   </Item>
   <!--VSH—2“恶棍”先进无托战斗步枪-->
-  <Item name="VHS—2“恶棍”先进无托战斗步枪" identifier="tsm_lm_vsh2" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,rm277,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="VHS—2“恶棍”先进无托战斗步枪" identifier="tsm_lm_vsh2" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,rm277,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
     <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.1" />
@@ -884,7 +884,7 @@
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
   <!--联盟MDR无托战斗步枪-->
-  <Item name="联盟MDR无托战斗步枪" identifier="tsm_lm_mdr" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,rm277,provocativetohumanai,bulkyweapon" scale="0.23" impactsoundtag="impact_metal_light">
+  <Item name="联盟MDR无托战斗步枪" identifier="tsm_lm_mdr" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,rm277,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.23" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="60" />
@@ -1068,7 +1068,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
-  <Item name="联盟MDR无托战斗步枪-渗透型" identifier="tsm_lm_mdr_c" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,rm277,provocativetohumanai,bulkyweapon" scale="0.21" impactsoundtag="impact_metal_light">
+  <Item name="联盟MDR无托战斗步枪-渗透型" identifier="tsm_lm_mdr_c" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,rm277,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.21" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="60" />
@@ -1185,7 +1185,7 @@
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
   <!--SCAR-H-->
-  <Item name="SCAR-H" identifier="tsm_lm_scarh" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,rm277,provocativetohumanai,bulkyweapon" scale="0.30" impactsoundtag="impact_metal_light">
+  <Item name="SCAR-H" identifier="tsm_lm_scarh" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,rm277,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.30" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--售价-->
     <Price baseprice="401" displaynonempty="true">
@@ -1230,19 +1230,19 @@
       <!--枪口火焰-->
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="true">
-        <RequiredItem items="1" matchonempty="true" type="Contained" targetslot="3" />
+        <RequiredItem items="1" matchonempty="true" type="Contained" targetslot="4" />
         <Sound file="%ModDir%/weapons/木卫二联盟/scar.ogg" type="OnUse" range="3000" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" forceplaysounds="true">
-        <RequiredItem items="tsm_flame_arrester" type="Contained" targetslot="3" />
+        <RequiredItem items="tsm_flame_arrester" type="Contained" targetslot="4" />
         <Sound file="%ModDir%/weapons/木卫二联盟/scar.ogg" type="OnUse" range="3000" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" forceplaysounds="true">
-        <RequiredItem items="tsm_recoil" type="Contained" targetslot="3" />
+        <RequiredItem items="tsm_recoil" type="Contained" targetslot="4" />
         <Sound file="%ModDir%/weapons/木卫二联盟/scar.ogg" type="OnUse" range="3000" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" forceplaysounds="true">
-        <RequiredItem items="tsm_gun_silencers" type="Contained" targetslot="3" />
+        <RequiredItem items="tsm_gun_silencers" type="Contained" targetslot="4" />
         <Sound file="%ModDir%/weapons/木卫二联盟/silence_scar.ogg" type="OnUse" range="1000" />
       </StatusEffect>
       <!-- 武器操作限制 -->
@@ -1360,12 +1360,12 @@
         </StatusEffect>
       </Containable>
       <!--2.护木-->
-      <!--SubContainer capacity="1" maxstacksize="1">
+      <SubContainer capacity="1" maxstacksize="1">
         <SlotIcon slotindex="1" texture="%ModDir%/png/ui.png" sourcerect="638,214,18,36" origin="0.45,0.5" />
-        <Containable items="grip" hide="false" itempos="20,-5" depth="0.56" setactive="true" />
-      </SubContainer-->
+        <Containable items="grip" hide="false" itempos="18,-6" depth="0.56" setactive="true" />
+      </SubContainer>
       <!--3.灯-->
-      <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+      <SlotIcon slotindex="2" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="flashlight" hide="false" itempos="26,0" setactive="true" />
       </SubContainer>
@@ -1376,7 +1376,7 @@
       </SubContainer>
       <!--5.枪口/枪管-->
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="3" texture="%ModDir%/png/ui.png" sourcerect="513,216,87,25" origin="0.45,0.5" />
+        <SlotIcon slotindex="4" texture="%ModDir%/png/ui.png" sourcerect="513,216,87,25" origin="0.45,0.5" />
         <Containable items="barrel" hide="false" itempos="60,4.3" containedspritedepth="0.51" Scale="0.20" setactive="true" />
       </SubContainer>
     </ItemContainer>
@@ -1390,7 +1390,7 @@
     <SkillRequirementHint identifier="weapons" level="80" />
   </Item>
   <!--RM277特种无托战斗步枪-->
-  <Item name="RM277特种无托战斗步枪" identifier="tsm_lm_rm277" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="RM277特种无托战斗步枪" identifier="tsm_lm_rm277" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="30" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="70" />
@@ -1558,7 +1558,7 @@
   </Item>
   <!--ar线-->
   <!--M16-->
-  <Item name="M16A1" identifier="tsm_lm_m16" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" scale="0.23" HideConditionBar="true" impactsoundtag="impact_metal_light">
+  <Item name="M16A1" identifier="tsm_lm_m16" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.23" HideConditionBar="true" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2044,2189,129,143" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="0,13,515,117" depth="0.55" origin="0.5,0.5" />
@@ -1674,7 +1674,7 @@
     <SkillRequirementHint identifier="weapons" level="20" />
   </Item>
   <!--M16A4-->
-  <Item name="M16A4" identifier="tsm_lm_m16a4" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="M16A4" identifier="tsm_lm_m16a4" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1831,1569,127,136" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="15,1405,582,104" depth="0.55" origin="0.5,0.5" />
@@ -1870,7 +1870,7 @@
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
   <!--M110-->
-  <Item name="M110精准射手步枪" identifier="tsm_lm_m110" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,hk417_item,tsm_short_farsight" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="M110精准射手步枪" identifier="tsm_lm_m110" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,hk417_item,tsm_short_farsight,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1600,2128,172,183" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="0,1905,586,138" depth="0.55" origin="0.5,0.5" />
@@ -2028,7 +2028,7 @@
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
   <!--AR15-Taran联盟步枪-->
-  <Item name="联盟AR15-Taran步枪" identifier="tsm_lm_ar15" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="联盟AR15-Taran步枪" identifier="tsm_lm_ar15" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1831,1422,106,119" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="507,781,484,121" depth="0.55" origin="0.5,0.5" />
@@ -2060,7 +2060,7 @@
     </Holdable>
     <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
-    <RangedWeapon reload="0.12" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="240,25" spread="12" unskilledspread="60" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.12" weapondamagemodifier="0.95" holdtrigger="true" barrelpos="240,25" spread="12" unskilledspread="60" combatPriority="88" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/png/crosshair.png" sourcerect="32,4469,241,243" />
       <CrosshairPointer texture="%ModDir%/png/crosshair.png" sourcerect="336,4520,176,175" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -2206,7 +2206,7 @@
     <SkillRequirementHint identifier="weapons" level="40" />
   </Item>
   <!--M4-->
-  <Item name="M4" identifier="tsm_lm_m4" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,416_item,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="M4" identifier="tsm_lm_m4" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,416_item,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2034,1742,124,131" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="586,4,475,121" depth="0.55" origin="0.5,0.5" />
@@ -2413,7 +2413,7 @@
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
   <!--hk416-->
-  <Item name="hk416" identifier="tsm_lm_hk416" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,mcx,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="hk416" identifier="tsm_lm_hk416" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,mcx,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1571,1673,178,200" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="635,1720,405,134" depth="0.55" origin="0.5,0.5" />
@@ -2612,7 +2612,7 @@
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
   <!--mk18-->
-  <Item name="MK18" identifier="tsm_lm_mk18" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,g36_item,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="MK18" identifier="tsm_lm_mk18" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,g36_item,provocativetohumanai,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--售价-->
     <Price baseprice="401" displaynonempty="true">
@@ -2826,7 +2826,7 @@
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
   <!--西格绍尔MCX·spear-->
-  <Item name="联盟MCX·spear战斗步枪" identifier="tsm_lm_mcx" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,tsm_short_farsight" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="联盟MCX·spear战斗步枪" identifier="tsm_lm_mcx" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,tsm_short_farsight,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="555" displaynonempty="true">
       <Price storeidentifier="merchantarmory" minamount="0" maxamount="0" />
@@ -2974,7 +2974,7 @@
     <SkillRequirementHint identifier="weapons" level="80" />
   </Item>
   <!--hk417-->
-  <Item name="hk417" identifier="tsm_lm_hk417" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,tsm_short_farsight" scale="0.27" impactsoundtag="impact_metal_light">
+  <Item name="hk417" identifier="tsm_lm_hk417" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,tsm_short_farsight,riflemanbonus" scale="0.27" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1542,3292,188,196" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="31,2550,512,152" depth="0.55" origin="0.5,0.5" />
@@ -3149,7 +3149,7 @@
     <SkillRequirementHint identifier="weapons" level="80" />
   </Item>
   <!--mk14-->
-  <Item name="mk14 ebr" identifier="tsm_lm_mk14ebr" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,tsm_short_farsight" scale="0.23" impactsoundtag="impact_metal_light">
+  <Item name="mk14 ebr" identifier="tsm_lm_mk14ebr" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,tsm_short_farsight,riflemanbonus" scale="0.23" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1822,2525,169,196" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="5,2763,604,162" depth="0.55" origin="0.5,0.5" />
@@ -3312,7 +3312,7 @@
     <SkillRequirementHint identifier="weapons" level="80" />
   </Item>
   <!--HK433-->
-  <Item name="HK433" identifier="tsm_lm_hk433" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai" scale="0.24" impactsoundtag="impact_metal_light">
+  <Item name="HK433" identifier="tsm_lm_hk433" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,riflemanbonus" scale="0.24" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--售价-->
     <Price baseprice="501" displaynonempty="true">
@@ -3505,7 +3505,7 @@
   </Item>
   <!--特殊-->
   <!--acr-->
-  <Item name="acr" identifier="tsm_lm_drh" category="weapon" subcategory="tsm_coalition" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" scale="0.24" impactsoundtag="impact_metal_light">
+  <Item name="acr" identifier="tsm_lm_drh" category="weapon" subcategory="tsm_coalition" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.24" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--Fabricate suitablefabricators="tsm_fabricator" requiredtime="43" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="50" />
@@ -3668,7 +3668,7 @@
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
   <!--97式快速镇暴步枪-->
-  <Item name="联盟97式快速镇暴步枪" identifier="tsm_lm_97" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="联盟97式快速镇暴步枪" identifier="tsm_lm_97" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Deconstruct time="10">
       <Item identifier="steel" />
@@ -3788,7 +3788,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
-  <Item name="MK18 Custom" identifier="tsm_lm_mk18_c" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,g36_item,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="MK18 Custom" identifier="tsm_lm_mk18_c" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,g36_item,provocativetohumanai,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Deconstruct time="10">
       <Item identifier="tsm_hpc" />
@@ -3910,7 +3910,7 @@
     <!--等级提示-->
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
-  <Item name="M4 (万能钥匙)" identifier="tsm_lm_m4_c" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,416_item,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="M4 (万能钥匙)" identifier="tsm_lm_m4_c" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,416_item,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2285,1964,209,209" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="987,516,475,133" depth="0.55" origin="0.5,0.5" />
@@ -4021,7 +4021,7 @@
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
   <!--CZ 805A1 bren-->
-  <Item name="CZ 805A1 bren" identifier="tsm_lm_cz805a1" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" scale="0.21" impactsoundtag="impact_metal_light">
+  <Item name="CZ 805A1 bren" identifier="tsm_lm_cz805a1" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.21" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2068,2803,185,198" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="968,3321,538,127" depth="0.55" origin="0.5,0.5" />
@@ -4213,7 +4213,7 @@
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
   <!--CZ 805A1 bren-->
-  <Item name="CZ806 bren2" identifier="tsm_lm_cz806" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" scale="0.22" impactsoundtag="impact_metal_light">
+  <Item name="CZ806 bren2" identifier="tsm_lm_cz806" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.22" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="2319,869,128,137" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1268,946,516,144" depth="0.55" origin="0.5,0.5" />
@@ -4418,7 +4418,7 @@
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
   <!--mcx响尾蛇-->
-  <Item name="mcx响尾蛇" identifier="tsm_lm_mcxxws" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" scale="0.22" impactsoundtag="impact_metal_light">
+  <Item name="mcx响尾蛇" identifier="tsm_lm_mcxxws" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.22" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1393,2387,150,181" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1466,1166,335,124" depth="0.55" origin="0.5,0.5" />
@@ -4597,7 +4597,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
-  <Item name="mk18_l" identifier="tsm_lm_mk18_l" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,g36_item,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="mk18_l" identifier="tsm_lm_mk18_l" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,g36_item,provocativetohumanai,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Deconstruct time="10">
       <Item identifier="tsm_hpc" />
@@ -4696,7 +4696,7 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <!--G36C-->
-  <Item name="G36C" identifier="tsm_lm_g36c" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,hk433_item,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="G36C" identifier="tsm_lm_g36c" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,hk433_item,provocativetohumanai,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--售价-->
     <Price baseprice="401" displaynonempty="true">
@@ -4905,7 +4905,7 @@
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
   <!--G36K-->
-  <Item name="G36K A4" identifier="tsm_lm_g36ka4" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,hk433_item,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="G36K A4" identifier="tsm_lm_g36ka4" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,hk433_item,provocativetohumanai,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--售价-->
     <Price baseprice="401" displaynonempty="true">
@@ -5236,7 +5236,7 @@
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
   <!--AAC-->
-  <Item name="蜜獾短突击步枪" identifier="tsm_honeybadger" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,lm_gun,mountableweapon,provocativetohumanai" scale="0.22" impactsoundtag="impact_metal_light" description="">
+  <Item name="蜜獾短突击步枪" identifier="tsm_honeybadger" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,lm_gun,mountableweapon,provocativetohumanai,riflemanbonus" scale="0.22" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--制作-->
     <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="20" requiresrecipe="false">
@@ -5399,7 +5399,7 @@
     <SkillRequirementHint identifier="weapons" level="45" />
   </Item>
   <!--CZ BREN3-->
-  <Item name="CZ BREN3特种短突步枪" identifier="tsm_lm_czbren3" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,lm_gun,mountableweapon,hk433_item,provocativetohumanai" scale="0.22" impactsoundtag="impact_metal_light" description="">
+  <Item name="CZ BREN3特种短突步枪" identifier="tsm_lm_czbren3" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,lm_gun,mountableweapon,hk433_item,provocativetohumanai,riflemanbonus" scale="0.22" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--制作-->
     <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="20" requiresrecipe="false">
@@ -5561,7 +5561,7 @@
     <SkillRequirementHint identifier="weapons" level="45" />
   </Item>
   <!--ash12-->
-  <Item name="ash12" identifier="tsm_lm_ash12" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="ash12" identifier="tsm_lm_ash12" subcategory="tsm_coalition" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="1084,1736,185,198" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="619,1369,493,124" depth="0.55" origin="0.5,0.5" />

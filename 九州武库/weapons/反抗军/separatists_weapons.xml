@@ -2,7 +2,7 @@
 <Items>
   <!--武器-->
   <!--AN94-->
-  <Item name="AN94" identifier="tsm_fkj_an94" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.23" HideConditionBar="true" impactsoundtag="impact_metal_light">
+  <Item name="AN94" identifier="tsm_fkj_an94" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.23" HideConditionBar="true" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="762" displaynonempty="true" minleveldifficulty="35" buyingpricemultiplier="5">
       <Price storeidentifier="merchantarmory" minamount="0" maxamount="2" />
@@ -154,7 +154,7 @@
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
   <!--AK74u-->
-  <Item name="AK74u" identifier="tsm_fkj_ak74u" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK74u" identifier="tsm_fkj_ak74u" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="262" displaynonempty="true" minleveldifficulty="0" buyingpricemultiplier="5" />
     <Price storeidentifier="merchantcity" minavailable="0" maxavailable="1">
@@ -271,7 +271,7 @@
     <SkillRequirementHint identifier="weapons" level="35" />
   </Item>
   <!--AK74-->
-  <Item name="AK74" identifier="tsm_fkj_ak74" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK74" identifier="tsm_fkj_ak74" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="262" displaynonempty="true" minleveldifficulty="0" buyingpricemultiplier="5" />
     <Price storeidentifier="merchantcity" minavailable="0" maxavailable="1">
@@ -394,7 +394,7 @@
     <SkillRequirementHint identifier="weapons" level="28" />
   </Item>
   <!--OTS Groza-1 “闪电”反抗军无托突击步枪-->
-  <Item name="反抗军OTS Groza-1 “闪电”无托突击步枪" identifier="tsm_fkj_groza" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.3" impactsoundtag="impact_metal_light">
+  <Item name="反抗军OTS Groza-1 “闪电”无托突击步枪" identifier="tsm_fkj_groza" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,riflemanbonus" scale="0.3" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
     <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.1" />
@@ -513,7 +513,7 @@
     <SkillRequirementHint identifier="weapons" level="55" />
   </Item>
   <!--AK103-->
-  <Item name="AK103" identifier="tsm_fkj_ak103" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,ak12_item,provocativetohumanai,bulkyweapon" scale="0.28" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK103" identifier="tsm_fkj_ak103" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,ak12_item,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.28" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--售价-->
     <Price baseprice="402" displaynonempty="true" minleveldifficulty="10" buyingpricemultiplier="5" />
@@ -551,7 +551,7 @@
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="5,156,465,100" depth="0.55" origin="0.5,0.5" />
     <Body width="465" height="100" density="30" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="63,0" aimpos="65,0" handle1="-90,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="63,0" aimpos="65,3" handle1="-90,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.85" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
@@ -624,14 +624,14 @@
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <!-- 外观 itempos(x)-=26 -->
       <!--1.弹匣-->
-      <Containable items="762mag" hide="false" itempos="0,-5" depth="0.56" setactive="true">
+      <Containable items="762mag" hide="false" itempos="-0.5,-5" depth="0.56" setactive="true">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
           <sound file="%ModDir%/weapons/reload_ogg/reload_2_2.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7" />
         </StatusEffect>
-        <StatusEffect target="This" holdpos="63,0" aimpos="65,0" handle1="-90,-10" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.3" maxchargetime="0" setvalue="true">
+        <StatusEffect target="This" holdpos="63,0" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.3" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999" />
         </StatusEffect>
       </Containable>
@@ -655,7 +655,7 @@
     <!--等级提示-->
     <SkillRequirementHint identifier="weapons" level="45" />
   </Item>
-  <Item name="AK103（轻量化枪托）" identifier="tsm_fkj_ak103_l" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,ak12_item,provocativetohumanai,bulkyweapon" scale="0.28" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK103（轻量化枪托）" identifier="tsm_fkj_ak103_l" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,ak12_item,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.28" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--分解-->
     <Deconstruct time="10">
@@ -671,7 +671,7 @@
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="528,156,472,100" depth="0.55" origin="0.5,0.5" />
     <Body width="472" height="100" density="28" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="63,0" aimpos="67,0" handle1="-90,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="63,0" aimpos="67,3" handle1="-90,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.95" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.75" setvalue="true" />
@@ -743,14 +743,14 @@
     <!--里容器-->
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <!--1.弹匣-->
-      <Containable items="762mag" hide="false" itempos="-2,-5" depth="0.56" setactive="true">
+      <Containable items="762mag" hide="false" itempos="-0.5,-5" depth="0.56" setactive="true">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
           <Conditional isActive="eq true" />
           <sound file="%ModDir%/weapons/reload_ogg/reload_2_2.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7" />
         </StatusEffect>
-        <StatusEffect target="This" holdpos="63,0" aimpos="65,0" handle1="-90,-10" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.2" maxchargetime="0" setvalue="true">
+        <StatusEffect target="This" holdpos="63,0" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.2" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999" />
         </StatusEffect>
       </Containable>
@@ -775,7 +775,7 @@
     <SkillRequirementHint identifier="weapons" level="45" />
   </Item>
   <!--ak105-->
-  <Item name="AK105" identifier="tsm_fkj_ak105" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,ak12_item,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK105" identifier="tsm_fkj_ak105" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,ak12_item,provocativetohumanai,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--售价-->
     <Price baseprice="400" displaynonempty="true" minleveldifficulty="10" buyingpricemultiplier="5" />
@@ -813,7 +813,7 @@
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="5,285,454,108" depth="0.55" origin="0.5,0.5" />
     <Body width="454" height="108" density="25" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-5" aimpos="60,-5" handle1="-90,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-5" aimpos="60,0" handle1="-90,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.9" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.65" setvalue="true" />
@@ -890,7 +890,7 @@
           <Conditional isActive="eq true" />
           <sound file="%ModDir%/weapons/reload_ogg/reload_2_2.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7" />
         </StatusEffect>
-        <StatusEffect target="This" holdpos="60,-5" aimpos="60,-5" handle1="-90,-10" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.2" maxchargetime="0" setvalue="true">
+        <StatusEffect target="This" holdpos="60,-5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.2" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999" />
         </StatusEffect>
       </Containable>
@@ -914,7 +914,7 @@
     <!--等级提示-->
     <SkillRequirementHint identifier="weapons" level="40" />
   </Item>
-  <Item name="AK105(轻量化枪托)" identifier="tsm_fkj_ak105_l" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,ak12_item,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK105(轻量化枪托)" identifier="tsm_fkj_ak105_l" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,ak12_item,provocativetohumanai,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--分解-->
     <Deconstruct time="10">
@@ -930,7 +930,7 @@
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="538,276,460,108" depth="0.55" origin="0.5,0.5" />
     <Body width="460" height="108" density="25" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-5" aimpos="60,-5" handle1="-90,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-5" aimpos="60,0" handle1="-90,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.95" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
@@ -1007,7 +1007,7 @@
           <Conditional isActive="eq true" />
           <sound file="%ModDir%/weapons/reload_ogg/reload_2_1.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7" />
         </StatusEffect>
-        <StatusEffect target="This" holdpos="60,-5" aimpos="60,-5" handle1="-90,-10" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.1" maxchargetime="0" setvalue="true">
+        <StatusEffect target="This" holdpos="60,-5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.1" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999" />
         </StatusEffect>
       </Containable>
@@ -1032,7 +1032,7 @@
     <SkillRequirementHint identifier="weapons" level="40" />
   </Item>
   <!--AM17-->
-  <Item name="AM17" identifier="tsm_fkj_am17" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,ak12_item,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="AM17" identifier="tsm_fkj_am17" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,ak12_item,provocativetohumanai,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--分解-->
     <Deconstruct time="10">
@@ -1177,7 +1177,7 @@
     <SkillRequirementHint identifier="weapons" level="40" />
   </Item>
   <!--ak12-->
-  <Item name="AK12" identifier="tsm_fkj_ak12" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,rpk16_item,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK12" identifier="tsm_fkj_ak12" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,rpk16_item,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.27" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--制作-->
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="25" requiresrecipe="false">
@@ -2546,7 +2546,7 @@
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
   <!--加利尔-->
-  <Item name="反抗军加利尔ACE52战斗步枪" identifier="tsm_fkj_ace52" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
+  <Item name="反抗军加利尔ACE52战斗步枪" identifier="tsm_fkj_ace52" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.27" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="30" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="45" />
@@ -2684,7 +2684,7 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <!--G3A4-->
-  <Item name="反抗军G3A4站斗步枪" identifier="tsm_fkj_g3a4" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.28" impactsoundtag="impact_metal_light" description="">
+  <Item name="反抗军G3A4站斗步枪" identifier="tsm_fkj_g3a4" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.28" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="30" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="50" />
@@ -2855,7 +2855,7 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <!--fal-->
-  <Item name="反抗军FAL“法老”战斗步枪" identifier="tsm_fkj_fal" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
+  <Item name="反抗军FAL“法老”战斗步枪" identifier="tsm_fkj_fal" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.27" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="30" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="45" />
@@ -2991,7 +2991,7 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <!--SG542-->
-  <Item name="反抗军SG542“突击者”步枪" identifier="tsm_fkj_sg553" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.26" impactsoundtag="impact_metal_light" description="">
+  <Item name="反抗军SG542“突击者”步枪" identifier="tsm_fkj_sg553" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.26" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="60" />
@@ -3181,7 +3181,7 @@
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
   <!--JQ430-->
-  <Item name="JQ430" identifier="tsm_fkj_jq430" category="weapon" subcategory="tsm_separatists" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.23" impactsoundtag="impact_metal_light" description="">
+  <Item name="JQ430" identifier="tsm_fkj_jq430" category="weapon" subcategory="tsm_separatists" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.23" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Deconstruct time="10">
       <Item identifier="titanium" />
@@ -3312,7 +3312,7 @@
     </CustomInterface>
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
-  <Item name="AK12 custom" identifier="tsm_fkj_ak12_c" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,ak12,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK12 custom" identifier="tsm_fkj_ak12_c" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,ak12,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.27" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--分解-->
     <Deconstruct time="10">
@@ -3410,7 +3410,7 @@
     </CustomInterface>
   </Item>
   <!--type561a-->
-  <Item name="type 56-1A" identifier="tsm_fkj_561a" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,ak12,provocativetohumanai,bulkyweapon" scale="0.27" impactsoundtag="impact_metal_light" description="">
+  <Item name="type 56-1A" identifier="tsm_fkj_561a" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,ak12,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.27" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--分解-->
     <Deconstruct time="10">
@@ -3579,7 +3579,7 @@
     <!--等级提示-->
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
-  <Item name="AK105 custom" identifier="tsm_fkj_ak105_c" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="AK105 custom" identifier="tsm_fkj_ak105_c" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--分解-->
     <Deconstruct time="10">
@@ -3595,7 +3595,7 @@
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="725,826,432,108" depth="0.55" origin="0.5,0.5" />
     <Body width="432" height="108" density="27" />
     <!--存储格子（左手右手）、控制姿势、持握距离、瞄准距离、右手位置、左手位置（左右手位置均为面向右边时的状态）、持握角度、捡起音效-->
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-5" aimpos="60,-5" handle1="-90,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-5" aimpos="60,0" handle1="-90,-10" handle2="45,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <!--拿手上时减速、瞄准时减速以及射击时减速-->
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
@@ -3668,7 +3668,7 @@
             <Conditional isActive="eq true" />
             <sound file="%ModDir%/weapons/reload_ogg/reload_2_45.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7" />
           </StatusEffect>
-          <StatusEffect target="This" holdpos="60,-5" aimpos="60,-5" handle1="-90,-10" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.4" maxchargetime="0" setvalue="true">
+          <StatusEffect target="This" holdpos="60,-5" handle2="45,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.4" maxchargetime="0" setvalue="true">
             <conditional maxchargetime="eq 999" />
           </StatusEffect>
         </Containable>
@@ -3693,7 +3693,7 @@
     <SkillRequirementHint identifier="weapons" level="40" />
   </Item>
   <!--A545-->
-  <Item name="A545" identifier="tsm_fkj_a545" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" description="">
+  <Item name="A545" identifier="tsm_fkj_a545" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,riflemanbonus" scale="0.25" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <!--分解-->
     <Deconstruct time="10">
@@ -4630,7 +4630,7 @@
     <SkillRequirementHint identifier="weapons" level="40" />
   </Item>
   <!--vss-->
-  <Item name="vss" identifier="tsm_fkj_vss" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.24" impactsoundtag="impact_metal_light" description="">
+  <Item name="vss" identifier="tsm_fkj_vss" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.24" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="272" displaynonempty="true" minleveldifficulty="0" buyingpricemultiplier="5" />
     <Price storeidentifier="merchantcity" minavailable="0" maxavailable="0" />
@@ -4801,7 +4801,7 @@
     <SkillRequirementHint identifier="weapons" level="55" />
   </Item>
   <!--asval-->
-  <Item name="asval" identifier="tsm_fkj_asval" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" scale="0.24" impactsoundtag="impact_metal_light" description="">
+  <Item name="asval" identifier="tsm_fkj_asval" subcategory="tsm_separatists" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon,riflemanbonus" scale="0.24" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Price baseprice="278" displaynonempty="true" minleveldifficulty="0" buyingpricemultiplier="5" />
     <Price storeidentifier="merchantcity" minavailable="0" maxavailable="0" />
