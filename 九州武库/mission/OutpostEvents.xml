@@ -421,6 +421,7 @@
       <TagAction criteria="humanprefabidentifier:beowulf_p" tag="enemy" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:beowulf_sl" tag="enemy" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:beowulf_fox" tag="enemy" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:beowulf_roware" tag="enemy" continueifnotargetsfound="true" />
       <StatusEffectAction targettag="enemy">
         <StatusEffect target="This">
           <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
@@ -441,6 +442,7 @@
       <TagAction criteria="humanprefabidentifier:beowulf_p" tag="enemy_pt" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:beowulf_sl" tag="enemy_leader" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:beowulf_fox" tag="enemy_leader" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:beowulf_roware" tag="enemy_leader" continueifnotargetsfound="true" />
       <StatusEffectAction targettag="enemy_leader">
         <StatusEffect target="This">
           <Affliction identifier="tsm_beowulf_jia_buff" strength="50" />
@@ -1172,7 +1174,7 @@
     <!--克里斯入组-->
     <ScriptedEvent identifier="tsm_chris_join">
       <CheckDataAction identifier="tsm_chris_join_complete" condition="eq true">
-        <Failure>
+      <Failure>
           <CheckDataAction identifier="tsm_beowulf_complete" condition="eq true">
             <Success>
               <TagAction criteria="player" tag="player" />
@@ -1230,6 +1232,68 @@
     <ScriptedEvent identifier="tsm_beowulf_complete_2">
       <SetDataAction value="true" identifier="tsm_beowulf_complete" />
     </ScriptedEvent>
+    <!--燕入组-->
+    <ScriptedEvent identifier="tsm_yan_join">
+      <CheckDataAction identifier="tsm_chris_join_complete" condition="eq true">
+       <Failure>
+              <TagAction criteria="player" tag="player" />
+              <SpawnAction npcsetidentifier="tsm_npcs_jz" npcidentifier="tsm_yan" targettag="tsm_yan" spawnlocation="Outpost" targetmoduletags="airlock" />
+              <Label name="beginningofthejourney" />
+              <TriggerAction target1tag="tsm_yan" target2tag="player" applytotarget1="tsm_yan" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
+              <ConversationAction targettag="triggerer_player" text="tsm_yan_join_1">
+                <Option text="tsm_yan_join_1_1">
+                  <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_yan_item1">
+                    <Failure>
+                      <ConversationAction targettag="triggerer_player" text="tsm_yan_join_2" />
+                      <GoTo name="beginningofthejourney" />
+                    </Failure>
+                    <Success>
+                      <RemoveItemAction targettag="triggerer_player" itemidentifier="tsm_yan_item1" />
+                      <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_yan_item2">
+                        <Failure>
+                          <ConversationAction targettag="triggerer_player" text="tsm_yan_join_2" />
+                          <GoTo name="beginningofthejourney" />
+                        </Failure>
+                        <Success>
+                          <RemoveItemAction targettag="triggerer_player" itemidentifier="tsm_yan_item2" />
+                          <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_yan_item3">
+                            <Failure>
+                              <ConversationAction targettag="triggerer_player" text="tsm_yan_join_2" />
+                              <GoTo name="beginningofthejourney" />
+                            </Failure>
+                            <Success>
+                              <RemoveItemAction targettag="triggerer_player" itemidentifier="tsm_yan_item3" />
+                              <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_yan_item4">
+                                <Failure>
+                                  <ConversationAction targettag="triggerer_player" text="tsm_yan_join_2" />
+                                  <GoTo name="beginningofthejourney" />
+                                </Failure>
+                                <Success>
+                                  <RemoveItemAction targettag="triggerer_player" itemidentifier="tsm_yan_item4" />
+                                  <ConversationAction targettag="triggerer_player" text="tsm_yan_join_y">
+                                    <Option text="tsm_yan_join_p">
+                                      <NPCChangeTeamAction npctag="tsm_yan" teamid="Team1" addtocrew="true" />
+                                      <SetDataAction identifier="tsm_yan_join_complete" value="true" />
+                                    </Option>
+                                  </ConversationAction>
+                                </Success>
+                              </CheckItemAction>
+                            </Success>
+                          </CheckItemAction>
+                        </Success>
+                      </CheckItemAction>
+                    </Success>
+                  </CheckItemAction>
+                </Option>
+                <Option text="tsm.b8" endconversation="false">
+                  <ConversationAction text="...." targettag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Option>
+              </ConversationAction>
+        </Failure>
+        <Success></Success>
+      </CheckDataAction>
+    </ScriptedEvent>
   </EventPrefabs>
   <EventSet identifier="tsm_ars" leveltype="outpost" locationtype="city,military,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true" additive="true" commonness="85">
     <EventSet identifier="tsm_outpostevents_ars" minleveldifficulty="15" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true">
@@ -1244,6 +1308,9 @@
   <EventSet identifier="chris_join" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" additive="true" selectalways="true" commonness="100">
     <EventSet identifier="chris_join" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1" additive="true" selectalways="true" locationtype="outpost,city,research,military,mine,colony,settlement,construction,camp,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory,shipyard,fusion">
       <ScriptedEvent identifier="tsm_chris_join" commonness="100" />
+    </EventSet>
+    <EventSet identifier="chris_join" minleveldifficulty="30" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1" additive="true" selectalways="true" locationtype="tsm_military">
+      <ScriptedEvent identifier="tsm_yan_join" commonness="50" />
     </EventSet>
   </EventSet>
 </Randomevents>

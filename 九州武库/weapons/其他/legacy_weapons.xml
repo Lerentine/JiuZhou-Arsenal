@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="56冲" identifier="tsm_56" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,riflemanbonus" scale="0.26" impactsoundtag="impact_metal_light" description="">
+  <Item name="56冲" identifier="tsm_56" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.26" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
     <PreferredContainer secondary="wreckarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
@@ -98,7 +98,7 @@
         <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
       </SubContainer>
     </ItemContainer>
-    <aitarget sightrange="2000" soundrange="3000" fadeouttime="6" />
+    <aitarget sightrange="2500" soundrange="2300" fadeouttime="6" />
     <!--品质-->
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.15" />
@@ -116,7 +116,7 @@
     <!--等级提示-->
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
-  <Item name="81杠" identifier="tsm_81" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,riflemanbonus" scale="0.26" impactsoundtag="impact_metal_light" description="">
+  <Item name="81杠" identifier="tsm_81" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.26" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
     <PreferredContainer secondary="wreckarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -197,7 +197,7 @@
         <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
       </SubContainer>
     </ItemContainer>
-    <aitarget sightrange="2000" soundrange="3000" fadeouttime="6" />
+    <aitarget sightrange="2500" soundrange="2300" fadeouttime="6" />
     <!--品质-->
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.15" />
@@ -206,7 +206,7 @@
     <!--等级提示-->
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
-  <Item name="QTS11式战略突击步枪" identifier="tsm_ots11" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,tsm_gun,gun,gunsmith,mountableweapon,provocativetohumanai,riflemanbonus" scale="0.26" impactsoundtag="impact_metal_light" description="">
+  <Item name="QTS11式战略突击步枪" identifier="tsm_ots11" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,tsm_gun,gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.26" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
     <PreferredContainer secondary="wreckarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
@@ -243,6 +243,9 @@
       </StatusEffect>
       <!--空-->
       <StatusEffect type="Always" targettype="Contained" targets="mobilebattery" TargetSlot="1" Condition="-0.5" />
+      <StatusEffect type="OnActive" target="Character">
+        <Affliction identifier="tsm_silence_buff" strength="2" />
+      </StatusEffect>
     </Holdable>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <RangedWeapon reload="0.11" weapondamagemodifier="1.0" holdtrigger="true" barrelpos="250,1" spread="7" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -309,7 +312,7 @@
       </SubContainer>
     </ItemContainer>
     <StatusHUD drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="0" thermalgoggles="false" showdeadcharacters="false" showtexts="false" />
-    <aitarget sightrange="2500" soundrange="4500" fadeouttime="6" />
+    <aitarget sightrange="2500" soundrange="1500" fadeouttime="6" />
     <!--品质-->
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.15" />

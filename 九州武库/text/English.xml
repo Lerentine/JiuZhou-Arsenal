@@ -465,19 +465,21 @@
     <entityname.tsm_grip_mounts>Mount</entityname.tsm_grip_mounts>
     <entitydescription.tsm_grip_mounts>When installed, provides moderate stability\n-50% Spread\n+40% Flow resistance\n-20% Movement Speed\n+30% Stun resistance</entitydescription.tsm_grip_mounts>
     <entityname.tsm_sight_reddot>Red Dot Sight</entityname.tsm_sight_reddot>
-    <entitydescription.tsm_sight_reddot>Slightly increase sight range while holding weapons, reduce spread while firing\n+25% Skill gain speed\n-4% Movement speed</entitydescription.tsm_sight_reddot>
+    <entitydescription.tsm_sight_reddot>Slightly increase sight range while holding weapons, reduce spread while firing\n+30% Skill gain speed\n-4% Movement speed</entitydescription.tsm_sight_reddot>
     <entityname.tsm_sight_holographic>Holographic Sight</entityname.tsm_sight_holographic>
-    <entitydescription.tsm_sight_holographic>Slightly increase sight range while holding weapons, reduce spread while firing\n+25% Skill gain speed\n-4% Movement speed</entitydescription.tsm_sight_holographic>
-    <entityname.tsm_sight_double>2x Sight</entityname.tsm_sight_double>
-    <entitydescription.tsm_sight_double>Increase sight range while holding weapons\n-10% Spread\n-7% Movement Speed</entitydescription.tsm_sight_double>
+    <entitydescription.tsm_sight_holographic>Slightly increase sight range while holding weapons, reduce spread while firing\n+30% Skill gain speed\n-4% Movement speed</entitydescription.tsm_sight_holographic>
+    <entityname.tsm_sight_double>G33 2x Sight</entityname.tsm_sight_double>
+    <entitydescription.tsm_sight_double>Increase sight range while holding weapons\n-5% Spread\n-7% Movement Speed\n+13% Skill gain speed</entitydescription.tsm_sight_double>
     <entityname.tsm_sight_pso>PSO AK Sight</entityname.tsm_sight_pso>
     <entitydescription.tsm_sight_pso>Slightly increase sight range while holding weapons\n+5% Skill gain speed\n-15% Spread\n-10% Movement speed</entitydescription.tsm_sight_pso>
     <entityname.tsm_sight_c79>C79 6x Machine Gun Sight</entityname.tsm_sight_c79>
     <entitydescription.tsm_sight_c79>Significantly increase sight range while holding weapons\n-13% Spread\n-12% Movement speed</entitydescription.tsm_sight_c79>
     <entityname.tsm_sight_hamr>HAMR Health Scanner Sight</entityname.tsm_sight_hamr>
     <entitydescription.tsm_sight_hamr>Provides Health Scanner effect\n+10% Weapons skill gain</entitydescription.tsm_sight_hamr>
+    <entityname.tsm_sight_tripled>M2 3x Sight</entityname.tsm_sight_tripled>
+    <entitydescription.tsm_sight_tripled>Slightly increase sight range while holding weapons\n-8% Spread\n-4% Movement speed</entitydescription.tsm_sight_tripled>
     <entityname.tsm_sight_acog>ACOG 4x Sight</entityname.tsm_sight_acog>
-    <entitydescription.tsm_sight_acog>Slightly increase sight range while holding weapons\n+30% Weapons skill gain\n-5% Spread\n-6% Movement speed</entitydescription.tsm_sight_acog>
+    <entitydescription.tsm_sight_acog>Slightly increase sight range while holding weapons\n-15% Spread\n-6% Movement speed</entitydescription.tsm_sight_acog>
     <entityname.tsm_sight_thermal>Thermal Sight</entityname.tsm_sight_thermal>
     <entitydescription.tsm_sight_thermal>Provides Thermal Goggles Effect\n+10% Weapons skill gain</entitydescription.tsm_sight_thermal>
     <entityname.tsm_flame_arrester>Muzzle Flash Suppressor</entityname.tsm_flame_arrester>
@@ -561,6 +563,19 @@
     <tsm_chris_p_e>I never cared about the process, I only cared about the result</tsm_chris_p_e>
     <tsm_chris_c_e2>Looks like you'll have to have more lighters on board. Come on, Captain, let's get ready to liquidate the guilty!</tsm_chris_c_e2>
     <tsm_chris_c_n>Don't bother me if you can't prove your strength!</tsm_chris_c_n>
+
+    <charactername.tsm_yan>Yan</charactername.tsm_yan>
+    <npctitle.tsm_yan>'Felines'-Military Consultant</npctitle.tsm_yan>
+    <entityname.tsm_yan_item1>Yan's notes-part one</entityname.tsm_yan_item1>
+    <entitydescription.tsm_yan_item1>This is one of the notes from Yan,You can recruit her as long as you have gathered all four notes</entitydescription.tsm_yan_item1>
+    <entityname.tsm_yan_item2>Yan's notes-part two</entityname.tsm_yan_item2>
+    <entitydescription.tsm_yan_item2>This is one of the notes from Yan,You can recruit her as long as you have gathered all four notes</entitydescription.tsm_yan_item2>
+    <entityname.tsm_yan_item3>Yan's notes-part three</entityname.tsm_yan_item3>
+    <entitydescription.tsm_yan_item3>This is one of the notes from Yan,You can recruit her as long as you have gathered all four notes</entitydescription.tsm_yan_item3>
+    <entityname.tsm_yan_item4>Yan's notes-part four</entityname.tsm_yan_item4>
+    <entitydescription.tsm_yan_item4>This is one of the notes from Yan,You can recruit her as long as you have gathered all four notes</entitydescription.tsm_yan_item4>
+    <tsm_yan_join_y>Captain,I will act as a military consultant for you and your crew representing the TerraSynergy Matrix.Because of the  Non-Disclosure Agreement I can't tell everything about me.But you can call me:Yan.</tsm_yan_join_y>
+    <tsm_yan_join_p>You are welcome to join us</tsm_yan_join_p>
     <!--弹药-->
     <entityname.tsm_12_ld>Buckshot</entityname.tsm_12_ld>
     <entitydescription.tsm_12_ld>Fewer rounds but with greater power.</entitydescription.tsm_12_ld>
@@ -638,6 +653,8 @@
     <entitydescription.tsm_zc>No design can withstand drug-enhanced bullets; practice is needed to hit accurately. However, its suppressor is quite good. Uses ‖color:150,0,0,255‖Sea of Miracles ammunition‖color:end‖.</entitydescription.tsm_zc>
     <entityname.tsm_fy>Flying Raven Assault Rifle</entityname.tsm_fy>
     <entitydescription.tsm_fy>Uses ‖color:150,0,0,255‖Sea of Miracles ammunition‖color:end‖</entitydescription.tsm_fy>
+    <entityname.tsm_drum_cj>T.S.M Armor Piercing Drum Magazine</entityname.tsm_drum_cj>
+    <entitydescription.tsm_drum_cj>Loaded with 75 rounds of standard armor piercing ammo.Marked  with armor piercing signs to distinguish it from other magazines</entitydescription.tsm_drum_cj>
     <entityname.tsm_rsmagazine>T.S.M Incendiary Magazine</entityname.tsm_rsmagazine>
     <entitydescription.tsm_rsmagazine>Special magazine exclusively for two rifles, Chariot and Flying Raven.</entitydescription.tsm_rsmagazine>
     <entityname.tsm_magazine>T.S.M Standard Magazine</entityname.tsm_magazine>
@@ -677,9 +694,11 @@
     <entityname.tsm_qbs>QBS-09 Semi-auto Shotgun</entityname.tsm_qbs>
     <entitydescription.tsm_qbs>A semi-auto shotgun with remarkable reliability and adaptability, no matter if it's silt-filled ocean depths or cramped outposts, though the gun is short, its chamber pressure is enough to sweep through enemies.</entitydescription.tsm_qbs>
     <entityname.tsm_krmagazine>T.S.M Extended Capacity Magazine</entityname.tsm_krmagazine>
-    <entitydescription.tsm_krmagazine>Can hold 60 rounds of standard ammunition, with a special design ensuring reliability, but the price is not guaranteed.</entitydescription.tsm_krmagazine>
+    <entitydescription.tsm_krmagazine>Can hold 75 rounds of standard ammunition, with a special design ensuring reliability, but the price is not guaranteed.</entitydescription.tsm_krmagazine>
     <entityname.tsm_58_mag_kr>Assault Rifle Drum Magazine (5.8mm)</entityname.tsm_58_mag_kr>
     <entitydescription.tsm_58_mag_kr>Holds 60 rounds of 5.8mm ammunition.</entitydescription.tsm_58_mag_kr>
+    <entityname.tsm_58_drum_cj>Assault Rifle Armor Piercing Drum Magazine（5.8mm）</entityname.tsm_58_drum_cj>
+    <entitydescription.tsm_58_drum_cj>A drum magazine that is loaded with 60 rounds of armor piercing ammo </entitydescription.tsm_58_drum_cj>
     <entityname.tsm_magazinebg>T.S.M Triton Magazine</entityname.tsm_magazinebg>
     <entitydescription.tsm_magazinebg>Triton magazine developed by Sea of Miracles, featuring more powerful ammunition types; take care not to cause friendly fire. Only select squads have permission to use this ammunition.</entitydescription.tsm_magazinebg>
     <entityname.tsm_magazinecj>T.S.M Armor-Piercing Magazine</entityname.tsm_magazinecj>
@@ -818,6 +837,12 @@
     <entitydescription.lm_762_51_mgmag>Contains 200 rounds of 7.62x51mm ammunition.</entitydescription.lm_762_51_mgmag>
     <entityname.lm_762_51_mgmag_cj>Coalition Squad Machine Gun Armor-Piercing Magazine (7.62*51mm)</entityname.lm_762_51_mgmag_cj>
     <entitydescription.lm_762_51_mgmag_cj>Contains 200 rounds of 7.62x51mm armor-piercing ammunition.</entitydescription.lm_762_51_mgmag_cj>
+    <entityname.lm_762_51_krmag>Coalition Expansion Magazine（7.62*51）</entityname.lm_762_51_krmag>
+    <entitydescription.lm_762_51_krmag>Loaded  with 35 rounds of 7.62*51 normal ammo</entitydescription.lm_762_51_krmag>
+    <entityname.lm_762_51_drum>Coalition Drum Magazine（7.62*51）</entityname.lm_762_51_drum>
+    <entitydescription.lm_762_51_drum>Loaded with 50 rounds of 7.62*51 normal ammo</entitydescription.lm_762_51_drum>
+    <entityname.lm_762_51_ap_krmag>Coalition Armor Piercing Expansion Magazine（7.62*51）</entityname.lm_762_51_ap_krmag>
+    <entitydescription.lm_762_51_ap_krmag>Loaded with 35 rounds of 7.62*51 armor piercing ammo</entitydescription.lm_762_51_ap_krmag>
     <entityname.lm_68_51_mgmag>Coalition Machine Gun Ammo Bag(6.8*51)</entityname.lm_68_51_mgmag>
     <entitydescription.lm_68_51_mgmag>Loaded with 150 rounds of 6.8*51mm ammo.</entitydescription.lm_68_51_mgmag>
     <entityname.lm_68_51ap_mgmag>Coalition Machine Gun Armor-Piercing Ammo Bag(6.8*51)</entityname.lm_68_51ap_mgmag>
@@ -846,6 +871,8 @@
     <entitydescription.lm_68_51_mag_kr>Holds 45 rounds of standard 6.8x51mm ammunition.</entitydescription.lm_68_51_mag_kr>
     <entityname.lm_68_51kj_magazine>Coalition Open Tip Match Magazine (6.8*51mm)</entityname.lm_68_51kj_magazine>
     <entitydescription.lm_68_51kj_magazine>Holds 30 rounds of Open Tip Match 6.8x51mm ammunition.</entitydescription.lm_68_51kj_magazine>
+    <entityname.lm_68_51ap_krmagazine>Coalition Armor Piercing Expansion Magazine（6.8*51mm）</entityname.lm_68_51ap_krmagazine>
+    <entitydescription.lm_68_51ap_krmagazine>Loaded with 45 rounds of standard 6.8*51 armor piercing ammo</entitydescription.lm_68_51ap_krmagazine>
     <entityname.lm_762_51_mag>Coalition Standard Magazine (7.62*51mm)</entityname.lm_762_51_mag>
     <entitydescription.lm_762_51_mag>Holds 20 rounds of standard 7.62x51mm ammunition.</entitydescription.lm_762_51_mag>
     <entityname.lm_762_51_ap_mag>Coalition Armor-Piercing Magazine (7.62*51mm)</entityname.lm_762_51_ap_mag>
@@ -858,6 +885,8 @@
     <entitydescription.tsm_miniammo>200 rounds of 5.56 caliber ammunition, fire away.</entitydescription.tsm_miniammo>
     <entityname.lm_127_55_mag>Coalition Standard Magazine(12.7*55)</entityname.lm_127_55_mag>
     <entitydescription.lm_127_55_mag>Holds 20 rounds of standard 12.7*55mm ammunition.</entitydescription.lm_127_55_mag>
+    <entityname.lm_127_55_mag_ap>Coalition Armor-Piercing Magazine(12.7*55)</entityname.lm_127_55_mag_ap>
+    <entitydescription.lm_127_55_mag_ap>Holds 20 rounds of armor-piercing 12.7*55mm ammunition</entitydescription.lm_127_55_mag_ap>
     <!--反抗军-->
     <entityname.tsm_fkj_tac9>Rebel TAC-9 Automatic Pistol</entityname.tsm_fkj_tac9>
     <entitydescription.tsm_fkj_tac9>Uses ‖color:150,0,0,255‖9mm‖color:end‖ pistol magazine, easily manufactured with a stamping press, cheap to make, easy to conceal, the deadly threat of full-auto firepower makes it the favorite of many gangsters, though it is lackluster in full-fledged military conflicts.</entitydescription.tsm_fkj_tac9>
@@ -939,6 +968,8 @@
     <entitydescription.fkj_545cj_mag>A 33-round magazine loaded with 5.45 armor-piercing rounds, effective against body armor and biological shells.</entitydescription.fkj_545cj_mag>
     <entityname.fkj_545hz_mag>Rebel Mixed-HE Magazine (5.45*39mm)</entityname.fkj_545hz_mag>
     <entitydescription.fkj_545hz_mag>Loaded with 30 rounds of new high-explosive bullets, though somewhat rare.</entitydescription.fkj_545hz_mag>
+    <entityname.fkj_545cj_krmag>Rebel's Armor Piercing Drum  Magazine（5.45*39）</entityname.fkj_545cj_krmag>
+    <entitydescription.fkj_545cj_krmag>Loaded with 70 rounds of armor piercing ammo. It's an effective way to deal with body armor and bio carapace.</entitydescription.fkj_545cj_krmag>
     <entityname.fkj_762_mag>Rebel Standard Magazine (7.62*39mm)</entityname.fkj_762_mag>
     <entitydescription.fkj_762_mag>A 30-round standard magazine for 7.62 ammo.</entitydescription.fkj_762_mag>
     <entityname.fkj_762_krmag>Rebel Extended Magazine (7.62*39mm)</entityname.fkj_762_krmag>
@@ -951,6 +982,16 @@
     <entitydescription.fkj_762_51_mag>Holds 20 rounds of 7.62x51mm caliber ammo.</entitydescription.fkj_762_51_mag>
     <entityname.fkj_762_51_ap_mag>Rebel Armor-Piercing Magazine (7.62*51mm)</entityname.fkj_762_51_ap_mag>
     <entitydescription.fkj_762_51_ap_mag>Holds 20 rounds of 7.62x51mm caliber armor-piercing rounds.</entitydescription.fkj_762_51_ap_mag>
+    <entityname.fkj_762cj_krmag>Rebel's Armor Piercing Drum Magazine（7.62*39）</entityname.fkj_762cj_krmag>
+    <entitydescription.fkj_762cj_krmag>A drum magazine that loaded with 60 rounds of armor piercing ammo</entitydescription.fkj_762cj_krmag>
+    <entityname.fkj_762_51_krmag>Rebel's Expansion Magazine（7.62*51）</entityname.fkj_762_51_krmag>
+    <entitydescription.fkj_762_51_krmag>Loaded with 35 rounds of 7.62*51 ammo</entitydescription.fkj_762_51_krmag>
+    <entityname.fkj_762_51_drum>Rebel's Drum Magazine（7.62*51）</entityname.fkj_762_51_drum>
+    <entitydescription.fkj_762_51_drum>Loaded with 50 rounds of 7.62*51 ammo</entitydescription.fkj_762_51_drum>
+    <entityname.fkj_762_51_ap_krmag>Rebel's Armor Piercing Expansion Magazine（7.62*51）</entityname.fkj_762_51_ap_krmag>
+    <entitydescription.fkj_762_51_ap_krmag>Loaded with 35 rounds of 7.62*51 armor piercing ammo</entitydescription.fkj_762_51_ap_krmag>
+    <entityname.lm_556cj_krmag>Coalition Armor Piercing Expansion Magazine（5.56*45）</entityname.lm_556cj_krmag>
+    <entitydescription.lm_556cj_krmag>Loaded with 45 rounds of armor piercing ammo.It's an effective way to deal with body armor and bio carapace.</entitydescription.lm_556cj_krmag>
     <entityname.fkj_jts_mag>Rebel General-Purpose Machine Gun Magazine (5.45*39mm)</entityname.fkj_jts_mag>
     <entitydescription.fkj_jts_mag>A box holding a 200-round belt of 5.45x39mm ammo, allowing the shooter to waste as much ammo as they like.</entitydescription.fkj_jts_mag>
     <entityname.fkj_jts_cjmag>Rebel General-Purpose Machine Gun Armor-Piercing Magazine (5.45*39mm)</entityname.fkj_jts_cjmag>
@@ -1052,6 +1093,7 @@
     <entitydescription.tsm_9_smgmag_drum>Holds 72 rounds of 9mm ammunition.</entitydescription.tsm_9_smgmag_drum>
     <entityname.tsm_58_smgmag>Submachine Gun Magazine (5.8mm)</entityname.tsm_58_smgmag>
     <entitydescription.tsm_58_smgmag>Holds 50 rounds of 5.8mm ammunition.</entitydescription.tsm_58_smgmag>
+
     <entityname.tsm_57_smgmag>Submachine Gun Magazine (5.7*28mm)</entityname.tsm_57_smgmag>
     <entitydescription.tsm_57_smgmag>A heavy magazine capable of holding 50 rounds, 5.7x28mm ammunition can easily penetrate level three, four, and even five protective vests.</entitydescription.tsm_57_smgmag>
     <entityname.tsm_46_smgmag>Submachine Gun Magazine (4.6*30)</entityname.tsm_46_smgmag>

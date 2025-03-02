@@ -108,12 +108,12 @@
           <Affliction identifier="stun" strength="4.0" />
         </Explosion>
         <Explosion range="500.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="5" penetration="0.5">
-          <Affliction identifier="explosiondamage" strength="10" dividebylimbcount="false" />
+          <Affliction identifier="explosiondamage" strength="100" dividebylimbcount="false" />
           <Affliction identifier="bleedingnonstop" probability="0.5" strength="10" dividebylimbcount="false" />
           <Affliction identifier="stun" strength="0.5" />
         </Explosion>
         <Explosion range="900.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="4" penetration="0.3">
-          <Affliction identifier="gunshotwound" probability="0.8" strength="15" dividebylimbcount="false" />
+          <Affliction identifier="gunshotwound" probability="0.8" strength="30" dividebylimbcount="false" />
           <Affliction identifier="bleedingnonstop" probability="0.5" strength="15" dividebylimbcount="false" />
           <Affliction identifier="stun" strength="0.5" />
         </Explosion>
@@ -218,7 +218,7 @@
       </StatusEffect>
     </ItemComponent>
   </Item>
-  <Item name="手雷（ai）" identifier="tsm_ai_grenade" hideinmenus="true" subcategory="war preparation" category="Weapon" cargocontaineridentifier="metalcrate" HideConditionBar="true" tags="smallitem,weapon,explosive,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.35" impactsoundtag="impact_metal_light">
+  <Item name="震撼手雷" identifier="tsm_ai_grenade" hideinmenus="true" subcategory="war preparation" category="Weapon" cargocontaineridentifier="metalcrate" HideConditionBar="true" tags="smallitem,weapon,explosive,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.35" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="453,33,41,46" />
     <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="222,398,54,93" origin="0.5,0.5" />
     <Body radius="50" height="87" density="26" />
@@ -249,17 +249,18 @@
       <StatusEffect type="OnImpact" target="This" Condition="-200.0" delay="3." disabledeltatime="true">
           <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="10000" selectionmode="All" />
           <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="10000" />
-          <Explosion range="750.0" ballastfloradamage="100" structuredamage="20" levelwalldamage="140" itemdamage="500" force="5" severlimbsprobability="0.5" decal="explosion" decalsize="0.5" penetration="0.3">
-            <Affliction identifier="explosiondamage" strength="150" />
-            <Affliction identifier="bleeding" strength="50" />
-            <Affliction identifier="concussion" strength="5" probability="0.5" />
-            <Affliction identifier="stun" strength="7" />
+          <Explosion range="600.0" ballastfloradamage="100" structuredamage="20" levelwalldamage="140" itemdamage="500" force="5" severlimbsprobability="0.5" decal="explosion" decalsize="0.5" penetration="0.8">
+            <Affliction identifier="explosiondamage" strength="50" />
+            <Affliction identifier="tsm_ai_grenade" strength="10" />
+            <Affliction identifier="tsm_ai_grenade_1" strength="100" />
+            <Affliction identifier="bleeding" strength="30" />
+            <Affliction identifier="concussion" strength="5" probability="0.8" />
+            <Affliction identifier="stun" strength="4" />
           </Explosion>
           <Remove />
         </StatusEffect>
     </Projectile>
   </Item>
-
   <!--C4-->
   <Item identifier="tsm_jz_c4" category="Weapon" subcategory="war preparation" tags="smallitem,weapon,remotedetonatable,explosive" isdangerous="true" maxstacksize="8" maxstacksizecharacterinventory="4" scale="0.6" cargocontaineridentifier="explosivecrate">
     <InventoryIcon texture="%ModDir%/weapons/配件/war_preparation.png" sourcerect="299,427,81,35" />
@@ -376,7 +377,7 @@
     </Holdable>
     <ItemComponent characterusable="false">
       <StatusEffect type="OnBroken" target="This">
-        <Explosion range="200.0" force="10" ignoreCover="true" severlimbsprobability="8" penetration="1" ballastfloradamage="500" structuredamage="800" itemdamage="3000" debris="true">
+        <Explosion range="200.0" force="10" ignoreCover="true" severlimbsprobability="8" penetration="1" ballastfloradamage="1000" structuredamage="2000" itemdamage="3000" debris="true">
           <Affliction identifier="explosiondamage" strength="20" />
           <Affliction identifier="bleeding" strength="5" />
           <Affliction identifier="burn" strength="5" />

@@ -115,25 +115,6 @@
         </StatusEffect>
       </ItemComponent>
     </Item>
-    <Item name="潮涌之海+奇迹之海" identifier="Wonders_of_Navenia" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
-      <PreferredContainer primary="storagecab" />
-      <Price baseprice="5">
-        <Price storeidentifier="merchantoutpost" minavailable="1" />
-        <Price storeidentifier="merchantcity" minavailable="1" />
-        <Price storeidentifier="merchantresearch" multiplier="1" />
-        <Price storeidentifier="merchantmilitary" multiplier="1" />
-        <Price storeidentifier="merchantmine" multiplier="1" />
-      </Price>
-      <Sprite texture="%ModDir%/minerals+items+tools/items.png" sourcerect="49,588,72,41" depth="0.6" origin="0.5,0.5" />
-      <Body width="72" height="41" density="10" />
-      <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
-      <ItemComponent characterusable="false">
-        <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
-          <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
-          <sound file="%ModDir%/ogg/潮涌之海+奇迹之海.ogg" range="2000" loop="true" volume="1.0" />
-        </StatusEffect>
-      </ItemComponent>
-    </Item>
     <Item name="强光手电筒" identifier="tsm_flashlight" subcategory="TSM" category="Equipment" Tags="smallitem,tool,provocative,flashlight,tsm_gun_grenade" cargocontaineridentifier="tsm_metalcrate" Scale="0.2" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="divingcab" minamount="1" maxamount="2" spawnprobability="1" notcampaign="true" />
       <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.05" />

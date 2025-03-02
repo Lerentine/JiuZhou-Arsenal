@@ -26,5 +26,31 @@
         </Item>
       </ItemSet>
     </npc>
+    <npc identifier="tsm_yan" behavior="StayInHull" healthmultiplier="2" aimspeed="50" aimaccuracy="1">
+      <Character speciesname="human" gender="female" hairindex="1" moustacheindex="0" faceattachmentindex="0" personality="professional">
+        <job name="captain" identifier="captain">
+          <skill identifier="electrical" level="100" />
+          <skill identifier="mechanical" level="100" />
+          <skill identifier="weapons" level="100" />
+          <skill identifier="medical" level="100" />
+          <skill identifier="helm" level="100" />
+        </job>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_yan" equip="true" />
+        <Item identifier="tsm_advisers_uniform" equip="true" />
+        <Item identifier="tsm_advisers_vest" equip="true" />
+        <Item identifier="tsm_enhancement_yan">
+          <Item identifier="tsm_usp45_pistols" />
+        </Item>
+        <Item identifier="tsm_m200" equip="true">
+          <Item identifier="tsm_1036_77_mag" amount="1" />
+          <Item identifier="tsm_scarl" equip="true"/>
+          <Item identifier="lm_556cj_mag" amount="4" />
+          <Item identifier="tsm_1143_mag" amount="3" />
+        </Item>
+      </ItemSet>
+    </npc>
   </npcset>
 </npcsets>

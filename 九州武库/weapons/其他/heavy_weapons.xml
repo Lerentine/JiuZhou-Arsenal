@@ -53,7 +53,7 @@
       <Containable items="rpg_grenade" />
       <!--SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="448,448,64,64" origin="0.5,0.5" /-->
     </ItemContainer>
-    <aitarget sightrange="500" soundrange="500" fadeouttime="3" />
+    <aitarget sightrange="3000" soundrange="4000" fadeouttime="5" />
     <Quality>
       <QualityStat stattype="ExplosionRadius" value="0.1" />
       <QualityStat stattype="ExplosionDamage" value="0.05" />
@@ -109,7 +109,7 @@
       <Containable items="bazooka_grenade" />
       <!--SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="448,448,64,64" origin="0.5,0.5" /-->
     </ItemContainer>
-    <aitarget sightrange="500" soundrange="500" fadeouttime="3" />
+    <aitarget sightrange="3000" soundrange="4000" fadeouttime="5" />
     <Quality>
       <QualityStat stattype="ExplosionRadius" value="0.05" />
       <QualityStat stattype="ExplosionDamage" value="0.1" />
@@ -449,7 +449,7 @@
         <Containable items="tsm_mg42_skins" hide="false" setactive="true" />
       </SubContainer>
     </ItemContainer>
-    <aitarget sightrange="2400" soundrange="4500" fadeouttime="5" />
+    <aitarget sightrange="2800" soundrange="3500" fadeouttime="5" />
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.08" />
     </Quality>
@@ -519,7 +519,7 @@
       <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="8" />
     </Price>
     <Deconstruct time="1" />
-    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="2">
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" amount="1">
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="iron" />
       <RequiredItem identifier="uex" />

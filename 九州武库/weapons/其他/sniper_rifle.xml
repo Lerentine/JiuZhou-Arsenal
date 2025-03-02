@@ -27,7 +27,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/其他/重型武器.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="10,1435,551,194" origin="0.45,0" scale="0.25" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable-->
-    <RangedWeapon reload="0.5" weapondamagemodifier="1.0" holdtrigger="true" barrelpos="270,8" spread="10" unskilledspread="20" combatPriority="90" drawhudwhenequipped="true" crosshairscale="1.0">
+    <RangedWeapon reload="0.5" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="270,8" spread="10" unskilledspread="20" combatPriority="90" drawhudwhenequipped="true" crosshairscale="1.0">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -84,7 +84,7 @@
         </StatusEffect>
       </Containable>
     </ItemContainer>
-    <aitarget sightrange="3000" soundrange="6000" fadeouttime="6" />
+    <aitarget sightrange="2800" soundrange="2500" fadeouttime="6" />
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
@@ -177,7 +177,7 @@
         </StatusEffect>
       </Containable>
     </ItemContainer>
-    <aitarget sightrange="3000" soundrange="6000" fadeouttime="6" />
+    <aitarget sightrange="3000" soundrange="3000" fadeouttime="6" />
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
@@ -271,7 +271,7 @@
         </StatusEffect>
       </Containable>
     </ItemContainer>
-    <aitarget sightrange="3000" soundrange="6000" fadeouttime="6" />
+    <aitarget sightrange="3000" soundrange="3500" fadeouttime="6" />
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
@@ -349,7 +349,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="tsm_127_108_mag" hide="false" itempos="-45,2" depth="0.56">
+      <Containable items="tsm_127_108_mag" hide="false" itempos="-42,2" depth="0.56">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="40,-30" holdangle="80" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -361,7 +361,7 @@
         </StatusEffect>
       </Containable>
     </ItemContainer>
-    <aitarget sightrange="3000" soundrange="6000" fadeouttime="6" />
+    <aitarget sightrange="3000" soundrange="4000" fadeouttime="6" />
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
@@ -458,7 +458,7 @@
         </StatusEffect>
       </Containable>
     </ItemContainer>
-    <aitarget sightrange="3000" soundrange="6000" fadeouttime="6" />
+    <aitarget sightrange="3000" soundrange="4000" fadeouttime="6" />
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
@@ -558,7 +558,7 @@
         </StatusEffect>
       </Containable>
     </ItemContainer>
-    <aitarget sightrange="3000" soundrange="6000" fadeouttime="6" />
+    <aitarget sightrange="3000" soundrange="4500" fadeouttime="6" />
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
@@ -637,7 +637,7 @@
         </StatusEffect>
       </Containable>
     </ItemContainer>
-    <aitarget sightrange="3000" soundrange="6000" fadeouttime="6" />
+    <aitarget sightrange="3000" soundrange="5000" fadeouttime="6" />
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
@@ -730,7 +730,7 @@
         <Containable items="grip" hide="false" itempos="12,-7" depth="0.57" setactive="true" />
       </SubContainer>
     </ItemContainer>
-    <aitarget sightrange="3000" soundrange="6000" fadeouttime="6" />
+    <aitarget sightrange="3000" soundrange="5000" fadeouttime="6" />
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
@@ -764,7 +764,7 @@
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/其他/重型武器.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="10,1435,551,194" origin="0.45,0" scale="0.25" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
     </Wearable-->
-    <RangedWeapon reload="0.45" weapondamagemodifier="1.6" holdtrigger="true" barrelpos="290,15" spread="6" unskilledspread="20" combatPriority="90" drawhudwhenequipped="true" crosshairscale="1.0">
+    <RangedWeapon reload="0.45" weapondamagemodifier="1.8" holdtrigger="true" barrelpos="290,15" spread="6" unskilledspread="20" combatPriority="90" drawhudwhenequipped="true" crosshairscale="1.0">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -821,7 +821,7 @@
         </StatusEffect>
       </Containable>
     </ItemContainer>
-    <aitarget sightrange="3000" soundrange="6000" fadeouttime="6" />
+    <aitarget sightrange="2500" soundrange="2500" fadeouttime="6" />
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
@@ -918,7 +918,7 @@
         </StatusEffect>
       </Containable>
     </ItemContainer>
-    <aitarget sightrange="3000" soundrange="6000" fadeouttime="6" />
+    <aitarget sightrange="3000" soundrange="3000" fadeouttime="6" />
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
@@ -949,8 +949,8 @@
     <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" sourcerect="14,3286,880,165" depth="0.55" origin="0.5,0.5" />
     <Body width="880" height="160" density="50" />
     <Holdable slots="LeftHand+RightHand" controlpose="true" holdpos="100,10" aimpos="100,10" handle1="-230,-30" handle2="80,30" holdangle="-45" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.3" setvalue="true" />
-      <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.1" setvalue="true" />
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.6" setvalue="true" />
+      <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
     </Holdable>
     <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
       <sprite name="Backpack Wearable" texture="%ModDir%/weapons/木卫二联盟/coalition.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" rotation="-90" inherittexturescale="false" hideotherwearables="false" sourcerect="14,3286,880,165" origin="0.45,-0.2" scale="0.22" />
@@ -1019,7 +1019,7 @@
         </StatusEffect>
       </Containable>
     </ItemContainer>
-    <aitarget sightrange="3000" soundrange="6000" fadeouttime="6" />
+    <aitarget sightrange="3000" soundrange="5000" fadeouttime="6" />
     <Quality>
       <QualityStat stattype="firingratemultiplier" value="0.03" />
     </Quality>
@@ -1119,7 +1119,7 @@
         </StatusEffect>
       </Containable>
     </ItemContainer>
-    <aitarget sightrange="3000" soundrange="6000" fadeouttime="6" />
+    <aitarget sightrange="3000" soundrange="3000" fadeouttime="6" />
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
@@ -1212,7 +1212,7 @@
         </StatusEffect>
       </Containable>
     </ItemContainer>
-    <aitarget sightrange="3000" soundrange="6000" fadeouttime="6" />
+    <aitarget sightrange="3000" soundrange="3000" fadeouttime="6" />
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.15" />
     </Quality>

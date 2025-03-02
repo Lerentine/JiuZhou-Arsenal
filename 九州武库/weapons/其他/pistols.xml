@@ -60,7 +60,7 @@
           </StatusEffect>
         </Containable>
       </ItemContainer>
-      <aitarget sightrange="4500" soundrange="6000" fadeouttime="10" />
+      <aitarget sightrange="2000" soundrange="1000" fadeouttime="10" />
       <Quality>
         <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       </Quality>
@@ -143,7 +143,7 @@
           <Containable items="sighting_pistols" hide="false" itempos="-3,13" depth="0.56" setactive="true" />
         </SubContainer>
       </ItemContainer>
-      <aitarget sightrange="4500" soundrange="6000" fadeouttime="10" />
+      <aitarget sightrange="2000" soundrange="1000" fadeouttime="10" />
       <Quality>
         <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       </Quality>
@@ -205,7 +205,7 @@
           </StatusEffect>
         </Containable>
       </ItemContainer>
-      <aitarget sightrange="4500" soundrange="6000" fadeouttime="10" />
+      <aitarget sightrange="2000" soundrange="1200" fadeouttime="10" />
       <Quality>
         <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       </Quality>
@@ -305,7 +305,7 @@
           <Containable items="barrel_pistols" hide="false" itempos="26,10" containedspritedepth="0.51" Scale="0.20" setactive="true" />
         </SubContainer>
       </ItemContainer>
-      <aitarget sightrange="4500" soundrange="6000" fadeouttime="10" />
+      <aitarget sightrange="2000" soundrange="1000" fadeouttime="10" />
       <Quality>
         <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       </Quality>
@@ -375,7 +375,7 @@
           </StatusEffect>
         </Containable>
       </ItemContainer>
-      <aitarget sightrange="4500" soundrange="6000" fadeouttime="10" />
+      <aitarget sightrange="2000" soundrange="1500" fadeouttime="10" />
       <Quality>
         <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       </Quality>
@@ -437,7 +437,7 @@
       <ItemContainer capacity="1" maxstacksize="5" hideitems="true" containedstateindicatorstyle="bullet">
         <Containable items="handcannonround" />
       </ItemContainer>
-      <aitarget sightrange="2000" soundrange="3000" fadeouttime="5" />
+      <aitarget sightrange="2000" soundrange="2000" fadeouttime="5" />
       <Quality>
         <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       </Quality>
@@ -497,7 +497,7 @@
       <ItemContainer capacity="1" maxstacksize="6" hideitems="true" containedstateindicatorstyle="bullet">
         <Containable items="handcannonround" />
       </ItemContainer>
-      <aitarget sightrange="2000" soundrange="3000" fadeouttime="5" />
+      <aitarget sightrange="2000" soundrange="2000" fadeouttime="5" />
       <Quality>
         <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       </Quality>
@@ -557,7 +557,7 @@
       <ItemContainer capacity="1" maxstacksize="6" hideitems="true" containedstateindicatorstyle="bullet">
         <Containable items="handcannonround" />
       </ItemContainer>
-      <aitarget sightrange="2000" soundrange="3000" fadeouttime="5" />
+      <aitarget sightrange="2000" soundrange="2000" fadeouttime="5" />
       <Quality>
         <QualityStat stattype="Firingratemultiplier" value="0.03" />
       </Quality>
@@ -581,6 +581,9 @@
         <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.95" setvalue="true" />
         <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
+        <StatusEffect type="OnActive" target="Character">
+          <Affliction identifier="tsm_silence_buff" strength="2" />
+        </StatusEffect>
       </Holdable>
       <RangedWeapon reload="0.08" weapondamagemodifier="0.75" holdtrigger="true" barrelpos="170,15" spread="10" unskilledspread="20" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -627,7 +630,7 @@
           <Containable items="flashlight" hide="false" itempos="20,-1" setactive="true" />
         </SubContainer>
       </ItemContainer>
-      <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
+      <aitarget sightrange="2500" soundrange="800" fadeouttime="5" />
       <Quality>
         <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       </Quality>
@@ -657,6 +660,9 @@
         <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.95" setvalue="true" />
         <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
+        <StatusEffect type="OnActive" target="Character">
+          <Affliction identifier="tsm_silence_buff" strength="2" />
+        </StatusEffect>
       </Holdable>
       <RangedWeapon reload="0.09" weapondamagemodifier="0.9" holdtrigger="true" barrelpos="180,15" spread="11" unskilledspread="20" combatPriority="45" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -725,7 +731,7 @@
           <Containable items="flashlight" hide="false" itempos="12,-2" setactive="true" />
         </SubContainer>
       </ItemContainer>
-      <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
+      <aitarget sightrange="2000" soundrange="800" fadeouttime="5" />
       <Quality>
         <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       </Quality>
@@ -759,6 +765,9 @@
         <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.95" setvalue="true" />
         <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
+        <StatusEffect type="OnActive" target="Character">
+          <Affliction identifier="tsm_silence_buff" strength="2" />
+        </StatusEffect>
       </Holdable>
       <RangedWeapon reload="0.08" weapondamagemodifier="1" holdtrigger="true" barrelpos="170,15" spread="7" unskilledspread="20" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -827,7 +836,7 @@
           <Containable items="flashlight" hide="false" itempos="12,-2" setactive="true" />
         </SubContainer>
       </ItemContainer>
-      <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
+      <aitarget sightrange="2000" soundrange="1000" fadeouttime="10" />
       <Quality>
         <QualityStat stattype="FirepowerMultiplier" value="0.15" />
       </Quality>
@@ -973,7 +982,7 @@
           <Containable items="barrel_pistols" hide="false" itempos="41,1" containedspritedepth="0.51" Scale="0.20" setactive="true" />
         </SubContainer>
       </ItemContainer>
-      <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
+      <aitarget sightrange="2000" soundrange="1800" fadeouttime="10" />
       <Quality>
         <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       </Quality>
@@ -1122,7 +1131,7 @@
           <Containable items="barrel_pistols" hide="false" itempos="32,4" containedspritedepth="0.51" Scale="0.20" setactive="true" />
         </SubContainer>
       </ItemContainer>
-      <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
+      <aitarget sightrange="2000" soundrange="1800" fadeouttime="10" />
       <Quality>
         <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       </Quality>
@@ -1273,7 +1282,7 @@
           <Containable items="tsm_ump45_skins" hide="false" setactive="true" />
         </SubContainer>
       </ItemContainer>
-      <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
+      <aitarget sightrange="2000" soundrange="1800" fadeouttime="10" />
       <Quality>
         <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       </Quality>
@@ -1307,6 +1316,9 @@
         <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
         <StatusEffect type="Always" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="true" setvalue="true">
           <RequiredItem items="tsm_sight_hamr" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnActive" target="Character">
+          <Affliction identifier="tsm_silence_buff" strength="2" />
         </StatusEffect>
       </Holdable>
       <StatusHUD range="500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
@@ -1415,7 +1427,7 @@
           <Containable items="grip" hide="false" itempos="13,-4" depth="0.56" setactive="true" />
         </SubContainer>
       </ItemContainer>
-      <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
+      <aitarget sightrange="2000" soundrange="800" fadeouttime="10" />
       <Quality>
         <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       </Quality>
@@ -1539,7 +1551,7 @@
           <Containable items="tsm_vk_skins" hide="false" setactive="true" />
         </SubContainer>
       </ItemContainer>
-      <aitarget sightrange="3000" soundrange="5000" fadeouttime="10" />
+      <aitarget sightrange="2000" soundrange="1500" fadeouttime="10" />
       <Quality>
         <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       </Quality>
@@ -2077,9 +2089,7 @@
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
         <Attack structuredamage="0" targetforce="2" itemdamage="1" severlimbsprobability="0.1">
           <Affliction identifier="bleeding" strength="5" />
-          <Affliction identifier="bleeding" strength="10" probability="0.3" />
-          <Affliction identifier="gunshotwound" strength="12" />
-          <Affliction identifier="gunshotwound" strength="1" probability="0.25" />
+          <Affliction identifier="gunshotwound" strength="15" />
           <Affliction identifier="stun" strength="0.1" probability="0.15" />
         </Attack>
         <StatusEffect type="OnImpact" target="UseTarget">
@@ -2106,7 +2116,7 @@
           <Affliction identifier="bleeding" strength="10" />
           <Affliction identifier="bleeding" strength="10" probability="0.3" />
           <Affliction identifier="gunshotwound" strength="12" />
-          <Affliction identifier="gunshotwound" strength="6" probability="0.25" />
+          <Affliction identifier="gunshotwound" strength="6" probability="0.35" />
           <Affliction identifier="stun" strength="0.2" probability="0.25" />
         </Attack>
         <StatusEffect type="OnImpact" target="UseTarget">
@@ -2133,7 +2143,7 @@
           <Affliction identifier="bleeding" strength="10" />
           <Affliction identifier="bleedingnonstop" strength="10" probability="0.3" />
           <Affliction identifier="gunshotwound" strength="12" />
-          <Affliction identifier="gunshotwound" strength="6" probability="0.3" />
+          <Affliction identifier="gunshotwound" strength="6" probability="0.35" />
           <Affliction identifier="tsm_armorbreak_jz" strength="3" />
           <Affliction identifier="stun" strength="0.2" probability="0.25" />
         </Attack>
@@ -2162,7 +2172,7 @@
           <Affliction identifier="bleeding" strength="7" probability="0.3" />
           <Affliction identifier="gunshotwound" strength="15" />
           <Affliction identifier="tsm_armorbreak_30" strength="2" />
-          <Affliction identifier="gunshotwound" strength="3" probability="0.3" />
+          <Affliction identifier="gunshotwound" strength="5" probability="0.35" />
           <Affliction identifier="stun" strength="0.2" probability="0.18" />
         </Attack>
         <StatusEffect type="OnImpact" target="UseTarget">
@@ -2185,7 +2195,7 @@
       <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
       <Projectile characterusable="false" hitscan="true" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
-        <Attack structuredamage="0.3" targetforce="1" itemdamage="1" penetration="0.3" severlimbsprobability="0.1">
+        <Attack structuredamage="0.3" targetforce="1" itemdamage="1" penetration="0.35" severlimbsprobability="0.1">
           <Affliction identifier="bleeding" strength="10" />
           <Affliction identifier="bleeding" strength="10" probability="0.3" />
           <Affliction identifier="gunshotwound" strength="14" />

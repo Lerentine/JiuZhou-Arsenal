@@ -243,4 +243,61 @@
       </StatusEffect>
     </Holdable>
   </Item>
+  <!---->
+  <Item name="雇佣兵防弹衣" identifier="tsm_pmc_vest" category="Equipment" tags="smallitem,clothing" scale="0.35" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" hideinmenus="true">
+    <Upgrade gameversion="0.9.3.0" scale="0.35" />
+    <PreferredContainer primary="secarmcab" />
+    <Deconstruct time="40">
+      <Item identifier="ballisticfiber" amount="2" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Jobgear/pmc_armor.png" sourcerect="174,28,79,130" origin="0.5,0.5" />
+    <Sprite name="PMC 1 Item" texture="%ModDir%/Jobgear/pmc_armor.png" sourcerect="174,28,79,130" depth="0.6" origin="0.5,0.35" />
+    <Body width="80" height="130" density="20" />
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <sprite name="PMC 1 Torso" texture="%ModDir%/Jobgear/pmc_armor.png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC 1 Right Hand" texture="%ModDir%/Jobgear/pmc_armor.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC 1 Left Hand" texture="%ModDir%/Jobgear/pmc_armor.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC 1 Left Lower Arm" texture="%ModDir%/Jobgear/pmc_armor.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC 1 Right Lower Arm" texture="%ModDir%/Jobgear/pmc_armor.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC 1 Left Upper Arm" texture="%ModDir%/Jobgear/pmc_armor.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC 1 Right Upper Arm" texture="%ModDir%/Jobgear/pmc_armor.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC 1 Waist" texture="%ModDir%/Jobgear/pmc_armor.png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC 1 Right Thigh" texture="%ModDir%/Jobgear/pmc_armor.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC 1 Left Thigh" texture="%ModDir%/Jobgear/pmc_armor.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC 1 Right Leg" texture="%ModDir%/Jobgear/pmc_armor.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC 1 Left Leg" texture="%ModDir%/Jobgear/pmc_armor.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+    </Wearable>
+  </Item>
+  <Item name="雇佣兵重型防弹衣" identifier="tsm_pmc_vest_heavy" category="Equipment" tags="smallitem,clothing" scale="0.35" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" hideinmenus="true">
+    <Upgrade gameversion="0.9.3.0" scale="0.35" />
+    <PreferredContainer primary="secarmcab" />
+    <Deconstruct time="40">
+      <Item identifier="ballisticfiber" amount="2" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Jobgear/pmc_armor_heavy.png" sourcerect="222,3,102,157" origin="0.5,0.5" />
+    <Sprite name="PMC 1 Item" texture="%ModDir%/Jobgear/pmc_armor_heavy.png" sourcerect="222,3,102,157" depth="0.6" origin="0.5,0.35" />
+    <Body width="102" height="155" density="25" />
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <sprite name="PMC 1 Torso" texture="%ModDir%/Jobgear/pmc_armor_heavy.png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="false" inheritorigin="true" inheritsourcerect="false" scale="0.4" sourcerect="222,3,102,157" origin="0.5,0.5" />
+      <sprite name="PMC 1 Right Hand" texture="%ModDir%/Jobgear/pmc_armor_heavy.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="PMC 1 Left Hand" texture="%ModDir%/Jobgear/pmc_armor_heavy.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="PMC 1 Left Lower Arm" texture="%ModDir%/Jobgear/pmc_armor_heavy.png" limb="LeftForearm" hidelimb="false" inherittexturescale="false" inheritorigin="true" inheritsourcerect="false" scale="0.4" sourcerect="435,159,55,85" origin="0.5,0.5" />
+      <sprite name="PMC 1 Right Lower Arm" texture="%ModDir%/Jobgear/pmc_armor_heavy.png" limb="RightForearm" hidelimb="false" inherittexturescale="false" inheritorigin="true" inheritsourcerect="false" scale="0.4" sourcerect="433,32,53,85" origin="0.5,0.5" />
+      <sprite name="PMC 1 Left Upper Arm" texture="%ModDir%/Jobgear/pmc_armor_heavy.png" limb="LeftArm" hidelimb="false" inherittexturescale="false" inheritorigin="true" inheritsourcerect="false" scale="0.4" sourcerect="364,126,56,119" origin="0.5,0.5" />
+      <sprite name="PMC 1 Right Upper Arm" texture="%ModDir%/Jobgear/pmc_armor_heavy.png" limb="RightArm" hidelimb="false" inherittexturescale="false" inheritorigin="true" inheritsourcerect="false" scale="0.4" sourcerect="363,5,58,117" origin="0.5,0.5" />
+      <sprite name="PMC 1 Waist" texture="%ModDir%/Jobgear/pmc_armor_heavy.png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="PMC 1 Right Thigh" texture="%ModDir%/Jobgear/pmc_armor_heavy.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="PMC 1 Left Thigh" texture="%ModDir%/Jobgear/pmc_armor_heavy.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="PMC 1 Right Leg" texture="%ModDir%/Jobgear/pmc_armor_heavy.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="PMC 1 Left Leg" texture="%ModDir%/Jobgear/pmc_armor_heavy.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    </Wearable>
+  </Item>
 </Items>

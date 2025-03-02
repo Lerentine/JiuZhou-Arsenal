@@ -219,11 +219,11 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="2倍瞄具" identifier="tsm_sight_double" subcategory="accessories" category="Equipment" Tags="smallitem,sighting,tsm_sight_high,qmk152" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1425,210,78,44" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1425,210,78,44" depth="0.535" origin="0.5,0.5" />
+  <Item name="组合瞄具" identifier="tsm_sight_double" subcategory="accessories" category="Equipment" Tags="smallitem,sighting,tsm_sight_high,qmk152" cargocontaineridentifier="tsm_metalcrate" Scale="0.06" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1361,425,470,184" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1361,425,470,184" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="78" height="44" density="7" />
+    <Body width="415" height="184" density="7" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_sight_double" strength="2" />
@@ -236,14 +236,36 @@
     </Price>
     <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="20" />
-      <RequiredItem identifier="fpgacircuit" amount="3" />
-      <RequiredItem identifier="tin" amount="2" />
-      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="tsm_sight_reddot" amount="1" />
+      <RequiredItem identifier="tsm_sight_holographic" amount="1" />
+      <RequiredItem identifier="tsm_item_box" amount="1" />
     </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="M2三倍瞄具" identifier="tsm_sight_tripled" subcategory="accessories" category="Equipment" Tags="smallitem,sighting" cargocontaineridentifier="tsm_metalcrate" Scale="0.065" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="2246,0,232,179" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="2246,0,232,179" depth="0.535" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="232" height="179" density="8" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Affliction identifier="tsm_sight_tripled" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="436" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
     <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="20" />
       <RequiredItem identifier="tsm_ic" amount="1" />
-      <RequiredItem tag="tsm_sight" description="fabricationdescription.tsm_sight" amount="1" />
+      <RequiredItem identifier="tin" amount="1" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="fpgacircuit" />
@@ -352,7 +374,7 @@
     </Holdable>
     <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="20" />
-      <RequiredItem identifier="tsm_sight_double" amount="1" />
+      <RequiredItem identifier="tsm_sight_tripled" amount="1" />
       <RequiredItem identifier="tin" amount="2" />
       <RequiredItem identifier="fulgurium" amount="1" />
     </Fabricate>
@@ -362,11 +384,11 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="热成像瞄具" identifier="tsm_sight_thermal" subcategory="accessories" category="Equipment" Tags="smallitem,sighting" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="762,90,134,47" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="762,90,134,47" depth="0.535" origin="0.5,0.5" />
+  <Item name="热成像瞄具" identifier="tsm_sight_thermal" subcategory="accessories" category="Equipment" Tags="smallitem,sighting" cargocontaineridentifier="tsm_metalcrate" Scale="0.063" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1683,22,464,162" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1683,22,464,162" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="78" height="44" density="10" />
+    <Body width="464" height="162" density="10" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_sight_thermal" strength="2" />
@@ -442,8 +464,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="QMK152" identifier="tsm_sight_qmk152" subcategory="accessories" category="Equipment" Tags="smallitem,tsm_sight_high,qmk152" cargocontaineridentifier="tsm_metalcrate" Scale="0.21" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1050,338,93,63" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1050,338,93,63" depth="0.535" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1050,336,93,63" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1050,336,93,63" depth="0.535" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="78" height="44" density="8" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
@@ -549,7 +571,7 @@
     <Body width="96" height="28" density="3" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
-        <Affliction identifier="tsm_barrel1_buff" strength="2" />
+        <Affliction identifier="tsm_barrel_silencers_buff" strength="2" />
       </StatusEffect>
     </Holdable>
     <Price baseprice="277" buyingpricemultiplier="1.2" minleveldifficulty="0">
@@ -576,7 +598,7 @@
     <Body width="150" height="35" density="3" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
-        <Affliction identifier="tsm_barrel1_buff" strength="2" />
+        <Affliction identifier="tsm_barrel_silencers_buff" strength="2" />
       </StatusEffect>
     </Holdable>
     <Price baseprice="277" buyingpricemultiplier="1.2" minleveldifficulty="0">

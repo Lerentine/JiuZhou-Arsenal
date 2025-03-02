@@ -574,4 +574,94 @@
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
     <message header="" text="" />
   </AbandonedOutpostMission>
+  <!--原版-->
+  <Override>
+    <AbandonedOutpostMission
+            identifier="abandonedoutpostrescue2"
+            tags="abandonedoutpost"
+            type="AbandonedOutpost"
+            reward="7000"
+            difficulty="4"
+            commonness="100"
+            allowretry="true"
+            hostageskilledmessage="hostageskilled"
+            unhideentitysubcategories="abandonedhuman"
+            minleveldifficulty="35">
+      <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,256,256,256" color="214,50,48"/>
+      <LocationType identifier="Abandoned" />
+      <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+      <Characters>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule" multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule" />
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule" />
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="engineeringmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" moduleflags="seccrewmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="seccrewmodule" />
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"/>
+        <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"  multiplayeronly="true"/>
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true"/>
+      </Characters>
+      <message header="" text=""/>
+    </AbandonedOutpostMission>
+    <AbandonedOutpostMission
+            identifier="abandonedoutpostrescue3"
+            tags="abandonedoutpost"
+            type="AbandonedOutpost"
+            reward="10000"
+            difficulty="4"
+            commonness="100"
+            allowretry="true"
+            hostageskilledmessage="hostageskilled"
+            unhideentitysubcategories="abandonedhuman"
+            minleveldifficulty="35"
+            maxleveldifficulty="65">
+      <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,256,256,256" color="214,50,48"/>
+      <LocationType identifier="Abandoned" />
+      <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+      <Characters>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule" multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule"/>
+        <Character identifier="tsm_hiredgun_fire" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule" />
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule" />
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule" />
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="engineeringmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule"/>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule"/>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule" />
+        <Character identifier="tsm_hiredgun_fire" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"/>
+        <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"  multiplayeronly="true"/>
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true"/>
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true"/>
+      </Characters>
+      <message header="" text=""/>
+    </AbandonedOutpostMission>
+  </Override>
 </Missions>

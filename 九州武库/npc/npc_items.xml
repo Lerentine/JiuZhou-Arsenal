@@ -1,6 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!--燕舒婷-->
+  <Item name="燕舒婷" identifier="tsm_yan" subcategory="npc" scale="0.5" category="Equipment" tags="smallitem,mobileradio" cargocontaineridentifier="metalcrate" hideinmenus="true" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="crewcab" secondary="divingcab" />
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
+    <Sprite name="Headset" texture="Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="28,321,49,62" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="15" />
+    <Deconstruct time="5"></Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_yan" />
+    </Fabricate>
+    <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="yan Head" texture="%ModDir%/npc/heads.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.3" inheritorigin="false" inheritsourcerect="false" sourcerect="212,0,291,279" origin="0.7,0.35" />
+      <sprite name="yan Torso" texture="%ModDir%/npc/yan.png" limb="Torso" depthlimb="Jaw" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="yan Right Hand" texture="%ModDir%/npc/yan.png" limb="RightHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="yan Left Hand" texture="%ModDir%/npc/yan.png" limb="LeftHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="yan Left Lower Arm" texture="%ModDir%/npc/yan.png" limb="LeftForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="yan Right Lower Arm" texture="%ModDir%/npc/yan.png" limb="RightForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="yan Left Upper Arm" texture="%ModDir%/npc/yan.png" limb="LeftArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="yan Right Upper Arm" texture="%ModDir%/npc/yan.png" limb="RightArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="yan Waist" texture="%ModDir%/npc/yan.png" limb="Waist" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="yan Right Thigh" texture="%ModDir%/npc/yan.png" limb="RightThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="yan Left Thigh" texture="%ModDir%/npc/yan.png" limb="LeftThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="yan Right Leg" texture="%ModDir%/npc/yan.png" limb="RightLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="yan Left Leg" texture="%ModDir%/npc/yan.png" limb="LeftLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="yan Right Shoe" texture="%ModDir%/npc/yan.png" limb="RightFoot" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="yan Left Shoe" texture="%ModDir%/npc/yan.png" limb="LeftFoot" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="yan Boobs" texture="%ModDir%/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+    </Wearable>
+  </Item>
   <Item name="M200“干预者”原型高精狙击步枪" identifier="tsm_m200" category="weapon" subcategory="npc" cargocontaineridentifier="metalcrate" tags="bigitem,weapon,gun,gunsmith,sniperrifle,mountableweapon,tsm_gun,tsm_farsight,provocativetohumanai" scale="0.15" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Deconstruct time="10">
@@ -75,7 +114,7 @@
         </StatusEffect>
       </Containable>
     </ItemContainer>
-    <aitarget sightrange="3000" soundrange="6000" fadeouttime="6" />
+    <aitarget sightrange="3000" soundrange="4000" fadeouttime="6" />
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
@@ -208,10 +247,10 @@
         <Sound file="%ModDir%/ogg/reload8.ogg" range="2000" loop="false" />
         <DropItem />
       </StatusEffect>
-      <StatusEffect type="Always" target="This" reload="2" reloadnoskill="3" stackable="false" setvalue="true">
+      <StatusEffect type="Always" target="This" reload="1.3" reloadnoskill="1.7" stackable="false" setvalue="true">
         <Conditional HasStatusTag="grenade_reload" />
       </StatusEffect>
-      <StatusEffect type="Always" target="This" reload="0.08" reloadnoskill="0.25" stackable="false" setvalue="true">
+      <StatusEffect type="Always" target="This" reload="0.11" reloadnoskill="0.11" stackable="false" setvalue="true">
         <Conditional HasStatusTag="neq grenade_reload" />
       </StatusEffect>
       <!--动态散步-->
@@ -285,7 +324,7 @@
         <Containable items="flashlight" hide="false" itempos="28,3" setactive="true" />
       </SubContainer>
     </ItemContainer>
-    <aitarget sightrange="2500" soundrange="3000" fadeouttime="6" />
+    <aitarget sightrange="2500" soundrange="2000" fadeouttime="6" />
     <!--品质-->
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
@@ -361,11 +400,68 @@
         <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
       </TickBox>
     </CustomInterface>
-    <aitarget sightrange="4500" soundrange="6000" fadeouttime="10" />
+    <aitarget sightrange="2000" soundrange="800" fadeouttime="5" />
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
     <SkillRequirementHint identifier="weapons" level="40" />
+  </Item>
+  <Item name="燕增强针剂" identifier="tsm_enhancement_yan" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
+        <GiveTalentInfo giverandom="false" talentidentifiers="rifleman,tandemfire,extrapowder,extrapowder,gunrunner,weaponsmith,protectandserve,implacable" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="燕的小纸条" identifier="tsm_yan_item1" subcategory="npc" allowstealingalways="true" category="Misc" hideinmenus="true" Tags="smallitem" scale="0.03" impactsoundtag="impact_soft">
+    <PreferredContainer secondary="tsm_items" minamount="1" maxamount="1" spawnprobability="0.1" />
+    <InventoryIcon texture="%ModDir%/npc/yan_item1.png" sourcerect="110,15,799,664" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/npc/yan_item1.png" sourcerect="110,15,799,664" origin="0.5,0.5" depth="0.8" />
+    <Body width="799" height="640" density="0" />
+    <Deconstruct time="5" />
+    <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+    <Terminal canbeselected="true" msg="ItemMsgInteractSelect" AllowInGameEditing="false" AutoHideScrollbar="true" readonly="true" autoscrolltobottom="false" linestartsymbol="" marginmultiplier="1.5" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.75,0.75" anchor="Center" style="tsm_yan_item1" hidedragicons="true" />
+    </Terminal>
+  </Item>
+  <Item name="燕的小纸条" identifier="tsm_yan_item2" subcategory="npc" allowstealingalways="true" category="Misc" hideinmenus="true" Tags="smallitem" scale="0.03" impactsoundtag="impact_soft">
+    <PreferredContainer secondary="tsm_items" minamount="1" maxamount="1" spawnprobability="0.1" />
+    <InventoryIcon texture="%ModDir%/npc/yan_item2.png" sourcerect="110,15,799,664" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/npc/yan_item2.png" sourcerect="110,15,799,664" origin="0.5,0.5" depth="0.8" />
+    <Body width="799" height="640" density="0" />
+    <Deconstruct time="5" />
+    <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+    <Terminal canbeselected="true" msg="ItemMsgInteractSelect" AllowInGameEditing="false" AutoHideScrollbar="true" readonly="true" autoscrolltobottom="false" linestartsymbol="" marginmultiplier="1.5" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.75,0.75" anchor="Center" style="tsm_yan_item2" hidedragicons="true" />
+    </Terminal>
+  </Item>
+  <Item name="燕的小纸条" identifier="tsm_yan_item3" subcategory="npc" allowstealingalways="true" category="Misc" hideinmenus="true" Tags="smallitem" scale="0.02" impactsoundtag="impact_soft">
+    <PreferredContainer secondary="tsm_items" minamount="1" maxamount="1" spawnprobability="0.1" />
+    <InventoryIcon texture="%ModDir%/npc/yan_item3.png" sourcerect="195,27,1418,1191" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/npc/yan_item3.png" sourcerect="195,27,1418,1191" origin="0.5,0.5" depth="0.8" />
+    <Body width="1418" height="1191" density="0" />
+    <Deconstruct time="5" />
+    <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+    <Terminal canbeselected="true" msg="ItemMsgInteractSelect" AllowInGameEditing="false" AutoHideScrollbar="true" readonly="true" autoscrolltobottom="false" linestartsymbol="" marginmultiplier="1.5" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.75,0.75" anchor="Center" style="tsm_yan_item3" hidedragicons="true" />
+    </Terminal>
+  </Item>
+  <Item name="燕的小纸条" identifier="tsm_yan_item4" subcategory="npc" allowstealingalways="true" category="Misc" hideinmenus="true" Tags="smallitem" scale="0.03" impactsoundtag="impact_soft">
+    <PreferredContainer secondary="tsm_items" minamount="1" maxamount="1" spawnprobability="0.1" />
+    <InventoryIcon texture="%ModDir%/npc/yan_item4.png" sourcerect="110,15,799,664" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/npc/yan_item4.png" sourcerect="110,15,799,664" origin="0.5,0.5" depth="0.8" />
+    <Body width="799" height="664" density="0" />
+    <Deconstruct time="5" />
+    <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+    <Terminal canbeselected="true" msg="ItemMsgInteractSelect" AllowInGameEditing="false" AutoHideScrollbar="true" readonly="true" autoscrolltobottom="false" linestartsymbol="" marginmultiplier="1.5" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.75,0.75" anchor="Center" style="tsm_yan_item4" hidedragicons="true" />
+    </Terminal>
   </Item>
   <!--克里斯-->
   <Item name="克里斯" identifier="tsm_chris" subcategory="npc" scale="0.5" category="Equipment" tags="smallitem,mobileradio" cargocontaineridentifier="metalcrate" hideinmenus="true" impactsoundtag="impact_metal_light">
@@ -540,7 +636,7 @@
         <Containable items="flashlight" hide="false" itempos="19,2" depth="0.56" setactive="true" />
       </SubContainer>
     </ItemContainer>
-    <aitarget sightrange="2500" soundrange="3000" fadeouttime="6" />
+    <aitarget sightrange="2500" soundrange="2500" fadeouttime="6" />
     <!--品质-->
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />

@@ -262,13 +262,13 @@
             <ClearTagAction tag="triggerer_player"/>
             <GoTo name="beginningofthejourney" />
       </Option-->
-          <Option text="新年快乐，愿你的戎装依旧笔挺，心中有火，眼中有光">
+          <!--Option text="新年快乐，愿你的戎装依旧笔挺，心中有火，眼中有光">
             <ConversationAction targettag="triggerer_player" text="同乐，共勉" />
             <SpawnAction itemidentifier="tsm_jz_newyear" targetinventory="triggerer_player" />
             <SpawnAction itemidentifier="tsm_holiday_192" targetinventory="triggerer_player" />
             <ClearTagAction tag="triggerer_player" />
             <GoTo name="beginningofthejourney" />
-          </Option>
+          </Option-->
           <Option text="tsm.wait">
             <ConversationAction text="tsm.npc.wait" dialogtype="Small" targettag="triggerer_player" />
             <ClearTagAction tag="triggerer_player" />

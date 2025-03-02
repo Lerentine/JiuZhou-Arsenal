@@ -33,6 +33,10 @@ Hook.Patch("Barotrauma.Character", "ControlLocalPlayer", function(instance, ptab
             Screen.Selected.Cam.OffsetAmount = math.min( lerp(Screen.Selected.Cam.OffsetAmount, 0, -0.57)
           , 360)
          end
+    if PlayerInput.SecondaryMouseButtonHeld() and HasAffliction(character,"tsm_sight_tripled",1) and not character.SelectedItem then
+        Screen.Selected.Cam.OffsetAmount = math.min( lerp(Screen.Selected.Cam.OffsetAmount, 0, -0.57)
+        , 375)
+    end
     if PlayerInput.SecondaryMouseButtonHeld() and HasAffliction(character,"tsm_sight_pso",1) and not character.SelectedItem then
             Screen.Selected.Cam.OffsetAmount = math.min( lerp(Screen.Selected.Cam.OffsetAmount, 0, -0.63)
             , 390)
@@ -43,7 +47,7 @@ Hook.Patch("Barotrauma.Character", "ControlLocalPlayer", function(instance, ptab
          end
     if PlayerInput.SecondaryMouseButtonHeld() and HasAffliction(character,"tsm_sight_acog",1) and not character.SelectedItem then
             Screen.Selected.Cam.OffsetAmount = math.min( lerp(Screen.Selected.Cam.OffsetAmount, 0, -0.6)
-            , 385)
+            , 390)
          end
     if PlayerInput.SecondaryMouseButtonHeld() and HasAffliction(character,"tsm_sight_95",1) and not character.SelectedItem then
              Screen.Selected.Cam.OffsetAmount = math.min( lerp(Screen.Selected.Cam.OffsetAmount, 0, -0.57)
@@ -55,7 +59,7 @@ Hook.Patch("Barotrauma.Character", "ControlLocalPlayer", function(instance, ptab
         end
     if PlayerInput.SecondaryMouseButtonHeld() and HasAffliction(character,"tsm_sight_qmk152",1) and not character.SelectedItem then
         Screen.Selected.Cam.OffsetAmount = math.min( lerp(Screen.Selected.Cam.OffsetAmount, 0, -0.63)
-        , 388)
+        , 390)
     end
     if PlayerInput.SecondaryMouseButtonHeld() and (character.HasEquippedItem("tsm_farsight",true,2) or character.HasEquippedItem("tsm_farsight",true,4)) and not character.SelectedItem then
     		Screen.Selected.Cam.OffsetAmount = math.min( lerp(Screen.Selected.Cam.OffsetAmount, 0, -0.72)

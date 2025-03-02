@@ -19,5 +19,17 @@
     <tsm_chris_end color="255,255,255,255" textcolor="0,0,0,255">
       <Sprite name="tsm_chris_end" texture="%ModDir%/npc/chris_dead.png" size="0.0, 0.0" sourcerect="0,0,1941,1080" origin="0.5,0.5" compress="false" tile="false" />
     </tsm_chris_end>
+    <tsm_yan_item1 color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_yan_item1" texture="%ModDir%/npc/yan_item1.png" size="0.0, 0.0" sourcerect="110,15,799,664" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_yan_item1>
+    <tsm_yan_item2 color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_yan_item2" texture="%ModDir%/npc/yan_item2.png" size="0.0, 0.0" sourcerect="110,15,799,664" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_yan_item2>
+    <tsm_yan_item4 color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_yan_item4" texture="%ModDir%/npc/yan_item4.png" size="0.0, 0.0" sourcerect="110,15,799,664" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_yan_item4>
+    <tsm_yan_item3 color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_yan_item3" texture="%ModDir%/npc/yan_item3.png" size="0.0, 0.0" sourcerect="195,27,1418,1191" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_yan_item3>
   </style>
 </Override>

@@ -359,7 +359,7 @@
   <entityname.lm_fast_helmet>联盟突击头盔</entityname.lm_fast_helmet>
   <entitydescription.lm_fast_helmet>制式头盔，被大量分发给基层士兵，大量的挂点使其拥有丰富的改造选项</entitydescription.lm_fast_helmet>
   <entityname.lm_heavy_helmet>联盟重型战斗头盔</entityname.lm_heavy_helmet>
-  <entitydescription.lm_heavy_helmet>可以放入一块大型防弹面罩，以获得更好的防护</entitydescription.lm_heavy_helmet>
+  <entitydescription.lm_heavy_helmet>加装防弹面罩和护颚，获得更好的防护</entitydescription.lm_heavy_helmet>
   <entityname.lm_fast_helmet_headset>联盟突击通讯头盔</entityname.lm_fast_helmet_headset>
   <entitydescription.lm_fast_helmet_headset>安装有一副无线电耳机，让军官与同僚的声音可以更快地传递到士兵耳中</entitydescription.lm_fast_helmet_headset>
   <entityname.lm_fast_helmet_faceshield>联盟突击头盔（防弹面罩）</entityname.lm_fast_helmet_faceshield>
@@ -520,16 +520,18 @@
   <entitydescription.tsm_sight_reddot>略微增加手持武器时视野偏移，减少开火时的准星增大\n+25%技能等级获取速度\n-4%移动速度</entitydescription.tsm_sight_reddot>
   <entityname.tsm_sight_holographic>全息瞄具</entityname.tsm_sight_holographic>
   <entitydescription.tsm_sight_holographic>略微增加手持武器时视野偏移，加快瞄准时的准星缩小\n+25%技能等级获取速度\n-4%移动速度</entitydescription.tsm_sight_holographic>
-  <entityname.tsm_sight_double>2倍瞄具</entityname.tsm_sight_double>
-  <entitydescription.tsm_sight_double>增加手持武器时视野偏移\n-10%扩散\n-7%移动速度</entitydescription.tsm_sight_double>
+  <entityname.tsm_sight_double>G33组合瞄具</entityname.tsm_sight_double>
+  <entitydescription.tsm_sight_double>增加手持武器时视野偏移\n-5%扩散\n-7%移动速度\n+13%技能等级获取速度</entitydescription.tsm_sight_double>
   <entityname.tsm_sight_pso>PSO AK瞄具</entityname.tsm_sight_pso>
   <entitydescription.tsm_sight_pso>小幅度增加手持武器时视野偏移\n+5%技能等级获取速度\n-15%扩散\n-10%移动速度</entitydescription.tsm_sight_pso>
   <entityname.tsm_sight_c79>C79 6倍机枪瞄具</entityname.tsm_sight_c79>
   <entitydescription.tsm_sight_c79>大幅度增加手持武器时视野偏移\n-13%扩散\n-12%移动速度</entitydescription.tsm_sight_c79>
   <entityname.tsm_sight_hamr>HAMR 医疗监控瞄具</entityname.tsm_sight_hamr>
   <entitydescription.tsm_sight_hamr>提供医疗检测仪效果\n+10%武器操作获取速度</entitydescription.tsm_sight_hamr>
+  <entityname.tsm_sight_tripled>M2 3倍瞄具</entityname.tsm_sight_tripled>
+  <entitydescription.tsm_sight_tripled>小幅度增加手持武器时视野偏移\n-8%扩散\n-4%移动速度</entitydescription.tsm_sight_tripled>
   <entityname.tsm_sight_acog>ACOG 4倍瞄具</entityname.tsm_sight_acog>
-  <entitydescription.tsm_sight_acog>小幅度增加手持武器时视野偏移\n+30%武器操作获取速度\n-5%扩散\n-6%移动速度</entitydescription.tsm_sight_acog>
+  <entitydescription.tsm_sight_acog>小幅度增加手持武器时视野偏移\n-15%扩散\n-6%移动速度</entitydescription.tsm_sight_acog>
   <entityname.tsm_sight_thermal>热成像瞄具</entityname.tsm_sight_thermal>
   <entitydescription.tsm_sight_thermal>提供热成像效果\n+10%武器操作获取速度</entitydescription.tsm_sight_thermal>
   <entityname.tsm_flame_arrester>枪口消焰器</entityname.tsm_flame_arrester>
@@ -611,6 +613,22 @@
   <tsm_chris_p_e>我从不在意过程，我只关心结果</tsm_chris_p_e>
   <tsm_chris_c_e2>看来，你的船上得准备更多的打火机了。来吧，船长，让我们开始去清算那些有罪之人吧！</tsm_chris_c_e2>
   <tsm_chris_c_n>证明不了你的实力，就别打扰我！</tsm_chris_c_n>
+
+  <charactername.tsm_yan>燕</charactername.tsm_yan>
+  <npctitle.tsm_yan>‘猫科动物’军事顾问</npctitle.tsm_yan>
+  <entityname.tsm_yan_item1>燕的小纸条·其一</entityname.tsm_yan_item1>
+  <entitydescription.tsm_yan_item1>这是燕的一张小纸条，集齐四种纸条就能招募燕</entitydescription.tsm_yan_item1>
+  <entityname.tsm_yan_item2>燕的小纸条·其二</entityname.tsm_yan_item2>
+  <entitydescription.tsm_yan_item2>这是燕的一张小纸条，集齐四种纸条就能招募燕</entitydescription.tsm_yan_item2>
+  <entityname.tsm_yan_item3>燕的小纸条·其三</entityname.tsm_yan_item3>
+  <entitydescription.tsm_yan_item3>这是燕的一张小纸条，集齐四种纸条就能招募燕</entitydescription.tsm_yan_item3>
+  <entityname.tsm_yan_item4>燕的小纸条·其四</entityname.tsm_yan_item4>
+  <entitydescription.tsm_yan_item4>这是燕的一张小纸条，集齐四种纸条就能招募燕</entitydescription.tsm_yan_item4>
+  <tsm_yan_join_1>我有四张纸条不见了，如果有人找到的话，我可以为找到的人提供军事顾问服务</tsm_yan_join_1>
+  <tsm_yan_join_1_1>提供纸条</tsm_yan_join_1_1>
+  <tsm_yan_join_2>您没有呢，请不要耽误我的时间</tsm_yan_join_2>
+  <tsm_yan_join_y>船长，我代表奇迹之海，向您和您的船员提供军事顾问服务，出于保密工作，我不能向您透露我的全部信息，不过你可以称呼我：燕</tsm_yan_join_y>
+  <tsm_yan_join_p>欢迎你的加入</tsm_yan_join_p>
   <!--弹药-->
   <entityname.tsm_12_ld>12号鹿弹</entityname.tsm_12_ld>
   <entitydescription.tsm_12_ld>更少的弹丸数量，但是拥有更大的威力。</entitydescription.tsm_12_ld>
@@ -735,14 +753,18 @@
   <entitydescription.tsm_gm6>一把结构高精且紧凑的大口径狙击枪，浮动式枪管与无托结构即使是是在室内作战也非常趁手。其制造图纸更是高度机密，就是落入敌手反向拆解也无法将其仿制，能列装的部队都是精英中的精英，可以使用‖color:0,200,0,255‖12.7*108‖color:end‖和‖color:0,200,0,255‖12.7*99‖color:end‖口径狙击枪子弹。</entitydescription.tsm_gm6>
   <entityname.tsm_qbs>QBS-09 式半自动霰弹枪</entityname.tsm_qbs>
   <entitydescription.tsm_qbs>一把可靠性和环境适应能力极佳的半自动霰弹，无论是充满泥沙的海底，还是狭窄的站点，尽管枪身较短但带动的膛压足以荡平敌人</entitydescription.tsm_qbs>
-  <entityname.tsm_krmagazine>奇迹之海扩容弹匣</entityname.tsm_krmagazine>
-  <entitydescription.tsm_krmagazine>可装填60发标准弹药的弹鼓，特殊的设计保证了可靠性，但是价格却得不到保证。</entitydescription.tsm_krmagazine>
+  <entityname.tsm_krmagazine>奇迹之海弹鼓</entityname.tsm_krmagazine>
+  <entitydescription.tsm_krmagazine>可装填75发标准弹药的弹鼓，特殊的设计保证了可靠性，但是价格却得不到保证。</entitydescription.tsm_krmagazine>
   <entityname.tsm_58_mag_kr>突击步枪弹鼓（5.8mm）</entityname.tsm_58_mag_kr>
   <entitydescription.tsm_58_mag_kr>装填60发5.8mm子弹的弹鼓</entitydescription.tsm_58_mag_kr>
+  <entityname.tsm_58_drum_cj>突击步枪穿甲弹鼓（5.8mm）</entityname.tsm_58_drum_cj>
+  <entitydescription.tsm_58_drum_cj>装填60发5.8mm穿甲弹的弹鼓</entitydescription.tsm_58_drum_cj>
   <entityname.tsm_magazinebg>奇迹之海变革弹匣</entityname.tsm_magazinebg>
   <entitydescription.tsm_magazinebg>奇迹之海研制的变革弹匣，更强大的弹药种类，注意不要误伤。这种弹药只有一部分小队拥有使用权限。</entitydescription.tsm_magazinebg>
   <entityname.tsm_magazinecj>奇迹之海穿甲弹匣</entityname.tsm_magazinecj>
   <entitydescription.tsm_magazinecj>里面装填了30发标准穿甲弹，能够有效应对冲进船舱的泥偶迅猛龙。弹匣上有穿甲弹标记，用以进行区分。</entitydescription.tsm_magazinecj>
+  <entityname.tsm_drum_cj>奇迹之海穿甲弹鼓</entityname.tsm_drum_cj>
+  <entitydescription.tsm_drum_cj>里面装填了75发标准穿甲弹，弹匣上有穿甲弹标记，用以进行区分。</entitydescription.tsm_drum_cj>
   <entityname.tsm_ammobox>奇迹之海弹药箱</entityname.tsm_ammobox>
   <entitydescription.tsm_ammobox>奇迹之海弹药箱
 [放入弹匣,右键+左键压弹.]</entitydescription.tsm_ammobox>
@@ -890,6 +912,8 @@
   <entitydescription.lm_556kr_drum>其内装填了60发标准子弹的弹鼓</entitydescription.lm_556kr_drum>
   <entityname.lm_556cj_mag>联盟穿甲弹匣（5.56*45）</entityname.lm_556cj_mag>
   <entitydescription.lm_556cj_mag>内部填装了31发穿甲弹，可以有效应对有甲生物与防弹衣，但是不知道为什么弹匣的标记上写着里面有33发子弹？数量较少，不建议携带太多。</entitydescription.lm_556cj_mag>
+  <entityname.lm_556cj_krmag>联盟穿甲扩容弹匣（5.56*45）</entityname.lm_556cj_krmag>
+  <entitydescription.lm_556cj_krmag>内部填装了45发穿甲弹，可以有效应对有甲生物与防弹衣。</entitydescription.lm_556cj_krmag>
   <entityname.lm_556gb_mag>联盟高爆弹匣（5.56*45）</entityname.lm_556gb_mag>
   <entitydescription.lm_556gb_mag>装填了30发珍贵的高爆弹药的弹匣，为联盟内部的军用弹药，能高效地杀伤目标。数量稀少，一次不能携带太多。</entitydescription.lm_556gb_mag>
   <entityname.lm_65_magazine>联盟普通弹匣（6.5mm）</entityname.lm_65_magazine>
@@ -904,11 +928,19 @@
   <entitydescription.lm_68_51_mag_kr>装填了45发标准6.8*51口径子弹</entitydescription.lm_68_51_mag_kr>
   <entityname.lm_68_51ap_magazine>联盟穿甲弹匣（6.8*51mm）</entityname.lm_68_51ap_magazine>
   <entitydescription.lm_68_51ap_magazine>装填了30发标准6.8*51口径穿甲子弹</entitydescription.lm_68_51ap_magazine>
+  <entityname.lm_68_51ap_krmagazine>联盟穿甲扩容弹匣（6.8*51mm）</entityname.lm_68_51ap_krmagazine>
+  <entitydescription.lm_68_51ap_krmagazine>装填了45发标准6.8*51口径穿甲子弹</entitydescription.lm_68_51ap_krmagazine>
   <entityname.lm_762_51_mag>联盟普通弹匣（7.62*51）</entityname.lm_762_51_mag>
   <entitydescription.lm_762_51_mag>装填了20发7.62*51口径普通子弹</entitydescription.lm_762_51_mag>
+  <entityname.lm_762_51_krmag>联盟扩容弹匣（7.62*51）</entityname.lm_762_51_krmag>
+  <entitydescription.lm_762_51_krmag>装填了35发7.62*51口径普通子弹</entitydescription.lm_762_51_krmag>
+  <entityname.lm_762_51_drum>联盟弹鼓（7.62*51）</entityname.lm_762_51_drum>
+  <entitydescription.lm_762_51_drum>装填了50发7.62*51口径普通子弹</entitydescription.lm_762_51_drum>
+  <entityname.lm_762_51_ap_krmag>联盟穿甲扩容弹匣（7.62*51）</entityname.lm_762_51_ap_krmag>
+  <entitydescription.lm_762_51_ap_krmag>装填了35发7.62*51口径穿甲子弹</entitydescription.lm_762_51_ap_krmag>
   <entityname.lm_762_51_ap_mag>联盟穿甲弹匣（7.62*51）</entityname.lm_762_51_ap_mag>
   <entitydescription.lm_762_51_ap_mag>装填了20发7.62*51口径穿甲子弹</entitydescription.lm_762_51_ap_mag>
-  <entityname.tsm_762_51_mag_kr>扩容弹匣（7.62*51mm）</entityname.tsm_762_51_mag_kr>
+  <entityname.tsm_762_51_mag_kr>联盟弹鼓（7.62*51mm）</entityname.tsm_762_51_mag_kr>
   <entitydescription.tsm_762_51_mag_kr>装填了40发标准7.62*51口径子弹</entitydescription.tsm_762_51_mag_kr>
   <entityname.lm_m700_mag>狙击步枪弹匣（.338）</entityname.lm_m700_mag>
   <entitydescription.lm_m700_mag>内有5发大威力子弹</entitydescription.lm_m700_mag>
@@ -916,6 +948,8 @@
   <entitydescription.tsm_miniammo>200发556口径子弹，尽情挥霍。</entitydescription.tsm_miniammo>
   <entityname.lm_127_55_mag>联盟普通弹匣(12.7*55)</entityname.lm_127_55_mag>
   <entitydescription.lm_127_55_mag>装填20发12.7*55mm步枪弹</entitydescription.lm_127_55_mag>
+  <entityname.lm_127_55_mag_ap>联盟穿甲弹匣(12.7*55)</entityname.lm_127_55_mag_ap>
+  <entitydescription.lm_127_55_mag_ap>装填20发12.7*55口径穿甲弹</entitydescription.lm_127_55_mag_ap>
   <!--反抗军-->
   <entityname.tsm_fkj_tac9>反抗军TAC-9自动手枪</entityname.tsm_fkj_tac9>
   <entitydescription.tsm_fkj_tac9>使用‖color:0,200,0,255‖9mm‖color:end‖手枪弹匣，使用机床简单冲压加工就能制造，造价低廉，携带隐藏，全自动的致命威胁是不少小混混和帮派分子的最爱，但在军事冲突中就有点上不了台面了</entitydescription.tsm_fkj_tac9>
@@ -998,6 +1032,8 @@
   <entitydescription.fkj_545_krmag>装有70发5.45弹药的弹鼓，续航性一流。</entitydescription.fkj_545_krmag>
   <entityname.fkj_545cj_mag>反抗军穿甲弹匣（5.45*39）</entityname.fkj_545cj_mag>
   <entitydescription.fkj_545cj_mag>装有33发5.45穿甲弹，可以有效应对防弹衣与生物甲壳。</entitydescription.fkj_545cj_mag>
+  <entityname.fkj_545cj_krmag>反抗军穿甲弹鼓（5.45*39）</entityname.fkj_545cj_krmag>
+  <entitydescription.fkj_545cj_krmag>装有70发5.45穿甲弹，可以有效应对防弹衣与生物甲壳。</entitydescription.fkj_545cj_krmag>
   <entityname.fkj_545hz_mag>反抗军混炸弹匣（5.45*39）</entityname.fkj_545hz_mag>
   <entitydescription.fkj_545hz_mag>内装30发新式高爆子弹，较为稀少。</entitydescription.fkj_545hz_mag>
   <entityname.fkj_762_mag>反抗军普通弹匣（7.62*39）</entityname.fkj_762_mag>
@@ -1006,12 +1042,20 @@
   <entitydescription.fkj_762_krmag>装有60发7.62弹药的弹鼓，随时可以让突击步枪打出机枪的火力。</entitydescription.fkj_762_krmag>
   <entityname.fkj_762cj_mag>反抗军穿甲弹匣（7.62*39）</entityname.fkj_762cj_mag>
   <entitydescription.fkj_762cj_mag>将标准弹匣内的普通弹药换成了30发7.62穿甲弹，卡卡再也不用担心我打不穿防弹衣辣！</entitydescription.fkj_762cj_mag>
+  <entityname.fkj_762cj_krmag>反抗军穿甲弹鼓（7.62*39）</entityname.fkj_762cj_krmag>
+  <entitydescription.fkj_762cj_krmag>装有60发7.62穿甲弹药的弹鼓</entitydescription.fkj_762cj_krmag>
   <entityname.fkj_762hz_mag>反抗军混炸弹匣（7.62*39）</entityname.fkj_762hz_mag>
   <entitydescription.fkj_762hz_mag>装载30发7.62*39口径混炸子弹</entitydescription.fkj_762hz_mag>
   <entityname.fkj_762_51_mag>反抗军普通弹匣（7.62*51）</entityname.fkj_762_51_mag>
   <entitydescription.fkj_762_51_mag>装载20发7.62*51口径子弹</entitydescription.fkj_762_51_mag>
+  <entityname.fkj_762_51_krmag>反抗军扩容弹匣（7.62*51）</entityname.fkj_762_51_krmag>
+  <entitydescription.fkj_762_51_krmag>装载35发7.62*51口径子弹</entitydescription.fkj_762_51_krmag>
+  <entityname.fkj_762_51_drum>反抗军弹鼓（7.62*51）</entityname.fkj_762_51_drum>
+  <entitydescription.fkj_762_51_drum>装载50发7.62*51口径子弹</entitydescription.fkj_762_51_drum>
   <entityname.fkj_762_51_ap_mag>反抗军穿甲弹匣（7.62*51）</entityname.fkj_762_51_ap_mag>
   <entitydescription.fkj_762_51_ap_mag>装载20发7.62*51口径穿甲弹</entitydescription.fkj_762_51_ap_mag>
+  <entityname.fkj_762_51_ap_krmag>反抗军穿甲扩容弹匣（7.62*51）</entityname.fkj_762_51_ap_krmag>
+  <entitydescription.fkj_762_51_ap_krmag>装载35发7.62*51口径穿甲弹</entitydescription.fkj_762_51_ap_krmag>
   <entityname.fkj_jts_mag>反抗军通用机枪弹匣（5.45*39）</entityname.fkj_jts_mag>
   <entitydescription.fkj_jts_mag>储存了一条200发5.45*39mm弹链的弹盒，可供射手肆意挥霍。</entitydescription.fkj_jts_mag>
   <entityname.fkj_jts_cjmag>反抗军通用机枪穿甲弹匣（5.45*39）</entityname.fkj_jts_cjmag>
@@ -1374,14 +1418,12 @@
   <jobname.tsm_soldier>站点突袭士兵</jobname.tsm_soldier>
   <jobdescription.tsm_soldier>隶属于奇迹之海先进作战部</jobdescription.tsm_soldier>
   <!--任务-->
-  <Override>
     <missionname.tsm_combat_qrf>拨云见日</missionname.tsm_combat_qrf>
     <missiondescription.tsm_combat_qrf>联盟的快速反应部队正在这个废弃站点进行部署，他们准备突袭附近的敌对站点。但是附近的站点不会坐以待毙，此刻你立功的时机到了。清理掉所有快反部队并炸掉反应堆！</missiondescription.tsm_combat_qrf>
     <missionsuccess.tsm_combat_qrf>水下之雾</missionsuccess.tsm_combat_qrf>
     <missionfailure.tsm_combat_qrf>这个结局如你所愿吗？</missionfailure.tsm_combat_qrf>
     <missionheader0.tsm_combat_qrf>黑夜奔袭</missionheader0.tsm_combat_qrf>
     <missionmessage0.tsm_combat_qrf>？？？：\n干得不错，这次行动狠狠的打击了联盟的士气。钱已发到你的账户，记住是没有人给你们下指令，是你们自己的行为。</missionmessage0.tsm_combat_qrf>
-  </Override>
   <missionname.tsm_combat_beowulf>贝奥武夫的蛮人</missionname.tsm_combat_beowulf>
   <missiondescription.tsm_combat_beowulf>贝奥武夫最初是由联盟和奇迹之海联合创立的一支镇暴与反恐部队，随着反抗军开战以来，这支部队的职责已远超传统防暴任务，逐步被赋予了更高的权限。但在一次事件中，他们的行动失控，做得太过火，直接导致大量人质丧生。这场惨剧不仅让公众的怒火席卷而来，也彻底将他们的队长推上了联盟的通缉名单。而此时正是他们最虚弱的时刻，船长！打下这个站点并炸掉反应堆，勇气和荣耀都将属于你！</missiondescription.tsm_combat_beowulf>
   <missionsuccess.tsm_combat_beowulf>坟丘</missionsuccess.tsm_combat_beowulf>
@@ -1470,6 +1512,20 @@
   <missionfailure.tsm_combat_nz>第一枪宣判我的到来，第二枪宣布你的死亡</missionfailure.tsm_combat_nz>
   <missionheader0.tsm_combat_nz>枪王之王</missionheader0.tsm_combat_nz>
   <missionmessage0.tsm_combat_nz>子弹洞穿了大脑，恍惚之间，他像是站在了一个舞台之上，看见台下乌黑一片，但却能清晰听见两个人的讲话。\n“这台上扮演的是谁？”一个声音疑问。\n另一个声音回答道“台上之人看似嗤嗤蠢蠢却游刃有余，他扮演的若不是小丑，那便是国王了。”\n话音刚落，台下掌声四起，一曲欢乐颂响起。\n诸位，这便是-所罗门的结局。</missionmessage0.tsm_combat_nz>
+  <missionname.abandonedoutpostrescue2>军事派遣</missionname.abandonedoutpostrescue2>
+  <missiondescription.abandonedoutpostrescue2>有一伙雇佣兵绑架了富商并且在[location1]安营扎寨，富商的亲人们花钱想让我们把富商救回来。</missiondescription.abandonedoutpostrescue2>
+  <missionsuccess.abandonedoutpostrescue2>我们已成功解救人质。</missionsuccess.abandonedoutpostrescue2>
+  <missionfailure.abandonedoutpostrescue2>未能成功解救人质。</missionfailure.abandonedoutpostrescue2>
+  <missionheader0.abandonedoutpostrescue2>营救成功</missionheader0.abandonedoutpostrescue2>
+  <missionmessage0.abandonedoutpostrescue2>人质们都上舰了。该回去复命了。</missionmessage0.abandonedoutpostrescue2>
+
+  <missionname.abandonedoutpostrescue3>战争荒野</missionname.abandonedoutpostrescue3>
+  <missiondescription.abandonedoutpostrescue3>有一个中队左右的雇佣兵摧毁了[location1]并且绑架了许多人质，他们以此要挟周围的站点缴纳保护金，否则他们将会沿途摧毁所有的站点。周围站点的人花了大价钱，希望船长可以出面把人质营救出来</missiondescription.abandonedoutpostrescue3>
+  <missionsuccess.abandonedoutpostrescue3>我们已成功解救人质。</missionsuccess.abandonedoutpostrescue3>
+  <missionfailure.abandonedoutpostrescue3>未能成功解救人质。</missionfailure.abandonedoutpostrescue3>
+  <missionheader0.abandonedoutpostrescue3>营救成功</missionheader0.abandonedoutpostrescue3>
+  <missionmessage0.abandonedoutpostrescue3>人质们都上舰了。该回去复命了。</missionmessage0.abandonedoutpostrescue3>
+
   <tsm_escort_lm>现在情况有变，所有人放下武器投降，我们需要军事征用这条船</tsm_escort_lm>
   <tsm_escort_lm>军事征用，放下武器</tsm_escort_lm>
   <tsm_escort_lm>开火，击毙这些反动分子</tsm_escort_lm>

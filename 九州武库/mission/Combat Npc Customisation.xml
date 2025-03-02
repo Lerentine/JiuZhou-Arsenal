@@ -205,7 +205,8 @@
         </Item>
         <Item identifier="tsm_lm_aug" equip="true">
           <Item identifier="tsm_ai_grenade" equip="true" />
-          <Item identifier="lm_556_mag" amount="7" />
+          <Item identifier="lm_556gb_mag" amount="2" />
+          <Item identifier="lm_556_mag" amount="6" />
         </Item>
         <Item identifier="tsm_1911_pistols" equip="false">
           <Item identifier="tsm_1143_mag" amount="3" />
@@ -221,6 +222,7 @@
           <Item identifier="tsm_medicalkits" />
         </Item>
         <Item identifier="tsm_lm_97" equip="true">
+          <Item identifier="lm_556gb_mag" amount="2" />
           <Item identifier="lm_556_mag" amount="6" />
         </Item>
         <Item identifier="tsm_1911_pistols" equip="false">

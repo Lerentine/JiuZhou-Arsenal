@@ -23,10 +23,7 @@
           <Item identifier="40mmgrenade" equip="true" />
           <Item identifier="40mmstungrenade" equip="true" />
           <Item identifier="lm_556cj_mag" amount="4" />
-          <Item identifier="lm_556_mag" amount="4" />
-        </Item>
-        <Item identifier="tsm_1911_pistols" equip="false">
-          <Item identifier="tsm_1143_mag" amount="4" />
+          <Item identifier="lm_556kr_drum" amount="2" />
         </Item>
       </ItemSet>
       <ItemSet commonness="1">
@@ -44,11 +41,8 @@
         <Item identifier="tsm_lm_mcx" equip="true">
           <Item identifier="tsm_grip_cqr" equip="true" />
           <Item identifier="lm_68_51kj_magazine" amount="1" />
-          <Item identifier="lm_68_51ap_magazine" amount="1" />
+          <Item identifier="lm_68_51ap_krmagazine" amount="1" />
           <Item identifier="lm_68_51_magazine" amount="5" />
-        </Item>
-        <Item identifier="tsm_1911_pistols" equip="false">
-          <Item identifier="tsm_1143_mag" amount="4" />
         </Item>
       </ItemSet>
     </npc>
@@ -243,11 +237,11 @@
         </Item>
         <Item identifier="tsm_lm_m16a4" equip="true">
           <Item identifier="40mmstungrenade" equip="true" />
-          <Item identifier="lm_556cj_mag" amount="4" />
+          <Item identifier="lm_556gb_mag" amount="2" />
           <Item identifier="40mmgrenade" equip="true" />
         </Item>
         <Item identifier="ceremonialsword">
-          <Item identifier="lm_556_mag" amount="3" />
+          <Item identifier="lm_556cj_krmag" amount="4" />
         </Item>
       </ItemSet>
       <ItemSet commonness="0.5">
@@ -262,8 +256,27 @@
         <Item identifier="tsm_lm_drh" equip="true">
           <Item identifier="tsm_ai_grenade" equip="true" />
           <Item identifier="tsm_recoil" equip="true" />
-          <Item identifier="lm_68_51ap_magazine" amount="1" />
-          <Item identifier="lm_68_51_magazine" amount="5" />
+          <Item identifier="lm_68_51ap_krmagazine" amount="2" />
+          <Item identifier="lm_68_51_magazine" amount="4" />
+        </Item>
+        <Item identifier="tsm_1911_pistols" equip="false">
+          <Item identifier="tsm_1143_mag" amount="5" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_rapidreaction_uniform" equip="true" />
+        <Item identifier="lm_rapidreaction_vest" equip="true" />
+        <Item identifier="lm_rapidreaction_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_cyborg" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits" />
+        </Item>
+        <Item identifier="tsm_lm_drh" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
+          <Item identifier="tsm_recoil" equip="true" />
+          <Item identifier="lm_68_51kj_magazine" amount="2" />
+          <Item identifier="lm_68_51_mag_kr" amount="4" />
         </Item>
         <Item identifier="tsm_1911_pistols" equip="false">
           <Item identifier="tsm_1143_mag" amount="5" />
@@ -282,9 +295,8 @@
           <Item identifier="tsm_sight_double" equip="true" />
           <Item identifier="tsm_flame_arrester" equip="true" />
           <Item identifier="tsm_grip_triangle" equip="true" />
-          <Item identifier="lm_556cj_mag" amount="3" />
-          <Item identifier="lm_556_incendium_mag" amount="2" />
-          <Item identifier="lm_556_mag" amount="4" />
+          <Item identifier="lm_556cj_krmag" amount="3" />
+          <Item identifier="lm_556_incendium_mag" amount="3" />
         </Item>
         <Item identifier="tsm_1911_pistols" equip="false">
           <Item identifier="tsm_1143_mag" amount="5" />
@@ -302,9 +314,9 @@
           <Item identifier="tsm_sight_reddot" equip="true" />
           <Item identifier="tsm_flame_arrester" equip="true" />
           <Item identifier="tsm_grip_triangle" equip="true" />
-          <Item identifier="lm_556cj_mag" amount="3" />
+          <Item identifier="lm_556gb_mag" amount="1" />
           <Item identifier="lm_556_fulgurium_mag" amount="2" />
-          <Item identifier="lm_556_mag" amount="5" />
+          <Item identifier="lm_556cj_krmag" amount="3" />
         </Item>
         <Item identifier="tsm_1911_pistols" equip="false">
           <Item identifier="tsm_1143_mag" amount="5" />
@@ -346,7 +358,8 @@
         </Item>
         <Item identifier="tsm_lm_ash12" equip="true">
           <Item identifier="tsm_grip_cqr" equip="true" />
-          <Item identifier="lm_127_55_mag" amount="9" />
+          <Item identifier="lm_127_55_mag_ap" amount="4" />
+          <Item identifier="lm_127_55_mag" amount="5" />
         </Item>
       </ItemSet>
       <ItemSet commonness="0.5">
@@ -361,7 +374,8 @@
           <Item identifier="tsm_medicalkits_s" />
         </Item>
         <Item identifier="tsm_lm_ash12" equip="true">
-          <Item identifier="lm_127_55_mag" amount="9" />
+          <Item identifier="lm_127_55_mag_ap" amount="5" />
+          <Item identifier="lm_127_55_mag" amount="4" />
           <Item identifier="tsm_sight_reddot" equip="true" />
         </Item>
       </ItemSet>
@@ -399,8 +413,8 @@
           <Item identifier="tsm_grip_triangle" equip="true" />
           <Item identifier="tsm_sight_double" equip="true" />
           <Item identifier="lm_556_sulphuriteshard_mag" amount="2" />
-          <Item identifier="lm_556cj_mag" amount="1" />
-          <Item identifier="lm_556_mag" amount="4" />
+          <Item identifier="lm_556cj_krmag" amount="2" />
+          <Item identifier="lm_556_mag" amount="3" />
         </Item>
       </ItemSet>
       <ItemSet commonness="0.2">
@@ -430,7 +444,7 @@
         </Item>
         <Item identifier="tsm_lm_hk417" equip="true">
           <Item identifier="tsm_grip_mounts" equip="true" />
-          <Item identifier="lm_762_51_ap_mag" amount="1" />
+          <Item identifier="lm_762_51_ap_krmag" amount="1" />
           <Item identifier="lm_762_51_mag" amount="6" />
         </Item>
       </ItemSet>
@@ -448,8 +462,8 @@
           <Item identifier="tsm_flame_arrester" equip="true" />
           <Item identifier="tsm_grip_thumb" equip="true" />
           <Item identifier="tsm_sight_holographic" equip="true" />
-          <Item identifier="lm_556_physicorium_mag" amount="2" />
-          <Item identifier="lm_556cj_mag" amount="4" />
+          <Item identifier="lm_556gb_mag" amount="2" />
+          <Item identifier="lm_556cj_krmag" amount="3" />
         </Item>
       </ItemSet>
     </npc>
@@ -661,7 +675,7 @@
           <Item identifier="tsm_medicalkits_s" />
         </Item>
         <Item identifier="tsm_lm_mdr_c" equip="true">
-          <Item identifier="lm_762_51_ap_mag" amount="4" />
+          <Item identifier="lm_762_51_ap_krmag" amount="3" />
           <Item identifier="lm_762_51_mag" amount="4" />
         </Item>
         <Item identifier="tsm_glock18_pistols">
@@ -682,8 +696,7 @@
         <Item identifier="tsm_lm_mcx" equip="true">
           <Item identifier="tsm_grip_straight" equip="true" />
           <Item identifier="lm_68_51kj_magazine" amount="2" />
-          <Item identifier="lm_68_51ap_magazine" amount="2" />
-          <Item identifier="lm_68_51_mag_kr" amount="2" />
+          <Item identifier="lm_68_51ap_krmagazine" amount="4" />
         </Item>
         <Item identifier="tsm_glock18_pistols">
           <Item identifier="tsm_9_drum" amount="3" />
@@ -702,7 +715,7 @@
           <Item identifier="tsm_medicalkits" />
         </Item>
         <Item identifier="tsm_lm_mk14ebr" equip="true">
-          <Item identifier="lm_762_51_ap_mag" amount="4" />
+          <Item identifier="lm_762_51_ap_krmag" amount="4" />
           <Item identifier="lm_762_51_mag" amount="4" />
         </Item>
         <Item identifier="tsm_de_handgun">
@@ -723,7 +736,7 @@
             <Item identifier="tsm_sight_double" equip="true" />
             <Item identifier="40mmstungrenade" amount="1" />
             <Item identifier="40mmgrenade" amount="1" />
-            <Item identifier="lm_556_physicorium_mag" amount="1" />
+            <Item identifier="lm_556gb_mag" amount="1" />
             <Item identifier="40mmgrenade" amount="1" />
             <Item identifier="lm_556cj_mag" amount="5" />
           </Item>
@@ -765,8 +778,7 @@
           <Item identifier="tsm_sight_acog" equip="true" />
           <Item identifier="tsm_grip_straight" equip="true" />
           <Item identifier="lm_762_35_mag" amount="1" />
-          <Item identifier="lm_556gb_mag" amount="1" />
-          <Item identifier="lm_556_fulgurium_mag" amount="1" />
+          <Item identifier="lm_556gb_mag" amount="2" />
           <Item identifier="lm_556cj_mag" amount="4" />
         </Item>
         <Item identifier="tsm_fn509_pistols">
@@ -786,7 +798,7 @@
         <Item identifier="tsm_lm_hk417" equip="true">
           <Item identifier="tsm_grip_mounts" equip="true" />
           <Item identifier="tsm_recoil" equip="true" />
-          <Item identifier="lm_762_51_ap_mag" amount="4" />
+          <Item identifier="lm_762_51_ap_krmag" amount="3" />
           <Item identifier="lm_762_51_mag" amount="4" />
         </Item>
         <Item identifier="tsm_fn509_pistols">
@@ -892,7 +904,7 @@
         <Item identifier="tsm_lm_scarh" equip="true">
           <Item identifier="tsm_sight_reddot" equip="true" />
           <Item identifier="tsm_recoil" equip="true" />
-          <Item identifier="lm_762_51_ap_mag" amount="4" />
+          <Item identifier="lm_762_51_ap_krmag" amount="3" />
           <Item identifier="lm_762_51_mag" amount="4" />
         </Item>
       </ItemSet>
@@ -907,7 +919,7 @@
         <Item identifier="tsm_lm_scarh" equip="true">
           <Item identifier="tsm_sight_reddot" equip="true" />
           <Item identifier="tsm_recoil" equip="true" />
-          <Item identifier="lm_762_51_ap_mag" amount="4" />
+          <Item identifier="lm_762_51_ap_krmag" amount="3" />
           <Item identifier="lm_762_51_mag" amount="4" />
         </Item>
       </ItemSet>
@@ -926,9 +938,8 @@
           <Item identifier="tsm_sight_double" equip="true" />
           <Item identifier="tsm_flame_arrester" equip="true" />
           <Item identifier="tsm_grip_triangle" equip="true" />
-          <Item identifier="lm_556cj_mag" amount="3" />
-          <Item identifier="lm_556_incendium_mag" amount="2" />
-          <Item identifier="lm_556_mag" amount="4" />
+          <Item identifier="lm_556gb_mag" amount="2" />
+          <Item identifier="lm_556_incendium_mag" amount="3" />
         </Item>
       </ItemSet>
       <ItemSet commonness="0.5">
@@ -943,8 +954,7 @@
           <Item identifier="tsm_sight_reddot" equip="true" />
           <Item identifier="tsm_flame_arrester" equip="true" />
           <Item identifier="tsm_grip_triangle" equip="true" />
-          <Item identifier="lm_556cj_mag" amount="3" />
-          <Item identifier="lm_556_fulgurium_mag" amount="2" />
+          <Item identifier="lm_556cj_krmag" amount="3" />
           <Item identifier="lm_556_mag" amount="5" />
         </Item>
       </ItemSet>
@@ -960,29 +970,12 @@
           <Item identifier="tsm_sight_reddot" equip="true" />
           <Item identifier="tsm_flame_arrester" equip="true" />
           <Item identifier="tsm_grip_triangle" equip="true" />
-          <Item identifier="lm_556cj_mag" amount="3" />
           <Item identifier="lm_556_fulgurium_mag" amount="2" />
-          <Item identifier="lm_556_mag" amount="5" />
+          <Item identifier="lm_556kr_drum" amount="3" />
         </Item>
       </ItemSet>
     </npc>
     <npc identifier="occupation_fire" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="5" aimaccuracy="0.8" reportrange="2000" skillmultiplier="4">
-      <ItemSet commonness="0.5">
-        <Item identifier="idcard" equip="true" />
-        <Item identifier="lm_occupation_uniform" equip="true" />
-        <Item identifier="lm_vest_occupation" equip="true" />
-        <Item identifier="lm_fast_helmet_faceshield" equip="true" />
-        <Item identifier="tsm_enhancement_cyborg" />
-        <Item identifier="tsm_enhancement_combatship">
-          <Item identifier="tsm_medicalkits" />
-        </Item>
-        <Item identifier="tsm_lm_minigun" equip="true">
-          <Item identifier="tsm_miniammo" amount="3" />
-        </Item>
-        <Item identifier="tsm_de_handgun">
-          <Item identifier="tsm_127_mag" amount="4" />
-        </Item>
-      </ItemSet>
       <ItemSet commonness="0.3">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_occupation_uniform" equip="true" />
@@ -993,6 +986,7 @@
           <Item identifier="tsm_medicalkits" />
         </Item>
         <Item identifier="tsm_lm_m60e6" equip="true">
+        <Item identifier="tsm_grip_mounts" equip="true"/>
           <Item identifier="lm_762_51_mgmag_cj" amount="1" />
           <Item identifier="lm_762_51_mgmag" amount="2" />
         </Item>
@@ -1329,9 +1323,8 @@
           <Item identifier="tsm_sight_pso" equip="true" />
           <Item identifier="tsm_grip_straight" equip="true" />
           <Item identifier="tsm_recoil" equip="true" />
-          <Item identifier="fkj_762cj_mag" amount="2" />
-          <Item identifier="fkj_762hz_mag" amount="1" />
-          <Item identifier="fkj_762_krmag" amount="2" />
+          <Item identifier="fkj_762cj_krmag" amount="3" />
+          <Item identifier="fkj_762hz_mag" amount="3" />
         </Item>
         <!--Item identifier="tsm_glock18_pistols" equip="false">
         <Item identifier="tsm_9_krmag" amount="4"/>
@@ -1349,10 +1342,8 @@
           <Item identifier="tsm_medicalkits_s" />
         </Item>
         <Item identifier="tsm_fkj_an94" equip="true">
-          <Item identifier="fkj_762hz_mag" amount="1" />
-          <Item identifier="fkj_762cj_mag" amount="1" />
-          <Item identifier="fkj_762hz_mag" amount="2" />
-          <Item identifier="fkj_762cj_mag" amount="3" />
+          <Item identifier="fkj_762hz_mag" amount="3" />
+          <Item identifier="fkj_762cj_krmag" amount="3" />
         </Item>
         <!--Item identifier="tsm_glock18_pistols" equip="false">
         <Item identifier="tsm_9_krmag" amount="4"/>
@@ -1386,7 +1377,7 @@
         <Item identifier="tsm_fkj_ak12" equip="true">
           <Item identifier="tsm_grip_cqr" equip="true" />
           <Item identifier="tsm_recoil" equip="true" />
-          <Item identifier="fkj_762cj_mag" amount="4" />
+          <Item identifier="fkj_762cj_krmag" amount="3" />
           <Item identifier="fkj_762hz_mag" amount="2" />
         </Item>
         <Item identifier="tsm_de_handgun" equip="false">
@@ -1404,7 +1395,7 @@
         <Item identifier="tsm_fkj_jq430" equip="true">
           <Item identifier="40mmstungrenade" equip="true" />
           <Item identifier="40mmgrenade" />
-          <Item identifier="fkj_762cj_mag" amount="4" />
+          <Item identifier="fkj_762cj_krmag" amount="3" />
           <Item identifier="fkj_762hz_mag" amount="2" />
         </Item>
         <Item identifier="tsm_de_handgun" equip="false">
@@ -1421,8 +1412,8 @@
         </Item>
         <Item identifier="tsm_fkj_jq430" equip="true">
           <Item identifier="40mmgrenade" amount="1" />
-          <Item identifier="fkj_762cj_mag" amount="4" />
           <Item identifier="fkj_762hz_mag" amount="2" />
+          <Item identifier="fkj_762cj_krmag" amount="4" />
         </Item>
         <Item identifier="tsm_de_handgun" equip="false">
           <Item identifier="tsm_127_mag" amount="4" />
@@ -1438,12 +1429,11 @@
         </Item>
         <Item identifier="tsm_fkj_a545" equip="true">
           <Item identifier="tsm_sight_pso" equip="true" />
-          <Item identifier="fkj_545_incendium_mag" amount="1" />
+          <Item identifier="fkj_545hz_mag" amount="1" />
           <Item identifier="40mmgrenade" amount="1" />
           <Item identifier="fkj_545_physicorium_mag" amount="1" />
           <Item identifier="40mmstungrenade" amount="1" />
-          <Item identifier="fkj_545cj_mag" amount="2" />
-          <Item identifier="fkj_545_krmag" amount="2" />
+          <Item identifier="fkj_545cj_krmag" amount="3" />
         </Item>
         <Item identifier="tsm_de_handgun" equip="false">
           <Item identifier="tsm_127_mag" amount="4" />
@@ -1459,10 +1449,8 @@
         <Item identifier="tsm_fkj_a545" equip="true">
           <Item identifier="tsm_sight_pso" equip="true" />
           <Item identifier="fkj_545_incendium_mag" amount="1" />
-          <Item identifier="fkj_545_physicorium_mag" amount="1" />
           <Item identifier="40mmstungrenade" amount="1" />
-          <Item identifier="fkj_545cj_mag" amount="2" />
-          <Item identifier="fkj_545_krmag" amount="2" />
+          <Item identifier="fkj_545cj_krmag" amount="3" />
         </Item>
         <Item identifier="tsm_de_handgun" equip="false">
           <Item identifier="tsm_127_mag" amount="4" />
@@ -1480,7 +1468,7 @@
         <Item identifier="fkj_heavy_helmet" equip="true" />
         </Item>
         <Item identifier="tsm_fkj_sg553" equip="true">
-          <Item identifier="fkj_762_51_ap_mag" amount="3" />
+          <Item identifier="fkj_762_51_ap_krmag" amount="3" />
           <Item identifier="fkj_762_51_mag" amount="4" />
           <Item identifier="tsm_sight_reddot" equip="true" />
           <Item identifier="tsm_flame_arrester" equip="true" />
@@ -1498,7 +1486,7 @@
           <Item identifier="tsm_grip_mounts" equip="true" />
           <Item identifier="tsm_recoil" equip="true" />
           <Item identifier="tsm_sight_reddot" equip="true" />
-          <Item identifier="fkj_762_51_ap_mag" amount="4" />
+          <Item identifier="fkj_762_51_ap_krmag" amount="4" />
           <Item identifier="fkj_762_51_mag" amount="4" />
         </Item>
         <Item identifier="tsm_de_handgun" equip="false">
@@ -1547,7 +1535,7 @@
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_yehuo_uniform" equip="true" />
         <Item identifier="fkj_vest_elite" equip="true" />
-        <Item identifier="fkj_762cj_mag">
+        <Item identifier="fkj_9_39_krap_mag">
           <Item identifier="fkj_fast_helmet_reinforce" equip="true" />
         </Item>
         <Item identifier="tsm_fkj_groza" equip="true">
@@ -1611,7 +1599,7 @@
         </Item>
         <Item identifier="tsm_fkj_am17" equip="true">
           <Item identifier="fkj_545hz_mag" amount="3" />
-          <Item identifier="fkj_545cj_mag" amount="4" />
+          <Item identifier="fkj_545cj_krmag" amount="3" />
         </Item>
         <Item identifier="tsm_fkj_uzi">
           <Item identifier="tsm_9_drum" amount="2" />
@@ -1627,6 +1615,18 @@
         <Item identifier="tsm_fkj_ak103_l" equip="true">
           <Item identifier="fkj_762hz_mag" amount="3" />
           <Item identifier="fkj_762_mag" amount="4" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_yehuo_uniform" equip="true" />
+        <Item identifier="fkj_vest_elite" equip="true" />
+        <Item identifier="fkj_762_mag">
+          <Item identifier="fkj_fast_helmet_reinforce" equip="true" />
+        </Item>
+        <Item identifier="tsm_fkj_ak103_l" equip="true">
+          <Item identifier="fkj_762cj_krmag" amount="3" />
+          <Item identifier="fkj_762hz_mag" amount="3" />
         </Item>
       </ItemSet>
       <ItemSet commonness="0.1">
@@ -1645,7 +1645,7 @@
           </Item-->
       </ItemSet>
     </npc>
-    <npc identifier="yehuo_ex" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="5" aimaccuracy="0.7" reportrange="2000" skillmultiplier="4">
+    <npc identifier="yehuo_ex" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="5" aimaccuracy="0.8" reportrange="2000" skillmultiplier="4">
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_yehuo_uniform" equip="true" />
@@ -1696,8 +1696,7 @@
           <Item identifier="fkj_heavy_helmet" equip="true" />
         </Item>
         <Item identifier="tsm_fkj_sg553" equip="true">
-          <Item identifier="fkj_762_51_ap_mag" amount="1" />
-          <Item identifier="fkj_762_51_mag" amount="7" />
+          <Item identifier="fkj_762_51_ap_krmag" amount="6" />
           <Item identifier="tsm_sight_reddot" equip="true" />
           <Item identifier="tsm_flame_arrester" equip="true" />
         </Item>
@@ -1715,8 +1714,8 @@
         </Item>
         <Item identifier="tsm_fkj_g3a4" equip="true">
           <Item identifier="tsm_sight_holographic" equip="true" />
-          <Item identifier="fkj_762_51_ap_mag" amount="2" />
-          <Item identifier="fkj_762_51_mag" amount="5" />
+          <Item identifier="fkj_762_51_ap_krmag" amount="2" />
+          <Item identifier="fkj_762_51_mag" amount="4" />
           <Item identifier="tsm_flame_arrester" equip="true" />
         </Item>
       </ItemSet>
@@ -1730,10 +1729,9 @@
         </Item>
         <Item identifier="tsm_fkj_a545" equip="true">
           <Item identifier="40mmgrenade" amount="1" />
-          <Item identifier="fkj_545_fulgurium_mag" amount="1" />
+          <Item identifier="fkj_545hz_mag" amount="2" />
           <Item identifier="40mmgrenade" amount="2" />
-          <Item identifier="fkj_545cj_mag" amount="2" />
-          <Item identifier="fkj_545_krmag" amount="2" />
+          <Item identifier="fkj_545cj_krmag" amount="3" />
         </Item>
       </ItemSet>
     </npc>
@@ -1754,7 +1752,7 @@
         <Item identifier="tsm_fkj_ak105_c" equip="true">
           <Item identifier="40mmgrenade" />
           <Item identifier="fkj_545hz_mag" amount="1" />
-          <Item identifier="fkj_545cj_mag" amount="5" />
+          <Item identifier="fkj_545cj_krmag" amount="3" />
         </Item>
       </ItemSet>
       <ItemSet commonness="0.5">
@@ -1785,7 +1783,8 @@
         <Item identifier="tsm_fkj_ace52" equip="true">
           <Item identifier="tsm_grip_mounts" equip="true" />
           <Item identifier="tsm_recoil" equip="true" />
-          <Item identifier="fkj_762_51_ap_mag" amount="8" />
+          <Item identifier="fkj_762_51_ap_krmag" amount="3" />
+          <Item identifier="fkj_762_51_drum" amount="2" />
         </Item>
       </ItemSet>
     </npc>
@@ -1812,7 +1811,7 @@
           <Item identifier="divingknife" />
         </Item>
         <Item identifier="tsm_fkj_ak103_l" equip="true">
-          <Item identifier="fkj_762cj_mag" amount="2" />
+          <Item identifier="fkj_762cj_krmag" amount="2" />
           <Item identifier="fkj_762_mag" amount="5" />
         </Item>
       </ItemSet>
@@ -1836,7 +1835,8 @@
           <Item identifier="fkj_Anonymous_helmet" equip="true" />
         </Item>
         <Item identifier="tsm_fkj_fal" equip="true">
-          <Item identifier="fkj_762_51_mag" amount="7" />
+          <Item identifier="fkj_762_51_drum" amount="1" />
+          <Item identifier="fkj_762_51_ap_mag" amount="4" />
         </Item>
       </ItemSet>
     </npc>
@@ -2180,7 +2180,7 @@
           <Item identifier="tsm_grip_triangle" equip="true" />
           <Item identifier="tsm_recoil" equip="true" />
           <Item identifier="tsm_sight_double" equip="true" />
-          <Item identifier="tsm_58_mag_cj" amount="3" />
+          <Item identifier="tsm_58_drum_cj" amount="3" />
           <Item identifier="tsm_58_mag_kr" amount="2" />
         </Item>
         <Item identifier="tsm_de_handgun" equip="false">
@@ -2286,11 +2286,11 @@
           <Item identifier="tsm_pqc_melee" />
         </Item>
         <Item identifier="tsm_advanced_03" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
           <Item identifier="tsm_recoil" equip="true" />
           <Item identifier="tsm_03_sight" equip="true" />
-          <Item identifier="tsm_58_mag_cj" amount="3" />
+          <Item identifier="tsm_58_drum_cj" amount="3" />
           <Item identifier="tsm_58_mag_kr" amount="2" />
-          <Item identifier="tsm_ai_grenade" equip="true" />
         </Item>
         <Item identifier="tsm_fn509_pistols" equip="true">
           <Item identifier="tsm_9_krmag" amount="3" />
@@ -2428,6 +2428,20 @@
           <Item identifier="tsm_magazine" amount="5" />
         </Item>
       </ItemSet>
+      <ItemSet commonness="0.4">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_old_uniform" equip="true" />
+        <Item identifier="tsm_old_vest" equip="true" />
+        <Item identifier="tsm_helmet_respirator" equip="true" />
+        <Item identifier="tsm_pmf_melee">
+          <Item identifier="tsm_enhancement_combatship" />
+        </Item>
+        <Item identifier="tsm_thbq" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
+          <Item identifier="tsm_drum_cj" amount="2" />
+          <Item identifier="tsm_magazine" amount="5" />
+        </Item>
+      </ItemSet>
     </npc>
     <npc identifier="tsm_soldier_elite_p" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="20" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
@@ -2533,6 +2547,7 @@
           <Item identifier="tsm_pmf_melee" />
         </Item>
         <Item identifier="tsm_p90" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
           <Item identifier="tsm_57_smgmag" amount="5" />
         </Item>
         <Item identifier="tsm_de_handgun" equip="true">
@@ -2572,8 +2587,7 @@
         </Item>
         <Item identifier="tsm_79_smg" equip="true">
           <Item identifier="tsm_sight_reddot" equip="true" />
-          <Item identifier="tsm_45_smgmag" amount="1" />
-          <Item identifier="tsm_45_smgmag_kr" amount="2" />
+          <Item identifier="tsm_45_smgmag_kr" amount="3" />
           <Item identifier="tsm_45_smgmag" amount="2" />
           <Item identifier="tsm_fire_gun" equip="true" />
         </Item>
@@ -3043,6 +3057,170 @@
         <Item identifier="tsm_jm" equip="true">
           <Item identifier="tsm_handcannonround" amount="6" />
           <Item identifier="handcannonround" amount="12" />
+        </Item>
+      </ItemSet>
+    </npc>
+  </npcset>
+  <!--雇佣兵-->
+  <npcset identifier="tsm_abandonedoutpostnpcs">
+    <npc identifier="tsm_hiredgun" commonness="0" tags="bandit" moduleflags="crewmodule,engineeringmodule" job="structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.35" aimspeed="10" aimaccuracy="1" reportrange="1500" skillmultiplier="3">
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="securityseparatistsuniform3" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
+        <Item identifier="deusizine">
+        <Item identifier="antibleeding1"/>
+        </Item>
+        <Item identifier="tsm_lm_czbren3">
+        <Item identifier="lm_556_mag" amount="8"/>
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="tsm_hiredgun_med" commonness="0" tags="bandit" job="medicaldoctor" behavior="Patrol" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.6" aimspeed="10" aimaccuracy="1" reportrange="2500" skillmultiplier="3">
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="medicseparatistsuniform1" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="captainsseparatistcap2" equip="true" />
+        <Item identifier="antidama2" amount="8">
+        <Item identifier="antibloodloss2" amount="8"/>
+        <Item identifier="antibleeding3" amount="2"/>
+        </Item>
+        <Item identifier="tsm_mp5sd">
+          <Item identifier="tsm_9_smgmag_kr" amount="7"/>
+          <Item identifier="tsm_medicalkits" amount="2"/>
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="tsm_hiredgun_hard" commonness="0" tags="bandit" job="structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="10" aimaccuracy="1" reportrange="2000" skillmultiplier="3">
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="captainseparatistsuniform2" equip="true" />
+        <Item identifier="tsm_pmc_vest" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
+        <Item identifier="boardingaxe">
+        <Item identifier="tsm_57_smgmag"/>
+        </Item>
+        <Item identifier="tsm_p90">
+          <Item identifier="tsm_57_smgmag" amount="7"/>
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="captainseparatistsuniform3" equip="true" />
+        <Item identifier="tsm_pmc_vest_heavy" equip="true" />
+        <Item identifier="ballistichelmet3" equip="true" />
+        <Item identifier="ceremonialsword">
+          <Item identifier="tsm_46_smgmag"/>
+        </Item>
+        <Item identifier="tsm_mp7">
+          <Item identifier="tsm_46_smgmag" amount="8"/>
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="securityseparatistsuniform2" equip="true" />
+        <Item identifier="tsm_pmc_vest" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
+        <Item identifier="boardingaxe">
+          <Item identifier="tsm_46_smgmag"/>
+        </Item>
+        <Item identifier="tsm_mp7">
+          <Item identifier="tsm_46_smgmag" amount="8"/>
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="securityseparatistsuniform1" equip="true" />
+        <Item identifier="tsm_pmc_vest" equip="true" />
+        <Item identifier="ballistichelmet3" equip="true" />
+        <Item identifier="ceremonialsword">
+          <Item identifier="tsm_45_smgmag_kr"/>
+        </Item>
+        <Item identifier="tsm_ump45">
+          <Item identifier="tsm_45_smgmag_kr" amount="7"/>
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.8">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="securityseparatistsuniform3" equip="true" />
+        <Item identifier="tsm_pmc_vest_heavy" equip="true" />
+        <Item identifier="piratehelmet" equip="true" />
+        <Item identifier="boardingaxe">
+          <Item identifier="lm_556cj_krmag"/>
+        </Item>
+        <Item identifier="tsm_lm_czbren3">
+          <Item identifier="tsm_grip_straight" equip="true"/>
+          <Item identifier="tsm_sight_tripled" equip="true"/>
+          <Item identifier="lm_556cj_mag" amount="3"/>
+          <Item identifier="lm_556kr_drum" amount="2"/>
+          <Item identifier="lm_556cj_mag" amount="3"/>
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.8">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="captainseparatistsuniform3" equip="true" />
+        <Item identifier="tsm_pmc_vest_heavy" equip="true" />
+        <Item identifier="ballistichelmet3" equip="true" />
+          <Item identifier="lm_762_51_ap_mag">
+        </Item>
+        <Item identifier="tsm_fkj_sg553">
+          <Item identifier="tsm_sight_reddot" equip="true"/>
+          <Item identifier="tsm_grip_mounts" equip="true"/>
+          <Item identifier="lm_762_51_drum" amount="3"/>
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.8">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="captainseparatistsuniform1" equip="true" />
+        <Item identifier="tsm_pmc_vest" equip="true" />
+        <Item identifier="piratehelmet" equip="true" />
+        <Item identifier="lm_762_51_ap_mag">
+        </Item>
+        <Item identifier="tsm_fkj_fal">
+          <Item identifier="tsm_flame_arrester" equip="true"/>
+          <Item identifier="tsm_grip_mounts" equip="true"/>
+          <Item identifier="lm_762_51_drum" amount="3"/>
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.8">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="captainseparatistsuniform1" equip="true" />
+        <Item identifier="tsm_pmc_vest" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
+        <Item identifier="lm_762_51_ap_mag">
+        </Item>
+        <Item identifier="tsm_fkj_g3a4">
+          <Item identifier="tsm_sight_tripled" equip="true"/>
+          <Item identifier="tsm_grip_mounts" equip="true"/>
+          <Item identifier="lm_762_51_drum" amount="3"/>
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="tsm_hiredgun_fire" commonness="0" tags="bandit" job="structuredefender" behavior="Patrol" healthmultiplier="1.4" healthmultiplierinmultiplayer="1.6" aimspeed="10" aimaccuracy="1" reportrange="2500" skillmultiplier="3">
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="watchmanclothes" equip="true" />
+        <Item identifier="tsm_pmc_vest_heavy" equip="true" />
+        <Item identifier="captainsseparatistcap1" equip="true" />
+        <Item identifier="tsm_medicalkits" amount="1">
+        </Item>
+        <Item identifier="tsm_mg42">
+          <Item identifier="tsm_mg42_mag" amount="3"/>
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="watchmanclothes" equip="true" />
+        <Item identifier="tsm_pmc_vest_heavy" equip="true" />
+        <Item identifier="piratehelmet" equip="true" />
+        <Item identifier="40mmgrenade" amount="1">
+        </Item>
+        <Item identifier="grenadelauncher">
+          <Item identifier="40mmgrenade" amount="4"/>
+          <Item identifier="40mmchemgrenade" amount="3"/>
+          <Item identifier="40mmnuke" amount="1"/>
         </Item>
       </ItemSet>
     </npc>

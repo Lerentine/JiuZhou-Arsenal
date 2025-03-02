@@ -255,7 +255,7 @@
   <Affliction name="出血恢复" identifier="tsm_ai_bleeding" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
     <Effect minstrength="0" maxstrength="1" interval="5" duration="5">
       <StatusEffect target="Character">
-        <ReduceAffliction type="bleeding" amount="15" />
+        <ReduceAffliction type="bleeding" amount="10" />
         <ReduceAffliction type="bloodloss" amount="0.5" />
       </StatusEffect>
     </Effect>
@@ -292,7 +292,7 @@
     <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,3" sheetelementsize="128,128" />
   </Affliction>
   <Affliction name="ai防水压防窒息" identifier="tsm_ai_asphyxiating_pressure" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="1">
-    <Effect minstrength="0" maxstrength="1" resistancefor="huskinfection,oxygenlow,incrementalstun" minresistance="0" maxresistance="1">
+    <Effect minstrength="0" maxstrength="1" resistancefor="huskinfection,oxygenlow,incrementalstun,tsm_ai_grenade,tsm_ai_grenade_1" minresistance="0" maxresistance="1">
       <AbilityFlag flagtype="ImmuneToPressure" />
       <StatusEffect target="Character" usehulloxygen="false" needsair="false" setvalue="true">
         <ReduceAffliction identifier="huskinfection" amount="50" />
@@ -303,9 +303,18 @@
   <Affliction name="ai防火" identifier="tsm_ai_fire" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="1">
     <Effect minstrength="0" maxstrength="1" resistancefor="burn" minresistance="0" maxresistance="0.4"></Effect>
   </Affliction>
-  <Affliction identifier="tsm_ai_tk" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
+  <Affliction identifier="tsm_ai_tk" isbuff="true" type="ai_debuff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" karmachangeonapplied="0" maxstrength="10" affectmachines="false">
     <Effect minstrength="0" maxstrength="1" strengthchange="0">
       <StatValue stattype="TeamAttackMultiplier" value="-1" />
+    </Effect>
+  </Affliction>
+  <Affliction name="震撼效果" identifier="tsm_ai_grenade" limbspecific="false" showiconthreshold="100" maxstrength="10" resetbetweenrounds="true">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0" maxafflictionoverlayalphamultiplier="0.9" />
+    <AfflictionOverlay texture="Content/UI/blindoverlay.png" />
+  </Affliction>
+  <Affliction name="震撼" identifier="tsm_ai_grenade_1" limbspecific="false" showiconthreshold="100" maxstrength="10" resetbetweenrounds="true">
+    <Effect minstrength="0" maxstrength="10" strengthchange="-1">
+      <StatValue stattype="RangedSpreadReduction" value="-0.4" />
     </Effect>
   </Affliction>
   <!--任务相关-->
