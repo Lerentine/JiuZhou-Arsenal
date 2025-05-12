@@ -31,5 +31,8 @@
     <tsm_yan_item3 color="255,255,255,255" textcolor="0,0,0,255">
       <Sprite name="tsm_yan_item3" texture="%ModDir%/npc/yan_item3.png" size="0.0, 0.0" sourcerect="195,27,1418,1191" origin="0.5,0.5" compress="false" tile="false" />
     </tsm_yan_item3>
+    <tsm_yan_item5 color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_yan_item5" texture="%ModDir%/npc/yan_item5.png" size="0.0, 0.0" sourcerect="195,27,1418,1191" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_yan_item5>
   </style>
 </Override>

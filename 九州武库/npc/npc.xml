@@ -28,7 +28,7 @@
     </npc>
     <npc identifier="tsm_yan" behavior="StayInHull" healthmultiplier="2" aimspeed="50" aimaccuracy="1">
       <Character speciesname="human" gender="female" hairindex="1" moustacheindex="0" faceattachmentindex="0" personality="professional">
-        <job name="captain" identifier="captain">
+        <job name="assistant" identifier="assistant">
           <skill identifier="electrical" level="100" />
           <skill identifier="mechanical" level="100" />
           <skill identifier="weapons" level="100" />

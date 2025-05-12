@@ -13,6 +13,8 @@
       <TagAction criteria="structureidentifier:sshellaglassf" tag="targetwall" submarinetype="outpost" continueifnotargetsfound="true" />
       <TagAction criteria="structureidentifier:topwindow" tag="targetwall" submarinetype="outpost" continueifnotargetsfound="true" />
       <TagAction criteria="structureidentifier:verticalwindow" tag="targetwall" submarinetype="outpost" continueifnotargetsfound="true" />
+      <TagAction criteria="structureidentifier:inwalll90cables" tag="targetwall" submarinetype="outpost" continueifnotargetsfound="true" />
+      <TagAction criteria="structureidentifier:ff_x_wall_cables" tag="targetwall" submarinetype="outpost" continueifnotargetsfound="true" />
       <!-- OutpostStructurePrefabs.xml -->
       <TagAction criteria="structureidentifier:icewall" tag="targetwall" submarinetype="outpost" continueifnotargetsfound="true" />
       <TagAction criteria="structureidentifier:icewall90" tag="targetwall" submarinetype="outpost" continueifnotargetsfound="true" />
@@ -292,8 +294,8 @@
       <TagAction criteria="humanprefabidentifier:occupation_leader" tag="enemy_leader" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:occupation_elite" tag="enemy_elite" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:occupation_elite_p" tag="enemy_elite" continueifnotargetsfound="true" />
-      <TagAction criteria="humanprefabidentifier:occupation_ex" tag="enemy_ex" continueifnotargetsfound="true" />
-      <TagAction criteria="humanprefabidentifier:occupation_ex_p" tag="enemy_ex" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:occupation_ex" tag="enemy_elite" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:occupation_ex_p" tag="enemy_elite" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:occupation" tag="enemy_pt" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:occupation_p" tag="enemy_pt" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:occupation_fire" tag="enemy_elite" continueifnotargetsfound="true" />
@@ -302,7 +304,7 @@
       <StatusEffectAction targettag="enemy_leader">
         <StatusEffect target="This">
           <Affliction identifier="tsm_occupation_jia_buff" strength="50" />
-          <Affliction identifier="tsm_ai_tk" strength="50" />
+          <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard" />
           <Affliction identifier="tsm_ai_stun_5" strength="50" />
         </StatusEffect>
         <StatusEffect target="This" UseHealthWindow="false" />
@@ -310,7 +312,7 @@
       <StatusEffectAction targettag="enemy_elite">
         <StatusEffect target="This">
           <Affliction identifier="tsm_occupation_yi_buff" strength="50" />
-          <Affliction identifier="tsm_ai_tk" strength="50" />
+          <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard" />
           <Affliction identifier="tsm_ai_stun_2" strength="50" />
         </StatusEffect>
         <StatusEffect target="This" UseHealthWindow="false" />
@@ -436,8 +438,8 @@
       <TagAction criteria="humanprefabidentifier:beowulf_elite_p" tag="enemy_elite" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:beowulf_breaker" tag="enemy_elite" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:beowulf_fire" tag="enemy_pt" continueifnotargetsfound="true" />
-      <TagAction criteria="humanprefabidentifier:beowulf_ex" tag="enemy_ex" continueifnotargetsfound="true" />
-      <TagAction criteria="humanprefabidentifier:beowulf_ex_p" tag="enemy_ex" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:beowulf_ex" tag="enemy_elite" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:beowulf_ex_p" tag="enemy_elite" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:beowulf" tag="enemy_pt" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:beowulf_p" tag="enemy_pt" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:beowulf_sl" tag="enemy_leader" continueifnotargetsfound="true" />
@@ -448,7 +450,6 @@
           <Affliction identifier="tsm_beowulf_jia_buff" strength="50" />
           <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1" />
           <Affliction identifier="tsm_ai_stun_5" strength="50" />
-          <Affliction identifier="tsm_ai_tk" strength="50" />
         </StatusEffect>
         <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
@@ -632,14 +633,13 @@
       <TagAction criteria="humanprefabidentifier:yehuo_elite_p" tag="enemy_elite" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:yehuo" tag="enemy_pt" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:yehuo_p" tag="enemy_pt" continueifnotargetsfound="true" />
-      <TagAction criteria="humanprefabidentifier:yehuo_ex" tag="enemy_ex" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:yehuo_ex" tag="enemy_elite" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:yehuo_reinforcement" tag="enemy_elite" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:yehuo_leader_cce" tag="enemy_leader" continueifnotargetsfound="true" />
       <StatusEffectAction targettag="enemy_leader">
         <StatusEffect target="This">
           <Affliction identifier="tsm_yehuo_jia_buff" strength="50" />
           <Affliction identifier="tsm_ai_stun_5" strength="50" />
-          <Affliction identifier="tsm_ai_tk" strength="50" />
         </StatusEffect>
         <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
@@ -647,7 +647,7 @@
         <StatusEffect target="This">
           <Affliction identifier="tsm_yehuo_yi_buff" strength="50" />
           <Affliction identifier="tsm_ai_stun_2" strength="50" />
-          <Affliction identifier="tsm_ai_tk" strength="50" />
+          <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard" />
         </StatusEffect>
         <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
@@ -774,7 +774,6 @@
       <StatusEffectAction targettag="enemy_leader">
         <StatusEffect target="This">
           <Affliction identifier="tsm_anonymous_jia_buff" strength="50" />
-          <Affliction identifier="tsm_ai_tk" strength="50" />
           <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1" />
           <Affliction identifier="tsm_ai_stun_2" strength="50" />
         </StatusEffect>
@@ -828,6 +827,7 @@
         <StatusEffect target="This">
           <Affliction identifier="tsm_jz_buff" strength="50" />
           <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1" />
+          <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard" />
           <Affliction identifier="tsm_ai_stun_5" strength="50" />
         </StatusEffect>
         <StatusEffect target="This" UseHealthWindow="false" />
@@ -874,6 +874,7 @@
           <Affliction identifier="tsm_ai_tk" strength="50" />
           <Affliction identifier="tsm_ma_buff" strength="50" />
           <Affliction identifier="tsm_ai_stun_5" strength="50" />
+          <GiveTalentInfo giverandom="false" talentidentifiers="specops" />
           <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1,specops" />
         </StatusEffect>
         <StatusEffect target="This" UseHealthWindow="false" />
@@ -959,7 +960,32 @@
       <SpawnAction npcsetidentifier="Combat_Npc_Customisation" npcidentifier="tsm_outpost_combat_naiya" lootingisstealing="false" targettag="TSM" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
       <WaitAction time="0.1" />
       <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_3" tag="enemy_outpost_combat" continueifnotargetsfound="true" />.
-          <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_naiya" tag="enemy_outpost_combat" continueifnotargetsfound="true" /><StatusEffectAction targettag="enemy_outpost_combat"><StatusEffect target="This" enabledespawn="true"><Affliction identifier="tsm_ai_stun" strength="50" /><Affliction identifier="tsm_eyi_combat" strength="50" /><Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" /><Affliction identifier="tsm_ai_tk" strength="50" /><Affliction identifier="tsm_eyi_rev" strength="50" /><Affliction identifier="tsm_eyi_defend" strength="50" /><Affliction identifier="tsm_ai_fire" strength="50" /><GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1" /></StatusEffect><StatusEffect target="This" UseHealthWindow="false" /></StatusEffectAction></ScriptedEvent>
+          <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_naiya" tag="enemy_outpost_combat" continueifnotargetsfound="true" />
+      <StatusEffectAction targettag="enemy_outpost_combat">
+        <StatusEffect target="This" enabledespawn="true">
+          <Affliction identifier="tsm_ai_stun" strength="50" />
+          <Affliction identifier="tsm_eyi_combat" strength="50" />
+          <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
+          <Affliction identifier="tsm_ai_tk" strength="50" />
+          <Affliction identifier="tsm_eyi_rev" strength="50" />
+          <Affliction identifier="tsm_eyi_defend" strength="50" />
+          <Affliction identifier="tsm_ai_fire" strength="50" />
+          <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1" />
+          <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard" />
+        </StatusEffect>
+        <StatusEffect target="This" UseHealthWindow="false" />
+      </StatusEffectAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_cat_bb">
+    <TagAction criteria="crew" tag="player" continueifnotargetsfound="true" />
+    <TagAction criteria="bot" tag="player" continueifnotargetsfound="true" />
+    <TagAction criteria="player" tag="player" continueifnotargetsfound="true" />
+    <StatusEffectAction targettag="player">
+      <StatusEffect target="This">
+        <Affliction identifier="tsm_cat_bb" strength="10" />
+      </StatusEffect>
+    </StatusEffectAction>
+    </ScriptedEvent>
     <!--无限增援-->
     <ScriptedEvent identifier="lm_reinforcement_event">
       <TagAction criteria="crew" tag="crew" />
@@ -1170,6 +1196,45 @@
       </RNGAction>
       <Goto name="eventloop" maxtimes="4" />
     </ScriptedEvent>
+    <!--雇佣兵-->
+    <ScriptedEvent identifier="tsm_pmc_combat">
+      <TagAction criteria="humanprefabidentifier:tsm_hiredgun" tag="enemy_pmc" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:tsm_hiredgun_med" tag="enemy_pmc" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:tsm_hiredgun_hard" tag="enemy_pmc" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:tsm_hiredgun_fire" tag="enemy_pmc" continueifnotargetsfound="true" />
+      <StatusEffectAction targettag="enemy_pmc">
+        <StatusEffect target="This" enabledespawn="true">
+          <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
+          <Affliction identifier="tsm_ai_fire" strength="50" />
+        </StatusEffect>
+      </StatusEffectAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_pmc_combat_hard">
+      <TagAction criteria="humanprefabidentifier:tsm_hiredgun_med" tag="enemy_pmc_med" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:tsm_hiredgun_hard" tag="enemy_pmc_hard" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:tsm_hiredgun_fire" tag="enemy_pmc_fire" continueifnotargetsfound="true" />
+      <StatusEffectAction targettag="enemy_pmc_med">
+        <StatusEffect target="This" enabledespawn="true">
+          <Affliction identifier="tsm_eyi_defend" strength="50" />
+          <Affliction identifier="tsm_ai_bleeding" strength="50" />
+          <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1" />
+        </StatusEffect>
+      </StatusEffectAction>
+      <StatusEffectAction targettag="enemy_pmc_hard">
+        <StatusEffect target="This" enabledespawn="true">
+          <Affliction identifier="tsm_ai_bleeding" strength="50" />
+          <Affliction identifier="tsm_eyi_defend" strength="50" />
+        </StatusEffect>
+      </StatusEffectAction>
+      <StatusEffectAction targettag="tsm_hiredgun_fire">
+        <StatusEffect target="This" enabledespawn="true">
+          <Affliction identifier="tsm_eyi_defend" strength="50" />
+          <Affliction identifier="tsm_ai_bleeding" strength="50" />
+          <Affliction identifier="tsm_qrf_stun" strength="50" />
+          <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard" />
+        </StatusEffect>
+      </StatusEffectAction>
+    </ScriptedEvent>
     <!--站点突袭-->
     <!--克里斯入组-->
     <ScriptedEvent identifier="tsm_chris_join">
@@ -1234,60 +1299,48 @@
     </ScriptedEvent>
     <!--燕入组-->
     <ScriptedEvent identifier="tsm_yan_join">
-      <CheckDataAction identifier="tsm_chris_join_complete" condition="eq true">
+      <CheckDataAction identifier="tsm_yan_join_complete" condition="eq true">
        <Failure>
               <TagAction criteria="player" tag="player" />
               <SpawnAction npcsetidentifier="tsm_npcs_jz" npcidentifier="tsm_yan" targettag="tsm_yan" spawnlocation="Outpost" targetmoduletags="airlock" />
               <Label name="beginningofthejourney" />
               <TriggerAction target1tag="tsm_yan" target2tag="player" applytotarget1="tsm_yan" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
-              <ConversationAction targettag="triggerer_player" text="tsm_yan_join_1">
-                <Option text="tsm_yan_join_1_1">
-                  <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_yan_item1">
-                    <Failure>
-                      <ConversationAction targettag="triggerer_player" text="tsm_yan_join_2" />
-                      <GoTo name="beginningofthejourney" />
-                    </Failure>
-                    <Success>
-                      <RemoveItemAction targettag="triggerer_player" itemidentifier="tsm_yan_item1" />
-                      <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_yan_item2">
-                        <Failure>
-                          <ConversationAction targettag="triggerer_player" text="tsm_yan_join_2" />
-                          <GoTo name="beginningofthejourney" />
-                        </Failure>
-                        <Success>
-                          <RemoveItemAction targettag="triggerer_player" itemidentifier="tsm_yan_item2" />
-                          <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_yan_item3">
-                            <Failure>
-                              <ConversationAction targettag="triggerer_player" text="tsm_yan_join_2" />
+              <ConversationAction targettag="triggerer_player" text="tsm_yan_t1">
+                <Option text="tsm_yan_p1">
+                  <ConversationAction targettag="triggerer_player" text="tsm_yan_t2">
+                    <Option text="tsm_yan_p2">
+                      <ConversationAction targettag="triggerer_player" text="tsm_yan_t3">
+                        <Option text="tsm_yan_p3">
+                          <CheckItemAction targettag="triggerer_player" itemtags="yan_item" amount="4">
+                           <Success>
+                            <ConversationAction targettag="triggerer_player" text="tsm_yan_t4">
+                             <Option text="tsm_yan_p_s1">
+                               <ConversationAction targettag="triggerer_player" text="tsm_yan_t_s1">
+                                 <Option text="tsm_yan_p_s2">
+                                   <ConversationAction targettag="triggerer_player" text="tsm_yan_t_s2"/>
+                                     <NPCChangeTeamAction npctag="tsm_yan" teamid="Team1" addtocrew="true" />
+                                     <SetDataAction identifier="tsm_yan_join_complete" value="true" />
+                                 </Option>
+                               </ConversationAction>
+                             </Option>
+                            </ConversationAction>
+                           </Success>
+                           <Failure>
+                            <ConversationAction targettag="triggerer_player" text="tsm_yan_t4">
+                            <Option text="tsm_yan_p_f">
+                             <ConversationAction targettag="triggerer_player" text="tsm_yan_t_f"/>
                               <GoTo name="beginningofthejourney" />
-                            </Failure>
-                            <Success>
-                              <RemoveItemAction targettag="triggerer_player" itemidentifier="tsm_yan_item3" />
-                              <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_yan_item4">
-                                <Failure>
-                                  <ConversationAction targettag="triggerer_player" text="tsm_yan_join_2" />
-                                  <GoTo name="beginningofthejourney" />
-                                </Failure>
-                                <Success>
-                                  <RemoveItemAction targettag="triggerer_player" itemidentifier="tsm_yan_item4" />
-                                  <ConversationAction targettag="triggerer_player" text="tsm_yan_join_y">
-                                    <Option text="tsm_yan_join_p">
-                                      <NPCChangeTeamAction npctag="tsm_yan" teamid="Team1" addtocrew="true" />
-                                      <SetDataAction identifier="tsm_yan_join_complete" value="true" />
-                                    </Option>
-                                  </ConversationAction>
-                                </Success>
-                              </CheckItemAction>
-                            </Success>
+                            </Option>
+                            </ConversationAction>
+                           </Failure>
                           </CheckItemAction>
-                        </Success>
-                      </CheckItemAction>
-                    </Success>
-                  </CheckItemAction>
-                </Option>
-                <Option text="tsm.b8" endconversation="false">
-                  <ConversationAction text="...." targettag="triggerer_player" />
-                  <GoTo name="beginningofthejourney" />
+                        </Option>
+                        <Option text="tsm_yan_p4">
+                          <GoTo name="beginningofthejourney" />
+                        </Option>
+                      </ConversationAction>
+                    </Option>
+                  </ConversationAction>
                 </Option>
               </ConversationAction>
         </Failure>
@@ -1305,12 +1358,12 @@
       <ScriptedEvent identifier="tsm_opdeco_hrflyers_1" commonness="10" />
     </EventSet>
   </EventSet>
-  <EventSet identifier="chris_join" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" additive="true" selectalways="true" commonness="100">
+  <EventSet identifier="tsm_npc_join" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" additive="true" selectalways="true" commonness="100">
     <EventSet identifier="chris_join" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1" additive="true" selectalways="true" locationtype="outpost,city,research,military,mine,colony,settlement,construction,camp,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory,shipyard,fusion">
       <ScriptedEvent identifier="tsm_chris_join" commonness="100" />
     </EventSet>
-    <EventSet identifier="chris_join" minleveldifficulty="30" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1" additive="true" selectalways="true" locationtype="tsm_military">
-      <ScriptedEvent identifier="tsm_yan_join" commonness="50" />
+    <EventSet identifier="yan_join" minleveldifficulty="30" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1" additive="true" selectalways="true" locationtype="tsm_military,tsm_city,tsm_mine">
+      <ScriptedEvent identifier="tsm_yan_join" commonness="70" />
     </EventSet>
   </EventSet>
 </Randomevents>

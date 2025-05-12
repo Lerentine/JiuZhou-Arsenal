@@ -115,9 +115,9 @@
         <CharacterAbilityApplyStatusEffectsToAttacker>
           <StatusEffects>
             <StatusEffect type="OnAbility" target="Character" targetlimb="Torso" delay="0.1" disabledeltatime="true">
-              <Affliction identifier="stun" amount="1.2" />
+              <!--Affliction identifier="stun" amount="1.2" />
               <ParticleEmitter particle="ElectricShock" distancemin="0" distancemax="50" particleamount="5" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.2" />
-              <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="500" />
+              <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="500" /-->
             </StatusEffect>
           </StatusEffects>
         </CharacterAbilityApplyStatusEffectsToAttacker>
@@ -234,13 +234,27 @@
     <Description tag="talentdescription.tsm_operator_revolt" />
     <AbilityGroupInterval interval="0.9">
       <Conditions>
-        <AbilityConditionHasItem tags="tsm_operator_revolt,tsm_riotshields_round,stunner" requireall="true" />
+        <AbilityConditionHasItem tags="stunner" requireall="true" />
       </Conditions>
       <Abilities>
         <CharacterAbilityApplyStatusEffects>
           <StatusEffects>
             <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
-              <Affliction identifier="tsm_operator_revolt" amount="1.0" />
+              <Affliction identifier="tsm_operator_revolt_1" amount="1.0" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+    <AbilityGroupInterval interval="0.9">
+      <Conditions>
+        <AbilityConditionHasItem tags="tsm_operator_revolt,tsm_riotshields_round" requireall="true" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+              <Affliction identifier="tsm_operator_revolt_2" amount="1.0" />
             </StatusEffect>
           </StatusEffects>
         </CharacterAbilityApplyStatusEffects>
@@ -285,4 +299,5 @@
     </AbilityGroupInterval>
   </Talent>
   <!--获得35%的物理抗性，每次受到攻击时则减少5%抗性(最低为0)。如果在30s内没有受到攻击，则物理抗性缓慢恢复到百分之35.-->
+
 </Talents>

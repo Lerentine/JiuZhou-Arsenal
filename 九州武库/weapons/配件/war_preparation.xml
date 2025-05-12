@@ -87,7 +87,7 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="25">
       <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="iron" />
-      <RequiredItem identifier="iron" usecondition="true" mincondition="0.5" />
+      <RequiredItem identifier="iron" />
       <RequiredItem identifier="uex" />
       <RequiredItem identifier="sodium" />
     </Fabricate>
@@ -104,11 +104,11 @@
         <Sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="5000" frequency="2.0" />
         <ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" distancemax="500" particleamount="270" velocitymin="1500" velocitymax="2000" scalemin="0.7" scalemax="1.2" />
         <Explosion range="300.0" ballastfloradamage="100" structuredamage="20" levelwalldamage="140" itemdamage="350" force="5" debris="false" decal="explosion" decalsize="0.5" penetration="0.8">
-          <Affliction identifier="explosiondamage" strength="150" />
+          <Affliction identifier="explosiondamage" strength="100" />
           <Affliction identifier="stun" strength="4.0" />
         </Explosion>
         <Explosion range="500.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="5" penetration="0.5">
-          <Affliction identifier="explosiondamage" strength="100" dividebylimbcount="false" />
+          <Affliction identifier="explosiondamage" strength="80" dividebylimbcount="false" />
           <Affliction identifier="bleedingnonstop" probability="0.5" strength="10" dividebylimbcount="false" />
           <Affliction identifier="stun" strength="0.5" />
         </Explosion>
@@ -218,10 +218,10 @@
       </StatusEffect>
     </ItemComponent>
   </Item>
-  <Item name="震撼手雷" identifier="tsm_ai_grenade" hideinmenus="true" subcategory="war preparation" category="Weapon" cargocontaineridentifier="metalcrate" HideConditionBar="true" tags="smallitem,weapon,explosive,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.35" impactsoundtag="impact_metal_light">
+  <Item name="震撼手雷" identifier="tsm_ai_grenade" subcategory="war preparation" category="Weapon" cargocontaineridentifier="metalcrate" maxstacksize="12" maxstacksizecharacterinventory="6" HideConditionBar="true" tags="smallitem,weapon,explosive,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.35" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="453,33,41,46" />
     <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="222,398,54,93" origin="0.5,0.5" />
-    <Body radius="50" height="87" density="26" />
+    <Body radius="50" height="87" density="18" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="false" aimpos="27,25" />
     <RangedWeapon barrelpos="50,50" reload="0.1" spread="0" unskilledspread="0" combatPriority="100" drawhudwhenequipped="true" crosshairscale="0.4">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,1,1" />
@@ -240,26 +240,114 @@
     </ItemContainer>
     <aitarget sightrange="3000" soundrange="3500" fadeouttime="7" />
   </Item>
-  <Item identifier="tsm_ai_grenade_ammo" hideinmenus="true" subcategory="war preparation" category="Weapon" interactthroughwalls="true" HideConditionBar="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.35" impactsoundtag="impact_metal_heavy">
+  <Item name="震撼手雷" identifier="tsm_ai_grenade_ammo" hideinmenus="true" subcategory="war preparation" category="Weapon" interactthroughwalls="true" HideConditionBar="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.35" impactsoundtag="impact_metal_heavy">
     <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="453,33,41,46" />
     <Sprite texture="%ModDir%/weapons/bullet.png" depth="0.55" sourcerect="222,398,54,93" origin="0.5,0.5" />
-    <Body width="54" height="90" density="28" />
+    <Body width="54" height="90" density="18" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" launchimpulse="13.7" sticktocharacters="false">
-      <StatusEffect type="OnImpact" target="This" Condition="-200.0" delay="3." disabledeltatime="true">
+      <StatusEffect type="OnImpact" target="This" Condition="-200.0" delay="3.5" disabledeltatime="true">
           <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="10000" selectionmode="All" />
           <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="10000" />
-          <Explosion range="600.0" ballastfloradamage="100" structuredamage="20" levelwalldamage="140" itemdamage="500" force="5" severlimbsprobability="0.5" decal="explosion" decalsize="0.5" penetration="0.8">
-            <Affliction identifier="explosiondamage" strength="50" />
-            <Affliction identifier="tsm_ai_grenade" strength="10" />
-            <Affliction identifier="tsm_ai_grenade_1" strength="100" />
+        <Explosion range="300.0" ballastfloradamage="100" structuredamage="20" levelwalldamage="140" itemdamage="500" force="5" severlimbsprobability="0.5" decal="explosion" decalsize="0.5" penetration="0.8">
+          <Affliction identifier="explosiondamage" strength="50" />
+          <Affliction identifier="tsm_ai_grenade" strength="10" />
+          <Affliction identifier="tsm_ai_grenade_1" strength="100" />
+          <Affliction identifier="bleeding" strength="30" />
+          <Affliction identifier="concussion" strength="5" probability="0.8" />
+          <Affliction identifier="stun" strength="4" />
+        </Explosion>
+          <Explosion range="700.0" ballastfloradamage="100" structuredamage="20" levelwalldamage="140" itemdamage="500" force="5" severlimbsprobability="0.5" decal="explosion" decalsize="0.5" penetration="0.4">
+            <Affliction identifier="explosiondamage" strength="70" />
+            <Affliction identifier="tsm_ai_grenade" strength="5" />
+            <Affliction identifier="tsm_ai_grenade_1" strength="50" />
             <Affliction identifier="bleeding" strength="30" />
-            <Affliction identifier="concussion" strength="5" probability="0.8" />
+            <Affliction identifier="concussion" strength="5" probability="0.5" />
             <Affliction identifier="stun" strength="4" />
           </Explosion>
           <Remove />
         </StatusEffect>
     </Projectile>
+    <LightComponent AllowInGameEditing="false" lightcolor="255,0,0,255" canbeselected="false" range="10.0" IsOn="true" castshadows="false" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect"/>
+  </Item>
+  <Item name="黏性手雷" identifier="tsm_sticky_grenade" subcategory="war preparation" category="Weapon" cargocontaineridentifier="metalcrate" maxstacksize="8" maxstacksizecharacterinventory="4" HideConditionBar="true" tags="smallitem,weapon,explosive,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.1" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" minamount="1" maxamount="1" spawnprobability="0.5" notcampaign="true" notpvp="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="1" spawnprobability="0.2" />
+    <PreferredContainer secondary="armcab" />
+    <Upgrade gameversion="0.9.3.0" scale="0.5" />
+    <Price baseprice="200">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.35" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+      <Item identifier="sodium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="iron" />
+      <RequiredItem identifier="iron" />
+      <RequiredItem identifier="uex" />
+      <RequiredItem identifier="sodium" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/配件/grenade.png" sourcerect="417,26,173,382" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/grenade.png" sourcerect="417,26,173,382" depth="0.55" origin="0.5,0.5" />
+    <Body radius="173" height="382" density="30" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="false" aimpos="27,25" />
+    <RangedWeapon barrelpos="50,50" reload="0.1" spread="0" unskilledspread="0" combatPriority="100" drawhudwhenequipped="true" crosshairscale="0.4">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,1,1" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,1,1" />
+      <ParticleEmitter particle="grenadepin" emitinterval="10" particleamount="1" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+      <ParticleEmitter particle="grenadelever" emitinterval="10" particleamount="1" anglemin="120" anglemax="210" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+      <Sound file="Content/Items/Weapons/pinpull.ogg" type="OnUse" range="720" />
+      <RequiredItems items="grenade" type="Contained" msg="ItemMsgAmmoRequired" />
+      <StatusEffect type="OnUse" target="This" Condition="-200" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" SpawnWithId="tsm_sticky_grenade_ammo" drawinventory="false" hideitems="true">
+      <Containable items="tsm_sticky_grenade_ammo" hide="true" />
+    </ItemContainer>
+    <Quality>
+      <QualityStat stattype="ExplosionRadius" value="0.1" />
+      <QualityStat stattype="ExplosionDamage" value="0.1" />
+    </Quality>
+    <aitarget sightrange="3000" soundrange="3500" fadeouttime="7" />
+  </Item>
+  <Item name="黏性手雷" identifier="tsm_sticky_grenade_ammo" hideinmenus="true" subcategory="war preparation" category="Weapon" interactthroughwalls="true" HideConditionBar="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.1" impactsoundtag="impact_metal_heavy">
+    <InventoryIcon texture="%ModDir%/weapons/配件/grenade.png" sourcerect="417,26,173,382" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/grenade.png" sourcerect="417,26,173,382" depth="0.55" origin="0.5,0.5" />
+    <Body width="173" height="382" density="30" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="15" sticktocharacters="true" sticktoitems="true" sticktostructures="true" sticktodoors="true">
+      <StatusEffect type="OnImpact" target="This" Condition="-200.0" delay="3" disabledeltatime="true">
+        <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="10000" selectionmode="All" />
+        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="10000" />
+        <Explosion range="300.0" ballastfloradamage="100" structuredamage="20" levelwalldamage="140" itemdamage="350" force="5" debris="false" decal="explosion" decalsize="0.5" penetration="0.8">
+          <Affliction identifier="explosiondamage" strength="100" />
+          <Affliction identifier="stun" strength="4.0" />
+        </Explosion>
+        <Explosion range="500.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="5" penetration="0.5">
+          <Affliction identifier="explosiondamage" strength="80" dividebylimbcount="false" />
+          <Affliction identifier="bleedingnonstop" probability="0.5" strength="10" dividebylimbcount="false" />
+          <Affliction identifier="stun" strength="0.5" />
+        </Explosion>
+        <Explosion range="700.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="4" penetration="0.3">
+          <Affliction identifier="gunshotwound" probability="0.8" strength="30" dividebylimbcount="false" />
+          <Affliction identifier="bleedingnonstop" probability="0.5" strength="15" dividebylimbcount="false" />
+          <Affliction identifier="stun" strength="0.5" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <LightComponent AllowInGameEditing="false" lightcolor="255,0,0,255" canbeselected="false" range="10.0" IsOn="true" castshadows="false" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect"/>
   </Item>
   <!--C4-->
   <Item identifier="tsm_jz_c4" category="Weapon" subcategory="war preparation" tags="smallitem,weapon,remotedetonatable,explosive" isdangerous="true" maxstacksize="8" maxstacksizecharacterinventory="4" scale="0.6" cargocontaineridentifier="explosivecrate">
@@ -519,7 +607,7 @@
         <Remove />
       </StatusEffect>
     </ItemComponent>
-    <LightComponent AllowInGameEditing="false" lightcolor="255,0,0,255" canbeselected="false" range="10.0" IsOn="true" castshadows="false" />
+    <LightComponent AllowInGameEditing="false" lightcolor="255,0,0,255" canbeselected="false" range="30.0" IsOn="true" castshadows="false" />
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.1,0.1" anchor="BottomCenter" absoluteoffset="30,100" style="ItemUI" />
       <TickBox text="tos">

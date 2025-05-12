@@ -118,9 +118,9 @@
       <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
       <Projectile characterusable="false" hitscan="true" hitscancount="7" removeonhit="true" spread="11">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="252,218,94,100" scalemultiplier="1,0.5" />
-        <Attack structuredamage="0" targetforce="6" itemdamage="20" penetration="0.15" severlimbsprobability="0.5">
-          <Affliction identifier="gunshotwound" strength="12" />
-          <Affliction identifier="explosiondamage" strength="2" />
+        <Attack structuredamage="0" targetforce="6" itemdamage="20" penetration="0.2" severlimbsprobability="0.5">
+          <Affliction identifier="gunshotwound" strength="14" />
+          <Affliction identifier="explosiondamage" strength="4" />
           <Affliction identifier="explosiondamage" strength="2" probability="0.3" />
           <Affliction identifier="bleedingnonstop" strength="5" />
           <Affliction identifier="stun" strength="0.03" probability="0.3" />
@@ -152,8 +152,9 @@
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="252,218,94,100" scalemultiplier="1,0.5" />
         <ParticleEmitter particle="spark" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="252,218,94,100" scalemultiplier="1,1" />
         <Attack structuredamage="0" targetforce="6" itemdamage="20" severlimbsprobability="0.5">
-          <Affliction identifier="gunshotwound" strength="12" />
-          <Affliction identifier="burning" strength="8" />
+          <Affliction identifier="gunshotwound" strength="14" />
+          <Affliction identifier="burn" strength="4" />
+          <Affliction identifier="burning" strength="10" />
           <Affliction identifier="burning" strength="4" probability="0.3" />
           <Affliction identifier="bleedingnonstop" strength="5" />
           <Affliction identifier="stun" strength="0.03" probability="0.3" />
@@ -164,6 +165,7 @@
           <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
         </StatusEffect>
         <StatusEffect type="OnImpact" target="UseTarget">
+          <Fire size="0.02" />
           <Conditional entitytype="eq Structure" />
           <Conditional hastag="eq door" />
           <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="3" scalemax="6" />
@@ -193,10 +195,10 @@
       <Projectile characterusable="false" hitscan="true" hitscancount="1" removeonhit="true" spread="0">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="0,47,167,100" scalemultiplier="1,0.5" />
         <Attack structuredamage="2" targetforce="4" itemdamage="15" penetration="0.28" severlimbsprobability="0.5">
-          <Affliction identifier="explosiondamage" strength="20" />
+          <Affliction identifier="explosiondamage" strength="25" />
           <Affliction identifier="gunshotwound" strength="30" />
-          <Affliction identifier="bleedingnonstop" strength="20" />
-          <Affliction identifier="stun" strength="0.2" />
+          <Affliction identifier="bleeding" strength="20" />
+          <Affliction identifier="stun" strength="0.25" />
         </Attack>
         <StatusEffect type="OnImpact" target="UseTarget">
           <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -226,7 +228,7 @@
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="217,2,18,255" scalemultiplier="1,0.6" />
         <Attack structuredamage="1" targetforce="4" itemdamage="15" penetration="0.1" severlimbsprobability="0.5">
           <Affliction identifier="triton_7L" strength="4" />
-          <Affliction identifier="gunshotwound" strength="6" />
+          <Affliction identifier="gunshotwound" strength="8" />
           <Affliction identifier="stun" strength="0.1" />
         </Attack>
         <StatusEffect type="OnImpact" target="UseTarget">
@@ -269,7 +271,7 @@
         <!--reduce spread-->
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="150,150,200,200" scalemultiplier="1,0.5" />
         <Attack structuredamage="0" targetforce="4" itemdamage="0" severlimbsprobability="0">
-          <Affliction identifier="blunttrauma" strength="3" />
+          <Affliction identifier="blunttrauma" strength="1" />
           <Affliction identifier="stun" strength="0.3" />
           <Affliction identifier="incrementalstun" strength="8" />
           <Affliction identifier="tsm_slow" strength="0.06" MultiplyByMaxVitality="true" />
@@ -469,7 +471,7 @@
       <Projectile characterusable="false" hitscan="true" launchimpulse="30.0" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,150,150,175" scalemultiplier="1,0.6" />
         <Attack structuredamage="0.5" targetforce="3" itemdamage="7" severlimbsprobability="0.2">
-          <Affliction identifier="gunshotwound" strength="15" />
+          <Affliction identifier="gunshotwound" strength="17" />
           <Affliction identifier="electricshock" strength="6" />
           <Affliction identifier="emp" strength="6" />
           <Affliction identifier="electricshock" strength="3" probability="0.2" />
@@ -503,9 +505,9 @@
       <Projectile characterusable="false" hitscan="true" launchimpulse="30.0" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,150,150,175" scalemultiplier="1,0.6" />
         <Attack structuredamage="0.5" targetforce="3" itemdamage="7" penetration="0.35" severlimbsprobability="0.2">
-          <Affliction identifier="gunshotwound" strength="20" />
-          <Affliction identifier="gunshotwound" strength="3" probability="0.15" />
-          <Affliction identifier="gunshotwound" strength="3" probability="0.3" />
+          <Affliction identifier="gunshotwound" strength="22" />
+          <Affliction identifier="gunshotwound" strength="4" probability="0.15" />
+          <Affliction identifier="gunshotwound" strength="4" probability="0.3" />
           <Affliction identifier="bleeding" strength="5" probability="0.15" />
           <Affliction identifier="bleeding" strength="10" probability="0.15" />
           <Affliction identifier="bleeding" strength="15" />
@@ -535,7 +537,7 @@
       <Projectile characterusable="false" hitscan="true" launchimpulse="30.0" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,150,150,175" scalemultiplier="1,0.6" />
         <Attack structuredamage="0.5" targetforce="3" itemdamage="7" severlimbsprobability="0.2">
-          <Affliction identifier="gunshotwound" strength="15" />
+          <Affliction identifier="gunshotwound" strength="17" />
           <Affliction identifier="acidburn" strength="3" />
           <Affliction identifier="gunshotwound" strength="2" probability="0.15" />
           <Affliction identifier="gunshotwound" strength="1" probability="0.3" />
@@ -569,7 +571,7 @@
       <Projectile characterusable="false" hitscan="true" launchimpulse="30.0" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,150,150,175" scalemultiplier="1,0.6" />
         <Attack structuredamage="0.5" targetforce="3" itemdamage="7" severlimbsprobability="0.2">
-          <Affliction identifier="gunshotwound" strength="15" />
+          <Affliction identifier="gunshotwound" strength="17" />
           <Affliction identifier="burning" strength="10" />
           <Affliction identifier="burn" strength="2" />
           <Affliction identifier="gunshotwound" strength="3" probability="0.15" />
@@ -585,6 +587,7 @@
           <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,150,150,175" />
         </StatusEffect>
         <StatusEffect type="OnImpact" target="UseTarget">
+          <Fire size="0.5" />
           <Conditional entitytype="eq Structure" />
           <Conditional hastag="eq door" />
           <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
@@ -603,10 +606,10 @@
       <Projectile characterusable="false" hitscan="true" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
         <Attack structuredamage="0.5" targetforce="2" itemdamage="7" severlimbsprobability="0.3">
-          <Affliction identifier="gunshotwound" strength="13" />
-          <Affliction identifier="emp" strength="3" />
+          <Affliction identifier="gunshotwound" strength="15" />
+          <Affliction identifier="emp" strength="6" />
           <Affliction identifier="gunshotwound" strength="6" probability="0.15" />
-          <Affliction identifier="electricshock" strength="6" />
+          <Affliction identifier="electricshock" strength="8" />
           <Affliction identifier="electricshock" strength="3" probability="0.2" />
           <Affliction identifier="bleeding" strength="5" probability="0.1" />
           <Affliction identifier="bleeding" strength="10" />
@@ -635,7 +638,7 @@
       <Projectile characterusable="false" hitscan="true" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
         <Attack structuredamage="0.5" targetforce="2" itemdamage="7" penetration="0.30" severlimbsprobability="0.3">
-          <Affliction identifier="gunshotwound" strength="18" />
+          <Affliction identifier="gunshotwound" strength="20" />
           <Affliction identifier="gunshotwound" strength="6" probability="0.4" />
           <Affliction identifier="bleeding" strength="5" probability="0.1" />
           <Affliction identifier="bleeding" strength="10" />
@@ -665,8 +668,8 @@
       <Projectile characterusable="false" hitscan="true" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
         <Attack structuredamage="0.5" targetforce="2" itemdamage="7" severlimbsprobability="0.3">
-          <Affliction identifier="gunshotwound" strength="13" />
-          <Affliction identifier="acidburn" strength="3" />
+          <Affliction identifier="gunshotwound" strength="15" />
+          <Affliction identifier="acidburn" strength="4" />
           <Affliction identifier="gunshotwound" strength="6" probability="0.15" />
           <Affliction identifier="acidburn" strength="2" probability="0.2" />
           <Affliction identifier="bleeding" strength="5" probability="0.1" />
@@ -697,8 +700,8 @@
       <Projectile characterusable="false" hitscan="true" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
         <Attack structuredamage="0.5" targetforce="2" itemdamage="7" severlimbsprobability="0.3">
-          <Affliction identifier="gunshotwound" strength="13" />
-          <Affliction identifier="burning" strength="8" />
+          <Affliction identifier="gunshotwound" strength="15" />
+          <Affliction identifier="burning" strength="10" />
           <Affliction identifier="burn" strength="2" />
           <Affliction identifier="gunshotwound" strength="6" probability="0.15" />
           <Affliction identifier="bleeding" strength="5" probability="0.1" />
@@ -711,6 +714,7 @@
           <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,175,115,175" />
         </StatusEffect>
         <StatusEffect type="OnImpact" target="UseTarget">
+          <Fire size="0.5" />
           <Conditional entitytype="eq Structure" />
           <Conditional hastag="eq door" />
           <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
@@ -729,9 +733,9 @@
       <Projectile characterusable="false" hitscan="true" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
         <Attack structuredamage="0.6" targetforce="2" itemdamage="7" penetration="0.05" severlimbsprobability="0.5">
-          <Affliction identifier="gunshotwound" strength="13.5" />
-          <Affliction identifier="electricshock" strength="6" />
-          <Affliction identifier="emp" strength="3" />
+          <Affliction identifier="gunshotwound" strength="16" />
+          <Affliction identifier="electricshock" strength="8" />
+          <Affliction identifier="emp" strength="5" />
           <Affliction identifier="electricshock" strength="3" probability="0.2" />
           <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
           <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
@@ -763,7 +767,7 @@
       <Projectile characterusable="false" hitscan="true" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
         <Attack structuredamage="0.6" targetforce="2" itemdamage="7" penetration="0.3" severlimbsprobability="0.5">
-          <Affliction identifier="gunshotwound" strength="19" />
+          <Affliction identifier="gunshotwound" strength="21" />
           <Affliction identifier="gunshotwound" strength="2" probability="0.2" />
           <Affliction identifier="gunshotwound" strength="2" probability="0.2" />
           <Affliction identifier="gunshotwound" strength="2" probability="0.2" />
@@ -795,10 +799,10 @@
       <Projectile characterusable="false" hitscan="true" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
         <Attack structuredamage="0.6" targetforce="2" itemdamage="7" penetration="0.05" severlimbsprobability="0.5">
-          <Affliction identifier="gunshotwound" strength="13.5" />
-          <Affliction identifier="acidburn" strength="3" />
+          <Affliction identifier="gunshotwound" strength="16" />
+          <Affliction identifier="acidburn" strength="4" />
           <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-          <Affliction identifier="acidburn" strength="2" probability="0.3" />
+          <Affliction identifier="acidburn" strength="3" probability="0.3" />
           <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
           <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
           <Affliction identifier="bleeding" strength="12" />
@@ -829,8 +833,8 @@
       <Projectile characterusable="false" hitscan="true" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
         <Attack structuredamage="0.6" targetforce="2" itemdamage="7" penetration="0.05" severlimbsprobability="0.5">
-          <Affliction identifier="gunshotwound" strength="13.5" />
-          <Affliction identifier="burning" strength="8" />
+          <Affliction identifier="gunshotwound" strength="16" />
+          <Affliction identifier="burning" strength="10" />
           <Affliction identifier="burn" strength="2" />
           <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
           <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
@@ -845,6 +849,7 @@
           <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,100,100,175" />
         </StatusEffect>
         <StatusEffect type="OnImpact" target="UseTarget">
+          <Fire size="0.5" />
           <Conditional entitytype="eq Structure" />
           <Conditional hastag="eq door" />
           <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
@@ -879,7 +884,7 @@
         <RequiredItem identifier="fulgurium" mincondition="0.25" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="fulgurium" outcondition="0.25" mincondition="0.9" />
       </Deconstruct>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -908,7 +913,7 @@
         <RequiredItem identifier="physicorium" mincondition="0.25" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="physicorium" outcondition="0.25" mincondition="0.9" />
       </Deconstruct>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -937,7 +942,7 @@
         <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="sulphuriteshard" outcondition="0.25" mincondition="0.9" />
       </Deconstruct>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -966,7 +971,7 @@
         <RequiredItem identifier="incendium" mincondition="0.25" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="incendium" outcondition="0.25" mincondition="0.9" />
       </Deconstruct>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -995,7 +1000,7 @@
         <RequiredItem identifier="fulgurium" mincondition="0.25" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="fulgurium" outcondition="0.25" mincondition="0.9" />
       </Deconstruct>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -1024,7 +1029,7 @@
         <RequiredItem identifier="physicorium" mincondition="0.25" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="physicorium" outcondition="0.25" mincondition="0.9" />
       </Deconstruct>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -1053,7 +1058,7 @@
         <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="tsm_58_sulphuriteshard" outcondition="0.25" mincondition="0.9" />
       </Deconstruct>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -1082,13 +1087,13 @@
         <RequiredItem identifier="incendium" mincondition="0.25" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="incendium" outcondition="0.25" mincondition="0.9" />
       </Deconstruct>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="雷素弹匣（5.45*39）" identifier="fkj_545_fulgurium_mag" subcategory="tsm_separatists" scale="0.29" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,545mag,12mag,fkj_mag,magazine,rpkmag,ak74ammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="雷素弹匣（5.45*39）" identifier="fkj_545_fulgurium_mag" subcategory="tsm_separatists" scale="0.29" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,545mag,12mag,fkj_mag,magazine,rpkmag,ak74ammo,handheldammo,deep_5.45x39" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="446,115,86,107" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.56" sourcerect="2314,33,80,107" origin="0.5,0.5" />
@@ -1111,13 +1116,13 @@
         <RequiredItem identifier="fulgurium" mincondition="0.25" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="fulgurium" outcondition="0.25" mincondition="0.9" />
       </Deconstruct>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="钢素弹匣（5.45*39）" identifier="fkj_545_physicorium_mag" subcategory="tsm_separatists" scale="0.29" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,545mag,12mag,fkj_mag,magazine,rpkmag,ak74ammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="钢素弹匣（5.45*39）" identifier="fkj_545_physicorium_mag" subcategory="tsm_separatists" scale="0.29" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,545mag,12mag,fkj_mag,magazine,rpkmag,ak74ammo,handheldammo,deep_5.45x39" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="449,237,101,107" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.56" sourcerect="2314,33,80,107" origin="0.5,0.5" />
@@ -1140,13 +1145,13 @@
         <RequiredItem identifier="physicorium" mincondition="0.25" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="physicorium" outcondition="0.25" mincondition="0.9" />
       </Deconstruct>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="酸液弹匣（5.45*39）" identifier="fkj_545_sulphuriteshard_mag" subcategory="tsm_separatists" scale="0.29" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,545mag,12mag,fkj_mag,magazine,rpkmag,ak74ammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="酸液弹匣（5.45*39）" identifier="fkj_545_sulphuriteshard_mag" subcategory="tsm_separatists" scale="0.29" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,545mag,12mag,fkj_mag,magazine,rpkmag,ak74ammo,handheldammo,deep_5.45x39" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="450,368,88,107" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.56" sourcerect="2314,33,80,107" origin="0.5,0.5" />
@@ -1169,13 +1174,13 @@
         <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="sulphuriteshard" outcondition="0.25" mincondition="0.9" />
       </Deconstruct>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="燃素弹匣（5.45*39）" identifier="fkj_545_incendium_mag" subcategory="tsm_separatists" scale="0.29" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,545mag,12mag,fkj_mag,magazine,rpkmag,ak74ammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="燃素弹匣（5.45*39）" identifier="fkj_545_incendium_mag" subcategory="tsm_separatists" scale="0.29" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,545mag,12mag,fkj_mag,magazine,rpkmag,ak74ammo,handheldammo,deep_5.45x39" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="462,496,95,115" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.56" sourcerect="2314,33,80,107" origin="0.5,0.5" />
@@ -1198,13 +1203,13 @@
         <RequiredItem identifier="incendium" mincondition="0.25" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="incendium" outcondition="0.25" mincondition="0.9" />
       </Deconstruct>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="雷素弹匣(5.56*45)" identifier="lm_556_fulgurium_mag" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="4" health="30" cargocontaineridentifier="tsm_metalcrate" tags="lm_magazine,smallitem,556mag,lm_mag,magazine,556ammo,556_300mag,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="雷素弹匣(5.56*45)" identifier="lm_556_fulgurium_mag" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="4" health="30" cargocontaineridentifier="tsm_metalcrate" tags="lm_magazine,smallitem,556mag,lm_mag,magazine,556ammo,556_300mag,handheldammo,deep_5.56x45" impactsoundtag="impact_metal_light">
       <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="842,115,79,93" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2303,0,49,93" origin="0.5,0.5" />
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -1227,13 +1232,13 @@
         <RequiredItem identifier="fulgurium" mincondition="0.25" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="fulgurium" outcondition="0.25" mincondition="0.9" />
       </Deconstruct>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="钢素弹匣(5.56*45)" identifier="lm_556_physicorium_mag" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="4" health="30" cargocontaineridentifier="tsm_metalcrate" tags="lm_magazine,smallitem,556mag,lm_mag,magazine,556ammo,556_300mag,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="钢素弹匣(5.56*45)" identifier="lm_556_physicorium_mag" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="4" health="30" cargocontaineridentifier="tsm_metalcrate" tags="lm_magazine,smallitem,556mag,lm_mag,magazine,556ammo,556_300mag,handheldammo,deep_5.56x45" impactsoundtag="impact_metal_light">
       <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="847,237,88,93" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2303,0,49,93" origin="0.5,0.5" />
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -1256,13 +1261,13 @@
         <RequiredItem identifier="physicorium" mincondition="0.25" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="physicorium" outcondition="0.25" mincondition="0.9" />
       </Deconstruct>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="酸液弹匣(5.56*45)" identifier="lm_556_sulphuriteshard_mag" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="4" health="30" cargocontaineridentifier="tsm_metalcrate" tags="lm_magazine,smallitem,556mag,lm_mag,magazine,556ammo,556_300mag,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="酸液弹匣(5.56*45)" identifier="lm_556_sulphuriteshard_mag" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="4" health="30" cargocontaineridentifier="tsm_metalcrate" tags="lm_magazine,smallitem,556mag,lm_mag,magazine,556ammo,556_300mag,handheldammo,deep_5.56x45" impactsoundtag="impact_metal_light">
       <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="845,368,80,93" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2303,0,49,93" origin="0.5,0.5" />
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -1285,13 +1290,13 @@
         <RequiredItem identifier="sulphuriteshard" mincondition="0.25" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="sulphuriteshard" outcondition="0.25" mincondition="0.9" />
       </Deconstruct>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="燃素弹匣(5.56*45)" identifier="lm_556_incendium_mag" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="4" health="30" cargocontaineridentifier="tsm_metalcrate" tags="lm_magazine,smallitem,556mag,lm_mag,magazine,556ammo,556_300mag,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="燃素弹匣(5.56*45)" identifier="lm_556_incendium_mag" subcategory="tsm_coalition" scale="0.23" category="weapon" maxstacksize="4" health="30" cargocontaineridentifier="tsm_metalcrate" tags="lm_magazine,smallitem,556mag,lm_mag,magazine,556ammo,556_300mag,handheldammo,deep_5.56x45" impactsoundtag="impact_metal_light">
       <InventoryIcon texture="%ModDir%/weapons/special_mag.png" sourcerect="863,496,78,93" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2303,0,49,93" origin="0.5,0.5" />
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -1314,7 +1319,7 @@
         <RequiredItem identifier="incendium" mincondition="0.25" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="plastic" outcondition="0.25" />
+        <Item identifier="plastic" outcondition="0.5" />
         <Item identifier="incendium" outcondition="0.25" mincondition="0.9" />
       </Deconstruct>
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />

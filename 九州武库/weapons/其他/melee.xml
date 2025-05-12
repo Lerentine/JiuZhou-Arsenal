@@ -408,7 +408,7 @@
         <sprite name="round_riotshields" texture="%ModDir%/weapons/其他/近战.png" canbehiddenbyotherwearables="false" rotation="180" sourcerect="756,116,115,329" inheritlimbdepth="false" depth="0.58" limb="Torso" scale="0.25" origin="-0.2,0.5" />
       </Wearable>
       <Body width="65" height="350" density="30" />
-      <Holdable slots="Any,LeftHand" aimpos="45,-20" holdpos="45,-20" handle1="-30,5" handle2="-30,5" controlpose="true" msg="ItemMsgPickUpSelect">
+      <Holdable slots="Any,LeftHand" canBeCombined="true" removeOnCombined="true" aimpos="45,-20" holdpos="45,-20" handle1="-30,5" handle2="-30,5" controlpose="true" msg="ItemMsgPickUpSelect">
         <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.95" setvalue="true" />
         <StatusEffect type="OnDamaged" target="This">
           <particleemitter particle="shrapnel" drawontop="true" particleamount="2" velocitymin="50" velocitymax="400" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.5" scalemax="1" highqualitycollisiondetection="False" />
@@ -430,7 +430,7 @@
         <QualityStat stattype="Condition" value="0.1" />
       </Quality>
     </Item>
-    <Item name="大型方盾" identifier="tsm_square_riotshields" subcategory="tsm_melee" category="Weapon" scale="0.25" tags="weapon,mediumitem" impactsoundtag="impact_metal_light" health="1200" damagedbyprojectiles="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" explosiondamagemultiplier="0.2">
+    <Item name="大型方盾" identifier="tsm_square_riotshields" subcategory="tsm_melee" category="Weapon" scale="0.25" tags="weapon,mediumitem" impactsoundtag="impact_metal_light" health="950" damagedbyprojectiles="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" explosiondamagemultiplier="0.2">
       <Price baseprice="456" soldeverywhere="false">
         <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="1" />
         <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" />
@@ -457,7 +457,7 @@
         <sprite name="square_riotshields" texture="%ModDir%/weapons/其他/近战.png" canbehiddenbyotherwearables="false" rotation="180" sourcerect="892,16,98,602" inheritlimbdepth="false" depth="0.58" limb="Torso" scale="0.25" origin="-0.2,0.5" />
       </Wearable>
       <Body width="65" height="600" density="30" />
-      <Holdable slots="Any,LeftHand+RightHand" aimpos="65,-30" holdpos="65,-30" handle1="-40,0" handle2="-40,0" controlpose="true" blocksplayers="true" msg="ItemMsgPickUpSelect">
+      <Holdable slots="Any,LeftHand+RightHand" canBeCombined="true" removeOnCombined="true" aimpos="65,-30" holdpos="65,-30" handle1="-40,0" handle2="-40,0" controlpose="true" blocksplayers="true" msg="ItemMsgPickUpSelect">
         <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.75" setvalue="true" />
         <StatusEffect type="OnDamaged" target="This">
           <particleemitter particle="shrapnel" drawontop="true" particleamount="2" velocitymin="50" velocitymax="400" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.5" scalemax="1" highqualitycollisiondetection="False" />
@@ -478,7 +478,7 @@
         </StatusEffect>
       </Holdable>
       <Quality>
-        <QualityStat stattype="Condition" value="0.1" />
+        <QualityStat stattype="Condition" value="0.15" />
       </Quality>
     </Item>
     <Item name="幻象" identifier="hxl_knife" subcategory="tsm_melee" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool,provocativetohumanai" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_metal_light" RequireAimToUse="True">

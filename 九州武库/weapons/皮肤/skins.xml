@@ -7,7 +7,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
     </Fabricate>
@@ -22,7 +22,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
     </Fabricate>
@@ -37,7 +37,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="greenpaint" />
     </Fabricate>
@@ -53,7 +53,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
     </Fabricate>
@@ -68,12 +68,103 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
     <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="0,134,468,138" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="GM6猎手涂装" identifier="tsm_gm6_skins_hunter" subcategory="tsm_skins" category="Equipment" scale="0.25" tags="smallitem,tsm_gun_skins,tsm_gm6_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1"></Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="blackpaint" />
+      <RequiredItem identifier="whitepaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="1153,1243,529,163" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="新月挑战者涂装-微风" identifier="tsm_xy_skins_wf" subcategory="tsm_skins" category="Equipment" scale="0.265" tags="smallitem,tsm_gun_skins,tsm_xy_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1"></Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="whitepaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="1189,2023,497,113" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="同昏挑战者涂装-屠龙" identifier="tsm_th_skins_tl" subcategory="tsm_skins" category="Equipment" scale="0.265" tags="smallitem,tsm_gun_skins,tsm_th_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1"></Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="whitepaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="1187,2142,418,112" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="同昏毒龙涂装" identifier="tsm_th_skins_dl" subcategory="tsm_skins" category="Equipment" scale="0.265" tags="smallitem,tsm_gun_skins,tsm_th_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1"></Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="whitepaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="1181,2309,423,112" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="沙鹰印花集涂装" identifier="tsm_de_skins_yhj" subcategory="tsm_skins" category="Equipment" scale="0.27" tags="smallitem,tsm_gun_skins,tsm_de_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1"></Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="whitepaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="632,2174,162,87" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="qbu10白夜涂装" identifier="tsm_qbu10_skins_baiye" subcategory="tsm_skins" category="Equipment" scale="0.25" tags="smallitem,tsm_gun_skins,tsm_qbu10_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1"></Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="redpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="1686,2252,656,248" depth="0.549" origin="0.5,0.5" />
     <Body width="110" height="70" density="0" />
     <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
   </Item>
@@ -84,7 +175,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="lldyj" mincondition="0.5" />
     </Fabricate>
@@ -103,7 +194,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="lldyj" mincondition="0.5" />
     </Fabricate>
@@ -122,7 +213,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="lldyj" mincondition="0.5" />
     </Fabricate>
@@ -135,6 +226,36 @@
       </StatusEffect>
     </Holdable>
   </Item>
+  <Item name="QBZ191蛇年涂装" identifier="tsm_qbz191_skins_witch" subcategory="tsm_skins" category="Equipment" scale="0.25" tags="smallitem,tsm_gun_skins,tsm_qbz191_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1"></Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="mvdxe" mincondition="0.5" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="1154,1618,444,139" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
+  </Item>
+  <Item name="QBU191蛇年涂装" identifier="tsm_qbu191_skins_witch" subcategory="tsm_skins" category="Equipment" scale="0.22" tags="smallitem,tsm_gun_skins,tsm_qbu191_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1"></Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="mvdxe" mincondition="0.5" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="1154,1803,545,198" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
+  </Item>
   <!--潜行者系列-->
   <Item name="AK74潜行者涂装" identifier="tsm_ak74_skins_qxz" subcategory="tsm_skins" category="Equipment" scale="0.25" tags="smallitem,tsm_gun_skins,tsm_ak74_skins" impactsoundtag="impact_soft">
     <!--PreferredContainer primary="storagecab" />
@@ -142,7 +263,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="greenpaint" />
     </Fabricate>
@@ -157,7 +278,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="greenpaint" />
     </Fabricate>
@@ -172,7 +293,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="greenpaint" />
     </Fabricate>
@@ -187,7 +308,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="greenpaint" />
     </Fabricate>
@@ -202,7 +323,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="greenpaint" />
     </Fabricate>
@@ -217,7 +338,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="greenpaint" />
     </Fabricate>
@@ -232,7 +353,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="greenpaint" />
     </Fabricate>
@@ -248,7 +369,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="whitepaint" />
     </Fabricate>
@@ -263,7 +384,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="whitepaint" />
     </Fabricate>
@@ -278,7 +399,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="whitepaint" />
     </Fabricate>
@@ -293,7 +414,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="whitepaint" />
     </Fabricate>
@@ -308,7 +429,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="whitepaint" />
     </Fabricate>
@@ -323,7 +444,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="whitepaint" />
     </Fabricate>
@@ -338,7 +459,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="whitepaint" />
     </Fabricate>
@@ -353,7 +474,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="whitepaint" />
     </Fabricate>
@@ -369,7 +490,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
       <RequiredItem identifier="bluepaint" />
@@ -385,7 +506,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
       <RequiredItem identifier="bluepaint" />
@@ -401,7 +522,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
       <RequiredItem identifier="bluepaint" />
@@ -417,7 +538,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
       <RequiredItem identifier="bluepaint" />
@@ -433,7 +554,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
       <RequiredItem identifier="bluepaint" />
@@ -449,7 +570,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
       <RequiredItem identifier="bluepaint" />
@@ -465,7 +586,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
       <RequiredItem identifier="bluepaint" />
@@ -475,19 +596,19 @@
     <Body width="110" height="70" density="0" />
     <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item name="191eva涂装" identifier="tsm_191_skins_eva" subcategory="tsm_skins" category="Equipment" scale="0.25" tags="smallitem,tsm_gun_skins,tsm_191_skins" impactsoundtag="impact_soft">
+  <Item name="QBZ191eva涂装" identifier="tsm_191_skins_eva" subcategory="tsm_skins" category="Equipment" scale="0.25" tags="smallitem,tsm_gun_skins,tsm_qbz191_skins" impactsoundtag="impact_soft">
     <!--PreferredContainer primary="storagecab" />
     <Price storeidentifier="merchantmilitary" buyprice="200" />
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
       <RequiredItem identifier="greenpaint" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
-    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="13,1614,432,111" depth="0.549" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="0,1590,445,139" depth="0.549" origin="0.5,0.5" />
     <Body width="110" height="70" density="0" />
     <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
   </Item>
@@ -497,7 +618,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
       <RequiredItem identifier="greenpaint" />
@@ -513,7 +634,7 @@
     <Price storeidentifier="merchantcity" buyprice="225" />
     <Price storeidentifier="merchantoutpost" buyprice="225" /-->
     <Deconstruct time="1"></Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
       <RequiredItem identifier="tsm_pq" />
       <RequiredItem identifier="redpaint" />
       <RequiredItem identifier="greenpaint" />
@@ -523,4 +644,135 @@
     <Body width="110" height="70" density="0" />
     <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
   </Item>
+  <!--沙漠风暴系列-->
+  <Item name="M4沙漠风暴涂装" identifier="tsm_m4_skins_ods" subcategory="tsm_skins" category="Equipment" scale="0.25" tags="smallitem,tsm_gun_skins,tsm_m4_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1"></Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="redpaint" />
+      <RequiredItem identifier="greenpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="1140,0,475,121" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="MK18沙漠风暴涂装" identifier="tsm_mk18_skins_ods" subcategory="tsm_skins" category="Equipment" scale="0.25" tags="smallitem,tsm_gun_skins,tsm_mk18_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1"></Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="redpaint" />
+      <RequiredItem identifier="greenpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="1146,134,377,110" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="M249沙漠风暴涂装" identifier="tsm_m249_skins_ods" subcategory="tsm_skins" category="Equipment" scale="0.25" tags="smallitem,tsm_gun_skins,tsm_m249_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1"></Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="redpaint" />
+      <RequiredItem identifier="greenpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="1125,284,574,163" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="MDR沙漠风暴涂装" identifier="tsm_mdr_skins_ods" subcategory="tsm_skins" category="Equipment" scale="0.23" tags="smallitem,tsm_gun_skins,tsm_mdr_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1"></Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="redpaint" />
+      <RequiredItem identifier="greenpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="1180,492,415,144" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="Famas沙漠风暴涂装" identifier="tsm_famas_skins_ods" subcategory="tsm_skins" category="Equipment" scale="0.2" tags="smallitem,tsm_gun_skins,tsm_famas_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1"></Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="redpaint" />
+      <RequiredItem identifier="greenpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="1271,872,502,150" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="L85A2沙漠风暴涂装" identifier="tsm_l85a2_skins_ods" subcategory="tsm_skins" category="Equipment" scale="0.25" tags="smallitem,tsm_gun_skins,tsm_l85a2_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1"></Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="redpaint" />
+      <RequiredItem identifier="greenpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="1274,698,440,136" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="GM6沙漠风暴涂装" identifier="tsm_gm6_skins_ods" subcategory="tsm_skins" category="Equipment" scale="0.25" tags="smallitem,tsm_gun_skins,tsm_gm6_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1"></Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="redpaint" />
+      <RequiredItem identifier="greenpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="1289,1042,529,163" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <!--黑铁-->
+  <Item name="GM6黑铁涂装" identifier="tsm_gm6_skins_ht" subcategory="tsm_skins" category="Equipment" scale="0.25" tags="smallitem,tsm_gun_skins,tsm_gm6_skins" impactsoundtag="impact_soft">
+    <!--PreferredContainer primary="storagecab" />
+    <Price storeidentifier="merchantmilitary" buyprice="200" />
+    <Price storeidentifier="merchantcity" buyprice="225" />
+    <Price storeidentifier="merchantoutpost" buyprice="225" /-->
+    <Deconstruct time="1"></Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator_skin" requiredtime="10">
+      <RequiredItem identifier="tsm_pq" />
+      <RequiredItem identifier="blackpaint" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2337,123,73,82" />
+    <Sprite texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="1148,1422,529,163" depth="0.549" origin="0.5,0.5" />
+    <Body width="110" height="70" density="0" />
+    <Holdable slots="Any" msg="ItemMsgPickUpSelect" />
+  </Item>
+
+
 </Items>

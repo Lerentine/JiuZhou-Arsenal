@@ -247,6 +247,13 @@
         <Affliction identifier="tsm_silence_buff" strength="2" />
       </StatusEffect>
     </Holdable>
+    <ItemComponent characterusable="true">
+      <!-- 发射榴弹音效 -->
+      <StatusEffect type="OnUse" target="Contained" targetslot="0">
+        <Conditional hastag="eq tsm_40mm_shot" />
+        <Sound file="%ModDir%/ogg/40mmshot.ogg" type="OnUse" range="1500" />
+      </StatusEffect>
+    </ItemComponent>
     <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
     <RangedWeapon reload="0.11" weapondamagemodifier="1.0" holdtrigger="true" barrelpos="250,1" spread="7" unskilledspread="60" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <!--准星图标-->
@@ -262,9 +269,10 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This">
-        <Conditional Condition="eq 0" targetcontaineditem="true" />
-        <Sound file="%ModDir%/ogg/reload9.ogg" range="2000" loop="false" />
+      <StatusEffect type="OnUse" target="Contained" targetslot="1">
+        <Conditional Condition="eq 0" />
+        <Sound file="%ModDir%/weapons/反抗军/reload7.ogg" range="2000" loop="false" />
+        <DropItem />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This">
         <!--后坐力,屏幕抖动-->
@@ -278,6 +286,12 @@
         <Sound file="%ModDir%/weapons/反抗军/bullet_concerete3.ogg" type="OnUse" range="1500" />
         <Sound file="%ModDir%/weapons/反抗军/bullet_concerete4.ogg" type="OnUse" range="1500" />
       </StatusEffect>
+      <StatusEffect type="Always" target="This" reload="1.4" reloadnoskill="1.9" stackable="false" setvalue="true">
+        <Conditional HasStatusTag="grenade_reload" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" reload="0.11" reloadnoskill="0.11" stackable="false" setvalue="true">
+        <Conditional HasStatusTag="neq grenade_reload" />
+      </StatusEffect>
       <!--抛弹壳-->
       <StatusEffect type="OnUse" target="This">
         <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="2" scalemax="2" />
@@ -287,8 +301,15 @@
       <RequiredSkill identifier="weapons" level="60" />
     </RangedWeapon>
     <!--里容器-->
-    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0" showdeadcharacters="false" showtexts="false">
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="1" showdeadcharacters="false" showtexts="false">
       <!-- 外观 itempos(x)-=26 -->
+      <Containable items="grenade" hide="true">
+        <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="4,216,75,35" origin="0.5,0.5" />
+        <StatusEffect type="OnContaining" target="This" tags="grenade_reload" duration="0.05" stackable="false">
+          <RequiredItem items="grenade" type="Contained" />
+        </StatusEffect>
+      </Containable>
+      <SubContainer capacity="1" maxstacksize="1">
       <!--1.弹匣-->
       <Containable items="tsm_58_mag" hide="false" itempos="-8,-12" depth="0.56" setactive="true">
         <!--换弹-->
@@ -301,14 +322,11 @@
           <conditional maxchargetime="eq 999" />
         </StatusEffect>
       </Containable>
-      <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      </SubContainer>
+      <SlotIcon slotindex="1" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
+      <SlotIcon slotindex="2" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1" showdeadcharacters="false" showtexts="false">
         <Containable items="mobilebattery" hide="true" excludebroken="false"></Containable>
-      </SubContainer>
-      <SlotIcon slotindex="2" texture="Content/UI/ContainerIndicators.png" sourcerect="4,216,75,35" origin="0.5,0.5" />
-      <SubContainer capacity="1" maxstacksize="1" hide="true">
-        <Containable items="grenade" hide="true" />
       </SubContainer>
     </ItemContainer>
     <StatusHUD drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="0" thermalgoggles="false" showdeadcharacters="false" showtexts="false" />

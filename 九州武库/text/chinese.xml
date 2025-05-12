@@ -11,7 +11,7 @@
   <!--mod内容-->
   <!--天赋-->
   <talentname.tsm_ai_asphyxiating_pressure>金狮子</talentname.tsm_ai_asphyxiating_pressure>
-  <talentname.tsm_lightningwizard>反刺甲</talentname.tsm_lightningwizard>
+  <!--talentname.tsm_lightningwizard>反刺甲</talentname.tsm_lightningwizard-->
   <talentdescription.tsm_lightningwizard>受到远程伤害时，会击晕攻击你的人</talentdescription.tsm_lightningwizard>
   <talentname.tsm_ai_stun>强力反应</talentname.tsm_ai_stun>
   <talentname.tsm_operator_revolt>暴乱挺进</talentname.tsm_operator_revolt>
@@ -108,6 +108,7 @@
   <tos>关闭传感器</tos>
   <dm>拆除地雷</dm>
   <entityname.tsm_collider_head>未穿透</entityname.tsm_collider_head>
+  <tsm_on>启用功能</tsm_on>
   <!--药品-->
   <entityname.triton_9C_antidote>特殊伤害清除剂</entityname.triton_9C_antidote>
   <entitydescription.triton_9C_antidote>用于治疗氚中毒、变革伤以及爆裂伤的药品</entitydescription.triton_9C_antidote>
@@ -126,9 +127,22 @@
   <entitydescription.tsm_m2_skins_9eagle>致同舟共寄的兄弟们</entitydescription.tsm_m2_skins_9eagle>
 
   <entityname.tsm_sks_skins_zjgz>SKS涂装：精金光泽</entityname.tsm_sks_skins_zjgz>
-  <entitydescription.tsm_sks_skins_zjgz>感谢CosmoChromE对本模组的帮助，发放定制涂装</entitydescription.tsm_sks_skins_zjgz>
+  <entitydescription.tsm_sks_skins_zjgz>感谢CosmoChromE为本模组英文翻译提供帮助，发放定制涂装</entitydescription.tsm_sks_skins_zjgz>
   <entityname.tsm_rpk16_skins_zy>rpk16涂装：折翼</entityname.tsm_rpk16_skins_zy>
-  <entitydescription.tsm_rpk16_skins_zy>完美男人定制</entitydescription.tsm_rpk16_skins_zy>
+  <entitydescription.tsm_rpk16_skins_zy>黄金涂装系列\n完美男人</entitydescription.tsm_rpk16_skins_zy>
+  <entityname.tsm_gm6_skins_hunter>GM6'山猫'涂装：猎手</entityname.tsm_gm6_skins_hunter>
+  <entitydescription.tsm_gm6_skins_hunter>感谢Privateer制作本模组枪械强度榜，发放定制涂装</entitydescription.tsm_gm6_skins_hunter>
+  <entityname.tsm_th_skins_dl>同昏涂装：毒龙</entityname.tsm_th_skins_dl>
+  <entitydescription.tsm_th_skins_dl>感谢牢万制作本模组枪械强度榜，发放定制涂装</entitydescription.tsm_th_skins_dl>
+  <entityname.tsm_qbu10_skins_baiye>QBU10式涂装：白夜</entityname.tsm_qbu10_skins_baiye>
+  <entitydescription.tsm_qbu10_skins_baiye>感谢白夜为本模组绘制贴图，发放定制涂装</entitydescription.tsm_qbu10_skins_baiye>
+  <entityname.tsm_de_skins_yhj>沙漠之鹰涂装：印花集</entityname.tsm_de_skins_yhj>
+  <entitydescription.tsm_de_skins_yhj>感谢New Black为本模组英文翻译提供帮助，发放定制涂装</entitydescription.tsm_de_skins_yhj>
+
+  <entityname.tsm_th_skins_tl>同昏涂装：屠龙</entityname.tsm_th_skins_tl>
+  <entitydescription.tsm_th_skins_tl>挑战者系列定制\nkwkw完成贝奥武夫挑战</entitydescription.tsm_th_skins_tl>
+  <entityname.tsm_xy_skins_wf>新月涂装：微风</entityname.tsm_xy_skins_wf>
+  <entitydescription.tsm_xy_skins_wf>挑战者系列定制\nClmensMine完成全废战挑战</entitydescription.tsm_xy_skins_wf>
 
   <entityname.tsm_vhs2_skins_t037y>VHS2涂装：雷龙</entityname.tsm_vhs2_skins_t037y>
   <entitydescription.tsm_vhs2_skins_t037y>献给最强大的战士\n击败本模组最强大的生物；雷龙，获取材料制作</entitydescription.tsm_vhs2_skins_t037y>
@@ -137,37 +151,42 @@
   <entityname.tsm_dp12_skins_t037y>DP12涂装：雷龙</entityname.tsm_dp12_skins_t037y>
   <entitydescription.tsm_dp12_skins_t037y>献给最强大的战士\n击败本模组最强大的生物；雷龙，获取材料制作</entitydescription.tsm_dp12_skins_t037y>
 
+  <entityname.tsm_qbz191_skins_witch>QBZ191涂装：青蛇</entityname.tsm_qbz191_skins_witch>
+  <entitydescription.tsm_qbz191_skins_witch>新年涂装系列\n夕下青竹林，大梦一场，回头转身，都是自度</entitydescription.tsm_qbz191_skins_witch>
+  <entityname.tsm_qbu191_skins_witch>QBU191涂装：白蛇</entityname.tsm_qbu191_skins_witch>
+  <entitydescription.tsm_qbu191_skins_witch>新年涂装系列\n夕下青竹林，大梦一场，回头转身，都是自度</entitydescription.tsm_qbu191_skins_witch>
+
   <entityname.tsm_ak74_skins_qxz>AK74涂装：潜行者</entityname.tsm_ak74_skins_qxz>
-  <entitydescription.tsm_ak74_skins_qxz>潜行者系列</entitydescription.tsm_ak74_skins_qxz>
+  <entitydescription.tsm_ak74_skins_qxz>潜行者系列\n“我不知道我所做的正确与否，也许我永远不会明白。但我还是搞定了，也许该为此庆幸……”‌</entitydescription.tsm_ak74_skins_qxz>
   <entityname.tsm_groza_skins_qxz>OTS Groza-1涂装：潜行者</entityname.tsm_groza_skins_qxz>
-  <entitydescription.tsm_groza_skins_qxz>潜行者系列</entitydescription.tsm_groza_skins_qxz>
+  <entitydescription.tsm_groza_skins_qxz>潜行者系列\n“我不知道我所做的正确与否，也许我永远不会明白。但我还是搞定了，也许该为此庆幸……”</entitydescription.tsm_groza_skins_qxz>
   <entityname.tsm_vss_skins_qxz>VSS涂装：潜行者</entityname.tsm_vss_skins_qxz>
-  <entitydescription.tsm_vss_skins_qxz>潜行者系列</entitydescription.tsm_vss_skins_qxz>
+  <entitydescription.tsm_vss_skins_qxz>潜行者系列\n“我不知道我所做的正确与否，也许我永远不会明白。但我还是搞定了，也许该为此庆幸……”</entitydescription.tsm_vss_skins_qxz>
   <entityname.tsm_asval_skins_qxz>Asval涂装：潜行者</entityname.tsm_asval_skins_qxz>
-  <entitydescription.tsm_asval_skins_qxz>潜行者系列</entitydescription.tsm_asval_skins_qxz>
+  <entitydescription.tsm_asval_skins_qxz>潜行者系列\n“我不知道我所做的正确与否，也许我永远不会明白。但我还是搞定了，也许该为此庆幸……”</entitydescription.tsm_asval_skins_qxz>
   <entityname.tsm_a545_skins_qxz>A545涂装：潜行者</entityname.tsm_a545_skins_qxz>
-  <entitydescription.tsm_a545_skins_qxz>潜行者系列</entitydescription.tsm_a545_skins_qxz>
+  <entitydescription.tsm_a545_skins_qxz>潜行者系列\n“我不知道我所做的正确与否，也许我永远不会明白。但我还是搞定了，也许该为此庆幸……”</entitydescription.tsm_a545_skins_qxz>
   <entityname.tsm_ks23_skins_qxz>KS23涂装：潜行者</entityname.tsm_ks23_skins_qxz>
-  <entitydescription.tsm_ks23_skins_qxz>潜行者系列</entitydescription.tsm_ks23_skins_qxz>
+  <entitydescription.tsm_ks23_skins_qxz>潜行者系列\n“我不知道我所做的正确与否，也许我永远不会明白。但我还是搞定了，也许该为此庆幸……”</entitydescription.tsm_ks23_skins_qxz>
   <entityname.tsm_svd_skins_qxz>SVD涂装：潜行者</entityname.tsm_svd_skins_qxz>
-  <entitydescription.tsm_svd_skins_qxz>潜行者系列</entitydescription.tsm_svd_skins_qxz>
+  <entitydescription.tsm_svd_skins_qxz>潜行者系列\n“我不知道我所做的正确与否，也许我永远不会明白。但我还是搞定了，也许该为此庆幸……”</entitydescription.tsm_svd_skins_qxz>
 
   <entityname.tsm_g3_skins_xs>G3A4涂装：锈蚀</entityname.tsm_g3_skins_xs>
-  <entitydescription.tsm_g3_skins_xs>锈蚀系列</entitydescription.tsm_g3_skins_xs>
+  <entitydescription.tsm_g3_skins_xs>锈蚀系列\n锈似跗骨之蛆，蚀入其膛</entitydescription.tsm_g3_skins_xs>
   <entityname.tsm_fal_skins_xs>Fal涂装：锈蚀</entityname.tsm_fal_skins_xs>
-  <entitydescription.tsm_fal_skins_xs>锈蚀系列</entitydescription.tsm_fal_skins_xs>
+  <entitydescription.tsm_fal_skins_xs>锈蚀系列\n锈似跗骨之蛆，蚀入其膛</entitydescription.tsm_fal_skins_xs>
   <entityname.tsm_sks_skins_xs>SKS涂装：锈蚀</entityname.tsm_sks_skins_xs>
-  <entitydescription.tsm_sks_skins_xs>锈蚀系列</entitydescription.tsm_sks_skins_xs>
+  <entitydescription.tsm_sks_skins_xs>锈蚀系列\n锈似跗骨之蛆，蚀入其膛</entitydescription.tsm_sks_skins_xs>
   <entityname.tsm_mg42_skins_xs>MG42涂装：锈蚀</entityname.tsm_mg42_skins_xs>
-  <entitydescription.tsm_mg42_skins_xs>锈蚀系列</entitydescription.tsm_mg42_skins_xs>
+  <entitydescription.tsm_mg42_skins_xs>锈蚀系列\n锈似跗骨之蛆，蚀入其膛</entitydescription.tsm_mg42_skins_xs>
   <entityname.tsm_ks23_skins_xs>KS23涂装：锈蚀</entityname.tsm_ks23_skins_xs>
-  <entitydescription.tsm_ks23_skins_xs>锈蚀系列</entitydescription.tsm_ks23_skins_xs>
+  <entitydescription.tsm_ks23_skins_xs>锈蚀系列\n锈似跗骨之蛆，蚀入其膛</entitydescription.tsm_ks23_skins_xs>
   <entityname.tsm_svd_skins_xs>SVD涂装：锈蚀</entityname.tsm_svd_skins_xs>
-  <entitydescription.tsm_svd_skins_xs>锈蚀系列</entitydescription.tsm_svd_skins_xs>
+  <entitydescription.tsm_svd_skins_xs>锈蚀系列\n锈似跗骨之蛆，蚀入其膛</entitydescription.tsm_svd_skins_xs>
   <entityname.tsm_m16a4_skins_xs>M16A4涂装：锈蚀</entityname.tsm_m16a4_skins_xs>
-  <entitydescription.tsm_m16a4_skins_xs>锈蚀系列</entitydescription.tsm_m16a4_skins_xs>
+  <entitydescription.tsm_m16a4_skins_xs>锈蚀系列\n锈似跗骨之蛆，蚀入其膛</entitydescription.tsm_m16a4_skins_xs>
   <entityname.tsm_m240b_skins_xs>M240B涂装：锈蚀</entityname.tsm_m240b_skins_xs>
-  <entitydescription.tsm_m240b_skins_xs>锈蚀系列</entitydescription.tsm_m240b_skins_xs>
+  <entitydescription.tsm_m240b_skins_xs>锈蚀系列\n锈似跗骨之蛆，蚀入其膛</entitydescription.tsm_m240b_skins_xs>
 
   <entityname.tsm_evo3_skins_eva>EVO3涂装：EVA</entityname.tsm_evo3_skins_eva>
   <entitydescription.tsm_evo3_skins_eva>EVA系列\n"只要微笑就好了"</entitydescription.tsm_evo3_skins_eva>
@@ -189,6 +208,24 @@
   <entitydescription.tsm_ar15_skins_eva>EVA系列\n"可我比你先成为了大人"</entitydescription.tsm_ar15_skins_eva>
   <entityname.tsm_m110_skins_eva>M110涂装：EVA</entityname.tsm_m110_skins_eva>
   <entitydescription.tsm_m110_skins_eva>EVA系列\n"可我比你先成为了大人"</entitydescription.tsm_m110_skins_eva>
+
+  <entityname.tsm_m4_skins_ods>M4涂装：沙漠风暴</entityname.tsm_m4_skins_ods>
+  <entitydescription.tsm_m4_skins_ods>沙漠风暴系列\n“这是一场打醒全世界的现代战争”</entitydescription.tsm_m4_skins_ods>
+  <entityname.tsm_mk18_skins_ods>MK18涂装：沙漠风暴</entityname.tsm_mk18_skins_ods>
+  <entitydescription.tsm_mk18_skins_ods>沙漠风暴系列\n“这是一场打醒全世界的现代战争”</entitydescription.tsm_mk18_skins_ods>
+  <entityname.tsm_m249_skins_ods>M249涂装：沙漠风暴</entityname.tsm_m249_skins_ods>
+  <entitydescription.tsm_m249_skins_ods>沙漠风暴系列\n“这是一场打醒全世界的现代战争”</entitydescription.tsm_m249_skins_ods>
+  <entityname.tsm_mdr_skins_ods>MDR涂装：沙漠风暴</entityname.tsm_mdr_skins_ods>
+  <entitydescription.tsm_mdr_skins_ods>沙漠风暴系列\n“这是一场打醒全世界的现代战争”</entitydescription.tsm_mdr_skins_ods>
+  <entityname.tsm_famas_skins_ods>FAMAS涂装：沙漠风暴</entityname.tsm_famas_skins_ods>
+  <entitydescription.tsm_famas_skins_ods>沙漠风暴系列\n“这是一场打醒全世界的现代战争”</entitydescription.tsm_famas_skins_ods>
+  <entityname.tsm_l85a2_skins_ods>L85A2涂装：沙漠风暴</entityname.tsm_l85a2_skins_ods>
+  <entitydescription.tsm_l85a2_skins_ods>沙漠风暴系列\n“这是一场打醒全世界的现代战争”</entitydescription.tsm_l85a2_skins_ods>
+  <entityname.tsm_gm6_skins_ods>GM6'山猫'涂装：沙漠风暴</entityname.tsm_gm6_skins_ods>
+  <entitydescription.tsm_gm6_skins_ods>沙漠风暴系列\n“这是一场打醒全世界的现代战争”</entitydescription.tsm_gm6_skins_ods>
+
+  <entityname.tsm_gm6_skins_ht>GM6'山猫'涂装：黑铁</entityname.tsm_gm6_skins_ht>
+  <entitydescription.tsm_gm6_skins_ht>黑铁系列</entitydescription.tsm_gm6_skins_ht>
   <!--矿物/金属/物品-->
   <entityname.tsm_tungstenore>钨矿</entityname.tsm_tungstenore>
   <entitydescription.tsm_tungstenore></entitydescription.tsm_tungstenore>
@@ -229,15 +266,21 @@
   <entityname.tsm_hydrocarbons>桶装油气</entityname.tsm_hydrocarbons>
   <entitydescription.tsm_hydrocarbons></entitydescription.tsm_hydrocarbons>
   <entityname.tsm_helmet_thermalgoggles>头盔用热成像</entityname.tsm_helmet_thermalgoggles>
-  <entitydescription.tsm_helmet_thermalgoggles></entitydescription.tsm_helmet_thermalgoggles>
-  <entityname.tsm_ballistic_faceshield_big>大型防弹面罩</entityname.tsm_ballistic_faceshield_big>
-  <entitydescription.tsm_ballistic_faceshield_big></entitydescription.tsm_ballistic_faceshield_big>
-  <entityname.tsm_ballistic_faceshield_small>小型防弹面罩</entityname.tsm_ballistic_faceshield_small>
-  <entitydescription.tsm_ballistic_faceshield_small></entitydescription.tsm_ballistic_faceshield_small>
+  <entitydescription.tsm_helmet_thermalgoggles>可以放入头盔解锁热成像功能，自带电池，耗尽请充电</entitydescription.tsm_helmet_thermalgoggles>
+  <entityname.tsm_ballistic_faceshield_big>头盔用防弹面罩（大型）</entityname.tsm_ballistic_faceshield_big>
+  <entitydescription.tsm_ballistic_faceshield_big>可以放入头盔给面部提供更好的保护</entitydescription.tsm_ballistic_faceshield_big>
+  <entityname.tsm_ballistic_faceshield_small>头盔用防弹面罩（小型）</entityname.tsm_ballistic_faceshield_small>
+  <entitydescription.tsm_ballistic_faceshield_small>可以放入头盔给面部提供更好的保护</entitydescription.tsm_ballistic_faceshield_small>
   <entityname.tsm_collider_head>未穿透</entityname.tsm_collider_head>
   <entitydescription.tsm_collider_head></entitydescription.tsm_collider_head>
   <entityname.tsm_protective_jaw>头盔用护颚</entityname.tsm_protective_jaw>
-  <entitydescription.tsm_protective_jaw></entitydescription.tsm_protective_jaw>
+  <entitydescription.tsm_protective_jaw>可以放入头盔护住你的下颚</entitydescription.tsm_protective_jaw>
+  <entityname.tsm_helmet_flashlight>头盔用识别仪</entityname.tsm_helmet_flashlight>
+  <entitydescription.tsm_helmet_flashlight>可以放入头盔来减少对队友造成的伤害，自带电池，耗尽请充电\n在陆地-10%对队友造成的伤害\n在水里-20%对队友造成的伤害</entitydescription.tsm_helmet_flashlight>
+  <entityname.tsm_helmet_nvd>头盔用夜视仪</entityname.tsm_helmet_nvd>
+  <entitydescription.tsm_helmet_nvd>可以放入头盔来解锁夜视仪功能，自带电池，耗尽请充电</entitydescription.tsm_helmet_nvd>
+  <entityname.tsm_helmet_screen>头盔用医疗显示屏</entityname.tsm_helmet_screen>
+  <entitydescription.tsm_helmet_screen>可以放入头盔让你实时获取队友的伤势情况</entitydescription.tsm_helmet_screen>
   <entityname.tsm_land_wz_dy>弹药投放舱</entityname.tsm_land_wz_dy>
   <entitydescription.tsm_land_wz_dy></entitydescription.tsm_land_wz_dy>
   <entityname.tsm_rz_jz>基座</entityname.tsm_rz_jz>
@@ -272,6 +315,8 @@
   <entitydescription.tsm_fabricator_ammo>专用于制作弹药的加工台\n安装方式：拿在手上，右键对准然后按使用键（默认E键）即可安装.</entitydescription.tsm_fabricator_ammo>
   <entityname.tsm_fabricator_quality>武器改造升级台</entityname.tsm_fabricator_quality>
   <entitydescription.tsm_fabricator_quality>专用于升级枪械品质或者改造枪械的加工台\n安装方式：拿在手上，右键对准然后按使用键（默认E键）即可安装.</entitydescription.tsm_fabricator_quality>
+  <entityname.tsm_fabricator_skin>涂装制造台</entityname.tsm_fabricator_skin>
+  <entitydescription.tsm_fabricator_skin>专用于制作枪械涂装的加工台，不需要耗电\n安装方式：拿在手上，右键对准然后按使用键（默认E键）即可安装.</entitydescription.tsm_fabricator_skin>
   <!--炮塔-->
   <entityname.tsm_sniper_turret>奇迹之海狙击炮</entityname.tsm_sniper_turret>
   <entitydescription.tsm_sniper_turret>采用高密度能量聚合核心，通过微型化的粒子加速器发射高能光束，具有惊人的射程与精确度，同时具备极高的抗干扰能力，使其在各种复杂战场环境中都能精准锁定目标。</entitydescription.tsm_sniper_turret>
@@ -361,7 +406,7 @@
   <entityname.lm_heavy_helmet>联盟重型战斗头盔</entityname.lm_heavy_helmet>
   <entitydescription.lm_heavy_helmet>加装防弹面罩和护颚，获得更好的防护</entitydescription.lm_heavy_helmet>
   <entityname.lm_fast_helmet_headset>联盟突击通讯头盔</entityname.lm_fast_helmet_headset>
-  <entitydescription.lm_fast_helmet_headset>安装有一副无线电耳机，让军官与同僚的声音可以更快地传递到士兵耳中</entitydescription.lm_fast_helmet_headset>
+  <entitydescription.lm_fast_helmet_headset>安装有一副无线电耳机，让军官与同僚的声音可以更快地传递到士兵耳中，搭配模块化设计，放入各种头盔配件来获得更多的战术选择\n第一格可放入物品：头盔用防弹面罩、头盔用热成像/夜视仪/显示屏\n第二格可放入物品:头盔用护颚、防毒面具\n第三格可放入物品：头盔用识别仪\n夜视仪因为不可抗力暂时不能使用</entitydescription.lm_fast_helmet_headset>
   <entityname.lm_fast_helmet_faceshield>联盟突击头盔（防弹面罩）</entityname.lm_fast_helmet_faceshield>
   <entitydescription.lm_fast_helmet_faceshield>一大块透明的防弹面罩被安装在上面，使原本最为危险的面部也有了一定的防护，可以放入一块大型防弹面罩，以获得更好的防护</entitydescription.lm_fast_helmet_faceshield>
   <entityname.lm_fast_helmet_thermalgoggles>联盟突击头盔（热成像）</entityname.lm_fast_helmet_thermalgoggles>
@@ -497,7 +542,7 @@
   <entityname.tsm_flashlight_t>战术手电筒</entityname.tsm_flashlight_t>
   <entitydescription.tsm_flashlight_t>更大的照明范围</entitydescription.tsm_flashlight_t>
   <entityname.tsm_jgzsq>激光指示器</entityname.tsm_jgzsq>
-  <entitydescription.tsm_jgzsq>放入枪内，可以提供友军识别，不会对友军造成伤害，但是在水下会失效\n-5%射速\n-10%伤害</entitydescription.tsm_jgzsq>
+  <entitydescription.tsm_jgzsq>可以放入枪械内，可以见少一定程度对队友的伤害\n在陆地上-70%对队友伤害\n在水里-30%对队友伤害</entitydescription.tsm_jgzsq>
   <entityname.tsm_thermalgoggles>奇迹之海热成像芯片</entityname.tsm_thermalgoggles>
   <entitydescription.tsm_thermalgoggles>安装在奇迹之海头盔上的芯片，让其解锁热成像的权限</entitydescription.tsm_thermalgoggles>
   <entityname.tsm_healthscanner>奇迹之海健康扫描芯片</entityname.tsm_healthscanner>
@@ -517,9 +562,9 @@
   <entityname.tsm_grip_mounts>脚架</entityname.tsm_grip_mounts>
   <entitydescription.tsm_grip_mounts>安装后，提供一定的稳定性\n-50%散布\n+40%流水抗性\n-20%移动速度\n+30%眩晕抗性</entitydescription.tsm_grip_mounts>
   <entityname.tsm_sight_reddot>红点瞄具</entityname.tsm_sight_reddot>
-  <entitydescription.tsm_sight_reddot>略微增加手持武器时视野偏移，减少开火时的准星增大\n+25%技能等级获取速度\n-4%移动速度</entitydescription.tsm_sight_reddot>
+  <entitydescription.tsm_sight_reddot>略微增加手持武器时视野偏移，减少开火时的准星增大\n+25%技能等级获取速度\n-4%移动速度\n-20%扩散</entitydescription.tsm_sight_reddot>
   <entityname.tsm_sight_holographic>全息瞄具</entityname.tsm_sight_holographic>
-  <entitydescription.tsm_sight_holographic>略微增加手持武器时视野偏移，加快瞄准时的准星缩小\n+25%技能等级获取速度\n-4%移动速度</entitydescription.tsm_sight_holographic>
+  <entitydescription.tsm_sight_holographic>略微增加手持武器时视野偏移，加快瞄准时的准星缩小\n+25%技能等级获取速度\n-4%移动速度\n-20%扩散</entitydescription.tsm_sight_holographic>
   <entityname.tsm_sight_double>G33组合瞄具</entityname.tsm_sight_double>
   <entitydescription.tsm_sight_double>增加手持武器时视野偏移\n-5%扩散\n-7%移动速度\n+13%技能等级获取速度</entitydescription.tsm_sight_double>
   <entityname.tsm_sight_pso>PSO AK瞄具</entityname.tsm_sight_pso>
@@ -535,14 +580,14 @@
   <entityname.tsm_sight_thermal>热成像瞄具</entityname.tsm_sight_thermal>
   <entitydescription.tsm_sight_thermal>提供热成像效果\n+10%武器操作获取速度</entitydescription.tsm_sight_thermal>
   <entityname.tsm_flame_arrester>枪口消焰器</entityname.tsm_flame_arrester>
-  <entitydescription.tsm_flame_arrester>略微增加武器伤害\n+13%伤害\n-3%射速</entitydescription.tsm_flame_arrester>
+  <entitydescription.tsm_flame_arrester>略微增加武器伤害\n+17%伤害\n-2%射速</entitydescription.tsm_flame_arrester>
   <entityname.tsm_recoil>枪口制退器</entityname.tsm_recoil>
   <entitydescription.tsm_recoil>略微增加武器伤害和精准度\n+10%伤害\n-7%扩散</entitydescription.tsm_recoil>
   <entityname.tsm_95_sight>95式长弓套件瞄具</entityname.tsm_95_sight>
   <entitydescription.tsm_95_sight>95式长弓套件瞄具,略微增加手持武器时的视野偏移\n+25%武器操作获取速度\n-7%扩散\n-5%移速</entitydescription.tsm_95_sight>
   <entityname.tsm_gun_grenade>下挂榴弹发射器</entityname.tsm_gun_grenade>
   <entitydescription.tsm_gun_grenade>安装后可发射榴弹</entitydescription.tsm_gun_grenade>
-  <entityname.tsm_advanced_barrel>精准射手步枪特制枪管</entityname.tsm_advanced_barrel>
+  <entityname.tsm_advanced_barrel>QBU191精准射手步枪特制枪管</entityname.tsm_advanced_barrel>
   <entitydescription.tsm_advanced_barrel>QBU-191先进精准步枪专用枪管，与武器搭配成为精准射手步枪\n+60%伤害\n-50%射速</entitydescription.tsm_advanced_barrel>
   <entityname.tsm_03_sight>03步枪瞄具</entityname.tsm_03_sight>
   <entitydescription.tsm_03_sight>03式步枪专用瞄具，略微增加手持武器时的视野偏移\n-10%扩散\n-5%移动速度</entitydescription.tsm_03_sight>
@@ -613,22 +658,35 @@
   <tsm_chris_p_e>我从不在意过程，我只关心结果</tsm_chris_p_e>
   <tsm_chris_c_e2>看来，你的船上得准备更多的打火机了。来吧，船长，让我们开始去清算那些有罪之人吧！</tsm_chris_c_e2>
   <tsm_chris_c_n>证明不了你的实力，就别打扰我！</tsm_chris_c_n>
-
+  <entityname.tsm_yan>燕</entityname.tsm_yan>
+  <entityname.tsm_pifu>蚍蜉</entityname.tsm_pifu>
   <charactername.tsm_yan>燕</charactername.tsm_yan>
   <npctitle.tsm_yan>‘猫科动物’军事顾问</npctitle.tsm_yan>
   <entityname.tsm_yan_item1>燕的小纸条·其一</entityname.tsm_yan_item1>
-  <entitydescription.tsm_yan_item1>这是燕的一张小纸条，集齐四种纸条就能招募燕</entitydescription.tsm_yan_item1>
+  <entitydescription.tsm_yan_item1>这是燕的一张小纸条，集齐四张纸条就能招募燕</entitydescription.tsm_yan_item1>
   <entityname.tsm_yan_item2>燕的小纸条·其二</entityname.tsm_yan_item2>
-  <entitydescription.tsm_yan_item2>这是燕的一张小纸条，集齐四种纸条就能招募燕</entitydescription.tsm_yan_item2>
+  <entitydescription.tsm_yan_item2>这是燕的一张小纸条，集齐四张纸条就能招募燕</entitydescription.tsm_yan_item2>
   <entityname.tsm_yan_item3>燕的小纸条·其三</entityname.tsm_yan_item3>
-  <entitydescription.tsm_yan_item3>这是燕的一张小纸条，集齐四种纸条就能招募燕</entitydescription.tsm_yan_item3>
+  <entitydescription.tsm_yan_item3>这是燕的一张小纸条，集齐四张纸条就能招募燕</entitydescription.tsm_yan_item3>
   <entityname.tsm_yan_item4>燕的小纸条·其四</entityname.tsm_yan_item4>
-  <entitydescription.tsm_yan_item4>这是燕的一张小纸条，集齐四种纸条就能招募燕</entitydescription.tsm_yan_item4>
-  <tsm_yan_join_1>我有四张纸条不见了，如果有人找到的话，我可以为找到的人提供军事顾问服务</tsm_yan_join_1>
-  <tsm_yan_join_1_1>提供纸条</tsm_yan_join_1_1>
-  <tsm_yan_join_2>您没有呢，请不要耽误我的时间</tsm_yan_join_2>
-  <tsm_yan_join_y>船长，我代表奇迹之海，向您和您的船员提供军事顾问服务，出于保密工作，我不能向您透露我的全部信息，不过你可以称呼我：燕</tsm_yan_join_y>
-  <tsm_yan_join_p>欢迎你的加入</tsm_yan_join_p>
+  <entitydescription.tsm_yan_item4>这是燕的一张小纸条，集齐四张纸条就能招募燕</entitydescription.tsm_yan_item4>
+  <entityname.tsm_yan_item5>燕的小纸条·其五</entityname.tsm_yan_item5>
+  <entitydescription.tsm_yan_item5>这是燕的一张小纸条，集齐四张纸条就能招募燕</entitydescription.tsm_yan_item5>
+  <tsm_yan_t1>你是刚刚停靠潜艇的船员？</tsm_yan_t1>
+  <tsm_yan_t2>你的同伴在医务室治疗从背后打来的子弹，不用想也知道，你们的战斗配合完全是一团糟。</tsm_yan_t2>
+  <tsm_yan_t3>听说过奇迹之海猫科动物军事顾问吗，我是其中之一，目前担任狙击手，我可以给你们船员提供最专业的军事训练，只需要付出一点马克。嗯…正好最近有活动，10000mk…算了7000mk买不了吃亏买不了上当</tsm_yan_t3>
+  <tsm_yan_t4>7000mk已经是特价了！不能再低了！</tsm_yan_t4>
+  <tsm_yan_t_s1>嗯？你居然知道我的名字，你是什么人</tsm_yan_t_s1>
+  <tsm_yan_t_s2>哈哈哈！我不该舍不得撕掉它们的，我喜欢你，有眼光有品味的水手！事实上我需要到潜艇完成实习能够拿到顾问资格，那么看在你是我的粉丝的份上，我就大发慈悲免费上船指导你们</tsm_yan_t_s2>
+  <tsm_yan_t_f>你这家伙！别跑！我一定要揍你一顿不可！！</tsm_yan_t_f>
+  <tsm_yan_p1>有什么事情吗？</tsm_yan_p1>
+  <tsm_yan_p2>额…你是？</tsm_yan_p2>
+  <tsm_yan_p3>讨价还价\n(需要收集4张燕的纸条,相同的也行）</tsm_yan_p3>
+  <tsm_yan_p4>这太贵了！我为什么不去人力资源部招募安全官</tsm_yan_p4>
+  <tsm_yan_p_s1>你叫燕是吧？</tsm_yan_p_s1>
+  <tsm_yan_p_s2>我在站点捡到了一些丢弃的速写漫画，上面作者的自画像很像你，你以前一定是名艺术家吧？我想要收藏它们，这些作品比起冰冷的金钱，是真正的无价之宝！</tsm_yan_p_s2>
+  <tsm_yan_p_f>这可是笔大钱！小姑娘，况且…哪有戴眼镜的狙击手</tsm_yan_p_f>
+
   <!--弹药-->
   <entityname.tsm_12_ld>12号鹿弹</entityname.tsm_12_ld>
   <entitydescription.tsm_12_ld>更少的弹丸数量，但是拥有更大的威力。</entitydescription.tsm_12_ld>
@@ -686,6 +744,12 @@
   <entitydescription.lm_556_incendium_mag>装填30发5.56*45口径燃素子弹，利用燃素水晶的特性，击中的目标会被引燃</entitydescription.lm_556_incendium_mag>
   <entityname.tsm_fragmentation_grenade>破片手雷</entityname.tsm_fragmentation_grenade>
   <entitydescription.tsm_fragmentation_grenade>常见的一种手雷，采用延迟引信，爆炸范围为6-10距离的破片杀伤。手持时，右键后按下'E'键依次拉开保险销和释放撞针卡勺。</entitydescription.tsm_fragmentation_grenade>
+  <entityname.tsm_fragmentation_grenade>破片手雷</entityname.tsm_fragmentation_grenade>
+  <entitydescription.tsm_fragmentation_grenade>常见的一种手雷，采用延迟引信，爆炸范围为6-10距离的破片杀伤。手持时，右键后按下'E'键依次拉开保险销和释放撞针卡勺。</entitydescription.tsm_fragmentation_grenade>
+  <entityname.tsm_ai_grenade>震撼爆破手雷</entityname.tsm_ai_grenade>
+  <entitydescription.tsm_ai_grenade>主要由常规部队配备，扔出去等待3.4s后引爆，爆炸中心可造成晕眩</entitydescription.tsm_ai_grenade>
+  <entityname.tsm_sticky_grenade>黏性手雷</entityname.tsm_sticky_grenade>
+  <entitydescription.tsm_sticky_grenade>一种扔出去可以黏在固体上的手雷，较重且无法温雷</entitydescription.tsm_sticky_grenade>
   <!--武器-->
   <!--节日-->
   <entityname.tsm_holiday_g11>G11无壳突击步枪·2024圣诞限定</entityname.tsm_holiday_g11>
@@ -740,7 +804,7 @@
   <entityname.tsm_201>201式班用机枪</entityname.tsm_201>
   <entitydescription.tsm_201>采用了现代化的设计理念，注重人机工效和实战性能。其枪身长度适中，便于携带和操作，同时空枪重量也得到了有效控制，减轻了士兵的负担。同时采用帆布弹链供弹方式，能够快速补充弹药，保证火力持续性,提高作战效率。既可以使用使用‖color:0,200,0,255‖帆布弹袋‖color:end‖，也可以使用‖color:0,200,0,255‖5.8mm步枪弹匣‖color:end‖，进一步拓宽了战场应对能力。</entitydescription.tsm_201>
   <entityname.tsm_advanced_95>95式突击步枪</entityname.tsm_advanced_95>
-  <entitydescription.tsm_advanced_95>总体性能达到同类武器先进水平的目标，使步兵班具有点、面杀伤和打击轻型装甲的能力，可安装扩展照明装置或者长弓套件下挂榴弹，使用‖color:0,200,0,255‖5.8mm子弹‖color:end‖</entitydescription.tsm_advanced_95>
+  <entitydescription.tsm_advanced_95>总体性能达到同类武器先进水平的目标，使步兵班具有点、面杀伤和打击轻型装甲的能力，可安装扩展照明装置，使用‖color:0,200,0,255‖5.8mm子弹‖color:end‖</entitydescription.tsm_advanced_95>
   <entityname.tsm_advanced_03>03式自动步枪</entityname.tsm_advanced_03>
   <entitydescription.tsm_advanced_03>该枪自动步枪机匣内装有较长的自动机导轨，增加了自动机后坐缓冲器，采用了恒温模锻的上下铝制机匣，上机匣可直接安装03式专用瞄具。下机匣及后罩等零件采用了钛铝合金材料。左、右护板，握把及枪托采用了强度高、耐高温的工程塑料，中空部分装附件筒，使用‖color:0,200,0,255‖5.8mm子弹‖color:end‖。</entitydescription.tsm_advanced_03>
   <entityname.tsm_qbz_191>QBZ-191制式步枪</entityname.tsm_qbz_191>
@@ -754,9 +818,11 @@
   <entityname.tsm_qbs>QBS-09 式半自动霰弹枪</entityname.tsm_qbs>
   <entitydescription.tsm_qbs>一把可靠性和环境适应能力极佳的半自动霰弹，无论是充满泥沙的海底，还是狭窄的站点，尽管枪身较短但带动的膛压足以荡平敌人</entitydescription.tsm_qbs>
   <entityname.tsm_krmagazine>奇迹之海弹鼓</entityname.tsm_krmagazine>
-  <entitydescription.tsm_krmagazine>可装填75发标准弹药的弹鼓，特殊的设计保证了可靠性，但是价格却得不到保证。</entitydescription.tsm_krmagazine>
-  <entityname.tsm_58_mag_kr>突击步枪弹鼓（5.8mm）</entityname.tsm_58_mag_kr>
-  <entitydescription.tsm_58_mag_kr>装填60发5.8mm子弹的弹鼓</entitydescription.tsm_58_mag_kr>
+  <entitydescription.tsm_krmagazine>可装填70发标准弹药的弹鼓，特殊的设计保证了可靠性，但是价格却得不到保证。</entitydescription.tsm_krmagazine>
+  <entityname.tsm_58_mag_kr>突击步枪扩容弹匣（5.8mm）</entityname.tsm_58_mag_kr>
+  <entitydescription.tsm_58_mag_kr>装填45发5.8mm子弹的弹鼓</entitydescription.tsm_58_mag_kr>
+  <entityname.tsm_58_mag_drum>突击步枪弹鼓（5.8mm）</entityname.tsm_58_mag_drum>
+  <entitydescription.tsm_58_mag_drum>装填60发5.8mm子弹的弹鼓</entitydescription.tsm_58_mag_drum>
   <entityname.tsm_58_drum_cj>突击步枪穿甲弹鼓（5.8mm）</entityname.tsm_58_drum_cj>
   <entitydescription.tsm_58_drum_cj>装填60发5.8mm穿甲弹的弹鼓</entitydescription.tsm_58_drum_cj>
   <entityname.tsm_magazinebg>奇迹之海变革弹匣</entityname.tsm_magazinebg>
@@ -764,7 +830,7 @@
   <entityname.tsm_magazinecj>奇迹之海穿甲弹匣</entityname.tsm_magazinecj>
   <entitydescription.tsm_magazinecj>里面装填了30发标准穿甲弹，能够有效应对冲进船舱的泥偶迅猛龙。弹匣上有穿甲弹标记，用以进行区分。</entitydescription.tsm_magazinecj>
   <entityname.tsm_drum_cj>奇迹之海穿甲弹鼓</entityname.tsm_drum_cj>
-  <entitydescription.tsm_drum_cj>里面装填了75发标准穿甲弹，弹匣上有穿甲弹标记，用以进行区分。</entitydescription.tsm_drum_cj>
+  <entitydescription.tsm_drum_cj>里面装填了70发标准穿甲弹，弹匣上有穿甲弹标记，用以进行区分。</entitydescription.tsm_drum_cj>
   <entityname.tsm_ammobox>奇迹之海弹药箱</entityname.tsm_ammobox>
   <entitydescription.tsm_ammobox>奇迹之海弹药箱
 [放入弹匣,右键+左键压弹.]</entitydescription.tsm_ammobox>
@@ -975,6 +1041,8 @@
   <entitydescription.tsm_fkj_ak105>短枪管更适合在狭小空间内使用，非常适合潜艇艇员进行舱内反击与突袭船坞。发射‖color:0,200,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak105>
   <entityname.tsm_fkj_ak105_l>AK105突击步枪(轻量化枪托)</entityname.tsm_fkj_ak105_l>
   <entitydescription.tsm_fkj_ak105_l>更轻的AK-105，并无其他改进。因为更换了枪托，记得携带枪械清洁工具。发射‖color:0,200,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_ak105_l>
+  <entityname.tsm_fkj_akm>反抗军AKM突击步枪</entityname.tsm_fkj_akm>
+  <entitydescription.tsm_fkj_akm>永恒经典，战争之王，有世界上最好的突击步枪之美誉，使用‖color:0,200,0,255‖7.62*39‖color:end‖口径子弹，棕色工程塑料颇具地球情怀，工艺简单可靠，枪口设计有斜切补偿器可以更好的抵消开火后坐力</entitydescription.tsm_fkj_akm>
   <entityname.tsm_fkj_am17>反抗军AM-17突击步枪</entityname.tsm_fkj_am17>
   <entitydescription.tsm_fkj_am17>为了满足反抗军更加安静的执行某些任务而诞生，搭载了特制消音器，但口径问题只列装在了小部分部队。发射‖color:0,200,0,255‖5.45*39‖color:end‖弹药。</entitydescription.tsm_fkj_am17>
   <entityname.tsm_fkj_sks>反抗军SKS西蒙诺夫步枪</entityname.tsm_fkj_sks>
@@ -1068,8 +1136,10 @@
   <entitydescription.fkj_m2_mag>安装于重机枪上的弹盒，内有一条150发的弹链，可提供重机枪长时间射击。体积过大不便携带，建议由副射手专门携带。</entitydescription.fkj_m2_mag>
   <entityname.fkj_svd_mag>SVD弹匣</entityname.fkj_svd_mag>
   <entitydescription.fkj_svd_mag>填了15发步枪弹的弹匣。因为体积原因射手不会选择一次性携带过多。</entitydescription.fkj_svd_mag>
-  <entityname.fkj_aa12_mag>反抗军霰弹弹鼓</entityname.fkj_aa12_mag>
-  <entitydescription.fkj_aa12_mag>装有18发霰弹的弹鼓，可以为AA-12提供一段时间的续航。</entitydescription.fkj_aa12_mag>
+  <entityname.fkj_aa12_mag>反抗军控制型霰弹弹鼓</entityname.fkj_aa12_mag>
+  <entitydescription.fkj_aa12_mag>装有20发霰弹的弹鼓，可以为AA-12提供一段时间的续航。</entitydescription.fkj_aa12_mag>
+  <entityname.fkj_aa12_mag_kill>反抗军杀伤型霰弹弹鼓</entityname.fkj_aa12_mag_kill>
+  <entitydescription.fkj_aa12_mag_kill>装有20发霰弹的弹鼓，可以为AA-12提供一段时间的续航。</entitydescription.fkj_aa12_mag_kill>
   <entityname.fkj_rpk_mag>RPK弹鼓</entityname.fkj_rpk_mag>
   <entitydescription.fkj_rpk_mag>装有95发5.45*39口径子弹的弹鼓，给RPK提供更为长久的续航。</entitydescription.fkj_rpk_mag>
   <entityname.fkj_9_39_mag>反抗军重型特种弹匣（9*39）</entityname.fkj_9_39_mag>
@@ -1222,7 +1292,7 @@
   <entitydescription.tsm_toolbox>大容量手提箱，运用异星材料制作，可免费申请售后</entitydescription.tsm_toolbox>
   <entityname.tsm_weaponbackpack>武器箱</entityname.tsm_weaponbackpack>
   <entitydescription.tsm_weaponbackpack>拥有9个槽位，可以用来装武器、弹药或者潜水服，也可以背在背上</entitydescription.tsm_weaponbackpack>
-  <entityname.tsm_bag_medium>协奏战术包</entityname.tsm_bag_medium>
+  <entityname.tsm_bag_medium>协奏战术背包</entityname.tsm_bag_medium>
   <entitydescription.tsm_bag_medium>战术背包，容量适中</entitydescription.tsm_bag_medium>
   <entityname.tsm_bag_small>背包</entityname.tsm_bag_small>
   <entitydescription.tsm_bag_small>多用途小容量背包，制作简单，但是容量较小</entitydescription.tsm_bag_small>
@@ -1334,7 +1404,7 @@
   <!--定制-->
   <npctitle.coalition_themohavemailman>莫哈维邮差</npctitle.coalition_themohavemailman>
   <npctitle.TSM_c_baiye>白夜</npctitle.TSM_c_baiye>
-  <npctitle.separatists_leader_rbq>RBQ</npctitle.separatists_leader_rbq>
+  <npctitle.separatists_rbq>RBQ</npctitle.separatists_rbq>
   <npctitle.coalition_AloneFllen>AloneFallen</npctitle.coalition_AloneFllen>
   <npctitle.separatists_000032>000032</npctitle.separatists_000032>
   <npctitle.beowulf_sl>殤-凌</npctitle.beowulf_sl>
@@ -1349,11 +1419,15 @@
   <npctitle.beowulf_fox>狐狸杀手</npctitle.beowulf_fox>
   <npctitle.tsm_soldier_sm>神茗</npctitle.tsm_soldier_sm>
   <npctitle.tsm_outpost_combat_naiya>奈亚</npctitle.tsm_outpost_combat_naiya>
-  <npctitle.yehuo_leader_cce>CosmoChromE</npctitle.yehuo_leader_cce>
+  <npctitle.yehuo_cce>CosmoChromE</npctitle.yehuo_cce>
   <npctitle.tsm_soldier_csms>彩色墨水</npctitle.tsm_soldier_csms>
   <npctitle.occupation_tarler>TarLer</npctitle.occupation_tarler>
   <npctitle.tsm_pgc_smallthree>small_three</npctitle.tsm_pgc_smallthree>
   <npctitle.beowulf_roware>罗威尔Roware</npctitle.beowulf_roware>
+  <npctitle.tsm_advanced_bzgt>冰镇骨头</npctitle.tsm_advanced_bzgt>
+  <npctitle.occupation_milan>知识管理者</npctitle.occupation_milan>
+  <npctitle.tsm_soldier_ay>A Y</npctitle.tsm_soldier_ay>
+  <npctitle.tsm_hiredgun_baidi>白帝</npctitle.tsm_hiredgun_baidi>
   <!--npc对话-->
   <tsm.jxg.help>你好，我是奇迹之海的军需官，请问您能需要什么帮助</tsm.jxg.help>
   <tsm.dh.yjsbm>用友军识别码兑换物品</tsm.dh.yjsbm>
@@ -1431,7 +1505,7 @@
   <missionheader0.tsm_combat_beowulf>岬角</missionheader0.tsm_combat_beowulf>
   <missionmessage0.tsm_combat_beowulf>无数的挑战者们，将利刃深深刺入巨龙的腹部杀死了巨龙。巨龙在弥留之际终于想起了自己的名字-贝奥武夫</missionmessage0.tsm_combat_beowulf>
   <missionname.tsm_combat_occupation>支配的王锡</missionname.tsm_combat_occupation>
-  <missiondescription.tsm_combat_occupation>联盟的占领军是联盟真正的精英，他们以重装和重火力闻名。他们正在对这一片区域进行军事管制。反抗军命令我们，清剿所有的联盟占领军，好为后来的部队清空通道。船长切记，在交火之前一定要做好装备。</missiondescription.tsm_combat_occupation>
+  <missiondescription.tsm_combat_occupation>联盟占领军作为联盟核心作战力量，以重型装甲与火力优势著称，当前已对该区域实施全面军事封锁。接反抗军指挥部最新指令：要求我部彻底肃清该区域敌方武装并炸掉反应堆，为后续主力部队开辟安全通道。请各舰船指挥官注意：接敌前务必完成战斗整备。</missiondescription.tsm_combat_occupation>
   <missionsuccess.tsm_combat_occupation>深不可测的要塞</missionsuccess.tsm_combat_occupation>
   <missionfailure.tsm_combat_occupation>这个结局如你所愿吗？</missionfailure.tsm_combat_occupation>
   <missionheader0.tsm_combat_occupation>深不可测的要塞</missionheader0.tsm_combat_occupation>
@@ -1443,19 +1517,19 @@
   <missionheader0.tsm_combat_coalition>战争起始</missionheader0.tsm_combat_coalition>
   <missionmessage0.tsm_combat_coalition>反抗军联络员：\n很高兴船长能够弃暗投明选择正确的道路。</missionmessage0.tsm_combat_coalition>
   <missionname.tsm_combat_separatists>执法者</missionname.tsm_combat_separatists>
-  <missiondescription.tsm_combat_separatists>当地的居民反对驻扎在[location1]的联盟部队。当联盟部队撤离后，反抗军居然悄悄的潜入了站点。而作为我们作为木卫二秩序的维护者，不能容忍敌军这种行为。船长，突袭这个站点，击杀他们的领导者，让反抗军们看看，谁才是执法者。</missiondescription.tsm_combat_separatists>
+  <missiondescription.tsm_combat_separatists>当地的居民反对驻扎在[location1]的联盟部队。当联盟部队撤离后，反抗军居然悄悄的潜入了站点。而我们作为木卫二秩序的维护者，不能容忍敌军这种行为。船长，突袭这个站点，击杀他们的领导者，让反抗军们看看，谁才是执法者。</missiondescription.tsm_combat_separatists>
   <missionsuccess.tsm_combat_separatists>破碎</missionsuccess.tsm_combat_separatists>
   <missionfailure.tsm_combat_separatists>这个结局如你所愿吗？</missionfailure.tsm_combat_separatists>
   <missionheader0.tsm_combat_separatists>镇压开始</missionheader0.tsm_combat_separatists>
   <missionmessage0.tsm_combat_separatists>联盟联络员：\n船长，在这之后不能松懈，我们还有更多仗要打。</missionmessage0.tsm_combat_separatists>
   <missionname.tsm_combat_Anonymous>突袭者-征服虚弱的灵魂</missionname.tsm_combat_Anonymous>
-  <missiondescription.tsm_combat_Anonymous>船长，各地的暴乱的消息已经传到了上将那里，最近上将的脸色不太好。我想我们得干点实事了，我定位到[location1]，反抗军的一伙精锐部队-尖锐突袭者在这里进行部署，他们准备突袭周围的站点，这种时候正是我们出击的时候！清剿所有的突袭者并炸掉反应堆</missiondescription.tsm_combat_Anonymous>
+  <missiondescription.tsm_combat_Anonymous>接战区司令部紧急通报：多地武装暴动已引发联盟高层关注，现确认反抗军精锐"尖锐突袭者"于[location1]建立了阵地，意图突袭周边设施，这次目标是清剿所有的突袭者并炸掉反应堆</missiondescription.tsm_combat_Anonymous>
   <missionsuccess.tsm_combat_Anonymous>突袭者之墓</missionsuccess.tsm_combat_Anonymous>
   <missionfailure.tsm_combat_Anonymous>这个结局如你所愿吗？</missionfailure.tsm_combat_Anonymous>
   <missionheader0.tsm_combat_Anonymous>碰撞</missionheader0.tsm_combat_Anonymous>
   <missionmessage0.tsm_combat_Anonymous>联盟联络员：\n船长，上将收到了咱们胜利的消息，并对我们表示嘉奖。同时，我们也审问出了这次反抗军‘起义’的幕后主使-维多利亚培德兰将军，该拟定下次作战计划了。</missionmessage0.tsm_combat_Anonymous>
   <missionname.tsm_combat_yehuo>野火-绽放的最后红花</missionname.tsm_combat_yehuo>
-  <missiondescription.tsm_combat_yehuo>野火反抗军通过消灭在[location1]的联盟的驻军，来削弱联盟在这个海域的统治，他们在攻占了大部分站点后，计划着最后一击。船长，野火反抗军是维多利亚培德兰将军手下精锐的部队，还拥有重火力，我们要尽快部署，来应对这次突袭。目标：清理所有反抗军并炸毁反应堆。</missiondescription.tsm_combat_yehuo>
+  <missiondescription.tsm_combat_yehuo>为削弱联盟在该海域的统治地位，野火反抗军率先突袭并歼灭了[location1]的联盟驻军。现据侦察情报显示，该部队在成功夺取该区域大部分据点后，正集结兵力准备发起总攻。这次任务目标：清理所有反抗军并炸毁反应堆。</missiondescription.tsm_combat_yehuo>
   <missionsuccess.tsm_combat_yehuo>熄灭</missionsuccess.tsm_combat_yehuo>
   <missionfailure.tsm_combat_yehuo>这个结局如你所愿吗？</missionfailure.tsm_combat_yehuo>
   <missionheader0.tsm_combat_yehuo>真将军姿态</missionheader0.tsm_combat_yehuo>
@@ -1471,9 +1545,9 @@
   <missionheader1.tsm_haulagecombat_1>已消灭盗窃者</missionheader1.tsm_haulagecombat_1>
   <missionmessage1.tsm_haulagecombat_1>窥探秘密的人付出了代价，现在，我们可以谈谈其他合作了</missionmessage1.tsm_haulagecombat_1>
   <missionname.tsm_combat_crosstalk>串扰侵袭</missionname.tsm_combat_crosstalk>
-  <missiondescription.tsm_combat_crosstalk>呼叫红松石，红松石，听到请回答！\n该死，他们把我们的信号干扰了，等等，有潜艇靠岸了。\n..........\n你们之前都去哪儿了？我们需要增援！\n这里是日暮山作战部渊献小队，准备拦截\n把这些联盟狗赶出我们的地盘！</missiondescription.tsm_combat_crosstalk>
+  <missiondescription.tsm_combat_crosstalk>呼叫红松石，红松石，听到请回答！\n该死，他们把我们的信号干扰了，等等，有潜艇靠岸了。\n..........\n你们之前都去哪儿了？我们需要增援！\n这里是奇迹之海先进作战部，准备拦截\n把这些联盟狗赶出我们的地盘！</missiondescription.tsm_combat_crosstalk>
   <missionsuccess.tsm_combat_crosstalk>风来了...</missionsuccess.tsm_combat_crosstalk>
-  <missionfailure.tsm_combat_crosstalk>报告，日暮山作战部，第二突击队，全员阵亡。</missionfailure.tsm_combat_crosstalk>
+  <missionfailure.tsm_combat_crosstalk>报告，全员阵亡。</missionfailure.tsm_combat_crosstalk>
   <missionheader0.tsm_combat_crosstalk>风来了...</missionheader0.tsm_combat_crosstalk>
   <missionmessage0.tsm_combat_crosstalk>感谢你船长，帮我们处理这些联盟的串扰中队，你放心，我们不会透露任何有关你的信息</missionmessage0.tsm_combat_crosstalk>
   <missionname.tsm_combat_escort>黑船</missionname.tsm_combat_escort>
@@ -1495,7 +1569,7 @@
   <missionheader0.tsm_adventists_save>第一次会面</missionheader0.tsm_adventists_save>
   <missionmessage0.tsm_adventists_save>在临走的时候她频频回头，似乎想要记住你的脸。</missionmessage0.tsm_adventists_save>
   <missionname.tsm_combat_advisers>"猫科动物"顾问</missionname.tsm_combat_advisers>
-  <missiondescription.tsm_combat_advisers>最近我们的部队在和反抗军作战中发现了一些端倪：反抗军的许多战术很眼熟，并且对联盟很有针对性。这种战术在以前联盟对奇迹之海作战时遇见过，所以我们断定，背后肯定有奇迹之海的人在指导他们一些战术。根据情报来看，奇迹之海的猫科动物顾问目前就在这所建筑内，内部还有大量反抗军的精英，这次目标是斩首所有的猫科动物军事顾问。</missiondescription.tsm_combat_advisers>
+  <missiondescription.tsm_combat_advisers>我方部队近期在与反抗军交战中注意到异常情况：敌方战术呈现显著针对性特征，其战略模式与联盟军过往在奇迹之海战役遭遇的战术体系高度吻合。经战术分析研判，确认有来自奇迹之海的军事顾问参与指导反抗军行动。根据最新情报显示，目标建筑内不仅聚集有奇迹之海猫科军事顾问，同时驻守大量反抗军精锐作战单位。本次作战任务为彻底清除敌方指挥中枢，首要歼灭所有猫科顾问。</missiondescription.tsm_combat_advisers>
   <missionsuccess.tsm_combat_advisers>斩首行动</missionsuccess.tsm_combat_advisers>
   <missionfailure.tsm_combat_advisers>今夜的星星都将溺死在水里</missionfailure.tsm_combat_advisers>
   <missionheader0.tsm_combat_advisers>斩首</missionheader0.tsm_combat_advisers>
@@ -1512,20 +1586,21 @@
   <missionfailure.tsm_combat_nz>第一枪宣判我的到来，第二枪宣布你的死亡</missionfailure.tsm_combat_nz>
   <missionheader0.tsm_combat_nz>枪王之王</missionheader0.tsm_combat_nz>
   <missionmessage0.tsm_combat_nz>子弹洞穿了大脑，恍惚之间，他像是站在了一个舞台之上，看见台下乌黑一片，但却能清晰听见两个人的讲话。\n“这台上扮演的是谁？”一个声音疑问。\n另一个声音回答道“台上之人看似嗤嗤蠢蠢却游刃有余，他扮演的若不是小丑，那便是国王了。”\n话音刚落，台下掌声四起，一曲欢乐颂响起。\n诸位，这便是-所罗门的结局。</missionmessage0.tsm_combat_nz>
+  <Override>
   <missionname.abandonedoutpostrescue2>军事派遣</missionname.abandonedoutpostrescue2>
-  <missiondescription.abandonedoutpostrescue2>有一伙雇佣兵绑架了富商并且在[location1]安营扎寨，富商的亲人们花钱想让我们把富商救回来。</missiondescription.abandonedoutpostrescue2>
+  <missiondescription.abandonedoutpostrescue2>据可靠线报，佣兵团于[location1]区域劫持知名商业领袖并建立临时据点。被劫持者家属已委托我方机构执行战术营救行动，首要任务为安全解救目标人物。</missiondescription.abandonedoutpostrescue2>
   <missionsuccess.abandonedoutpostrescue2>我们已成功解救人质。</missionsuccess.abandonedoutpostrescue2>
   <missionfailure.abandonedoutpostrescue2>未能成功解救人质。</missionfailure.abandonedoutpostrescue2>
   <missionheader0.abandonedoutpostrescue2>营救成功</missionheader0.abandonedoutpostrescue2>
   <missionmessage0.abandonedoutpostrescue2>人质们都上舰了。该回去复命了。</missionmessage0.abandonedoutpostrescue2>
 
   <missionname.abandonedoutpostrescue3>战争荒野</missionname.abandonedoutpostrescue3>
-  <missiondescription.abandonedoutpostrescue3>有一个中队左右的雇佣兵摧毁了[location1]并且绑架了许多人质，他们以此要挟周围的站点缴纳保护金，否则他们将会沿途摧毁所有的站点。周围站点的人花了大价钱，希望船长可以出面把人质营救出来</missiondescription.abandonedoutpostrescue3>
+  <missiondescription.abandonedoutpostrescue3>据前线侦察确认，约一个中队规模的雇佣兵对[location1]实施定点摧毁并劫持多名人质，现以人质安全为筹码向邻近站点勒索高额保护费。经战术评估，该武装团体具备快速机动打击能力，威胁若不满足要求将沿补给线持续实施设施摧毁。受影响设施联盟已与船长达成战略合作协议，委托执行特种救援作战。</missiondescription.abandonedoutpostrescue3>
   <missionsuccess.abandonedoutpostrescue3>我们已成功解救人质。</missionsuccess.abandonedoutpostrescue3>
   <missionfailure.abandonedoutpostrescue3>未能成功解救人质。</missionfailure.abandonedoutpostrescue3>
   <missionheader0.abandonedoutpostrescue3>营救成功</missionheader0.abandonedoutpostrescue3>
   <missionmessage0.abandonedoutpostrescue3>人质们都上舰了。该回去复命了。</missionmessage0.abandonedoutpostrescue3>
-
+  </Override>
   <tsm_escort_lm>现在情况有变，所有人放下武器投降，我们需要军事征用这条船</tsm_escort_lm>
   <tsm_escort_lm>军事征用，放下武器</tsm_escort_lm>
   <tsm_escort_lm>开火，击毙这些反动分子</tsm_escort_lm>
@@ -1543,7 +1618,7 @@
   <loadingscreentip>经过长时间的建设，冰上城市工程终于完结。据报道将会在所有项目验收成功之后对外开放，提供居住和商业服务--------奇迹之海</loadingscreentip>
   <loadingscreentip>DS104边境站点失联：奇迹之海已经派遣相关人员前去调查--------奇迹之海</loadingscreentip>
   <loadingscreentip>奇迹之海下辖三个武装部门：先进作战部、日暮山作战部、九州作战部，他们的职能分别对应对人作战、对公司安保以及对怪物作战</loadingscreentip>
-  <loadingscreentip>奇迹之海始终只算是一个企业，但是他木卫二开发、城市建设、科技研发等方面也扮演着关键角色。下属的部门几乎覆盖了木卫二所有的行业，例如军工制造、医疗制造、学校、船坞等等，甚至还有自己的遗孀站点</loadingscreentip>
+  <loadingscreentip>奇迹之海始终只算是一个企业，但是他在木卫二开发、城市建设、科技研发等方面也扮演着关键角色。下属的部门几乎覆盖了木卫二所有的行业，例如军工制造、医疗制造、学校、船坞等等</loadingscreentip>
   <loadingscreentip>降临派在展示‘神迹’之后，他们的信徒几何式增长，其中不免有联盟的高官这种拥有权力的人员--------奇迹之海</loadingscreentip>
   <loadingscreentip>降临派的宗旨是让他们独一无二的神降临在木卫二，但神的降临需要载体，木卫二目前没有任何生物适合做这个载体，所以他们现在的目标就是创造出一个完美的生物--------奇迹之海</loadingscreentip>
   <loadingscreentip>反抗军是从分离组织脱离出来的，他们更具有威胁，也更强大，意图推翻联盟的铁腕统治--------奇迹之海</loadingscreentip>

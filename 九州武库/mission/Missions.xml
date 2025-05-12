@@ -71,8 +71,8 @@
       <Character requirekill="true" moduleflags="banditleader" identifier="beowulf_sl" from="Combat_Npc_Customisation" />
       <Character requirekill="true" moduleflags="banditleader" identifier="beowulf_elite_p" from="beowulf_npcs" asfaraspossible="true" multiplayeronly="true" />
     </Characters>
-    <TriggerEvent state="0" delay="1" eventidentifier="tsm_combat_beowulf_event" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <TriggerEvent state="0" delay="1" eventidentifier="tsm_combat_beowulf_event" campaignonly="true" />
     <TriggerEvent state="0" delay="1" eventidentifier="tsm_beowulf_buff" campaignonly="true" />
     <TriggerEvent state="0" delay="1" eventidentifier="tsm_beowulf_buff_other" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_remove_husk" campaignonly="true" />
@@ -108,15 +108,15 @@
       <Character requirekill="true" identifier="occupation_qiuwu" from="Combat_Npc_Customisation" moduleflags="securitymodule" />
       <Character requirekill="true" identifier="occupation_elite_p" from="occupation_npcs" moduleflags="securitymodule" asfaraspossible="true" multiplayeronly="true" />
       <Character requirekill="true" identifier="occupation_ex" from="occupation_npcs" moduleflags="securitymodule" multiplayeronly="true" />
-      <Character requirekill="true" identifier="occupation_leader" from="occupation_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="occupation_milan" from="Combat_Npc_Customisation" moduleflags="securitymodule" />
       <Character requirekill="true" identifier="occupation_elite" from="occupation_npcs" moduleflags="securitymodule" asfaraspossible="true" multiplayeronly="true" />
       <Character requirekill="true" identifier="occupation_p" from="occupation_npcs" moduleflags="banditleader" />
       <Character requirekill="true" identifier="occupation_elite_p" from="occupation_npcs" moduleflags="banditleader" />
       <Character requirekill="true" identifier="occupation_leader" from="occupation_npcs" moduleflags="banditleader" />
       <Character requirekill="true" identifier="occupation_elite_p" from="occupation_npcs" moduleflags="banditleader" multiplayeronly="true" />
     </Characters>
-    <TriggerEvent state="0" delay="1" eventidentifier="tsm_combat_occupation_event" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <TriggerEvent state="0" delay="1" eventidentifier="tsm_combat_occupation_event" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_occupation_buff" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_occupation_buff_other" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_remove_husk" campaignonly="true" />
@@ -220,9 +220,9 @@
       <Character requirekill="true" identifier="Anonymous_elite_p" from="Anonymous_npcs" spawnpointtags="banditleader" />
       <Character requirekill="true" identifier="Anonymous_leader" from="Anonymous_npcs" spawnpointtags="banditleader" />
     </Characters>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_anonymous_buff" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_anonymous_buff_other" campaignonly="true" />
-    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_remove_husk" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
     <message header="" text="" />
@@ -262,8 +262,8 @@
       <Character requirekill="true" identifier="yehuo_elite" from="yehuo_npcs" spawnpointtags="banditleader" asfaraspossible="true" />
       <Character requirekill="true" identifier="yehuo_p" from="yehuo_npcs" spawnpointtags="banditleader" asfaraspossible="true" />
     </Characters>
-    <TriggerEvent state="0" delay="5" eventidentifier="tsm_combat_yehuo_event" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_combat_yehuo_event" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_yehuo_buff" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_yehuo_buff_other" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_remove_husk" campaignonly="true" />
@@ -417,7 +417,7 @@
       <Character identifier="tsm_soldier" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" multiplayeronly="true" />
       <Character identifier="tsm_soldier_csms" from="Combat_Npc_Customisation" moduleflags="securitymodule" requirekill="true" />
       <Character identifier="tsm_soldier" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" />
-      <Character identifier="tsm_advanced" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" />
+      <Character identifier="tsm_advanced_bzgt" from="Combat_Npc_Customisation" moduleflags="securitymodule" requirekill="true" />
       <Character identifier="tsm_soldier_elite" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" />
       <Character identifier="tsm_soldier_p" from="tsm_npcs" moduleflags="securitymodule" asfaraspossible="true" requirekill="true" />
       <Character identifier="tsm_pgc_smallthree" from="Combat_Npc_Customisation" spawnpointtags="banditleader" requirekill="true" />
@@ -463,15 +463,16 @@
       <Character identifier="tsm_soldier_military_advisers" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" />
       <Character identifier="tsm_soldier_military_advisers" from="tsm_npcs" spawnpointtags="banditleader" requirekill="true" />
       <Character identifier="tsm_military_advisers" from="tsm_npcs" spawnpointtags="banditleader" requirekill="true" />
-      <Character identifier="tsm_soldier_military_advisers" from="tsm_npcs" spawnpointtags="banditleader" multiplayeronly="true" requirekill="true" />
+      <Character identifier="tsm_soldier_ay" from="Combat_Npc_Customisation" spawnpointtags="banditleader" multiplayeronly="true" requirekill="true" />
       <Character identifier="tsm_soldier_military_advisers" from="tsm_npcs" spawnpointtags="banditleader" requirekill="true" multiplayeronly="true" />
       <Character identifier="tsm_soldier_military_advisers" from="tsm_npcs" moduleflags="banditleader" requirekill="true" />
     </Characters>
-    <TriggerEvent state="0" delay="5" eventidentifier="tsm_combat_tsm_event" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_combat_tsm_event" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_combat_buff_cat" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_remove_husk" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_cat_bb" campaignonly="true" />
     <message header="" text="" />
   </OutpostDestroyMission>
   <OutpostDestroyMission name="地狱泅渡" identifier="tsm_combat_adventists" tags="abandonedoutpost" type="OutpostDestroy" reward="10000" description="" difficulty="6" commonness="65" allowretry="true" minleveldifficulty="20" maxleveldifficulty="50" successmessage="" unhideentitysubcategories="abandonedhuman">
@@ -514,17 +515,17 @@
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
     <Characters>
-      <Character requirekill="true" identifier="gunner_Passive" from="tsm_gunner_npcs" moduleflags="crewmodule" multiplayeronly="true" />
-      <Character requirekill="true" identifier="gunner_Passive" from="tsm_gunner_npcs" moduleflags="crewmodule" multiplayeronly="true" />
-      <Character requirekill="true" identifier="gunner_Passive" from="tsm_gunner_npcs" moduleflags="crewmodule" />
-      <Character requirekill="true" identifier="gunner_Passive" from="tsm_gunner_npcs" moduleflags="crewmodule" />
-      <Character requirekill="true" identifier="gunner_Passive" from="tsm_gunner_npcs" moduleflags="crewmodule" />
-      <Character requirekill="true" identifier="gunner_Passive" from="tsm_gunner_npcs" moduleflags="researchmodule" multiplayeronly="true" />
-      <Character requirekill="true" identifier="gunner_Passive" from="tsm_gunner_npcs" moduleflags="researchmodule" multiplayeronly="true" />
-      <Character requirekill="true" identifier="gunner_Passive" from="tsm_gunner_npcs" moduleflags="researchmodule" multiplayeronly="true" />
-      <Character requirekill="true" identifier="gunner_Passive" from="tsm_gunner_npcs" moduleflags="researchmodule" />
-      <Character requirekill="true" identifier="gunner_Passive" from="tsm_gunner_npcs" moduleflags="researchmodule" />
-      <Character requirekill="true" identifier="gunner_Passive" from="tsm_gunner_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="crewmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="crewmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
       <Character requirekill="true" identifier="gunner_Patrol" from="tsm_gunner_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
       <Character requirekill="true" identifier="gunner_Patrol" from="tsm_gunner_npcs" moduleflags="engineeringmodule" />
       <Character requirekill="true" identifier="gunner_Patrol" from="tsm_gunner_npcs" moduleflags="engineeringmodule" />
@@ -538,8 +539,6 @@
     </Characters>
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_nz_combat" campaignonly="true" />
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
-    <TriggerEvent state="0" delay="5" eventidentifier="tsm_darkstormynight" campaignonly="true" />
-    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
     <message header="" text="" />
   </OutpostDestroyMission>
   <!--降临派-->
@@ -607,12 +606,16 @@
         <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule"  multiplayeronly="true"/>
         <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" moduleflags="seccrewmodule"/>
         <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="seccrewmodule" />
-        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"/>
+        <Character identifier="tsm_hiredgun_baidi" from="Combat_Npc_Customisation" spawnpointtags="banditleader"/>
         <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"  multiplayeronly="true"/>
         <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
         <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
         <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true"/>
       </Characters>
+      <TriggerEvent state="0" delay="5" eventidentifier="tsm_pmc_combat" campaignonly="true" />
+      <TriggerEvent state="0" delay="5" eventidentifier="tsm_pmc_combat_hard" campaignonly="true" />
+      <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
+      <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
       <message header="" text=""/>
     </AbandonedOutpostMission>
     <AbandonedOutpostMission
@@ -649,11 +652,12 @@
         <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
         <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule"/>
         <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_fire" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule"  multiplayeronly="true"/>
         <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule"/>
         <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule" />
         <Character identifier="tsm_hiredgun_fire" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"/>
         <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"  multiplayeronly="true"/>
-        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_fire" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"  multiplayeronly="true"/>
         <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"  multiplayeronly="true"/>
         <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
         <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
@@ -661,6 +665,10 @@
         <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true"/>
         <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true"/>
       </Characters>
+      <TriggerEvent state="0" delay="5" eventidentifier="tsm_pmc_combat" campaignonly="true" />
+      <TriggerEvent state="0" delay="5" eventidentifier="tsm_pmc_combat_hard" campaignonly="true" />
+      <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
+      <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
       <message header="" text=""/>
     </AbandonedOutpostMission>
   </Override>

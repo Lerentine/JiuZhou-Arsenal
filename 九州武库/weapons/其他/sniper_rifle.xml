@@ -72,7 +72,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="tsm_58ammo_mag" hide="false" itempos="-40,-5" depth="0.56">
+      <Containable items="tsm_58ammo_mag" hide="false" itempos="-40,-5" depth="0.56" setactive="true">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="10,-40" holdangle="70" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -165,7 +165,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="tsm_762ammo_mag" hide="false" itempos="-18,3" depth="0.56">
+      <Containable items="tsm_762ammo_mag" hide="false" itempos="-18,3" depth="0.56" setactive="true">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="10,-40" holdangle="70" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -259,7 +259,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="86_mag" hide="false" itempos="-18,-5" depth="0.56">
+      <Containable items="86_mag" hide="false" itempos="-18,-5" depth="0.56" setactive="true">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="25,-25" holdangle="80" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -349,7 +349,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="tsm_127_108_mag" hide="false" itempos="-42,2" depth="0.56">
+      <Containable items="tsm_127_108_mag" hide="false" itempos="-42,2" depth="0.56" setactive="true">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="40,-30" holdangle="80" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -446,7 +446,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="tsm_127ammo_mag" hide="false" itempos="-20,2" depth="0.56">
+      <Containable items="tsm_127ammo_mag" hide="false" itempos="-20,2" depth="0.56" setactive="true">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="25,-25" holdangle="80" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -546,7 +546,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="tsm_127_108_mag" hide="false" itempos="-30,-3" depth="0.56">
+      <Containable items="tsm_127_108_mag" hide="false" itempos="-30,-3" depth="0.56" setactive="true">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="25,-25" holdangle="80" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -557,6 +557,10 @@
           <conditional maxchargetime="eq 999" />
         </StatusEffect>
       </Containable>
+      <SubContainer capacity="1" maxstacksize="1">
+        <SlotIcon slotindex="1" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2247,19,82,82" origin="0.5,0.5" />
+        <Containable items="tsm_qbu10_skins" hide="false" setactive="true"/>
+      </SubContainer>
     </ItemContainer>
     <aitarget sightrange="3000" soundrange="4500" fadeouttime="6" />
     <Quality>
@@ -625,7 +629,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="tsm_grenade_mag" hide="false" itempos="-2,-15" depth="0.56">
+      <Containable items="tsm_grenade_mag" hide="false" itempos="-2,-15" depth="0.56" setactive="true">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="25,-25" holdangle="80" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -714,7 +718,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="tsm_127_108_mag,tsm_127ammo_mag" hide="false" itempos="-37,-7" depth="0.56">
+      <Containable items="tsm_127_108_mag,tsm_127ammo_mag" hide="false" itempos="-37,-7" depth="0.56" setactive="true">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="10,-25" holdangle="70" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -728,6 +732,10 @@
       <SubContainer capacity="1" maxstacksize="1">
         <SlotIcon slotindex="1" texture="%ModDir%/png/ui.png" sourcerect="638,214,18,36" origin="0.45,0.5" />
         <Containable items="grip" hide="false" itempos="12,-7" depth="0.57" setactive="true" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <SlotIcon slotindex="2" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2247,19,82,82" origin="0.5,0.5" />
+        <Containable items="tsm_gm6_skins" hide="false" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="3000" soundrange="5000" fadeouttime="6" />
@@ -809,7 +817,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="762_51mag" hide="false" itempos="-12,-3" depth="0.56">
+      <Containable items="762_51mag" hide="false" itempos="-12,-3" depth="0.56" setactive="true">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="10,-40" holdangle="70" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -906,7 +914,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="86_mag" hide="false" itempos="-16,-7" depth="0.56">
+      <Containable items="86_mag" hide="false" itempos="-16,-7" depth="0.56" setactive="true">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="25,-25" holdangle="80" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -1007,7 +1015,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="tsm_127ammo_mag" hide="false" itempos="-30,-5" depth="0.56">
+      <Containable items="tsm_127ammo_mag" hide="false" itempos="-30,-5" depth="0.56" setactive="true">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="30,-30" holdangle="70" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -1107,7 +1115,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="86_mag" hide="false" itempos="-13,-5" depth="0.56">
+      <Containable items="86_mag" hide="false" itempos="-13,-5" depth="0.56" setactive="true">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="25,-25" holdangle="80" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -1200,7 +1208,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
-      <Containable items="86_mag" hide="false" itempos="-13,-5" depth="0.56">
+      <Containable items="86_mag" hide="false" itempos="-13,-5" depth="0.56" setactive="true">
         <!--换弹-->
         <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="25,-25" holdangle="80" setvalue="true" />
         <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -1249,7 +1257,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="狙击步枪弹匣（7.62*51）" identifier="tsm_762ammo_mag" subcategory="other" scale="0.25" category="weapon" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="lm_magazine,tsm_762ammo_mag,smallitem,magazine,handheldammo" impactsoundtag="impact_metal_light" health="10">
+  <Item name="狙击步枪弹匣（7.62*51）" identifier="tsm_762ammo_mag" subcategory="other" scale="0.25" category="weapon" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="lm_magazine,tsm_762ammo_mag,smallitem,magazine,handheldammo,deep_sr25_mag" impactsoundtag="impact_metal_light" health="10">
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="1897,472,86,81" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" depth="0.56" sourcerect="1897,472,86,81" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -1279,7 +1287,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="狙击步枪弹匣（8.6*70）" identifier="tsm_86_mag" subcategory="other" scale="0.21" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="lm_magazine,86_mag,smallitem,magazine,handheldammo" impactsoundtag="impact_metal_light" health="8">
+  <Item name="狙击步枪弹匣（8.6*70）" identifier="tsm_86_mag" subcategory="other" scale="0.21" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="lm_magazine,86_mag,smallitem,magazine,handheldammo,deep_AWM_mag" impactsoundtag="impact_metal_light" health="8">
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="1910,646,82,64" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" depth="0.56" sourcerect="1910,646,82,64" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -1309,7 +1317,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="狙击步枪弹匣（12.7*99）" identifier="tsm_127ammo_mag" subcategory="other" scale="0.23" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="lm_magazine,tsm_127ammo_mag,smallitem,magazine,handheldammo" impactsoundtag="impact_metal_light" health="5">
+  <Item name="狙击步枪弹匣（12.7*99）" identifier="tsm_127ammo_mag" subcategory="other" scale="0.23" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="lm_magazine,tsm_127ammo_mag,smallitem,magazine,handheldammo,deep_m82a1_mag,deep_gm6_mag" impactsoundtag="impact_metal_light" health="5">
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="1897,360,95,89" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" depth="0.56" sourcerect="1897,360,95,89" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -1369,7 +1377,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" />
   </Item>
-  <Item name="狙击步枪弹匣（榴弹）" identifier="tsm_grenade_mag" subcategory="TSM" scale="0.23" category="weapon" maxstacksize="1" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="lm_magazine,tsm_grenade_mag,smallitem,magazine,handheldammo" impactsoundtag="impact_metal_light" health="5">
+  <Item name="狙击步枪弹匣（榴弹）" identifier="tsm_grenade_mag" subcategory="TSM" scale="0.23" category="weapon" maxstacksize="1" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="lm_magazine,tsm_grenade_mag,smallitem,magazine,handheldammo,deep_meteorite_mag" impactsoundtag="impact_metal_light" health="5">
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="1764,288,92,125" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" depth="0.56" sourcerect="1764,288,92,125" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -1426,9 +1434,9 @@
     <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="31,201,59,14" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="2">
+    <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="2" launchimpulse="30.0">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="3" targetforce="23" itemdamage="10" penetration="0.3" severlimbsprobability="1">
+      <Attack structuredamage="3" targetforce="23" targetimpluse="8" itemdamage="35" penetration="0.3" severlimbsprobability="1">
         <Affliction identifier="gunshotwound" strength="70" />
         <Affliction identifier="gunshotwound" strength="20" probability="0.4" />
         <Affliction identifier="bleeding" strength="20" />
@@ -1454,9 +1462,9 @@
     <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="31,201,59,14" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="2">
+    <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="2" launchimpulse="40.0">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="10" targetforce="23" itemdamage="50" penetration="0.3" severlimbsprobability="1">
+      <Attack structuredamage="10" targetforce="23" targetimpluse="8" itemdamage="50" penetration="0.3" severlimbsprobability="1">
         <Affliction identifier="gunshotwound" strength="85" />
         <Affliction identifier="gunshotwound" strength="25" probability="0.4" />
         <Affliction identifier="tsm_armorbreak_50" strength="25" />
@@ -1485,9 +1493,9 @@
     <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="31,201,59,14" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="3">
+    <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="3" launchimpulse="50.0">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="10" targetforce="23" itemdamage="50" penetration="0.3" severlimbsprobability="1">
+      <Attack structuredamage="10" targetforce="23" targetimpluse="8" itemdamage="80" penetration="0.3" severlimbsprobability="1">
         <Affliction identifier="gunshotwound" strength="100" />
         <Affliction identifier="gunshotwound" strength="30" probability="0.4" />
         <Affliction identifier="tsm_armorbreak_50" strength="50" />
@@ -1517,9 +1525,9 @@
     <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="31,201,59,14" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="3">
+    <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="3" launchimpulse="55.0">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="10" targetforce="23" itemdamage="50" penetration="0.35" severlimbsprobability="1">
+      <Attack structuredamage="10" targetforce="23" targetimpluse="8" itemdamage="100" penetration="0.35" severlimbsprobability="1">
         <Affliction identifier="gunshotwound" strength="100" />
         <Affliction identifier="gunshotwound" strength="60" probability="0.8" />
         <Affliction identifier="tsm_armorbreak_50" strength="50" />
@@ -1548,7 +1556,7 @@
     <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="119,336,51,21" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="2">
+    <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="2" launchimpulse="50.0">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="40" penetration="1" severlimbsprobability="5">
         <Affliction identifier="explosiondamage" strength="70" />
@@ -1562,7 +1570,7 @@
       <!--Grenade launcher ammo explodes on impact-->
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
         <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
-        <Explosion range="300.0" ballastfloradamage="80" structuredamage="100" levelwalldamage="120" itemdamage="400" force="5.0" severlimbsprobability="0.4" debris="true" decal="explosion" decalsize="0.3">
+        <Explosion range="300.0" ballastfloradamage="80" structuredamage="100" levelwalldamage="120" itemdamage="550" force="5.0" severlimbsprobability="0.4" debris="true" decal="explosion" decalsize="0.3">
           <Affliction identifier="burn" strength="100" />
           <Affliction identifier="bleeding" strength="400" probability="0.05" />
           <Affliction identifier="explosiondamage" strength="40" />

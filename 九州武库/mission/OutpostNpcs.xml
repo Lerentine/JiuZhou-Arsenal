@@ -281,8 +281,6 @@
             <Item identifier="handcuffs" />
           </Item>
           <Item identifier="tsm_lm_aug" />
-          <Item identifier="tsm_flame_arrester" equip="true" />
-          <Item identifier="tsm_grip_straight" equip="true" />
           <Item identifier="lm_vest_elite" equip="true" />
           <Item identifier="lm_556cj_mag" amount="8"/>
           <Item identifier="lm_vest_elite" equip="true" />
@@ -301,8 +299,6 @@
             <Item identifier="handcuffs" />
           </Item>
           <Item identifier="tsm_lm_aug"  />
-          <Item identifier="tsm_recoil" equip="true" />
-          <Item identifier="tsm_grip_triangle" equip="true" />
           <Item identifier="lm_556cj_mag" amount="8"/>
           <Item identifier="lm_vest_elite" equip="true" />
           <Item identifier="lm_fast_helmet_protectivejaw" equip="true" />
@@ -339,9 +335,6 @@
             <Item identifier="handcuffs" />
           </Item>
           <Item identifier="tsm_lm_g36ka4"  />
-          <Item identifier="tsm_recoil" equip="true" />
-          <Item identifier="tsm_grip_triangle" equip="true" />
-          <Item identifier="tsm_sight_double" equip="true" />
           <Item identifier="lm_556cj_mag" amount="8"/>
           <Item identifier="lm_vest_elite" equip="true" />
           <Item identifier="lm_heavy_helmet" equip="true" />
@@ -368,28 +361,14 @@
             <Item identifier="oxygentank" />
           </Item>
         </ItemSet>
-        <ItemSet commonness="0.8">
-          <Item identifier="lm_beowulf_uniform" equip="true" />
-          <Item identifier="idcard" equip="true" tags="id_outpostsecurity">
-            <Item identifier="handcuffs" />
-          </Item>
-          <Item identifier="tsm_lm_ash12" />
-          <Item identifier="lm_127_55_mag_ap" amount="8"/>
-          <Item identifier="lm_vest_beowulf" equip="true" />
-          <Item identifier="lm_heavy_helmet" equip="true" />
-          <Item identifier="divingmask">
-            <Item identifier="oxygentank" />
-          </Item>
-        </ItemSet>
         <ItemSet commonness="0.75">
           <Item identifier="lm_beowulf_uniform" equip="true" />
           <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
-          <Item identifier="handcuffs" />
-          <Item identifier="tsm_lm_hk417" equip="true">
+          <Item identifier="handcuffs" >
             <Item identifier="lm_762_51_ap_krmag" />
           </Item>
-          <Item identifier="tsm_762_51_mag_kr" amount="3"/>
-          <Item identifier="tsm_grip_mounts" equip="true"/>
+          <Item identifier="tsm_lm_hk417" equip="true"/>
+          <Item identifier="lm_762_51_krmag" amount="3"/>
           <Item identifier="lm_vest_beowulf" equip="true" />
           <Item identifier="lm_heavy_helmet" equip="true" />
           <Item identifier="divingmask">
@@ -400,15 +379,12 @@
           <Item identifier="lm_occupation_uniform" equip="true" />
           <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
           <Item identifier="batterycell" />
-          <Item identifier="handcuffs" />
-          <Item identifier="tsm_lm_scarh">
+          <Item identifier="handcuffs" >
             <Item identifier="lm_762_51_ap_krmag" amount="7"/>
           </Item>
-          <Item identifier="tsm_grip_light" />
-          <Item identifier="tsm_flame_arrester" />
-          <Item identifier="tsm_sight_tripled" />
-          <Item identifier="lm_vest_occupation" equip="true" />
-          <Item identifier="lm_occupation_helmet" equip="true" />
+          <Item identifier="tsm_lm_scarh"/>
+          <Item identifier="lm_vest_beowulf" equip="true" />
+          <Item identifier="lm_heavy_helmet" equip="true" />
           <Item identifier="divingmask">
             <Item identifier="oxygentank" />
           </Item>
@@ -504,8 +480,8 @@
         </ItemSet>
         <ItemSet commonness="0.5">
           <Item identifier="fkj_yehuo_uniform" equip="true" />
-          <Item identifier="fkj_yehuo_helmet" equip="true" />
-          <Item identifier="fkj_vest_yehuo" equip="true" />
+          <Item identifier="fkj_heavy_helmet" equip="true" />
+          <Item identifier="fkj_heavy_vest" equip="true" />
           <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
           <Item identifier="handcuffs" />
           <Item identifier="tsm_fkj_an94" equip="true">
@@ -518,16 +494,16 @@
         </ItemSet>
         <ItemSet commonness="0.5">
           <Item identifier="fkj_yehuo_uniform" equip="true" />
-          <Item identifier="fkj_yehuo_helmet" equip="true" />
-          <Item identifier="fkj_vest_yehuo" equip="true" />
+          <Item identifier="fkj_heavy_helmet" equip="true" />
+          <Item identifier="fkj_heavy_vest" equip="true" />
           <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
           <Item identifier="handcuffs" />
           <Item identifier="tsm_fkj_sg553" equip="true">
             <Item identifier="fkj_762_51_ap_krmag" />
           </Item>
           <Item identifier="fkj_762_51_ap_krmag" amount="4"/>
-          <Item identifier="tsm_grip_mounts" />
-          <Item identifier="tsm_sight_acog" />
+          <Item identifier="tsm_grip_mounts" equip="true"/>
+          <Item identifier="tsm_sight_acog" equip="true"/>
           <Item identifier="tsm_recoil" />
           <Item identifier="divingmask">
             <Item identifier="oxygentank" />

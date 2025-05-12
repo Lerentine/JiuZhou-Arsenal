@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+  <Items>
+    <Item name="联盟突击通讯头盔" identifier="lm_fast_helmet_headset" subcategory="tsm_coalition" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.15">
+      <Deconstruct time="10">
+        <Item identifier="plastic" copycondition="true" />
+        <Item identifier="iron" copycondition="true" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="20">
+        <RequiredItem identifier="steel" amount="2" />
+        <RequiredItem identifier="iron" amount="1" />
+        <RequiredItem identifier="plastic" amount="1" />
+        <RequiredItem identifier="tsm_plastic" amount="1" />
+        <RequiredItem identifier="headset" amount="1" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredItem identifier="lm_fast_helmet_headset" amount="1" />
+      </Fabricate>
+      <Sprite name="fast Helmet icon" texture="%ModDir%/Jobgear/helmets/lm/lm_helmet_1.png" sourcerect="0,0,0,0" depth="0.58" origin="0.5,0.5" />
+      <Body radius="70" density="50" />
+      <Wearable slots="Any,Head" armorvalue="25.0" msg="ItemMsgPickUpSelect" variants="0">
+        <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.65" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0" damagesound="" deflectprojectiles="true" />
+        <sprite name="fast Helmet" texture="%ModDir%/Jobgear/helmets/lm/lm_helmet_[VARIANT].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.26" hidelimb="False" inheritorigin="false" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="0,0,0,0" origin="0.52,0.54" >
+          <LightComponent LightColor="150,255,150,100" range="1600" castshadows="false" powerconsumption="infinity" IsOn="true" flicker="0.1" flickerspeed="0.3" pulsefrequency="0.1" pulseamount="0.1" />
+        </sprite>
+        <!--夜视仪-->
+        <!--StatusEffect type="OnWearing" target="This,Contained,Character" interval="0.1" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+          <Affliction identifier="tsm_nightvision" amount="100" />
+          <Conditional targetcontainer="true" targetitemcomponent="LightComponent" IsOn="true" />
+          <RequiredItem items="tsm_helmet_nvd" type="Contained" targetslot="0"/>
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="This,Character" voltage="1.0" interval="0.1" setvalue="true" comparison="and" >
+          <Conditional IsLocalPlayer="true" tsm_nightvision="gt 0" />
+          <RequiredItem items="tsm_helmet_nvd" type="Contained" targetslot="0"/>
+        </StatusEffect-->
+        <!--热成像/健康扫描仪-->
+        <StatusHUD overlaycolor="176,0,0,120" range="3000" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
+        <StatusEffect type="NotInWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="true" showtexts="false" setvalue="true">
+          <RequiredItem items="tsm_helmet_thermalgoggles" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="InWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="false" setvalue="true">
+          <RequiredItem items="tsm_helmet_thermalgoggles" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="NotInWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="true" setvalue="true">
+          <RequiredItem items="tsm_helmet_screen" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="false" setvalue="true">
+          <RequiredItem items="tsm_helmet_thermalgoggles" type="Contained" MatchOnEmpty="true" />
+          <RequiredItem items="tsm_helmet_screen" type="Contained" MatchOnEmpty="true" />
+        </StatusEffect>
+        <!--识别仪-->
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" comparison="and">
+          <Conditional InWater="true" />
+          <Affliction identifier="tsm_ff_helmet" strength="5" />
+          <RequiredItems items="tsm_helmet_flashlight" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" comparison="and">
+          <Conditional InWater="false" />
+          <Affliction identifier="tsm_ff_helmet1" strength="5" />
+          <RequiredItems items="tsm_helmet_flashlight" type="Contained" />
+        </StatusEffect>
+        <!--面罩-->
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" >
+          <Affliction identifier="tsm_armor_faceshield" strength="5" />
+          <RequiredItems items="tsm_ballistic_faceshield_big" type="Contained" />
+        </StatusEffect>
+        <!--护颚-->
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" >
+          <Affliction identifier="tsm_armor_jaw" strength="5" />
+          <RequiredItems items="tsm_protective_jaw" type="Contained" />
+        </StatusEffect>
+      </Wearable>
+      <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+        <StatusEffect type="OnActive" targettype="This">
+          <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+          <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+        </StatusEffect>
+      </WifiComponent>
+      <Upgrade gameversion="0.18.0.0">
+        <WifiComponent>
+          <RequiredItems items="" />
+        </WifiComponent>
+      </Upgrade>
+      <CustomInterface canbeselected="false" drawhudwhenequipped="false" allowuioverlap="true">
+        <GuiFrame relativesize="0.09,0.07" anchor="CenterRight" pivot="CenterRight" relativeoffset="-0.02,0.09" style="ItemUI" />
+        <TickBox text="tsm_on">
+          <!-- 夜视仪开关 -->
+          <!--StatusEffect type="OnUse" target="This" IsOn="true" HudTint="0,255,0,200" setvalue="true" Interval="0.1" />
+          <StatusEffect type="OnUse" target="Contained" interval="0.1" targetslot="0" disabledeltatime="true" Condition="-0.001">
+            <RequiredItems items="tsm_helmet_nvd" type="Contained" />
+          </StatusEffect>
+          <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" HudTint="0,0,0,0" setvalue="true" Interval="0.1" /-->
+          <!-- 开启热成像 -->
+          <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="StatusHUD" overlaycolor="176,0,0,120" thermalgoggles="true" drawhudwhenequipped="true" setvalue="true" stackable="false">
+            <RequiredItems items="tsm_helmet_thermalgoggles" type="Contained" />
+          </StatusEffect>
+          <StatusEffect type="OnUse" target="Contained" interval="0.1" targetslot="0" disabledeltatime="true" Condition="-0.001">
+            <RequiredItems items="tsm_helmet_thermalgoggles" type="Contained" />
+          </StatusEffect>
+          <!-- 战术装备开启时，锁定，以免出现bug -->
+          <StatusEffect type="OnUse" target="Contained" targetslot="0" NonInteractable="true" stackable="false" setvalue="true" />
+          <!-- 关闭热成像 -->
+          <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" targetitemcomponent="StatusHUD" thermalgoggles="false" drawhudwhenequipped="false" setvalue="true" currentmode="Passive" >
+            <RequiredItems items="tsm_helmet_thermalgoggles" type="Contained" />
+          </StatusEffect>
+          <!--StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" setValue="true" variant="+2" delay="0.1">
+            <RequiredItems items="tsm_helmet_thermalgoggles" type="Contained" />
+          </StatusEffect>
+          <StatusEffect type="OnUse" target="This" disabledeltatime="true" setValue="true" variant="-2" delay="0.1">
+            <RequiredItems items="tsm_helmet_thermalgoggles" type="Contained" />
+          </StatusEffect-->
+          <!-- 确保热成像默认关闭 -->
+          <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" setvalue="true" currentmode="Passive"/>
+          <!-- 战术装备关闭时，解除锁定，可以更换设备 -->
+          <StatusEffect type="OnSecondaryUse" target="Contained" targetslot="0" NonInteractable="false" setvalue="true"/>
+          <!-- 开启健康扫描仪 -->
+          <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="StatusHUD" overlaycolor="0,255,0,120" showdeadcharacters="true" showtexts="true" drawhudwhenequipped="true" setvalue="true">
+            <RequiredItems items="tsm_helmet_screen" type="Contained" />
+          </StatusEffect>
+          <StatusEffect type="OnUse" target="Contained" interval="0.1" targetslot="0" disabledeltatime="true" Condition="-0.01">
+            <RequiredItems items="tsm_helmet_screen" type="Contained" />
+          </StatusEffect>
+          <!-- 关闭健康扫描仪 -->
+          <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" targetitemcomponent="StatusHUD" showdeadcharacters="true" showtexts="true" drawhudwhenequipped="false" setvalue="true" currentmode="Passive">
+            <RequiredItems items="tsm_helmet_screen" type="Contained" />
+          </StatusEffect>
+        </TickBox>
+      </CustomInterface>
+      <ItemContainer capacity="1" keepopenwhenequipped="false" movableframe="false" hideitems="true" maxstacksize="1" allowswappingcontaineditems="false">
+        <!--Containable items="tsm_helmet_nvd">
+          <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable" >
+          </StatusEffect>
+          <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable" >
+          </StatusEffect>
+          <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="true" />
+          <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="false" />
+          <StatusEffect type="OnInserted" target="This" targetitemcomponent="LightComponent" IsOn="true" />
+          <StatusEffect type="OnRemoved" target="This" targetitemcomponent="LightComponent" IsOn="false" />
+        </Containable-->
+          <Containable items="tsm_ballistic_faceshield_big">
+            <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="+1" delay="0.1">
+              <!--<LuaHook name="HelmetOnInserted" />-->
+            </StatusEffect>
+            <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="-1" delay="0.1">
+              <ReduceAffliction type="tsm_armor_faceshield" amount="50" />
+              <!--<LuaHook name="HelmetOnRemoved" />-->
+            </StatusEffect>
+          </Containable>
+          <Containable items="tsm_helmet_thermalgoggles">
+            <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="+3" delay="0.1">
+              <!--<LuaHook name="HelmetOnInserted" />-->
+            </StatusEffect>
+            <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="-3" delay="0.1">
+              <!--<LuaHook name="HelmetOnRemoved" />-->
+            </StatusEffect>
+            <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="true" />
+            <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="false" />
+          </Containable>
+          <Containable items="tsm_helmet_screen">
+            <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable"  variant="+6" delay="0.1">
+              <!--<LuaHook name="HelmetOnInserted" />-->
+            </StatusEffect>
+            <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable"  variant="-6" delay="0.1">
+              <!--<LuaHook name="HelmetOnRemoved" />-->
+            </StatusEffect>
+            <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="true" />
+            <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="false" />
+          </Containable>
+        <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="tsm_protective_jaw">
+          <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="+10" delay="0.1">
+            <!--<LuaHook name="HelmetOnInserted" />-->
+          </StatusEffect>
+          <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="-10" delay="0.1">
+            <ReduceAffliction type="tsm_armor_jaw" amount="50" />
+            <!--<LuaHook name="HelmetOnRemoved" />-->
+          </StatusEffect>
+        </Containable>
+        </SubContainer>
+        <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="tsm_helmet_flashlight">
+          <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable" drawhudwhenequipped="true" variant="+100" delay="0.1">
+            <!--<LuaHook name="HelmetOnInserted" />-->
+          </StatusEffect>
+          <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable" drawhudwhenequipped="false" variant="-100" delay="0.1">
+            <!--<LuaHook name="HelmetOnRemoved" />-->
+          </StatusEffect>
+        </Containable>
+        </SubContainer>
+      </ItemContainer>
+    </Item>
+  <Item name="奇迹之海突击通讯头盔" identifier="tsm_fast_helmet_headset" subcategory="TSM" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.15">
+    <Deconstruct time="10">
+      <Item identifier="plastic" copycondition="true" />
+      <Item identifier="iron" copycondition="true" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem identifier="iron" amount="1" />
+      <RequiredItem identifier="plastic" amount="1" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+      <RequiredItem identifier="headset" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredItem identifier="tsm_fast_helmet_headset" amount="1" />
+    </Fabricate>
+    <Sprite name="fast Helmet icon" texture="%ModDir%/Jobgear/helmets/tsm/tsm_helmet_1.png" sourcerect="0,0,0,0" depth="0.58" origin="0.5,0.5" />
+    <Body radius="70" density="50" />
+    <Wearable slots="Any,Head" armorvalue="25.0" msg="ItemMsgPickUpSelect" variants="0">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.65" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0" damagesound="" deflectprojectiles="true" />
+      <sprite name="fast Helmet" texture="%ModDir%/Jobgear/helmets/tsm/tsm_helmet_[VARIANT].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.26" hidelimb="False" inheritorigin="false" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="0,0,0,0" origin="0.52,0.59" >
+        <LightComponent LightColor="150,255,150,100" range="1600" castshadows="false" powerconsumption="infinity" IsOn="true" flicker="0.1" flickerspeed="0.3" pulsefrequency="0.1" pulseamount="0.1" />
+      </sprite>
+      <!--夜视仪-->
+      <!--StatusEffect type="OnWearing" target="This,Contained,Character" interval="0.1" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="tsm_nightvision" amount="100" />
+        <Conditional targetcontainer="true" targetitemcomponent="LightComponent" IsOn="true" />
+        <RequiredItem items="tsm_helmet_nvd" type="Contained" targetslot="0"/>
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" voltage="1.0" interval="0.1" setvalue="true" comparison="and" >
+        <Conditional IsLocalPlayer="true" tsm_nightvision="gt 0" />
+        <RequiredItem items="tsm_helmet_nvd" type="Contained" targetslot="0"/>
+      </StatusEffect-->
+      <!--热成像/健康扫描仪-->
+      <StatusHUD overlaycolor="176,0,0,120" range="3000" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
+      <StatusEffect type="NotInWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="true" showtexts="false" setvalue="true">
+        <RequiredItem items="tsm_helmet_thermalgoggles" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="false" setvalue="true">
+        <RequiredItem items="tsm_helmet_thermalgoggles" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="NotInWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="true" setvalue="true">
+        <RequiredItem items="tsm_helmet_screen" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="false" setvalue="true">
+        <RequiredItem items="tsm_helmet_thermalgoggles" type="Contained" MatchOnEmpty="true" />
+        <RequiredItem items="tsm_helmet_screen" type="Contained" MatchOnEmpty="true" />
+      </StatusEffect>
+      <!--识别仪-->
+      <StatusEffect type="OnWearing" target="Character" setvalue="true" comparison="and">
+        <Conditional InWater="true" />
+        <Affliction identifier="tsm_ff_helmet" strength="5" />
+        <RequiredItems items="tsm_helmet_flashlight" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" setvalue="true" comparison="and">
+        <Conditional InWater="false" />
+        <Affliction identifier="tsm_ff_helmet1" strength="5" />
+        <RequiredItems items="tsm_helmet_flashlight" type="Contained" />
+      </StatusEffect>
+      <!--面罩-->
+      <StatusEffect type="OnWearing" target="Character" setvalue="true" >
+        <Affliction identifier="tsm_armor_faceshield" strength="5" />
+        <RequiredItems items="tsm_ballistic_faceshield" type="Contained" />
+      </StatusEffect>
+      <!--护颚-->
+      <StatusEffect type="OnWearing" target="Character" setvalue="true" >
+        <Affliction identifier="tsm_armor_jaw" strength="5" />
+        <RequiredItems items="tsm_protective_jaw" type="Contained" />
+      </StatusEffect>
+    </Wearable>
+    <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="false" allowuioverlap="true">
+      <GuiFrame relativesize="0.09,0.07" anchor="CenterRight" pivot="CenterRight" relativeoffset="-0.02,0.09" style="ItemUI" />
+      <TickBox text="tsm_on">
+        <!-- 夜视仪开关 -->
+        <!--StatusEffect type="OnUse" target="This" IsOn="true" HudTint="0,255,0,200" setvalue="true" Interval="0.1" />
+        <StatusEffect type="OnUse" target="Contained" interval="0.1" targetslot="0" disabledeltatime="true" Condition="-0.001">
+          <RequiredItems items="tsm_helmet_nvd" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" HudTint="0,0,0,0" setvalue="true" Interval="0.1" /-->
+        <!-- 开启热成像 -->
+        <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="StatusHUD" overlaycolor="176,0,0,120" thermalgoggles="true" drawhudwhenequipped="true" setvalue="true" stackable="false">
+          <RequiredItems items="tsm_helmet_thermalgoggles" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Contained" interval="0.1" targetslot="0" disabledeltatime="true" Condition="-0.001">
+          <RequiredItems items="tsm_helmet_thermalgoggles" type="Contained" />
+        </StatusEffect>
+        <!-- 战术装备开启时，锁定，以免出现bug -->
+        <StatusEffect type="OnUse" target="Contained" targetslot="0" NonInteractable="true" stackable="false" setvalue="true" />
+        <!-- 关闭热成像 -->
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" targetitemcomponent="StatusHUD" thermalgoggles="false" drawhudwhenequipped="false" setvalue="true" currentmode="Passive" >
+          <RequiredItems items="tsm_helmet_thermalgoggles" type="Contained" />
+        </StatusEffect>
+        <!--StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" setValue="true" variant="+2" delay="0.1">
+          <RequiredItems items="tsm_helmet_thermalgoggles" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" disabledeltatime="true" setValue="true" variant="-2" delay="0.1">
+          <RequiredItems items="tsm_helmet_thermalgoggles" type="Contained" />
+        </StatusEffect-->
+        <!-- 确保热成像默认关闭 -->
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" setvalue="true" currentmode="Passive"/>
+        <!-- 战术装备关闭时，解除锁定，可以更换设备 -->
+        <StatusEffect type="OnSecondaryUse" target="Contained" targetslot="0" NonInteractable="false" setvalue="true"/>
+        <!-- 开启健康扫描仪 -->
+        <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="StatusHUD" overlaycolor="0,255,0,120" showdeadcharacters="true" showtexts="true" drawhudwhenequipped="true" setvalue="true">
+          <RequiredItems items="tsm_helmet_screen" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Contained" interval="0.1" targetslot="0" disabledeltatime="true" Condition="-0.01">
+          <RequiredItems items="tsm_helmet_screen" type="Contained" />
+        </StatusEffect>
+        <!-- 关闭健康扫描仪 -->
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" targetitemcomponent="StatusHUD" showdeadcharacters="true" showtexts="true" drawhudwhenequipped="false" setvalue="true" currentmode="Passive">
+          <RequiredItems items="tsm_helmet_screen" type="Contained" />
+        </StatusEffect>
+      </TickBox>
+    </CustomInterface>
+    <ItemContainer capacity="1" keepopenwhenequipped="false" movableframe="false" hideitems="true" maxstacksize="1" allowswappingcontaineditems="false">
+      <!--Containable items="tsm_helmet_nvd">
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable" >
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable" >
+        </StatusEffect>
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="true" />
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="false" />
+        <StatusEffect type="OnInserted" target="This" targetitemcomponent="LightComponent" IsOn="true" />
+        <StatusEffect type="OnRemoved" target="This" targetitemcomponent="LightComponent" IsOn="false" />
+      </Containable-->
+      <Containable items="tsm_ballistic_faceshield">
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="+1" delay="0.1">
+          <!--<LuaHook name="HelmetOnInserted" />-->
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="-1" delay="0.1">
+          <ReduceAffliction type="tsm_armor_faceshield" amount="50" />
+          <!--<LuaHook name="HelmetOnRemoved" />-->
+        </StatusEffect>
+      </Containable>
+      <Containable items="tsm_helmet_thermalgoggles">
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="+3" delay="0.1">
+          <!--<LuaHook name="HelmetOnInserted" />-->
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="-3" delay="0.1">
+          <!--<LuaHook name="HelmetOnRemoved" />-->
+        </StatusEffect>
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="true" />
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="false" />
+      </Containable>
+      <Containable items="tsm_helmet_screen">
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable"  variant="+6" delay="0.1">
+          <!--<LuaHook name="HelmetOnInserted" />-->
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable"  variant="-6" delay="0.1">
+          <!--<LuaHook name="HelmetOnRemoved" />-->
+        </StatusEffect>
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="true" />
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="false" />
+      </Containable>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="tsm_protective_jaw">
+          <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="+10" delay="0.1">
+            <!--<LuaHook name="HelmetOnInserted" />-->
+          </StatusEffect>
+          <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="-10" delay="0.1">
+            <ReduceAffliction type="tsm_armor_jaw" amount="50" />
+            <!--<LuaHook name="HelmetOnRemoved" />-->
+          </StatusEffect>
+        </Containable>
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="tsm_helmet_flashlight">
+          <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable" drawhudwhenequipped="true" variant="+100" delay="0.1">
+            <!--<LuaHook name="HelmetOnInserted" />-->
+          </StatusEffect>
+          <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable" drawhudwhenequipped="false" variant="-100" delay="0.1">
+            <!--<LuaHook name="HelmetOnRemoved" />-->
+          </StatusEffect>
+        </Containable>
+      </SubContainer>
+
+    </ItemContainer>
+  </Item>
+  <Item name="反抗军突击通讯头盔" identifier="fkj_fast_helmet_headset" subcategory="TSM" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.15">
+    <Deconstruct time="10">
+      <Item identifier="plastic" copycondition="true" />
+      <Item identifier="iron" copycondition="true" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem identifier="iron" amount="1" />
+      <RequiredItem identifier="plastic" amount="1" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+      <RequiredItem identifier="headset" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredItem identifier="fkj_fast_helmet_headset" amount="1" />
+    </Fabricate>
+    <Sprite name="fast Helmet icon" texture="%ModDir%/Jobgear/helmets/fkj/fkj_helmet_1.png" sourcerect="0,0,0,0" depth="0.58" origin="0.5,0.5" />
+    <Body radius="70" density="50" />
+    <Wearable slots="Any,Head" armorvalue="25.0" msg="ItemMsgPickUpSelect" variants="0">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.65" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0" damagesound="" deflectprojectiles="true" />
+      <sprite name="fast Helmet" texture="%ModDir%/Jobgear/helmets/fkj/fkj_helmet_[VARIANT].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.26" hidelimb="False" inheritorigin="false" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="0,0,0,0" origin="0.5,0.57" >
+        <LightComponent LightColor="150,255,150,100" range="1600" castshadows="false" powerconsumption="infinity" IsOn="true" flicker="0.1" flickerspeed="0.3" pulsefrequency="0.1" pulseamount="0.1" />
+      </sprite>
+      <!--夜视仪-->
+      <!--StatusEffect type="OnWearing" target="This,Contained,Character" interval="0.1" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="tsm_nightvision" amount="100" />
+        <Conditional targetcontainer="true" targetitemcomponent="LightComponent" IsOn="true" />
+        <RequiredItem items="tsm_helmet_nvd" type="Contained" targetslot="0"/>
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" voltage="1.0" interval="0.1" setvalue="true" comparison="and" >
+        <Conditional IsLocalPlayer="true" tsm_nightvision="gt 0" />
+        <RequiredItem items="tsm_helmet_nvd" type="Contained" targetslot="0"/>
+      </StatusEffect-->
+      <!--热成像/健康扫描仪-->
+      <StatusHUD overlaycolor="176,0,0,120" range="3000" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
+      <StatusEffect type="NotInWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="true" showtexts="false" setvalue="true">
+        <RequiredItem items="tsm_helmet_thermalgoggles" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="false" setvalue="true">
+        <RequiredItem items="tsm_helmet_thermalgoggles" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="NotInWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="true" setvalue="true">
+        <RequiredItem items="tsm_helmet_screen" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="false" setvalue="true">
+        <RequiredItem items="tsm_helmet_thermalgoggles" type="Contained" MatchOnEmpty="true" />
+        <RequiredItem items="tsm_helmet_screen" type="Contained" MatchOnEmpty="true" />
+      </StatusEffect>
+      <!--识别仪-->
+      <StatusEffect type="OnWearing" target="Character" setvalue="true" comparison="and">
+        <Conditional InWater="true" />
+        <Affliction identifier="tsm_ff_helmet" strength="5" />
+        <RequiredItems items="tsm_helmet_flashlight" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" setvalue="true" comparison="and">
+        <Conditional InWater="false" />
+        <Affliction identifier="tsm_ff_helmet1" strength="5" />
+        <RequiredItems items="tsm_helmet_flashlight" type="Contained" />
+      </StatusEffect>
+      <!--面罩-->
+      <StatusEffect type="OnWearing" target="Character" setvalue="true" >
+        <Affliction identifier="tsm_armor_faceshield" strength="5" />
+        <RequiredItems items="tsm_ballistic_faceshield" type="Contained" />
+      </StatusEffect>
+      <!--护颚-->
+      <StatusEffect type="OnWearing" target="Character" setvalue="true" >
+        <Affliction identifier="tsm_armor_jaw" strength="5" />
+        <RequiredItems items="tsm_protective_jaw" type="Contained" />
+      </StatusEffect>
+    </Wearable>
+    <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="false" allowuioverlap="true">
+      <GuiFrame relativesize="0.09,0.07" anchor="CenterRight" pivot="CenterRight" relativeoffset="-0.02,0.09" style="ItemUI" />
+      <TickBox text="tsm_on">
+        <!-- 夜视仪开关 -->
+        <!--StatusEffect type="OnUse" target="This" IsOn="true" HudTint="0,255,0,200" setvalue="true" Interval="0.1" />
+        <StatusEffect type="OnUse" target="Contained" interval="0.1" targetslot="0" disabledeltatime="true" Condition="-0.001">
+          <RequiredItems items="tsm_helmet_nvd" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" HudTint="0,0,0,0" setvalue="true" Interval="0.1" /-->
+        <!-- 开启热成像 -->
+        <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="StatusHUD" overlaycolor="176,0,0,120" thermalgoggles="true" drawhudwhenequipped="true" setvalue="true" stackable="false">
+          <RequiredItems items="tsm_helmet_thermalgoggles" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Contained" interval="0.1" targetslot="0" disabledeltatime="true" Condition="-0.001">
+          <RequiredItems items="tsm_helmet_thermalgoggles" type="Contained" />
+        </StatusEffect>
+        <!-- 战术装备开启时，锁定，以免出现bug -->
+        <StatusEffect type="OnUse" target="Contained" targetslot="0" NonInteractable="true" stackable="false" setvalue="true" />
+        <!-- 关闭热成像 -->
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" targetitemcomponent="StatusHUD" thermalgoggles="false" drawhudwhenequipped="false" setvalue="true" currentmode="Passive" >
+          <RequiredItems items="tsm_helmet_thermalgoggles" type="Contained" />
+        </StatusEffect>
+        <!--StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" setValue="true" variant="+2" delay="0.1">
+          <RequiredItems items="tsm_helmet_thermalgoggles" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" disabledeltatime="true" setValue="true" variant="-2" delay="0.1">
+          <RequiredItems items="tsm_helmet_thermalgoggles" type="Contained" />
+        </StatusEffect-->
+        <!-- 确保热成像默认关闭 -->
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" setvalue="true" currentmode="Passive"/>
+        <!-- 战术装备关闭时，解除锁定，可以更换设备 -->
+        <StatusEffect type="OnSecondaryUse" target="Contained" targetslot="0" NonInteractable="false" setvalue="true"/>
+        <!-- 开启健康扫描仪 -->
+        <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="StatusHUD" overlaycolor="0,255,0,120" showdeadcharacters="true" showtexts="true" drawhudwhenequipped="true" setvalue="true">
+          <RequiredItems items="tsm_helmet_screen" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Contained" interval="0.1" targetslot="0" disabledeltatime="true" Condition="-0.01">
+          <RequiredItems items="tsm_helmet_screen" type="Contained" />
+        </StatusEffect>
+        <!-- 关闭健康扫描仪 -->
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" targetitemcomponent="StatusHUD" showdeadcharacters="true" showtexts="true" drawhudwhenequipped="false" setvalue="true" currentmode="Passive">
+          <RequiredItems items="tsm_helmet_screen" type="Contained" />
+        </StatusEffect>
+      </TickBox>
+    </CustomInterface>
+    <ItemContainer capacity="1" keepopenwhenequipped="false" movableframe="false" hideitems="true" maxstacksize="1" allowswappingcontaineditems="false">
+      <!--Containable items="tsm_helmet_nvd">
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable" >
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable" >
+        </StatusEffect>
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="true" />
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="false" />
+        <StatusEffect type="OnInserted" target="This" targetitemcomponent="LightComponent" IsOn="true" />
+        <StatusEffect type="OnRemoved" target="This" targetitemcomponent="LightComponent" IsOn="false" />
+      </Containable-->
+      <Containable items="tsm_ballistic_faceshield">
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="+1" delay="0.1">
+          <!--<LuaHook name="HelmetOnInserted" />-->
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="-1" delay="0.1">
+          <ReduceAffliction type="tsm_armor_faceshield" amount="50" />
+          <!--<LuaHook name="HelmetOnRemoved" />-->
+        </StatusEffect>
+      </Containable>
+      <Containable items="tsm_helmet_thermalgoggles">
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="+3" delay="0.1">
+          <!--<LuaHook name="HelmetOnInserted" />-->
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="-3" delay="0.1">
+          <!--<LuaHook name="HelmetOnRemoved" />-->
+        </StatusEffect>
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="true" />
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="false" />
+      </Containable>
+      <Containable items="tsm_helmet_screen">
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable"  variant="+6" delay="0.1">
+          <!--<LuaHook name="HelmetOnInserted" />-->
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable"  variant="-6" delay="0.1">
+          <!--<LuaHook name="HelmetOnRemoved" />-->
+        </StatusEffect>
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="true" />
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="CustomInterface" drawhudwhenequipped="false" />
+      </Containable>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="tsm_protective_jaw">
+          <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="+10" delay="0.1">
+            <!--<LuaHook name="HelmetOnInserted" />-->
+          </StatusEffect>
+          <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable" variant="-10" delay="0.1">
+            <ReduceAffliction type="tsm_armor_jaw" amount="50" />
+            <!--<LuaHook name="HelmetOnRemoved" />-->
+          </StatusEffect>
+        </Containable>
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="tsm_helmet_flashlight">
+          <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable" drawhudwhenequipped="true" variant="+100" delay="0.1">
+            <!--<LuaHook name="HelmetOnInserted" />-->
+          </StatusEffect>
+          <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable" drawhudwhenequipped="false" variant="-100" delay="0.1">
+            <!--<LuaHook name="HelmetOnRemoved" />-->
+          </StatusEffect>
+        </Containable>
+      </SubContainer>
+
+    </ItemContainer>
+  </Item>
+  </Items>

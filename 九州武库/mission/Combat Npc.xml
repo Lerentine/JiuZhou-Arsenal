@@ -4,7 +4,7 @@
   <!--快速反应部队-->
   <!--aimspeed：反应速度（越大越快）   aimaccuracy：精度（越小越准）  -->
   <npcset identifier="rapidreaction_npcs">
-    <npc identifier="rapidreaction_leader" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="30" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
+    <npc identifier="rapidreaction_leader" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="30" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_rapidreaction_uniform" equip="true" />
@@ -46,7 +46,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="rapidreaction_elite" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="25" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
+    <npc identifier="rapidreaction_elite" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.15" healthmultiplierinmultiplayer="1.3" aimspeed="25" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_rapidreaction_uniform" equip="true" />
@@ -84,7 +84,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="rapidreaction_elite_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="25" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
+    <npc identifier="rapidreaction_elite_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.15" healthmultiplierinmultiplayer="1.3" aimspeed="25" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.3">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_rapidreaction_uniform" equip="true" />
@@ -111,6 +111,7 @@
           <Item identifier="tsm_medicalkits" />
         </Item>
         <Item identifier="tsm_honeybadger" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
           <Item identifier="tsm_grip_cqr" equip="true" />
           <Item identifier="tsm_sight_reddot" equip="true" />
           <Item identifier="lm_762_35_mag" amount="8" />
@@ -120,7 +121,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="rapidreaction_breaker" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Active" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="20" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
+    <npc identifier="rapidreaction_breaker" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Active" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.35" aimspeed="20" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_rapidreaction_uniform" equip="true" />
@@ -153,7 +154,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="rapidreaction" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="20" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
+    <npc identifier="rapidreaction" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.25" aimspeed="20" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.6">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_rapidreaction_uniform" equip="true" />
@@ -180,6 +181,7 @@
           <Item identifier="tsm_medicalkits" />
         </Item>
         <Item identifier="tsm_lm_97" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
           <Item identifier="lm_556_fulgurium_mag" amount="1" />
           <Item identifier="lm_556_mag" amount="6" />
         </Item>
@@ -188,7 +190,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="rapidreaction_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="20" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
+    <npc identifier="rapidreaction_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.25" aimspeed="20" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.6">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_rapidreaction_uniform" equip="true" />
@@ -225,7 +227,7 @@
       </ItemSet>
     </npc>
     <!--快速反应增援部队-->
-    <npc identifier="rapidreaction_reinforcement" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Active" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="25" aimaccuracy="0.85" reportrange="2000" skillmultiplier="4">
+    <npc identifier="rapidreaction_reinforcement" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Active" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.4" aimspeed="25" aimaccuracy="0.85" reportrange="2000" skillmultiplier="4">
       <ItemSet commonness="0.2">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_rapidreaction_uniform" equip="true" />
@@ -344,7 +346,7 @@
   </npcset>
   <!--贝奥武夫中队-->
   <npcset identifier="beowulf_npcs">
-    <npc identifier="beowulf_leader" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="30" aimaccuracy="0.9" reportrange="2000" skillmultiplier="5">
+    <npc identifier="beowulf_leader" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.5" aimspeed="30" aimaccuracy="0.9" reportrange="2000" skillmultiplier="5">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_beowulf_uniform" equip="true" />
@@ -380,7 +382,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="beowulf_elite" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="25" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
+    <npc identifier="beowulf_elite" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.23" healthmultiplierinmultiplayer="1.35" aimspeed="25" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.7">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_beowulf_uniform" equip="true" />
@@ -431,7 +433,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="beowulf_elite_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="25" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
+    <npc identifier="beowulf_elite_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.23" healthmultiplierinmultiplayer="1.35" aimspeed="25" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.3">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_beowulf_uniform" equip="true" />
@@ -443,6 +445,7 @@
           <Item identifier="tsm_medicalkits" />
         </Item>
         <Item identifier="tsm_lm_hk417" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
           <Item identifier="tsm_grip_mounts" equip="true" />
           <Item identifier="lm_762_51_ap_krmag" amount="1" />
           <Item identifier="lm_762_51_mag" amount="6" />
@@ -467,7 +470,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="beowulf_breaker" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Active" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="20" aimaccuracy="0.75" reportrange="2000" skillmultiplier="3">
+    <npc identifier="beowulf_breaker" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Active" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.4" aimspeed="20" aimaccuracy="0.75" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_beowulf_uniform" equip="true" />
@@ -500,7 +503,7 @@
         <Item identifier="ceremonialsword"></Item>
       </ItemSet>
     </npc>
-    <npc identifier="beowulf_fire" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="20" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
+    <npc identifier="beowulf_fire" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.4" aimspeed="20" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_beowulf_uniform" equip="true" />
@@ -517,12 +520,12 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="beowulf_ex" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="10" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
+    <npc identifier="beowulf_ex" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.15" healthmultiplierinmultiplayer="1.3" aimspeed="10" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_beowulf_uniform" equip="true" />
-        <Item identifier="lm_vest_pt" equip="true" />
-        <Item identifier="lm_fast_helmet" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_fast_helmet_protectivejaw" equip="true" />
         <Item identifier="tsm_enhancement_combatship">
           <Item identifier="tsm_medicalkits" />
         </Item>
@@ -551,12 +554,12 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="beowulf_ex_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="10" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
+    <npc identifier="beowulf_ex_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.15" healthmultiplierinmultiplayer="1.3" aimspeed="10" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_beowulf_uniform" equip="true" />
-        <Item identifier="lm_vest_pt" equip="true" />
-        <Item identifier="lm_fast_helmet" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_fast_helmet_protectivejaw" equip="true" />
         <Item identifier="tsm_enhancement_combatship">
           <Item identifier="tsm_medicalkits" />
         </Item>
@@ -570,8 +573,8 @@
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_beowulf_uniform" equip="true" />
-        <Item identifier="lm_vest_pt" equip="true" />
-        <Item identifier="lm_fast_helmet" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_fast_helmet_protectivejaw" equip="true" />
         <Item identifier="tsm_enhancement_combatship">
           <Item identifier="tsm_medicalkits" />
         </Item>
@@ -585,7 +588,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="beowulf" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="20" aimaccuracy="0.75" reportrange="2000" skillmultiplier="3">
+    <npc identifier="beowulf" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.25" aimspeed="20" aimaccuracy="0.75" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_vest_elite" equip="true" />
@@ -629,7 +632,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="beowulf_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.1" aimspeed="20" aimaccuracy="0.75" reportrange="2000" skillmultiplier="3">
+    <npc identifier="beowulf_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.25" aimspeed="20" aimaccuracy="0.75" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_vest_elite" equip="true" />
@@ -662,7 +665,7 @@
   </npcset>
   <!--占领军-->
   <npcset identifier="occupation_npcs">
-    <npc identifier="occupation_leader" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="35" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
+    <npc identifier="occupation_leader" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.6" aimspeed="35" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_occupation_uniform" equip="true" />
@@ -703,7 +706,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="occupation_elite" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="30" aimaccuracy="0.85" reportrange="2000" skillmultiplier="4">
+    <npc identifier="occupation_elite" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.45" aimspeed="30" aimaccuracy="0.85" reportrange="2000" skillmultiplier="4">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_occupation_uniform" equip="true" />
@@ -763,7 +766,7 @@
         </ItemSet>
       </ItemSet>
     </npc>
-    <npc identifier="occupation_elite_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="30" aimaccuracy="0.85" reportrange="2000" skillmultiplier="4">
+    <npc identifier="occupation_elite_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.5" aimspeed="30" aimaccuracy="0.85" reportrange="2000" skillmultiplier="4">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_occupation_uniform" equip="true" />
@@ -796,6 +799,7 @@
           <Item identifier="tsm_medicalkits" />
         </Item>
         <Item identifier="tsm_lm_hk417" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
           <Item identifier="tsm_grip_mounts" equip="true" />
           <Item identifier="tsm_recoil" equip="true" />
           <Item identifier="lm_762_51_ap_krmag" amount="3" />
@@ -806,12 +810,12 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="occupation_ex" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="25" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
+    <npc identifier="occupation_ex" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.3" aimspeed="25" aimaccuracy="1" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_occupation_uniform" equip="true" />
-        <Item identifier="lm_vest_pt" equip="true" />
-        <Item identifier="lm_fast_helmet" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_heavy_helmet" equip="true" />
         <Item identifier="tsm_enhancement_combatship">
           <Item identifier="tsm_medicalkits" />
         </Item>
@@ -824,8 +828,8 @@
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_occupation_uniform" equip="true" />
-        <Item identifier="lm_vest_pt" equip="true" />
-        <Item identifier="lm_fast_helmet" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_heavy_helmet" equip="true" />
         <Item identifier="tsm_enhancement_combatship">
           <Item identifier="tsm_medicalkits" />
         </Item>
@@ -840,12 +844,12 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="occupation_ex_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="5" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
+    <npc identifier="occupation_ex_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.3" aimspeed="5" aimaccuracy="1" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_occupation_uniform" equip="true" />
-        <Item identifier="lm_vest_occupation" equip="true" />
-        <Item identifier="lm_fast_helmet_faceshield" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_heavy_helmet" equip="true" />
         <Item identifier="tsm_enhancement_combatship">
           <Item identifier="tsm_medicalkits" />
         </Item>
@@ -858,8 +862,8 @@
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_occupation_uniform" equip="true" />
-        <Item identifier="lm_vest_occupation" equip="true" />
-        <Item identifier="lm_fast_helmet_faceshield" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_heavy_helmet" equip="true" />
         <Item identifier="tsm_enhancement_cyborg" />
         <Item identifier="tsm_enhancement_combatship">
           <Item identifier="tsm_medicalkits" />
@@ -875,7 +879,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="occupation" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="5" aimaccuracy="0.8" reportrange="2000" skillmultiplier="4">
+    <npc identifier="occupation" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.3" aimspeed="5" aimaccuracy="0.8" reportrange="2000" skillmultiplier="4">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_occupation_uniform" equip="true" />
@@ -924,7 +928,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="occupation_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="5" aimaccuracy="0.8" reportrange="2000" skillmultiplier="4">
+    <npc identifier="occupation_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.35" aimspeed="5" aimaccuracy="0.8" reportrange="2000" skillmultiplier="4">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_occupation_uniform" equip="true" />
@@ -975,7 +979,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="occupation_fire" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="5" aimaccuracy="0.8" reportrange="2000" skillmultiplier="4">
+    <npc identifier="occupation_fire" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.5" aimspeed="5" aimaccuracy="0.8" reportrange="2000" skillmultiplier="4">
       <ItemSet commonness="0.3">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_occupation_uniform" equip="true" />
@@ -998,7 +1002,7 @@
   </npcset>
   <!--串扰-->
   <npcset identifier="crosstalk_npcs">
-    <npc identifier="crosstalk_leader" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="30" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
+    <npc identifier="crosstalk_leader" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.5" aimspeed="30" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
       <ItemSet commonness="0.3">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_stormyseas_uniform" equip="true" />
@@ -1035,7 +1039,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="crosstalk_leader_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="30" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
+    <npc identifier="crosstalk_leader_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.5" aimspeed="30" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_stormyseas_uniform" equip="true" />
@@ -1071,7 +1075,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="crosstalk_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="20" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
+    <npc identifier="crosstalk_p" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.2" aimspeed="20" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_stormyseas_uniform" equip="true" />
@@ -1096,7 +1100,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="crosstalk" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="20" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
+    <npc identifier="crosstalk" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.2" aimspeed="20" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_stormyseas_uniform" equip="true" />
@@ -1125,7 +1129,7 @@
   </npcset>
   <!--联盟部队-->
   <npcset identifier="tsm_coalition_npcs">
-    <npc identifier="coalition_leader" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="5" aimaccuracy="0.7" reportrange="2000" skillmultiplier="2">
+    <npc identifier="coalition_leader" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.2" aimspeed="5" aimaccuracy="0.7" reportrange="2000" skillmultiplier="2">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_stormyseas_uniform" equip="true" />
@@ -1170,7 +1174,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="coalition_leader_e" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="5" aimaccuracy="0.7" reportrange="2000" skillmultiplier="2">
+    <npc identifier="coalition_leader_e" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.2" aimspeed="5" aimaccuracy="0.7" reportrange="2000" skillmultiplier="2">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_stormyseas_uniform" equip="true" />
@@ -1210,7 +1214,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="coalition" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="5" aimaccuracy="0.6" reportrange="2000" skillmultiplier="2">
+    <npc identifier="coalition" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1.1" aimspeed="5" aimaccuracy="0.6" reportrange="2000" skillmultiplier="2">
       <ItemSet commonness="0.3">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_stormyseas_uniform" equip="true" />
@@ -1256,7 +1260,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="coalition_e" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="5" aimaccuracy="0.6" reportrange="2000" skillmultiplier="2">
+    <npc identifier="coalition_e" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1" healthmultiplierinmultiplayer="1.1" aimspeed="5" aimaccuracy="0.6" reportrange="2000" skillmultiplier="2">
       <ItemSet commonness="0.3">
         <Item identifier="idcard" equip="true" />
         <Item identifier="lm_stormyseas_uniform" equip="true" />
@@ -1307,7 +1311,7 @@
   <!--反抗军-->
   <!--野火反抗军-->
   <npcset identifier="yehuo_npcs">
-    <npc identifier="yehuo_leader" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="30" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
+    <npc identifier="yehuo_leader" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.5" aimspeed="30" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_yehuo_uniform" equip="true" />
@@ -1350,7 +1354,7 @@
         </Item-->
       </ItemSet>
     </npc>
-    <npc identifier="yehuo_elite" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="25" aimaccuracy="0.85" reportrange="2000" skillmultiplier="4">
+    <npc identifier="yehuo_elite" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.5" aimspeed="25" aimaccuracy="0.85" reportrange="2000" skillmultiplier="4">
       <ItemSet commonness="0.2">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_yehuo_uniform" equip="true" />
@@ -1457,7 +1461,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="yehuo_elite_p" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="25" aimaccuracy="0.85" reportrange="2000" skillmultiplier="4">
+    <npc identifier="yehuo_elite_p" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.5" aimspeed="25" aimaccuracy="0.85" reportrange="2000" skillmultiplier="4">
       <ItemSet commonness="0.6">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_yehuo_uniform" equip="true" />
@@ -1468,6 +1472,7 @@
         <Item identifier="fkj_heavy_helmet" equip="true" />
         </Item>
         <Item identifier="tsm_fkj_sg553" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
           <Item identifier="fkj_762_51_ap_krmag" amount="3" />
           <Item identifier="fkj_762_51_mag" amount="4" />
           <Item identifier="tsm_sight_reddot" equip="true" />
@@ -1515,7 +1520,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="yehuo" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="20" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
+    <npc identifier="yehuo" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.5" aimspeed="20" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.1">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_yehuo_uniform" equip="true" />
@@ -1574,7 +1579,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="yehuo_p" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="20" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
+    <npc identifier="yehuo_p" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.5" aimspeed="20" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.15">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_yehuo_uniform" equip="true" />
@@ -1613,6 +1618,7 @@
           <Item identifier="fkj_fast_helmet_reinforce" equip="true" />
         </Item>
         <Item identifier="tsm_fkj_ak103_l" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
           <Item identifier="fkj_762hz_mag" amount="3" />
           <Item identifier="fkj_762_mag" amount="4" />
         </Item>
@@ -1629,29 +1635,14 @@
           <Item identifier="fkj_762hz_mag" amount="3" />
         </Item>
       </ItemSet>
-      <ItemSet commonness="0.1">
-        <Item identifier="idcard" equip="true" />
-        <Item identifier="fkj_yehuo_uniform" equip="true" />
-        <Item identifier="fkj_vest_elite" equip="true" />
-        <Item identifier="tsm_enhancement_cyborg" />
-        <Item identifier="smgmagazine">
-          <Item identifier="fkj_fast_helmet_reinforce" equip="true" />
-        </Item>
-        <Item identifier="tsm_fkj_m2" equip="true">
-          <Item identifier="fkj_m2_mag" amount="3" />
-        </Item>
-        <!--Item identifier="tsm_fkj_uzi">
-          <Item identifier="tsm_9_drum" amount="2"/>
-          </Item-->
-      </ItemSet>
     </npc>
-    <npc identifier="yehuo_ex" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="5" aimaccuracy="0.8" reportrange="2000" skillmultiplier="4">
+    <npc identifier="yehuo_ex" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.3" aimspeed="5" aimaccuracy="1" reportrange="2000" skillmultiplier="4">
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_yehuo_uniform" equip="true" />
-        <Item identifier="fkj_vest_pt" equip="true" />
+        <Item identifier="fkj_vest_yehuo" equip="true" />
         <Item identifier="ceremonialsword">
-          <Item identifier="fkj_fast_helmet_reinforce" equip="true" />
+          <Item identifier="fkj_heavy_helmet" equip="true" />
         </Item>
         <Item identifier="tsm_bazooka" equip="true">
           <Item identifier="tsm_b_rocket" amount="6" />
@@ -1659,7 +1650,7 @@
       </ItemSet>
     </npc>
     <!--野火支援部队-->
-    <npc identifier="yehuo_reinforcement" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Active" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="20" aimaccuracy="0.9" reportrange="2000" skillmultiplier="4">
+    <npc identifier="yehuo_reinforcement" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Active" healthmultiplier="1.35" healthmultiplierinmultiplayer="1.45" aimspeed="20" aimaccuracy="0.9" reportrange="2000" skillmultiplier="4">
       <ItemSet commonness="0.2">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_yehuo_uniform" equip="true" />
@@ -1670,7 +1661,8 @@
         </Item>
         <Item identifier="tsm_fkj_aa12" equip="true">
           <Item identifier="tsm_ai_grenade" equip="true" />
-          <Item identifier="fkj_aa12_mag" amount="5" />
+          <Item identifier="fkj_aa12_mag_kill" amount="2" />
+          <Item identifier="fkj_aa12_mag" amount="3" />
         </Item>
       </ItemSet>
       <ItemSet commonness="0.8">
@@ -1713,6 +1705,7 @@
           <Item identifier="fkj_heavy_helmet" equip="true" />
         </Item>
         <Item identifier="tsm_fkj_g3a4" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
           <Item identifier="tsm_sight_holographic" equip="true" />
           <Item identifier="fkj_762_51_ap_krmag" amount="2" />
           <Item identifier="fkj_762_51_mag" amount="4" />
@@ -1738,7 +1731,7 @@
   </npcset>
   <!--尖锐突袭者-->
   <npcset identifier="Anonymous_npcs">
-    <npc identifier="Anonymous_leader" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="25" aimaccuracy="0.9" reportrange="2000" skillmultiplier="3">
+    <npc identifier="Anonymous_leader" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="25" aimaccuracy="0.9" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_anonymous_uniform" equip="true" />
@@ -1788,7 +1781,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="Anonymous_elite" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="20" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
+    <npc identifier="Anonymous_elite" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.35" aimspeed="20" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.6">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_anonymous_uniform" equip="true" />
@@ -1811,6 +1804,7 @@
           <Item identifier="divingknife" />
         </Item>
         <Item identifier="tsm_fkj_ak103_l" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
           <Item identifier="fkj_762cj_krmag" amount="2" />
           <Item identifier="fkj_762_mag" amount="5" />
         </Item>
@@ -1823,7 +1817,8 @@
           <Item identifier="fkj_Anonymous_helmet" equip="true" />
         </Item>
         <Item identifier="tsm_fkj_aa12" equip="true">
-          <Item identifier="fkj_aa12_mag" amount="4" />
+          <Item identifier="fkj_aa12_mag_kill" amount="2" />
+          <Item identifier="fkj_aa12_mag" amount="3" />
         </Item>
       </ItemSet>
       <ItemSet commonness="0.4">
@@ -1835,12 +1830,13 @@
           <Item identifier="fkj_Anonymous_helmet" equip="true" />
         </Item>
         <Item identifier="tsm_fkj_fal" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
           <Item identifier="fkj_762_51_drum" amount="1" />
           <Item identifier="fkj_762_51_ap_mag" amount="4" />
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="Anonymous_elite_p" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="10" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
+    <npc identifier="Anonymous_elite_p" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.3" aimspeed="10" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.6">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_anonymous_uniform" equip="true" />
@@ -1894,7 +1890,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="Anonymous" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="15" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
+    <npc identifier="Anonymous" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.15" healthmultiplierinmultiplayer="1.2" aimspeed="15" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.4">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_anonymous_uniform" equip="true" />
@@ -1902,7 +1898,7 @@
         <Item identifier="tsm_enhancement_combatship">
           <Item identifier="fkj_fast_helmet_reinforce" equip="true" />
         </Item>
-        <Item identifier="tsm_fkj_sks" equip="true">
+        <Item identifier="tsm_fkj_akm" equip="true">
           <Item identifier="fkj_762_mag" amount="6" />
         </Item>
       </ItemSet>
@@ -1932,7 +1928,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="Anonymous_p" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="15" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
+    <npc identifier="Anonymous_p" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.25" aimspeed="15" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.4">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_anonymous_uniform" equip="true" />
@@ -1940,7 +1936,7 @@
         <Item identifier="tsm_enhancement_combatship">
           <Item identifier="fkj_fast_helmet_reinforce" equip="true" />
         </Item>
-        <Item identifier="tsm_fkj_sks" equip="true">
+        <Item identifier="tsm_fkj_akm" equip="true">
           <Item identifier="fkj_762_mag" amount="6" />
         </Item>
       </ItemSet>
@@ -1965,6 +1961,7 @@
           <Item identifier="fkj_fast_helmet_reinforce" equip="true" />
         </Item>
         <Item identifier="tsm_fkj_ak105_l" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
           <Item identifier="fkj_545cj_mag" amount="2" />
           <Item identifier="fkj_545_mag" amount="5" />
         </Item>
@@ -1973,7 +1970,7 @@
   </npcset>
   <!--普通反抗军-->
   <npcset identifier="tsm_separatists_npcs">
-    <npc identifier="separatists_leader" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="10" aimaccuracy="0.6" reportrange="2000" skillmultiplier="3">
+    <npc identifier="separatists_leader" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.2" aimspeed="10" aimaccuracy="0.6" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_abyssrambler_uniform" equip="true" />
@@ -2010,7 +2007,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="separatists" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="5" aimaccuracy="0.5" reportrange="2000" skillmultiplier="2">
+    <npc identifier="separatists" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1.2" aimspeed="5" aimaccuracy="0.5" reportrange="2000" skillmultiplier="2">
       <ItemSet commonness="0.7">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_abyssrambler_uniform" equip="true" />
@@ -2057,7 +2054,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="separatists_e" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="5" aimaccuracy="0.5" reportrange="2000" skillmultiplier="2">
+    <npc identifier="separatists_e" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.15" aimspeed="5" aimaccuracy="0.5" reportrange="2000" skillmultiplier="2">
       <ItemSet commonness="0.7">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_abyssrambler_uniform" equip="true" />
@@ -2097,7 +2094,7 @@
   <!--奇迹之海-->
   <!--九州作战部-->
   <npcset identifier="tsm_npcs">
-    <npc identifier="tsm_jz" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="30" aimaccuracy="0.9" reportrange="2000" skillmultiplier="5">
+    <npc identifier="tsm_jz" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.4" aimspeed="30" aimaccuracy="0.9" reportrange="2000" skillmultiplier="5">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="tsm_jz_uniform" equip="true" />
@@ -2132,7 +2129,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="tsm_pgc" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="30" aimaccuracy="0.9" reportrange="2000" skillmultiplier="5">
+    <npc identifier="tsm_pgc" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.35" aimspeed="30" aimaccuracy="0.9" reportrange="2000" skillmultiplier="5">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="tsm_pgc_uniform" equip="true" />
@@ -2167,7 +2164,7 @@
       </ItemSet>
     </npc>
     <!--先进作战部-->
-    <npc identifier="tsm_advanced" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="40" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
+    <npc identifier="tsm_advanced" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.4" aimspeed="40" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="tsm_advanced_uniform" equip="true" />
@@ -2210,7 +2207,7 @@
       </ItemSet>
     </npc>
     <!--日暮山作战部-->
-    <npc identifier="tsm_sundawn" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="30" aimaccuracy="0.9" reportrange="2000" skillmultiplier="5">
+    <npc identifier="tsm_sundawn" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.4" aimspeed="30" aimaccuracy="0.9" reportrange="2000" skillmultiplier="5">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="tsm_sundawn_uniform" equip="true" />
@@ -2245,7 +2242,7 @@
       </ItemSet>
     </npc>
     <!--顾问-->
-    <npc identifier="tsm_military_advisers" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="28" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
+    <npc identifier="tsm_military_advisers" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.4" healthmultiplierinmultiplayer="1.6" aimspeed="28" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="tsm_advisers_uniform" equip="true" />
@@ -2275,7 +2272,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="tsm_soldier_military_advisers" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="20" aimaccuracy="0.85" reportrange="2000" skillmultiplier="3">
+    <npc identifier="tsm_soldier_military_advisers" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.5" aimspeed="20" aimaccuracy="0.85" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.6">
         <Item identifier="idcard" equip="true" />
         <Item identifier="tsm_old_uniform" equip="true" />
@@ -2311,7 +2308,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="fkj_elite" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="25" aimaccuracy="0.8" reportrange="2000" skillmultiplier="4">
+    <npc identifier="fkj_elite" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.35" aimspeed="25" aimaccuracy="0.8" reportrange="2000" skillmultiplier="4">
       <ItemSet commonness="0.1">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_abyssrambler_uniform" equip="true" />
@@ -2321,7 +2318,7 @@
           <Item identifier="fkj_heavy_helmet" equip="true" />
         </Item>
         <Item identifier="tsm_fkj_aa12" equip="true">
-          <Item identifier="fkj_aa12_mag" amount="4" />
+          <Item identifier="fkj_aa12_mag_kill" amount="6" />
         </Item>
       </ItemSet>
       <ItemSet commonness="0.7">
@@ -2357,7 +2354,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="fkj_elite_p" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="25" aimaccuracy="0.8" reportrange="2000" skillmultiplier="4">
+    <npc identifier="fkj_elite_p" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.3" aimspeed="25" aimaccuracy="0.8" reportrange="2000" skillmultiplier="4">
       <ItemSet commonness="0.6">
         <Item identifier="idcard" equip="true" />
         <Item identifier="fkj_yehuo_uniform" equip="true" />
@@ -2399,7 +2396,7 @@
       </ItemSet>
     </npc>
     <!--奇迹之海士兵-->
-    <npc identifier="tsm_soldier_elite" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="20" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
+    <npc identifier="tsm_soldier_elite" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.4" aimspeed="20" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.7">
         <Item identifier="idcard" equip="true" />
         <Item identifier="tsm_old_uniform" equip="true" />
@@ -2443,7 +2440,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="tsm_soldier_elite_p" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="20" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
+    <npc identifier="tsm_soldier_elite_p" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.4" aimspeed="20" aimaccuracy="0.8" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="tsm_old_uniform" equip="true" />
@@ -2480,7 +2477,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="tsm_soldier" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="20" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
+    <npc identifier="tsm_soldier" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.3" aimspeed="20" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="tsm_old_uniform" equip="true" />
@@ -2490,6 +2487,7 @@
           <Item identifier="tsm_riotcontrol_helmet" equip="true" />
         </Item>
         <Item identifier="tsm_thbq" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
           <Item identifier="tsm_magazinecj" amount="2" />
           <Item identifier="tsm_magazine" amount="5" />
         </Item>
@@ -2508,7 +2506,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="tsm_soldier_p" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="20" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
+    <npc identifier="tsm_soldier_p" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.3" aimspeed="20" aimaccuracy="0.7" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="tsm_old_uniform" equip="true" />
@@ -2529,6 +2527,7 @@
           <Item identifier="tsm_riotcontrol_helmet" equip="true" />
         </Item>
         <Item identifier="tsm_advanced_95" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
           <Item identifier="tsm_95_sight" equip="true" />
           <Item identifier="tsm_58_mag_cj" amount="2" />
           <Item identifier="tsm_58_mag_kr" amount="3" />
@@ -2536,7 +2535,7 @@
       </ItemSet>
     </npc>
     <!--奇迹之海第三站点突袭中队-->
-    <npc identifier="tsm_outpost_combat_3" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule,banditleader" job="tsm_structuredefender" behavior="Active" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="30" aimaccuracy="0.8" reportrange="2000" skillmultiplier="4">
+    <npc identifier="tsm_outpost_combat_3" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule,banditleader" job="tsm_structuredefender" behavior="Active" healthmultiplier="1.4" healthmultiplierinmultiplayer="1.55" aimspeed="30" aimaccuracy="0.8" reportrange="2000" skillmultiplier="4">
       <ItemSet commonness="0.7">
         <Item identifier="idcard" equip="true" />
         <Item identifier="tsm_nujiang_uniform" equip="true" />
@@ -2610,7 +2609,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="tsm_outpost_combat_2" commonness="0" tags="TSM" moduleflags="banditleader" job="tsm_soldier" behavior="Active" healthmultiplier="1" healthmultiplierinmultiplayer="2.0" aimspeed="20" aimaccuracy="0.9" reportrange="2000" skillmultiplier="4">
+    <npc identifier="tsm_outpost_combat_2" commonness="0" tags="TSM" moduleflags="banditleader" job="tsm_soldier" behavior="Active" healthmultiplier="1.5" healthmultiplierinmultiplayer="2.0" aimspeed="20" aimaccuracy="0.9" reportrange="2000" skillmultiplier="4">
       <ItemSet commonness="0.65">
         <Item identifier="idcard" equip="true" />
         <Item identifier="autoinjectorheadset" equip="true" />
@@ -2655,7 +2654,7 @@
   </npcset>
   <!--降临派-->
   <npcset identifier="tsm_adventists_npcs">
-    <npc identifier="adventists_leader" commonness="0" tags="adventists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.0" healthmultiplierinmultiplayer="1.3" aimspeed="10" aimaccuracy="0.6" reportrange="1500" skillmultiplier="3">
+    <npc identifier="adventists_leader" commonness="0" tags="adventists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.5" aimspeed="10" aimaccuracy="0.6" reportrange="1500" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="adventists_uniform" equip="true" />
@@ -2683,7 +2682,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="adventists" commonness="0" tags="adventists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.0" healthmultiplierinmultiplayer="1.2" aimspeed="5" aimaccuracy="0.5" reportrange="1000" skillmultiplier="2">
+    <npc identifier="adventists" commonness="0" tags="adventists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.3" aimspeed="5" aimaccuracy="0.5" reportrange="1000" skillmultiplier="2">
       <ItemSet commonness="0.6">
         <Item identifier="idcard" equip="true" />
         <Item identifier="adventists_Wind_proof" equip="true" />
@@ -2732,7 +2731,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="adventists_p" commonness="0" tags="adventists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="5" aimaccuracy="0.5" reportrange="1000" skillmultiplier="2">
+    <npc identifier="adventists_p" commonness="0" tags="adventists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.3" aimspeed="5" aimaccuracy="0.5" reportrange="1000" skillmultiplier="2">
       <ItemSet commonness="0.6">
         <Item identifier="idcard" equip="true" />
         <Item identifier="adventists_Wind_proof" equip="true" />
@@ -2780,7 +2779,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="adventists_elite" commonness="0" tags="adventists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Active" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="15" aimaccuracy="0.8" reportrange="1000" skillmultiplier="4">
+    <npc identifier="adventists_elite" commonness="0" tags="adventists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Active" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.35" aimspeed="15" aimaccuracy="0.8" reportrange="1000" skillmultiplier="4">
       <ItemSet commonness="0.3">
         <Item identifier="idcard" equip="true" />
         <Item identifier="adventists_Wind_proof" equip="true" />
@@ -2813,7 +2812,7 @@
   <!--其他-->
   <!--船-->
   <npcset identifier="ship_combat_npcs">
-    <npc identifier="ship_combat_leader" commonness="0" tags="Pirate" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="10" aimaccuracy="0.7" reportrange="1000" skillmultiplier="3">
+    <npc identifier="ship_combat_leader" commonness="0" tags="Pirate" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.3" aimspeed="10" aimaccuracy="0.7" reportrange="1000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="captainsuniform2" equip="true" />
@@ -2841,7 +2840,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="ship_combat_elite" commonness="0" tags="Pirate" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="10" aimaccuracy="0.8" reportrange="1000" skillmultiplier="3">
+    <npc identifier="ship_combat_elite" commonness="0" tags="Pirate" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.3" aimspeed="10" aimaccuracy="0.8" reportrange="1000" skillmultiplier="3">
       <ItemSet commonness="0.7">
         <Item identifier="idcard" equip="true" />
         <Item identifier="securityuniform2" equip="true" />
@@ -2867,7 +2866,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="ship_combat_elite_e" commonness="0" tags="Pirate" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="10" aimaccuracy="0.8" reportrange="1000" skillmultiplier="3">
+    <npc identifier="ship_combat_elite_e" commonness="0" tags="Pirate" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.3" aimspeed="10" aimaccuracy="0.8" reportrange="1000" skillmultiplier="3">
       <ItemSet commonness="0.7">
         <Item identifier="idcard" equip="true" />
         <Item identifier="securityuniform2" equip="true" />
@@ -2893,7 +2892,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="ship_combat" commonness="0" tags="Pirate" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="5" aimaccuracy="0.6" reportrange="1000" skillmultiplier="2">
+    <npc identifier="ship_combat" commonness="0" tags="Pirate" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.3" aimspeed="5" aimaccuracy="0.6" reportrange="1000" skillmultiplier="2">
       <ItemSet commonness="0.7">
         <Item identifier="idcard" equip="true" />
         <Item identifier="pirateclothes" equip="true" />
@@ -2917,7 +2916,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="ship_combat_e" commonness="0" tags="Pirate" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="5" aimaccuracy="0.6" reportrange="1000" skillmultiplier="2">
+    <npc identifier="ship_combat_e" commonness="0" tags="Pirate" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.3" aimspeed="5" aimaccuracy="0.6" reportrange="1000" skillmultiplier="2">
       <ItemSet commonness="0.7">
         <Item identifier="idcard" equip="true" />
         <Item identifier="pirateclothes" equip="true" />
@@ -2944,7 +2943,7 @@
   </npcset>
   <!--手炮侠-->
   <npcset identifier="tsm_gunner_npcs">
-    <npc identifier="gunner_Passive" commonness="0" tags="gunner" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="15" aimaccuracy="0.8" reportrange="1000" skillmultiplier="3">
+    <npc identifier="gunner_StayInHull" commonness="0" tags="gunner" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.35" aimspeed="15" aimaccuracy="0.8" reportrange="1000" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="captainsuniform1" equip="true" />
@@ -2994,7 +2993,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="gunner_Patrol" commonness="0" tags="gunner" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1" aimspeed="15" aimaccuracy="0.8" reportrange="1500" skillmultiplier="3">
+    <npc identifier="gunner_Patrol" commonness="0" tags="gunner" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.3" aimspeed="15" aimaccuracy="0.8" reportrange="1500" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="captainsuniform1" equip="true" />
@@ -3044,7 +3043,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="gunner_solomon" commonness="0" tags="gunner" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="2.0" aimspeed="25" aimaccuracy="1" reportrange="1800" skillmultiplier="3">
+    <npc identifier="gunner_solomon" commonness="0" tags="gunner" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.5" healthmultiplierinmultiplayer="2.0" aimspeed="25" aimaccuracy="1" reportrange="1800" skillmultiplier="3">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
         <Item identifier="tsm_suit_O5" equip="true" />
@@ -3063,7 +3062,7 @@
   </npcset>
   <!--雇佣兵-->
   <npcset identifier="tsm_abandonedoutpostnpcs">
-    <npc identifier="tsm_hiredgun" commonness="0" tags="bandit" moduleflags="crewmodule,engineeringmodule" job="structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.35" aimspeed="10" aimaccuracy="1" reportrange="1500" skillmultiplier="3">
+    <npc identifier="tsm_hiredgun" commonness="0" tags="bandit" moduleflags="crewmodule,engineeringmodule" job="structuredefender" behavior="Patrol" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.35" aimspeed="10" aimaccuracy="1" reportrange="1500" skillmultiplier="3">
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" />
         <Item identifier="securityseparatistsuniform3" equip="true" />
@@ -3073,27 +3072,27 @@
         <Item identifier="antibleeding1"/>
         </Item>
         <Item identifier="tsm_lm_czbren3">
-        <Item identifier="lm_556_mag" amount="8"/>
+        <Item identifier="lm_762_35_mag" amount="8"/>
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="tsm_hiredgun_med" commonness="0" tags="bandit" job="medicaldoctor" behavior="Patrol" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.6" aimspeed="10" aimaccuracy="1" reportrange="2500" skillmultiplier="3">
+    <npc identifier="tsm_hiredgun_med" commonness="0" tags="bandit" job="medicaldoctor" behavior="StayInHull" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.6" aimspeed="10" aimaccuracy="1" reportrange="2500" skillmultiplier="3">
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" />
         <Item identifier="medicseparatistsuniform1" equip="true" />
         <Item identifier="bodyarmor" equip="true" />
         <Item identifier="captainsseparatistcap2" equip="true" />
-        <Item identifier="antidama2" amount="8">
-        <Item identifier="antibloodloss2" amount="8"/>
-        <Item identifier="antibleeding3" amount="2"/>
+        <Item identifier="antidama2" amount="8"/>
+        <Item identifier="antibloodloss2" amount="8">
         </Item>
         <Item identifier="tsm_mp5sd">
-          <Item identifier="tsm_9_smgmag_kr" amount="7"/>
+          <Item identifier="tsm_9_smgmag_kr" amount="4"/>
           <Item identifier="tsm_medicalkits" amount="2"/>
+          <Item identifier="antibleeding3" amount="2"/>
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="tsm_hiredgun_hard" commonness="0" tags="bandit" job="structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="10" aimaccuracy="1" reportrange="2000" skillmultiplier="3">
+    <npc identifier="tsm_hiredgun_hard" commonness="0" tags="bandit" job="structuredefender" behavior="Patrol" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.2" aimspeed="10" aimaccuracy="1" reportrange="2000" skillmultiplier="3">
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" />
         <Item identifier="captainseparatistsuniform2" equip="true" />
@@ -3103,6 +3102,7 @@
         <Item identifier="tsm_57_smgmag"/>
         </Item>
         <Item identifier="tsm_p90">
+          <Item identifier="tsm_ai_grenade" equip="true" />
           <Item identifier="tsm_57_smgmag" amount="7"/>
         </Item>
       </ItemSet>
@@ -3112,18 +3112,6 @@
         <Item identifier="tsm_pmc_vest_heavy" equip="true" />
         <Item identifier="ballistichelmet3" equip="true" />
         <Item identifier="ceremonialsword">
-          <Item identifier="tsm_46_smgmag"/>
-        </Item>
-        <Item identifier="tsm_mp7">
-          <Item identifier="tsm_46_smgmag" amount="8"/>
-        </Item>
-      </ItemSet>
-      <ItemSet commonness="1">
-        <Item identifier="idcard" equip="true" />
-        <Item identifier="securityseparatistsuniform2" equip="true" />
-        <Item identifier="tsm_pmc_vest" equip="true" />
-        <Item identifier="ballistichelmet1" equip="true" />
-        <Item identifier="boardingaxe">
           <Item identifier="tsm_46_smgmag"/>
         </Item>
         <Item identifier="tsm_mp7">
@@ -3153,9 +3141,7 @@
         <Item identifier="tsm_lm_czbren3">
           <Item identifier="tsm_grip_straight" equip="true"/>
           <Item identifier="tsm_sight_tripled" equip="true"/>
-          <Item identifier="lm_556cj_mag" amount="3"/>
-          <Item identifier="lm_556kr_drum" amount="2"/>
-          <Item identifier="lm_556cj_mag" amount="3"/>
+          <Item identifier="lm_762_35_mag" amount="8"/>
         </Item>
       </ItemSet>
       <ItemSet commonness="0.8">
@@ -3166,6 +3152,7 @@
           <Item identifier="lm_762_51_ap_mag">
         </Item>
         <Item identifier="tsm_fkj_sg553">
+          <Item identifier="tsm_ai_grenade" equip="true" />
           <Item identifier="tsm_sight_reddot" equip="true"/>
           <Item identifier="tsm_grip_mounts" equip="true"/>
           <Item identifier="lm_762_51_drum" amount="3"/>
@@ -3198,7 +3185,7 @@
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="tsm_hiredgun_fire" commonness="0" tags="bandit" job="structuredefender" behavior="Patrol" healthmultiplier="1.4" healthmultiplierinmultiplayer="1.6" aimspeed="10" aimaccuracy="1" reportrange="2500" skillmultiplier="3">
+    <npc identifier="tsm_hiredgun_fire" commonness="0" tags="bandit" job="structuredefender" behavior="Patrol" healthmultiplier="1.3" healthmultiplierinmultiplayer="1.6" aimspeed="10" aimaccuracy="1" reportrange="2500" skillmultiplier="3">
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" />
         <Item identifier="watchmanclothes" equip="true" />
@@ -3218,9 +3205,21 @@
         <Item identifier="40mmgrenade" amount="1">
         </Item>
         <Item identifier="grenadelauncher">
+          <Item identifier="40mmnuke" amount="1"/>
           <Item identifier="40mmgrenade" amount="4"/>
           <Item identifier="40mmchemgrenade" amount="3"/>
-          <Item identifier="40mmnuke" amount="1"/>
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="watchmanclothes" equip="true" />
+        <Item identifier="tsm_pmc_vest_heavy" equip="true" />
+        <Item identifier="piratehelmet" equip="true" />
+        <Item identifier="40mmnuke" equip="true">
+        </Item>
+        <Item identifier="grenadelauncher">
+          <Item identifier="40mmgrenade" amount="4"/>
+          <Item identifier="40mmchemgrenade" amount="3"/>
         </Item>
       </ItemSet>
     </npc>

@@ -227,7 +227,7 @@
       <InventoryIcon texture="%ModDir%/minerals+items+tools/items.png" sourcerect="0,324,241,144" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/minerals+items+tools/items.png" sourcerect="0,324,241,144" depth="0.53" origin="0.5,0.5" />
       <Body width="241" height="144" density="15" />
-      <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <Holdable slots="Any" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
         <StatusEffect type="OnActive" targettype="Contained" Condition="-0.1">
           <RequiredItem items="mobilebattery" type="Contained" />
         </StatusEffect>
@@ -243,6 +243,11 @@
           <Conditional InWater="false" />
           <RequiredItem items="mobilebattery" type="Contained" />
           <Affliction identifier="tsm_ff" strength="2" />
+        </StatusEffect>
+        <StatusEffect type="OnActive" target="Character">
+          <Conditional InWater="true" />
+          <RequiredItem items="mobilebattery" type="Contained" />
+          <Affliction identifier="tsm_ff1" strength="2" />
         </StatusEffect>
       </Holdable>
       <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
@@ -608,8 +613,7 @@
         </StatusEffect>
       </Holdable>
     </Item>
-    <Item name="头盔用热成像" identifier="tsm_helmet_thermalgoggles" category="Material" subcategory="TSM" Tags="smallitem,thermalgoggles" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
-      <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="0" maxamount="1" spawnprobability="0.01" />
+    <Item name="头盔用热成像" identifier="tsm_helmet_thermalgoggles" category="Equipment" subcategory="TSM" Tags="smallitem,thermalgoggles,loadable" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="storagecab" />
       <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="20">
         <RequiredSkill identifier="mechanical" level="20" />
@@ -625,12 +629,9 @@
       <Sprite texture="%ModDir%/Jobgear/helmet.png" sourcerect="997,1865,138,85" depth="0.55" origin="0.5,0.5" />
       <Body width="138" height="85" density="12" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-        <StatusEffect type="OnBroken" target="This">
-          <Remove />
-        </StatusEffect>
       </Holdable>
     </Item>
-    <Item name="大型防弹面罩" identifier="tsm_ballistic_faceshield_big" category="Material" subcategory="TSM" Tags="smallitem" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
+    <Item name="大型防弹面罩" identifier="tsm_ballistic_faceshield_big" category="Equipment" subcategory="TSM" Tags="smallitem,tsm_ballistic_faceshield" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
       <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.03" />
       <PreferredContainer primary="storagecab" />
       <Price baseprice="215">
@@ -660,7 +661,7 @@
       </Holdable>
       <Body width="225" height="140" density="12" />
     </Item>
-    <Item name="小型防弹面罩" identifier="tsm_ballistic_faceshield_small" category="Material" subcategory="TSM" Tags="smallitem" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
+    <Item name="小型防弹面罩" identifier="tsm_ballistic_faceshield_small" category="Equipment" subcategory="TSM" Tags="smallitem,tsm_ballistic_faceshield" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
       <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.03" />
       <PreferredContainer primary="storagecab" />
       <Price baseprice="275">
@@ -711,7 +712,7 @@
         </StatusEffect>
       </ItemComponent>
     </Item>
-    <Item name="头盔用护颚" identifier="tsm_protective_jaw" category="Material" subcategory="TSM" Tags="smallitem" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
+    <Item name="头盔用护颚" identifier="tsm_protective_jaw" category="Equipment" subcategory="TSM" Tags="smallitem" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
       <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.03" />
       <PreferredContainer primary="storagecab" />
       <Price baseprice="301" minleveldifficulty="20">
@@ -740,6 +741,84 @@
         </StatusEffect>
       </Holdable>
     </Item>
+    <Item name="头盔用手电" identifier="tsm_helmet_flashlight" subcategory="TSM" category="Equipment" Tags="smallitem,tool,provocative,loadable" cargocontaineridentifier="tsm_metalcrate" Scale="0.2" impactsoundtag="impact_metal_light">
+      <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="0" maxamount="1" spawnprobability="0.01" />
+      <PreferredContainer primary="storagecab" />
+      <Price baseprice="156" minavailable="1">
+        <Price storeidentifier="merchantoutpost" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="3" />
+        <Price storeidentifier="merchantresearch" multiplier="1.25" />
+        <Price storeidentifier="merchantmilitary" multiplier="1.25" />
+        <Price storeidentifier="merchantmine" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="lightcomponent" />
+        <Item identifier="aluminium" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="10">
+        <RequiredItem identifier="aluminium" amount="1" />
+        <RequiredItem identifier="batterycell" amount="1" />
+        <RequiredItem tag="lightcomponent" amount="1" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Jobgear/helmet.png" sourcerect="1367,1742,92,65" />
+      <Sprite texture="%ModDir%/Jobgear/helmet.png" sourcerect="1367,1742,92,65" depth="0.55" origin="0.5,0.5" />
+      <Body width="92" height="65" density="12" />
+      <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnActive" target="This" Condition="-0.1"/>
+        <LightComponent LightColor="150,150,150,255" Flicker="0.02" range="1200" powerconsumption="10" IsOn="true">
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="2.5,4.0" />
+          <IsActive targetcontaineditem="true" condition="gt 1.0" />
+        </LightComponent>
+        <LightComponent LightColor="150,150,150,255" range="1200" powerconsumption="10" IsOn="true" flicker="0.8" flickerspeed="1.0" pulsefrequency="0.1" pulseamount="0.5">
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="2.5,4.0" />
+          <IsActive targetcontaineditem="true" condition="lte 1.0" />
+        </LightComponent>
+      </Holdable>
+      <AiTarget sightrange="3000" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="头盔用夜视仪" identifier="tsm_helmet_nvd" category="Equipment" subcategory="TSM" Tags="smallitem,thermalgoggles,loadable" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
+      <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="0" maxamount="1" spawnprobability="0.01" />
+      <PreferredContainer primary="storagecab" />
+      <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="20">
+        <RequiredSkill identifier="mechanical" level="35" />
+        <RequiredSkill identifier="electrical" level="35" />
+        <RequiredItem identifier="silicon" amount="2" />
+        <RequiredItem identifier="regexcomponent" amount="1" />
+        <RequiredItem identifier="andcomponent" amount="1" />
+        <RequiredItem identifier="signalcheckcomponent" amount="1" />
+        <RequiredItem identifier="batterycell" amount="1" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="silicon" copycondition="true" />
+        <Item identifier="aluminium" copycondition="true" />
+      </Deconstruct>
+      <InventoryIcon texture="%ModDir%/Jobgear/helmet.png" sourcerect="1506,1721,143,105" />
+      <Sprite texture="%ModDir%/Jobgear/helmet.png" sourcerect="1506,1721,143,105" depth="0.55" origin="0.5,0.5" />
+      <Body width="143" height="105" density="16" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      </Holdable>
+    </Item>
+    <Item name="头盔用显示板" identifier="tsm_helmet_screen" category="Equipment" subcategory="TSM" Tags="smallitem,thermalgoggles,loadable" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
+      <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="0" maxamount="1" spawnprobability="0.01" />
+      <PreferredContainer primary="storagecab" />
+      <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="20">
+        <RequiredSkill identifier="mechanical" level="25" />
+        <RequiredSkill identifier="electrical" level="30" />
+        <RequiredItem identifier="silicon" amount="2" />
+        <RequiredItem identifier="batterycell" amount="1" />
+        <RequiredItem identifier="wificomponent" amount="1" />
+        <RequiredItem identifier="oscillator" amount="1" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="silicon" amount="2" />
+      </Deconstruct>
+      <InventoryIcon texture="%ModDir%/Jobgear/helmet.png" sourcerect="1673,1704,78,100" />
+      <Sprite texture="%ModDir%/Jobgear/helmet.png" sourcerect="1673,1704,78,100" depth="0.55" origin="0.5,0.5" />
+      <Body width="78" height="100" density="14" />
+      <Holdable slots="Any" msg="ItemMsgPickUpSelect"/>
+    </Item>
+    <!---->
     <Item name="奇迹之海变革弹许可证" identifier="tsm_bg_licences" category="Material" subcategory="TSM" Tags="smallitem" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="storagecab" />
       <InventoryIcon texture="%ModDir%/minerals+items+tools/items.png" sourcerect="12,1332,122,76" />

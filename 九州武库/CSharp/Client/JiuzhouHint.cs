@@ -5,9 +5,9 @@ using HarmonyLib;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
+using System.Collections.Generic;
 using System.Reflection.Emit;
 using Color = Microsoft.Xna.Framework.Color;
-using System.Collections.Generic;
 
 namespace JiuzhouHint
 {
@@ -33,7 +33,7 @@ namespace JiuzhouHint
         }
         public void Dispose()
         {
-            harmonyInstance?.UnpatchAll();
+            harmonyInstance?.UnpatchSelf();
             LuaCsLogger.Log("Jiuzhou Hint disposed!");
         }
 
@@ -42,6 +42,7 @@ namespace JiuzhouHint
             if (true)
             {
                 harmonyInstance.PatchAll();
+                GameMain.LuaCs.Hook.Add("think", "UpdateJiuzhouHint", UpdateJiuzhouHint);
                 LuaCsLogger.Log($"Jiuzhou Hint loaded!");
             }
             else
@@ -61,31 +62,47 @@ namespace JiuzhouHint
         {
             public static void Postfix(Character __instance, Character attacker, AttackResult __result)
             {
-                if (IsDefaultAttackResult(__result)) { return; }
+                if (__instance == null || attacker == null || IsDefaultAttackResult(__result)) { return; }
                 if (attacker == Character.Controlled)
                 {
 #if DEBUG
                     LuaCsLogger.Log($"{attacker.Name} attacked {__instance.Name}");
 #endif
+                    if (IsOutOfScreen(__instance.WorldPosition)) { return; }
                     HitHintTimer = 0.5f;
                 }
             }
-
+            private static bool IsOutOfScreen(Vector2 position)
+            {
+                if (Screen.Selected?.Cam == null) { return true; }
+                bool result = position.X < Screen.Selected.Cam.WorldView.X
+                              || position.X > Screen.Selected.Cam.WorldView.Right
+                              || position.Y > Screen.Selected.Cam.WorldView.Y
+                              || position.Y < Screen.Selected.Cam.WorldView.Y - Screen.Selected.Cam.WorldView.Height;
+                return result;
+            }
             private static bool IsDefaultAttackResult(AttackResult result)
             {
                 return result.Damage == 0 && result.Afflictions == null && result.HitLimb == null && result.AppliedDamageModifiers == null;
             }
         }
+        //dont use this it will cause game crash on subeditor
+        ////patch UpdateHUDComponentSpecific
+        //[HarmonyPatch(typeof(RangedWeapon), nameof(RangedWeapon.UpdateHUDComponentSpecific))]
+        //public static class UpdateHUDComponentSpecificPatch
+        //{
+        //    public static void Postfix(float deltaTime)
+        //    {
+        //        HitHintTimer -= deltaTime;
+        //        HitHintTimer = Math.Max(HitHintTimer, 0);
+        //    }
+        //}
 
-        //patch UpdateHUDComponentSpecific
-        [HarmonyPatch(typeof(RangedWeapon), nameof(RangedWeapon.UpdateHUDComponentSpecific))]
-        public static class UpdateHUDComponentSpecificPatch
+        public static object[]? UpdateJiuzhouHint(object[]? args)
         {
-            public static void Postfix(float deltaTime)
-            {
-                HitHintTimer -= deltaTime;
-                HitHintTimer = Math.Max(HitHintTimer, 0);
-            }
+            HitHintTimer -= (float)Timing.Step;
+            HitHintTimer = Math.Max(HitHintTimer, 0);
+            return null;
         }
 
         //patch DrawHUD

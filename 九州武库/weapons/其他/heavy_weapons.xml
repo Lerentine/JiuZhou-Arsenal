@@ -150,7 +150,7 @@
       <RequiredSkill identifier="weapons" level="60" />
     </RangedWeapon>
     <!--Holds one grenade at a time-->
-    <ItemContainer capacity="6" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+    <ItemContainer capacity="6" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
       <Containable items="grenade" />
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="448,448,64,64" origin="0.5,0.5" />
       <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="448,448,64,64" origin="0.5,0.5" />
@@ -197,13 +197,13 @@
         <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
         <Spawnitem identifier="airconsume" spawnposition="this" />
         <ParticleEmitter particle="tsm_thermobaric" AngleMax="360" ScaleMultiplier="3,3" ParticleAmount="1" ParticlesPerSecond="0.5" ColorMultiplier="255,255,255,255" LifeTimeMultiplier="1.5" />
-        <Explosion range="300.0" ballastfloradamage="500" structuredamage="15" levelwalldamage="120" itemdamage="400" force="15" stun="5" severlimbsprobability="0.4" debris="true" decal="explosion" decalsize="0.3" penetration="0.3">
+        <Explosion range="300.0" ballastfloradamage="500" structuredamage="15" levelwalldamage="120" itemdamage="800" force="15" stun="5" severlimbsprobability="0.4" debris="true" decal="explosion" decalsize="0.3" penetration="0.3">
           <Affliction identifier="burn" strength="200" dividebylimbcount="false" />
           <Affliction identifier="oxygenlow" strength="80" dividebylimbcount="false" />
           <Affliction identifier="bleeding" strength="30" dividebylimbcount="false" />
           <Affliction identifier="Concussion" strength="4" dividebylimbcount="false" />
         </Explosion>
-        <Explosion range="600.0" ballastfloradamage="500" structuredamage="10" levelwalldamage="120" itemdamage="400" force="10" stun="3" severlimbsprobability="0.4" debris="true" decal="explosion" decalsize="0.3" penetration="0.3">
+        <Explosion range="600.0" ballastfloradamage="500" structuredamage="10" levelwalldamage="120" itemdamage="600" force="10" stun="3" severlimbsprobability="0.4" debris="true" decal="explosion" decalsize="0.3" penetration="0.3">
           <Affliction identifier="burn" strength="150" dividebylimbcount="false" />
           <Affliction identifier="oxygenlow" strength="50" dividebylimbcount="false" />
           <Affliction identifier="bleeding" strength="20" dividebylimbcount="false" />
@@ -242,7 +242,7 @@
       <RequiredItem identifier="iron" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
     </Fabricate>
-    <Projectile characterusable="false" launchimpulse="60" sticktocharacters="false" maxtargetstohit="1">
+    <Projectile characterusable="false" launchimpulse="60" sticktocharacters="false">
       <Attack structuredamage="40" penetration="0.3" severlimbsprobability="5">
         <Affliction identifier="explosiondamage" strength="50" />
         <Affliction identifier="blunttrauma" strength="70" />
@@ -293,10 +293,15 @@
       <sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="3000" />
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
         <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
-        <Explosion range="200.0" ballastfloradamage="200" structuredamage="10" levelwalldamage="120" itemdamage="400" force="5.0" stun="2" severlimbsprobability="0.4" debris="true" decal="explosion" decalsize="0.3" penetration="0.1">
+        <Explosion range="200.0" ballastfloradamage="200" structuredamage="10" levelwalldamage="120" itemdamage="600" force="5.0" stun="2" severlimbsprobability="0.4" debris="true" decal="explosion" decalsize="0.3" penetration="0.5">
           <Affliction identifier="explosiondamage" strength="80" />
           <Affliction identifier="bleeding" strength="40" />
           <Affliction identifier="Concussion" strength="3" dividebylimbcount="false" />
+        </Explosion>
+        <Explosion range="600.0" ballastfloradamage="200" structuredamage="10" levelwalldamage="120" itemdamage="400" force="5.0" stun="1" severlimbsprobability="0.4" debris="true" decal="explosion" decalsize="0.3">
+          <Affliction identifier="explosiondamage" strength="40" />
+          <Affliction identifier="burn" strength="20" />
+          <Affliction identifier="bleeding" strength="20" />
         </Explosion>
         <Remove />
       </StatusEffect>
@@ -335,12 +340,12 @@
       <sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="3000" />
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
         <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
-        <Explosion range="300.0" ballastfloradamage="200" structuredamage="10" levelwalldamage="120" itemdamage="400" force="8.0" stun="3" severlimbsprobability="0.4" debris="true" decal="explosion" decalsize="0.3">
+        <Explosion range="300.0" ballastfloradamage="200" structuredamage="10" levelwalldamage="120" itemdamage="600" force="8.0" stun="3" severlimbsprobability="0.4" debris="true" decal="explosion" decalsize="0.3">
           <Affliction identifier="explosiondamage" strength="70" />
           <Affliction identifier="burn" strength="50" dividebylimbcount="false" />
           <Affliction identifier="Concussion" strength="3" dividebylimbcount="false" />
         </Explosion>
-        <Explosion range="800.0" ballastfloradamage="200" structuredamage="10" levelwalldamage="120" itemdamage="400" force="5.0" stun="1" severlimbsprobability="0.4" debris="true" decal="explosion" decalsize="0.3">
+        <Explosion range="800.0" ballastfloradamage="200" structuredamage="10" levelwalldamage="120" itemdamage="400" force="5.0" stun="1" severlimbsprobability="0.4" debris="true" decal="explosion" decalsize="0.2">
           <Affliction identifier="explosiondamage" strength="30" />
           <Affliction identifier="burn" strength="20" />
           <Affliction identifier="bleeding" strength="20" />
@@ -445,7 +450,7 @@
         <Containable items="tsm_grip_mounts" hide="false" itempos="45,-6" Scale="0.5" depth="0.56" setactive="true" />
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
-        <SlotIcon slotindex="2" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2454,137,38,62" origin="0.5,0.5" />
+        <SlotIcon slotindex="2" texture="%ModDir%/weapons/皮肤/skins.png" sourcerect="2247,19,82,82" origin="0.5,0.5" />
         <Containable items="tsm_mg42_skins" hide="false" setactive="true" />
       </SubContainer>
     </ItemContainer>
@@ -455,7 +460,7 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="90" />
   </Item>
-  <Item name="弹鼓（7.92*57）" identifier="tsm_mg42_mag" subcategory="other" scale="0.27" category="weapon" maxstacksize="1" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="smallitem,mg42mag,magazine,handheldammo" impactsoundtag="impact_metal_light" health="75" description="">
+  <Item name="弹鼓（7.92*57）" identifier="tsm_mg42_mag" subcategory="other" scale="0.27" category="weapon" maxstacksize="1" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="smallitem,mg42mag,magazine,handheldammo,deep_mg42_mag" impactsoundtag="impact_metal_light" health="75" description="">
     <InventoryIcon texture="%ModDir%/weapons/反抗军/separatists.png" sourcerect="2318,738,58,111" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/反抗军/separatists.png" depth="0.54" sourcerect="2318,738,58,111" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -545,7 +550,7 @@
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
         <Conditional hastag="charged" />
         <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
-        <Explosion range="300.0" ballastfloradamage="80" structuredamage="20" penetration="0.15" levelwalldamage="120" itemdamage="400" force="5.0" severlimbsprobability="0.4" decal="explosion" decalsize="0.3">
+        <Explosion range="300.0" ballastfloradamage="80" structuredamage="20" penetration="0.15" levelwalldamage="120" itemdamage="500" force="5.0" severlimbsprobability="0.4" decal="explosion" decalsize="0.3">
           <Affliction identifier="burn" strength="100" />
           <Affliction identifier="explosiondamage" strength="50" />
           <Affliction identifier="bleeding" strength="400" probability="0.05" />
@@ -595,7 +600,7 @@
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
         <Conditional hastag="charged" />
         <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
-        <Explosion range="300.0" ballastfloradamage="80" structuredamage="20" penetration="0.15" levelwalldamage="120" itemdamage="400" force="5.0" severlimbsprobability="0.4" decal="explosion" decalsize="0.3">
+        <Explosion range="300.0" ballastfloradamage="80" structuredamage="20" penetration="0.15" levelwalldamage="120" itemdamage="450" force="5.0" severlimbsprobability="0.4" decal="explosion" decalsize="0.3">
           <Affliction identifier="burn" strength="100" />
           <Affliction identifier="explosiondamage" strength="20" />
           <Affliction identifier="bleeding" strength="400" probability="0.05" />
@@ -614,7 +619,7 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="2" targetforce="4" itemdamage="12" penetration="0.1" severlimbsprobability="0.3">
+      <Attack structuredamage="2" targetforce="4" itemdamage="26" penetration="0.1" severlimbsprobability="0.3">
         <Affliction identifier="gunshotwound" strength="22" />
         <Affliction identifier="gunshotwound" strength="15" probability="0.15" />
         <Affliction identifier="bleeding" strength="25" />
