@@ -11,5 +11,7 @@ if Game.IsSingleplayer or SERVER then
 end
 
 if CLIENT then  --仅客户端
-	dofile(JZ_Main.Path.."/Lua/Scripts/Client/weapon_zoom.lua")  --编译
+	dofile(JZ_Main.Path .. '/Lua/Scripts/helmets/helmet.lua')--编译
+	dofile(JZ_Main.Path .. '/Lua/Scripts/helmets/helmet_ondamaged.lua')
+	dofile(JZ_Main.Path.."/Lua/Scripts/Shared/hotkeys.lua")
 end

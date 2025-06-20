@@ -300,4 +300,81 @@
       <sprite name="PMC 1 Left Leg" texture="%ModDir%/Jobgear/pmc_armor_heavy.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
     </Wearable>
   </Item>
+  <Item name="测试防弹衣" identifier="tsm_bodyarmor_ai" category="Equipment" tags="smallitem,clothing" scale="0.35" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft" hideinmenus="true" nonplayerteaminteractable="True">
+    <Upgrade gameversion="0.9.3.0" scale="0.35" />
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,256,64,64" origin="0.5,0.5" />
+    <Sprite name="Security Vest Item" texture="Content/Items/Jobgear/Mechanic/safetyharness.png" sourcerect="4,32,126,183" depth="0.6" origin="0.5,0.35" />
+    <Body width="85" height="90" density="25" />
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.5" />
+      <damagemodifier afflictiontypes="damage" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <sprite name="Security Vest Wearable" texture="Content/Items/Jobgear/Mechanic/safetyharness.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="4,32,126,183" />
+    </Wearable>
+  </Item>
+  <Item name="测试头盔" identifier="tsm_ballistichelmet_ai" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.325" hideinmenus="true" nonplayerteaminteractable="True">
+    <Upgrade gameversion="0.9.6.0" scale="0.325" />
+    <Sprite name="Ballistic Helmet 1" texture="Content/Items/Jobgear/headgears.png" sourcerect="7,215,85,68" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" density="25" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictiontypes="damage" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="Ballistic Helmet 1 Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidewearablesoftype="Hair" sourcerect="7,215,85,68" origin="0.5,0.7" />
+    </Wearable>
+  </Item>
+  <Item name="测试人偶" identifier="tsm_renou" category="Misc" scale="0.5" sonarsize="6" tags="smallitem" hideinmenus="false">
+    <Fabricate suitablefabricators="fabricator" requiredtime="1" requiresrecipe="false">
+      <RequiredItem identifier="carbon" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir:2852411866%/Character/war/icon.png" sourcerect="899,965,36,35" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2852411866%/Character/war/icon.png" sourcerect="955,985,37,15" depth="0.55" origin="0.5,0.7" />
+    <Body width="35" height="35" density="0" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="90" throwforce="2.0" aimpos="35,-10" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="50" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true">
+      <StatusEffect type="OnNotContained" target="This" condition="-20" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="renou" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="5" velocitymin="100" velocitymax="2000" scalemin="0.1" scalemax="0.2" />
+        <Explosion ignorecover="true" onlyinside="true" range="600" force="10" playtinnitus="false" showeffects="false" applyfireeffects="false">
+          <Affliction identifier="stun" strength="1" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="测试人偶" identifier="tsm_renou1" category="Misc" scale="0.5" sonarsize="6" tags="smallitem" hideinmenus="false">
+    <Fabricate suitablefabricators="fabricator" requiredtime="1" requiresrecipe="false">
+      <RequiredItem identifier="carbon" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir:2852411866%/Character/war/icon.png" sourcerect="899,965,36,35" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2852411866%/Character/war/icon.png" sourcerect="955,985,37,15" depth="0.55" origin="0.5,0.7" />
+    <Body width="35" height="35" density="0" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="90" throwforce="2.0" aimpos="35,-10" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="50" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true">
+      <StatusEffect type="OnNotContained" target="This" condition="-20" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="renou1" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="5" velocitymin="100" velocitymax="2000" scalemin="0.1" scalemax="0.2" />
+        <Explosion ignorecover="true" onlyinside="true" range="600" force="10" playtinnitus="false" showeffects="false" applyfireeffects="false">
+          <Affliction identifier="stun" strength="1" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+      </StatusEffect>
+    </Projectile>
+  </Item>
 </Items>

@@ -261,6 +261,190 @@
       </Abilities>
     </AbilityGroupInterval>
   </Talent>
+  <!--枪械专精-->
+  <Talent identifier="tsm_gunskill_mastery">
+    <Icon texture="%ModDir%/job/skill_icon.png" sourcerect="320,162,122,121" />
+    <Description tag="talentdescription.tsm_gunskill_mastery" />
+    <!-- 杀敌计数触发器 -->
+    <AbilityGroupEffect abilityeffecttype="OnKillCharacter">
+      <Conditions>
+        <AbilityConditionHasItem tags="lm_guns" />
+      </Conditions>
+      <Abilities>
+        <!-- 根据手持武器类型增加对应计数器 -->
+        <CharacterAbilityGivePermanentStat statidentifier="lm_guns_kills" value="1" removeondeath="false" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnKillCharacter">
+      <Conditions>
+        <AbilityConditionHasItem tags="fkj_guns" />
+      </Conditions>
+      <Abilities>
+        <!-- 根据手持武器类型增加对应计数器 -->
+        <CharacterAbilityGivePermanentStat statidentifier="fkj_guns_kills" value="1" removeondeath="false" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnKillCharacter">
+      <Conditions>
+        <AbilityConditionHasItem tags="tsm_guns" />
+      </Conditions>
+      <Abilities>
+        <!-- 根据手持武器类型增加对应计数器 -->
+        <CharacterAbilityGivePermanentStat statidentifier="tsm_guns_kills" value="1" removeondeath="false" />
+      </Abilities>
+    </AbilityGroupEffect>
+
+    <!-- 联盟武器效果 -->
+    <!-- 25杀：减少7%扩散 -->
+    <AbilityGroupInterval Interval="10.0">
+      <Conditions>
+        <AbilityConditionHasPermanentStat statidentifier="lm_guns_kills" min="25" />
+        <AbilityConditionHasItem tags="lm_guns" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyStat stattype="RangedSpreadReduction" value="0.07" />
+      </Abilities>
+    </AbilityGroupInterval>
+    <!-- 50杀：5%伤害加成 -->
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionHasPermanentStat statidentifier="lm_guns_kills" min="50" />
+        <AbilityConditionHasItem tags="lm_guns" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <!-- 75杀：再减少8%扩散 -->
+    <AbilityGroupInterval Interval="10.0">
+      <Conditions>
+        <AbilityConditionHasPermanentStat statidentifier="lm_guns_kills" min="75" />
+        <AbilityConditionHasItem tags="lm_guns" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyStat stattype="RangedSpreadReduction" value="0.08" />
+      </Abilities>
+    </AbilityGroupInterval>
+    <!-- 100杀：5%伤害+解锁天赋 -->
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionHasPermanentStat statidentifier="lm_guns_kills" min="100" />
+        <AbilityConditionHasItem tags="lm_guns" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05" />
+
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupInterval interval="0.9">
+      <Conditions>
+        <AbilityConditionHasPermanentStat statidentifier="lm_guns_kills" min="100"/>
+        <AbilityConditionHasPermanentStat statidentifier="lm_guns_kills_Done" min="1" invert="true"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityGivePermanentStat statidentifier="lm_guns_kills_Done" value="1" removeondeath="false" />
+      </Abilities>
+    </AbilityGroupInterval>
+    <!-- 反抗军武器效果 -->
+    <!-- 25杀：7%伤害 -->
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionHasPermanentStat statidentifier="fkj_guns_kills" min="25" />
+        <AbilityConditionHasItem tags="fkj_guns" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.07" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <!-- 50杀：4%扩散减少 -->
+    <AbilityGroupInterval Interval="10.0">
+      <Conditions>
+        <AbilityConditionHasPermanentStat statidentifier="fkj_guns_kills" min="50" />
+        <AbilityConditionHasItem tags="fkj_guns" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyStat stattype="RangedSpreadReduction" value="0.04" />
+      </Abilities>
+    </AbilityGroupInterval>
+    <!-- 75杀：6%扩散减少 -->
+    <AbilityGroupInterval Interval="10.0">
+      <Conditions>
+        <AbilityConditionHasPermanentStat statidentifier="fkj_guns_kills" min="75" />
+        <AbilityConditionHasItem tags="fkj_guns" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyStat stattype="RangedSpreadReduction" value="0.06" />
+      </Abilities>
+    </AbilityGroupInterval>
+    <!-- 100杀：8%伤害+解锁天赋 -->
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionHasPermanentStat statidentifier="fkj_guns_kills" min="100" />
+        <AbilityConditionHasItem tags="fkj_guns" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.08" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupInterval interval="0.9">
+      <Conditions>
+        <AbilityConditionHasPermanentStat statidentifier="fkj_guns_kills" min="100"/>
+        <AbilityConditionHasPermanentStat statidentifier="fkj_guns_kills_Done" min="1" invert="true"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityGivePermanentStat statidentifier="fkj_guns_kills_Done" value="1" removeondeath="false" />
+      </Abilities>
+    </AbilityGroupInterval>
+    <!-- 奇迹之海武器效果 -->
+    <!-- 50杀：6%伤害+6%扩散减少 -->
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionHasPermanentStat statidentifier="tsm_guns_kills" min="50" />
+        <AbilityConditionHasItem tags="tsm_guns" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.06" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupInterval Interval="10.0">
+      <Conditions>
+        <AbilityConditionHasPermanentStat statidentifier="tsm_guns_kills" min="50" />
+        <AbilityConditionHasItem tags="tsm_guns" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyStat stattype="RangedSpreadReduction" value="0.06" />
+      </Abilities>
+    </AbilityGroupInterval>
+    <!-- 100杀：6%伤害+6%扩散+解锁天赋 -->
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionHasPermanentStat statidentifier="tsm_guns_kills" min="100" />
+        <AbilityConditionHasItem tags="tsm_guns" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.06" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupInterval>
+      <Conditions>
+        <AbilityConditionHasPermanentStat statidentifier="tsm_guns_kills" min="100" />
+        <AbilityConditionHasItem tags="tsm_guns" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyStat stattype="RangedSpreadReduction" value="0.06" />
+      </Abilities>
+    </AbilityGroupInterval>
+    <AbilityGroupInterval interval="0.9">
+      <Conditions>
+        <AbilityConditionHasPermanentStat statidentifier="tsm_guns_kills" min="100"/>
+        <AbilityConditionHasPermanentStat statidentifier="tsm_guns_kills_Done" min="1" invert="true"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityGivePermanentStat statidentifier="tsm_guns_kills_Done" value="1" removeondeath="false" />
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+
   <!--先进作战部-->
   <!--增加30%武器操作获取速度-->
   <Talent identifier="tsm_training">

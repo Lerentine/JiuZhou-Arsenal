@@ -8,6 +8,7 @@
     <Body width="31" height="43" density="8" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_straight_grip_buff" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -25,6 +26,8 @@
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="steel" />
+      <Item identifier="titanium" />
+      <Item identifier="plastic" />
     </Deconstruct>
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -36,6 +39,7 @@
     <Body width="31" height="43" density="9" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_cqr_grip_buff" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -53,6 +57,8 @@
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="steel" />
+      <Item identifier="plastic" />
+      <Item identifier="magnesium" />
     </Deconstruct>
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -64,6 +70,7 @@
     <Body width="31" height="43" density="6" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_triangle_grip_buff" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -75,12 +82,14 @@
     <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="20" />
       <RequiredItem identifier="steel" amount="2" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
       <RequiredItem identifier="tsm_plastic" amount="1" />
       <RequiredItem identifier="tsm_item_box" amount="1" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="steel" />
+      <Item identifier="plastic" />
+      <Item identifier="iron" />
     </Deconstruct>
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -92,6 +101,7 @@
     <Body width="31" height="43" density="4" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_thumb_grip_buff" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -103,11 +113,13 @@
     <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="20" />
       <RequiredItem identifier="steel" amount="1" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="1" />
       <RequiredItem identifier="tsm_plastic" amount="1" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="steel" />
+      <Item identifier="copper" />
+      <Item identifier="silicon" />
     </Deconstruct>
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -119,6 +131,7 @@
     <Body width="31" height="43" density="5" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_light_grip_buff" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -130,11 +143,13 @@
     <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="20" />
       <RequiredItem identifier="steel" amount="1" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="1" />
       <RequiredItem identifier="tsm_plastic" amount="1" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="steel" />
+      <Item identifier="lead" />
+      <Item identifier="zinc" />
     </Deconstruct>
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -146,19 +161,97 @@
     <Body width="37" height="97" density="8" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_mounts_grip_buff" strength="2" />
       </StatusEffect>
     </Holdable>
     <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="10" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="20" />
       <RequiredItem identifier="steel" amount="2" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+      <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" amount="2" />
       <RequiredItem identifier="tsm_plastic" amount="2" />
       <RequiredItem identifier="titanium" amount="2" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="steel" />
+      <Item identifier="titanium" />
+      <Item identifier="tsm_plastic" />
     </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="装填握把" identifier="tsm_grip_reload" subcategory="accessories" category="Equipment" Tags="smallitem,grip,tsm_grip_reload" cargocontaineridentifier="tsm_metalcrate" Scale="0.15" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="wreckarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="2409,222,69,81" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1860,255,47,81" depth="0.56" origin="0.5,0.5" />
+    <Body width="47" height="81" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_reload_grip_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+      <Item identifier="aluminium" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="战术手电握把" identifier="tsm_grip_straight_light" subcategory="accessories" category="Equipment" Tags="smallitem,tool,provocative,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.15" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1959,251,137,105" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1959,251,137,105" depth="0.56" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="137" height="105" density="12" />
+    <Holdable slots="Any,RightHand,LeftHand,Head" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.1">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_straight_grip_buff" strength="2" />
+      </StatusEffect>
+      <LightComponent LightColor="0.5,0.5,0.5,1.0" directional="true" Flicker="0.02" range="800" powerconsumption="10" IsOn="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.01, 0.497" size="1.0,1.0" />
+        <IsActive targetcontaineditem="true" condition="gt 1.0"/>
+      </LightComponent>
+      <LightComponent LightColor="0.5,0.5,0.5,1.0" directional="true" range="800" powerconsumption="10" IsOn="true" flicker="0.8" flickerspeed="1.0" pulsefrequency="0.1" pulseamount="0.5">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.01, 0.7" size="1.0,1.0" />
+        <IsActive targetcontaineditem="true" condition="lte 1.0"/>
+      </LightComponent>
+    </Holdable>
+    <Price baseprice="353" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+      <RequiredItem identifier="titanium" amount="2" />
+      <RequiredItem identifier="lightcomponent" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="tsm_grip_straight" amount="1" />
+      <RequiredItem tag="flashlight" description="fabricationdescription.flashlight" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+      <Item identifier="titanium" />
+      <Item identifier="lightcomponent" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
@@ -170,6 +263,7 @@
     <Body width="67" height="40" density="7" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_sight_reddot" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -198,6 +292,7 @@
     <Body width="54" height="44" density="7" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_sight_holographic" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -226,6 +321,7 @@
     <Body width="415" height="184" density="7" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_sight_double" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -253,6 +349,7 @@
     <Body width="232" height="179" density="8" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_sight_tripled" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -280,6 +377,7 @@
     <Body width="78" height="44" density="8" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_sight_pso" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -307,6 +405,7 @@
     <Body width="78" height="44" density="10" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_sight_c79" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -369,6 +468,7 @@
     <Body width="78" height="44" density="9" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_sight_acog" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -391,6 +491,7 @@
     <Body width="464" height="162" density="10" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_sight_thermal" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -424,6 +525,7 @@
     <Body width="130" height="44" density="8" />
     <Holdable slots="Any" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_sight_95" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -447,6 +549,7 @@
     <Body width="134" height="44" density="8" />
     <Holdable slots="Any" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_sight_03" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -470,6 +573,7 @@
     <Body width="78" height="44" density="8" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_sight_qmk152" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -486,15 +590,15 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--枪口配件-->
-  <Item name="qbu191特制枪管" identifier="tsm_advanced_barrel" subcategory="accessories" category="Equipment" Tags="smallitem" cargocontaineridentifier="tsm_metalcrate" Scale="0.22" impactsoundtag="impact_metal_light">
+  <Item name="射手导气箍" identifier="tsm_advanced_barrel" subcategory="accessories" category="Equipment" Tags="smallitem" cargocontaineridentifier="tsm_metalcrate" Scale="0.05" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <InventoryIcon texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2335,605,150,24" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/奇迹之海/tsm.png" sourcerect="2335,605,150,24" depth="0.51" origin="0.5,0.5" />
-    <Body width="150" height="24" density="8" />
+    <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1495,38,97,102" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="1495,38,97,102" depth="0.565" origin="0.5,0.5" />
+    <Body width="97" height="102" density="8" />
     <Holdable slots="Any" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnActive" target="Character">
+      <!--StatusEffect type="OnActive" target="Character">
         <Affliction identifier="tsm_barrel2_buff" strength="2" />
-      </StatusEffect>
+      </StatusEffect-->
     </Holdable>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="20" />
@@ -516,6 +620,7 @@
     <Body width="175" height="57" density="3" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_barrel_buff" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -544,6 +649,7 @@
     <Body width="174" height="49" density="4" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_barrel1_buff" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -571,6 +677,7 @@
     <Body width="96" height="28" density="3" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_barrel_silencers_buff" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -598,6 +705,7 @@
     <Body width="150" height="35" density="3" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_barrel_silencers_buff" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -625,6 +733,7 @@
     <Body width="177" height="96" density="15" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_pistols_stock_buff" strength="3" />
       </StatusEffect>
     </Holdable>
@@ -652,6 +761,7 @@
     <Body width="115" height="64" density="7" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
         <Affliction identifier="tsm_straight_grip_buff" strength="2" />
       </StatusEffect>
     </Holdable>
@@ -673,16 +783,49 @@
     <AiTarget sightrange="3000" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="95榴弹下挂" identifier="tsm_gun_grenade" category="Equipment" subcategory="accessories" Tags="smallitem,tsm_gun_grenade,grip_and_grenade" cargocontaineridentifier="metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+  <!--其他-->
+  <Item name="弹匣井快速装填阔口" identifier="tsm_reload_speed" subcategory="accessories" category="Equipment" Tags="smallitem,reload_speed,tsm_reload_speed" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="61,227,53,22" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="61,227,53,22" depth="0.54" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="53" height="22" density="3" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_reload_speed_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="363" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="tsm_tungsten" amount="1" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+      <RequiredItem identifier="tsm_item_box" amount="1" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+      <Item identifier="iron" />
+      <Item identifier="copper" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <!--Item name="95榴弹下挂" identifier="tsm_gun_grenade" category="Equipment" subcategory="accessories" Tags="smallitem,tsm_gun_grenade,grip_and_grenade" cargocontaineridentifier="metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Deconstruct time="5">
       <Item identifier="titanium" />
     </Deconstruct>
-    <!--Fabricate suitablefabricators="tsm_fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10">
       <RequiredSkill identifier="mechanical" level="35" />
       <RequiredItem identifier="steel" amount="2" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
-    </Fabricate-->
+    </Fabricate>
     <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="true" autofill="true">
       <Containable items="grenade" />
       <StatusEffect type="Always" targettype="This" tags="loaded" duration="0.05" stackable="false">
@@ -702,5 +845,5 @@
         <Conditional hastag="gun" targetcontainer="true" />
       </StatusEffect>
     </Holdable>
-  </Item>
+  </Item-->
 </Items>

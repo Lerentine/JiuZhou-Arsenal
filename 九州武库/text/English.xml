@@ -16,6 +16,45 @@
   <talentname.tsm_ai_stun>Strong Reaction</talentname.tsm_ai_stun>
   <talentname.tsm_operator_revolt>Riotous Advance</talentname.tsm_operator_revolt>
   <talentdescription.tsm_operator_revolt>When wearing Riotous Advance Protection Suits，and in possession of Electric baton and Round riot shield，increase ‖color:0,150,0,255‖40% of your stun and physical damage resistance、20% of your movementspeed and 200% of your attackspeed‖color:end‖ with a decrease of ‖color:0,200,0,255‖30% of your damage‖color:end‖</talentdescription.tsm_operator_revolt>
+  <talentname.tsm_gunskill_mastery>Firearms Proficiency</talentname.tsm_gunskill_mastery>
+  <talentdescription.tsm_gunskill_mastery>When you possess the talent, killing a certain number of creatures with weapons from different factions can grant you certain bonuses. Submachine guns belong to ‖color:245,215,15,255‖TSM‖color:end‖ weapons, pistols to ‖color:245,215,15,255‖Coalition‖color:end‖ weapons, and revolvers to ‖color:245,215,15,255‖Separatist‖color:end‖ weapons, ‖color:245,215,15,255‖the count is not reset upon death‖color:end‖.
+    When you kill creatures with ‖color:245,215,15,255‖Coalition‖color:end‖ weapons:
+    Killing ‖color:0,150,0,255‖25‖color:end‖ creatures reduces ‖color:0,150,0,255‖7% weapon spread‖color:end‖ when using Coalition weapons;
+    Killing ‖color:0,150,0,255‖50‖color:end‖ creatures increases ‖color:0,150,0,255‖5% weapon damage‖color:end‖ when using Coalition weapons;
+    Killing ‖color:0,150,0,255‖75‖color:end‖ creatures reduces ‖color:0,150,0,255‖8% weapon spread‖color:end‖ when using Coalition weapons;
+    Killing ‖color:0,150,0,255‖100‖color:end‖ creatures increases ‖color:0,150,0,255‖5% weapon damage‖color:end‖ when using Coalition weapons.
+    When you kill creatures with ‖color:245,215,15,255‖Separatist‖color:end‖ weapons:
+    Killing ‖color:0,150,0,255‖25‖color:end‖ creatures increases ‖color:0,150,0,255‖7% weapon damage‖color:end‖ when using Separatist weapons;
+    Killing ‖color:0,150,0,255‖50‖color:end‖ creatures reduces ‖color:0,150,0,255‖4% weapon spread‖color:end‖ when using Separatist weapons;
+    Killing ‖color:0,150,0,255‖75‖color:end‖ creatures reduces ‖color:0,150,0,255‖6% weapon spread‖color:end‖ when using Separatist weapons;
+    Killing ‖color:0,150,0,255‖100‖color:end‖ creatures increases ‖color:0,150,0,255‖8% weapon damage‖color:end‖ when using Splinter weapons.
+    When you kill creatures with ‖color:245,215,15,255‖TSM‖color:end‖ weapons:
+    Killing ‖color:0,150,0,255‖50‖color:end‖ creatures increases ‖color:0,150,0,255‖6% weapon damage‖color:end‖ and reduces ‖color:0,150,0,255‖6% weapon spread‖color:end‖ when using TSM weapons;
+    Killing ‖color:0,150,0,255‖100‖color:end‖ creatures increases ‖color:0,150,0,255‖6% weapon damage‖color:end‖, reduces ‖color:0,150,0,255‖6% weapon spread‖color:end‖ when using TSM weapons.
+  </talentdescription.tsm_gunskill_mastery>
+  <talentname.tsm_gunkill_advance>Advanced Firearms Proficiency</talentname.tsm_gunkill_advance>
+  <talentdescription.tsm_gunkill_advance>When you possess this talent, killing a certain number of creatures with weapons from different factions can grant you certain bonuses.
+    Submachine guns belong to ‖color:245,215,15,255‖TSM‖color:end‖ weapons,
+    pistols to ‖color:245,215,15,255‖Coalition‖color:end‖ weapons,
+    and revolvers to ‖color:245,215,15,255‖Separatist‖color:end‖ weapons,
+    ‖color:245,215,15,255‖the count is reset upon death‖color:end‖.
+
+    When you kill creatures with ‖color:245,215,15,255‖Coalition‖color:end‖ weapons:
+    Killing ‖color:0,150,0,255‖25‖color:end‖ creatures reduces ‖color:0,150,0,255‖2% weapon spread‖color:end‖ when using Coalition weapons.
+    Killing ‖color:0,150,0,255‖50‖color:end‖ creatures increases ‖color:0,150,0,255‖2% weapon damage‖color:end‖ when using Coalition weapons.
+    Killing ‖color:0,150,0,255‖75‖color:end‖ creatures reduces ‖color:0,150,0,255‖3% weapon spread‖color:end‖ when using Coalition weapons.
+    Killing ‖color:0,150,0,255‖100‖color:end‖ creatures increases ‖color:0,150,0,255‖3% weapon damage‖color:end‖ when using Coalition weapons.
+
+    When you kill creatures with ‖color:245,215,15,255‖Separatist‖color:end‖ weapons:
+    Killing ‖color:0,150,0,255‖25‖color:end‖ creatures increases ‖color:0,150,0,255‖2% weapon damage‖color:end‖ when using Separatist weapons.
+    Killing ‖color:0,150,0,255‖50‖color:end‖ creatures reduces ‖color:0,150,0,255‖2% weapon spread‖color:end‖ when using Separatist weapons.
+    Killing ‖color:0,150,0,255‖75‖color:end‖ creatures reduces ‖color:0,150,0,255‖3% weapon spread‖color:end‖ when using Separatist weapons.
+    Killing ‖color:0,150,0,255‖100‖color:end‖ creatures increases ‖color:0,150,0,255‖3% damage‖color:end‖ when using Separatist weapons.
+
+    When you kill creatures with ‖color:245,215,15,255‖TSM‖color:end‖ weapons:
+    Killing ‖color:0,150,0,255‖50‖color:end‖ creatures increases ‖color:0,150,0,255‖3% weapon damage‖color:end‖ and reduces ‖color:0,150,0,255‖3% weapon spread‖color:end‖ when using TSM weapons.
+    Killing ‖color:0,150,0,255‖100‖color:end‖ creatures increases ‖color:0,150,0,255‖3% weapon damage‖color:end‖ and reduces ‖color:0,150,0,255‖3% weapon spread‖color:end‖ when using TSM weapons.
+  </talentdescription.tsm_gunkill_advance>
   <!--伤害类型-->
   <afflictionname.triton_7L>Triton</afflictionname.triton_7L>
   <afflictiondescription.triton_7L>Wound acused by Triton_7L，presenting induced corruption.If not handled promptly, it may induce tritium poisoning, resulting in burns and other issues.</afflictiondescription.triton_7L>
@@ -108,6 +147,9 @@
   <tos>Turn off the sensor.</tos>
   <dm>Disarm the land mine</dm>
   <entityname.tsm_collider_head>Unpenetrated</entityname.tsm_collider_head>
+  <tsm_on>Enable the function</tsm_on>
+  <tsm_gun_up>overhead shooting</tsm_gun_up>
+  <renou>test</renou>
   <!--药品-->
   <entityname.triton_9C_antidote>Specialized Wound Decontaminant</entityname.triton_9C_antidote>
   <entitydescription.triton_9C_antidote>A special med used to treat Tritium Poisoning,Triton wounds and Burst.</entitydescription.triton_9C_antidote>
@@ -170,7 +212,7 @@
   <entityname.tsm_svd_skins_qxz>The SVD's coating:"The Shadow Walker"</entityname.tsm_svd_skins_qxz>
   <entitydescription.tsm_svd_skins_qxz>Customization for The Shadow Walker series\n"I do not know if what I have done is right or wrong, and perhaps I will never understand. But I have managed to do it, and perhaps I should be relieved..."</entitydescription.tsm_svd_skins_qxz>
 
-  <entityname.tsm_g3_skins_xs>The G3A4's coating：Rusted</entityname.tsm_g3_skins_xs>
+  <entityname.tsm_g3_skins_xs>The G3A3's coating：Rusted</entityname.tsm_g3_skins_xs>
   <entitydescription.tsm_g3_skins_xs>Customization for The Rusted series\nThe rust, like a persistent parasite clinging to the bone, gnaws its way into his chest.</entitydescription.tsm_g3_skins_xs>
   <entityname.tsm_fal_skins_xs>The Fal's coating：Rusted</entityname.tsm_fal_skins_xs>
   <entitydescription.tsm_fal_skins_xs>Customization for The Rusted series\nThe rust, like a persistent parasite clinging to the bone, gnaws its way into his chest.</entitydescription.tsm_fal_skins_xs>
@@ -197,8 +239,8 @@
   <entitydescription.tsm_95_skins_eva>EVA series\n"Just need to smile"</entitydescription.tsm_95_skins_eva>
   <entityname.tsm_201_skins_eva>The MK201's coating：EVA</entityname.tsm_201_skins_eva>
   <entitydescription.tsm_201_skins_eva>EVA series\n"Just need to smile"</entitydescription.tsm_201_skins_eva>
-  <entityname.tsm_ump5_skins_eva>The UMP45's coating：EVA</entityname.tsm_ump5_skins_eva>
-  <entitydescription.tsm_ump5_skins_eva>EVA series\n"Just need to smile"</entitydescription.tsm_ump5_skins_eva>
+  <entityname.tsm_ump45_skins_eva>The UMP45's coating：EVA</entityname.tsm_ump45_skins_eva>
+  <entitydescription.tsm_ump45_skins_eva>EVA series\n"Just need to smile"</entitydescription.tsm_ump45_skins_eva>
   <entityname.tsm_vk_skins_eva>The Victor's coating：EVA</entityname.tsm_vk_skins_eva>
   <entitydescription.tsm_vk_skins_eva>EVA series\n"Just need to smile"</entitydescription.tsm_vk_skins_eva>
   <entityname.tsm_191_skins_eva>The QBZ191's coating：EVA</entityname.tsm_191_skins_eva>
@@ -222,9 +264,33 @@
   <entitydescription.tsm_l85a2_skins_ods>Desert Storm Series\n“A modern war that woke up the whole world”</entitydescription.tsm_l85a2_skins_ods>
   <entityname.tsm_gm6_skins_ods>GM6 Lynx Skin: Desert Storm</entityname.tsm_gm6_skins_ods>
   <entitydescription.tsm_gm6_skins_ods>Desert Storm Series\n“A modern war that woke up the whole world”</entitydescription.tsm_gm6_skins_ods>
+  <entityname.tsm_m200_skins_ods>M200 Skin：Desert Storm</entityname.tsm_m200_skins_ods>
+  <entitydescription.tsm_m200_skins_ods>Desert Storm Series\n“A modern war that woke up the whole world”</entitydescription.tsm_m200_skins_ods>
   
   <entityname.tsm_gm6_skins_ht>GM6 Lynx Skin: Black Iron</entityname.tsm_gm6_skins_ht>
-<entitydescription.tsm_gm6_skins_ht>Black Iron Series</entitydescription.tsm_gm6_skins_ht>
+  <entitydescription.tsm_gm6_skins_ht>Black Iron Series</entitydescription.tsm_gm6_skins_ht>
+
+  <entityname.tsm_de_skins_gold>The Desert Eagle's coating：Gold</entityname.tsm_de_skins_gold>
+  <entitydescription.tsm_de_skins_gold>Gold Series</entitydescription.tsm_de_skins_gold>
+  <entityname.tsm_g3_skins_gold>G3A4 Skin：Gold</entityname.tsm_g3_skins_gold>
+  <entitydescription.tsm_g3_skins_gold>Gold Series</entitydescription.tsm_g3_skins_gold>
+  <entityname.tsm_fal_skins_gold>Fal Skin：Gold</entityname.tsm_fal_skins_gold>
+  <entitydescription.tsm_fal_skins_gold>Gold Series</entitydescription.tsm_fal_skins_gold>
+  <entityname.tsm_svd_skins_gold>SVD Skin：Gold</entityname.tsm_svd_skins_gold>
+  <entitydescription.tsm_svd_skins_gold>Gold Series</entitydescription.tsm_svd_skins_gold>
+  <entityname.tsm_akm_skins_gold>AKM Skin：Gold</entityname.tsm_akm_skins_gold>
+  <entitydescription.tsm_akm_skins_gold>Gold Series</entitydescription.tsm_akm_skins_gold>
+
+  <entityname.tsm_mp5sd_skins_61>MP5SD Skin：玩趣童年</entityname.tsm_mp5sd_skins_61>
+  <entitydescription.tsm_mp5sd_skins_61>A 2025 Children's Day Commemoration.Cute Yet Still Deadly</entitydescription.tsm_mp5sd_skins_61>
+  <entityname.tsm_glock18_skins_61>Glock18 Skin：玩趣童年</entityname.tsm_glock18_skins_61>
+  <entitydescription.tsm_glock18_skins_61>A 2025 Children's Day Commemoration.Cute Yet Still Deadly</entitydescription.tsm_glock18_skins_61>
+  <entityname.tsm_mp7_skins_61>MP7 Skin：玩趣童年</entityname.tsm_mp7_skins_61>
+  <entitydescription.tsm_mp7_skins_61>A 2025 Children's Day Commemoration.Cute Yet Still Deadly</entitydescription.tsm_mp7_skins_61>
+  <entityname.tsm_p90_skins_61>P90 Skin：玩趣童年</entityname.tsm_p90_skins_61>
+  <entitydescription.tsm_p90_skins_61>A 2025 Children's Day Commemoration.Cute Yet Still Deadly</entitydescription.tsm_p90_skins_61>
+  <entityname.tsm_evo3_skins_61>EVO Skin：玩趣童年</entityname.tsm_evo3_skins_61>
+  <entitydescription.tsm_evo3_skins_61>A 2025 Children's Day Commemoration.Cute Yet Still Deadly</entitydescription.tsm_evo3_skins_61>
   <!--矿物/金属/物品-->
   <entityname.tsm_tungstenore>Tungsten Ore</entityname.tsm_tungstenore>
   <entitydescription.tsm_tungstenore></entitydescription.tsm_tungstenore>
@@ -279,7 +345,7 @@
   <entityname.tsm_helmet_nvd>Night vision device for helmets</entityname.tsm_helmet_nvd>
   <entitydescription.tsm_helmet_nvd>Unlock Night Vision Camera by putting it into your helmet,has a battery inside,charge it if it's dead.</entitydescription.tsm_helmet_nvd>
   <entityname.tsm_helmet_screen>Helmet medical display screen</entityname.tsm_helmet_screen>
-  <entitydescription.tsm_helmet_screen>A display that can be putted into a helmet to allow you to monitor the injury status of your crew in real-time.</entitydescription.tsm_helmet_screen>
+  <entitydescription.tsm_helmet_screen>A display that can be putted into a helmet to allow you to monitor the injury status of your crew in real-time.charge it when the battery is dead.</entitydescription.tsm_helmet_screen>
   <entityname.tsm_land_wz_dy>Ammunition drop pod</entityname.tsm_land_wz_dy>
   <entitydescription.tsm_land_wz_dy></entitydescription.tsm_land_wz_dy>
   <entityname.tsm_rz_jz>Base</entityname.tsm_rz_jz>
@@ -391,6 +457,8 @@
   <entitydescription.tsm_helmet_respirator></entitydescription.tsm_helmet_respirator>
   <entityname.tsm_helmet_outpost_combat>TSM "NuJiang" Combat Helmet</entityname.tsm_helmet_outpost_combat>
   <entitydescription.tsm_helmet_outpost_combat>A special operations helmet specifically designed by TSM for site raids, currently only equipped by a small number of site raid units.</entitydescription.tsm_helmet_outpost_combat>
+  <entityname.tsm_fast_helmet_headset>T.S.M Assault Communication Helmet</entityname.tsm_fast_helmet_headset>
+  <entitydescription.tsm_fast_helmet_headset>Equipped with a set of radio headphones, allowing the voices of officers and peers to be transmitted more quickly to the soldiers' ears. Combined with a modular design, various helmet accessories can be inserted to jaw more tactical options.\nThe first slot can hold items: Ballistic visor for helmet, Thermal imaging/Night vision/Display for helmet.\nThe second slot can hold items: Chin protector for helmet.The third slot can hold item:  Identification device for helmet.\nPress Alt + G for quick activation of helmet function.</entitydescription.tsm_fast_helmet_headset>
   <entityname.tsm_nujiang_uniform>TSM "NuJiang" Combat Uniform</entityname.tsm_nujiang_uniform>
   <entitydescription.tsm_nujiang_uniform>A combat uniform that has been widely criticized for its design. It's not that its protective effect is poor, but rather its overall appearance resembles that of a plumber. So every time the site raid squad goes on a mission, there's always someone who jokes that they're off to unclog the toilets at some site.</entitydescription.tsm_nujiang_uniform>
   <!--联盟-->
@@ -405,7 +473,7 @@
   <entityname.lm_heavy_helmet>Coalition Heavy Combat Helmet</entityname.lm_heavy_helmet>
   <entitydescription.lm_heavy_helmet>Equipped with a ballistic visor and chin guard for enhanced protection.</entitydescription.lm_heavy_helmet>
   <entityname.lm_fast_helmet_headset>Coalition Assault Communication Helmet</entityname.lm_fast_helmet_headset> 
-  <entitydescription.lm_fast_helmet_headset>Equipped with a set of radio headphones, allowing the voices of officers and peers to be transmitted more quickly to the soldiers' ears. Combined with a modular design, various helmet accessories can be inserted to jaw more tactical options.\nThe first slot can hold items: Ballistic visor for helmet, Thermal imaging/Night vision/Display for helmet.\nThe second slot can hold items: Chin protector and Gas mask for helmet.The third slot can hold item:  Identification device for helmet.</entitydescription.lm_fast_helmet_headset>
+  <entitydescription.lm_fast_helmet_headset>Equipped with a set of radio headphones, allowing the voices of officers and peers to be transmitted more quickly to the soldiers' ears. Combined with a modular design, various helmet accessories can be inserted to jaw more tactical options.\nThe first slot can hold items: Ballistic visor for helmet, Thermal imaging/Night vision/Display for helmet.\nThe second slot can hold items: Chin protector for helmet.The third slot can hold item:  Identification device for helmet.\nPress Alt + G for quick activation of helmet function.</entitydescription.lm_fast_helmet_headset>
   <entityname.lm_fast_helmet_faceshield>Coalition Assault Helmet (Ballistic Visor)</entityname.lm_fast_helmet_faceshield>
   <entitydescription.lm_fast_helmet_faceshield>A large transparent ballistic visor is installed, providing protection to the normally vulnerable face. A large ballistic visor can be inserted for better protection.</entitydescription.lm_fast_helmet_faceshield>
   <entityname.lm_fast_helmet_thermalgoggles>Coalition Assault Helmet (Thermal Imaging)</entityname.lm_fast_helmet_thermalgoggles>
@@ -459,6 +527,8 @@
   <entitydescription.fkj_heavy_vest>A thick bulletproof vest that gives the wearer a strong sense of security. With it on, you are the thickest meat shield in submarine alley warfare! (The Separatists advise you not to actually be a meat shield and to bring a shield.)</entitydescription.fkj_heavy_vest>
   <entityname.fkj_vest_yehuo>Wildfire Separatist Bulletproof Vest</entityname.fkj_vest_yehuo>
   <entitydescription.fkj_vest_yehuo>A bulletproof vest that only the elite of the Separatist elites can possess. The extensive use of new materials and excellent belt structure give this bulletproof vest very high ballistic resistance and bleeding resistance, even capable of withstanding the Coalition's new bullets.</entitydescription.fkj_vest_yehuo>
+  <entityname.fkj_fast_helmet_headset>Separatist Assault Communication Helmet</entityname.fkj_fast_helmet_headset>
+  <entitydescription.fkj_fast_helmet_headset>Equipped with a set of radio headphones, allowing the voices of officers and peers to be transmitted more quickly to the soldiers' ears. Combined with a modular design, various helmet accessories can be inserted to jaw more tactical options.\nThe first slot can hold items: Ballistic visor for helmet, Thermal imaging/Night vision/Display for helmet.\nThe second slot can hold items: Chin protector for helmet.The third slot can hold item:  Identification device for helmet.\n Press Alt + G for quick activation of helmet function.</entitydescription.fkj_fast_helmet_headset>
   <!--降临派-->
   <entityname.adventists_uniform>Adventists' High Priest Robe</entityname.adventists_uniform>
   <entitydescription.adventists_uniform>A robe often worn by Adventists' leaders and chiefs, symbolizing their status. Surprisingly warm even under the cold ice.</entitydescription.adventists_uniform>
@@ -551,6 +621,17 @@
   <entityname.tsm_operatorassistancesystems>Operator Assistance System (OAS)</entityname.tsm_operatorassistancesystems>
   <entitydescription.tsm_operatorassistancesystems>Operator, Rioter, Instigator
   The Operator Assistance System provides necessary medical treatment in critical moments and also offers communication functions</entitydescription.tsm_operatorassistancesystems>
+  <entityname.tsm_grip_reload>Reload Grip</entityname.tsm_grip_reload>
+  <entitydescription.tsm_grip_reload>Keep your hand in a half-grip, half-support position, which makes it easier to press the release button when changing ammunition
+    speeding up the reloading process
+    -10% spread
+    -5% movement speed</entitydescription.tsm_grip_reload>
+  <entityname.tsm_grip_straight_light>Straight Grip Tactical Light</entityname.tsm_grip_straight_light>
+  <entitydescription.tsm_grip_straight_light>Provides a certain level of stability and gains illumination functionality.
+    -30% Spread
+    +40% Water Flow Resistance
+    -10% Movement Speed
+    +20% Stun Resistance</entitydescription.tsm_grip_straight_light>
   <entityname.tsm_grip_straight>Straight Grip</entityname.tsm_grip_straight>
   <entitydescription.tsm_grip_straight>Provides a slight increase in stability
   -30% Spread
@@ -565,7 +646,7 @@
   <entityname.tsm_grip_triangle>Triangle Grip</entityname.tsm_grip_triangle>
   <entitydescription.tsm_grip_triangle>Provides a slight increase in stability
   -15% Spread
-  +15% Water Flow Resistance</entitydescription.tsm_grip_triangle>
+  +30% Water Flow Resistance</entitydescription.tsm_grip_triangle>
   <entityname.tsm_grip_thumb>Thumb Grip</entityname.tsm_grip_thumb>
   <entitydescription.tsm_grip_thumb>Provides a slight increase in stability
   -5% Spread
@@ -581,6 +662,11 @@
   +40% Water Flow Resistance
   -20% Movement Speed
   +30% Stun Resistance</entitydescription.tsm_grip_mounts>
+  <entityname.tsm_reload_speed>Magazine well with a quick-loading wide mouth</entityname.tsm_reload_speed>
+  <entitydescription.tsm_reload_speed>Also known as the “skirt”, a simple funnel-shaped device installed under the magazine well that makes inserting magazines into straight-insertion magazine firearms faster and smoother.
+    Speeds up reload time
+    +5% spread
+    -3% movement speed</entitydescription.tsm_reload_speed>
   <entityname.tsm_sight_reddot>Red Dot Sight</entityname.tsm_sight_reddot>
   <entitydescription.tsm_sight_reddot>Slightly increases weapon sway when holding the weapon and reduces the reticle enlargement when firing
   +25% Skill Level Gain Speed
@@ -604,8 +690,7 @@
   -13% Spread
   -12% Movement Speed</entitydescription.tsm_sight_c79>
   <entityname.tsm_sight_hamr>HAMR Medical Monitoring Sight</entityname.tsm_sight_hamr>
-  <entitydescription.tsm_sight_hamr>Provides medical detection effects
-  +10% Weapon Handling Gain Speed</entitydescription.tsm_sight_hamr>
+  <entitydescription.tsm_sight_hamr>Provides medical detection effects</entitydescription.tsm_sight_hamr>
   <entityname.tsm_sight_tripled>M2 3x Sight</entityname.tsm_sight_tripled>
   <entitydescription.tsm_sight_tripled>Slightly increases weapon sway when holding the weapon
   -8% Spread
@@ -620,7 +705,7 @@
   <entityname.tsm_flame_arrester>Muzzle Flash Hider</entityname.tsm_flame_arrester>
   <entitydescription.tsm_flame_arrester>Slightly increases weapon damage
   +17% Damage
-  -2% Rate of Fire</entitydescription.tsm_flame_arrester>
+  -8% Rate of Fire</entitydescription.tsm_flame_arrester>
   <entityname.tsm_recoil>Muzzle Brake</entityname.tsm_recoil>
   <entitydescription.tsm_recoil>Slightly increases weapon damage and accuracy
   +10% Damage
@@ -632,10 +717,11 @@
   -5% Movement Speed</entitydescription.tsm_95_sight>
   <entityname.tsm_gun_grenade>Underbarrel Grenade Launcher</entityname.tsm_gun_grenade>
   <entitydescription.tsm_gun_grenade>Allows the weapon to fire grenades when installed</entitydescription.tsm_gun_grenade>
-  <entityname.tsm_advanced_barrel>Advanced Sniper Rifle Barrel</entityname.tsm_advanced_barrel>
-  <entitydescription.tsm_advanced_barrel>QBU-191 Advanced Sniper Rifle barrel, pairs with the weapon to become a precision sniper rifle
-  +60% Damage
-  -50% Rate of Fire</entitydescription.tsm_advanced_barrel>
+  <entityname.tsm_advanced_barrel>Sniper Rifle Gas block</entityname.tsm_advanced_barrel>
+  <entitydescription.tsm_advanced_barrel>Accessories exclusively for the 191 gun family/201 Squad Machine Gun
+    When equipped on the QBU191: +60% damage, -50% rate of fire.
+    When equipped on the QBZ191: +10% rate of fire.
+    When equipped on the 201 Squad Machine Gun: +5% rate of fire, +3% damage.</entitydescription.tsm_advanced_barrel>
   <entityname.tsm_03_sight>Type 03 Rifle Sight</entityname.tsm_03_sight>
   <entitydescription.tsm_03_sight>Exclusive sight for the Type 03 rifle, slightly increases weapon sway when holding the weapon
   -10% Spread
@@ -647,6 +733,18 @@
   -7% Movement Speed</entitydescription.tsm_sight_qmk152>
   <entityname.tsm_gun_grenade_lm>M203 Grenade Launcher</entityname.tsm_gun_grenade_lm>
   <entitydescription.tsm_gun_grenade_lm>An underbarrel attachment for the M4 and M16 series, allowing the weapon to fire grenades once installed.</entitydescription.tsm_gun_grenade_lm>
+  <entityname.tsm_renou>Test Dummy Summoning</entityname.tsm_renou>
+  <entitydescription.tsm_renou>Summon a dummy for damage testing purposes. The dummy has a base health of 300
+    Dummy Helmet: -80% Damage, -90% Bleeding
+    Dummy Bulletproof Vest: -80% Damage, -50% Burning, -80% Bleeding
+    Dummy Clothing: -10% Lacerations, -10% bitewounds
+  </entitydescription.tsm_renou>
+  <entityname.tsm_renou1>Test Dummy Summoning</entityname.tsm_renou1>
+  <entitydescription.tsm_renou1>Summon a dummy for damage testing purposes. The dummy has a base health of 300，no armor</entitydescription.tsm_renou1>
+  <entityname.tsm_gunkill>Firearms Proficiency</entityname.tsm_gunkill>
+  <entitydescription.tsm_gunkill>Gain the Firearms Expertise talent after useing it</entitydescription.tsm_gunkill>
+  <entityname.tsm_gunkill_adv>Firearms Proficiency（Advanced）</entityname.tsm_gunkill_adv>
+  <entitydescription.tsm_gunkill_adv>Gain the Firearms Expertise Advanced talent after useing it</entitydescription.tsm_gunkill_adv>
   <!--近战-->
   <entityname.tsm_round_riotshields>Round Riot Shields</entityname.tsm_round_riotshields>
   <entitydescription.tsm_round_riotshields>Small shields that can only provide limited protection. Best used in combination with melee weapons.</entitydescription.tsm_round_riotshields>
@@ -680,8 +778,8 @@
   <entitydescription.tsm_usp45_pistols>Uses ‖color:0,200,0,255‖.45ACP‖color:end‖ pistol magazines. One of Yan Shuting's sidearms, with a small tactical flashlight attached underneath. Previously, the Feline Advisory Team had these pistols, but they were not favored due to insufficient power. Yan modified it to .45 caliber for close-quarters self-defense against unarmored targets in narrow environments.</entitydescription.tsm_usp45_pistols>
   <entityname.tsm_m200>M200 "Intervener" Prototype Precision Sniper Rifle</entityname.tsm_m200>
   <entitydescription.tsm_m200>Uses ‖color:0,200,0,255‖10.36*77‖color:end‖ sniper rifle magazines. Yan's primary sidearm, a gift from a friend when she joined the Feline Advisory Team. It is said that there is only one of these in Europa. The precision machining technology is one of the main difficulties. But more importantly, in the battles of Europa, there are few situations where high-precision, long-range sniper rifles are needed, except for the Feline Advisory Team. This legendary sniper rifle, which can hit an oxygen tank from a kilometer away, has silently taken the lives of many overconfident individuals.</entitydescription.tsm_m200>
-  <entityname.tsm_1036_77ammo>Sniper Rifle Magazine (10.36*77)</entityname.tsm_1036_77ammo>
-  <entitydescription.tsm_1036_77ammo>Contains 7 standard 10.3*77 caliber sniper rifle bullets</entitydescription.tsm_1036_77ammo>
+  <entityname.tsm_1036_77_mag>Sniper Rifle Magazine (10.36*77)</entityname.tsm_1036_77_mag>
+  <entitydescription.tsm_1036_77_mag>Contains 7 standard 10.3*77 caliber sniper rifle bullets</entitydescription.tsm_1036_77_mag>
   <charactername.tsm_chris>Chris Evans</charactername.tsm_chris>
   <npctitle.tsm_chris>Former Captain of the Beowulf Squad</npctitle.tsm_chris>
   <entityname.tsm_beowulf>Beowulf Medal</entityname.tsm_beowulf>
@@ -738,6 +836,11 @@
   <tsm_yan_p_s1>You're Yan right？</tsm_yan_p_s1>
   <tsm_yan_p_s2>I found some discarded sketch comics at the station, and the author's self - portrait looks a lot like you. You must have been an artist before, right? I want to collect them. Compared to cold money, these works are truly priceless treasures!</tsm_yan_p_s2>
   <tsm_yan_p_f>This is a lot of money! Young lady, and... where can you find a sniper who wears glasses?</tsm_yan_p_f>
+
+  <entityname.tsm_sl>killing Thirst</entityname.tsm_sl>
+  <entitydescription.tsm_sl>The heavy anti-materiel rifle used by Bai Ye fires ||color:0,200,0,255||20mm high-explosive armor-piercing rounds||color:end|| It has an extremely heavy barrel and possesses the immense power to easily shatter any armor. It is unknown what kind of target it was designed for.</entitydescription.tsm_sl>
+  <entityname.tsm_20_ammo>20mm high-explosive armor-piercing rounds</entityname.tsm_20_ammo>
+  <entitydescription.tsm_20_ammo>It can be used with weapons of the corresponding caliber. You wouldn't use this to shoot humans, right...?</entitydescription.tsm_20_ammo>
   <!--弹药-->
   <entityname.tsm_12_ld>12-gauge Buckshot</entityname.tsm_12_ld>
   <entitydescription.tsm_12_ld>Fewer shot pellets, but with greater power.</entitydescription.tsm_12_ld>
@@ -1052,6 +1155,8 @@
   <entitydescription.lm_65_magazine>Loaded with 30 rounds of 6.5×55mm standard bullets, with some armor-piercing capability, effective against targets in armor.</entitydescription.lm_65_magazine>
   <entityname.lm_762_35_mag>Coalition Standard Magazine (.300blk)</entityname.lm_762_35_mag>
   <entitydescription.lm_762_35_mag>Loaded with 30 rounds of .300 caliber bullets, a quiet and deadly subsonic ammunition. Unlike conventional supersonic ammunition, its subsonic initial velocity embeds the bullet into the target's body without passing through, providing more efficient stopping power. The downside is its slightly insufficient penetration against armored targets, making it best suited for tasks involving light suppression of riots or hunting.</entitydescription.lm_762_35_mag>
+  <entityname.lm_762_35_krmag>Coalition Extended Magazine (.300blk)</entityname.lm_762_35_krmag>
+  <entitydescription.lm_762_35_krmag>Loaded with 45 rounds of .300 caliber bullets, a quiet and deadly subsonic ammunition. Unlike conventional supersonic ammunition, its subsonic initial velocity embeds the bullet into the target's body without passing through, providing more efficient stopping power. The downside is its slightly insufficient penetration against armored targets, making it best suited for tasks involving light suppression of riots or hunting.</entitydescription.lm_762_35_krmag>
   <entityname.lm_68_51_magazine>Coalition Standard Magazine (6.8*51mm)</entityname.lm_68_51_magazine>
   <entitydescription.lm_68_51_magazine>Loaded with 30 rounds of standard 6.8*51 caliber bullets.</entitydescription.lm_68_51_magazine>
   <entityname.lm_68_51kj_magazine>Coalition Spitzer Magazine (6.8*51mm)</entityname.lm_68_51kj_magazine>
@@ -1130,7 +1235,7 @@
   <entityname.tsm_fkj_ak12_c>AK12 Assault Rifle (Tactical Type)</entityname.tsm_fkj_ak12_c>
   <entitydescription.tsm_fkj_ak12_c>Equipped with a triangular front grip for better controllability. It can also fire ‖color:0,200,0,255‖5.45*39‖color:end‖ and ‖color:0,200,0,255‖7.62*39‖color:end‖ calibers of ammunition.</entitydescription.tsm_fkj_ak12_c>
   <entityname.tsm_fkj_561a>Separatists Type 56-1A Assault Rifle</entityname.tsm_fkj_561a>
-  <entitydescription.tsm_fkj_561a>A legendary old weapon modernized by a mysterious force and exported to the Separatists via the black market, becoming one of the few advanced weapons in their arsenal. It can also fire ‖color:0,200,0,255‖5.45*39‖color:end‖ and ‖color:0,200,0,255‖7.62*39‖color:end‖ calibers of ammunition.</entitydescription.tsm_fkj_561a>
+  <entitydescription.tsm_fkj_561a>A legendary old weapon modernized by a mysterious force and exported to the Separatists via the black market, becoming one of the few advanced weapons in their arsenal. It can fire ‖color:0,200,0,255‖7.62*39‖color:end‖ ammunition.</entitydescription.tsm_fkj_561a>
   <entityname.tsm_fkj_ak105_c>AK105 Assault Rifle (Tactical Type)</entityname.tsm_fkj_ak105_c>
   <entitydescription.tsm_fkj_ak105_c>Equipped with an underslung grenade launcher that can fire various types of grenades without the need for an additional launcher, and has a faster rate of fire than the standard AK-105. Fires ‖color:0,200,0,255‖5.45*39‖color:end‖ ammunition.</entitydescription.tsm_fkj_ak105_c>
   <entityname.tsm_fkj_a545>Separatists A-545 Assault Rifle</entityname.tsm_fkj_a545>
@@ -1720,4 +1825,5 @@ Ladies and gentlemen, this is the end of Solomon.</missionmessage0.tsm_combat_nz
 <loadingscreentip>The Beowulf Squadron is the Coalition's most elite riot control and counter-terrorism unit. As the war continues to escalate, the responsibilities of this unit have far exceeded traditional riot control tasks and have been granted higher authority. Now, they are not only the pacifiers on the battlefield but also play the roles of judges, police, and executioners, becoming the Coalition's truly authoritative force that integrates trial and execution.—TSM</loadingscreentip>
 <loadingscreentip>The occupying forces are the Coalition's ace troops, known for their powerful heavy firepower, comprehensive support capabilities, and thick armor. They are the most formidable force on the conventional battlefield, showing overwhelming combat effectiveness in both offense and defense.—TSM</loadingscreentip>
 <loadingscreentip>EMBI, short for Europa Magic Biotechnology Company, mainly develops biological weapons—TSM</loadingscreentip>
+<loadingscreentip>Press Alt + F for quick activation of overhead shooting.    Press Alt + G for quick activation of helmet function.--------TSM</loadingscreentip>
 </infotexts>

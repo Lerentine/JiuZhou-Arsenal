@@ -228,7 +228,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,1,1" />
       <ParticleEmitter particle="grenadepin" emitinterval="10" particleamount="1" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
       <ParticleEmitter particle="grenadelever" emitinterval="10" particleamount="1" anglemin="120" anglemax="210" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
-      <Sound file="Content/Items/Weapons/pinpull.ogg" type="OnUse" range="720" />
+      <Sound file="%ModDir%/weapons/配件/lh.ogg" type="OnUse" range="1000" />
       <RequiredItems items="grenade" type="Contained" msg="ItemMsgAmmoRequired" />
       <StatusEffect type="OnUse" target="This" Condition="-200" disabledeltatime="true" />
       <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
@@ -247,8 +247,7 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" launchimpulse="13.7" sticktocharacters="false">
       <StatusEffect type="OnImpact" target="This" Condition="-200.0" delay="3.5" disabledeltatime="true">
-          <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="10000" selectionmode="All" />
-          <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="10000" />
+          <sound file="%ModDir%/weapons/配件/zhl_boom.ogg" range="2500" selectionmode="All" />
         <Explosion range="300.0" ballastfloradamage="100" structuredamage="20" levelwalldamage="140" itemdamage="500" force="5" severlimbsprobability="0.5" decal="explosion" decalsize="0.5" penetration="0.8">
           <Affliction identifier="explosiondamage" strength="50" />
           <Affliction identifier="tsm_ai_grenade" strength="10" />
@@ -469,7 +468,7 @@
           <Affliction identifier="explosiondamage" strength="20" />
           <Affliction identifier="bleeding" strength="5" />
           <Affliction identifier="burn" strength="5" />
-          <Affliction identifier="stun" strength="10" />
+          <Affliction identifier="stun" strength="5" />
         </Explosion>
       </StatusEffect>
     </ItemComponent>

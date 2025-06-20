@@ -3,12 +3,11 @@
   <!--敌军火力-->
   <Affliction name="战斗恶疫常态" identifier="tsm_eyi_combat" description="" type="eyi" isbuff="true" limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" activationthreshold="0" showinhealthscannerthreshold="50" showicontoothersthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="0">
-      <StatValue stattype="RangedAttackSpeed" value="0.1" />
+      <StatValue stattype="RangedAttackSpeed" value="0.05" />
       <StatValue stattype="RangedSpreadReduction" value="0.2" />
-      <StatValue stattype="MeleeAttackMultiplier" value="0.7" />
+      <StatValue stattype="MeleeAttackMultiplier" value="0.8" />
       <StatValue stattype="AttackMultiplier" value="0.25" />
-      <StatValue stattype="MovementSpeed" value="0.25" />
-      <StatValue stattype="MaximumHealthMultiplier" value="0.5" />
+      <StatValue stattype="MovementSpeed" value="0.1" />
       <StatusEffect target="Character">
         <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.3" />
       </StatusEffect>
@@ -218,16 +217,15 @@
   <!--其他-->
   <Affliction name="伤害抗性" identifier="tsm_eyi_defend" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
     <Effect minstrength="0" maxstrength="15" strengthchange="0" resistancefor="damage,bleeding,burn,acidburn" minresistance="0.00" maxresistance="0.5" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
-      <StatValue stattype="MovementSpeed" value="0.25" />
+      <StatValue stattype="MovementSpeed" value="0.2" />
     </Effect>
   </Affliction>
   <Affliction name="恢复" identifier="tsm_eyi_rev" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
     <Effect minstrength="0" maxstrength="1">
-      <StatusEffect target="Character" interval="5" duration="5">
+      <StatusEffect target="Character" interval="4" duration="2">
         <ReduceAffliction type="bleeding" amount="5" />
-        <ReduceAffliction type="burn" amount="1" />
-        <ReduceAffliction type="damage" amount="1" />
-        <ReduceAffliction type="bloodloss" amount="1.5" />
+        <ReduceAffliction type="burn" amount="0.5" />
+        <ReduceAffliction type="bloodloss" amount="0.5" />
       </StatusEffect>
     </Effect>
   </Affliction>
@@ -273,6 +271,7 @@
   <Affliction name="ai防水压防窒息" identifier="tsm_ai_asphyxiating_pressure" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="1">
     <Effect minstrength="0" maxstrength="1" resistancefor="huskinfection,oxygenlow,incrementalstun,tsm_ai_grenade,tsm_ai_grenade_1" minresistance="0" maxresistance="1">
       <AbilityFlag flagtype="ImmuneToPressure" />
+      <StatValue stattype="TeamAttackMultiplier" value="-0.85" />
       <StatusEffect target="Character" usehulloxygen="false" needsair="false" setvalue="true">
         <ReduceAffliction identifier="huskinfection" amount="50" />
         <ReduceAffliction identifier="oxygenlow" strength="100" />
@@ -291,7 +290,7 @@
   </Affliction>
   <Affliction identifier="tsm_ai_tk" isbuff="true" type="ai_debuff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" karmachangeonapplied="0" maxstrength="10" affectmachines="false">
     <Effect minstrength="0" maxstrength="1" strengthchange="0">
-      <StatValue stattype="TeamAttackMultiplier" value="-1" />
+      <StatValue stattype="TeamAttackMultiplier" value="-0.6" />
     </Effect>
   </Affliction>
   <Affliction name="震撼效果" identifier="tsm_ai_grenade" limbspecific="false" showiconthreshold="100" maxstrength="10" resetbetweenrounds="true">

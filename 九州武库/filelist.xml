@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="九州武库" modversion="1.0.143" corepackage="False" steamworkshopid="2953749635" gameversion="1.8.8.1">
+<contentpackage name="九州武库" modversion="1.0.155" corepackage="False" steamworkshopid="2953749635" gameversion="1.9.7.0">
   <Item file="%ModDir%/weapons/bullet.xml" />
   <Item file="%ModDir%/Jobgear/uniform.xml" />
   <Item file="%ModDir%/Jobgear/armor.xml" />
@@ -51,9 +51,11 @@
   <TalentTrees file="%ModDir%/job/TalentTrees.xml" />
   <Jobs file="%ModDir%/job/Jobs.xml" />
   <Character file="%ModDir%/character/sight5/sight5.xml" />
+  <Character file="%ModDir%/character/renou/renou.xml" />
+  <Character file="%ModDir%/character/renou/renou1.xml" />
   <Other file="%ModDir%/Lua/Autorun/init.lua" />
   <Other file="%ModDir%/Lua/Scripts/Client/weapon_zoom.lua" />
   <EnemySubmarine file="%ModDir%/ship/ARS-运输.sub" />
   <EnemySubmarine file="%ModDir%/ship/pirates_tsm_1.sub" />
-  <Submarine file="%ModDir%/九州武库：现版本武器全览 （suger更新版）.sub" />
+  <Submarine file="%ModDir%/九州武库：现版本武器全览 25.5.25.sub" />
 </contentpackage>

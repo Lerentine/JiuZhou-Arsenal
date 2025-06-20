@@ -512,7 +512,7 @@
           <Conditional isActive="eq true" />
           <sound file="%ModDir%/weapons/奇迹之海/yx_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7" />
         </StatusEffect>
-        <StatusEffect target="This" holdpos="60,-5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="0.4" maxchargetime="0" setvalue="true">
+        <StatusEffect target="This" holdpos="60,-5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.4" maxchargetime="0" setvalue="true">
           <conditional maxchargetime="eq 999" />
         </StatusEffect>
       </Containable>

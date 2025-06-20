@@ -171,7 +171,7 @@
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="1728,1601,124,126" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="1654,84,328,57" depth="0.55" origin="0.5,0.5" />
-    <Body width="328" height="57" density="30" />
+    <Body width="528" height="57" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Price baseprice="700" minleveldifficulty="20">
       <Price storeidentifier="merchantoutpost" multiplier="1.35" sold="false" />
@@ -265,7 +265,7 @@
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="1499,1607,113,115" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="1672,193,310,46" depth="0.55" origin="0.5,0.5" />
-    <Body width="310" height="46" density="25" />
+    <Body width="402" height="46" density="25" />
     <Price baseprice="308" minleveldifficulty="10">
       <Price storeidentifier="merchantoutpost" multiplier="1.35" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
@@ -311,7 +311,7 @@
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="1890,1624,102,103" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="1708,22,274,30" depth="0.55" origin="0.5,0.5" />
-    <Body width="274" height="30" density="23" />
+    <Body width="303" height="30" density="23" />
     <Price baseprice="298" minleveldifficulty="0">
       <Price storeidentifier="merchantoutpost" multiplier="1.35" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
@@ -354,7 +354,7 @@
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item name="MG42通用机枪" identifier="tsm_mg42" subcategory="other" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" Scale="0.27" impactsoundtag="impact_metal_light">
+  <Item name="MG42通用机枪" identifier="tsm_mg42" subcategory="other" category="Weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,fkj_guns,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" Scale="0.27" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="80" />
@@ -515,7 +515,7 @@
     <PreferredContainer primary="grenadelauncher" amount="1" spawnprobability="0.5" />
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab" minamount="1" maxamount="2" spawnprobability="0.1" />
     <PreferredContainer primary="secarmcab" secondary="armcab" />
-    <Price baseprice="56" sold="false">
+    <Price baseprice="456" sold="false">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -565,7 +565,7 @@
     <PreferredContainer primary="grenadelauncher" amount="2" spawnprobability="0.5" />
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab" minamount="1" maxamount="2" spawnprobability="0.1" />
     <PreferredContainer primary="secarmcab" secondary="armcab" />
-    <Price baseprice="63" sold="false">
+    <Price baseprice="463" sold="false">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />

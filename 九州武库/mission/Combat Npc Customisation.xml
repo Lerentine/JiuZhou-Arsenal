@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <npcsets>
   <!--定制-->
-  <!--联盟部队-->
-  <!--莫哈维邮差-->
   <npcset identifier="Combat_Npc_Customisation">
+    <!--联盟部队-->
+    <!--莫哈维邮差-->
     <npc identifier="coalition_themohavemailman" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.5" aimspeed="5" aimaccuracy="1" reportrange="1500" skillmultiplier="2">
       <ItemSet commonness="0.5">
         <Item identifier="idcard" equip="true" />
@@ -800,7 +800,7 @@
         <Item identifier="tsm_enhancement_combatship">
           <Item identifier="tsm_medicalkits_s" />
         </Item>
-        <Item identifier="tsm_fkj_sks" equip="true">
+        <Item identifier="tsm_fkj_561a" equip="true">
           <Item identifier="tsm_sight_pso" equip="true" />
           <Item identifier="fkj_762hz_mag" amount="1" />
           <Item identifier="fkj_762cj_mag" amount="1" />

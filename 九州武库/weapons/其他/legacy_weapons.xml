@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="56冲" identifier="tsm_56" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.26" impactsoundtag="impact_metal_light" description="">
+  <Item name="56冲" identifier="tsm_56" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="smallitem,weapon,gun,fkj_gun,fkj_guns,gunsmith,mountableweapon,provocativetohumanai" scale="0.26" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
     <PreferredContainer secondary="wreckarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
@@ -112,11 +112,18 @@
         <StatusEffect type="OnUse" target="This" Tags="" spread="11" unskilledspread="30" setvalue="true" />
       </Button>
     </CustomInterface>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+      <GuiFrame relativesize="0.09,0.07" anchor="CenterRight" pivot="CenterRight" relativeoffset="-0.02,0.15" style="ItemUI" />
+      <TickBox text="tsm_gun_up">
+        <StatusEffect type="OnUse" target="This,Character" aimpos="60,40" setvalue="true" spread="14" unskilledspread="46"/>
+        <StatusEffect type="OnSecondaryUse" target="This" aimpos="60,0" setvalue="true" spread="8" unskilledspread="40"/>
+      </TickBox>
+    </CustomInterface>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <!--等级提示-->
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
-  <Item name="81杠" identifier="tsm_81" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.26" impactsoundtag="impact_metal_light" description="">
+  <Item name="81杠" identifier="tsm_81" subcategory="other" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,fkj_gun,fkj_guns,gunsmith,mountableweapon,provocativetohumanai" scale="0.26" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
     <PreferredContainer secondary="wreckarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -202,11 +209,18 @@
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.15" />
     </Quality>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+      <GuiFrame relativesize="0.09,0.07" anchor="CenterRight" pivot="CenterRight" relativeoffset="-0.02,0.15" style="ItemUI" />
+      <TickBox text="tsm_gun_up">
+        <StatusEffect type="OnUse" target="This,Character" aimpos="80,40" setvalue="true" spread="12" unskilledspread="56"/>
+        <StatusEffect type="OnSecondaryUse" target="This" aimpos="80,0" setvalue="true" spread="6" unskilledspread="50"/>
+      </TickBox>
+    </CustomInterface>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <!--等级提示-->
     <SkillRequirementHint identifier="weapons" level="60" />
   </Item>
-  <Item name="QTS11式战略突击步枪" identifier="tsm_ots11" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,tsm_gun,gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.26" impactsoundtag="impact_metal_light" description="">
+  <Item name="QTS11式战略突击步枪" identifier="tsm_ots11" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,tsm_gun,tsm_guns,gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.26" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
     <PreferredContainer secondary="wreckarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
@@ -349,5 +363,91 @@
         <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
       </TickBox>
     </CustomInterface>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+      <GuiFrame relativesize="0.09,0.07" anchor="CenterRight" pivot="CenterRight" relativeoffset="-0.02,0.15" style="ItemUI" />
+      <TickBox text="tsm_gun_up">
+        <StatusEffect type="OnUse" target="This,Character" aimpos="70,40" setvalue="true" spread="13" unskilledspread="66"/>
+        <StatusEffect type="OnSecondaryUse" target="This" aimpos="70,0" setvalue="true" spread="7" unskilledspread="60"/>
+      </TickBox>
+    </CustomInterface>
+  </Item>
+  <Item name="自制消音器" identifier="tsm_gun_silencers_zz" subcategory="accessories" category="Equipment" Tags="smallitem" cargocontaineridentifier="tsm_metalcrate" Scale="0.45" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="0" maxamount="1" spawnprobability="0.03" />
+    <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="413,755,71,52" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="93,734,64,29" depth="0.53" origin="0.5,0.5" />
+    <Body width="64" height="29" density="4" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_barrel_silencers_zz_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Deconstruct time="5">
+      <Item identifier="weldingfueltank" />
+    </Deconstruct>
+    <ItemComponent characterusable="false">
+    <StatusEffect type="OnBroken" target="This">
+      <Sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="5000" frequency="2.0" selectionmode="Random" />
+      <Sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="5000" frequency="2.0" />
+      <Sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="5000" frequency="2.0" />
+      <ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" distancemax="500" particleamount="270" velocitymin="1500" velocitymax="2000" scalemin="0.7" scalemax="1.2" />
+      <Explosion range="200.0" ballastfloradamage="30" structuredamage="5" levelwalldamage="20" itemdamage="30" force="5" debris="false" decal="explosion" decalsize="0.5">
+        <Affliction identifier="explosiondamage" strength="20" />
+        <Affliction identifier="stun" strength="1.5" />
+      </Explosion>
+      <Spawnitem identifier="aluminium" spawnposition="this" />
+      <Remove />
+    </StatusEffect>
+    </ItemComponent>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="反抗军7.62旋风弹匣" identifier="fkj_762_xf_mag" subcategory="tsm_separatists" scale="0.25" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="smallitem,fkj_cjzd,fkj_mag,magazine,akammo,handheldammo,deep_7.62x39" impactsoundtag="impact_metal_light" health="120" >
+    <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="0" maxamount="3" spawnprobability="0.05" />
+    <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="422,829,72,61" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/accessories.png" depth="0.56" sourcerect="0,935,293,144" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="293" height="144" density="20" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt762*39" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="pt762*39" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="pt762*39" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="tsm_oilshale" mincondition="0.9" />
+      <Item identifier="tsm_oilshale" mincondition="0.9" />
+      <Item identifier="tsm_oilshale" mincondition="0.9" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+    <StatusEffect type="OnActive" target="Character">
+      <Affliction identifier="tsm_krmag_xf_buff" strength="2" />
+    </StatusEffect>
+    </Holdable>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="冲锋枪扩容弹匣（.45）" identifier="tsm_45_smgmag_durm" scale="0.25" category="weapon" subcategory="other" maxstacksize="4" maxstacksizecharacterinventory="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,magazine,handheldammo,deep_smg_ump45,tsm_zd,fkj_zd,lm_zd" impactsoundtag="impact_metal_light" health="70">
+    <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="0" maxamount="3" spawnprobability="0.05" />
+    <InventoryIcon texture="%ModDir%/weapons/配件/accessories.png" sourcerect="565,829,63,69" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/配件/accessories.png" sourcerect="393,899,67,167" depth="0.56" origin="0.5,0.5" />
+    <Body width="67" height="167" density="13" />
+    <Deconstruct time="10">
+      <Item identifier="plastic" outcondition="0.5" />
+      <Item identifier="copper" mincondition="0.9" />
+      <Item identifier="copper" mincondition="0.9" />
+      <Item identifier="copper" mincondition="0.9" />
+    </Deconstruct>
+    <ItemContainer maxstacksize="1" hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_45_ammo" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="tsm_45_ammo" />
+      <StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true">
+        <SpawnItem identifiers="tsm_45_ammo" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
+      <StatusEffect type="OnActive" target="Character">
+        <Affliction identifier="tsm_krmag_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
   </Item>
 </Items>

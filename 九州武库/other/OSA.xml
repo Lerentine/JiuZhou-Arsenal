@@ -2,13 +2,13 @@
 <Items>
   <Item name="操作者辅助系统(OAS)" subcategory="TSM" identifier="tsm_operatorassistancesystems" scale="0.25" category="Equipment" tags="smallitem,mobileradio" description="" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="crewcab" secondary="divingcab" />
-    <Price baseprice="40" buyingpricemultiplier="5">
+    <!--Price baseprice="40" buyingpricemultiplier="5">
       <Price storeidentifier="merchantoutpost" maxavailable="0" />
       <Price storeidentifier="merchantcity" maxavailable="0" />
       <Price storeidentifier="merchantresearch" maxavailable="0" />
       <Price storeidentifier="merchantmilitary" maxavailable="0" />
       <Price storeidentifier="merchantmine" maxavailable="0" />
-    </Price>
+    </Price-->
     <InventoryIcon texture="%ModDir%/Jobgear/操作者辅助系统.png" sourcerect="102,59,130,233" origin="0.5,0.5" />
     <Sprite name="OAS" texture="%ModDir%/Jobgear/操作者辅助系统.png" depth="0.55" sourcerect="102,59,130,233" origin="0.35,0.5" />
     <Body radius="110" height="205" density="6" />
@@ -18,7 +18,7 @@
       <Item identifier="zinc" />
     </Deconstruct>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="15" requiresrecipe="false">
-      <RequiredItem identifier="headset" amount="1" />
+      <RequiredItem identifier="tsm_hengberley_star" amount="1" />
       <RequiredItem identifier="autoinjectorheadset" amount="1" />
       <RequiredItem identifier="silicon" amount="3" />
       <RequiredItem identifier="tsm_ic" amount="1" />

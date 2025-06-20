@@ -63,49 +63,6 @@
         </StatusEffect>
       </StatusEffectAction>
     </ScriptedEvent>
-    <!--任务中刷出邱小姐-->
-    <ScriptedEvent identifier="tsm_srm_onactive">
-      <CheckDataAction identifier="tsm_save_missqiu_outpost" condition="eq active" forcestring="true">
-        <!--检查存档标记-->
-        <Success>
-          <TagAction criteria="tsm_restarget" tag="TSM_customisation_qiuwu" ignoreincapacitatedcharacters="false" />
-          <!--标记目标-->
-          <TagAction criteria="player" tag="player" ignoreincapacitatedcharacters="false" />
-          <!--标记玩家-->
-          <NPCWaitAction npctag="TSM_customisation_qiuwu" wait="true" />
-          <!--让AI站着-->
-          <TriggerAction target1tag="TSM_customisation_qiuwu" target2tag="player" applytotarget1="TSM_customisation_qiuwu" applytotarget2="trigger_player" type="Inside" radius="250" disableincombat="true" disableiftargetincapacitated="true" waitforinteraction="true" />
-          <!--触发对话-->
-          <ConversationAction text="tsm_srm_text.rescuetargetmessage1" speakertag="TSM_customisation_qiuwu" targettag="trigger_player" fadetoblack="true" endeventifinterrupted="true" dialogtype="Mission" continueconversation="false" continueautomatically="true">
-            <!--对话体-->
-            <Option text="tsm_srm_text.arrested">
-              <NPCChangeTeamAction npctag="TSM_customisation_qiuwu" teamid="Team1" />
-              <!--设置AI为己方-->
-              <NPCFollowAction npctag="TSM_customisation_qiuwu" targettag="trigger_player" follow="true" maxtargets="1" />
-              <!--强制AI跟随-->
-              <SetDataAction operation="Set" value="accomplished" identifier="tsm_save_missqiu_outpost" />
-              <!--设置存档标记-->
-              <TriggerEventAction identifier="tsm_spawnrescuednpc" nextround="true" />
-              <!--触发站点生成-->
-            </Option>
-          </ConversationAction>
-        </Success>
-      </CheckDataAction>
-    </ScriptedEvent>
-    <ScriptedEvent identifier="tsm_spawnrescuednpc">
-      <CheckDataAction identifier="tsm_save_missqiu_outpost" condition="eq accomplished" forcestring="true">
-        <!--验证存档标记-->
-        <Success>
-          <SpawnAction npcsetidentifier="TSM_mission_npc" npcidentifier="TSM_customisation_qiuwu" lootingisstealing="false" targettag="TSM_customisation_qiuwu" spawnlocation="Outpost" teamid="FriendlyNPC" allowduplicates="false" amount="1" />
-          <!--触发站点生成-->
-          <SetDataAction operation="Set" value="end" identifier="tsm_save_missqiu_outpost" />
-          <!--设置存档标记-->
-          <ConversationAction text="tsm_srm_text.thanks1" speakertag="TSM_customisation_qiuwu" invokertag="trigger_player" fadetoblack="false">
-            <Option text="tsm_srm_text.answer1"></Option>
-          </ConversationAction>
-        </Success>
-      </CheckDataAction>
-    </ScriptedEvent>
     <!--ars探员-->
     <!--ScriptedEvent identifier="TSM_convertible_npc">
         <TagAction criteria="player" tag="player" />
@@ -305,7 +262,7 @@
         <StatusEffect target="This">
           <Affliction identifier="tsm_occupation_jia_buff" strength="50" />
           <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard" />
-          <Affliction identifier="tsm_ai_stun_5" strength="50" />
+          <Affliction identifier="tsm_ai_stun_2" strength="50" />
         </StatusEffect>
         <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
@@ -402,7 +359,7 @@
           <Affliction identifier="tsm_ai_stun" strength="50" />
           <Affliction identifier="tsm_qrf_stun" strength="50" />
           <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
-          <Affliction identifier="tsm_ai_stun_5" strength="50" />
+          <Affliction identifier="tsm_ai_stun_2" strength="50" />
           <Affliction identifier="tsm_ai_fire" strength="50" />
           <Affliction identifier="tsm_ai_tk" strength="50" />
           <Affliction identifier="tsm_ai_stun_2" strength="50" />
@@ -449,7 +406,7 @@
         <StatusEffect target="This">
           <Affliction identifier="tsm_beowulf_jia_buff" strength="50" />
           <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1" />
-          <Affliction identifier="tsm_ai_stun_5" strength="50" />
+          <Affliction identifier="tsm_ai_stun_2" strength="50" />
         </StatusEffect>
         <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
@@ -639,7 +596,7 @@
       <StatusEffectAction targettag="enemy_leader">
         <StatusEffect target="This">
           <Affliction identifier="tsm_yehuo_jia_buff" strength="50" />
-          <Affliction identifier="tsm_ai_stun_5" strength="50" />
+          <Affliction identifier="tsm_ai_stun_2" strength="50" />
         </StatusEffect>
         <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
@@ -742,7 +699,7 @@
         <StatusEffect target="This" enabledespawn="true">
           <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
           <Affliction identifier="tsm_ai_bleeding" strength="50" />
-          <Affliction identifier="tsm_ai_stun_5" strength="50" />
+          <Affliction identifier="tsm_ai_stun_2" strength="50" />
           <Affliction identifier="tsm_yehuo_jia_buff" strength="50" />
           <Affliction identifier="tsm_ai_tk" strength="50" />
           <Affliction identifier="tsm_ai_fire" strength="50" />
@@ -828,7 +785,7 @@
           <Affliction identifier="tsm_jz_buff" strength="50" />
           <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1" />
           <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard" />
-          <Affliction identifier="tsm_ai_stun_5" strength="50" />
+          <Affliction identifier="tsm_ai_stun_2" strength="50" />
         </StatusEffect>
         <StatusEffect target="This" UseHealthWindow="false" />
       </StatusEffectAction>
@@ -853,7 +810,6 @@
       <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_naiya" tag="enemy_outpost_combat" continueifnotargetsfound="true" />
       <StatusEffectAction targettag="enemy_outpost_combat">
         <StatusEffect target="This" enabledespawn="true">
-          <Affliction identifier="tsm_ai_stun" strength="50" />
           <Affliction identifier="tsm_eyi_combat" strength="50" />
           <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
           <Affliction identifier="tsm_eyi_rev" strength="50" />
@@ -873,7 +829,7 @@
           <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
           <Affliction identifier="tsm_ai_tk" strength="50" />
           <Affliction identifier="tsm_ma_buff" strength="50" />
-          <Affliction identifier="tsm_ai_stun_5" strength="50" />
+          <Affliction identifier="tsm_ai_stun_2" strength="50" />
           <GiveTalentInfo giverandom="false" talentidentifiers="specops" />
           <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_1,specops" />
         </StatusEffect>
@@ -963,7 +919,6 @@
           <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_naiya" tag="enemy_outpost_combat" continueifnotargetsfound="true" />
       <StatusEffectAction targettag="enemy_outpost_combat">
         <StatusEffect target="This" enabledespawn="true">
-          <Affliction identifier="tsm_ai_stun" strength="50" />
           <Affliction identifier="tsm_eyi_combat" strength="50" />
           <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />
           <Affliction identifier="tsm_ai_tk" strength="50" />
@@ -1202,6 +1157,7 @@
       <TagAction criteria="humanprefabidentifier:tsm_hiredgun_med" tag="enemy_pmc" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:tsm_hiredgun_hard" tag="enemy_pmc" continueifnotargetsfound="true" />
       <TagAction criteria="humanprefabidentifier:tsm_hiredgun_fire" tag="enemy_pmc" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:hostage" tag="enemy_pmc" continueifnotargetsfound="true" />
       <StatusEffectAction targettag="enemy_pmc">
         <StatusEffect target="This" enabledespawn="true">
           <Affliction identifier="tsm_ai_asphyxiating_pressure" strength="50" />

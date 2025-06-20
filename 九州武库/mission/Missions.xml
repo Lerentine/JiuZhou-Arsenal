@@ -585,7 +585,7 @@
             allowretry="true"
             hostageskilledmessage="hostageskilled"
             unhideentitysubcategories="abandonedhuman"
-            minleveldifficulty="35">
+            maxleveldifficulty="35">
       <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,256,256,256" color="214,50,48"/>
       <LocationType identifier="Abandoned" />
       <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
@@ -659,7 +659,6 @@
         <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"  multiplayeronly="true"/>
         <Character identifier="tsm_hiredgun_fire" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"  multiplayeronly="true"/>
         <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"  multiplayeronly="true"/>
-        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
         <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
         <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
         <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true"/>

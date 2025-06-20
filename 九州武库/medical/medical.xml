@@ -37,8 +37,8 @@
       <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
       <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
         <RequiredSkill identifier="medical" level="50" />
-        <StatusEffect type="OnUse" tags="medical" Condition="-100.0" target="This" disabledeltatime="true"></StatusEffect>
-        <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="20">
+        <StatusEffect statuseffecttags="medical" type="OnUse"  Condition="-100.0" target="This" disabledeltatime="true"/>
+        <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="20">
           <ReduceAffliction identifier="triton_9C" amount="5" />
           <ReduceAffliction identifier="triton_burn" amount="1.0" />
           <ReduceAffliction identifier="triton_7L" amount="4" />
@@ -46,7 +46,7 @@
           <ReduceAffliction identifier="zlyz" amount="20.0" />
           <ReduceAffliction identifier="zlqy" amount="20.0" />
         </StatusEffect>
-        <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="15">
+        <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="15">
           <ReduceAffliction identifier="triton_9C" amount="5" />
           <ReduceAffliction identifier="triton_burn" amount="1.0" />
           <ReduceAffliction identifier="triton_7L" amount="4" />
@@ -108,25 +108,25 @@
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
         <RequiredSkill identifier="medical" level="45" />
         <!-- 使用减少耐久和音效 -->
-        <StatusEffect type="OnUse" tags="medical" Condition="-30.0" target="This" disabledeltatime="true">
+        <StatusEffect statuseffecttags="medical" type="OnUse"  Condition="-30.0" target="This" disabledeltatime="true">
           <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
           <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
         </StatusEffect>
-        <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,This">
+        <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget,This">
           <Affliction identifier="tsm_aftermath_success" strength="20" />
         </StatusEffect>
-        <StatusEffect tags="medical" type="OnFailure" target="UseTarget,This">
+        <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget,This">
           <Affliction identifier="tsm_aftermath_failure" strength="30" />
         </StatusEffect>
         <!-- 使用成功的效果，物理伤害、烧伤、流血 -->
-        <StatusEffect tags="medical" type="OnSuccess" target="UseTarget, This" duration="5">
+        <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget, This" duration="5">
           <ReduceAffliction type="damage" amount="5" />
           <ReduceAffliction type="burn" amount="5" />
           <ReduceAffliction type="bleeding" amount="5" />
           <SuitableTreatment type="bloodloss" amount="5" />
         </StatusEffect>
         <!-- 使用失败的效果-->
-        <StatusEffect tags="medical" type="OnFailure" target="UseTarget, This" duration="5">
+        <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget, This" duration="5">
           <ReduceAffliction type="damage" amount="2.5" />
           <ReduceAffliction type="burn" amount="2.5" />
           <ReduceAffliction type="bleeding" amount="2.5" />
@@ -174,23 +174,23 @@
       <Body width="190" height="125" density="10.05" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
         <RequiredSkill identifier="medical" level="70" />
-        <StatusEffect type="OnUse" tags="medical" Condition="-40.0" target="This" disabledeltatime="true">
+        <StatusEffect statuseffecttags="medical" type="OnUse"  Condition="-40.0" target="This" disabledeltatime="true">
           <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
           <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
         </StatusEffect>
-        <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,This">
+        <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget,This">
           <Affliction identifier="tsm_aftermath_success" strength="30" />
         </StatusEffect>
-        <StatusEffect tags="medical" type="OnFailure" target="UseTarget,This">
+        <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget,This">
           <Affliction identifier="tsm_aftermath_failure" strength="40" />
         </StatusEffect>
-        <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,This" duration="10" delay="1">
+        <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget,This" duration="10" delay="1">
           <ReduceAffliction type="damage" amount="4" />
           <ReduceAffliction type="burn" amount="4" />
           <ReduceAffliction type="bleeding" amount="4" />
           <SuitableTreatment type="bloodloss" amount="4" />
         </StatusEffect>
-        <StatusEffect tags="medical" type="OnFailure" target="UseTarget,This" duration="10" delay="1">
+        <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget,This" duration="10" delay="1">
           <ReduceAffliction type="damage" amount="3" />
           <ReduceAffliction type="burn" amount="3" />
           <ReduceAffliction type="bleeding" amount="3" />

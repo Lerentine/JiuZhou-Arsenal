@@ -236,7 +236,7 @@
       <InventoryIcon texture="%ModDir%/weapons/其他/近战.png" sourcerect="899,896,91,85" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/近战.png" sourcerect="2,9,733,213" depth="0.55" origin="0.5,0.5" />
       <Body width="750" height="150" density="45" />
-      <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="30,-50" aimpos="50,0" handle1="-30,5" handle2="15,3" holdangle="35" reload="1.3" range="100" combatPriority="35" AllowHitMultiple="true" msg="ItemMsgPickUpSelect">
+      <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="30,-50" aimpos="50,0" handle1="-30,5" handle2="15,3" holdangle="35" reload="1.2" range="100" combatPriority="35" AllowHitMultiple="true" msg="ItemMsgPickUpSelect">
         <Attack targetimpulse="6" severlimbsprobability="4" ballastfloradamage="100" structuredamage="30" itemdamage="200" penetration="0.4">
           <Affliction identifier="lacerations" strength="45" />
           <Affliction identifier="bleedingnonstop" strength="30" />
@@ -283,7 +283,7 @@
       <InventoryIcon texture="%ModDir%/weapons/其他/近战.png" sourcerect="779,896,93,93" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/近战.png" sourcerect="0,262,722,178" depth="0.55" origin="0.5,0.5" />
       <Body width="700" height="150" density="45" />
-      <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="16,-50" aimpos="50,0" handle1="-20,-3" handle2="15,3" holdangle="35" reload="1.4" range="100" combatPriority="35" msg="ItemMsgPickUpSelect">
+      <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="16,-50" aimpos="50,0" handle1="-20,-3" handle2="15,3" holdangle="35" reload="1.3" range="100" combatPriority="35" msg="ItemMsgPickUpSelect">
         <Attack targetimpulse="6" severlimbsprobability="0.2" ballastfloradamage="100" structuredamage="50" itemdamage="20" penetration="0.2">
           <Affliction identifier="blunttrauma" strength="45" />
           <Affliction identifier="internaldamage" strength="10" />
@@ -392,8 +392,8 @@
       </Price>
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <Deconstruct time="10">
-        <Item identifier="ballisticfiber" mincondition="0.5" copycondition="true" />
-        <Item identifier="titaniumaluminiumalloy" mincondition="0.5" copycondition="true" />
+        <Item identifier="ballisticfiber" mincondition="0.5"  />
+        <Item identifier="titaniumaluminiumalloy" mincondition="0.5" />
       </Deconstruct>
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="15">
         <RequiredSkill identifier="mechanical" level="40" />
@@ -440,9 +440,9 @@
       </Price>
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
       <Deconstruct time="10">
-        <Item identifier="ballisticfiber" mincondition="0.5" copycondition="true" />
-        <Item identifier="plastic" mincondition="0.5" copycondition="true" />
-        <Item identifier="titaniumaluminiumalloy" mincondition="0.5" copycondition="true" />
+        <Item identifier="ballisticfiber" mincondition="0.5" />
+        <Item identifier="plastic" mincondition="0.5" />
+        <Item identifier="titaniumaluminiumalloy" mincondition="0.5" />
       </Deconstruct>
       <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20">
         <RequiredSkill identifier="mechanical" level="40" />
@@ -559,7 +559,7 @@
         <Item identifier="titanium" amount="2" />
       </Fabricate>
       <Body width="420" height="45" density="22" />
-      <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-30,0" handle2="-48,6" holdangle="40" reload="0.9" aimangle="-10" range="50" combatPriority="25" msg="ItemMsgPickUpSelect">
+      <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-30,0" handle2="-48,6" holdangle="40" reload="0.7" aimangle="-10" range="50" combatPriority="25" msg="ItemMsgPickUpSelect">
         <Attack targetimpulse="5" severlimbsprobability="0.1" itemdamage="5" penetration="0.3" structuredamage="20" structuresoundtype="StructureSlash">
           <Affliction identifier="lacerations" strength="40" />
           <Affliction identifier="bleedingnonstop" strength="40" />
@@ -596,7 +596,7 @@
         <RequiredItem identifier="tsm_steel_knife" amount="1" />
         <Item identifier="tsm_kore" amount="1" />
       </Fabricate>
-      <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" handle1="-42,3" handle2="-54,6" holdpos="60,-60" aimpos="80,60" holdangle="28" aimangle="30" reload="1.2" range="50" combatPriority="35" msg="ItemMsgPickUpSelect">
+      <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" handle1="-42,3" handle2="-54,6" holdpos="60,-60" aimpos="80,60" holdangle="28" aimangle="30" reload="1.1" range="50" combatPriority="35" msg="ItemMsgPickUpSelect">
         <StatusEffect type="OnActive" lifetime="1" targettype="This">
           <Conditional entitytype="eq Character" />
           <sound file="%ModDir%/ogg/yh.ogg" range="300" />
@@ -629,7 +629,7 @@
       <InventoryIcon texture="%ModDir%/weapons/其他/近战.png" sourcerect="1872,837,128,129" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/weapons/其他/近战.png" sourcerect="1116,790,507,176" depth="0.55" origin="0.5,0.5" />
       <Body width="700" height="150" density="45" />
-      <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="16,-50" aimpos="60,0" handle1="-30,0" handle2="15,3" holdangle="20" reload="1.2" range="100" combatPriority="35" msg="ItemMsgPickUpSelect">
+      <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="16,-50" aimpos="60,0" handle1="-30,0" handle2="15,3" holdangle="20" reload="1.1" range="100" combatPriority="35" msg="ItemMsgPickUpSelect">
         <Attack targetimpulse="6" severlimbsprobability="0.2" ballastfloradamage="100" structuredamage="40" itemdamage="100" penetration="0.3">
           <Affliction identifier="blunttrauma" strength="45" />
           <Affliction identifier="internaldamage" strength="5" />

@@ -2610,7 +2610,7 @@
       </ItemSet>
     </npc>
     <npc identifier="tsm_outpost_combat_2" commonness="0" tags="TSM" moduleflags="banditleader" job="tsm_soldier" behavior="Active" healthmultiplier="1.5" healthmultiplierinmultiplayer="2.0" aimspeed="20" aimaccuracy="0.9" reportrange="2000" skillmultiplier="4">
-      <ItemSet commonness="0.65">
+      <ItemSet commonness="0.7">
         <Item identifier="idcard" equip="true" />
         <Item identifier="autoinjectorheadset" equip="true" />
         <Item identifier="tsm_old_uniform" equip="true" />
@@ -2628,7 +2628,25 @@
           <Item identifier="tsm_57_smgmag" amount="5" />
         </Item>
       </ItemSet>
-      <ItemSet commonness="0.65">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="autoinjectorheadset" equip="true" />
+        <Item identifier="tsm_old_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_helmet_respirator" equip="true" />
+        <Item identifier="tsm_enhancement_ai" />
+        <Item identifier="tsm_stunbaton_melee" />
+        <Item identifier="tsm_medicalkits_s" />
+        <Item identifier="tsm_eyi_attack" />
+        <Item identifier="tsm_enhancement_stun" />
+        <Item identifier="tsm_enhancement_cyborg">
+          <Item identifier="tsm_enhancement_jia" />
+        </Item>
+        <Item identifier="tsm_mp7" equip="true">
+          <Item identifier="tsm_46_smgmag" amount="10" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.2">
         <Item identifier="idcard" equip="true" />
         <Item identifier="autoinjectorheadset" equip="true" />
         <Item identifier="tsm_old_uniform" equip="true" />
@@ -3223,5 +3241,8 @@
         </Item>
       </ItemSet>
     </npc>
+  </npcset>
+  <npcset identifier="tsm_haiyuan_event">
+    <!--海原事件-->
   </npcset>
 </npcsets>

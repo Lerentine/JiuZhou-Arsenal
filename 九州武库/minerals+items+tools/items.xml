@@ -143,11 +143,11 @@
           <RequiredItem items="mobilebattery" type="Contained" />
         </StatusEffect>
         <LightComponent LightColor="200,200,200,255" Flicker="0.02" range="1200" powerconsumption="10" IsOn="true">
-          <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="4.0,3.0" />
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.01, 0.5" size="4.0,3.0" />
           <IsActive targetcontaineditem="true" condition="gt 1.0" />
         </LightComponent>
         <LightComponent LightColor="200,200,200,255" range="1200" powerconsumption="10" IsOn="true" flicker="0.8" flickerspeed="1.0" pulsefrequency="0.1" pulseamount="0.5">
-          <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="4.0,3.0" />
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.01, 0.5" size="4.0,3.0" />
           <IsActive targetcontaineditem="true" condition="lte 1.0" />
         </LightComponent>
       </Holdable>
@@ -188,11 +188,11 @@
           <RequiredItem items="mobilebattery" type="Contained" />
         </StatusEffect>
         <LightComponent LightColor="150,150,150,255" Flicker="0.02" range="1200" powerconsumption="10" IsOn="true">
-          <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="2.5,4.0" />
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.01, 0.5" size="2.5,4.0" />
           <IsActive targetcontaineditem="true" condition="gt 1.0" />
         </LightComponent>
         <LightComponent LightColor="150,150,150,255" range="1200" powerconsumption="10" IsOn="true" flicker="0.8" flickerspeed="1.0" pulsefrequency="0.1" pulseamount="0.5">
-          <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="2.5,4.0" />
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.01, 0.5" size="2.5,4.0" />
           <IsActive targetcontaineditem="true" condition="lte 1.0" />
         </LightComponent>
       </Holdable>
@@ -217,6 +217,7 @@
       </Price>
       <Deconstruct time="15">
         <Item identifier="aluminium" />
+        <Item identifier="plastic" />
       </Deconstruct>
       <Fabricate suitablefabricators="fabricator" requiredtime="20">
         <RequiredSkill identifier="mechanical" level="35" />
@@ -239,13 +240,15 @@
           <LightTexture texture="%ModDir%/png/laser.png" origin="0.0, 0.5" size="1.0,0.12" />
           <IsActive targetcontaineditem="true" condition="lte 1.0" />
         </LightComponent>
-        <StatusEffect type="OnActive" target="Character">
+        <StatusEffect type="OnActive" target="Character" comparison="and">
           <Conditional InWater="false" />
+          <Conditional SelectedItem="eq null" />
           <RequiredItem items="mobilebattery" type="Contained" />
           <Affliction identifier="tsm_ff" strength="2" />
         </StatusEffect>
-        <StatusEffect type="OnActive" target="Character">
+        <StatusEffect type="OnActive" target="Character" comparison="and">
           <Conditional InWater="true" />
+          <Conditional SelectedItem="eq null" />
           <RequiredItem items="mobilebattery" type="Contained" />
           <Affliction identifier="tsm_ff1" strength="2" />
         </StatusEffect>
@@ -325,6 +328,7 @@
       <Deconstruct time="5">
         <Item identifier="plastic" />
         <Item identifier="steel" />
+        <Item identifier="aluminium" />
       </Deconstruct>
       <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="10">
         <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
@@ -358,7 +362,8 @@
     <Item name="反抗军武器零件箱" identifier="tsm_yh_weaponbox" maxstacksize="4" subcategory="tsm_separatists" cargocontaineridentifier="tsm_metalcrate" category="Equipment" scale="0.4" tags="smallitem,tsm_weaponbox" impactsoundtag="impact_metal_light">
       <Deconstruct time="5">
         <Item identifier="steel" />
-        <Item identifier="titanium" amount="0.5" />
+        <Item identifier="titanium" />
+        <Item identifier="tin" />
       </Deconstruct>
       <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="10">
         <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
@@ -393,9 +398,10 @@
     <Item name="手枪套件" identifier="tsm_handgun_box" subcategory="tsm_coalition" maxstacksize="6" cargocontaineridentifier="tsm_metalcrate" category="Equipment" scale="0.2" tags="smallitem" impactsoundtag="impact_metal_light">
       <Deconstruct time="5">
         <Item identifier="titanium" />
+        <Item identifier="plastic" />
       </Deconstruct>
       <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="10">
-        <RequiredItem identifier="titanium" amount="2" />
+        <RequiredItem identifier="titanium" amount="1" />
         <RequiredItem identifier="plastic" amount="2" />
         <RequiredItem identifier="diamond" />
       </Fabricate>
@@ -436,8 +442,8 @@
         <RequiredItem identifier="carbon" amount="2" />
       </Fabricate>
       <Deconstruct time="1">
-        <Item identifier="plastic" copycondition="true" />
-        <Item identifier="steel" copycondition="true" />
+        <Item identifier="plastic" />
+        <Item identifier="steel"/>
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/minerals+items+tools/items.png" sourcerect="738,569,153,150" />
       <Sprite texture="%ModDir%/minerals+items+tools/items.png" sourcerect="738,569,153,150" depth="0.55" origin="0.5,0.5" />
@@ -464,7 +470,8 @@
         <RequiredItem identifier="tsm_sulphur" amount="1" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="tsm_sulphur" amount="0.5" />
+        <Item identifier="tsm_sulphur" mincondition="0.5"/>
+        <Item identifier="magnesium" mincondition="0.5"/>
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/minerals+items+tools/items.png" sourcerect="602,743,108,164" />
       <Sprite texture="%ModDir%/minerals+items+tools/items.png" sourcerect="602,743,108,164" depth="0.55" origin="0.5,0.5" />
@@ -492,7 +499,9 @@
         <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="steel" copycondition="true" />
+        <Item identifier="iron" mincondition="0.5"/>
+        <Item identifier="steel" mincondition="0.5"/>
+        <Item identifier="copper" mincondition="0.5"/>
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/minerals+items+tools/items.png" sourcerect="908,596,130,115" />
       <Sprite texture="%ModDir%/minerals+items+tools/items.png" sourcerect="908,596,130,115" depth="0.55" origin="0.5,0.5" />
@@ -505,7 +514,7 @@
     </Item>
     <Item name="高精枪械组件" identifier="tsm_hpc" category="Material" subcategory="TSM" maxstacksize="4" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="storagecab" />
-      <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.1" />
+      <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="0" maxamount="1" spawnprobability="0.05" />
       <Price baseprice="668" minleveldifficulty="20">
         <Price storeidentifier="merchantoutpost" multiplier="1.3" maxavailable="2" />
         <Price storeidentifier="merchantcity" multiplier="1.25" maxavailable="3" />
@@ -546,7 +555,9 @@
         <RequiredItem identifier="fulgurium" amount="1" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="titaniumaluminiumalloy" copycondition="true" />
+        <Item identifier="titaniumaluminiumalloy"/>
+        <Item identifier="iron"/>
+        <Item identifier="lithium"/>
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/minerals+items+tools/items.png" sourcerect="1059,600,114,112" />
       <Sprite texture="%ModDir%/minerals+items+tools/items.png" sourcerect="1059,600,114,112" depth="0.55" origin="0.5,0.5" />
@@ -576,7 +587,9 @@
         <RequiredItem identifier="silicon" amount="2" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="fpgacircuit" copycondition="true" />
+        <Item identifier="fpgacircuit"/>
+        <Item identifier="zinc"/>
+        <Item identifier="silicon"/>
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/minerals+items+tools/items.png" sourcerect="1210,584,175,130" />
       <Sprite texture="%ModDir%/minerals+items+tools/items.png" sourcerect="1210,584,175,130" depth="0.55" origin="0.5,0.5" />
@@ -623,7 +636,7 @@
         <RequiredItem identifier="thermalgoggles" amount="1" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="thermalgoggles" copycondition="true" />
+        <Item identifier="thermalgoggles" />
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/Jobgear/helmet.png" sourcerect="997,1865,138,85" />
       <Sprite texture="%ModDir%/Jobgear/helmet.png" sourcerect="997,1865,138,85" depth="0.55" origin="0.5,0.5" />
@@ -631,10 +644,10 @@
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
       </Holdable>
     </Item>
-    <Item name="大型防弹面罩" identifier="tsm_ballistic_faceshield_big" category="Equipment" subcategory="TSM" Tags="smallitem,tsm_ballistic_faceshield" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
-      <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.03" />
+    <Item name="大型防弹面罩" identifier="tsm_ballistic_faceshield_big" category="Equipment" subcategory="TSM" Tags="smallitem,tsm_ballistic_faceshield" maxstacksize="2" canbepicked="true" cargocontaineridentifier="metalcrate" health="200" scale="0.2" impactsoundtag="impact_metal_light">
+      <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="1" maxamount="1" spawnprobability="0.01" />
       <PreferredContainer primary="storagecab" />
-      <Price baseprice="215">
+      <Price baseprice="255">
         <Price storeidentifier="merchantoutpost" multiplier="1.3" maxavailable="1" />
         <Price storeidentifier="merchantcity" multiplier="1.25" maxavailable="2" />
         <Price storeidentifier="merchantresearch" maxavailable="3" />
@@ -644,27 +657,29 @@
       </Price>
       <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="20">
         <RequiredSkill identifier="mechanical" level="30" />
-        <RequiredSkill identifier="electrical" level="40" />
+        <RequiredSkill identifier="electrical" level="20" />
         <RequiredItem identifier="titanium" amount="1" />
         <RequiredItem identifier="aluminium" amount="1" />
-        <RequiredItem identifier="tsm_plastic" amount="2" />
+        <RequiredItem identifier="tsm_plastic" amount="1" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="titanium" copycondition="true" />
+        <Item identifier="aluminium" mincondition="0.9"/>
+        <Item identifier="plastic" mincondition="0.8"/>
+        <Item identifier="titanium" mincondition="0.7"/>
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/Jobgear/helmet.png" sourcerect="1199,1837,225,140" />
       <Sprite texture="%ModDir%/Jobgear/helmet.png" sourcerect="1199,1837,225,140" depth="0.55" origin="0.5,0.5" />
-      <Holdable slots="Any" msg="ItemMsgPickUpSelect">
+      <Holdable canBeCombined="true" slots="Any" msg="ItemMsgPickUpSelect">
         <StatusEffect type="OnBroken" target="This">
           <Remove />
         </StatusEffect>
       </Holdable>
       <Body width="225" height="140" density="12" />
     </Item>
-    <Item name="小型防弹面罩" identifier="tsm_ballistic_faceshield_small" category="Equipment" subcategory="TSM" Tags="smallitem,tsm_ballistic_faceshield" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
-      <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.03" />
+    <Item name="小型防弹面罩" identifier="tsm_ballistic_faceshield_small" category="Equipment" subcategory="TSM" Tags="smallitem,tsm_ballistic_faceshield" maxstacksize="4" canbepicked="true" cargocontaineridentifier="metalcrate" health="200" scale="0.2" impactsoundtag="impact_metal_light">
+      <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="1" maxamount="1" spawnprobability="0.01" />
       <PreferredContainer primary="storagecab" />
-      <Price baseprice="275">
+      <Price baseprice="255">
         <Price storeidentifier="merchantoutpost" multiplier="1.3" maxavailable="1" />
         <Price storeidentifier="merchantcity" multiplier="1.25" maxavailable="2" />
         <Price storeidentifier="merchantresearch" maxavailable="3" />
@@ -673,22 +688,90 @@
         <Reputation faction="separatists" min="0" />
       </Price>
       <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="20">
-        <RequiredSkill identifier="mechanical" level="30" />
-        <RequiredSkill identifier="electrical" level="40" />
+        <RequiredSkill identifier="mechanical" level="10" />
+        <RequiredSkill identifier="electrical" level="10" />
         <RequiredItem identifier="titanium" amount="1" />
         <RequiredItem identifier="aluminium" amount="1" />
         <RequiredItem identifier="tsm_plastic" amount="1" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="titanium" copycondition="true" />
+        <Item identifier="aluminium" mincondition="0.9"/>
+        <Item identifier="plastic" mincondition="0.8"/>
+        <Item identifier="titanium" mincondition="0.7"/>
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/Jobgear/helmet.png" sourcerect="1488,1854,71,88" />
       <Sprite texture="%ModDir%/Jobgear/helmet.png" sourcerect="1488,1854,71,88" depth="0.55" origin="0.5,0.5" />
-      <Holdable slots="Any" msg="ItemMsgPickUpSelect">
+      <Holdable canBeCombined="true" slots="Any" msg="ItemMsgPickUpSelect">
         <StatusEffect type="OnBroken" target="This">
           <Remove />
         </StatusEffect>
       </Holdable>
+      <Body width="71" height="88" density="12" />
+    </Item>
+    <Item name="头盔用潜水面罩" identifier="tsm_helmet_diving" category="Equipment" subcategory="TSM" Tags="smallitem,tsm_helmet_diving" canbepicked="true" cargocontaineridentifier="metalcrate" health="220" scale="0.15" impactsoundtag="impact_metal_light">
+      <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="0" maxamount="1" spawnprobability="0.01" />
+      <PreferredContainer primary="storagecab" />
+      <Price baseprice="356">
+        <Price storeidentifier="merchantoutpost" multiplier="1.3" maxavailable="1" />
+        <Price storeidentifier="merchantcity" multiplier="1.25" maxavailable="2" />
+        <Price storeidentifier="merchantresearch" maxavailable="3" />
+        <Price storeidentifier="merchantmilitary" multiplier="0.9" maxavailable="1" />
+        <Price storeidentifier="merchantmine" multiplier="0.9" maxavailable="2" />
+        <Reputation faction="separatists" min="0" />
+      </Price>
+      <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="20">
+        <RequiredItem identifier="divingmask" amount="1" />
+        <RequiredItem identifier="aluminium" amount="1" />
+        <RequiredItem identifier="rubber" amount="1" />
+        <RequiredItem identifier="oxygentank" amount="1" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator" displayname="recycleitem" requiredtime="3">
+        <RequiredItem identifier="tsm_helmet_diving" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem identifier="oxygentank" mincondition="1" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="aluminium" />
+        <Item identifier="rubber" />
+      </Deconstruct>
+      <InventoryIcon texture="%ModDir%/Jobgear/helmet.png" sourcerect="1737,1437,237,196" />
+      <Sprite texture="%ModDir%/Jobgear/helmet.png" sourcerect="1737,1437,237,196" depth="0.55" origin="0.5,0.5" />
+      <Holdable canBeCombined="true" slots="Any" msg="ItemMsgPickUpSelect"/>
+      <Body width="71" height="88" density="12" />
+      <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+        <sprite name="Diving Mask Helmet" texture="%ModDir%/Jobgear/helmet.png" sourcerect="1737,1437,237,196" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.15" hidelimb="false" hideotherwearables="false" origin="0.5,0.35" hidewearablesoftype="moustache,beard" />
+        <StatusEffect type="OnWearing" target="This,Character" OxygenAvailable="1000.0" Condition="-0.2" comparison="Or">
+          <Conditional IsDead="false" />
+        </StatusEffect>
+      </Wearable>
+    </Item>
+    <Item name="头盔用潜水面罩" identifier="tsm_helmet_diving1" category="Equipment" subcategory="TSM" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" health="220" scale="0.15" impactsoundtag="impact_metal_light">
+      <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="0" maxamount="1" spawnprobability="0.01" />
+      <PreferredContainer primary="storagecab" />
+      <Price baseprice="356">
+        <Price storeidentifier="merchantoutpost" multiplier="1.3" maxavailable="1" />
+        <Price storeidentifier="merchantcity" multiplier="1.25" maxavailable="2" />
+        <Price storeidentifier="merchantresearch" maxavailable="3" />
+        <Price storeidentifier="merchantmilitary" multiplier="0.9" maxavailable="1" />
+        <Price storeidentifier="merchantmine" multiplier="0.9" maxavailable="2" />
+        <Reputation faction="separatists" min="0" />
+      </Price>
+      <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="20">
+        <RequiredItem identifier="divingmask" amount="1" />
+        <RequiredItem identifier="aluminium" amount="1" />
+        <RequiredItem identifier="rubber" amount="1" />
+        <RequiredItem identifier="oxygentank" amount="1" />
+      </Fabricate>
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator" displayname="recycleitem" requiredtime="3">
+        <RequiredItem identifier="tsm_helmet_diving1" mincondition="0.0" maxcondition="0.0" />
+        <RequiredItem identifier="oxygentank" mincondition="1" />
+      </Fabricate>
+      <Deconstruct time="5">
+        <Item identifier="aluminium" />
+        <Item identifier="rubber" />
+      </Deconstruct>
+      <InventoryIcon texture="%ModDir%/Jobgear/helmet.png" sourcerect="1836,1667,143,151" />
+      <Sprite texture="%ModDir%/Jobgear/helmet.png" sourcerect="1836,1667,143,151" depth="0.55" origin="0.5,0.5" />
+      <Holdable canBeCombined="true" slots="Any" msg="ItemMsgPickUpSelect"/>
       <Body width="71" height="88" density="12" />
     </Item>
     <Item name="未穿透" identifier="tsm_collider_head" subcategory="TSM" damagedbyprojectiles="true" hideinmenus="true" scale="0.5">
@@ -712,7 +795,7 @@
         </StatusEffect>
       </ItemComponent>
     </Item>
-    <Item name="头盔用护颚" identifier="tsm_protective_jaw" category="Equipment" subcategory="TSM" Tags="smallitem" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
+    <Item name="头盔用护颚" identifier="tsm_protective_jaw" category="Equipment" subcategory="TSM" Tags="smallitem" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" health="300" scale="0.2" impactsoundtag="impact_metal_light">
       <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.03" />
       <PreferredContainer primary="storagecab" />
       <Price baseprice="301" minleveldifficulty="20">
@@ -730,7 +813,9 @@
         <RequiredItem identifier="plastic" amount="3" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="titanium" copycondition="true" />
+        <Item identifier="titanium" mincondition="0.6"/>
+        <Item identifier="steel" mincondition="0.7"/>
+        <Item identifier="plastic" mincondition="0.8"/>
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/Jobgear/helmet.png" sourcerect="1623,1854,149,105" />
       <Sprite texture="%ModDir%/Jobgear/helmet.png" sourcerect="1623,1854,149,105" depth="0.55" origin="0.5,0.5" />
@@ -741,7 +826,7 @@
         </StatusEffect>
       </Holdable>
     </Item>
-    <Item name="头盔用手电" identifier="tsm_helmet_flashlight" subcategory="TSM" category="Equipment" Tags="smallitem,tool,provocative,loadable" cargocontaineridentifier="tsm_metalcrate" Scale="0.2" impactsoundtag="impact_metal_light">
+    <Item name="头盔用识别仪" identifier="tsm_helmet_flashlight" subcategory="TSM" category="Equipment" Tags="smallitem,tool,provocative,loadable" cargocontaineridentifier="tsm_metalcrate" Scale="0.2" impactsoundtag="impact_metal_light">
       <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="0" maxamount="1" spawnprobability="0.01" />
       <PreferredContainer primary="storagecab" />
       <Price baseprice="156" minavailable="1">
@@ -756,9 +841,10 @@
         <Item identifier="aluminium" />
       </Deconstruct>
       <Fabricate suitablefabricators="fabricator" requiredtime="10">
-        <RequiredItem identifier="aluminium" amount="1" />
+        <RequiredItem identifier="aluminium" amount="2" />
         <RequiredItem identifier="batterycell" amount="1" />
-        <RequiredItem tag="lightcomponent" amount="1" />
+        <RequiredItem identifier="sonarbeacon" amount="1" />
+        <RequiredItem identifier="tsm_hpc" amount="1" />
       </Fabricate>
       <InventoryIcon texture="%ModDir%/Jobgear/helmet.png" sourcerect="1367,1742,92,65" />
       <Sprite texture="%ModDir%/Jobgear/helmet.png" sourcerect="1367,1742,92,65" depth="0.55" origin="0.5,0.5" />
@@ -777,7 +863,7 @@
       <AiTarget sightrange="3000" />
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="头盔用夜视仪" identifier="tsm_helmet_nvd" category="Equipment" subcategory="TSM" Tags="smallitem,thermalgoggles,loadable" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
+    <Item name="头盔用夜视仪" identifier="tsm_helmet_nvd" category="Equipment" subcategory="TSM" Tags="smallitem,loadable" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
       <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="0" maxamount="1" spawnprobability="0.01" />
       <PreferredContainer primary="storagecab" />
       <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="20">
@@ -790,8 +876,9 @@
         <RequiredItem identifier="batterycell" amount="1" />
       </Fabricate>
       <Deconstruct time="5">
-        <Item identifier="silicon" copycondition="true" />
-        <Item identifier="aluminium" copycondition="true" />
+        <Item identifier="silicon" />
+        <Item identifier="aluminium" />
+        <Item identifier="copper" />
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/Jobgear/helmet.png" sourcerect="1506,1721,143,105" />
       <Sprite texture="%ModDir%/Jobgear/helmet.png" sourcerect="1506,1721,143,105" depth="0.55" origin="0.5,0.5" />
@@ -799,7 +886,7 @@
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
       </Holdable>
     </Item>
-    <Item name="头盔用显示板" identifier="tsm_helmet_screen" category="Equipment" subcategory="TSM" Tags="smallitem,thermalgoggles,loadable" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
+    <Item name="头盔用显示板" identifier="tsm_helmet_screen" category="Equipment" subcategory="TSM" Tags="smallitem,loadable" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
       <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="0" maxamount="1" spawnprobability="0.01" />
       <PreferredContainer primary="storagecab" />
       <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="20">
@@ -809,6 +896,7 @@
         <RequiredItem identifier="batterycell" amount="1" />
         <RequiredItem identifier="wificomponent" amount="1" />
         <RequiredItem identifier="oscillator" amount="1" />
+        <RequiredItem identifier="healthscanner" amount="1" />
       </Fabricate>
       <Deconstruct time="5">
         <Item identifier="silicon" amount="2" />
@@ -962,7 +1050,7 @@
     <Item name="基座" identifier="tsm_rz_jz" category="Material" subcategory="TSM" Tags="smallitem" maxstacksize="1" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="storagecab" />
       <Deconstruct time="5">
-        <Item identifier="titanium" copycondition="true" />
+        <Item identifier="titanium"/>
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/suit/rz_pirent.png" sourcerect="168,271,142,65" />
       <Sprite texture="%ModDir%/suit/rz_pirent.png" sourcerect="168,271,142,65" depth="0.55" origin="0.5,0.5" />
@@ -1003,5 +1091,79 @@
       </Containable>
     </ItemContainer>-->
     </Item>
+    <!--枪械专精天赋-->
+    <Item name="" identifier="tsm_gunkill" category="Medical" maxstacksizecharacterinventory="8" Tags="smallitem" allowasextracargo="true" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medcab"/>
+      <Price baseprice="50" sold="false">
+        <Price storeidentifier="merchantoutpost" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" />
+        <Price storeidentifier="merchantresearch" multiplier="1.1" />
+        <Price storeidentifier="merchantmilitary" multiplier="1.1" />
+        <Price storeidentifier="merchantmine" />
+      </Price>
+      <Fabricate suitablefabricators="fabricator" requiredtime="1" requiresrecipe="false">
+        <RequiredItem identifier="chlorine" />
+        <RequiredItem identifier="chlorine" />
+      </Fabricate>
+      <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+      <Body width="35" height="65" density="10.2" waterdragcoefficient="1"/>
+      <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+        <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true"/>
+        <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true"/>
+        <StatusEffect type="OnSuccess" target="UseTarget">
+          <GiveTalentInfo giverandom="true" talentidentifiers="tsm_gunskill_mastery" />
+        </StatusEffect>
+        <StatusEffect type="OnFailure" target="UseTarget">
+          <GiveTalentInfo giverandom="true" talentidentifiers="tsm_gunskill_mastery" />
+        </StatusEffect>
+        <StatusEffect type="OnSuccess" target="UseTarget">
+          <Conditional entitytype="eq Character"/>
+          <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        </StatusEffect>
+        <StatusEffect type="OnFailure" target="UseTarget">
+          <Conditional entitytype="eq Character"/>
+          <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true" AllowWhenBroken="true">
+          <Affliction identifier="stun" amount="0.1" />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </MeleeWeapon>
+      <Projectile characterusable="false" launchimpulse="18.0" sticktocharacters="true" launchrotation="-90" inheritstatuseffectsfrom="MeleeWeapon" inheritrequiredskillsfrom="MeleeWeapon" />
+    </Item>
+    <!--Item name="" identifier="tsm_gunkill_adv" category="Medical" maxstacksizecharacterinventory="8" Tags="smallitem" allowasextracargo="true" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medcab"/>
+      <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+      <Body width="35" height="65" density="10.2" waterdragcoefficient="1"/>
+      <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+        <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true"/>
+        <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true"/>
+        <StatusEffect type="OnSuccess" target="UseTarget">
+          <GiveTalentInfo giverandom="true" talentidentifiers="tsm_gunkill_advance" />
+        </StatusEffect>
+        <StatusEffect type="OnFailure" target="UseTarget">
+          <GiveTalentInfo giverandom="true" talentidentifiers="tsm_gunkill_advance" />
+        </StatusEffect>
+        <StatusEffect type="OnSuccess" target="UseTarget">
+          <Conditional entitytype="eq Character"/>
+          <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        </StatusEffect>
+        <StatusEffect type="OnFailure" target="UseTarget">
+          <Conditional entitytype="eq Character"/>
+          <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true" AllowWhenBroken="true">
+          <Affliction identifier="stun" amount="0.1" />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </MeleeWeapon>
+      <Projectile characterusable="false" launchimpulse="18.0" sticktocharacters="true" launchrotation="-90" inheritstatuseffectsfrom="MeleeWeapon" inheritrequiredskillsfrom="MeleeWeapon" />
+    </Item-->
   </Items>
 </Override>
